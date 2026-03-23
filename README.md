@@ -6,13 +6,9 @@ System of Thought Engineering (STE) is a model-driven architecture and governanc
 
 ## Purpose of this repository
 
-This repository is the **STE Handbook**: long-form technical documentation that explains concepts, relationships, lifecycle, and end-to-end flows. It is structured as a book manuscript (Parts 0–11) suitable for sustained reading and for tooling that needs a stable outline.
+This repository publishes the **STE Handbook** manuscript: long-form technical documentation that explains concepts, relationships, lifecycle, and end-to-end flows. It is structured as a book manuscript suitable for sustained reading and for tooling that needs a stable outline.
 
 **This handbook is explanatory, not normative.** When this repository and the specification disagree, **`ste-spec` is authoritative** for what the system must do and mean.
-
-## Authoring model
-
-The handbook is written to a structured model so chapters stay consistent and interconnected across parts and authors. The narrative spine is **engineering as explicit decision-making under constraints**: how intent is declared, how implementation embodies those decisions, how evidence supports validation, and how governance keeps decisions traceable as systems change. That model is internal to authoring; reader-facing pages focus on explanation and reading order, not on process.
 
 ## How this repository relates to other STE repositories
 
@@ -42,15 +38,15 @@ The handbook **orients** readers and connects narrative to those authorities; it
 | 10 | Examples | Walkthroughs linking conversation → ADR → IR → projections → conformance → drift. |
 | 11 | Advanced topics | Deeper or emergent subjects (semantic graphs, scoring, multi-agent policy, safety framing). |
 
-For the full table of contents with links, see **[SUMMARY.md](SUMMARY.md)**. For a concise thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
+For the full table of contents with links, see **[SUMMARY.md](SUMMARY.md)**. For a short thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
 
 ## Where to start
 
 1. Open **[SUMMARY.md](SUMMARY.md)** for the complete reading order.
-2. Read **Part 0 (Foundations)** and **Part 2 (Overview)** for orientation, or follow **Parts 0–11** in order for a linear book read.
-3. Use **Parts 3–9** as the technical spine; **Part 10** for integrated examples; **Part 1** and **Part 11** as supporting depth.
+2. Read **Part 0 (Foundations)** and **Part 2 (Overview)** for orientation, or follow the parts in order for a linear read.
+3. Use the intent → kernel → control-loop parts as the technical spine; use the examples part for integrated walkthroughs.
 
-Diagrams under **`diagrams/`** are Mermaid sketches for learning; they are not authoritative architecture definitions. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for contribution expectations and **[DISCLAIMER.md](DISCLAIMER.md)** for limitations of use.
+Diagrams under **`diagrams/`** are Mermaid sketches for learning; they are not authoritative architecture definitions. See **[DISCLAIMER.md](DISCLAIMER.md)** for limitations of use.
 
 ## License
 
