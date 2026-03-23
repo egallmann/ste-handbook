@@ -1,77 +1,148 @@
 # STE Handbook — Table of Contents
 
-Reading order below follows the numbered parts. Each link is relative to this repository root.
+Reading order follows Parts 0–11. Links are relative to this repository root.
 
-## Part 1 — Overview
+- [STE manifesto (short thesis)](STE-MANIFESTO.md)
 
-1. [What is STE?](01-overview/what-is-ste.md)
-2. [The problem](01-overview/the-problem.md)
-3. [The STE lifecycle](01-overview/the-ste-lifecycle.md)
-4. [System overview](01-overview/system-overview.md)
+## Part 0 — Foundations
 
-## Part 2 — Intent
+- [Foundations overview](00-foundations/00-00-foundations-overview.md)
+- [Engineering as decision-making](00-foundations/00-01-engineering-as-decision-making.md)
+- [The problem of lossy reasoning](00-foundations/00-02-the-problem-of-lossy-reasoning.md)
+- [Intent versus implementation](00-foundations/00-03-intent-vs-implementation.md)
+- [Architecture as a first-class artifact](00-foundations/00-04-architecture-as-a-first-class-artifact.md)
+- [Governed reasoning](00-foundations/00-05-governed-reasoning.md)
+- [Deterministic versus stochastic systems](00-foundations/00-06-deterministic-vs-stochastic-systems.md)
+- [The STE thesis](00-foundations/00-07-the-ste-thesis.md)
 
-5. [Architecture decisions](02-intent/architecture-decisions.md)
-6. [ADR-L](02-intent/adr-l.md)
-7. [ADR-PS](02-intent/adr-ps.md)
-8. [ADR-PC](02-intent/adr-pc.md)
-9. [Decisions](02-intent/decisions.md)
-10. [Invariants](02-intent/invariants.md)
+## Part 1 — Theoretical foundations
 
-## Part 3 — Architecture IR
+- [Theory overview](01-theoretical-foundations/01-00-theory-overview.md)
+- [Systems theory](01-theoretical-foundations/01-01-systems-theory.md)
+- [Control theory](01-theoretical-foundations/01-02-control-theory.md)
+- [Information theory](01-theoretical-foundations/01-03-information-theory.md)
+- [Decision theory](01-theoretical-foundations/01-04-decision-theory.md)
+- [Cybernetics](01-theoretical-foundations/01-05-cybernetics.md)
+- [Software architecture theory](01-theoretical-foundations/01-06-software-architecture-theory.md)
+- [Model-based systems engineering](01-theoretical-foundations/01-07-model-based-systems-engineering.md)
+- [Safety and constraints engineering](01-theoretical-foundations/01-08-safety-and-constraints-engineering.md)
 
-11. [Architecture IR](03-architecture-ir/architecture-ir.md)
-12. [Entities](03-architecture-ir/entities.md)
-13. [Relationships](03-architecture-ir/relationships.md)
-14. [Compilation](03-architecture-ir/compilation.md)
-15. [Traceability](03-architecture-ir/traceability.md)
+## Part 2 — Overview
 
-## Part 4 — Kernel and runtime
+- [Overview](02-overview/02-00-overview.md)
+- [What is STE?](02-overview/02-01-what-is-ste.md)
+- [Terminology](02-overview/02-02-terminology.md)
+- [System overview](02-overview/02-03-system-overview.md)
+- [The STE lifecycle](02-overview/02-04-the-ste-lifecycle.md)
 
-16. [Kernel](04-kernel-and-runtime/kernel.md)
-17. [Validation](04-kernel-and-runtime/validation.md)
-18. [Divergence](04-kernel-and-runtime/divergence.md)
-19. [Convergence](04-kernel-and-runtime/convergence.md)
-20. [Runtime evidence](04-kernel-and-runtime/runtime-evidence.md)
-21. [Conformance](04-kernel-and-runtime/conformance.md)
+## Part 3 — Intent
 
-## Part 5 — Projections
+- [Intent layer overview](03-intent/03-00-intent-layer-overview.md)
+- [Intent model](03-intent/03-01-intent-model.md)
+- [Architecture decisions](03-intent/03-02-architecture-decisions.md)
+- [ADR-L](03-intent/03-03-adr-l.md)
+- [ADR-PS](03-intent/03-04-adr-ps.md)
+- [ADR-PC](03-intent/03-05-adr-pc.md)
+- [Decisions](03-intent/03-06-decisions.md)
+- [Invariants](03-intent/03-07-invariants.md)
+- [Constraints](03-intent/03-08-constraints.md)
+- [Capabilities](03-intent/03-09-capabilities.md)
 
-22. [Projections](05-projections/projections.md)
-23. [Diagrams](05-projections/diagrams.md)
-24. [Projection documents](05-projections/projection-documents.md)
-25. [Architecture views](05-projections/architecture-views.md)
+## Part 4 — Architecture IR
 
-## Part 6 — Conversation engine
+- [Architecture IR overview](04-architecture-ir/04-00-architecture-ir-overview.md)
+- [The system model](04-architecture-ir/04-01-the-system-model.md)
+- [Entities](04-architecture-ir/04-02-entities.md)
+- [Relationships](04-architecture-ir/04-03-relationships.md)
+- [Compilation](04-architecture-ir/04-04-compilation.md)
+- [Traceability](04-architecture-ir/04-05-traceability.md)
+- [Diff and change](04-architecture-ir/04-06-diff-and-change.md)
+- [IR as a graph](04-architecture-ir/04-07-ir-as-a-graph.md)
 
-26. [Conversation interface](06-conversation-engine/conversation-interface.md)
-27. [Interrogation](06-conversation-engine/interrogation.md)
-28. [Decision capture](06-conversation-engine/decision-capture.md)
-29. [Steelman](06-conversation-engine/steelman.md)
-30. [Reference architectures](06-conversation-engine/reference-architectures.md)
-31. [Agents](06-conversation-engine/agents.md)
+## Part 5 — Kernel
 
-## Part 7 — Lifecycle
+- [Kernel overview](05-kernel/05-00-kernel-overview.md)
+- [Kernel](05-kernel/05-01-kernel.md)
+- [The admission model](05-kernel/05-02-the-admission-model.md)
+- [Validation](05-kernel/05-03-validation.md)
+- [Divergence](05-kernel/05-04-divergence.md)
+- [Convergence](05-kernel/05-05-convergence.md)
+- [Runtime evidence](05-kernel/05-06-runtime-evidence.md)
+- [Conformance](05-kernel/05-07-conformance.md)
+- [Deterministic assessment](05-kernel/05-08-deterministic-assessment.md)
 
-32. [Design lifecycle](07-lifecycle/design-lifecycle.md)
-33. [Change management](07-lifecycle/change-management.md)
-34. [Drift](07-lifecycle/drift.md)
-35. [Certification](07-lifecycle/certification.md)
-36. [Governance](07-lifecycle/governance.md)
+## Part 6 — Control loop
 
-## Part 8 — Examples
+- [Control loop overview](06-control-loop/06-00-control-loop-overview.md)
+- [The control loop](06-control-loop/06-01-the-control-loop.md)
+- [Intent to implementation](06-control-loop/06-02-intent-to-implementation.md)
+- [Implementation to evidence](06-control-loop/06-03-implementation-to-evidence.md)
+- [Evidence to assessment](06-control-loop/06-04-evidence-to-assessment.md)
+- [Assessment to decision](06-control-loop/06-05-assessment-to-decision.md)
+- [Decision to change](06-control-loop/06-06-decision-to-change.md)
+- [Continuous certification](06-control-loop/06-07-continuous-certification.md)
 
-37. [Example system](08-examples/example-system.md)
-38. [Conversation to ADR](08-examples/conversation-to-adr.md)
-39. [ADR to IR](08-examples/adr-to-ir.md)
-40. [IR to projection](08-examples/ir-to-projection.md)
-41. [Conformance example](08-examples/conformance-example.md)
+## Part 7 — Projections
+
+- [Projections overview](07-projections/07-00-projections-overview.md)
+- [Projections](07-projections/07-01-projections.md)
+- [Diagrams](07-projections/07-02-diagrams.md)
+- [Projection documents](07-projections/07-03-projection-documents.md)
+- [Architecture views](07-projections/07-04-architecture-views.md)
+- [Stakeholder views](07-projections/07-05-stakeholder-views.md)
+- [View consistency](07-projections/07-06-view-consistency.md)
+
+## Part 8 — Conversation engine
+
+- [Conversation engine overview](08-conversation-engine/08-00-conversation-engine-overview.md)
+- [Conversation interface](08-conversation-engine/08-01-conversation-interface.md)
+- [Interrogation](08-conversation-engine/08-02-interrogation.md)
+- [Decision capture](08-conversation-engine/08-03-decision-capture.md)
+- [Steelman](08-conversation-engine/08-04-steelman.md)
+- [Reference architectures](08-conversation-engine/08-05-reference-architectures.md)
+- [Golden systems](08-conversation-engine/08-06-golden-systems.md)
+- [Agents](08-conversation-engine/08-07-agents.md)
+- [Rule activation](08-conversation-engine/08-08-rule-activation.md)
+- [Human-in-the-loop](08-conversation-engine/08-09-human-in-the-loop.md)
+
+## Part 9 — Lifecycle and governance
+
+- [Lifecycle overview](09-lifecycle-governance/09-00-lifecycle-overview.md)
+- [Design lifecycle](09-lifecycle-governance/09-01-design-lifecycle.md)
+- [Change management](09-lifecycle-governance/09-02-change-management.md)
+- [Drift](09-lifecycle-governance/09-03-drift.md)
+- [Convergence](09-lifecycle-governance/09-04-convergence.md)
+- [Certification](09-lifecycle-governance/09-05-certification.md)
+- [Governance](09-lifecycle-governance/09-06-governance.md)
+
+## Part 10 — Examples
+
+- [Examples overview](10-examples/10-00-examples-overview.md)
+- [Example system](10-examples/10-01-example-system.md)
+- [Conversation to ADR](10-examples/10-02-conversation-to-adr.md)
+- [ADR to IR](10-examples/10-03-adr-to-ir.md)
+- [IR to projection](10-examples/10-04-ir-to-projection.md)
+- [Conformance example](10-examples/10-05-conformance-example.md)
+- [Drift example](10-examples/10-06-drift-example.md)
+
+## Part 11 — Advanced topics
+
+- [Advanced topics overview](11-advanced-topics/11-00-advanced-topics-overview.md)
+- [Semantic graphs](11-advanced-topics/11-01-semantic-graphs.md)
+- [Embodied decision records](11-advanced-topics/11-02-embodied-decision-records.md)
+- [Deterministic scoring](11-advanced-topics/11-03-deterministic-scoring.md)
+- [Reference architectures](11-advanced-topics/11-04-reference-architectures.md)
+- [Golden systems](11-advanced-topics/11-05-golden-systems.md)
+- [Multi-agent systems](11-advanced-topics/11-06-multi-agent-systems.md)
+- [Policy and governance](11-advanced-topics/11-07-policy-and-governance.md)
+- [Safety and alignment](11-advanced-topics/11-08-safety-and-alignment.md)
 
 ## Diagrams (Mermaid)
 
-Placeholders live under `diagrams/`:
+Illustrative placeholders under `diagrams/`:
 
 - [system-overview.mmd](diagrams/system-overview.mmd)
 - [lifecycle.mmd](diagrams/lifecycle.mmd)
 - [control-loop.mmd](diagrams/control-loop.mmd)
 - [adr-relationships.mmd](diagrams/adr-relationships.mmd)
+- [architecture-ir-flow.mmd](diagrams/architecture-ir-flow.mmd)
