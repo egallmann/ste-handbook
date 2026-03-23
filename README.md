@@ -2,31 +2,55 @@
 
 ## What is System of Thought Engineering (STE)?
 
-System of Thought Engineering (STE) is a model-driven architecture and governance approach that encodes architectural intent as machine-readable decisions, compiles that intent into a canonical architecture model (Architecture IR), enforces constraints and invariants, and validates system behavior against intent using deterministic evidence and conformance testing. STE treats architecture as an explicit, evolvable system of decisions—not only as informal documentation.
+System of Thought Engineering (STE) is a model-driven architecture and governance discipline. Architectural intent is captured in structured, reviewable artifacts; compiled into a canonical architecture model (Architecture IR); and assessed against implementation and runtime evidence using deterministic methods where appropriate. STE treats architecture as an explicit, versioned system of decisions—not only as informal documentation or incidental diagrams.
 
 ## Purpose of this repository
 
-This repository is the **STE Handbook**: explanatory technical documentation for STE. It is meant to help readers understand concepts, relationships, lifecycle, and how the pieces fit together. It may include walkthroughs, diagrams, and deeper technical narrative than fits comfortably in a normative specification.
+This repository is the **STE Handbook**: long-form technical documentation that explains concepts, relationships, lifecycle, and end-to-end flows. It is structured as a book manuscript (Parts 0–11) suitable for sustained reading and for tooling that needs a stable outline.
 
 **This handbook is explanatory, not normative.** When this repository and the specification disagree, **`ste-spec` is authoritative** for what the system must do and mean.
+
+## Authoring model
+
+The handbook is written to a structured model so chapters stay consistent and interconnected across parts and authors. The narrative spine is **engineering as explicit decision-making under constraints**: how intent is declared, how implementation embodies those decisions, how evidence supports validation, and how governance keeps decisions traceable as systems change. That model is internal to authoring; reader-facing pages focus on explanation and reading order, not on process.
 
 ## How this repository relates to other STE repositories
 
 | Repository | Role |
 |------------|------|
-| **`ste-spec`** | Publishable **normative** architectural specification: contracts, invariants, semantic constraints, and boundary definitions other STE work relies on. |
+| **`ste-spec`** | Normative specification: contracts, invariants, semantic constraints, and boundaries other STE work relies on. |
+| **`adr-architecture-kit`** | Tooling and patterns for authoring and managing architectural intent (including ADR surfaces) that feed the STE pipeline. |
 | **`ste-kernel`** | Decision and admission logic that consumes evidence and published contracts to make deterministic orchestration decisions. |
-| **`adr-architecture-kit`** | Tooling and patterns for authoring, structuring, and managing **architectural intent** (for example ADR surfaces) that feed the broader STE pipeline. |
+| **`ste-runtime`** | Runtime integration and execution concerns that connect live systems to STE evidence and assessment flows (as defined in that repository). |
 
 The handbook **orients** readers and connects narrative to those authorities; it does not replace them.
 
-## Where to start (reading order)
+## Section map (Parts 0–11)
 
-1. Open **[SUMMARY.md](SUMMARY.md)** for the full table of contents.
-2. Start with **[01-overview/](01-overview/)**—especially *What is STE?*, *The problem*, and *System overview*.
-3. Continue through **02–08** in order (intent → Architecture IR → kernel and runtime → projections → conversation engine → lifecycle → examples) as your questions lead you.
+| Part | Title | Role |
+|------|--------|------|
+| 0 | Foundations | Problem, thesis, and vocabulary precursors. |
+| 1 | Theoretical foundations | Disciplinary scaffolding (systems, control, information, decision theory, MBSE, safety). |
+| 2 | Overview | What STE is, terminology, system overview, lifecycle summary. |
+| 3 | Intent | Decisions, ADR planes, invariants, constraints, capabilities. |
+| 4 | Architecture IR | Canonical system model, compilation, traceability, diff, graph view. |
+| 5 | Kernel | Admission, validation, divergence and convergence, evidence, conformance, deterministic assessment. |
+| 6 | Control loop | End-to-end loop from intent through evidence to decisions and change; continuous certification. |
+| 7 | Projections | Diagrams, documents, views, consistency across projections. |
+| 8 | Conversation engine | Human interface: interrogation, capture, agents, rule activation, human-in-the-loop. |
+| 9 | Lifecycle and governance | Design, change, drift, convergence, certification, governance. |
+| 10 | Examples | Walkthroughs linking conversation → ADR → IR → projections → conformance → drift. |
+| 11 | Advanced topics | Deeper or emergent subjects (semantic graphs, scoring, multi-agent policy, safety framing). |
 
-Diagrams under **`diagrams/`** are **Mermaid** sketches and **projections** for learning; they are not authoritative architecture definitions. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for contribution and branching rules, and **[DISCLAIMER.md](DISCLAIMER.md)** for limitations of use.
+For the full table of contents with links, see **[SUMMARY.md](SUMMARY.md)**. For a concise thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
+
+## Where to start
+
+1. Open **[SUMMARY.md](SUMMARY.md)** for the complete reading order.
+2. Read **Part 0 (Foundations)** and **Part 2 (Overview)** for orientation, or follow **Parts 0–11** in order for a linear book read.
+3. Use **Parts 3–9** as the technical spine; **Part 10** for integrated examples; **Part 1** and **Part 11** as supporting depth.
+
+Diagrams under **`diagrams/`** are Mermaid sketches for learning; they are not authoritative architecture definitions. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for contribution expectations and **[DISCLAIMER.md](DISCLAIMER.md)** for limitations of use.
 
 ## License
 
