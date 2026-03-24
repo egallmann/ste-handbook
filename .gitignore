@@ -8,6 +8,9 @@ artifacts/
 scripts/
 tools/
 
+# Optional local agent notes (not part of the manuscript; keep untracked if you use it)
+AGENTS.md
+
 # Editor-local
 .cursor/
 
