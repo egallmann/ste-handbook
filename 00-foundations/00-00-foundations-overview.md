@@ -40,7 +40,7 @@ The chapters in Part 0 build one story in order:
 
 ### Key terms in Part 0
 
-These terms are used with stable meanings in Part 0 (full gloss: [.writing-rules/04-terminology.md](../.writing-rules/04-terminology.md)):
+These terms are used with stable meanings in Part 0. They are introduced precisely in [Engineering as decision-making](00-01-engineering-as-decision-making.md) and reused consistently in the chapters that follow:
 
 - **Decision:** A commitment that closes design space among feasible alternatives under **constraints**, with rationale that should be recoverable later.
 - **Constraint:** A limit that reduces design options; it shrinks the design space or binds evolution.
