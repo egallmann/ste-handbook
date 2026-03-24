@@ -27,7 +27,7 @@ STE names two categories on purpose:
 
 **Validation** compares those two sides: declared **intent** to **embodiment** (and **evidence** about it); **drift** and **conformance** are defined on that comparison, not on opinion.
 
-The chapter title keeps **implementation** because code-level work is where the confusion hurts first. In this handbook, **implementation** is the code-level portion of **embodiment** (modules, repos, concrete builds), not a synonym for the whole descriptive side. For vocabulary control, see [.writing-rules/04-terminology.md](../.writing-rules/04-terminology.md).
+The chapter title keeps **implementation** because code-level work is where the confusion hurts first. In this handbook, **implementation** is the code-level portion of **embodiment** (modules, repos, concrete builds), not a synonym for the whole descriptive side. For adjacent definitions and the Part 0 term contract, see the key terms in [Part 0: Foundations](00-00-foundations-overview.md) and [Engineering as decision-making](00-01-engineering-as-decision-making.md).
 
 STE's control loop compares **intent-shaped artifacts** to **embodiment-shaped evidence**. Merge the categories in conversation or in tooling, and you lose the ability to say, cleanly, what drifted from what.
 

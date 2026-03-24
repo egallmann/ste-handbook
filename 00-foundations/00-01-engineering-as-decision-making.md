@@ -30,7 +30,7 @@ The rest of the handbook assumes this shift in category. If you accept it, the q
 
 ### Canonical definitions (Part 0)
 
-These four terms are canonical for the rest of Part 0; a compact glossary lives in [.writing-rules/04-terminology.md](../.writing-rules/04-terminology.md).
+These four terms are canonical for the rest of Part 0; this section is their anchor definition for the chain.
 
 - **Decision:** A commitment that closes design space: it selects among feasible alternatives under constraints, with rationale that should be recoverable later.
 
