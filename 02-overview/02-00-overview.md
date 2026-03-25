@@ -10,15 +10,15 @@ last_reviewed: "2026-03-24"
 
 ## The Problem
 
-Parts 0 and 1 did different jobs. Foundations named the dysfunction, the thesis, and the vocabulary precursors. Theoretical foundations showed why multiple disciplines touch the same lifecycle failure modes. What you may still lack is a single picture of STE as a system you can point at: the major objects, how they connect, and how later parts of the book unpack each layer.
+Parts 0 and 1 did different jobs. Foundations named the dysfunction, the thesis, and the vocabulary precursors. Theoretical foundations showed why multiple disciplines touch the same lifecycle failure modes. What you may still lack is a clear idea of **how to read the rest of the handbook**: what Part 2 adds, how the next few chapters sequence, and how later parts relate without memorizing a catalog.
 
-Without that picture, it is easy to read later chapters as a grab bag: intent here, kernel there, projections elsewhere. The risk is not ignorance of individual terms. The risk is never seeing the whole shape clearly enough to navigate.
+Without that reading map, later chapters can feel like a grab bag even when they are not. The risk is not ignorance of individual ideas. The risk is never knowing which chapter to open when a term or layer confuses you.
 
 ## The Reframe
 
-Part 2 is the bridge from argument to architecture. It is orientation, not completion. The goal is a reader who can sketch STE on a whiteboard, use core words without constant reinterpretation, and read Parts 3 onward with a stable mental model of where each layer sits.
+Part 2 is the bridge from argument to architecture. It is orientation, not completion. The goal is a reader who knows **which chapter answers which kind of question**, uses core words without constant reinterpretation, and reads Parts 3 onward knowing what each part is for.
 
-Think of Part 2 as installing a map before you hike the terrain.
+Think of Part 2 as installing a map before you hike the terrain. The trail details live in later parts; Part 2 names the trailheads.
 
 ## The Model
 
@@ -35,13 +35,13 @@ Part 2 is four chapters after this one, each with a narrow job:
 
 The handbook’s later parts follow the technical spine described in the repository overview: intent, Architecture IR, kernel mechanics, the control loop, projections, conversation interfaces, lifecycle and governance, examples, and advanced topics. You do not need to memorize the table. You only need the idea that each part is a layer or a loop segment, not a separate methodology.
 
-When a later chapter names **Architecture IR**, **Kernel**, **validation**, or **governance**, you should already know which region of the map you are zooming into.
+When a later chapter title names intent, IR, kernel, validation, or governance, treat it as a signpost: you are zooming into one region of the same story.
 
 ## The Implications
 
 If you use Part 2 the way it is written, you should be able to read out of order later without losing the whole. Some readers will jump from foundations straight into intent or kernel chapters. That can work if you treat Part 2 as a repair pass whenever the story feels fragmented.
 
-If you skip Part 2 entirely, you may still learn fragments, but you will pay a recurring tax: re-deriving structure from scattered definitions.
+If you skip Part 2 entirely, you may still learn fragments, but you will pay a recurring tax: re-deriving where each kind of explanation lives.
 
 ## Relationship to STE system
 
@@ -54,9 +54,11 @@ Handy return anchors from Part 0 and Part 1:
 - [The STE thesis](../00-foundations/00-08-the-ste-thesis.md)
 - [What STE is and is not](../00-foundations/00-07-what-ste-is-and-is-not.md)
 
+**Next:** Open [What is STE?](02-01-what-is-ste.md) next. It states STE in handbook terms and draws the line between this book and **ste-spec**. The chapters that follow add shared vocabulary, a structural picture, and a time-shaped loop. None of them replace that first definition job.
+
 ## Summary
 
-- Part 2 turns thesis and theory into a navigable system shape before deep dives.
-- The four chapters after this overview cover definition, vocabulary, structure, and lifecycle framing in that order.
-- Later parts zoom into layers; Part 2 supplies the atlas.
+- Part 2 supplies a **reading map** and sequence before deep dives: definition, vocabulary, structure, lifecycle.
+- The four chapters after this overview cover those jobs in that order.
+- Later parts zoom into layers; Part 2 tells you **which layer** each part is about.
 - **ste-spec** defines; the handbook orients.

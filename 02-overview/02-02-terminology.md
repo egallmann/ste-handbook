@@ -77,15 +77,19 @@ Treat this chapter as a stabilization pass aligned to the handbook glossary mean
 | **Certification (or acceptance)** | Framed decision that a **scope** meets **intent** under **rules** with recorded **evidence** and **governance** visibility. | A single external badge only. Handbook usage includes internal acceptance gates. |
 | **Change** | Revisiting **decisions** and **invariants** when **constraints** or reality move; produces new or updated **intent** and new assessment needs. | “Change” as only code churn without revisiting commitments. |
 
+The time-shaped loop (stages, feedback, and repeat) lives in [The STE lifecycle](02-04-the-ste-lifecycle.md). This table only pins words so later prose stays consistent.
+
 ## The Implications
 
 Stable vocabulary lowers the tax on every later chapter. Readers can focus on mechanism instead of translating words. Authors can write shorter explanations because the object behind each term is shared.
 
 ## Relationship to STE system
 
-Use [System overview](02-03-system-overview.md) to see how these terms attach to flows. Use [The STE lifecycle](02-04-the-ste-lifecycle.md) for time-shaped language. Deep dives arrive in Parts 3 through 9; those parts should inherit the meanings here rather than inventing parallel glossaries.
+Deep dives in Parts 3 through 9 should inherit the meanings here rather than inventing parallel glossaries.
 
 When two readings of a term would change an obligation, **ste-spec** and published contracts decide the technical meaning. This chapter orients reading; it does not override the specification.
+
+**Next:** Read [System overview](02-03-system-overview.md) next. The same terms attach to concrete boxes, artifacts, and flows there. Structure comes before the time-shaped story in [The STE lifecycle](02-04-the-ste-lifecycle.md).
 
 ## Summary
 

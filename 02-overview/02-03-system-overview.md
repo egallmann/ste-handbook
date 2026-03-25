@@ -14,7 +14,7 @@ You can know the words and still lack a picture. **Intent**, **Architecture IR**
 
 ## The Reframe
 
-STE is one system with multiple layers. Some layers record commitments. Some layers describe built reality. Some layers assess claims. Some layers publish views. The handbook presents them as cooperating parts of a loop, not as a bag of tools tied together by branding.
+STE behaves as one system with multiple layers. This chapter names the layers and how they connect. For what STE *is* as a discipline, use [What is STE?](02-01-what-is-ste.md); for word senses, use [Terminology](02-02-terminology.md).
 
 ## The Model
 
@@ -45,13 +45,17 @@ These are roles, not a repo checklist:
 
 **Flow C: govern change.** **Governance** revises **intent** or **embodiment** plans → loop returns to Flow A and Flow B.
 
-### The same API example, structurally
+### API example (structure only)
 
-A backward-compatibility **decision** lives in **intent** **artifacts**. Compilation reflects it in **Architecture IR** elements that interfaces and dependents relate to. CI and canary telemetry become **evidence**. Assessment asks whether **embodiment** matches the compatibility **intent** for the declared **scope**. If not, **governance** chooses between repair, revised **intent**, or a governed exception. None of that requires every team to use the same toolchain; it requires the responsibilities to exist.
+Take a backward-compatibility **decision** in **intent** **artifacts**. Compilation ties it to **Architecture IR** elements that interfaces and dependents use. **Embodiment** is running services, gateways, and schemas. **Evidence** enters through CI, telemetry paths, and records that reference **scopes**. **Kernel**-shaped assessment sits where **Architecture IR**, **evidence**, and **rules** meet. **Governance** is the box that receives assessment output and authorizes edits to **intent** or **embodiment** plans. Which choices you make after a mismatch is lifecycle and policy; the structural claim is only that those boxes and edges exist.
 
-### Humans and AI in the diagram
+### Human, agent, and governance interaction points
 
-Humans remain accountable for **decisions**, **governance**, and judgment-shaped acceptance. Agents and automation help author structured **intent**, maintain **Architecture IR**, gather **evidence**, and execute mechanical checks. The boundary is not “human good, machine bad.” The boundary is which steps require explicit **governance** and which steps can be delegated safely when **intent** is machine-readable and **rules** are clear.
+- **Where humans are primary:** accountable **decisions**, **governance** judgments, approval or rejection of exceptions, and acceptance when the work is judgment-shaped.
+- **Where agents and automation help:** drafting and refactoring structured **intent**, maintaining **Architecture IR**, running checks, gathering **evidence**, and executing mechanical steps when **intent** and **rules** are explicit enough to delegate safely.
+- **Where governance must be visible:** any change to normative **intent**, any waiver that alters **constraints** or **invariants**, and any response to sustained non-**conformance** or **drift** that needs an owner.
+
+The boundary is not “human good, machine bad.” The boundary is which steps require explicit **governance** and recorded accountability.
 
 ### Diagram companion
 
@@ -107,6 +111,8 @@ Deeper treatment appears in the part overviews for intent, Architecture IR, kern
 - [Lifecycle and governance overview](../09-lifecycle-governance/09-00-lifecycle-overview.md)
 
 Normative interfaces and behavior belong to **ste-spec** and the implementing repositories named in the handbook README, not to this sketch.
+
+**Next:** Read [The STE lifecycle](02-04-the-ste-lifecycle.md) next. It uses this same structure as a repeating loop over time: intent, **embodiment**, **evidence**, assessment, **conformance**, **change**, and return.
 
 ## Summary
 

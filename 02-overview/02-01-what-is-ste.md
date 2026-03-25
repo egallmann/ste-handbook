@@ -16,15 +16,13 @@ When STE is misfiled, teams import the vocabulary and drop the loop. You get orn
 
 ## The Reframe
 
-STE is a discipline for software-intensive systems under continuous change. It treats **architecture** as the **structure of decisions**, maintained as reviewable **intent** **artifacts** and, where appropriate, compiled into a canonical machine-addressable model (**Architecture IR**). It treats **embodiment** (code, configuration, runtime behavior, operations) as the descriptive side you compare to that **intent**. It treats **validation** as **evidence**-linked assessment of **conformance** under explicit **rules** and **scopes**. It treats **governance** as the durable human and procedural control loop that makes those objects legitimate over time.
-
-That is not a toolchain slogan. It is a claim about what has to stay connected for engineering arguments to remain inspectable.
+The fix is not a louder slogan. It is a precise category: what STE is, what it refuses to be, and which obligations are non-negotiable if the name means anything. The next section states that in one handbook definition you can quote, then tightens scope and boundaries.
 
 ## The Model
 
-### Handbook definition
+### Handbook definition (quotable)
 
-**System of Thought Engineering (STE)** is the practice of engineering software-intensive systems so that **decisions** under **constraints** are recorded, structured, and traceable; **intent** stays distinct from **embodiment**; **architecture** is carried as durable **artifacts** and a canonical **Architecture IR** where compilation applies; change is assessed through **evidence**-linked **validation**; and **governance** closes the loop from assessment to allowed updates. STE is model-driven in the practical sense that shared structure is carried in explicit models and records, not only in chat and tacit team memory. It is architecture-centered because the primary durable commitments are architectural: what the system is allowed to be, how major decisions cohere, and what must remain true.
+> **System of Thought Engineering (STE)** is the practice of engineering software-intensive systems so that **decisions** under **constraints** are recorded, structured, and traceable; **intent** stays distinct from **embodiment**; **architecture** is carried as durable **artifacts** and a canonical **Architecture IR** where compilation applies; change is assessed through **evidence**-linked **validation**; and **governance** closes the loop from assessment to allowed updates. STE is model-driven in the practical sense that shared structure is carried in explicit models and records, not only in chat and tacit team memory. It is architecture-centered because the primary durable commitments are architectural: what the system is allowed to be, how major decisions cohere, and what must remain true.
 
 ### Scope
 
@@ -43,18 +41,13 @@ STE is also not a substitute for **ste-spec**. The specification carries normati
 
 ### A concrete hinge: one API change
 
-Imagine a team changes a public API. **Intent** might be recorded as a decision to keep backward compatibility for two releases. **Embodiment** is what shipped: the schema, the gateway rules, the client breakage you discover in practice. **Evidence** might include contract tests, canary metrics, and support tickets. **Conformance** is the claim that **embodiment** matches the declared compatibility **intent** for an agreed **scope**. If the claim fails, **governance** decides whether to fix code, amend **intent**, or accept a bounded exception with owners and follow-up. STE names each of those objects so the conversation cannot collapse into “we thought it was fine.”
+Imagine a team changes a public API. **Intent** might record a backward-compatibility commitment for two releases. **Embodiment** is what actually shipped. **Evidence** is how you observe that reality (tests, telemetry, tickets). **Conformance** is the explicit claim that **embodiment** matches **intent** for an agreed **scope** under agreed **rules**. STE names those objects so the discussion stays inspectable instead of collapsing into “we thought it was fine.” How those pieces connect in structure and over time is the job of [System overview](02-03-system-overview.md) and [The STE lifecycle](02-04-the-ste-lifecycle.md).
 
 ### Model-driven and architecture-centered
 
 Model-driven, here, means the organization maintains explicit structured representations that multiple parties can inspect and diff, not that diagrams precede thought. Architecture-centered means the spine of durable commitments runs through architectural decisions and invariants, not that every line of code is modeled on a shelf.
 
-### Roles of intent, evidence, governance, and conformance
-
-- **Intent** states what should be true and why.
-- **Evidence** states what you observed about **embodiment**.
-- **Conformance** is the comparison claim between the two under **rules**.
-- **Governance** decides what happens when **conformance** fails, when **constraints** change, or when **intent** must be revised honestly.
+Full handbook senses for **intent**, **evidence**, **conformance**, **governance**, and related terms live in [Terminology](02-02-terminology.md); that chapter exists so definitions do not sprawl across every overview.
 
 ## The Implications
 
@@ -64,13 +57,12 @@ If STE does not match your problem, forcing the vocabulary still produces theate
 
 ## Relationship to STE system
 
-The next chapters make the definition operable. [Terminology](02-02-terminology.md) disambiguates words that look ordinary. [System overview](02-03-system-overview.md) shows how the major pieces connect. [The STE lifecycle](02-04-the-ste-lifecycle.md) places those pieces in time.
+For exact semantics and interfaces, rely on **ste-spec** and published contracts. This chapter states positioning and definition only.
 
-For exact semantics and interfaces, rely on **ste-spec** and published contracts. This chapter is the orientation layer.
+**Next:** Read [Terminology](02-02-terminology.md) next. Shared meanings turn the definition into something you can use when later chapters reuse the same words in narrower contexts. After that, [System overview](02-03-system-overview.md) and [The STE lifecycle](02-04-the-ste-lifecycle.md) show structure and time without re-opening the full definition.
 
 ## Summary
 
 - STE is a discipline that connects **intent**, **Architecture IR**, **embodiment**, **evidence**, **validation**, and **governance** into one inspectable evolution story.
 - It is model-driven and architecture-centered in the handbook sense above, not as a synonym for any single MBSE practice or AI workflow.
-- **Conformance** names the match claim; **evidence** and **rules** make that claim discussable; **governance** makes outcomes accountable.
 - **ste-spec** is authoritative for normative detail; the handbook explains shape and reading order.
