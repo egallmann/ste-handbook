@@ -3,24 +3,29 @@ title: "Evidence"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-26"
 ---
 
 # Evidence
 
+**Artifact type:** **Evidence** record (including **EDR**-shaped observation with provenance).  
+**Role in STE:** Capture structured observation of **embodiment** so assessment and **governance** can point at what was exercised.  
+**Primary concern:** evidence.  
+**Connects to:** **implementation** / **embodiment**, **Architecture IR** scopes, intent obligations, **traceability**, **conformance**.
+
 ## The Problem this artifact solves
 
-Teams confuse “we ran tests” with “we know what we proved.” Raw logs scatter across CI vendors and dashboards without stable identity, scope, or provenance. **Evidence** artifacts exist so observations of **embodiment** are **records**: referencable, tied to what was exercised, and usable in **governance** without re-running the world.
+Teams confuse “we ran tests” with “we know what we proved.” Raw logs scatter across CI vendors and dashboards without stable identity, scope, or provenance. **Evidence** artifact types exist so observations of **embodiment** are **records**: referencable, tied to what was exercised, and usable in **governance** without re-running the world.
 
 ## What the artifact is
 
-**Evidence** in STE is structured observation of **embodiment**: test results, analysis outputs, telemetry snapshots, or similar channels, captured as records (handbook sense: **EDR**-shaped) with enough metadata to interpret them later. An evidence record is not **intent**; it does not define what should be true. It documents what was observed, when, where, and under which scope.
+**Evidence** in STE is structured observation of **embodiment**: test results, analysis outputs, telemetry snapshots, logs, metrics, or similar channels, captured as records (handbook sense: **EDR**-shaped) with enough metadata to interpret them later. An evidence record is not **intent**; it does not define what should be true. It records what was observed, when, where, and under which scope.
 
 This chapter is artifact-shaped. **Kernel** mechanics for ingestion and assessment live in Part 5.
 
 ## How it is used in STE
 
-Pipelines and agents emit **evidence** as changes move. Reviewers and **governance** consume summarized outcomes linked to **Architecture IR** elements and **intent** identifiers. Historical **evidence** supports audits and **drift** analysis when behavior shifts without a matching record change.
+STE **collects and structures** observations into evidence records as changes move; people interpret results and govern follow-up. Reviewers and **governance** consume summaries linked to **Architecture IR** elements and **intent** identifiers. Historical **evidence** supports audits and **drift** analysis when behavior shifts without a matching record change.
 
 **Example:** A contract test run produces a record referencing the consumer and provider interface IDs in IR, the commit SHA, and pass or fail. A **conformance** narrative for a release cites those records instead of a screenshot of a green build.
 

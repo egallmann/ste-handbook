@@ -3,36 +3,56 @@ title: "Part 3: Artifact Layer Overview"
 status: structured
 maturity: L1
 diagrams: true
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-26"
 ---
 
 # Part 3: Artifact Layer Overview
 
 ## The Problem the artifact layer solves
 
-STE is easy to read as a philosophy: intent, evidence, governance, and careful language. That reading fails in practice unless the system also names **what is stored**, **who may change it**, and **how change stays connected** across time. Without a shared artifact layer, teams improvise documents and tools that do not compose. Decisions live in chat, diagrams disagree with repositories, and nobody can say which object is authoritative when they conflict.
+STE is easy to read as a philosophy: intent, evidence, governance, and careful language. That reading fails in practice unless the system also names **what is stored**, **who may change it**, and **how change stays connected** across time. Without a shared artifact layer, teams improvise untyped files and disconnected tools that do not compose. Decisions live in chat, diagrams disagree with repositories, and nobody can say which object is authoritative when they conflict.
 
-The artifact layer is the machinery that makes STE **concrete**. It is where STE stops being only a stance and becomes an implementable system of records and models.
+The artifact layer is the machinery that makes STE **concrete**. It is where STE stops being only a stance and becomes an implementable system of structured records and models.
 
 ## What the artifact layer is
 
-The **artifact layer** is the set of structured artifacts and the canonical **Architecture IR** that STE uses to carry **intent**, describe **embodiment** at the architecture level, bind **evidence** to scopes, and support **traceability** and **conformance** claims. It includes human-authored intent records (for example **ADRs**, requirements, **constraints**, **invariants**), the compiled architecture model, **evidence** records (handbook sense: **EDR**-shaped observation with provenance), and explicit links between them.
+STE defines **canonical artifact types**: named roles, schemas, and lifecycles (normative detail in **ste-spec**). The layer is not a folder of informal write-ups. It is a **system of types** that connect **intent**, **embodiment** (implementation reality), **evidence**, and **governance** in one graph.
+
+The **artifact layer** carries that system: structured records, the canonical **Architecture IR**, bindings from observation to scopes, and the links that make **traceability** and **conformance** inspectable.
+
+### Canonical groupings
+
+- **Intent artifacts:** requirements, **constraints**, decisions (**ADRs**), **invariants** (chapters [Architecture decision records](03-01-architecture-decision-records.md) through [Invariants](03-03-invariants.md)).
+- **Structural artifacts:** architecture models, decompositions, **Architecture IR** ([Architecture model and IR](03-04-architecture-model-and-ir.md)).
+- **Implementation artifacts:** code, infrastructure definitions, configurations. In handbook vocabulary this is **embodiment**. Part 3 explains how the layer **connects** to these; it does not teach implementation craft.
+- **Evidence artifacts:** tests, logs, metrics, runtime observations, and **EDR**-shaped evidence records with provenance ([Evidence](03-05-evidence.md)).
+- **Governance artifacts:** trace links, conformance results, reviews, approvals, lifecycle state records ([Traceability](03-06-traceability.md), [Conformance](03-07-conformance.md); organizational mechanics also in Part 9).
+
+Together these types form the connected **architecture model and governance system** STE uses to relate intent, implementation, and evidence.
 
 It is not the runtime kernel, not the full delivery toolchain, and not informal conversation. Those things interact with the layer; they do not replace it.
 
 ## How artifacts are used in STE
 
-Artifacts are **authored** under **governance**, **revised** when decisions change, **compiled** where STE defines compilation into **Architecture IR**, **observed** through builds and runtime to produce **evidence**, and **assessed** against rules so **conformance** can be stated or challenged. **Projections** render the same underlying commitments for review and teaching without becoming a second source of truth.
+Normative content is **specified** and **governed** by people; STE **materializes and maintains** structured records, **Architecture IR**, **trace** edges, **evidence** records, and **projections** under **ste-spec** and policy. Artifacts **compile**, **revise** on governed change, **observe** **embodiment** to produce **evidence**, and feed **conformance** evaluation. **Projections** render the same underlying commitments for review without becoming a second source of truth.
 
-The part chapters that follow each zoom into one artifact family or cross-cutting concern. Together they should let you draw a path from a decision to a model element to a test result without guessing the intermediate steps.
+The chapters that follow each treat one artifact type or cross-cutting structure. Together they should let you walk from a decision to a model element to a test result without guessing the intermediate links.
 
 ## How the layer connects intent, implementation, and evidence
 
-- **Intent** lives in structured artifacts that state what the organization commits to (decisions, requirements, **constraints**, **invariants**).
-- **Implementation** (in STE handbook sense: code-level and operational **embodiment**) is what actually runs and is built. The artifact layer connects to it through IR elements, scopes, and build or runtime identity, not by collapsing intent into code comments alone.
-- **Evidence** is observation of **embodiment** (tests, telemetry, analysis outputs) captured as records that reference what was exercised. Assessment and **governance** consume those records; they do not replace the artifacts that define what “good” means.
+- **Intent** lives in intent artifact types: decisions, requirements, **constraints**, **invariants**.
+- **Implementation** (**embodiment**) is what is built and run. **Implementation artifacts** are the durable forms of that reality (repos, infra, config). The layer binds them to IR and scopes, not to prose alone.
+- **Evidence** is structured observation of **embodiment**, referencable from intent and IR through **traceability**.
 
-When those three stay structurally linked, **drift** becomes inspectable instead of rhetorical.
+When those three stay linked in the artifact graph, **drift** becomes inspectable instead of rhetorical.
+
+## Human accountability and STE automation
+
+**Humans** remain accountable for: stating goals and **intent**; specifying requirements and **constraints**; making architectural decisions; defining **invariants** and non-negotiable truths; reviewing system-produced records and views; accepting or rejecting judgments and proposed changes under **governance**.
+
+**STE** (automation and governed services that implement STE) is responsible for: materializing **formal records** from governed capture and compilation (including ADR-shaped, requirement, and invariant records where the workflow defines it); maintaining **Architecture IR** and structural consistency; maintaining **trace links** between artifact types; collecting and structuring observations into **evidence** records with provenance; running **conformance** checks and recording outcomes; managing **lifecycle state** where policy assigns that to the system; producing **publications** and **projections** from canonical sources.
+
+**Foundational principle:** humans **specify and govern** intent; STE **formalizes, structures, and maintains** the artifact graph. Formal engineering artifacts in STE are **system-maintained structured representations** grounded in human intent and observed reality, not primarily free-form hand-authored files.
 
 ## How the layer participates in lifecycle and governance
 
@@ -69,15 +89,22 @@ flowchart LR
     EM[Running_and_built_system]
   end
   subgraph proofRegion [Evidence]
-    EV[EDRs_and_tests]
+    EV[EDRs_and_observations]
+  end
+  subgraph govRegion [Governance]
+    TR[Trace_links]
+    CF[Conformance]
   end
   subgraph viewRegion [Projections]
-    PR[Human_readable_views]
+    PR[Human_facing_views]
   end
   IA -->|compilesTo| IR
+  IR --> TR
+  EV --> TR
+  IR --> CF
+  EV --> CF
   IR -->|renderedAs| PR
   EM -->|observedBy| EV
-  IR -->|assessedAgainst| EV
 ```
 
 **Next:** [Architecture decision records](03-01-architecture-decision-records.md).

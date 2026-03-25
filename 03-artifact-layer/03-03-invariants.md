@@ -3,14 +3,19 @@ title: "Invariants"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-26"
 ---
 
 # Invariants
 
+**Artifact type:** **Invariant** record.  
+**Role in STE:** State a property that must hold in a defined scope, as hard **intent** checkable against **embodiment**.  
+**Primary concern:** intent (must-hold truths, distinct from general requirements and **constraints** in [Requirements and constraints](03-02-requirements-and-constraints.md)).  
+**Connects to:** **ADRs**, requirements and **constraints**, **Architecture IR**, **evidence**, **traceability**, **conformance**.
+
 ## The Problem this artifact solves
 
-Systems fail in predictable ways when unstated assumptions break: invariants that “everyone knew” were never written down, or were written in prose that tools cannot use. **Invariants** as **intent** artifacts make those assumptions **explicit**, **stable**, and **eligible for validation** so teams cannot silently violate them across refactors.
+Systems fail when unstated assumptions break: properties “everyone knew” were never captured as typed records, or lived only in prose tools cannot use. **Invariant** artifact types make those assumptions **explicit**, **stable**, and **eligible for validation** so teams cannot silently violate them across refactors.
 
 ## What the artifact is
 
@@ -20,7 +25,7 @@ They are not **evidence** of correctness; they are commitments that **evidence**
 
 ## How it is used in STE
 
-Authors record **invariants** when the organization commits to a property. Static analysis, tests, monitors, or manual audits produce **evidence** against those records. When an **invariant** must change, **governance** updates the artifact and replans **validation** scope.
+People **define** non-negotiable properties; STE stores **invariant** records and links them into IR and checks where **ste-spec** defines it. Static analysis, tests, monitors, or manual audits produce **evidence** against those records. When an **invariant** must change, **governance** updates the record and replans **validation** scope.
 
 **Example:** “No service other than the auth service may read the password hash column.” That **invariant** drives access reviews, schema tooling rules, and database audit **evidence**. Breaking it is either a defect or a governed change to the **invariant**.
 

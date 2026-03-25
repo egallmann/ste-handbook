@@ -3,24 +3,29 @@ title: "Publication versus Projection"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-26"
 ---
 
 # Publication versus Projection
 
+**Artifact type:** **Publication** (canonical, binding records) versus **projection** (derived human-facing representations).  
+**Role in STE:** Separate governed **published state** from regenerable views so **traceability** and review anchor on identifiers in the graph.  
+**Primary concern:** governance (how truth is published and surfaced); secondary: structural views rendered from IR.  
+**Connects to:** **Architecture IR**, intent records, **evidence** summaries, Part 7 **projection** practice.
+
 ## The Problem this artifact solves
 
-Diagrams and documents multiply until each stakeholder has a favorite truth. Review happens on slides while builds use repos, and nobody notices they diverged. STE separates **publication** (what is binding and versioned) from **projection** (derived human views). Without that split, **governance** debates the wrong objects and **traceability** breaks the first time someone edits a PNG.
+Diagrams and exported narratives multiply until each stakeholder has a favorite truth. Review happens on presentation surfaces while builds use repos, and nobody notices they diverged. STE separates **publication** (what is binding and versioned in the artifact system) from **projection** (derived human-facing output). Without that split, **governance** debates the wrong objects and **traceability** breaks the first time someone edits a static image without updating the model.
 
 ## What the artifact is
 
-**Publication** means committing normative or canonical material through STE’s governed paths: **intent** artifacts, compiled **Architecture IR**, published rules, and other records **ste-spec** treats as authoritative inputs. **Projection** means rendering derived views from that material: diagrams, narrative docs, tables, and stakeholder-specific summaries.
+**Publication** means committing normative or canonical material through STE’s governed paths: **intent** records, compiled **Architecture IR**, published rules, and other inputs **ste-spec** treats as authoritative. **Projection** means rendering derived views from that material: diagrams, narrative **projection** outputs, tables, and stakeholder-specific summaries.
 
 A projection may simplify or highlight; it must not silently contradict published truth. If it does, the bug is in the renderer, the data, or the **governance** of what was published.
 
 ## How it is used in STE
 
-Authors change published artifacts under review. Tooling regenerates **projections** from IR and linked sources. Readers consume projections for speed; auditors and automation follow publication identifiers. When a projection looks wrong, the fix is usually in IR or **intent**, not in hand-editing the slide.
+People **approve** changes to **published** records under **governance**; STE **regenerates** **projections** from IR and linked sources. Readers consume projections for speed; auditors and automation follow publication identifiers. When a projection looks wrong, the fix is usually in IR or **intent**, not in hand-editing the rendered view.
 
 **Example:** A C4 diagram is a **projection** from IR. Editing the diagram without updating **intent** or IR creates decorative fiction. The **governance**-correct move is to change the model, recompile, and regenerate.
 

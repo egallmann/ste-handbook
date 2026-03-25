@@ -3,10 +3,15 @@ title: "Requirements and Constraints"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-26"
 ---
 
 # Requirements and Constraints
+
+**Artifact type:** Requirement and **constraint** records (including capability-style obligation bundles).  
+**Role in STE:** State what must be satisfied and which bounds apply, as normative **intent** in the graph.  
+**Primary concern:** intent (obligations and design-space bounds, not “must always hold” properties; those are **invariants**).  
+**Connects to:** **ADRs**, **invariants**, **Architecture IR**, **evidence**, **traceability**, **conformance**.
 
 ## The Problem this artifact solves
 
@@ -16,13 +21,13 @@ Work proceeds from tacit expectations. “We need it fast” and “it must neve
 
 **Requirements** (in STE handbook use) are structured statements of what the system or service must satisfy: behavior, quality attributes, interfaces, or operational outcomes. **Constraints** are bounds on the design space: standards, resource limits, regulatory rules, compatibility floors, or forbidden patterns.
 
-**Capabilities** (what the system must be able to do) are represented here as requirement families or named obligation bundles, not as a separate mystery layer. A capability such as “authenticated clients may revoke sessions” should appear as explicit requirements with owners and review status, the same as any other normative statement.
+**Capabilities** (what the system must be able to do) appear as requirement families or named obligation bundles, not as an untyped aside. A capability such as “authenticated clients may revoke sessions” should appear as explicit requirements with owners and review status, the same as any other normative statement.
 
-These artifacts are **intent**. They are not **Architecture IR** itself, though they compile into or reference IR elements where STE defines that binding.
+These artifact types are **intent**. They are not **Architecture IR** itself, though they compile into or reference IR elements where STE defines that binding. They differ from **invariants** (see [Invariants](03-03-invariants.md)): requirements and **constraints** name obligations and bounds; **invariants** name properties that must hold continuously in scope.
 
 ## How it is used in STE
 
-Authors maintain requirements and **constraints** in structured form. **Compilation** carries them into **Architecture IR** or linked policy where specified. **Validation** plans and **evidence** scopes attach to requirement identifiers so **conformance** can be argued with records, not opinions.
+People **specify** obligations; STE holds requirement and **constraint** records, **compilation**, and links under **ste-spec**. **Validation** plans and **evidence** scopes attach to stable identifiers so **conformance** can be argued with records, not opinions.
 
 **Example:** A latency **constraint** caps P99 for a checkout path. CI performance tests and production SLO monitors produce **evidence** tied to that **constraint** identifier. When the business relaxes the number, the **constraint** artifact updates under **governance**, and scopes for checks update with it.
 

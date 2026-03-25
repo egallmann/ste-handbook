@@ -3,24 +3,29 @@ title: "Architecture Model and IR"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-26"
 ---
 
 # Architecture Model and IR
 
+**Artifact type:** Canonical **Architecture IR** (compiled architecture model and decompositions).  
+**Role in STE:** Provide the **structural** single source of truth for tooling, linking, and **projection** generation.  
+**Primary concern:** structural.  
+**Connects to:** intent artifact types (inputs to compilation), **implementation** identities, **evidence** scopes, **traceability**, **conformance**, **publication** versus **projection**.
+
 ## The Problem this artifact solves
 
-Without a single canonical architecture model, every tool builds its own graph from scraps. Diagrams disagree, diffs are meaningless across teams, and automation cannot tell whether two changes touch the same dependency. **Architecture IR** exists so the system has one **machine-readable** structural truth compiled from **intent** and related inputs, suitable for inspection, **traceability**, and assessment.
+Without a single canonical architecture model, every tool builds its own graph from scraps. Views disagree, diffs are meaningless across teams, and automation cannot tell whether two changes touch the same dependency. **Architecture IR** exists so STE has one **machine-readable** structural truth compiled from **intent** and related inputs, suitable for inspection, **traceability**, and assessment.
 
 ## What the artifact is
 
-**Architecture IR** is STE’s canonical architecture model: entities, relationships, and metadata needed for deterministic tooling. It is the compiled **embodiment** of structural **intent** at the architecture level, not a free-form wiki. “Architecture model” in handbook language refers to that canonical IR and its invariants as a product of compilation.
+**Architecture IR** is STE’s canonical architecture model: entities, relationships, and metadata needed for deterministic tooling. It is the compiled structural **intent** at the architecture level, materialized as graph-shaped records, not an informal wiki. “Architecture model” in handbook language refers to that canonical IR and its consistency rules as a product of compilation.
 
 It is not source code, though it maps to repositories and services. It is not a **projection** diagram, though **projections** render from it.
 
 ## How it is used in STE
 
-**Intent** artifacts compile into IR updates. Tools diff IR across commits, traverse dependency graphs, and drive **validation** rules. The **Kernel** role (Part 5) consumes IR together with **evidence** to assess **conformance** claims. **Projections** (Part 7) render human views from the same IR so review does not fork reality.
+**Intent** drives compilation; STE **maintains** IR updates, diffs, and consistency. Tools traverse the graph and drive **validation** rules. The **Kernel** role (Part 5) consumes IR together with **evidence** to assess **conformance** claims. **Projections** (Part 7) render human-facing views from the same IR so review does not fork reality.
 
 **Example:** A new dependency from the payment service to a marketing database appears in IR after compilation. A policy rule flags it because **intent** forbids that edge. The failure is visible before merge because the model is shared and addressable.
 

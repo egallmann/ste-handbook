@@ -3,26 +3,31 @@ title: "Architecture Decision Records"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-26"
 ---
 
 # Architecture Decision Records
 
+**Artifact type:** Architecture decision record (**ADR**).  
+**Role in STE:** Capture a chosen commitment and its rationale as a stable **intent** record in the artifact graph.  
+**Primary concern:** intent.  
+**Connects to:** requirements and **constraints**, **invariants**, **Architecture IR**, **traceability**, **conformance**.
+
 ## The Problem this artifact solves
 
-Important choices disappear into memory, tickets, or slide decks. Six months later nobody can reconstruct **why** the system looks the way it does, so every redesign repeats old arguments and teams ship incompatible interpretations. **ADRs** (architecture decision records) exist so decisions are **durable**, **addressable**, and **supersedable** without pretending the past never happened.
+Important choices disappear into memory, tickets, or informal decks. Nobody can reconstruct **why** the system looks the way it does, so redesigns repeat arguments and teams ship incompatible interpretations. **ADRs** exist so decisions are **durable**, **addressable**, and **supersedable** without pretending the past never happened.
 
 ## What the artifact is
 
-An **ADR** is a structured record of an architecture **decision**: context, options considered, the chosen commitment, and consequences. In STE it is an **intent** artifact. It is not a design document that describes everything, and it is not source code. It may reference **Architecture IR** elements once compiled, but the record itself carries rationale and decision status that the IR does not replace.
+An **ADR** is a structured record of an architecture **decision**: context, options considered, the chosen commitment, and consequences. In STE it is an **intent** artifact type. It is not an omnibus narrative that describes the whole system, and it is not source code. It may reference **Architecture IR** elements once compiled, but the record carries rationale and decision status that the IR does not replace.
 
 STE may distinguish multiple ADR surfaces (for example lifecycle or packaging) in **ste-spec**. At handbook altitude, treat them as one family: recorded decisions with explicit lifecycle.
 
 ## How it is used in STE
 
-Teams **author** ADRs when a decision is made or revised. **Governance** approves superseding records when the organization changes course. Compilation and tooling **consume** ADR content to align **Architecture IR** and downstream checks. Reviewers use ADRs to ask whether a code or infra change matches recorded commitments.
+People **decide**; STE **materializes** ADR records under governed workflows where **ste-spec** defines capture. **Governance** approves superseding records when the organization changes course. Compilation aligns **Architecture IR** and downstream checks. Reviewers use ADRs to ask whether **embodiment** matches recorded commitments.
 
-**Example:** A team records an ADR that public API v1 remains backward compatible for twelve months. That record becomes the anchor when someone proposes a breaking change: the **governance** question is whether to supersede the ADR, not whether anyone remembers the hallway conversation.
+**Example:** An ADR states public API v1 remains backward compatible for twelve months. A breaking change proposal triggers **governance**: supersede the ADR or reject the change, not a debate about memory.
 
 ## How it relates to intent, implementation, or evidence
 
