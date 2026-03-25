@@ -63,6 +63,6 @@ For exact semantics and interfaces, rely on **ste-spec** and published contracts
 
 ## Summary
 
-- STE is a discipline that connects **intent**, **Architecture IR**, **embodiment**, **evidence**, **validation**, and **governance** into one inspectable evolution story.
-- It is model-driven and architecture-centered in the handbook sense above, not as a synonym for any single MBSE practice or AI workflow.
-- **ste-spec** is authoritative for normative detail; the handbook explains shape and reading order.
+- Treating STE as "just docs," generic MBSE, an AI coding workflow, or a single product misses the integrated obligation in the blockquote definition above.
+- Model-driven and architecture-centered meanings sit in **The Model**; full term senses sit in [Terminology](02-02-terminology.md).
+- **ste-spec** is authoritative for normative detail; this chapter states handbook positioning only.

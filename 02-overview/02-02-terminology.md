@@ -89,7 +89,7 @@ Deep dives in Parts 3 through 9 should inherit the meanings here rather than inv
 
 When two readings of a term would change an obligation, **ste-spec** and published contracts decide the technical meaning. This chapter orients reading; it does not override the specification.
 
-**Next:** Read [System overview](02-03-system-overview.md) next. The same terms attach to concrete boxes, artifacts, and flows there. Structure comes before the time-shaped story in [The STE lifecycle](02-04-the-ste-lifecycle.md).
+**Next:** Continue with [System overview](02-03-system-overview.md). The grouped senses here attach to named boxes, artifacts, and flows there. Read [The STE lifecycle](02-04-the-ste-lifecycle.md) after that for the same structure read as a repeating loop over time.
 
 ## Summary
 

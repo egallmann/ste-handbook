@@ -26,16 +26,16 @@ Think of Part 2 as installing a map before you hike the terrain. The trail detai
 
 Part 2 is four chapters after this one, each with a narrow job:
 
-1. **[What is STE?](02-01-what-is-ste.md)** gives a handbook-level definition, scope, non-goals, and the boundary between this book and **ste-spec**. It answers “what kind of thing is STE?” in language you can repeat accurately.
-2. **[Terminology](02-02-terminology.md)** stabilizes vocabulary by role in the loop, not as a flat glossary. It exists so later chapters do not fight everyday English.
-3. **[System overview](02-03-system-overview.md)** is the first end-to-end structural story: intent capture, canonical model, evidence, assessment, governance feedback, and where humans and agents participate.
-4. **[The STE lifecycle](02-04-the-ste-lifecycle.md)** frames lifecycle language as a continuous control loop, not a one-time documentation phase. It prepares you for operational detail without turning this part into a process manual.
+1. **[What is STE?](02-01-what-is-ste.md)** answers **What is STE?** Definition, scope, non-goals, and handbook versus **ste-spec**.
+2. **[Terminology](02-02-terminology.md)** answers **What do these words mean?** Grouped handbook senses, not a flat glossary.
+3. **[System overview](02-03-system-overview.md)** answers **What are the parts and how do they fit together?** Structure and flows live there.
+4. **[The STE lifecycle](02-04-the-ste-lifecycle.md)** answers **How does STE operate over time?** Loop framing at handbook altitude, not the full lifecycle part.
 
 ### How later parts deepen the map (high level)
 
 The handbook’s later parts follow the technical spine described in the repository overview: intent, Architecture IR, kernel mechanics, the control loop, projections, conversation interfaces, lifecycle and governance, examples, and advanced topics. You do not need to memorize the table. You only need the idea that each part is a layer or a loop segment, not a separate methodology.
 
-When a later chapter title names intent, IR, kernel, validation, or governance, treat it as a signpost: you are zooming into one region of the same story.
+When a later part title signals a layer or loop, treat it as a signpost into one region of the same story.
 
 ## The Implications
 

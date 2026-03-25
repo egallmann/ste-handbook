@@ -116,7 +116,7 @@ Normative interfaces and behavior belong to **ste-spec** and the implementing re
 
 ## Summary
 
-- STE composes **intent** **artifacts**, **Architecture IR**, **projections**, **embodiment**, **evidence**, **Kernel**-shaped assessment, and **governance** into one loop.
+- **Intent** **artifacts**, **Architecture IR**, **projections**, **embodiment**, **evidence**, **Kernel**-shaped assessment, and **governance** are the major structural roles; edges are as in Flows A through C.
 - Three flows cover compile, assess, and govern; real work cycles among them.
 - Humans own **governance** and judgment; automation expands where **intent** and **rules** are explicit.
 - Later parts deepen each region; **ste-spec** defines exact contracts.
