@@ -3,7 +3,7 @@ title: "The STE Thesis"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # The STE Thesis
@@ -18,7 +18,8 @@ The preceding chapters in Part 0 built a single chain, in order:
 4. **Architecture** must be a structured, versioned **artifact**, with **Architecture IR** as the canonical compiled structural model where appropriate.
 5. **Reasoning** about change must run as **governed reasoning**: explicit **rules**, **scope**, and **evidence**.
 6. **Deterministic** assessment must be distinguished honestly from **stochastic** or judgment-shaped work so repeatability is not overstated or abandoned.
-7. **STE** names the discipline that integrates the above into one governed system of evolution (stated in this chapter).
+7. **STE** must be positioned so readers do not mistake it for a framework, a modeling language, or a substitute for neighboring disciplines (stated in [What STE is and is not](00-07-what-ste-is-and-is-not.md)).
+8. **STE** names the discipline that integrates the above into one governed system of evolution (stated in this chapter).
 
 Without a concise statement of what STE *is*, readers still risk treating later chapters as a bag of mechanisms: interesting pieces that do not add up to a discipline.
 
@@ -57,7 +58,7 @@ When exact semantics, wire formats, or admission behavior matter, **ste-spec** a
 
 ### One-sentence distillation
 
-STE is the discipline that integrates explicit **decisions**, durable **intent**, structured **architecture** and **Architecture IR**, **evidence**-linked **validation**, **governed reasoning**, and **governance** into one accountable system of evolution for software-intensive systems.
+The handbook's primary one-sentence positioning definition is in [What STE is and is not](00-07-what-ste-is-and-is-not.md). In integration terms, STE is the discipline that bundles explicit **decisions**, durable **intent**, structured **architecture** and **Architecture IR**, **evidence**-linked **validation**, **governed reasoning**, and **governance** into one accountable system of evolution for software-intensive systems.
 
 ## The Implications
 

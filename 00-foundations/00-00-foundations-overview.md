@@ -3,7 +3,7 @@ title: "Part 0: Foundations Overview"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # Part 0: Foundations
@@ -24,7 +24,7 @@ Part 0 is written as a **logical chain**, not as a set of standalone essays. Eac
 
 **Part 0 establishes the shared foundations that make STE readable as a single discipline, not a collection of mechanisms.**
 
-**System of Thought Engineering (STE)** is the name this handbook gives to a discipline that addresses **lossy reasoning**, implicit **decisions**, thin **intent**, and **drift**. The full thesis is stated at the end of Part 0 so it can read as a conclusion. If you want the compact answer first, read [The STE thesis](00-07-the-ste-thesis.md), then return to the start of the chain.
+**System of Thought Engineering (STE)** is the name this handbook gives to a discipline that addresses **lossy reasoning**, implicit **decisions**, thin **intent**, and **drift**. The full thesis is stated at the end of Part 0 so it can read as a conclusion. If you want category clarity and a one-sentence definition first, read [What STE is and is not](00-07-what-ste-is-and-is-not.md). If you want the integrated thesis first, read [The STE thesis](00-08-the-ste-thesis.md). Then return to the start of the chain.
 
 ## The Model
 
@@ -36,7 +36,8 @@ The chapters in Part 0 build one story in order:
 4. [Architecture as a first-class artifact](00-04-architecture-as-a-first-class-artifact.md) places **architecture** in structured, versioned **artifacts**, which answers where the **architectural** half of **intent** lives between prose and production.
 5. [Governed reasoning](00-05-governed-reasoning.md) constrains **reasoning** with explicit **rules**, **scope**, and **evidence**, which answers how reviews stay repeatable once **artifacts** exist.
 6. [Deterministic versus Stochastic Systems](00-06-deterministic-vs-stochastic-systems.md) separates **deterministic** checks from **stochastic** or judgment-shaped work, which answers what repeatability can honestly mean for assessment.
-7. [The STE thesis](00-07-the-ste-thesis.md) integrates the chain into one discipline and states what to carry into the rest of the book.
+7. [What STE is and is not](00-07-what-ste-is-and-is-not.md) positions STE as an **operational model** and states what STE is not, which answers how to read the rest of the handbook without category errors.
+8. [The STE thesis](00-08-the-ste-thesis.md) integrates the chain into one discipline and states what to carry into the rest of the book.
 
 ### Key terms in Part 0
 
@@ -70,11 +71,11 @@ The chain starts where the work starts: [Engineering as decision-making](00-01-e
 
 ## Relationship to STE system
 
-Part 0 concludes in [The STE thesis](00-07-the-ste-thesis.md), which states what STE is and what to read next in the wider handbook. **ste-spec** remains normative for wire formats, semantics, and admission behavior wherever the handbook points beyond orientation.
+Part 0 concludes in [What STE is and is not](00-07-what-ste-is-and-is-not.md) and [The STE thesis](00-08-the-ste-thesis.md): positioning, then integrated thesis and handoff into the wider handbook. **ste-spec** remains normative for wire formats, semantics, and admission behavior wherever the handbook points beyond orientation.
 
 ## Summary
 
-- Part 0 is one **logical chain** from **decisions** and **constraints** through **lossy reasoning**, **intent** versus **embodiment**, **architecture** as **artifacts**, **governed reasoning**, and **deterministic** versus **stochastic** assessment to the **STE thesis**.
+- Part 0 is one **logical chain** from **decisions** and **constraints** through **lossy reasoning**, **intent** versus **embodiment**, **architecture** as **artifacts**, **governed reasoning**, **deterministic** versus **stochastic** assessment, explicit STE positioning, and the integrated **STE thesis**.
 - **Decisions** close design space; **constraints** reduce options; **traceability** links commitments to **embodiment** and **evidence**.
 - **Drift** and **conformance** require two maintained sides; **validation** is **evidence**-linked assessment under **rules** and **scopes**.
 - **Governance** and **governed reasoning** keep change reviewable over time; **Architecture IR** is the shared compiled structural object for **architecture**.

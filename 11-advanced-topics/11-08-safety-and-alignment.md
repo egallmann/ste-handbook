@@ -14,4 +14,4 @@ Advanced deployments intersect with organizational safety and AI safety conversa
 
 ## Relationship to other chapters
 
-- Safety and constraints (theory) ([chapter](../01-theoretical-foundations/01-08-safety-and-constraints-engineering.md))
+- Safety and constraints (theory) ([chapter](../01-theoretical-foundations/01-06-safety-and-constraints-engineering.md))
