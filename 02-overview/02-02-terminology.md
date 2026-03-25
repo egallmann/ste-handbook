@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Problem
 
-Ordinary words already mean something in engineering culture. “Requirements,” “model,” “validation,” “governance,” and “architecture” are overloaded. If each chapter quietly redefines them, readers will infer parallel systems where STE intends one loop.
+Ordinary words already mean something in engineering culture. "Requirements," "model," "validation," "governance," and "architecture" are overloaded. If each chapter quietly redefines them, readers will infer parallel systems where STE intends one loop.
 
 The cost is not pedantry. The cost is unreviewable arguments: people agree on a word and disagree on the object.
 

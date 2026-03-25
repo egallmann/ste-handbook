@@ -18,6 +18,8 @@ STE behaves as one system with multiple layers. This chapter names the layers an
 
 ## The Model
 
+Read what follows as one system diagram in prose: subsystems as nodes, artifacts on edges, and flows as paths you could draw on a whiteboard. **Evidence** is observation of **embodiment**: tests, telemetry, analysis outputs, and similar channels, captured as **EDR**-shaped records before assessment consumes it.
+
 ### Major conceptual components
 
 These are roles, not a repo checklist:
@@ -112,7 +114,7 @@ Deeper treatment appears in the part overviews for intent, Architecture IR, kern
 
 Normative interfaces and behavior belong to **ste-spec** and the implementing repositories named in the handbook README, not to this sketch.
 
-**Next:** Read [The STE lifecycle](02-04-the-ste-lifecycle.md) next. It uses this same structure as a repeating loop over time: intent, **embodiment**, **evidence**, assessment, **conformance**, **change**, and return.
+**Next:** Read [The STE lifecycle](02-04-the-ste-lifecycle.md) next. It uses this same structure as a repeating loop over time: **intent**, **architecture**, **embodiment**, **evidence**, assessment, **conformance**, **change**, and return.
 
 ## Summary
 

@@ -33,7 +33,7 @@ Part 2 is four chapters after this one, each with a narrow job:
 
 ### How later parts deepen the map (high level)
 
-The handbook’s later parts follow the technical spine described in the repository overview: intent, Architecture IR, kernel mechanics, the control loop, projections, conversation interfaces, lifecycle and governance, examples, and advanced topics. You do not need to memorize the table. You only need the idea that each part is a layer or a loop segment, not a separate methodology.
+Later parts follow the spine described in the repository overview. You do not need to memorize names. You only need the idea that each part is a layer or a loop segment, not a separate methodology.
 
 When a later part title signals a layer or loop, treat it as a signpost into one region of the same story.
 

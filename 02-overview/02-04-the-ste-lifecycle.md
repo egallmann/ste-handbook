@@ -16,7 +16,7 @@ If Part 2 implied a document phase model, it would mis-train readers for everyth
 
 ## The Reframe
 
-Treat STE as a living control loop. Design and acceptance matter, but they repeat. **Evidence** is not a one-time gate. **Certification** or acceptance is a framed decision at a **scope** in time, not a permanent badge that excuses future drift. **Change** returns you to **decisions** and **invariants** with honest updates.
+Treat STE as a living control loop. STE is lifecycle **governance**, not only a first-pass design exercise: legitimacy of change stays on the hook as **intent**, **architecture**, **embodiment**, and **evidence** move. Design and acceptance matter, but they repeat. **Evidence** is not a one-time gate. **Certification** or acceptance is a framed decision at a **scope** in time, not a permanent badge that excuses future drift. **Change** returns you to **decisions** and **invariants** with honest updates.
 
 ## The Model
 
@@ -25,12 +25,13 @@ Treat STE as a living control loop. Design and acceptance matter, but they repea
 At the highest level, STE repeats:
 
 1. **Intent**
-2. **Implementation** (**embodiment**)
-3. **Evidence**
-4. **Assessment**
-5. **Conformance** (the claim **assessment** addresses)
-6. **Change** (authorized updates to **intent**, **embodiment**, or both)
-7. **Repeat**
+2. **Architecture** (**Architecture IR** and **projections**, compiled from structured **intent**)
+3. **Implementation** (**embodiment**)
+4. **Evidence**
+5. **Assessment**
+6. **Conformance** (the claim **assessment** addresses)
+7. **Change** (authorized updates to **intent**, **embodiment**, or both)
+8. **Repeat**
 
 The boxes and edges those steps use are in [System overview](02-03-system-overview.md). This chapter stresses **when** the loop turns, not a second structural diagram.
 
