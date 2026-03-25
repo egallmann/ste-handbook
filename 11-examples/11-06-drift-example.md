@@ -14,4 +14,4 @@ Shows STE’s value in ongoing operation, not only initial design.
 
 ## Relationship to other chapters
 
-- Drift (lifecycle) ([chapter](../10-lifecycle-governance/10-03-drift.md))
+- Drift (lifecycle) ([chapter](../06-governance/06-03-drift.md))

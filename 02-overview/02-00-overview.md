@@ -51,8 +51,8 @@ For normative semantics, schemas, and exact system contracts, **ste-spec** remai
 
 Handy return anchors from Part 0 and Part 1:
 
-- [The STE thesis](../00-foundations/00-08-the-ste-thesis.md)
-- [What STE is and is not](../00-foundations/00-07-what-ste-is-and-is-not.md)
+- [The STE thesis](../00-problem/00-08-the-ste-thesis.md)
+- [What STE is and is not](../00-problem/00-07-what-ste-is-and-is-not.md)
 
 **Next:** Open [What is STE?](02-01-what-is-ste.md) next. It states STE in handbook terms and draws the line between this book and **ste-spec**. The chapters that follow add shared vocabulary, a structural picture, and a time-shaped loop. None of them replace that first definition job.
 

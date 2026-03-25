@@ -104,13 +104,13 @@ If you can sketch the loop, later chapters become “zoom into this region.” I
 
 Deeper treatment appears in the part overviews for intent, Architecture IR, kernel, control loop, projections, conversation, and lifecycle. Useful next anchors:
 
-- [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md)
-- [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md)
-- [Kernel overview](../06-kernel/06-00-kernel-overview.md)
-- [Control loop overview](../07-control-loop/07-00-control-loop-overview.md)
-- [Projections overview](../08-projections/08-00-projections-overview.md)
-- [Conversation engine overview](../09-conversation-engine/09-00-conversation-engine-overview.md)
-- [Lifecycle and governance overview](../10-lifecycle-governance/10-00-lifecycle-overview.md)
+- [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md)
+- [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md)
+- [Kernel overview](../07-kernel/07-00-kernel-overview.md)
+- [Control loop overview](../06-governance/06-07-control-loop-overview.md)
+- [Projections overview](../04-architecture-model/04-08-projections-overview.md)
+- [Conversation engine overview](../09-human-interface/09-00-conversation-engine-overview.md)
+- [Lifecycle and governance overview](../06-governance/06-00-lifecycle-overview.md)
 
 Normative interfaces and behavior belong to **ste-spec** and the implementing repositories named in the handbook README, not to this sketch.
 
