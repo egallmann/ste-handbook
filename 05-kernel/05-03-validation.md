@@ -14,4 +14,4 @@ Validation is the gate for meaningful conformance. This chapter clarifies rule c
 
 ## Relationship to other chapters
 
-- Invariants ([chapter](../03-intent/03-07-invariants.md))
+- Invariants ([chapter](../03-artifact-layer/03-03-invariants.md))

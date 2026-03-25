@@ -14,4 +14,4 @@ Embodiment tightens feedback loops but complicates traceability if unmanaged.
 
 ## Relationship to other chapters
 
-- Decisions ([chapter](../03-intent/03-06-decisions.md))
+- Architecture decision records ([chapter](../03-artifact-layer/03-01-architecture-decision-records.md))

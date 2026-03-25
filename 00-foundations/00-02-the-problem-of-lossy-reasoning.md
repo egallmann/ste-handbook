@@ -112,7 +112,7 @@ None of these outcomes requires negligence. They follow when the information an 
 
 STE does not promise perfect fidelity. No discipline can. It aims to make reasoning **less lossy** by giving rationale durable structure and by connecting that structure to what runs.
 
-Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented, see the [intent model](../03-intent/03-01-intent-model.md). For the canonical structural compilation of **architecture**, see [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For **conformance** assessment, see [validation](../05-kernel/05-03-validation.md).
+Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented as artifacts, see [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md) and [Requirements and constraints](../03-artifact-layer/03-02-requirements-and-constraints.md). For the canonical structural compilation of **architecture**, see [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For **conformance** assessment, see [validation](../05-kernel/05-03-validation.md).
 
 ## Summary
 

@@ -78,7 +78,7 @@ Related orienting chapters:
 
 Lifecycle semantics at the contract level remain in **ste-spec** where applicable.
 
-**Next:** Continue into Part 3 with [Intent layer overview](../03-intent/03-00-intent-layer-overview.md). Part 2 ends with orientation; the handbook becomes operational about **intent** **artifacts**, **decisions**, and **constraints** there. Keep [Part 9: Lifecycle and Governance overview](../09-lifecycle-governance/09-00-lifecycle-overview.md) in view when you need lifecycle mechanics beyond this summary.
+**Next:** Continue into Part 3 with [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md). Part 2 ends with orientation; the handbook becomes operational about **intent** **artifacts**, **decisions**, and **constraints** there. Keep [Part 9: Lifecycle and Governance overview](../09-lifecycle-governance/09-00-lifecycle-overview.md) in view when you need lifecycle mechanics beyond this summary.
 
 ## Summary
 

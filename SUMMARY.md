@@ -37,18 +37,17 @@ Reading order follows Parts 0–11. Links are relative to this repository root.
 - [System overview](02-overview/02-03-system-overview.md)
 - [The STE lifecycle](02-overview/02-04-the-ste-lifecycle.md)
 
-## Part 3 — Intent
+## Part 3 — Artifact layer
 
-- [Intent layer overview](03-intent/03-00-intent-layer-overview.md)
-- [Intent model](03-intent/03-01-intent-model.md)
-- [Architecture decisions](03-intent/03-02-architecture-decisions.md)
-- [ADR-L](03-intent/03-03-adr-l.md)
-- [ADR-PS](03-intent/03-04-adr-ps.md)
-- [ADR-PC](03-intent/03-05-adr-pc.md)
-- [Decisions](03-intent/03-06-decisions.md)
-- [Invariants](03-intent/03-07-invariants.md)
-- [Constraints](03-intent/03-08-constraints.md)
-- [Capabilities](03-intent/03-09-capabilities.md)
+- [Artifact layer overview](03-artifact-layer/03-00-artifact-layer-overview.md)
+- [Architecture decision records](03-artifact-layer/03-01-architecture-decision-records.md)
+- [Requirements and constraints](03-artifact-layer/03-02-requirements-and-constraints.md)
+- [Invariants](03-artifact-layer/03-03-invariants.md)
+- [Architecture model and IR](03-artifact-layer/03-04-architecture-model-and-ir.md)
+- [Evidence](03-artifact-layer/03-05-evidence.md)
+- [Traceability](03-artifact-layer/03-06-traceability.md)
+- [Conformance](03-artifact-layer/03-07-conformance.md)
+- [Publication versus projection](03-artifact-layer/03-08-publication-vs-projection.md)
 
 ## Part 4 — Architecture IR
 

@@ -110,7 +110,7 @@ STE adopts **model-first** discipline, graph-shaped **architecture** knowledge, 
 
 ## Where This Appears in STE
 
-For compilation concepts, see [compilation](../04-architecture-ir/04-04-compilation.md). For **traceability**, see [traceability](../04-architecture-ir/04-05-traceability.md). For **Architecture IR overview**, see [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For **intent** sources, see [intent model](../03-intent/03-01-intent-model.md). Chapters may be skeletal; links are directional.
+For compilation concepts, see [compilation](../04-architecture-ir/04-04-compilation.md). For **traceability**, see [traceability](../04-architecture-ir/04-05-traceability.md). For **Architecture IR overview**, see [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For **intent** sources, see [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md). Chapters may be skeletal; links are directional.
 
 Normative compilation semantics, IR schemas, and tool contracts belong in **ste-spec** where applicable.
 

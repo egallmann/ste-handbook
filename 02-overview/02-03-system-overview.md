@@ -104,7 +104,7 @@ If you can sketch the loop, later chapters become “zoom into this region.” I
 
 Deeper treatment appears in the part overviews for intent, Architecture IR, kernel, control loop, projections, conversation, and lifecycle. Useful next anchors:
 
-- [Intent layer overview](../03-intent/03-00-intent-layer-overview.md)
+- [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md)
 - [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md)
 - [Kernel overview](../05-kernel/05-00-kernel-overview.md)
 - [Control loop overview](../06-control-loop/06-00-control-loop-overview.md)

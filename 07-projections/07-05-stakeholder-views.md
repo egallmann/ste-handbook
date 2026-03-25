@@ -14,4 +14,4 @@ STE fails in organizations if stakeholders cannot navigate outputs. This chapter
 
 ## Relationship to other chapters
 
-- Capabilities ([chapter](../03-intent/03-09-capabilities.md))
+- Capabilities ([chapter](../03-artifact-layer/03-02-requirements-and-constraints.md))

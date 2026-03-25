@@ -14,4 +14,4 @@ Design lifecycle clarity helps teams know what “done” means for an architect
 
 ## Relationship to other chapters
 
-- Intent layer overview ([chapter](../03-intent/03-00-intent-layer-overview.md))
+- Artifact layer overview ([chapter](../03-artifact-layer/03-00-artifact-layer-overview.md))

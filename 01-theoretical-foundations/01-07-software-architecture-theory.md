@@ -94,7 +94,7 @@ STE’s technical spine includes a canonical model and multiple projections. Rea
 
 ## Where This Appears in STE
 
-For architecture views and projections, see [architecture views](../07-projections/07-04-architecture-views.md) and [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For the system model concept, see [the system model](../04-architecture-ir/04-01-the-system-model.md). For **intent** as the home of architectural **commitments**, see [intent model](../03-intent/03-01-intent-model.md). Linked chapters may be outlines; they still orient the reader.
+For architecture views and projections, see [architecture views](../07-projections/07-04-architecture-views.md) and [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For the system model concept, see [the system model](../04-architecture-ir/04-01-the-system-model.md). For **intent** as the home of architectural **commitments**, see [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md). Linked chapters may be outlines; they still orient the reader.
 
 For **implementation** vocabulary, revisit [Intent versus Implementation](../00-foundations/00-03-intent-vs-implementation.md). Normative IR semantics belong in **ste-spec** where applicable.
 

@@ -129,7 +129,7 @@ None of this requires perfect documents or perfect systems. It requires **honest
 ## Relationship to STE system
 
 - [The Problem of Lossy Reasoning](00-02-the-problem-of-lossy-reasoning.md) explains why rationale and commitments thin out over time. Separating **intent** from **embodiment** makes it easier to preserve and check what must survive that journey.
-- The [Intent layer overview](../03-intent/03-00-intent-layer-overview.md) and [Intent model](../03-intent/03-01-intent-model.md) describe where normative structure lives before and alongside compilation into other artifacts.
+- The [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md) and [Architecture decision records](../03-artifact-layer/03-01-architecture-decision-records.md) describe where normative structure lives before and alongside compilation into other artifacts.
 - [Kernel overview](../05-kernel/05-00-kernel-overview.md) introduces the engine that performs assessment over declared structure and evidence.
 - [Runtime Evidence](../05-kernel/05-06-runtime-evidence.md) and [Validation](../05-kernel/05-03-validation.md) cover the evidence and rule side of the control loop.
 - [Drift](../09-lifecycle-governance/09-03-drift.md) names divergence between intent and reality over time; [Governance](../09-lifecycle-governance/09-06-governance.md) covers how organizations keep that comparison legitimate and actionable.
