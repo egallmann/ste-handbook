@@ -44,6 +44,6 @@ Waiving **conformance** for a scope or window is a **governance** act: owner, ra
 - [Evidence](03-05-evidence.md): **conformance** without **evidence** is hollow.
 - [Traceability](03-06-traceability.md): binds obligations to checks and scopes.
 - [Invariants](03-03-invariants.md) and [Requirements and constraints](03-02-requirements-and-constraints.md): common obligation sources.
-- Part 5: [Conformance](../05-kernel/05-07-conformance.md), [Validation](../05-kernel/05-03-validation.md), [The admission model](../05-kernel/05-02-the-admission-model.md) for kernel-oriented depth.
+- Part 5: [Conformance](../06-kernel/06-07-conformance.md), [Validation](../06-kernel/06-03-validation.md), [The admission model](../06-kernel/06-02-the-admission-model.md) for kernel-oriented depth.
 
 Part 3 frames **conformance** as **governance** outcomes in the artifact system; Part 5 frames how assessment produces them.

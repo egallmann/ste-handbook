@@ -73,7 +73,7 @@ The following chapters are the spine of Part 3. Read them in order the first tim
 7. [Conformance](03-07-conformance.md)
 8. [Publication versus projection](03-08-publication-vs-projection.md)
 
-Later parts deepen **Architecture IR** mechanics (Part 4), assessment and the **Kernel** role (Part 5), the control loop (Part 6), **projections** (Part 7), and lifecycle **governance** (Part 9). **ste-spec** remains normative for schemas, interfaces, and exact semantics; this handbook explains how the pieces fit.
+Later parts deepen **Architecture IR** mechanics (Part 4), the **STE lifecycle** stages and control-loop posture (Part 5), assessment and the **Kernel** role (Part 6), the control loop mechanics (Part 7), **projections** (Part 8), and lifecycle **governance** operations (Part 10). **ste-spec** remains normative for schemas, interfaces, and exact semantics; this handbook explains how the pieces fit.
 
 ### Diagram sketch
 

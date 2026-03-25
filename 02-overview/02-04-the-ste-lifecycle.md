@@ -69,20 +69,20 @@ Readers should expect recurring passes, not a single heroic alignment project. D
 
 ## Relationship to STE system
 
-Operational detail, roles, and policy interfaces expand in Part 9 and adjacent chapters. Start from [Part 9: Lifecycle and Governance overview](../09-lifecycle-governance/09-00-lifecycle-overview.md); it may still be skeletal, but it names the deeper roadmap.
+Stage-by-stage lifecycle accountability is in Part 5 ([STE lifecycle overview](../05-ste-lifecycle/05-00-lifecycle-overview.md)). Control loop mechanics are in Part 7. Operational detail, roles, and policy interfaces expand further in Part 10; start from [Part 10: Lifecycle and Governance overview](../10-lifecycle-governance/10-00-lifecycle-overview.md); it may still be skeletal, but it names the deeper roadmap.
 
 Related orienting chapters:
 
-- [Control loop overview](../06-control-loop/06-00-control-loop-overview.md)
-- [Kernel overview](../05-kernel/05-00-kernel-overview.md)
+- [Control loop overview](../07-control-loop/07-00-control-loop-overview.md)
+- [Kernel overview](../06-kernel/06-00-kernel-overview.md)
 
 Lifecycle semantics at the contract level remain in **ste-spec** where applicable.
 
-**Next:** Continue into Part 3 with [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md). Part 2 ends with orientation; the handbook becomes operational about **intent** **artifacts**, **decisions**, and **constraints** there. Keep [Part 9: Lifecycle and Governance overview](../09-lifecycle-governance/09-00-lifecycle-overview.md) in view when you need lifecycle mechanics beyond this summary.
+**Next:** Continue into Part 3 with [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md). Part 2 ends with orientation; the handbook becomes operational about **intent** **artifacts**, **decisions**, and **constraints** there. After Part 4, Part 5 walks the lifecycle in depth. Keep [Part 10: Lifecycle and Governance overview](../10-lifecycle-governance/10-00-lifecycle-overview.md) in view when you need policy-oriented lifecycle mechanics beyond that walkthrough.
 
 ## Summary
 
 - STE lifecycle language describes a repeating loop, not a single pass through documents.
 - Stages cover **intent**, **embodiment**, **evidence**, **assessment**, acceptance or certification, and **change**.
 - **Governance** attaches at transitions, exceptions, and revisions, not only at the end.
-- Part 9 carries operational depth; this chapter prevents waterfall misreadings.
+- Parts 5, 7, and 10 carry deeper lifecycle and operations framing; this chapter prevents waterfall misreadings.

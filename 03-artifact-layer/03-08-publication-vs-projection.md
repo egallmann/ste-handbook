@@ -44,6 +44,6 @@ Policy can require certain **projections** for review boards, but decisions must
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): canonical source for many **projections**.
 - [Architecture decision records](03-01-architecture-decision-records.md): published rationale; projections may summarize ADRs but do not replace them.
 - [Traceability](03-06-traceability.md): links should target published IDs, not projection-only labels.
-- Part 7: [Projections overview](../07-projections/07-00-projections-overview.md), [Diagrams](../07-projections/07-02-diagrams.md), [View consistency](../07-projections/07-06-view-consistency.md).
+- Part 7: [Projections overview](../08-projections/08-00-projections-overview.md), [Diagrams](../08-projections/08-02-diagrams.md), [View consistency](../08-projections/08-06-view-consistency.md).
 
 Part 3 states the distinction; Part 7 develops **projection** practice and risks.

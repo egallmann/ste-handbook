@@ -81,8 +81,8 @@ Later parts of the handbook unpack **intent**, **Architecture IR**, the **Kernel
 - [System overview](../02-overview/02-03-system-overview.md)
 - [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md)
 - [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md)
-- [Kernel overview](../05-kernel/05-00-kernel-overview.md)
-- [Control loop overview](../06-control-loop/06-00-control-loop-overview.md)
+- [Kernel overview](../06-kernel/06-00-kernel-overview.md)
+- [Control loop overview](../07-control-loop/07-00-control-loop-overview.md)
 
 ## Summary
 

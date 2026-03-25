@@ -98,9 +98,9 @@ When rationale thins, the organization pays in predictable ways:
 
 **Inconsistent decisions across teams.** Without shared, checkable statements of **intent**, each group improvises from local context. The system grows a patchwork of compatible-looking choices that do not compose into one coherent **architecture** story.
 
-**Drift between intent and system behavior.** Declared direction (in slides, wikis, or hallway consensus) diverges from what actually runs: an *outcome* of thinned rationale and weak records as much as of any single bad change. The gap is slow until it is expensive. For a fuller treatment of mismatch over time, see [drift](../09-lifecycle-governance/09-03-drift.md).
+**Drift between intent and system behavior.** Declared direction (in slides, wikis, or hallway consensus) diverges from what actually runs: an *outcome* of thinned rationale and weak records as much as of any single bad change. The gap is slow until it is expensive. For a fuller treatment of mismatch over time, see [drift](../10-lifecycle-governance/10-03-drift.md).
 
-**Weak audit and governance.** Auditors and regulators ask for **evidence** that controls and commitments are real. **Governance** asks who may change what, under which rules, with which **traceability**. If reasoning lives only in informal narrative, there is little stable object to version, review, or attach policy to. See [governance](../09-lifecycle-governance/09-06-governance.md).
+**Weak audit and governance.** Auditors and regulators ask for **evidence** that controls and commitments are real. **Governance** asks who may change what, under which rules, with which **traceability**. If reasoning lives only in informal narrative, there is little stable object to version, review, or attach policy to. See [governance](../10-lifecycle-governance/10-06-governance.md).
 
 None of these outcomes requires negligence. They follow when the information an organization needs to steer is not preserved in a form that stays reviewable.
 
@@ -112,7 +112,7 @@ None of these outcomes requires negligence. They follow when the information an 
 
 STE does not promise perfect fidelity. No discipline can. It aims to make reasoning **less lossy** by giving rationale durable structure and by connecting that structure to what runs.
 
-Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented as artifacts, see [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md) and [Requirements and constraints](../03-artifact-layer/03-02-requirements-and-constraints.md). For the canonical structural compilation of **architecture**, see [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For **conformance** assessment, see [validation](../05-kernel/05-03-validation.md).
+Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented as artifacts, see [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md) and [Requirements and constraints](../03-artifact-layer/03-02-requirements-and-constraints.md). For the canonical structural compilation of **architecture**, see [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md). For **conformance** assessment, see [validation](../06-kernel/06-03-validation.md).
 
 ## Summary
 

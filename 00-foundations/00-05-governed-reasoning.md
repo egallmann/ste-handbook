@@ -95,7 +95,7 @@ When it is not practiced:
 
 ## Relationship to STE system
 
-STE connects **intent**, **Architecture IR**, **validation**, **evidence**, and **governance** into a loop meant to support **governed reasoning** end to end. For assessment mechanics, see [validation](../05-kernel/05-03-validation.md) and [deterministic assessment](../05-kernel/05-08-deterministic-assessment.md). For **governance** in the lifecycle, see [governance](../09-lifecycle-governance/09-06-governance.md). For the control loop narrative, see [control loop overview](../06-control-loop/06-00-control-loop-overview.md).
+STE connects **intent**, **Architecture IR**, **validation**, **evidence**, and **governance** into a loop meant to support **governed reasoning** end to end. For assessment mechanics, see [validation](../06-kernel/06-03-validation.md) and [deterministic assessment](../06-kernel/06-08-deterministic-assessment.md). For **governance** in the lifecycle, see [governance](../10-lifecycle-governance/10-06-governance.md). For the control loop narrative, see [control loop overview](../07-control-loop/07-00-control-loop-overview.md).
 
 ## Summary
 

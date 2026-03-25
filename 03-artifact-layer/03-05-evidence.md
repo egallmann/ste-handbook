@@ -44,6 +44,6 @@ Retention, access, and integrity rules for **evidence** are policy matters. **Go
 - [Conformance](03-07-conformance.md): **conformance** claims consume **evidence** under explicit scopes.
 - [Traceability](03-06-traceability.md): links **evidence** records to IR nodes and **intent** IDs.
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): scopes reference canonical elements.
-- Part 5: [Runtime evidence](../05-kernel/05-06-runtime-evidence.md), [Validation](../05-kernel/05-03-validation.md) for assessment behavior.
+- Part 5: [Runtime evidence](../06-kernel/06-06-runtime-evidence.md), [Validation](../06-kernel/06-03-validation.md) for assessment behavior.
 
 This chapter states what the **evidence** artifact is for at the layer level; Part 5 states how assessment uses it.

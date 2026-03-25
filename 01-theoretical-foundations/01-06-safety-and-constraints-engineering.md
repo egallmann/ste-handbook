@@ -98,7 +98,7 @@ STE is not a safety certification scheme and does not replace domain compliance.
 
 ## Where This Appears in STE
 
-For **invariants** as an intent surface, see [Invariants](../03-artifact-layer/03-03-invariants.md). For **constraints**, see [Requirements and constraints](../03-artifact-layer/03-02-requirements-and-constraints.md). For **validation** and **evidence**, see [validation](../05-kernel/05-03-validation.md) and [runtime evidence](../05-kernel/05-06-runtime-evidence.md). For **governance** of exceptions, see [governance](../09-lifecycle-governance/09-06-governance.md). For continuous loop framing, see [the control loop](../06-control-loop/06-01-the-control-loop.md). Targets may be skeletal; links are directional.
+For **invariants** as an intent surface, see [Invariants](../03-artifact-layer/03-03-invariants.md). For **constraints**, see [Requirements and constraints](../03-artifact-layer/03-02-requirements-and-constraints.md). For **validation** and **evidence**, see [validation](../06-kernel/06-03-validation.md) and [runtime evidence](../06-kernel/06-06-runtime-evidence.md). For **governance** of exceptions, see [governance](../10-lifecycle-governance/10-06-governance.md). For continuous loop framing, see [the control loop](../07-control-loop/07-01-the-control-loop.md). Targets may be skeletal; links are directional.
 
 For foundational vocabulary on **conformance** and **validation**, Part 0 remains authoritative: [Intent versus Implementation](../00-foundations/00-03-intent-vs-implementation.md). Normative assurance semantics belong in **ste-spec** and domain standards where applicable.
 

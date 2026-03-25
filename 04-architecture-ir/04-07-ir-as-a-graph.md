@@ -14,4 +14,4 @@ Graph thinking clarifies traceability, projections, and tooling strategies for I
 
 ## Relationship to other chapters
 
-- Semantic graphs (advanced) ([chapter](../11-advanced-topics/11-01-semantic-graphs.md))
+- Semantic graphs (advanced) ([chapter](../12-advanced-topics/12-01-semantic-graphs.md))

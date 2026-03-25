@@ -45,7 +45,7 @@ These are handbook definitions. They align teams; **ste-spec** remains the autho
 
 **Validation:** **Evidence**-linked assessment of whether that **conformance** claim holds under agreed **rules** and **scopes**.
 
-The definitions above are the Part 0 anchor; later chapters **reference** them instead of rephrasing. In prose, **intent** also carries policies and rationale that make commitments intelligible later. It answers "what ought to hold?" and often "why did we commit to that?" **Embodiment** answers "what is actually there?" and "what happened when we exercised it?" **Drift** often grows slowly and unowned; for lifecycle treatment, see [drift](../09-lifecycle-governance/09-03-drift.md).
+The definitions above are the Part 0 anchor; later chapters **reference** them instead of rephrasing. In prose, **intent** also carries policies and rationale that make commitments intelligible later. It answers "what ought to hold?" and often "why did we commit to that?" **Embodiment** answers "what is actually there?" and "what happened when we exercised it?" **Drift** often grows slowly and unowned; for lifecycle treatment, see [drift](../10-lifecycle-governance/10-03-drift.md).
 
 Both sides can be wrong or incomplete. Intent can be stale, vague, or internally inconsistent. Embodiment can be buggy, misconfigured, or absent. **Governance** and assessment need both in view so you can compare them on purpose.
 
@@ -92,9 +92,9 @@ Incident-shaped version of the same confusion: an outage review concludes “we 
 
 **Traceability** is defined in [Engineering as decision-making](00-01-engineering-as-decision-making.md). Here it is enough to stress the interface between **intent** and **embodiment**: a commitment must connect to where it is carried out and to the checks that observe it. That may mean explicit identifiers, links from tooling, compilation from intent into structural artifacts, or repository conventions. The mechanism varies. The requirement does not: if you cannot traverse from intent to **embodiment**, you cannot govern change. You can only react.
 
-**Runtime evidence** captures descriptive reality in a shareable form: what ran, what was measured, what failed, under which version and environment. See [Runtime Evidence](../05-kernel/05-06-runtime-evidence.md).
+**Runtime evidence** captures descriptive reality in a shareable form: what ran, what was measured, what failed, under which version and environment. See [Runtime Evidence](../06-kernel/06-06-runtime-evidence.md).
 
-At the level this handbook cares about, the **control loop** is one sentence: compare intent-shaped artifacts to embodiment-shaped evidence using explicit rules, record the outcome, and act on it. Rules, **scope**, and reporting are part of [Validation](../05-kernel/05-03-validation.md). The loop is only as honest as the separation it assumes.
+At the level this handbook cares about, the **control loop** is one sentence: compare intent-shaped artifacts to embodiment-shaped evidence using explicit rules, record the outcome, and act on it. Rules, **scope**, and reporting are part of [Validation](../06-kernel/06-03-validation.md). The loop is only as honest as the separation it assumes.
 
 ### Mental model
 
@@ -130,9 +130,9 @@ None of this requires perfect documents or perfect systems. It requires **honest
 
 - [The Problem of Lossy Reasoning](00-02-the-problem-of-lossy-reasoning.md) explains why rationale and commitments thin out over time. Separating **intent** from **embodiment** makes it easier to preserve and check what must survive that journey.
 - The [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md) and [Architecture decision records](../03-artifact-layer/03-01-architecture-decision-records.md) describe where normative structure lives before and alongside compilation into other artifacts.
-- [Kernel overview](../05-kernel/05-00-kernel-overview.md) introduces the engine that performs assessment over declared structure and evidence.
-- [Runtime Evidence](../05-kernel/05-06-runtime-evidence.md) and [Validation](../05-kernel/05-03-validation.md) cover the evidence and rule side of the control loop.
-- [Drift](../09-lifecycle-governance/09-03-drift.md) names divergence between intent and reality over time; [Governance](../09-lifecycle-governance/09-06-governance.md) covers how organizations keep that comparison legitimate and actionable.
+- [Kernel overview](../06-kernel/06-00-kernel-overview.md) introduces the engine that performs assessment over declared structure and evidence.
+- [Runtime Evidence](../06-kernel/06-06-runtime-evidence.md) and [Validation](../06-kernel/06-03-validation.md) cover the evidence and rule side of the control loop.
+- [Drift](../10-lifecycle-governance/10-03-drift.md) names divergence between intent and reality over time; [Governance](../10-lifecycle-governance/10-06-governance.md) covers how organizations keep that comparison legitimate and actionable.
 
 ## Summary
 

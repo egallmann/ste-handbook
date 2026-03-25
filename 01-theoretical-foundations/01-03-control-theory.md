@@ -109,7 +109,7 @@ Software organizations already think in loops, even when they do not name them. 
 
 STE’s story centers **intent** versus **embodiment**, **validation** with **evidence**, and **governance** over time. Control vocabulary names the comparison-and-correction shape of that story.
 
-For the operational loop narrative in the handbook, see [the control loop](../06-control-loop/06-01-the-control-loop.md). For **drift** as sustained mismatch, see [drift](../09-lifecycle-governance/09-03-drift.md). For **validation** mechanics, see [validation](../05-kernel/05-03-validation.md). For admission and orchestration logic tied to **evidence**, see material on the **Kernel** in Part 5. Linked chapters may still be outlines; treat them as directional anchors.
+For the operational loop narrative in the handbook, see [the control loop](../07-control-loop/07-01-the-control-loop.md). For **drift** as sustained mismatch, see [drift](../10-lifecycle-governance/10-03-drift.md). For **validation** mechanics, see [validation](../06-kernel/06-03-validation.md). For admission and orchestration logic tied to **evidence**, see material on the **Kernel** in Part 5. Linked chapters may still be outlines; treat them as directional anchors.
 
 For **decisions** as durable **commitments** that function as part of the reference, Part 0 remains foundational: [Engineering as decision-making](../00-foundations/00-01-engineering-as-decision-making.md). For **Architecture IR** as a shared object you can compare projections against, see [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md).
 

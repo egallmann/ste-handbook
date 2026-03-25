@@ -46,4 +46,4 @@ Creating, superseding, or retiring an ADR should follow an explicit path: owner,
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): compilation ties decisions to canonical elements where STE defines that mapping.
 - [Traceability](03-06-traceability.md): links from ADR identifiers to IR nodes and checks.
 - Part 4: [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md) for IR depth.
-- Part 8: [Decision capture](../08-conversation-engine/08-03-decision-capture.md) for conversational capture that must still land in durable records.
+- Part 8: [Decision capture](../09-conversation-engine/09-03-decision-capture.md) for conversational capture that must still land in durable records.

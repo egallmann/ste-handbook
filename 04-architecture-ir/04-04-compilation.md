@@ -14,4 +14,4 @@ Compilation is the gate between authoring and machine reasoning. Understanding i
 
 ## Relationship to other chapters
 
-- The admission model ([chapter](../05-kernel/05-02-the-admission-model.md))
+- The admission model ([chapter](../06-kernel/06-02-the-admission-model.md))

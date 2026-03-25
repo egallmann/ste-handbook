@@ -14,4 +14,4 @@ Change is continuous; diff semantics determine whether teams can reason safely a
 
 ## Relationship to other chapters
 
-- Change management ([chapter](../09-lifecycle-governance/09-02-change-management.md))
+- Change management ([chapter](../10-lifecycle-governance/10-02-change-management.md))

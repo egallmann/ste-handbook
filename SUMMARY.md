@@ -1,6 +1,6 @@
 # STE Handbook — Table of Contents
 
-Reading order follows Parts 0–11. Links are relative to this repository root.
+Reading order follows Parts 0–12. Links are relative to this repository root.
 
 - [STE manifesto (short thesis)](STE-MANIFESTO.md)
 
@@ -60,83 +60,95 @@ Reading order follows Parts 0–11. Links are relative to this repository root.
 - [Diff and change](04-architecture-ir/04-06-diff-and-change.md)
 - [IR as a graph](04-architecture-ir/04-07-ir-as-a-graph.md)
 
-## Part 5 — Kernel
+## Part 5 — STE lifecycle
 
-- [Kernel overview](05-kernel/05-00-kernel-overview.md)
-- [Kernel](05-kernel/05-01-kernel.md)
-- [The admission model](05-kernel/05-02-the-admission-model.md)
-- [Validation](05-kernel/05-03-validation.md)
-- [Divergence](05-kernel/05-04-divergence.md)
-- [Convergence](05-kernel/05-05-convergence.md)
-- [Runtime evidence](05-kernel/05-06-runtime-evidence.md)
-- [Conformance](05-kernel/05-07-conformance.md)
-- [Deterministic assessment](05-kernel/05-08-deterministic-assessment.md)
+- [STE lifecycle overview](05-ste-lifecycle/05-00-lifecycle-overview.md)
+- [Intent formation](05-ste-lifecycle/05-01-intent-formation.md)
+- [Architecture definition](05-ste-lifecycle/05-02-architecture-definition.md)
+- [Implementation and operation](05-ste-lifecycle/05-03-implementation-and-operation.md)
+- [Evidence and observation](05-ste-lifecycle/05-04-evidence-and-observation.md)
+- [Conformance and assessment](05-ste-lifecycle/05-05-conformance-and-assessment.md)
+- [Governance and decision](05-ste-lifecycle/05-06-governance-and-decision.md)
+- [Change and evolution](05-ste-lifecycle/05-07-change-and-evolution.md)
+- [Lifecycle states and transitions](05-ste-lifecycle/05-08-lifecycle-states-and-transitions.md)
 
-## Part 6 — Control loop
+## Part 6 — Kernel
 
-- [Control loop overview](06-control-loop/06-00-control-loop-overview.md)
-- [The control loop](06-control-loop/06-01-the-control-loop.md)
-- [Intent to implementation](06-control-loop/06-02-intent-to-implementation.md)
-- [Implementation to evidence](06-control-loop/06-03-implementation-to-evidence.md)
-- [Evidence to assessment](06-control-loop/06-04-evidence-to-assessment.md)
-- [Assessment to decision](06-control-loop/06-05-assessment-to-decision.md)
-- [Decision to change](06-control-loop/06-06-decision-to-change.md)
-- [Continuous certification](06-control-loop/06-07-continuous-certification.md)
+- [Kernel overview](06-kernel/06-00-kernel-overview.md)
+- [Kernel](06-kernel/06-01-kernel.md)
+- [The admission model](06-kernel/06-02-the-admission-model.md)
+- [Validation](06-kernel/06-03-validation.md)
+- [Divergence](06-kernel/06-04-divergence.md)
+- [Convergence](06-kernel/06-05-convergence.md)
+- [Runtime evidence](06-kernel/06-06-runtime-evidence.md)
+- [Conformance](06-kernel/06-07-conformance.md)
+- [Deterministic assessment](06-kernel/06-08-deterministic-assessment.md)
 
-## Part 7 — Projections
+## Part 7 — Control loop
 
-- [Projections overview](07-projections/07-00-projections-overview.md)
-- [Projections](07-projections/07-01-projections.md)
-- [Diagrams](07-projections/07-02-diagrams.md)
-- [Projection documents](07-projections/07-03-projection-documents.md)
-- [Architecture views](07-projections/07-04-architecture-views.md)
-- [Stakeholder views](07-projections/07-05-stakeholder-views.md)
-- [View consistency](07-projections/07-06-view-consistency.md)
+- [Control loop overview](07-control-loop/07-00-control-loop-overview.md)
+- [The control loop](07-control-loop/07-01-the-control-loop.md)
+- [Intent to implementation](07-control-loop/07-02-intent-to-implementation.md)
+- [Implementation to evidence](07-control-loop/07-03-implementation-to-evidence.md)
+- [Evidence to assessment](07-control-loop/07-04-evidence-to-assessment.md)
+- [Assessment to decision](07-control-loop/07-05-assessment-to-decision.md)
+- [Decision to change](07-control-loop/07-06-decision-to-change.md)
+- [Continuous certification](07-control-loop/07-07-continuous-certification.md)
 
-## Part 8 — Conversation engine
+## Part 8 — Projections
 
-- [Conversation engine overview](08-conversation-engine/08-00-conversation-engine-overview.md)
-- [Conversation interface](08-conversation-engine/08-01-conversation-interface.md)
-- [Interrogation](08-conversation-engine/08-02-interrogation.md)
-- [Decision capture](08-conversation-engine/08-03-decision-capture.md)
-- [Steelman](08-conversation-engine/08-04-steelman.md)
-- [Reference architectures](08-conversation-engine/08-05-reference-architectures.md)
-- [Golden systems](08-conversation-engine/08-06-golden-systems.md)
-- [Agents](08-conversation-engine/08-07-agents.md)
-- [Rule activation](08-conversation-engine/08-08-rule-activation.md)
-- [Human-in-the-loop](08-conversation-engine/08-09-human-in-the-loop.md)
+- [Projections overview](08-projections/08-00-projections-overview.md)
+- [Projections](08-projections/08-01-projections.md)
+- [Diagrams](08-projections/08-02-diagrams.md)
+- [Projection documents](08-projections/08-03-projection-documents.md)
+- [Architecture views](08-projections/08-04-architecture-views.md)
+- [Stakeholder views](08-projections/08-05-stakeholder-views.md)
+- [View consistency](08-projections/08-06-view-consistency.md)
 
-## Part 9 — Lifecycle and governance
+## Part 9 — Conversation engine
 
-- [Lifecycle overview](09-lifecycle-governance/09-00-lifecycle-overview.md)
-- [Design lifecycle](09-lifecycle-governance/09-01-design-lifecycle.md)
-- [Change management](09-lifecycle-governance/09-02-change-management.md)
-- [Drift](09-lifecycle-governance/09-03-drift.md)
-- [Convergence](09-lifecycle-governance/09-04-convergence.md)
-- [Certification](09-lifecycle-governance/09-05-certification.md)
-- [Governance](09-lifecycle-governance/09-06-governance.md)
+- [Conversation engine overview](09-conversation-engine/09-00-conversation-engine-overview.md)
+- [Conversation interface](09-conversation-engine/09-01-conversation-interface.md)
+- [Interrogation](09-conversation-engine/09-02-interrogation.md)
+- [Decision capture](09-conversation-engine/09-03-decision-capture.md)
+- [Steelman](09-conversation-engine/09-04-steelman.md)
+- [Reference architectures](09-conversation-engine/09-05-reference-architectures.md)
+- [Golden systems](09-conversation-engine/09-06-golden-systems.md)
+- [Agents](09-conversation-engine/09-07-agents.md)
+- [Rule activation](09-conversation-engine/09-08-rule-activation.md)
+- [Human-in-the-loop](09-conversation-engine/09-09-human-in-the-loop.md)
 
-## Part 10 — Examples
+## Part 10 — Lifecycle and governance
 
-- [Examples overview](10-examples/10-00-examples-overview.md)
-- [Example system](10-examples/10-01-example-system.md)
-- [Conversation to ADR](10-examples/10-02-conversation-to-adr.md)
-- [ADR to IR](10-examples/10-03-adr-to-ir.md)
-- [IR to projection](10-examples/10-04-ir-to-projection.md)
-- [Conformance example](10-examples/10-05-conformance-example.md)
-- [Drift example](10-examples/10-06-drift-example.md)
+- [Lifecycle overview](10-lifecycle-governance/10-00-lifecycle-overview.md)
+- [Design lifecycle](10-lifecycle-governance/10-01-design-lifecycle.md)
+- [Change management](10-lifecycle-governance/10-02-change-management.md)
+- [Drift](10-lifecycle-governance/10-03-drift.md)
+- [Convergence](10-lifecycle-governance/10-04-convergence.md)
+- [Certification](10-lifecycle-governance/10-05-certification.md)
+- [Governance](10-lifecycle-governance/10-06-governance.md)
 
-## Part 11 — Advanced topics
+## Part 11 — Examples
 
-- [Advanced topics overview](11-advanced-topics/11-00-advanced-topics-overview.md)
-- [Semantic graphs](11-advanced-topics/11-01-semantic-graphs.md)
-- [Embodied decision records](11-advanced-topics/11-02-embodied-decision-records.md)
-- [Deterministic scoring](11-advanced-topics/11-03-deterministic-scoring.md)
-- [Reference architectures](11-advanced-topics/11-04-reference-architectures.md)
-- [Golden systems](11-advanced-topics/11-05-golden-systems.md)
-- [Multi-agent systems](11-advanced-topics/11-06-multi-agent-systems.md)
-- [Policy and governance](11-advanced-topics/11-07-policy-and-governance.md)
-- [Safety and alignment](11-advanced-topics/11-08-safety-and-alignment.md)
+- [Examples overview](11-examples/11-00-examples-overview.md)
+- [Example system](11-examples/11-01-example-system.md)
+- [Conversation to ADR](11-examples/11-02-conversation-to-adr.md)
+- [ADR to IR](11-examples/11-03-adr-to-ir.md)
+- [IR to projection](11-examples/11-04-ir-to-projection.md)
+- [Conformance example](11-examples/11-05-conformance-example.md)
+- [Drift example](11-examples/11-06-drift-example.md)
+
+## Part 12 — Advanced topics
+
+- [Advanced topics overview](12-advanced-topics/12-00-advanced-topics-overview.md)
+- [Semantic graphs](12-advanced-topics/12-01-semantic-graphs.md)
+- [Embodied decision records](12-advanced-topics/12-02-embodied-decision-records.md)
+- [Deterministic scoring](12-advanced-topics/12-03-deterministic-scoring.md)
+- [Reference architectures](12-advanced-topics/12-04-reference-architectures.md)
+- [Golden systems](12-advanced-topics/12-05-golden-systems.md)
+- [Multi-agent systems](12-advanced-topics/12-06-multi-agent-systems.md)
+- [Policy and governance](12-advanced-topics/12-07-policy-and-governance.md)
+- [Safety and alignment](12-advanced-topics/12-08-safety-and-alignment.md)
 
 ## Diagrams (Mermaid)
 

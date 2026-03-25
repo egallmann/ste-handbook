@@ -45,4 +45,4 @@ Relaxing or tightening an **invariant** is a high-signal act. It should trigger 
 - [Architecture decision records](03-01-architecture-decision-records.md): decisions may add, remove, or reinterpret **invariants**.
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): **invariants** often attach to components, interfaces, or data entities in the IR.
 - [Conformance](03-07-conformance.md): **conformance** frequently means “**invariants** and requirements hold under **evidence**.”
-- Part 5: [Validation](../05-kernel/05-03-validation.md) for assessment mechanics.
+- Part 5: [Validation](../06-kernel/06-03-validation.md) for assessment mechanics.

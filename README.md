@@ -21,22 +21,23 @@ This repository publishes the **STE Handbook** manuscript: long-form technical d
 
 The handbook **orients** readers and connects narrative to those authorities; it does not replace them.
 
-## Section map (Parts 0–11)
+## Section map (Parts 0–12)
 
 | Part | Title | Role |
 |------|--------|------|
 | 0 | Foundations | Problem, thesis, and vocabulary precursors. |
 | 1 | Theoretical foundations | Disciplinary scaffolding (systems, information, control, cybernetics, decision theory, safety, software architecture, MBSE, synthesis). |
 | 2 | Overview | What STE is, terminology, system overview, lifecycle summary. |
-| 3 | Intent | Decisions, ADR planes, invariants, constraints, capabilities. |
+| 3 | Artifact layer | ADRs, requirements, invariants, Architecture IR connection, evidence, traceability, conformance, publication versus projection. |
 | 4 | Architecture IR | Canonical system model, compilation, traceability, diff, graph view. |
-| 5 | Kernel | Admission, validation, divergence and convergence, evidence, conformance, deterministic assessment. |
-| 6 | Control loop | End-to-end loop from intent through evidence to decisions and change; continuous certification. |
-| 7 | Projections | Diagrams, documents, views, consistency across projections. |
-| 8 | Conversation engine | Human interface: interrogation, capture, agents, rule activation, human-in-the-loop. |
-| 9 | Lifecycle and governance | Design, change, drift, convergence, certification, governance. |
-| 10 | Examples | Walkthroughs linking conversation → ADR → IR → projections → conformance → drift. |
-| 11 | Advanced topics | Deeper or emergent subjects (semantic graphs, scoring, multi-agent policy, safety framing). |
+| 5 | STE lifecycle | Lifecycle stages: intent through evidence, conformance, governance, change, and state transitions. |
+| 6 | Kernel | Admission, validation, divergence and convergence, evidence, conformance, deterministic assessment. |
+| 7 | Control loop | End-to-end loop from intent through evidence to decisions and change; continuous certification. |
+| 8 | Projections | Diagrams, documents, views, consistency across projections. |
+| 9 | Conversation engine | Human interface: interrogation, capture, agents, rule activation, human-in-the-loop. |
+| 10 | Lifecycle and governance | Design, change, drift, convergence, certification, governance (policy-oriented operations). |
+| 11 | Examples | Walkthroughs linking conversation → ADR → IR → projections → conformance → drift. |
+| 12 | Advanced topics | Deeper or emergent subjects (semantic graphs, scoring, multi-agent policy, safety framing). |
 
 For the full table of contents with links, see **[SUMMARY.md](SUMMARY.md)**. For a short thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
 
@@ -44,7 +45,7 @@ For the full table of contents with links, see **[SUMMARY.md](SUMMARY.md)**. For
 
 1. Open **[SUMMARY.md](SUMMARY.md)** for the complete reading order.
 2. Read **Part 0 (Foundations)** and **Part 2 (Overview)** for orientation, or follow the parts in order for a linear read.
-3. Use the intent → kernel → control-loop parts as the technical spine; use the examples part for integrated walkthroughs.
+3. Use the artifact layer → Architecture IR → lifecycle → kernel → control-loop parts as the technical spine; use the examples part for integrated walkthroughs.
 
 Diagrams under **`diagrams/`** are Mermaid sketches for learning; they are not authoritative architecture definitions. See **[DISCLAIMER.md](DISCLAIMER.md)** for limitations of use.
 

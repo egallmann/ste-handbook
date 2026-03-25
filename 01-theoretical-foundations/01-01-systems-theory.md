@@ -101,7 +101,7 @@ STE’s canonical compiled model, **Architecture IR**, is best understood as a *
 
 When **Architecture IR** is treated as a **system model**, debates about “correctness” can move from opinion to scope. If a reviewer asks whether an edge belongs in the graph, the constructive response is often a **boundary** clarification: is this influence part of the modeled **system**, or is it **environment** captured only as an **interface** obligation?
 
-For how **decisions** shape the **design space**, Part 0 remains the anchor: [Engineering as decision-making](../00-foundations/00-01-engineering-as-decision-making.md). For **drift** as a mismatch problem across evolving wholes, see [drift](../09-lifecycle-governance/09-03-drift.md).
+For how **decisions** shape the **design space**, Part 0 remains the anchor: [Engineering as decision-making](../00-foundations/00-01-engineering-as-decision-making.md). For **drift** as a mismatch problem across evolving wholes, see [drift](../10-lifecycle-governance/10-03-drift.md).
 
 When reviews begin by stabilizing the **boundary**, many fake disagreements dissolve. The remaining disagreements tend to be real **decisions**: what to internalize, what to treat as **environment**, what **interface** contract must hold, and what **invariants** span components.
 

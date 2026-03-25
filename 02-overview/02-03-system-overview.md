@@ -106,11 +106,11 @@ Deeper treatment appears in the part overviews for intent, Architecture IR, kern
 
 - [Artifact layer overview](../03-artifact-layer/03-00-artifact-layer-overview.md)
 - [Architecture IR overview](../04-architecture-ir/04-00-architecture-ir-overview.md)
-- [Kernel overview](../05-kernel/05-00-kernel-overview.md)
-- [Control loop overview](../06-control-loop/06-00-control-loop-overview.md)
-- [Projections overview](../07-projections/07-00-projections-overview.md)
-- [Conversation engine overview](../08-conversation-engine/08-00-conversation-engine-overview.md)
-- [Lifecycle and governance overview](../09-lifecycle-governance/09-00-lifecycle-overview.md)
+- [Kernel overview](../06-kernel/06-00-kernel-overview.md)
+- [Control loop overview](../07-control-loop/07-00-control-loop-overview.md)
+- [Projections overview](../08-projections/08-00-projections-overview.md)
+- [Conversation engine overview](../09-conversation-engine/09-00-conversation-engine-overview.md)
+- [Lifecycle and governance overview](../10-lifecycle-governance/10-00-lifecycle-overview.md)
 
 Normative interfaces and behavior belong to **ste-spec** and the implementing repositories named in the handbook README, not to this sketch.
 
