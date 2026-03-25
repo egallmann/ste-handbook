@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. Technical **feedback** (tests, telemetry) is not enough if the organization around it is not part of the same loop. **Governance** theater, inconsistent **rules**, ignored waivers, and contradictory committees are **second-order** failures: the regulators do not regulate. STE treats that as a real engineering failure mode, not “process overhead.”
+Green tests and loud dashboards do not close a loop by themselves if the organization around them is not part of the same **governance** story. **Governance** theater, inconsistent **rules**, ignored waivers, and contradictory committees are **second-order** failures: the regulators do not regulate. STE treats that as a real engineering failure mode, not “process overhead.”
 
 Software systems are not only technical graphs. They are socio-technical systems: people, incentives, budgets, incident stress, vendor relationships, and regulatory obligations shape behavior as much as APIs do. When engineering discussions ignore that wider loop, “technical fixes” fail repeatedly. The organization adjusts around the tool. The tool becomes theater. The **drift** returns in a new costume.
 
@@ -69,7 +69,7 @@ STE already names **governance** as control over time: review, versioning, escal
 
 Cybernetics also foregrounds **second-order** problems: regulating the regulators. If your **validation** program is inconsistent, you do not only have technical non-conformance. You have a broken **governance** sensor. If your **ADR** process is ignored whenever schedules tighten, you have a **governance** actuator saturation problem. The metaphor is not literal, but it is a useful discipline for diagnosis.
 
-Because STE’s thesis includes **governance** and lifecycle oversight. Because autonomy and tooling amplify whatever loop you actually run, good or bad. Cybernetics is historical context plus a vocabulary for talking about meta-loops without collapsing into “culture eats strategy.”
+STE’s thesis includes **governance** and lifecycle oversight, and autonomy and tooling amplify whatever loop you actually run, good or bad. Cybernetics is historical context plus a vocabulary for talking about meta-loops without collapsing into “culture eats strategy.”
 
 | Field concept | STE concept |
 | --- | --- |
@@ -102,15 +102,15 @@ If you feel the word **governance** too often in STE, treat that frequency as di
 
 ## The Reference Problem
 
-Technical signals are not the whole story. **Governance** is how organizations keep a **reference** honest across months and years: who may change **intent**, how waivers expire, which **rules** are authoritative when tools disagree. The reference problem at this scale is maintenance of the regulating layer itself—**second-order** failures when reviewers contradict each other, bypass paths multiply, or automation ships hidden policy. Cybernetics names that as real engineering risk, not “culture” hand-waving. Without healthy **governance**, **Architecture IR** and **ADRs** become shelf artifacts while production **embodiment** follows a different, undocumented reference.
+Technical signals are not the whole story. **Governance** is how organizations keep a **reference** honest across months and years: who may change **intent**, how waivers expire, which **rules** are authoritative when tools disagree. The reference problem at this scale is maintenance of the regulating layer itself: **second-order** failures when reviewers contradict each other, bypass paths multiply, or automation ships hidden policy. Cybernetics names that as real engineering risk, not “culture” hand-waving. Without healthy **governance**, **Architecture IR** and **ADRs** become shelf artifacts while production **embodiment** follows a different, undocumented reference.
 
 ## If You Ignore This Discipline
 
-**Governance** becomes ritual: ceremonies continue, but waivers, tool defaults, and incentives silently redefine what may ship. **Architecture IR** and **ADRs** can become shelf artifacts while **embodiment** follows a different story. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** **governance** and regulation as part of the real socio-technical loop.
+**Governance** becomes ritual: ceremonies continue, but waivers, tool defaults, and incentives silently redefine what may ship. **Architecture IR** and **ADRs** can become shelf artifacts while **embodiment** follows a different story. When the regulating layer is weak, the same end state arrives: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** **governance** and regulation as part of the real socio-technical loop.
 
 ## Role in the STE Argument
 
-**Control** vocabulary describes comparison and correction; cybernetics widens the loop to institutions, incentives, and meta-regulation. This chapter answers how the reference survives *organizational* change: turnover, schedule pressure, vendor churn, and emergency overrides. It is the bridge from “we measured a gap” to “we authorized a durable response.” STE uses it to insist **governance** is part of the engineered system—tool defaults, waiver practice, escalation paths—not an afterthought. Even good **evidence** fails if nobody legitimate can act on it, and good **intent** fails if **governance** contradicts itself. Human-in-the-loop roles stay structural, which keeps **validation** honest in judgment-shaped domains.
+**Control** vocabulary describes comparison and correction; cybernetics widens the loop to institutions, incentives, and meta-regulation. This chapter answers how the reference survives *organizational* change: turnover, schedule pressure, vendor churn, and emergency overrides. It is the bridge from “we measured a gap” to “we authorized a durable response.” STE uses it to insist **governance** is part of the engineered system (tool defaults, waiver practice, escalation paths), not an afterthought. Even good **evidence** fails if nobody legitimate can act on it, and good **intent** fails if **governance** contradicts itself. Human-in-the-loop roles stay structural, which keeps **validation** honest in judgment-shaped domains.
 
 ## Axioms
 

@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. High-severity failures often trace to implicit authority or silent erosion of mandatory properties. Without explicit **invariants**, **constraints**, and **evidence**, organizations cannot argue assurance or **conformance** with integrity as **embodiment** moves.
+High-severity failures often trace to implicit authority or silent erosion of mandatory properties. Without explicit **invariants**, **constraints**, and **evidence**, organizations cannot argue assurance or **conformance** with integrity as **embodiment** moves.
 
 Some failures are ordinary bugs: wrong output, slow page, annoyed user. Other failures are harms: injury, loss of life, loss of critical public function, catastrophic data compromise, systemic unfairness that becomes structural harm. Safety and assurance fields exist because “try harder” is not a control strategy when consequences are severe.
 
@@ -110,15 +110,17 @@ Part 0 distinguishes **deterministic** checks from **stochastic** or judgment-sh
 
 STE uses **governance** to handle the real world: waivers, incident-driven relaxations, emergency changes. Safety culture’s lesson is not “no exceptions.” It is “exceptions must be visible, time-bounded, and learned from.”
 
+A frequent erosion pattern: an incident produces a “temporary” waiver for a **constraint** everyone knows is load-bearing. The waiver lives in a ticket comment. Six months later it is still in effect, nobody owns expiry, and new features assume the relaxed rule is normal. **Governance** can treat that as undeclared **drift** in **intent**, not as a private operational habit.
+
 Assurance practice distinguishes “find who failed” from “make failure modes less likely.” STE aligns with the second posture structurally: **drift** is treated as a systems property, not a moral verdict. That does not remove accountability. It relocates accountability to **governance** mechanisms: who approved a waiver, what **evidence** supported it, what follow-up **invariant** updates happened.
 
 ## The Reference Problem
 
-Some properties must hold regardless of sprint theater—**invariants** and **constraints** are how STE names non-negotiable reference statements about allowed behavior and **design space**. Safety and **constraints** engineering clarifies that the reference is not only “features shipped” but “hazards bounded, assumptions explicit, assurance argued.” When those statements live only in slides or implicit team habit, **validation** cannot scale rigor with severity, and **governance** cannot tell a waiver from a quiet rewrite. **Conformance** needs crisp must-hold claims and **evidence** that actually tests them; otherwise assurance becomes storytelling while **embodiment** wanders.
+Some properties must hold regardless of sprint theater. **Invariants** and **constraints** are how STE names non-negotiable reference statements about allowed behavior and **design space**. Safety and **constraints** engineering clarifies that the reference is not only “features shipped” but “hazards bounded, assumptions explicit, assurance argued.” When those statements live only in slides or implicit team habit, **validation** cannot scale rigor with severity, and **governance** cannot tell a waiver from a quiet rewrite. **Conformance** needs crisp must-hold claims and **evidence** that actually tests them; otherwise assurance becomes storytelling while **embodiment** wanders.
 
 ## If You Ignore This Discipline
 
-**Invariants** erode and **constraints** blur: severity collapses into vibes, **validation** cannot scale rigor to risk, and **governance** cannot tell a waiver from a quiet rewrite. **Conformance** stays storytelling while **embodiment** wanders. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** explicit **invariants**, **constraints**, and **evidence**-backed assurance language.
+**Invariants** erode and **constraints** blur: severity collapses into vibes, **validation** cannot scale rigor to risk, and **governance** cannot tell a waiver from a quiet rewrite. **Conformance** stays storytelling while **embodiment** wanders. When mandatory properties go soft, the chain tightens fast: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** explicit **invariants**, **constraints**, and **evidence**-backed assurance language.
 
 ## Role in the STE Argument
 

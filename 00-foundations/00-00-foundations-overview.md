@@ -12,7 +12,7 @@ last_reviewed: "2026-03-24"
 
 If you have built or operated software for long enough, you know that engineering is not mostly typing. It is a sequence of choices made under pressure. Those choices echo into every later change, incident review, and conversation about what the system is allowed to become.
 
-Substantial systems are bundles of **decisions** under **constraints**. The running system is the residue of those **decisions**, whether or not anyone can still name them. When the record of commitments is thin, organizations reconstruct **intent** from code, operations, and partial **evidence**. That work is structural, not a verdict on individuals.
+Substantial systems are bundles of **decisions** under **constraints**. The running system is the residue of those **decisions**, whether or not anyone can still name them. When the record of commitments is thin, organizations reconstruct **intent** from code, operations, and partial **evidence**. That reconstruction is a property of the work, not a verdict on individuals.
 
 When **intent** travels mainly through informal channels, **drift** follows: mismatch between what the organization believes it decided and what **embodiment** supports. Without a shared problem statement, later technical chapters read as a bag of mechanisms. With it, they read as answers to questions you already agree are worth asking.
 
@@ -20,24 +20,24 @@ When **intent** travels mainly through informal channels, **drift** follows: mis
 
 The Foundations part of this handbook is not a tutorial and not a sales argument. It is orientation: a careful statement of the problem that makes the rest of the book intelligible as one continuous engineering argument.
 
-Part 0 is written as a **logical chain**, not as a set of standalone essays. Each chapter introduces a gap that the next chapter closes or reframes. By the end, the STE thesis should read as a necessary conclusion, not an early slogan.
+Part 0 is written as a **logical chain**, not as a set of standalone essays. Each chapter earns the next: you need vocabulary for **decisions** before **loss** makes sense; you need **loss** before **intent** versus **embodiment** is urgent; you need that split before **architecture** can be named as a maintained object; and so on through honest limits on repeatability, category clarity, and the thesis. By the end, the STE thesis should read as a necessary conclusion, not an early slogan.
 
-**Part 0 establishes the shared foundations that make STE readable as a single discipline, not a collection of mechanisms.**
+Part 0 establishes the shared foundations that make STE readable as a single discipline, not a collection of mechanisms.
 
 **System of Thought Engineering (STE)** is the name this handbook gives to a discipline that addresses **lossy reasoning**, implicit **decisions**, thin **intent**, and **drift**. The full thesis is stated at the end of Part 0 so it can read as a conclusion. If you want category clarity and a one-sentence definition first, read [What STE is and is not](00-07-what-ste-is-and-is-not.md). If you want the integrated thesis first, read [The STE thesis](00-08-the-ste-thesis.md). Then return to the start of the chain.
 
 ## The Model
 
-The chapters in Part 0 build one story in order:
+The chapters in Part 0 build one story in order. Read them in this order unless you are explicitly jumping for orientation (see the note on [What STE is and is not](00-07-what-ste-is-and-is-not.md) and [The STE thesis](00-08-the-ste-thesis.md) below).
 
-1. [Engineering as decision-making](00-01-engineering-as-decision-making.md) names engineering as **decision-making** under **constraints** and defines **traceability**, so the chain has a precise starting vocabulary.
-2. [The problem of lossy reasoning](00-02-the-problem-of-lossy-reasoning.md) explains why rationale and records degrade across channels and time, which answers why **traceability** does not appear by accident.
-3. [Intent versus Implementation](00-03-intent-vs-implementation.md) separates **intent** from **embodiment** so **drift** and **conformance** are definable, which answers what two sides **validation** must compare.
-4. [Architecture as a first-class artifact](00-04-architecture-as-a-first-class-artifact.md) places **architecture** in structured, versioned **artifacts**, which answers where the **architectural** half of **intent** lives between prose and production.
-5. [Governed reasoning](00-05-governed-reasoning.md) constrains **reasoning** with explicit **rules**, **scope**, and **evidence**, which answers how reviews stay repeatable once **artifacts** exist.
-6. [Deterministic versus Stochastic Systems](00-06-deterministic-vs-stochastic-systems.md) separates **deterministic** checks from **stochastic** or judgment-shaped work, which answers what repeatability can honestly mean for assessment.
-7. [What STE is and is not](00-07-what-ste-is-and-is-not.md) positions STE as an **operational model** and states what STE is not, which answers how to read the rest of the handbook without category errors.
-8. [The STE thesis](00-08-the-ste-thesis.md) integrates the chain into one discipline and states what to carry into the rest of the book.
+1. [Engineering as decision-making](00-01-engineering-as-decision-making.md) fixes vocabulary: **decision**, **constraint**, **design space**, **traceability**. Nothing later is precise without this.
+2. [The problem of lossy reasoning](00-02-the-problem-of-lossy-reasoning.md) names why **traceability** does not emerge from good intentions alone: rationale and structure thin as they move.
+3. [Intent versus Implementation](00-03-intent-vs-implementation.md) splits normative **intent** from descriptive **embodiment** so **drift** and **conformance** are two-sided claims instead of debates.
+4. [Architecture as a first-class artifact](00-04-architecture-as-a-first-class-artifact.md) answers where the **architectural** half of **intent** lives as an object you can version, diff, and link to **embodiment**.
+5. [Governed reasoning](00-05-governed-reasoning.md) answers how reviews and admissions stay repeatable once those objects exist: explicit **rules**, **scope**, and **evidence** expectations.
+6. [Deterministic versus Stochastic Systems](00-06-deterministic-vs-stochastic-systems.md) limits what “repeatable” can mean: honest **deterministic** checks versus **stochastic** or judgment-shaped work.
+7. [What STE is and is not](00-07-what-ste-is-and-is-not.md) fixes category before the capstone: STE as **operational model**, with crisp “is not” guardrails.
+8. [The STE thesis](00-08-the-ste-thesis.md) states the integrated discipline and what to carry into the rest of the book.
 
 ### Key terms in Part 0
 

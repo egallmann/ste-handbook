@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. **Architecture descriptions** are often treated as one-off drawings or tribal knowledge. Without a canonical model, **views** diverge, **intent** becomes unreviewable, and **drift** between description and **embodiment** goes unnoticed until incidents.
+**Architecture descriptions** are often treated as one-off drawings or tribal knowledge. Without a canonical model, **views** diverge, **intent** becomes unreviewable, and **drift** between description and **embodiment** goes unnoticed until incidents.
 
 “Architecture” is an overloaded word. It sometimes means “important.” It sometimes means “diagrams.” It sometimes means “the parts I personally worry about.” That ambiguity is not harmless. It makes **governance** impossible because nobody agrees what must be reviewed. It makes **validation** impossible because nobody agrees what **intent** should say. It makes **drift** invisible because people can always redefine **architecture** to match what shipped.
 
@@ -76,7 +76,7 @@ Modern systems blur boundaries: dynamic configuration, feature flags, autoscalin
 
 STE imports vocabulary for describing software systems as engineering objects: **structure**, **behavior**, **constraints**, **views**, **viewpoints**, and **quality attributes**, plus the insistence that descriptions stay accountable to reality.
 
-Because STE’s technical spine includes a canonical model and multiple projections. Readers from software architecture backgrounds should recognize the lineage. Readers from other backgrounds should get enough vocabulary to read later IR chapters without confusion.
+STE’s technical spine includes a canonical model and multiple projections. Readers from software architecture backgrounds should recognize the lineage. Readers from other backgrounds should get enough vocabulary to read later IR chapters without confusion.
 
 | Field concept | STE concept |
 | --- | --- |
@@ -110,11 +110,11 @@ Architecture and test strategy are not separate worlds. **Invariants** often bec
 
 ## The Reference Problem
 
-Software teams routinely splinter the reference across diagrams, wikis, and tacit expert memory. Architecture theory’s discipline is a canonical *description*: **structure**, **behavior**, and **constraints** stable enough to align **views** and stakeholders. STE names that compiled center **Architecture IR**—not as a pretty picture, but as the shared object projections trace to. Without that canonical layer, **traceability** becomes a post-hoc scavenger hunt and **validation** fights over incompatible sketches. The reference problem here is consolidation: many representations, one authoritative graph-shaped **intent** for the **system** under engineering.
+Software teams routinely splinter the reference across diagrams, wikis, and tacit expert memory. Architecture theory’s discipline is a canonical *description*: **structure**, **behavior**, and **constraints** stable enough to align **views** and stakeholders. STE names that compiled center **Architecture IR**, not as a pretty picture, but as the shared object projections trace to. Without that canonical layer, **traceability** becomes a post-hoc scavenger hunt and **validation** fights over incompatible sketches. The reference problem here is consolidation: many representations, one authoritative graph-shaped **intent** for the **system** under engineering.
 
 ## If You Ignore This Discipline
 
-**Structure** becomes implicit: without a canonical **Architecture IR**, **projections** (architecture literature: **views**) become competing pictures, **traceability** fragments, and **validation** argues over sketches. **Embodiment** diverges in ways no single description still matches, so **drift** hides. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** explicit **structure**, **behavior**, and **constraints** as **intent** aligned to **Architecture IR** and **projections**.
+**Structure** becomes implicit: without a canonical **Architecture IR**, **projections** (architecture literature: **views**) become competing pictures, **traceability** fragments, and **validation** argues over sketches. **Embodiment** diverges in ways no single description still matches, so **drift** hides. Collapse the canonical description and you get the same cumulative failure: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** explicit **structure**, **behavior**, and **constraints** as **intent** aligned to **Architecture IR** and **projections**.
 
 ## Role in the STE Argument
 

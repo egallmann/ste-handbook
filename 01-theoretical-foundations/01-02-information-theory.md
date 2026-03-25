@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. **Intent** must survive handoffs across people, time, and tools. When **intent** moves only through prose, chat, and ad hoc notes, you get **lossy intent transmission**: **decision**-critical distinctions disappear, and **entropy** rises. That is the structural twin of **lossy reasoning** (Part 0): the organization literally cannot recover what was committed.
+Handoffs are where **intent** dies in plain sight. When **intent** moves only through prose, chat, and ad hoc notes, you get **lossy intent transmission**: **decision**-critical distinctions disappear, and informal **entropy** rises. That is the structural twin of **lossy reasoning** (Part 0): the organization literally cannot recover what was committed.
 
 Organizations often treat communication as a soft skill problem and representation as paperwork. That split hides a harder fact: engineering coordination is **information work**. If the organization cannot recover what was decided, what was ruled out, and what must remain true, then **governance** becomes theater. People can be articulate, kind, and busy, and still produce **drift**.
 
@@ -18,7 +18,7 @@ Software engineering runs on representations: tickets, wikis, chat logs, code, c
 
 This is the practical heart of **lossy reasoning**, named elsewhere in this handbook. Information theory, in the narrow slice STE uses, gives vocabulary for that phenomenon without pretending engineering organizations are communication channels with measured bit rates.
 
-The failure mode is moral: “people should communicate better.” The structural story is different: if you rely on lossy channels for **decision**-relevant detail, you should expect **drift** between **intent** and **embodiment**. The surprise is not that humans are imperfect. The surprise is when organizations act shocked that informal memory did not preserve **invariants** across turnover.
+The tempting misread is moral: “people should communicate better.” The structural story is different: if you rely on lossy channels for **decision**-relevant detail, you should expect **drift** between **intent** and **embodiment**. The surprise is not that humans are imperfect. The surprise is when organizations act shocked that informal memory did not preserve **invariants** across turnover.
 
 ## The Field Concept
 
@@ -103,6 +103,8 @@ For **machine-readable intent** as a prerequisite for safe automation, see [What
 
 STE uses information vocabulary to explain why **canonical artifacts** matter: they reduce ambiguous reconstruction. An Architecture Decision Record (**ADR**) is not magic. It is a **lossless**-leaning container for **options**, **constraints**, and consequences relative to most chat threads.
 
+A small, recurring failure: the same service appears as `payments-api` in Terraform, `PaymentsService` in the wiki, and `svc-payments` on dashboards. No single name is wrong. The **entropy** cost is that reviewers must infer equivalence by hand, diffs become noisy, and **traceability** links attach to the wrong node. Stable identifiers in **Architecture IR** are a deliberate **redundancy** against that kind of **noise**.
+
 STE uses the same lens for **Architecture IR**. A canonical graph is a representation chosen so teams can align on identities and relationships. It is not guaranteed to be complete, but it is designed to be **diff**able and inspectable, which is a form of **redundancy** against oral tradition.
 
 **Traceability** is signal preservation across transforms: from **decision** to model element to **implementation** touchpoints to **evidence** of runtime behavior. When **traceability** breaks, organizations rediscover **entropy**: many stories fit the partial facts.
@@ -122,11 +124,11 @@ Finally, compression is not evil. The handbook likes concise writing. The danger
 
 ## The Reference Problem
 
-**Intent** only works as a reference if it survives the channels it travels through. Meetings, chat, and ad hoc docs are **lossy** by default: distinctions blur, options merge, and six months later several plausible stories fit the artifacts you kept. Information-theoretic vocabulary names that failure mode without pretending you can measure the org in bits. **Architecture IR**, structured **ADRs**, and explicit **traceability** are engineering responses: they pick an authoritative representation and preserve identities across transforms so **governance** and **validation** are not arguing over ghosts. **Evidence** packaging matters for the same reason—thin **evidence** reintroduces ambiguity at the worst time, when someone must decide whether **embodiment** matches declared **intent**.
+**Intent** only works as a reference if it survives the channels it travels through. Meetings, chat, and ad hoc docs are **lossy** by default: distinctions blur, options merge, and six months later several plausible stories fit the artifacts you kept. Information-theoretic vocabulary names that failure mode without pretending you can measure the org in bits. **Architecture IR**, structured **ADRs**, and explicit **traceability** are engineering responses: they pick an authoritative representation and preserve identities across transforms so **governance** and **validation** are not arguing over ghosts. **Evidence** packaging matters for the same reason: thin **evidence** reintroduces ambiguity at the worst time, when someone must decide whether **embodiment** matches declared **intent**.
 
 ## If You Ignore This Discipline
 
-**Intent** turns **lossy**: prose-only **ADRs**, chat, and wikis smear distinctions; **machine-readable intent**, **Architecture IR**, and **traceability** never get the job of preserving meaning. **Kernel** automation and mechanical **validation** inherit **noise** and act on the wrong story. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** **intent** encoding and **traceability** across tools and time.
+**Intent** turns **lossy**: prose-only **ADRs**, chat, and wikis smear distinctions; **machine-readable intent**, **Architecture IR**, and **traceability** never get the job of preserving meaning. **Kernel** automation and mechanical **validation** inherit **noise** and act on the wrong story. Once encoding is **lossy**, the downstream chain is hard to stop: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** **intent** encoding and **traceability** across tools and time.
 
 ## Role in the STE Argument
 

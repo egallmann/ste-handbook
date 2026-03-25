@@ -3,14 +3,14 @@ title: "Intent versus Implementation"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # Intent versus Implementation
 
 ## The Problem
 
-The previous chapter named **lossy reasoning** and showed how rationale thins as it moves through people, tools, and time. One reason that loss is so costly is that teams routinely mix two different kinds of claim without noticing.
+**Lossy reasoning** (see [The Problem of Lossy Reasoning](00-02-the-problem-of-lossy-reasoning.md)) makes a hidden category error worse: teams mix two different kinds of claim without noticing.
 
 Engineering organizations constantly talk about "the system." In the same breath they mean what the system is **supposed** to be and what it **actually** is in repositories, configuration, and production. Those are not the same kind of statement.
 
@@ -85,6 +85,8 @@ The table is a compact map. It is not exhaustive; it trains the eye to sort arti
 | (Not applicable: evidence is not intent) | **Evidence**: observations that **embodiment** did or behaved a certain way, with provenance |
 
 **Evidence** sits with **embodiment** because it records what was observed, not what ought to be. The control loop uses **evidence** to test **intent**.
+
+Incident-shaped version of the same confusion: an outage review concludes “we must never bypass the payment fraud check.” Product **intent** in slides agrees. A hotfix path still ships with a feature flag that skips the check for an internal tenant. **Embodiment** now allows what **intent** forbids, but the flag name sounds administrative, so **drift** stays invisible until the wrong customer segment hits it. Clean categories do not prevent mistakes. They make the mistake a **conformance** question instead of a vocabulary fight.
 
 ### Traceability, evidence, and the control loop
 

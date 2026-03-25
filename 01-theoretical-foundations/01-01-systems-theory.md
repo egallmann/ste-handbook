@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. **Intent** and **embodiment** diverge by default unless the **system** under discussion stays stable enough to attach **decisions**, **constraints**, and **evidence** to the same object. When **boundaries** are ambiguous or implicit, **traceability** fails: you cannot truthfully claim **conformance** to **intent** you never pinned to a scope.
+Arguments about correctness go in circles when “the **system**” reshapes between meetings. **Intent** and **embodiment** diverge by default unless the object under discussion stays stable enough to attach **decisions**, **constraints**, and **evidence** to the same scope. When **boundaries** are ambiguous or implicit, **traceability** fails: you cannot truthfully claim **conformance** to **intent** you never pinned down.
 
 Teams argue about “the system” as if the word were self-explanatory. In practice, “the system” shifts shape between meetings. Sometimes it means a deployable service. Sometimes it means the service plus its datastore and queues. Sometimes it means the service plus the platform team’s contracts plus the operators’ runbooks plus the vendor API that nobody owns. Sometimes it means “the product,” which includes humans, incentives, and policy choices that never appear in a repository.
 
@@ -117,11 +117,11 @@ Before you can preserve **intent** or compare **embodiment**, you need a stable 
 
 ## If You Ignore This Discipline
 
-**Boundaries** become unclear: nobody agrees what **Architecture IR** is a model *of*, so **traceability** and scoped **evidence** fail. **Conformance** becomes opinion because “the system” reshapes between meetings. **Governance** cannot assign ownership of change to a stable object. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** **system** definition and **boundaries** (the anchor for every later link).
+**Boundaries** become unclear: nobody agrees what **Architecture IR** is a model *of*, so **traceability** and scoped **evidence** fail. **Conformance** becomes opinion because “the system” reshapes between meetings. **Governance** cannot assign ownership of change to a stable object. When the reference object is unstable, the usual chain follows: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** **system** definition and **boundaries** (the anchor for every later link).
 
 ## Role in the STE Argument
 
-This chapter establishes the **stable object** for every later claim about **intent**, **validation**, and **governance**. **Systems** language is what lets **Architecture IR** be a model *of* something inspectable, not a pile of names. It is also what keeps **drift** debates honest: mismatch only means something when **boundary** and **composition** are explicit. **Traceability** threads from **ADRs** and **invariants** need anchor identities; systems vocabulary names those anchors. **Conformance** compares **embodiment** to a modeled **system**; without boundaries, that comparison collapses into opinion. Later lenses add how signals travel, how loops close, and how institutions regulate change—but they all assume this first pin is in place.
+This chapter establishes the **stable object** for every later claim about **intent**, **validation**, and **governance**. **Systems** language is what lets **Architecture IR** be a model *of* something inspectable, not a pile of names. It is also what keeps **drift** debates honest: mismatch only means something when **boundary** and **composition** are explicit. **Traceability** threads from **ADRs** and **invariants** need anchor identities; systems vocabulary names those anchors. **Conformance** compares **embodiment** to a modeled **system**; without boundaries, that comparison collapses into opinion. Later lenses add how signals travel, how loops close, and how institutions regulate change, but they all assume this first pin is in place.
 
 ## Axioms
 

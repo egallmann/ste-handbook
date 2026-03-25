@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. Engineering is a sequence of **irreversible decisions** under **uncertainty**. If those **decisions** are not recorded, the **design space** silently mutates: teams optimize against code and habit while believing they still honor old **constraints**. **Governance** and **validation** lose their reference.
+Engineering is a sequence of **irreversible decisions** under **uncertainty**. If those **decisions** are not recorded, the **design space** silently mutates: teams optimize against code and habit while believing they still honor old **constraints**. **Governance** and **validation** lose their reference.
 
 Decisions also have audiences. A choice that is obvious to the authors may be opaque to security review, to operations, to a new hire, or to an external auditor. Recording **decisions** is therefore not only about memory over time. It is about aligning multiple perspectives on what is now supposed to be true. Without that alignment, each audience reconstructs **intent** from partial channels, which raises **entropy** and produces avoidable conflict.
 
@@ -79,7 +79,7 @@ Software is faster and more malleable than civil engineering, which makes inform
 
 STE uses decision-theoretic language to motivate **ADRs** and decision lifecycle: capture context, **options**, and consequences; link **decisions** to **invariants** and **constraints**; and make reassessment explicit when **evidence** changes.
 
-Because STE is anchored in “engineering as decision-making under **constraints**.” If **decisions** are not first-class, the rest of the system story collapses into tooling talk.
+STE is anchored in “engineering as decision-making under **constraints**.” If **decisions** are not first-class, the rest of the system story collapses into tooling talk.
 
 | Field concept | STE concept |
 | --- | --- |
@@ -117,15 +117,15 @@ STE encourages matching ceremony to reversal cost. Not every line of code needs 
 
 ## The Reference Problem
 
-A reference is useless if nobody knows which **commitments** actually bound the **design space**. **Decision** theory’s practical gift to STE is explicit **options**, choices, and consequences made durable enough to revisit when **evidence** changes. Architecture Decision Records (**ADRs**) are the archetype: they turn “what we decided” into an addressable artifact **governance** can supersede without amnesia. Without that layer, **intent** collapses into reconstructed lore and **validation** argues against moving targets. Recorded **decisions** also tie **Architecture IR** edges to rationale—structure without **commitments** is a photograph, not an engineering reference.
+A reference is useless if nobody knows which **commitments** actually bound the **design space**. **Decision** theory’s practical gift to STE is explicit **options**, choices, and consequences made durable enough to revisit when **evidence** changes. Architecture Decision Records (**ADRs**) are the archetype: they turn “what we decided” into an addressable artifact **governance** can supersede without amnesia. Without that layer, **intent** collapses into reconstructed lore and **validation** argues against moving targets. Recorded **decisions** also tie **Architecture IR** edges to rationale; structure without **commitments** is a photograph, not an engineering reference.
 
 ## If You Ignore This Discipline
 
-**Commitments** become implicit: the **design space** mutates in merged diffs and oral lore, **traceability** from **Architecture IR** to rationale breaks, and **governance** cannot tell a legitimate pivot from silent **drift**. **ADRs** are the durable shape STE uses to keep **decisions** addressable. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** recorded **commitments** and an explicit **design space**.
+**Commitments** become implicit: the **design space** mutates in merged diffs and oral lore, **traceability** from **Architecture IR** to rationale breaks, and **governance** cannot tell a legitimate pivot from silent **drift**. **ADRs** are the durable shape STE uses to keep **decisions** addressable. Implicit **commitments** accelerate the familiar chain: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** recorded **commitments** and an explicit **design space**.
 
 ## Role in the STE Argument
 
-This chapter supplies the link between stable models and accountable human choice. **Decision** vocabulary makes **ADRs** and successor records non-optional for high-reversal work: they close parts of the **design space** on purpose and make expensive reversals visible. That supports **traceability** from “why this edge exists” to later **embodiment** checks. Assessment outcomes—waivers, accepted risk, demands for more **evidence**—are **decisions** that deserve records. Together with **information** and **control** lenses, this is how STE reconnects **intent** to time: revisable references with audit trails, not frozen plans.
+This chapter supplies the link between stable models and accountable human choice. **Decision** vocabulary makes **ADRs** and successor records non-optional for high-reversal work: they close parts of the **design space** on purpose and make expensive reversals visible. That supports **traceability** from “why this edge exists” to later **embodiment** checks. Assessment outcomes (waivers, accepted risk, demands for more **evidence**) are **decisions** that deserve records. Together with **information** and **control** lenses, this is how STE reconnects **intent** to time: revisable references with audit trails, not frozen plans.
 
 ## Axioms
 

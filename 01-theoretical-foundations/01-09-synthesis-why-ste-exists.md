@@ -18,9 +18,9 @@ STE is the synthesis discipline that connects them.
 
 ## The Failure Mode
 
-Software systems change continuously. **Intent** changes. **Embodiment** changes. Teams, tools, and **constraints** change. Without a canonical representation of **intent**, **decisions**, **constraints**, and **evidence**, organizations lose the ability to know whether the system they have is the system they believe they have.
+Part 1 is not eight ways to say “quality matters.” It is eight partial views of the same delivery reality. **Intent**, **embodiment**, teams, tools, and **constraints** all move. Without a canonical representation of **intent**, **decisions**, **constraints**, and **evidence**, organizations lose the ability to know whether the system they have is the system they believe they have.
 
-Each chapter in Part 1 is honest about partial scope. **Systems** theory helps you name **boundaries**, but it does not, by itself, compile **intent** into a canonical graph. **Information** theory helps you name **lossy** channels, but it does not specify which artifacts should hold **ADRs**. **Control** theory helps you name **feedback**, but it does not install **evidence** practice. **Cybernetics** widens the loop to institutions, but it does not replace **Architecture IR**. **Decision** theory clarifies **commitments**, but it does not automate **conformance** checks. **Safety** and **constraints** engineering sharpen assurance language, but it does not unify architectural description with runtime **validation**. **Software architecture** theory clarifies **views** and **quality attributes**, but it does not mandate a single operational pipeline. **MBSE** promotes model-first discipline, but it does not, in every deployment, center software **embodiment** and toolchain-native **evidence** the way modern delivery demands.
+Each chapter in Part 1 is honest about partial scope. **Systems** theory helps you name **boundaries**, but it does not, by itself, compile **intent** into a canonical graph. **Information** theory helps you name **lossy** channels, but it does not specify which artifacts should hold **ADRs**. **Control** theory helps you name **feedback**, but it does not install **evidence** practice. **Cybernetics** widens the loop to institutions, but it does not replace **Architecture IR**. **Decision** theory clarifies **commitments**, but it does not automate **conformance** checks. **Safety** and **constraints** engineering sharpen assurance language, but neither field, taken alone, unifies architectural description with runtime **validation**. **Software architecture** theory clarifies **views** and **quality attributes**, but it does not mandate a single operational pipeline. **MBSE** promotes model-first discipline, but it does not, in every deployment, center software **embodiment** and toolchain-native **evidence** the way modern delivery demands.
 
 If you stop reading after any one lens, you can still improve practice locally. You can also still fail globally: coherent local language with no shared object for **governance**, **traceability**, and **validation** at software speed.
 
@@ -40,18 +40,7 @@ STE exists to make **intent**, **decisions**, **constraints**, and **evidence** 
 - **Validation** (accountable comparison)
 - **Governance** (authorized change to **intent**, **embodiment**, and **rules**)
 
-Part 1’s lenses are not competitors. They are **inputs** to that single operational story:
-
-| Field lens (Part 1) | STE concept |
-| --- | --- |
-| **Systems** | **Boundary**; **interface**; **Architecture IR** scope |
-| **Information** | **Intent**; **traceability**; **evidence** |
-| **Control** | **Validation**; **conformance**; **intent**; **embodiment**; **governance** |
-| **Cybernetics** | **Governance**; **validation** program health; tool defaults as **governance** |
-| **Decision** | **ADR**; **decision**; **design space** |
-| **Safety** and **constraints** | **Invariant**; **constraint**; **conformance**; **evidence** |
-| **Software architecture** | **Architecture IR**; **projection**; **intent**; **embodiment** |
-| **MBSE** | **Architecture IR**; **compilation**; **intent**; **traceability** |
+Part 1’s lenses are not competitors. They are **inputs** to that single operational story. The tabular map from each lens to STE objects lives in [Part 1 overview](01-00-theory-overview.md); here the point is how those inputs meet, not another copy of the grid.
 
 The diagram below is a sketch, not a normative architecture. If narrative and diagram disagree during drafting, fix the diagram or qualify it.
 
@@ -102,7 +91,7 @@ Individual fields often stop at professional boundaries: the organizational proc
 Without a connected operational stack, strong local practice still leaves a broken reference story. Typical symptoms pile up:
 
 - Diagrams and wikis go stale while pipelines stay green; nobody can tell whether the pictured **system** matches shipped **embodiment**.
-- **ADRs** exist, but they do not thread to tests, telemetry, or **Architecture IR** elements—**decisions** float free of **evidence**.
+- **ADRs** exist, but they do not thread to tests, telemetry, or **Architecture IR** elements, so **decisions** float free of **evidence**.
 - Tests pass while **intent** drifts: checks cover easy surfaces, not the **invariants** and **constraints** that actually matter.
 - **Governance** rituals continue, but waivers and emergencies accumulate without closing loops; regulators contradict each other while **drift** hides in tool defaults.
 - Fast CI/CD ships change faster than any canonical model updates, amplifying silent mismatch between declared and actual **architecture**.
@@ -110,22 +99,11 @@ Without a connected operational stack, strong local practice still leaves a brok
 - Operators respond to incidents without visible links to original **constraints** and **decisions**, so fixes repeat old mistakes.
 - New teams cannot reconstruct why the **design space** was narrowed; they reinvent or violate **commitments** they never saw.
 
-STE does not invent engineering from scratch. It **connects** practices that already exist—**intent**, **Architecture IR**, **validation**, **governance**—into one governable system so the reference survives continuous change.
+STE does not invent engineering from scratch. It **connects** practices that already exist (**intent**, **Architecture IR**, **validation**, **governance**) into one governable system so the reference survives continuous change.
 
 ## What STE Takes From These Fields
 
-STE **imports** vocabulary and mental moves from each lens, as the preceding chapters detailed. It **does not import** authority: borrowed language clarifies mechanisms and failure modes; it does not transfer theorems, certifications, or maturity labels by analogy.
-
-| Field lens (Part 1) | STE concept |
-| --- | --- |
-| **Systems** | **Architecture IR** scope; **boundary**; **interface**; **traceability** |
-| **Information** | **Intent**; **traceability**; **evidence** |
-| **Control** | **Validation**; **conformance**; **drift**; **intent** vs **embodiment** |
-| **Cybernetics** | **Governance**; **validation** under **governance**; waiver discipline |
-| **Decision** | **ADR**; **decision**; **design space** |
-| **Safety** / **constraints** | **Invariant**; **constraint**; **conformance**; **evidence** |
-| **Software architecture** | **Architecture IR**; **projection**; **intent**; **embodiment** |
-| **MBSE** | **Architecture IR**; **compilation**; **traceability** |
+STE **imports** vocabulary and mental moves from each lens, as the preceding chapters detailed. It **does not import** authority: borrowed language clarifies mechanisms and failure modes; it does not transfer theorems, certifications, or maturity labels by analogy. For the compact field-to-STE mapping table, use [Part 1 overview](01-00-theory-overview.md). This section is the additive claim: what the **set** buys you that the rows do not buy alone.
 
 Across Part 1, the recurring imports are:
 
@@ -153,7 +131,7 @@ STE is not a replacement for domain safety engineering, academic control theory,
 
 ## Where This Appears in STE
 
-Part 2 gives the STE-shaped map at book scale: start with [Part 2 — STE overview](../02-overview/02-00-overview.md), then [What is STE?](../02-overview/02-01-what-is-ste.md) and [Terminology](../02-overview/02-02-terminology.md).
+Part 2 gives the STE-shaped map at book scale: start with [Part 2: STE overview](../02-overview/02-00-overview.md), then [What is STE?](../02-overview/02-01-what-is-ste.md) and [Terminology](../02-overview/02-02-terminology.md).
 
 The technical spine that operationalizes this synthesis:
 
@@ -170,11 +148,11 @@ When you read later parts, use Part 1 as a routing layer. If an argument feels l
 
 ## If You Ignore This Chapter
 
-If you skip the synthesis, Part 1 reads like a survey: each lens sounds plausible alone, yet nothing states why they must ship as one operational system. The full chain still runs in reality: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** the combined story—why no single lens closes the loop at software delivery speed, and what STE adds by connecting them.
+If you skip the synthesis, Part 1 reads like a survey: each lens sounds plausible alone, yet nothing states why they must ship as one operational system. In practice you still inherit the same failure chain: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** the combined story: why no single lens closes the loop at software delivery speed, and what STE adds by connecting them.
 
 ## Role in the STE Argument
 
-This chapter states why combination beats any single lens. Part 1 walked from bounded **system** to durable encoding, accountable comparison, institutional **regulation**, recorded **commitments**, mandatory properties, canonical **Architecture IR**, and lifecycle **traceability**; skipping any step leaves **drift** a shortcut away. STE’s response is minimal *connected* structure so **intent**, **decisions**, **constraints**, and **evidence** stay one inspectable story. The table and diagram map inputs to that stance; later parts instantiate it in **Architecture IR**, **Kernel** **validation**, the **control loop**, and lifecycle **governance**.
+This chapter states why combination beats any single lens. Part 1 walked from bounded **system** to durable encoding, accountable comparison, institutional **regulation**, recorded **commitments**, mandatory properties, canonical **Architecture IR**, and lifecycle **traceability**; skipping any step leaves **drift** a shortcut away. STE’s response is minimal *connected* structure so **intent**, **decisions**, **constraints**, and **evidence** stay one inspectable story. The diagram compresses how inputs feed that stance; later parts instantiate it in **Architecture IR**, **Kernel** **validation**, the **control loop**, and lifecycle **governance**.
 
 ## Axioms
 
@@ -184,4 +162,4 @@ This chapter states why combination beats any single lens. Part 1 walked from bo
 - STE exists because software-intensive **embodiment** changes continuously, and **governance** without shared objects becomes **lossy** and **drift**-prone.
 - The handbook’s later parts operationalize this synthesis; **ste-spec** carries normative precision where the manuscript must not guess.
 
-**Next:** [Part 2 — STE overview](../02-overview/02-00-overview.md). For the handbook’s one-sentence STE definition, see [What STE is and is not](../00-foundations/00-07-what-ste-is-and-is-not.md). For the integrated Part 0 thesis, see [The STE thesis](../00-foundations/00-08-the-ste-thesis.md).
+**Next:** [Part 2: STE overview](../02-overview/02-00-overview.md). For the handbook’s one-sentence STE definition, see [What STE is and is not](../00-foundations/00-07-what-ste-is-and-is-not.md). For the integrated Part 0 thesis, see [The STE thesis](../00-foundations/00-08-the-ste-thesis.md).

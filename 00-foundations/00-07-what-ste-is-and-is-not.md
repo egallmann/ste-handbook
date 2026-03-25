@@ -88,7 +88,7 @@ STE is a **synthesis stance** for software-intensive delivery. Established field
 - **Software architecture** helps define structure, **quality attributes**, and **projection** discipline (literature often says **views**; this handbook standardizes on **projection** where STE-native wording matters).
 - **MBSE** helps define model-first lifecycle **traceability** and compilation discipline toward canonical structure.
 
-STE **synthesizes** these inputs into one **operational system** centered on **intent**, **Architecture IR**, **validation**, **evidence**, and **governance**. Part 1 walks each lens with more detail; this chapter only fixes the map.
+STE **synthesizes** these inputs into one **operational system** centered on **intent**, **Architecture IR**, **validation**, **evidence**, and **governance**. Part 1 borrows **mechanisms and vocabulary** from those fields; it does not claim STE is identical to them, and it does not borrow their authority by analogy. Part 1 walks each lens with more detail; this chapter only fixes the map.
 
 ## The Implications
 

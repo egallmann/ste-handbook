@@ -3,14 +3,14 @@ title: "Deterministic versus Stochastic Systems"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # Deterministic versus Stochastic Systems
 
 ## The Problem
 
-The previous chapter introduced **governed reasoning**: **reasoning** under explicit **rules**, **scope**, and **evidence** expectations. That idea invites an optimistic mistake. Teams want **validation** to behave like arithmetic: same inputs, same outputs, universal agreement.
+**Governed reasoning** (see [Governed reasoning](00-05-governed-reasoning.md)) invites an optimistic mistake. Teams want **validation** to behave like arithmetic: same inputs, same outputs, universal agreement.
 
 Parts of software and operations can work that way. Much cannot. Models that assume total **determinism** across the whole lifecycle quietly smuggle in false certainty. Models that treat everything as irreducibly fuzzy make **conformance** untestable and **governance** unenforceable.
 
@@ -33,6 +33,8 @@ The distinction is about what repeatability means for assessment, not about whet
 Neither label is moral. **Deterministic** checks can be wrong if **rules** or **scope** are wrong. **Stochastic** components can be governed if expectations are explicit (confidence intervals, error budgets, human review triggers).
 
 **Governed reasoning** requires saying which layer you are on and what kind of repeatability you are promising.
+
+STE does not make design **deterministic**. Creative work, uncertain trade space, and operating reality stay messy. What STE targets is more modest and more enforceable: **comparison** (same rule, same inputs), **gates** (explicit pass/fail where honest), and **governance records** (what was decided, under what **scope**, with what **evidence**) that teams can revisit without re-deriving the story from memory.
 
 ## The Model
 
@@ -87,7 +89,7 @@ Honesty preserves trust. Readers should know where the organization is running a
 
 ## Where this leads
 
-If **governed reasoning** must be honest about what can repeat and what cannot, then the pieces of Part 0 collapse into one integrated discipline: explicit **decisions**, durable **intent**, structured **architecture**, **evidence**-linked **validation**, and **governance** that keeps the loop from sliding back into informal argument. The next chapter states that integration as the STE thesis.
+If **governed reasoning** must be honest about what can repeat and what cannot, the Part 0 argument is ready for positioning: what STE names, what it refuses to be mistaken for, and how the pieces fit as one **operational model**. The next chapter is [What STE is and is not](00-07-what-ste-is-and-is-not.md). The capstone [The STE thesis](00-08-the-ste-thesis.md) then states the integrated discipline in one place.
 
 ## Relationship to STE system
 

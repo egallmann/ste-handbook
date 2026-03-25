@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. You cannot steer what you do not measure against a declared reference. If **intent** is vague or unrecorded, **validation** has nothing to compare **embodiment** to, and **drift** becomes invisible until pain arrives.
+You cannot steer what you do not measure against a declared reference. If **intent** is vague or unrecorded, **validation** has nothing to compare **embodiment** to, and **drift** becomes invisible until pain arrives.
 
 Engineers are not confused about whether software changes over time. They are confused about whether the organization is steering change, or only reacting after pain. Steering requires a declared target, a measurement practice, and authorized corrections. Reaction requires none of those. Reaction can look busy while **error** grows.
 
@@ -117,19 +117,21 @@ For **decisions** as durable **commitments** that function as part of the refere
 
 This connects directly to **Kernel** framing in later chapters: orchestration that consumes **evidence** and contracts to support admission and assessment. The handbook does not promise that all important properties reduce to automatic gates. It does promise that hiding **error** is a predictable failure mode.
 
+A common loop-theater pattern: the pipeline is green, the **reference** **invariant** everyone cares about was never declared in **intent**, and the tests only exercise happy paths. **Embodiment** can violate the property teams *believe* they have while **evidence** stays superficially reassuring. Control vocabulary is a way to ask whether the measured variable matches the declared reference, not whether activity happened.
+
 **STE is not claiming a literal control system** unless normative specification states concrete dynamics, signals, and mechanisms in those terms. Control metaphors do not determine organizational politics or replace domain expertise. If you cannot name the **evidence** channel, you do not get to claim you are “closing the loop.” **Validation** is a measurement discipline, not a ritual. “Continuous” means the loop is designed on a cadence that matches risk and **constraints**, not that every property is checked every second.
 
 ## The Reference Problem
 
-Control vocabulary sharpens a distinction STE cannot fudge: there is a declared **reference**—**intent**, **invariants**, recorded **ADRs**—and there is what you actually **measure** through **embodiment** and **evidence**. **Drift** is sustained or unowned **error** between them. The reference problem here is not only “write it down,” but “make comparison accountable.” If **validation** cannot name both sides of the gap, organizations celebrate motion while **non-conformance** hides in plain sight. Feedforward mitigations help, but assumptions rot; **feedback** tied to honest **evidence** is how teams discover when the reference and reality diverged.
+Control vocabulary sharpens a distinction STE cannot fudge: there is a declared **reference** (**intent**, **invariants**, recorded **ADRs**), and there is what you actually **measure** through **embodiment** and **evidence**. **Drift** is sustained or unowned **error** between them. The reference problem here is not only “write it down,” but “make comparison accountable.” If **validation** cannot name both sides of the gap, organizations celebrate motion while **non-conformance** hides in plain sight. Feedforward mitigations help, but assumptions rot; **feedback** tied to honest **evidence** is how teams discover when the reference and reality diverged.
 
 ## If You Ignore This Discipline
 
-**Validation** becomes opinion: nobody names **reference** (**intent**) versus **measurement** (**evidence** of **embodiment**), so **conformance** stays unknown while activity continues. **Governance** cannot authorize real corrections when loops are theater. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** accountable **validation** and feedback against a declared reference.
+**Validation** becomes opinion: nobody names **reference** (**intent**) versus **measurement** (**evidence** of **embodiment**), so **conformance** stays unknown while activity continues. **Governance** cannot authorize real corrections when loops are theater. If you never close the comparison honestly, you still get the same cumulative story: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** accountable **validation** and feedback against a declared reference.
 
 ## Role in the STE Argument
 
-This chapter maps **intent** to reference, **embodiment** plus **evidence** to measurement, and **validation** to the accountable comparison step—so **drift** is not a moral accusation but a describable gap. STE uses loop language without claiming every organization is a thermostat: the value is naming **error**, allowed **actuators**, and **governance** outcomes. That framing connects **Kernel** work, **conformance** claims, and lifecycle review: all are variations on closing a gap against declared **intent**. Control language also sets expectations for honesty about delay and partial observability, which prevents **governance** theater from masquerading as stability.
+This chapter maps **intent** to reference, **embodiment** plus **evidence** to measurement, and **validation** to the accountable comparison step, so **drift** is not a moral accusation but a describable gap. STE uses loop language without claiming every organization is a thermostat: the value is naming **error**, allowed **actuators**, and **governance** outcomes. That framing connects **Kernel** work, **conformance** claims, and lifecycle review: all are variations on closing a gap against declared **intent**. Control language also sets expectations for honesty about delay and partial observability, which prevents **governance** theater from masquerading as stability.
 
 ## Axioms
 

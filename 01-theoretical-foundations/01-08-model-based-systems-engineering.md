@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Software systems change continuously. Disconnected documents and tool silos make humans the integration layer; **drift** is the default. The **toolchain trap** is worse: a model repository without shared semantics produces pretty graphs and the same **entropy** as a wiki nobody updates.
+Disconnected documents and tool silos make humans the integration layer; **drift** is the default. The **toolchain trap** is worse: a model repository without shared semantics produces pretty graphs and the same **entropy** as a wiki nobody updates.
 
 Large engineered systems, especially systems-of-systems, generate overwhelming paperwork when every artifact is a separate document with manual cross-links. Requirements live in one place. Behavior specs live in another. Safety analyses live in another still. When change happens, humans become the integration layer. They copy, paste, reconcile, and hope. **Drift** is not surprising. It is the default output of that workflow.
 
@@ -89,7 +89,7 @@ Software teams often treat repositories as the record and everything else as com
 
 ## What STE Takes From This Field
 
-Because readers will compare STE to **MBSE** whether or not the handbook invites the comparison. Explicit comparison reduces misunderstanding and prevents false authority transfers (“**MBSE** solved this, therefore STE is proven”).
+Readers will compare STE to **MBSE** whether or not the handbook invites the comparison. Explicit comparison reduces misunderstanding and prevents false authority transfers (“**MBSE** solved this, therefore STE is proven”).
 
 STE adopts **model-first** discipline, graph-shaped **architecture** knowledge, lifecycle-connected **traceability**, and controlled change patterns, without importing every **MBSE** standard or program wholesale.
 
@@ -114,6 +114,8 @@ Normative compilation semantics, IR schemas, and tool contracts belong in **ste-
 
 If you are building STE workflows, treat compilation failures as first-class signals. A model that cannot compile cleanly is often telling you that **intent** is incomplete, contradictory, or not yet expressed in structures the compiler understands. That signal is valuable even when it is annoying.
 
+Promotion is a common place it shows up: production moves, the pipeline is green, and compilation to **Architecture IR** fails because a new dependency edge conflicts with a declared **invariant**. The failure is not “the tool is picky.” It is an early **conformance** signal that **embodiment** outran the maintained graph.
+
 If you come from **MBSE**, do not assume STE wants every SysML diagram recreated. Do assume STE wants the same *discipline*: stable identities, explicit relationships, controlled change, and trace threads that survive staff turnover.
 
 If you have no **MBSE** background, steal the habit anyway: treat **Architecture IR** as a living model, not a one-time export.
@@ -124,15 +126,15 @@ Continuous integration and deployment pipelines are part of the modern “model,
 
 ## The Reference Problem
 
-A system model is not a one-time poster; it is the reference thread through requirements, design, **implementation**, and operations. **MBSE** culture insists that identities and relationships survive lifecycle transforms—exactly the discipline STE needs when **embodiment** never stops moving. The reference problem is **traceability** end to end: linking **ADRs**, **invariants**, graph elements, code touchpoints, and **evidence** so the story stays one story after handoffs. When compilation, review, and delivery are disconnected, organizations get model theater: artifacts exist, but nobody trusts them as the operational reference. **Architecture IR** is STE’s bet that a software-native compiled model can stay authoritative if **governance** treats updates as engineering work.
+A system model is not a one-time poster; it is the reference thread through requirements, design, **implementation**, and operations. **MBSE** culture insists that identities and relationships survive lifecycle transforms, which is exactly the discipline STE needs when **embodiment** never stops moving. The reference problem is **traceability** end to end: linking **ADRs**, **invariants**, graph elements, code touchpoints, and **evidence** so the story stays one story after handoffs. When compilation, review, and delivery are disconnected, organizations get model theater: artifacts exist, but nobody trusts them as the operational reference. **Architecture IR** is STE’s bet that a software-native compiled model can stay authoritative if **governance** treats updates as engineering work.
 
 ## If You Ignore This Discipline
 
-Lifecycle **traceability** breaks: **Architecture IR** becomes a snapshot while **embodiment** races ahead across handoffs, and **evidence** loses its thread to declared **intent**. Fast delivery without model discipline accelerates silent **drift**. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** a canonical **Architecture IR**, **compilation**, and end-to-end **traceability** through the lifecycle.
+Lifecycle **traceability** breaks: **Architecture IR** becomes a snapshot while **embodiment** races ahead across handoffs, and **evidence** loses its thread to declared **intent**. Fast delivery without model discipline accelerates silent **drift**. Speed without a maintained canonical model feeds the same chain: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** a canonical **Architecture IR**, **compilation**, and end-to-end **traceability** through the lifecycle.
 
 ## Role in the STE Argument
 
-This chapter closes the Part 1 technical arc before synthesis: a single canonical model and lifecycle **traceability** are how references survive speed. It connects **information** preservation, **decision** rationale, **architecture** consolidation, and operational reality into one inspectable thread. STE uses **MBSE** discipline selectively, anchored in **ste-spec** and software **embodiment**, not every enterprise methodology. Weak lifecycle integration is how **drift** accelerates under CI/CD: merges outrun the model, and **governance** loses the plot. **Compilation** failures are valuable signals—often incomplete **intent**—and tool integration should converge on **Architecture IR** rather than dashboard sprawl.
+This chapter closes the Part 1 technical arc before synthesis: a single canonical model and lifecycle **traceability** are how references survive speed. It connects **information** preservation, **decision** rationale, **architecture** consolidation, and operational reality into one inspectable thread. STE uses **MBSE** discipline selectively, anchored in **ste-spec** and software **embodiment**, not every enterprise methodology. Weak lifecycle integration is how **drift** accelerates under CI/CD: merges outrun the model, and **governance** loses the plot. **Compilation** failures are valuable signals, often incomplete **intent**, and tool integration should converge on **Architecture IR** rather than dashboard sprawl.
 
 ## Axioms
 

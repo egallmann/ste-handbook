@@ -3,14 +3,14 @@ title: "Governed Reasoning"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # Governed Reasoning
 
 ## The Problem
 
-The previous chapter argued that **architecture** must be a structured, versioned **artifact** connected to **embodiment** and **evidence**. Even with strong **intent** records and a compiled **Architecture IR**, organizations can still fail in a subtler way: **reasoning** stays informal.
+A maintained **architecture** **artifact** and **Architecture IR** (see [Architecture as a first-class artifact](00-04-architecture-as-a-first-class-artifact.md)) still fail if **reasoning** about change never stabilizes into something inspectable.
 
 Informal **reasoning** is fast in the moment. It is also easy to compress, paraphrase, and lose. The chapter on **lossy reasoning** described how rationale thins as it moves through channels. That thinning is not only a documentation habit. It is also what happens when reviews, risk discussions, and approvals never stabilize into **repeatable** questions: what is being claimed, under which **constraints**, with what **evidence**, and within which scope of authority.
 
@@ -47,6 +47,8 @@ In this framing:
 Informal discussion generates hypotheses. **Governed reasoning** asks those hypotheses to land as **claims** that can be inspected: what **decision** or **invariant** is at stake, which **constraints** apply, what would falsify the claim, and which **evidence** would support or refute it.
 
 That discipline pairs naturally with **intent artifacts** and **Architecture IR**. The **artifacts** hold the commitments. **Governed reasoning** is how people and tools move from "we think this is fine" to "we showed, under agreed rules, that the **conformance** claim holds for this **scope**, or we recorded a governed exception."
+
+A review passes those tests when it can answer, in writing or in tooling, at least this much: what **claim** about **intent** is being made (which **decision** or **invariant**); what **scope** (service, environment, change set) the claim covers; what **evidence** would refute it; and which observations were actually collected. If those slots stay empty, the meeting can still feel productive. The **governance** record is still thin.
 
 ### Human-in-the-loop and automation
 

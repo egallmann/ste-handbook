@@ -3,14 +3,14 @@ title: "Architecture as a First-Class Artifact"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # Architecture as a First-Class Artifact
 
 ## The Problem
 
-The previous chapter separated **intent** from **embodiment** (see [Intent versus Implementation](00-03-intent-vs-implementation.md)): normative commitments on one side, descriptive reality and **evidence** on the other. That separation is necessary for **drift** and **conformance** to mean anything. It is not yet sufficient.
+**Intent** and **embodiment** are now distinct (see [Intent versus Implementation](00-03-intent-vs-implementation.md)). That separation is necessary for **drift** and **conformance** to mean anything. It is not yet sufficient.
 
 Teams still need a place to put **architecture** that is neither a pile of slides nor a single heroic diagram in a wiki. Without that, **decisions** about boundaries, dependencies, failure handling, and evolution rules scatter across chat, tickets, and tacit habit. The organization may have strong engineers and decent code. It still lacks a **shared object** that states, in reviewable form, how the **design space** was closed and what must remain true for the whole to stay coherent.
 
@@ -52,6 +52,8 @@ A box-and-arrow picture can be useful if everyone agrees on what a box means. Of
 Later parts of this handbook develop **Architecture IR**: a canonical, machine-addressable **architecture** model compiled from **intent** **artifacts**. Think of it as a shared structural object the whole organization can diff, query, and project, rather than a single diagram blessed by whoever spoke last in a meeting.
 
 **Architecture IR** is not a replacement for judgment. It is a place where judgment can attach to named elements, relationships, and rules so that **governance** and **validation** have something stable to work on. Informal "canonical model" language is easy to misread; when this book means **Architecture IR**, it says **Architecture IR**.
+
+Operationally, that object is supposed to be boring in a useful way: reviewers can diff it against the last approved baseline; tools can query stable identities; compilers and linters can fail a change set when a declared boundary or **invariant** is violated. None of that replaces human judgment about tradeoffs. It does replace “we think the graph still matches” as the only test.
 
 ### Projections and views
 

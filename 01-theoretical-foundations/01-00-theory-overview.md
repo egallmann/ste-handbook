@@ -1,22 +1,22 @@
 ---
-title: "Part 1 — Theoretical Foundations Overview"
+title: "Part 1: Theoretical Foundations Overview"
 status: structured
 maturity: L2
 diagrams: false
 last_reviewed: "2026-03-24"
 ---
 
-# Part 1 — Theoretical Foundations Overview
+# Part 1: Theoretical Foundations Overview
 
 ## Why These Fields
 
-STE is not derived from one discipline. It sits at the intersection of **systems**, **information**, **control**, **cybernetics**, **decision** theory, **safety** and **constraints** engineering, **software architecture**, and **model-based** engineering (**MBSE**). Each of those fields solves a real slice of engineering reality. None of them, on its own, solves the full lifecycle problem for software-intensive systems under continuous change: keeping a **stable reference** for what the **system** is supposed to be while **embodiment**, teams, and tools keep moving.
+STE is not derived from one discipline. It sits at the intersection of **systems**, **information**, **control**, **cybernetics**, **decision** theory, **safety** and **constraints** engineering, **software architecture**, and **model-based** engineering (**MBSE**). Each of those fields solves a real slice of engineering reality. STE is not a rename of any one of them. It **selects** mechanisms and vocabulary from each, then **operationalizes** them in software delivery terms: **intent** artifacts, **Architecture IR**, **evidence**, **validation**, and **governance**. None of those fields, on its own, solves the full lifecycle problem for software-intensive systems under continuous change: keeping a **stable reference** for what the **system** is supposed to be while **embodiment**, teams, and tools keep moving.
 
 When change never stops, memory fails and understanding **drifts**. **Intent** becomes implicit. **Governance** and **validation** lose their reference. Part 1 walks that causal chain in pieces, one lens per chapter, so the synthesis at the end reads as necessary rather than eclectic.
 
 ## The Failure Mode
 
-Software systems change continuously. **Intent** changes. **Embodiment** changes. Teams, tools, and **constraints** change. Without a canonical representation of **intent**, **decisions**, **constraints**, and **evidence**, organizations lose the ability to know whether the system they have is the system they believe they have. STE exists to make those objects structurally connected, governable, and testable over time. Part 1 explains *why* that requires more than one academic tradition.
+Most software organizations already agree that **intent**, **embodiment**, tools, teams, and **constraints** all move. The harder failure is reference loss: without a canonical representation of **intent**, **decisions**, **constraints**, and **evidence**, nobody can answer whether the system they run is still the system they claim to govern. STE exists to make those objects structurally connected, governable, and testable over time. Part 1 explains *why* that job pulls in more than one tradition, and how to use each tradition without pretending STE *is* that tradition.
 
 Software organizations rarely disagree about whether they need to ship, operate safely, or evolve under pressure. They disagree about *objects*: what counts as a system, what counts as a **decision**, what counts as **evidence**, and what “aligned” means when tools, people, and time move faster than memory.
 
@@ -89,7 +89,7 @@ Each following chapter names what STE **imports** (vocabulary and mental moves),
 
 ## Where This Appears in STE
 
-Part 2 turns from scaffolding to the STE-shaped overview of the whole system story. Start with [Part 2 — STE overview](../02-overview/02-00-overview.md) when you want the map of parts and terminology at book scale.
+Part 2 turns from scaffolding to the STE-shaped overview of the whole system story. Start with [Part 2: STE overview](../02-overview/02-00-overview.md) when you want the map of parts and terminology at book scale.
 
 From there, the handbook’s technical spine continues through **intent** (including **ADRs** and **invariants**), **Architecture IR** (system model, compilation, **traceability**), **projections**, **Kernel** and **validation**, the **control loop**, and lifecycle **governance**. Many linked chapters are still outlines. Treat links as **directional**: they show where the argument continues, not a promise that every destination is already finished.
 
@@ -101,7 +101,7 @@ If you remember only a few carries from Part 1, make them practical. First, **na
 
 ## If You Ignore These Disciplines
 
-If you treat Part 1 as optional, you lose the minimum map that keeps one failure mode visible: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. Drop **systems** and **boundaries** stay fuzzy; drop **information** and **intent** turns **lossy**; drop **control** and **validation** becomes opinion; drop **cybernetics** and **governance** becomes ritual; drop **decision** theory and **commitments** stay implicit; drop **safety** vocabulary and **invariants** erode; drop **architecture** theory and **structure** stays implicit; drop **MBSE** and lifecycle **traceability** breaks. Part 1 exists so those failures read as one discipline story, not eight unrelated hobbies.
+Skip Part 1 and you lose the map that makes the shared failure legible. The chain is the same in every chapter: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** seeing the whole chain and how each lens guards a different weak point. Without that map, **systems** slips leave **boundaries** fuzzy; without **information** discipline, **intent** encoding turns **lossy**; without **control** vocabulary, **validation** becomes opinion; without **cybernetics**, **governance** becomes ritual; without **decision** language, **commitments** stay implicit; without **safety** vocabulary, **invariants** erode; without **architecture** theory, **structure** stays implicit; without **MBSE** discipline, lifecycle **traceability** breaks. Part 1 exists so those failures read as one discipline story, not eight unrelated hobbies.
 
 ## Axioms
 
@@ -113,4 +113,4 @@ If you treat Part 1 as optional, you lose the minimum map that keeps one failure
 
 **Next:** The first lens stabilizes **boundaries** and scope so **decisions**, **constraints**, and **evidence** attach to a defined **system**. Continue with [Systems theory](01-01-systems-theory.md).
 
-For STE’s integrated overview after theory, read [Part 2 — STE overview](../02-overview/02-00-overview.md); for normative precision, rely on **ste-spec** and published contracts rather than handbook prose.
+For STE’s integrated overview after theory, read [Part 2: STE overview](../02-overview/02-00-overview.md); for normative precision, rely on **ste-spec** and published contracts rather than handbook prose.

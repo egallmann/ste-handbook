@@ -10,18 +10,9 @@ last_reviewed: "2026-03-24"
 
 ## The Problem
 
-The preceding chapters in Part 0 built a single chain, in order:
+Part 0 already chained the mechanisms: **decisions** under **constraints**, **lossy reasoning** as the default without durable structure, a strict split between **intent** and **embodiment**, **architecture** as a versioned object (and **Architecture IR** where compilation applies), **governed reasoning** for accountable review, and an honest line between **deterministic** checks and **stochastic** or judgment-shaped work. [What STE is and is not](00-07-what-ste-is-and-is-not.md) added category defense so those pieces attach to the right object.
 
-1. Engineering is **decision-making under constraints**: **decisions** close design space; **constraints** reduce options.
-2. **Lossy reasoning** erodes the rationale those **decisions** need as information moves through people, **artifacts**, and time.
-3. **Intent** must stay distinct from **embodiment** so **drift** (mismatch) and **conformance** (the claim that **embodiment** matches **intent**) are definable.
-4. **Architecture** must be a structured, versioned **artifact**, with **Architecture IR** as the canonical compiled structural model where appropriate.
-5. **Reasoning** about change must run as **governed reasoning**: explicit **rules**, **scope**, and **evidence**.
-6. **Deterministic** assessment must be distinguished honestly from **stochastic** or judgment-shaped work so repeatability is not overstated or abandoned.
-7. **STE** must be positioned so readers do not mistake it for a framework, a modeling language, or a substitute for neighboring disciplines (stated in [What STE is and is not](00-07-what-ste-is-and-is-not.md)).
-8. **STE** names the discipline that integrates the above into one governed system of evolution (stated in this chapter).
-
-Without a concise statement of what STE *is*, readers still risk treating later chapters as a bag of mechanisms: interesting pieces that do not add up to a discipline.
+What is still missing is a single integrative statement of what STE *is*: the concise thesis readers carry into the operational parts of the book. Without that, later chapters risk reading as a bag of mechanisms.
 
 The problem is integration. The cost of poor integration is familiar: teams adopt artifacts and tools without the **governance** loop that makes them trustworthy, then conclude the idea failed when **drift** continues.
 
@@ -75,7 +66,7 @@ If the thesis is ignored while borrowing vocabulary:
 - **Validation** becomes green paint.
 - **Governance** becomes theater.
 
-The antidote is structural: maintain the **artifacts**, keep **scope** and rules honest, and treat **lossy reasoning** as an engineering risk to be designed against, not a moral failure to be scolded away.
+The antidote is structural: maintain the **artifacts**, keep **scope** and rules honest, and treat **lossy reasoning** as an engineering risk to be designed against.
 
 ## Where this leads
 

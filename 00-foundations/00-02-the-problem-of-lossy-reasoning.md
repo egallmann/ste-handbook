@@ -3,14 +3,14 @@ title: "The Problem of Lossy Reasoning"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # The Problem of Lossy Reasoning
 
 ## The Problem
 
-The previous chapter argued that engineering is **decision-making under constraints**, with **decision**, **constraint**, **design space**, and **traceability** defined as in [Engineering as decision-making](00-01-engineering-as-decision-making.md), and that organizations need **traceability** from commitments to embodiment and evidence. That framing assumes something easy to overlook: when a decision is made, the organization also produces **rationale**. Rationale answers why an option was chosen, what was ruled out, which assumptions were treated as true, and which **constraints** were binding at the time.
+Once you treat engineering as **decision-making under constraints** (see [Engineering as decision-making](00-01-engineering-as-decision-making.md)), a second product of the work becomes visible: **rationale**. Rationale answers why an option was chosen, what was ruled out, which assumptions were treated as true, and which **constraints** were binding at the time. **Traceability** needs both the **decision** and enough rationale to interpret it later.
 
 Rationale is as much a product of engineering work as the code and diagrams. It is also fragile. An organization that must operate and change a system for years cannot rely on the decision living only in the moment it was made. It has to preserve rationale across handoffs, reorgs, tooling changes, and turnover. If rationale does not travel well, the organization still has behavior, habits, and **artifacts**, but it loses the thread of **why** the system is shaped the way it is.
 
@@ -61,6 +61,8 @@ Loss is not one event. It accumulates across ordinary work. A few common sites:
 **Documentation that captures conclusions but not reasoning.** An architecture page that lists "our platform choices" without alternatives, constraints, and supersession rules is a catalog of outcomes. It helps onboarding skim the present. It does not preserve the decision record future maintainers need when the environment changes.
 
 **Long-lived systems after original designers are gone.** A service written ten years ago may still run well while the constraints that shaped it (hardware limits, partner APIs, org boundaries) have changed several times. Without a preserved rationale, every change is a small gamble about which old assumptions still bind.
+
+Those sites stack in real programs. A principal engineer agrees in a meeting that retries must stay bounded for a specific partner API; the ticket closes as “fix retries”; the wiki still describes the old policy six months later; the author leaves; the on-call runbook mentions “back off” without numbers. Two teams then ship different limits, each convinced they honored “what we decided.” The **embodiment** is not mysterious. The recoverable **intent** is.
 
 Each site is normal. Together they form a pipeline that strips structure unless something counteracts it.
 
