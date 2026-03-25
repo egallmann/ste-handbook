@@ -10,13 +10,11 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-You cannot steer what you do not measure against a declared reference. If **intent** is vague or unrecorded, **validation** has nothing to compare **embodiment** to, and **drift** becomes invisible until pain arrives.
+The release dashboard is green. The **invariant** everyone cares about (“no cross-region failover without explicit approval”) was never written into **intent**; it lived in a staff engineer’s head. **STE needs this chapter** because **validation** is only meaningful when you can name the **reference** you measured against and the **evidence** that counted.
 
-Engineers are not confused about whether software changes over time. They are confused about whether the organization is steering change, or only reacting after pain. Steering requires a declared target, a measurement practice, and authorized corrections. Reaction requires none of those. Reaction can look busy while **error** grows.
+You cannot steer what you do not measure against a declared reference. If **intent** is vague or unrecorded, **validation** has nothing to compare **embodiment** to, and **drift** becomes invisible until pain arrives. Engineers are not confused about whether software changes over time. They are confused about whether the organization is steering change, or only reacting after pain. Steering requires a declared target, a measurement practice, and authorized corrections. Reaction requires none of those. Reaction can look busy while **error** grows.
 
-Organizations love loop diagrams. You draw a box labeled “intent,” an arrow to “build,” an arrow to “operate,” an arrow to “learn,” and then a curved arrow back to “intent.” It looks scientific. It often hides a softer reality: nobody knows what signal is being measured, what the reference is supposed to be, or what actuator actually moves the organization when reality disagrees with the story.
-
-Without those pieces, “feedback” becomes a word for “we talk after incidents.” That may be valuable culturally, but it is not a control system in any disciplined sense. It is also not what STE intends when it uses loop language for **validation**, **drift**, and continuous assurance.
+Organizations love loop diagrams: a box labeled “intent,” an arrow to “build,” to “operate,” to “learn,” then a curved arrow back. It often hides a softer reality: nobody knows what signal is being measured, what the reference is supposed to be, or what actuator moves the organization when reality disagrees with the story. Without those pieces, “feedback” means “we talk after incidents.” That may be valuable culturally, but it is not a control system in any disciplined sense, and it is not what STE intends when it uses loop language for **validation**, **drift**, and continuous assurance.
 
 The risk runs both ways. Some readers hear “control” and imagine PID controllers and Laplace transforms. STE is not asking you to derive transfer functions for your engineering org. Other readers hear “control” and imagine nothing precise at all. STE is asking for a middle stance: **careful metaphor** with explicit limits.
 

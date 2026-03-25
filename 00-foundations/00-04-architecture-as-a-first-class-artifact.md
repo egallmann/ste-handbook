@@ -47,6 +47,8 @@ A box-and-arrow picture can be useful if everyone agrees on what a box means. Of
 
 **Architecture** as an **artifact** foregrounds **decisions** that could have gone another way: why this boundary, why this failure mode, why this compatibility promise, why this data ownership rule. Those **decisions** belong in **intent artifacts** (for example ADRs) and in structured models that compile from them. The compiled view is what lets the organization inspect the whole graph instead of rereading every memo.
 
+A software-shaped example: the organization commits that only the **checkout** service may initiate payment capture, and that **analytics** pipelines read from approved replicas, never directly from the authorization path. That is **intent** about **structure** and allowed dependency, not a comment on code style. When a shortcut appears in a pull request (a batch job that calls the payment client “just for reconciliation”), reviewers need the declared rule to recognize it as a boundary violation, not as a clever optimization. Without a maintained **architectural** **artifact**, the shortcut merges, **embodiment** gains authority the **intent** never granted, and **drift** shows up first as an incident.
+
 ### Canonical structure: Architecture IR
 
 Later parts of this handbook develop **Architecture IR**: a canonical, machine-addressable **architecture** model compiled from **intent** **artifacts**. Think of it as a shared structural object the whole organization can diff, query, and project, rather than a single diagram blessed by whoever spoke last in a meeting.

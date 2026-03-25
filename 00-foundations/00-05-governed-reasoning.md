@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Problem
 
-A maintained **architecture** **artifact** and **Architecture IR** (see [Architecture as a first-class artifact](00-04-architecture-as-a-first-class-artifact.md)) still fail if **reasoning** about change never stabilizes into something inspectable.
+You can have a maintained **architecture** **artifact** and **Architecture IR** (see [Architecture as a first-class artifact](00-04-architecture-as-a-first-class-artifact.md)) and still fail if **reasoning** about change never stabilizes into something inspectable. The graph is not the review; the review has to say what was shown, for what **scope**, under what **rules**.
 
 Informal **reasoning** is fast in the moment. It is also easy to compress, paraphrase, and lose. The chapter on **lossy reasoning** described how rationale thins as it moves through channels. That thinning is not only a documentation habit. It is also what happens when reviews, risk discussions, and approvals never stabilize into **repeatable** questions: what is being claimed, under which **constraints**, with what **evidence**, and within which scope of authority.
 
@@ -49,6 +49,8 @@ Informal discussion generates hypotheses. **Governed reasoning** asks those hypo
 That discipline pairs naturally with **intent artifacts** and **Architecture IR**. The **artifacts** hold the commitments. **Governed reasoning** is how people and tools move from "we think this is fine" to "we showed, under agreed rules, that the **conformance** claim holds for this **scope**, or we recorded a governed exception."
 
 A review passes those tests when it can answer, in writing or in tooling, at least this much: what **claim** about **intent** is being made (which **decision** or **invariant**); what **scope** (service, environment, change set) the claim covers; what **evidence** would refute it; and which observations were actually collected. If those slots stay empty, the meeting can still feel productive. The **governance** record is still thin.
+
+Concrete slot-filling: a change set touches the checkout service’s deployment graph. The **claim** is that the “payment capture only from checkout” **invariant** still holds. The **scope** is staging and production for release `v2026.03.1`. The **evidence** that would refute it includes a new edge from a non-checkout service to the payment client, or integration tests that show capture initiated elsewhere. The collected **evidence** is the structural diff against **Architecture IR**, the dependency report from the artifact pipeline, and the green integration suite for that release. If the record names those pieces, a later auditor (or a tired on-call engineer) can see what was actually checked. If it names only “LGTM,” **governed reasoning** did not happen.
 
 ### Human-in-the-loop and automation
 

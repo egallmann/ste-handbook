@@ -86,6 +86,8 @@ Prose remains valuable. STE does not ask organizations to stop writing. It asks 
 
 A useful analogy is **lossy compression** in information theory. A lossy codec throws away detail humans are thought not to need. Play that chain often enough, or change the listener, and artifacts appear. Organizations do something similar to rationale unless they preserve the parts that must be recovered later. The lost pieces are often not emotional nuance. They are the explicit assumptions and constraints that make a **decision** rational.
 
+Part 1 returns to that idea under the heading of **information theory**: not bit rates for meetings, but **encoding**, **distinguishability**, and what has to stay in the representation if **intent** is to survive handoffs.
+
 ## The Implications
 
 When rationale thins, the organization pays in predictable ways:

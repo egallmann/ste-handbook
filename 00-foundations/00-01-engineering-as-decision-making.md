@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Problem
 
-This chapter is about what engineering work *is* when you strip away tools, ceremonies, and slogans. It is about **decisions** taken inside a **design space** shaped by **constraints**, and about why organizations lose **intent** when those decisions stay informal.
+Strip away tools, ceremonies, and slogans, and engineering work is still **decisions** taken inside a **design space** shaped by **constraints**. When those decisions stay informal, the organization loses recoverable **intent** even while it keeps shipping.
 
 Teams often describe progress as a stream of tasks, pull requests, and releases. That description is not false, but it is incomplete. Tasks and code show *activity*; they do not always show *commitments*: what was chosen, what was ruled out, and what must remain true for the choice to stay valid. When the record of commitments is thin, the organization still believes it "knows" the system. In practice, knowledge lives in chat history, oral tradition, and local habit. Those channels are **lossy**. They compress nuance, drop alternatives, and make it hard to tell whether today's change matches yesterday's decision.
 
@@ -45,6 +45,8 @@ These four terms are canonical for the rest of Part 0; this section is their anc
 Constraints do not only remove options. They define the region in which a **decision** can be rational. Engineering narrows the **design space** over the life of a system. Early choices close branches. Interfaces freeze. Dependencies accumulate. Some commitments are cheap to revisit; others are expensive to reverse once downstream work, data, partners, or operations depend on them. **Irreversibility** is that reversal cost made concrete. **Trade-offs** are how **irreversibility** usually enters the story: improving against one **constraint** often hardens the path for another and fixes part of long-term **system shape**. Much of **architecture** exists to surface, record, and protect the **decisions** that are costly to undo, because those **decisions** are the ones that later teams will live inside whether they know it or not. Good engineering makes reversal cost visible when the **decision** is made, not only when the bill arrives.
 
 A concrete pattern: a team chooses synchronous calls across a boundary because latency and staffing **constraints** make an event backbone infeasible this quarter. The **decision** is defensible. Six months later, a new owner proposes the backlog item “go async” without seeing the old capacity and coupling **constraints**. If the original **commitment** is not **traceable**, the **design space** reopens by accident. If it is **traceable**, the conversation can be about whether **constraints** changed and what supersession should cost, instead of repeating a debate that already happened.
+
+Another small pattern: a public API ships at `/v1` with a published compatibility promise. A client team hard-codes paths and assumes the payload shape will never tighten. Product later wants to deprecate a field. If the compatibility **decision** (what callers may rely on, for how long, under what notice) is not **traceable**, the discussion becomes blame. If it is recorded, the same discussion can be a governed change to **intent** and a planned migration, not an emergency.
 
 ### Decisions as first-class engineering artifacts
 

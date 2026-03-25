@@ -10,7 +10,7 @@ last_reviewed: "2026-03-24"
 
 ## The Problem
 
-**Lossy reasoning** (see [The Problem of Lossy Reasoning](00-02-the-problem-of-lossy-reasoning.md)) makes a hidden category error worse: teams mix two different kinds of claim without noticing.
+When rationale has already thinned (see [The Problem of Lossy Reasoning](00-02-the-problem-of-lossy-reasoning.md)), a hidden category error gets worse: teams mix two different kinds of claim without noticing.
 
 Engineering organizations constantly talk about "the system." In the same breath they mean what the system is **supposed** to be and what it **actually** is in repositories, configuration, and production. Those are not the same kind of statement.
 
@@ -124,7 +124,7 @@ None of this requires perfect documents or perfect systems. It requires **honest
 
 ## Where this leads
 
-**Intent** and **embodiment** can be compared; the **architectural** half of **intent** still needs a durable home. The next chapter treats **architecture** as a structured, versioned **artifact** so **traceability** does not collapse back into local story.
+**Intent** and **embodiment** can be compared. The **architectural** slice of **intent** (boundaries, dependencies, rules for how the system may evolve) still needs a durable home that is not “whatever the senior staff remember.” The next chapter treats **architecture** as a structured, versioned **artifact** so **traceability** does not collapse back into local story.
 
 ## Relationship to STE system
 

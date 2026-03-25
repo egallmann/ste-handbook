@@ -73,7 +73,7 @@ STE does not replace:
 - **Governance** and risk management
 - **Model-based systems engineering (MBSE)**
 
-Those fields produce **artifacts**, practices, and obligations that must remain staffed and competent. STE **connects** their outputs and feedback loops into a single **operational model** centered on **intent**, **Architecture IR**, **validation**, **evidence**, and **governance**, so the organization does not lose the thread when **embodiment** moves faster than narrative.
+Those fields produce **artifacts**, practices, and obligations that must remain staffed and competent. STE does not absorb them; it **wires** what they already produce (models, analyses, tests, policies, releases) into one **operational model** centered on **intent**, **Architecture IR**, **validation**, **evidence**, and **governance**, so the organization does not lose the thread when **embodiment** moves faster than narrative.
 
 ### How STE fits with existing disciplines
 

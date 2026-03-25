@@ -10,13 +10,13 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
+A common slip: “the **system**” means the main repository, until an incident forces you to admit the datastore, the queue, the identity provider, and the vendor API are all load-bearing. **STE needs this chapter** because **Architecture IR**, **ADRs**, and **validation** only work when “reference *of what*?” has a stable answer.
+
 Arguments about correctness go in circles when “the **system**” reshapes between meetings. **Intent** and **embodiment** diverge by default unless the object under discussion stays stable enough to attach **decisions**, **constraints**, and **evidence** to the same scope. When **boundaries** are ambiguous or implicit, **traceability** fails: you cannot truthfully claim **conformance** to **intent** you never pinned down.
 
-Teams argue about “the system” as if the word were self-explanatory. In practice, “the system” shifts shape between meetings. Sometimes it means a deployable service. Sometimes it means the service plus its datastore and queues. Sometimes it means the service plus the platform team’s contracts plus the operators’ runbooks plus the vendor API that nobody owns. Sometimes it means “the product,” which includes humans, incentives, and policy choices that never appear in a repository.
+In practice the name shifts week to week: deployable service only; service plus datastore and queues; service plus platform contracts, runbooks, and the API nobody owns; “the product,” including incentives and policy that never appear in a repo. That slipperiness is not pedantry. It changes what counts as correct. A change can be locally sensible inside one boundary and still be a failure at a wider boundary. A metric can look healthy for a subsystem while the wider whole drifts into an unsafe regime.
 
-That slipperiness is not pedantry. It changes what counts as correct. A change can be locally sensible inside one boundary and still be a failure at a wider boundary. A metric can look healthy for a subsystem while the wider system drifts into an unsafe regime. A document can be accurate about one decomposition and misleading about another.
-
-When boundaries stay implicit, **traceability** suffers. You cannot link **decisions** to the parts they govern if “the part” is not stable enough to name. You cannot compare **intent** to **embodiment** if the “system” you declared is not the same object you observe in production.
+Without an explicit **boundary**, you cannot link **decisions** to the parts they govern or compare **intent** to **embodiment** when the declared **system** is not the same object you observe in production.
 
 ## The Field Concept
 

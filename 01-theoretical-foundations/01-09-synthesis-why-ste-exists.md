@@ -20,9 +20,9 @@ STE is the synthesis discipline that connects them.
 
 Part 1 is not eight ways to say “quality matters.” It is eight partial views of the same delivery reality. **Intent**, **embodiment**, teams, tools, and **constraints** all move. Without a canonical representation of **intent**, **decisions**, **constraints**, and **evidence**, organizations lose the ability to know whether the system they have is the system they believe they have.
 
-Each chapter in Part 1 is honest about partial scope. **Systems** theory helps you name **boundaries**, but it does not, by itself, compile **intent** into a canonical graph. **Information** theory helps you name **lossy** channels, but it does not specify which artifacts should hold **ADRs**. **Control** theory helps you name **feedback**, but it does not install **evidence** practice. **Cybernetics** widens the loop to institutions, but it does not replace **Architecture IR**. **Decision** theory clarifies **commitments**, but it does not automate **conformance** checks. **Safety** and **constraints** engineering sharpen assurance language, but neither field, taken alone, unifies architectural description with runtime **validation**. **Software architecture** theory clarifies **views** and **quality attributes**, but it does not mandate a single operational pipeline. **MBSE** promotes model-first discipline, but it does not, in every deployment, center software **embodiment** and toolchain-native **evidence** the way modern delivery demands.
+Each lens chapter is explicit about its own partial scope. Together they cover: stable **system** definition, durable **encoding** of **intent**, accountable comparison (**validation**), institutional **regulation** (**governance**), recorded **commitments**, mandatory properties (**invariants** / **constraints**), software-shaped description, and model-first lifecycle discipline. No single lens ships all of that as one software-native loop; that is why the chapters are separate. For the per-field “what it does not replace” detail, read the lens you care about rather than relisting eight intros here.
 
-If you stop reading after any one lens, you can still improve practice locally. You can also still fail globally: coherent local language with no shared object for **governance**, **traceability**, and **validation** at software speed.
+If you stop after any one lens, you can still improve practice locally. You can also still fail globally: coherent local language with no shared object for **governance**, **traceability**, and **validation** at software speed.
 
 The question Part 1 answers is not “which field wins?” It is “what job requires a synthesis, and what does STE add that the parts do not?”
 
@@ -105,16 +105,7 @@ STE does not invent engineering from scratch. It **connects** practices that alr
 
 STE **imports** vocabulary and mental moves from each lens, as the preceding chapters detailed. It **does not import** authority: borrowed language clarifies mechanisms and failure modes; it does not transfer theorems, certifications, or maturity labels by analogy. For the compact field-to-STE mapping table, use [Part 1 overview](01-00-theory-overview.md). This section is the additive claim: what the **set** buys you that the rows do not buy alone.
 
-Across Part 1, the recurring imports are:
-
-- **Boundaries** and composition (**systems**)
-- **Lossless** versus **lossy** representation and **entropy** as informal ambiguity (**information**)
-- Reference, measurement, **error**, **feedback**, and cautious **stability** language (**control**)
-- Institutional **regulation**, second-order **governance**, and human roles (**cybernetics**)
-- **Options**, **commitments**, updating under **evidence** (**decision**)
-- **Hazards**, **invariants**, **constraints**, assurance, scaled **conformance** (**safety**)
-- **Projections** (literature: **views**), **quality attributes**, architectural **structure** and **behavior** (**software architecture**)
-- Model-first graphs, lifecycle **traceability**, compilation discipline (**MBSE**)
+Across Part 1, the recurring imports are exactly what the eight lens chapters name: boundaries, encoding, comparison, institutional loops, **commitments**, mandatory properties, architectural description, and model-first **traceability**. Use [Part 1 overview](01-00-theory-overview.md) if you need the field-by-field reminder; this synthesis stays at the level of how they combine.
 
 STE’s own core objects, named throughout the handbook, are where those imports land: **intent**, **embodiment**, **Architecture IR**, **ADRs**, **invariants**, **constraints**, **evidence**, **validation**, **conformance**, **drift**, **design space**, and **governance**.
 

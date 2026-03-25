@@ -10,13 +10,13 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
+A pull request merges: new cache layer, thirty files, no **ADR**. The author and reviewer understood the trade. Six months later, operations needs to know whether stale reads are an acceptable failure mode or a bug. Nobody can reconstruct whether the team **committed** to eventual consistency or merely tolerated it for the demo. **STE needs this chapter** because **options** are not **decisions**, and **commitments** have to be addressable objects for **governance** and **validation**.
+
 Engineering is a sequence of **irreversible decisions** under **uncertainty**. If those **decisions** are not recorded, the **design space** silently mutates: teams optimize against code and habit while believing they still honor old **constraints**. **Governance** and **validation** lose their reference.
 
-Decisions also have audiences. A choice that is obvious to the authors may be opaque to security review, to operations, to a new hire, or to an external auditor. Recording **decisions** is therefore not only about memory over time. It is about aligning multiple perspectives on what is now supposed to be true. Without that alignment, each audience reconstructs **intent** from partial channels, which raises **entropy** and produces avoidable conflict.
+Decisions have audiences. A choice obvious to the authors may be opaque to security, operations, a new hire, or an auditor. Recording **decisions** aligns perspectives on what is now supposed to be true. Without that, each audience reconstructs **intent** from partial channels, which raises **entropy** and produces avoidable conflict.
 
-Software teams make **decisions** constantly: languages, boundaries, data models, operational patterns, security tradeoffs, migration strategies. Many of those **decisions** are never recorded as **decisions**. They appear as merged pull requests, closed tickets, or “how we do things here.” When the context changes, the organization rediscovers the choice as if it were a natural law. Debate becomes exhausting because nobody can reconstruct the **design space** that existed when the **commitment** was made.
-
-That failure mode is not “bad documentation habits” only. It is a missing object. **Decisions** are real artifacts of engineering work. If they stay implicit, **governance** cannot assess whether revisiting them is appropriate. **Validation** cannot tell whether a change violates an old **commitment** or fulfills a new one. **Drift** becomes a fog.
+Many **decisions** never ship as **decisions**: they appear as merged pull requests, closed tickets, or “how we do things here.” When context changes, the organization rediscovers the choice as if it were a natural law. That is not only “bad documentation habits.” It is a missing object. If **commitments** stay implicit, **governance** cannot assess revisiting, **validation** cannot tell violation from supersession, and **drift** becomes a fog.
 
 Decision theory, in the slice STE uses, is a language for **options**, **commitments**, uncertainty, and updating when new **evidence** arrives. STE does not import a formal utility calculus for teams. It imports a discipline: separate brainstorming from **commitment**, record what was chosen and why, and treat revisiting as a normal event under **governance**, not as betrayal.
 

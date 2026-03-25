@@ -70,7 +70,9 @@ The antidote is structural: maintain the **artifacts**, keep **scope** and rules
 
 ## Where this leads
 
-Part 0 ends where the rest of the handbook begins: with a shared problem statement and a compact thesis. From here, the book unpacks how **intent** becomes **artifacts**, how those **artifacts** compile into **Architecture IR**, how the **Kernel** and **validation** consume **evidence**, and how **governance** keeps the loop honest over time. Start with the system-level picture, then drill into the layers in whatever order your work demands.
+Part 0 ends where the rest of the handbook begins: with a shared problem statement and a compact thesis. **Part 1: Theoretical foundations** comes next. It names the borrowed lenses (systems, information, control, and the rest) so the thesis reads as **integration of mechanisms**, not as a claim to replace those fields or to inherit their theorems by analogy.
+
+From there, the book unpacks how **intent** becomes **artifacts**, how those **artifacts** compile into **Architecture IR**, how the **Kernel** and **validation** consume **evidence**, and how **governance** keeps the loop honest over time. Start with [Part 1: Theoretical foundations overview](../01-theoretical-foundations/01-00-theory-overview.md) if you want the map of lenses, or jump to the system-level picture in Part 2 and drill into layers in whatever order your work demands.
 
 ## Relationship to STE system
 

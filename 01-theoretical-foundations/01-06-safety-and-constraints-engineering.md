@@ -10,15 +10,17 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
+A break-glass IAM role ships for an incident; the ticket says “remove after drill.” The role stays. New services inherit the binding because the template is copy-paste friendly. **Intent** still says “least privilege,” but **embodiment** quietly carries a superuser path. **STE needs this chapter** because high-severity failures and everyday **constraints** share one requirement: explicit **invariants**, honest **evidence**, and **governance** that can tell a waiver from a quiet rewrite.
+
 High-severity failures often trace to implicit authority or silent erosion of mandatory properties. Without explicit **invariants**, **constraints**, and **evidence**, organizations cannot argue assurance or **conformance** with integrity as **embodiment** moves.
 
 Some failures are ordinary bugs: wrong output, slow page, annoyed user. Other failures are harms: injury, loss of life, loss of critical public function, catastrophic data compromise, systemic unfairness that becomes structural harm. Safety and assurance fields exist because “try harder” is not a control strategy when consequences are severe.
 
-Even when consequences are less dramatic, **constraints** still matter. Organizations depend on properties that must hold: data integrity rules, access boundaries, financial correctness **constraints**, operational limits. When those properties are treated as vibes, **drift** becomes a security and reliability problem rather than a documentation problem.
+Even when consequences are less dramatic, **constraints** still matter: data integrity rules, access boundaries, financial correctness **constraints**, operational limits. When those properties are treated as vibes, **drift** becomes a security and reliability problem rather than a documentation problem.
 
-There is also a quiet failure mode: “we have alerts,” mistaken for assurance. Alerts are sensors. Sensors can misfire, be ignored, or be bypassed during incidents. Assurance asks whether the right properties are monitored, whether on-call response is **governed**, whether alert fatigue is treated as a hazard in its own right, and whether post-incident changes update **intent** rather than only restarting services.
+“We have alerts” is another quiet trap. Alerts are sensors. They misfire, get ignored, or get bypassed under pressure. Assurance asks whether the right properties are monitored, whether on-call response is **governed**, whether alert fatigue is treated as its own hazard, and whether post-incident work updates **intent** or only restarts services.
 
-Software culture sometimes flips between extremes: either everything is called “safety” for emphasis, or safety language is dismissed as somebody else’s job. STE needs a middle stance: **constraints** and **invariants** are normal engineering objects; assurance is **evidence**-linked argument; **governance** must allow revisiting assumptions without silent erosion.
+Software culture flips between extremes: everything labeled “safety” for drama, or safety language dismissed as someone else’s job. STE takes a middle stance: **constraints** and **invariants** are normal engineering objects; assurance is **evidence**-linked argument; **governance** must allow revisiting assumptions without silent erosion.
 
 ## The Field Concept
 
@@ -78,7 +80,7 @@ STE connects that mindset to software architecture through **invariants** and ex
 
 This chapter is not a safety standard. It imports concepts, not checklists from regulated domains.
 
-Because STE systems often claim to support **governance**, **conformance**, and continuous assurance. Readers should recognize the family resemblance to safety and assurance practice without STE pretending to replace domain-specific engineering regimes.
+Because STE aims at **governance**, **conformance**, and continuous assurance, readers should recognize the family resemblance to safety and assurance practice without STE pretending to replace domain-specific engineering regimes.
 
 | Field concept | STE concept |
 | --- | --- |
@@ -120,7 +122,7 @@ Some properties must hold regardless of sprint theater. **Invariants** and **con
 
 ## If You Ignore This Discipline
 
-**Invariants** erode and **constraints** blur: severity collapses into vibes, **validation** cannot scale rigor to risk, and **governance** cannot tell a waiver from a quiet rewrite. **Conformance** stays storytelling while **embodiment** wanders. When mandatory properties go soft, the chain tightens fast: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** explicit **invariants**, **constraints**, and **evidence**-backed assurance language.
+**Invariants** erode and **constraints** blur: severity collapses into vibes, **validation** cannot scale rigor to risk, and **governance** cannot tell a waiver from a quiet rewrite. When mandatory properties go soft, the usual chain follows: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** explicit **invariants**, **constraints**, and **evidence**-backed assurance language.
 
 ## Role in the STE Argument
 

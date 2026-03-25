@@ -10,15 +10,13 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Handoffs are where **intent** dies in plain sight. When **intent** moves only through prose, chat, and ad hoc notes, you get **lossy intent transmission**: **decision**-critical distinctions disappear, and informal **entropy** rises. That is the structural twin of **lossy reasoning** (Part 0): the organization literally cannot recover what was committed.
+Picture a ticket that ships with the title “Harden retries for partner API.” The **decision** in the room was bounded retries with explicit caps because a specific SLA and outage window made unbounded retries unsafe. The title never says that. Six months later, two services ship different limits; each team believes it honored “what we decided.” **STE needs this chapter** because **machine-readable intent**, **Architecture IR**, and **traceability** are answers to an information problem: receivers must be able to recover the distinctions that matter, not only the mood of the meeting.
 
-Organizations often treat communication as a soft skill problem and representation as paperwork. That split hides a harder fact: engineering coordination is **information work**. If the organization cannot recover what was decided, what was ruled out, and what must remain true, then **governance** becomes theater. People can be articulate, kind, and busy, and still produce **drift**.
+Part 0 names the organizational failure as **lossy reasoning**. Here the same damage is described as **encoding**: what was preserved in the artifact, what was dropped in the summary, and whether two honest readers can still infer the same binding **commitments**. When **intent** moves only through prose, chat, and ad hoc notes, **decision**-critical detail disappears and informal **entropy** rises. Engineering coordination is **information work**; if the organization cannot recover what was ruled out and what must remain true, **governance** becomes theater.
 
-Software engineering runs on representations: tickets, wikis, chat logs, code, configs, dashboards, postmortems, slide decks. None of these are “the system.” They are channels. Channels distort. They compress. They drop nuance. They introduce ambiguity. Two teams can believe they agreed while each carries away a different summary of the same meeting.
+Software runs on representations (tickets, wikis, logs, code, configs, dashboards). None of these are “the system.” They are channels. Channels compress, drop nuance, and fork meaning. Information theory, in the narrow slice STE uses, gives vocabulary for that without pretending orgs have measured bit rates.
 
-This is the practical heart of **lossy reasoning**, named elsewhere in this handbook. Information theory, in the narrow slice STE uses, gives vocabulary for that phenomenon without pretending engineering organizations are communication channels with measured bit rates.
-
-The tempting misread is moral: “people should communicate better.” The structural story is different: if you rely on lossy channels for **decision**-relevant detail, you should expect **drift** between **intent** and **embodiment**. The surprise is not that humans are imperfect. The surprise is when organizations act shocked that informal memory did not preserve **invariants** across turnover.
+The tempting misread is moral: “communicate better.” The structural story is simpler: if **decision**-relevant detail rides only on **lossy** channels, expect **drift** between **intent** and **embodiment**. The surprise is when organizations expect informal memory to preserve **invariants** across turnover.
 
 ## The Field Concept
 

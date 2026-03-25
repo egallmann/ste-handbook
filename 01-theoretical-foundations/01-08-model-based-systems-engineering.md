@@ -10,17 +10,19 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
+You paste requirement IDs into a spreadsheet, link rows by hand, and call it **traceability**. Change hits; the spreadsheet rots first. **STE needs this chapter** because the failure is not “we lacked a tool.” It is that nobody owned semantics end to end: what an edge means, which identity is authoritative, and how compiled **structure** stays reviewable when **embodiment** moves.
+
 Disconnected documents and tool silos make humans the integration layer; **drift** is the default. The **toolchain trap** is worse: a model repository without shared semantics produces pretty graphs and the same **entropy** as a wiki nobody updates.
 
-Large engineered systems, especially systems-of-systems, generate overwhelming paperwork when every artifact is a separate document with manual cross-links. Requirements live in one place. Behavior specs live in another. Safety analyses live in another still. When change happens, humans become the integration layer. They copy, paste, reconcile, and hope. **Drift** is not surprising. It is the default output of that workflow.
+Large systems-of-systems drown in paperwork when every artifact is a separate document with manual cross-links. Requirements, behavior specs, and safety analyses live in different places. On change, people copy, paste, reconcile, and hope. **Drift** is the default output of that workflow.
 
-Model-based systems engineering (**MBSE**) responds by making models primary: connect requirements, behavior, **structure**, analysis, and verification in linked representations. The promise is better consistency, better change propagation, and better lifecycle integration.
+Model-based systems engineering (**MBSE**) responds by making models primary: linked requirements, behavior, **structure**, analysis, and verification. The promise is consistency, change propagation, and lifecycle integration.
 
-There is also a toolchain trap. **MBSE** can be reduced to “we bought a model repository.” Tools help, but the engineering commitment is semantic: teams must agree what an edge means, what an element identity is, and what qualifies as a valid link. STE faces the same trap around **Architecture IR** if organizations treat compilation as a batch job that produces a pretty graph nobody reviews.
+**MBSE** can still collapse to “we bought a repository.” Tools help; the commitment is semantic: agree what an edge means, what an element identity is, and what counts as a valid link. STE faces the same trap around **Architecture IR** when compilation is a batch job that emits a graph nobody reviews.
 
-Software teams sometimes dismiss **MBSE** as “not our world,” while simultaneously suffering the same failure mode with a different font: scattered wikis, tickets, and repos that nobody can thread into a coherent whole. STE is not identical to **MBSE**, but it faces a related problem: how to keep **intent** structured enough to compile, assess, and **govern** across time.
+Software teams dismiss **MBSE** as “not our world” while repeating the pattern with wikis, tickets, and repos nobody can thread into one story. STE is not **MBSE**, but it shares the problem: keep **intent** structured enough to compile, assess, and **govern** across time.
 
-The comparison is also a warning against cargo-cult modeling. **MBSE** value comes from linked semantics and disciplined change, not from boxes on a screen. STE’s **Architecture IR** carries the same moral: a graph nobody trusts is not an engineering object, it is a diagram graveyard.
+Cargo-cult modeling helps nobody. **MBSE** value lives in linked semantics and disciplined change, not boxes on a screen. STE’s **Architecture IR** carries the same standard: a graph nobody trusts is a diagram graveyard, not an engineering object.
 
 ## The Field Concept
 

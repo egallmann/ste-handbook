@@ -12,6 +12,8 @@ last_reviewed: "2026-03-24"
 
 STE is not derived from one discipline. It sits at the intersection of **systems**, **information**, **control**, **cybernetics**, **decision** theory, **safety** and **constraints** engineering, **software architecture**, and **model-based** engineering (**MBSE**). Each of those fields solves a real slice of engineering reality. STE is not a rename of any one of them. It **selects** mechanisms and vocabulary from each, then **operationalizes** them in software delivery terms: **intent** artifacts, **Architecture IR**, **evidence**, **validation**, and **governance**. None of those fields, on its own, solves the full lifecycle problem for software-intensive systems under continuous change: keeping a **stable reference** for what the **system** is supposed to be while **embodiment**, teams, and tools keep moving.
 
+STE **integrates** those mechanisms into one operational story; it does **not** subsume the professions that own them. You still staff safety where severity demands it, **MBSE** where lifecycle modeling demands it, architecture practice where **structure** demands it. STE names how their outputs connect so the thread does not break at handoffs.
+
 When change never stops, memory fails and understanding **drifts**. **Intent** becomes implicit. **Governance** and **validation** lose their reference. Part 1 walks that causal chain in pieces, one lens per chapter, so the synthesis at the end reads as necessary rather than eclectic.
 
 ## The Failure Mode
@@ -68,9 +70,9 @@ You can read linearly or out of order, but linear reading has a benefit. Later t
 
 ## What STE Takes From These Fields
 
-STE is not invented from nothing, and it is not a rebranding of a single predecessor. Different disciplines studied different parts of the problem: boundaries and composition (**systems**), distinguishability under noise (**information**), comparison and correction (**control**), regulation of socio-technical wholes (**cybernetics**), **options** and **commitments** (**decision**), assurance and mandatory properties (**safety** and **constraints**), architectural description (**software architecture**), and model-first lifecycle integration (**MBSE**).
+The lens-by-lens tour sits in **A map of the nine lenses** above. This section is the compact crosswalk: how each tradition maps into STE’s shared objects when you need the grid without rereading every chapter.
 
-STE’s job is to combine those insights into an **operational** engineering system: **intent** artifacts, compilation to **Architecture IR**, **evidence**-linked **validation**, explicit **conformance** claims, and **governance** that survives turnover and tool churn.
+STE’s job remains the same: combine those imports into an **operational** engineering system (**intent** artifacts, compilation to **Architecture IR**, **evidence**-linked **validation**, explicit **conformance** claims, **governance** that survives turnover and tool churn), without pretending one row of the table replaces the field it came from.
 
 | Field lens (Part 1) | STE concept |
 | --- | --- |
@@ -85,7 +87,7 @@ STE’s job is to combine those insights into an **operational** engineering sys
 
 Source disciplines rarely ship one software-native loop that ties **decisions**, a canonical compiled model, **runtime evidence**, **deterministic assessment** where honest, and **governance** records into one inspectable story. STE names that gap and builds the handbook narrative around closing it. STE also refuses two common escapes: pretending informal charisma replaces **intent**, and pretending automation replaces **governance**. The synthesis chapter states that contrast in one place.
 
-Each following chapter names what STE **imports** (vocabulary and mental moves), where that import shows up in the handbook spine, and what to carry forward as **axioms**.
+Each following chapter names what STE **imports** (vocabulary and mental moves), where that import shows up in the handbook spine, and what to carry forward as **axioms**. For the integration-versus-replacement stance, see also [What STE is and is not](../00-foundations/00-07-what-ste-is-and-is-not.md).
 
 ## Where This Appears in STE
 

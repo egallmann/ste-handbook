@@ -10,15 +10,15 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-Green tests and loud dashboards do not close a loop by themselves if the organization around them is not part of the same **governance** story. **Governance** theater, inconsistent **rules**, ignored waivers, and contradictory committees are **second-order** failures: the regulators do not regulate. STE treats that as a real engineering failure mode, not “process overhead.”
+Security committee A requires MFA on every admin path. Platform committee B ships a break-glass role “just for incidents” that bypasses it. Both approvals look legitimate in isolation. Together they quietly redefine what may ship. **STE needs this chapter** because tools and tests only close half a loop: **governance** is the layer that keeps **rules**, waivers, and incentives from contradicting declared **intent**.
 
-Software systems are not only technical graphs. They are socio-technical systems: people, incentives, budgets, incident stress, vendor relationships, and regulatory obligations shape behavior as much as APIs do. When engineering discussions ignore that wider loop, “technical fixes” fail repeatedly. The organization adjusts around the tool. The tool becomes theater. The **drift** returns in a new costume.
+Green tests and loud dashboards do not finish the job if the organization around them is not part of the same **governance** story. **Governance** theater, inconsistent **rules**, ignored waivers, and contradictory committees are **second-order** failures: the regulators do not regulate. STE treats that as real engineering risk, not “process overhead.”
 
-There is also a softer failure mode: **governance** theater. Organizations adopt rituals (tickets, templates, committees) without closing loops. Artifacts accumulate, but **decisions** do not become more traceable, and **validation** does not become more honest. Cybernetic vocabulary helps diagnose that pattern as a broken regulator: activity without **feedback** that changes allowed future states.
+Software systems are socio-technical: people, incentives, budgets, incident stress, vendors, and regulation shape behavior as much as APIs do. When discussions ignore that wider loop, “technical fixes” fail repeatedly. The org adjusts around the tool; the tool becomes theater; **drift** returns in a new costume. Rituals (tickets, templates, committees) without closed loops accumulate artifacts while **decisions** stay untraceable and **validation** stays shallow. Cybernetic vocabulary names that as a broken regulator: activity without **feedback** that changes allowed future states.
 
-Another failure mode is local optimization. A team improves its own delivery loop while the wider organization loses coherence: conflicting standards, duplicated platforms, competing sources of truth, and **governance** rules that contradict each other. Each local loop can look healthy while the meta-system becomes unstable.
+Local optimization is the same pattern at scale: one team’s loop looks healthy while conflicting standards, duplicated platforms, and contradictory **governance** **rules** make the meta-system unstable.
 
-Cybernetics, in the slice STE uses, is a vocabulary for **regulation** and **governance** of systems that include humans, machines, and organizations. It complements control theory’s focus on signals and errors with a wider question: who steers, through what institutions, and how do you steer the steering mechanisms themselves?
+Cybernetics, in the slice STE uses, is vocabulary for **regulation** and **governance** of systems that include humans, machines, and organizations. It complements control theory’s focus on signals and errors with a wider question: who steers, through what institutions, and how do you steer the steering mechanisms themselves?
 
 ## The Field Concept
 

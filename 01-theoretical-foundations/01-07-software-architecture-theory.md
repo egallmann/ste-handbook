@@ -10,17 +10,17 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
+Security’s diagram shows a trust boundary through the API gateway. Data’s diagram draws the same boundary through the warehouse. Both decks looked fine in review. Production traffic follows a third path introduced in a refactor. **STE needs this chapter** because **Architecture IR** and **projections** only work if software architecture’s core habit survives: one canonical description, many **views**, all accountable to the same identities.
+
 **Architecture descriptions** are often treated as one-off drawings or tribal knowledge. Without a canonical model, **views** diverge, **intent** becomes unreviewable, and **drift** between description and **embodiment** goes unnoticed until incidents.
 
-“Architecture” is an overloaded word. It sometimes means “important.” It sometimes means “diagrams.” It sometimes means “the parts I personally worry about.” That ambiguity is not harmless. It makes **governance** impossible because nobody agrees what must be reviewed. It makes **validation** impossible because nobody agrees what **intent** should say. It makes **drift** invisible because people can always redefine **architecture** to match what shipped.
+“Architecture” is overloaded: “important,” “diagrams,” or “what I worry about.” That ambiguity makes **governance** impossible because nobody agrees what must be reviewed, **validation** impossible because nobody agrees what **intent** should say, and **drift** invisible because people can redefine **architecture** to match what shipped.
 
-There is a related failure mode: architecture as static picture. Teams produce a diagram at kickoff, then never update it. The diagram becomes fiction, while **embodiment** becomes the tacit **architecture**. When incidents occur, responders improvise against reality, not against declared **constraints**. Software architecture theory’s emphasis on living descriptions is a direct response to that failure mode.
+Static kickoff diagrams are a related failure: the picture rots while **embodiment** becomes the tacit **architecture**. Incidents then force responders to improvise against reality, not declared **constraints**. Software architecture theory’s emphasis on living descriptions exists for that reason.
 
-Software architecture as a discipline tries to do better. It offers concepts for describing **structure** and **behavior**, for separating concerns, for reasoning about **quality attributes**, and for communicating to different stakeholders without pretending one drawing serves everyone. STE imports that discipline selectively because **Architecture IR** is, in practice, an architectural description compiled into a canonical, machine-addressable form.
+The discipline offers **structure**, **behavior**, separation of concerns, **quality attributes**, and stakeholder-specific views without pretending one drawing serves everyone. STE imports it selectively: **Architecture IR** is architectural description compiled into a canonical, machine-addressable form.
 
-The failure mode STE targets is architecture as informal charisma: a few senior engineers hold the shape in their heads, while the organization pretends the wiki is authoritative.
-
-That failure mode is especially costly when automation enters. Tools and agents do not inherit charisma. They inherit files, graphs, and **rules**. If **architecture** is not represented in those durable forms, automation will optimize the wrong object, confidently.
+The failure mode STE targets is informal charisma: a few senior engineers hold the shape in their heads while the organization pretends the wiki is authoritative. Tools and agents do not inherit charisma. They inherit files, graphs, and **rules**. If **architecture** is not in those durable forms, automation optimizes the wrong object, confidently.
 
 ## The Field Concept
 

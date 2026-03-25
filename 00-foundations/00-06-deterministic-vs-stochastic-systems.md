@@ -64,6 +64,8 @@ The handbook thesis is careful here: not every important property can be checked
 
 **Governed reasoning** does not eliminate **stochastic** layers. It makes their expectations explicit: what is being estimated, how uncertainty is reported, when humans must confirm, and how **governance** records the decision.
 
+A small split in practice: a structural policy test either passes or fails on the same graph input; treat that as **deterministic** for **governance** if the **rule** and **scope** are fixed. A “flaky” end-to-end test that fails one run in twenty on the shared CI pool is **stochastic** until you change the protocol (quarantine, retry policy with recorded limits, move to a dedicated environment). An LLM-suggested patch may be useful and still be **stochastic**: the **governance** question is what **evidence** and human review gate must surround it before it becomes **embodiment** you will defend.
+
 ### Agents and automation without hype
 
 Tools that generate or modify **embodiment** can accelerate work. They can also accelerate **drift** if **machine-readable intent** and **governed reasoning** are weak. The handbook thesis states the dependency plainly: autonomy without durable **intent** does not scale; it amplifies inconsistency.
@@ -89,7 +91,7 @@ Honesty preserves trust. Readers should know where the organization is running a
 
 ## Where this leads
 
-If **governed reasoning** must be honest about what can repeat and what cannot, the Part 0 argument is ready for positioning: what STE names, what it refuses to be mistaken for, and how the pieces fit as one **operational model**. The next chapter is [What STE is and is not](00-07-what-ste-is-and-is-not.md). The capstone [The STE thesis](00-08-the-ste-thesis.md) then states the integrated discipline in one place.
+If **governed reasoning** must be honest about what can repeat and what cannot, the Part 0 argument is ready for positioning: what STE names, what it refuses to be mistaken for, and how the pieces fit as one **operational model**. The next chapter is [What STE is and is not](00-07-what-ste-is-and-is-not.md), which fixes category before you meet the capstone. [The STE thesis](00-08-the-ste-thesis.md) then states the integrated discipline in one place.
 
 ## Relationship to STE system
 
