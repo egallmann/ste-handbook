@@ -26,7 +26,7 @@ The handbook **orients** readers and connects narrative to those authorities; it
 | Part | Title | Role |
 |------|--------|------|
 | 0 | Foundations | Problem, thesis, and vocabulary precursors. |
-| 1 | Theoretical foundations | Disciplinary scaffolding (systems, control, information, decision theory, MBSE, safety). |
+| 1 | Theoretical foundations | Disciplinary scaffolding (systems, information, control, cybernetics, decision theory, safety, software architecture, MBSE, synthesis). |
 | 2 | Overview | What STE is, terminology, system overview, lifecycle summary. |
 | 3 | Intent | Decisions, ADR planes, invariants, constraints, capabilities. |
 | 4 | Architecture IR | Canonical system model, compilation, traceability, diff, graph view. |

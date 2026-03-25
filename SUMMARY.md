@@ -13,19 +13,21 @@ Reading order follows Parts 0–11. Links are relative to this repository root.
 - [Architecture as a first-class artifact](00-foundations/00-04-architecture-as-a-first-class-artifact.md)
 - [Governed reasoning](00-foundations/00-05-governed-reasoning.md)
 - [Deterministic versus stochastic systems](00-foundations/00-06-deterministic-vs-stochastic-systems.md)
-- [The STE thesis](00-foundations/00-07-the-ste-thesis.md)
+- [What STE is and is not](00-foundations/00-07-what-ste-is-and-is-not.md)
+- [The STE thesis](00-foundations/00-08-the-ste-thesis.md)
 
 ## Part 1 — Theoretical foundations
 
 - [Theory overview](01-theoretical-foundations/01-00-theory-overview.md)
 - [Systems theory](01-theoretical-foundations/01-01-systems-theory.md)
-- [Control theory](01-theoretical-foundations/01-02-control-theory.md)
-- [Information theory](01-theoretical-foundations/01-03-information-theory.md)
-- [Decision theory](01-theoretical-foundations/01-04-decision-theory.md)
-- [Cybernetics](01-theoretical-foundations/01-05-cybernetics.md)
-- [Software architecture theory](01-theoretical-foundations/01-06-software-architecture-theory.md)
-- [Model-based systems engineering](01-theoretical-foundations/01-07-model-based-systems-engineering.md)
-- [Safety and constraints engineering](01-theoretical-foundations/01-08-safety-and-constraints-engineering.md)
+- [Information theory](01-theoretical-foundations/01-02-information-theory.md)
+- [Control theory](01-theoretical-foundations/01-03-control-theory.md)
+- [Cybernetics](01-theoretical-foundations/01-04-cybernetics.md)
+- [Decision theory](01-theoretical-foundations/01-05-decision-theory.md)
+- [Safety and constraints engineering](01-theoretical-foundations/01-06-safety-and-constraints-engineering.md)
+- [Software architecture theory](01-theoretical-foundations/01-07-software-architecture-theory.md)
+- [Model-based systems engineering](01-theoretical-foundations/01-08-model-based-systems-engineering.md)
+- [Synthesis: why STE exists](01-theoretical-foundations/01-09-synthesis-why-ste-exists.md)
 
 ## Part 2 — Overview
 

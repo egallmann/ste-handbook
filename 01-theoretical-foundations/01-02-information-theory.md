@@ -3,12 +3,14 @@ title: "Information Theory"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-23"
+last_reviewed: "2026-03-24"
 ---
 
 # Information Theory
 
-## The Problem
+## The Failure Mode
+
+Software systems change continuously. **Intent** must survive handoffs across people, time, and tools. When **intent** moves only through prose, chat, and ad hoc notes, you get **lossy intent transmission**: **decision**-critical distinctions disappear, and **entropy** rises. That is the structural twin of **lossy reasoning** (Part 0): the organization literally cannot recover what was committed.
 
 Organizations often treat communication as a soft skill problem and representation as paperwork. That split hides a harder fact: engineering coordination is **information work**. If the organization cannot recover what was decided, what was ruled out, and what must remain true, then **governance** becomes theater. People can be articulate, kind, and busy, and still produce **drift**.
 
@@ -18,19 +20,11 @@ This is the practical heart of **lossy reasoning**, named elsewhere in this hand
 
 The failure mode is moral: “people should communicate better.” The structural story is different: if you rely on lossy channels for **decision**-relevant detail, you should expect **drift** between **intent** and **embodiment**. The surprise is not that humans are imperfect. The surprise is when organizations act shocked that informal memory did not preserve **invariants** across turnover.
 
-## The Reframe
+## The Field Concept
 
 Treat information not as “data,” but as **distinguishability under noise**. A message is informative to the extent it reduces uncertainty for a receiver about something that matters. If receivers cannot tell which **decision** was made, which **constraint** is binding, or which **interface** contract is authoritative, then the organization has an information problem even if the chat log is long.
 
-STE uses this lens to motivate **canonical artifacts** and **Architecture IR**: not because documents are morally superior to conversation, but because some representations preserve distinctions cheaply while others smear them. **Traceability** is partly a signal preservation problem: keep the thread from commitment to **embodiment** and back through **evidence**.
-
 This chapter stays intuitive. It does not require entropy calculations for meetings.
-
-### Why this chapter exists in STE
-
-Because STE’s thesis includes machine participation. Tools and agents amplify whatever is explicit. They do not reliably reconstruct missing **intent** from vibes. Information vocabulary helps explain why “prompt harder” is not a substitute for durable records and structured models.
-
-## The Model
 
 ### What this field studies (intuitive slice)
 
@@ -82,35 +76,40 @@ STE’s response is not “stop summarizing.” It is “know which hops must pr
 
 Names are not trivia. If the same concept has three names across repositories, dashboards, and **intent** docs, readers must infer equivalence. Inference is **entropy**. **Architecture IR** and disciplined naming conventions are boring technologies for reducing **entropy**. They are part of why machine assistance remains feasible: models require stable identities.
 
-## The Implications
+## What STE Takes From This Field
 
-### How STE uses these ideas
+STE uses this lens to motivate **canonical artifacts** and **Architecture IR**: not because documents are morally superior to conversation, but because some representations preserve distinctions cheaply while others smear them. **Traceability** is partly a signal preservation problem: keep the thread from **commitment** to **embodiment** and back through **evidence**.
 
-STE uses information vocabulary to explain why **canonical artifacts** matter: they reduce ambiguous reconstruction. An Architecture Decision Record (**ADR**) is not magic. It is a **lossless**-leaning container for options, **constraints**, and consequences relative to most chat threads.
+Because STE’s thesis includes machine participation. Tools and agents amplify whatever is explicit. They do not reliably reconstruct missing **intent** from vibes. Information vocabulary helps explain why “prompt harder” is not a substitute for durable records and structured models.
+
+| Field concept | STE concept |
+| --- | --- |
+| **Signal** vs **noise** | Clarity of **intent** and interpretability of **evidence** |
+| **Entropy** (informal) | Ambiguity cost at **governance** and **validation** time |
+| **Lossless** vs **lossy** transforms | **Compilation** to **Architecture IR**; **traceability** across tools |
+| **Redundancy** | **Conformance** checks; **evidence**; **invariant** coverage |
+
+Prose-only documentation and meeting-only **commitments** are **lossy** channels by default. STE’s structural response is **machine-readable intent** where it matters, structured **ADRs**, a canonical **Architecture IR**, and **traceability** that preserves identity links across transforms. STE does not claim you can measure organizational **entropy** in bits, or that artifacts remove all ambiguity. It does tie information discipline to an operational stack: **ADRs**, **Architecture IR**, **validation** loops, and **governance** that picks authoritative channels when artifacts disagree.
+
+## Where This Appears in STE
+
+### Kernel and admission (high level)
+
+Later handbook material discusses **Kernel** logic: admission, assessment orchestration, and deterministic checks where honest. Information vocabulary clarifies what those mechanisms consume. They consume **signals** with defined shape: contracts, records, graph facts, test results, telemetry summaries. If inputs are ambiguous, the machinery will either refuse to act (good, if noisy) or act on the wrong interpretation (bad). **Noise** at input time is not fixed by more automation. It is fixed by better **intent** representation and better **evidence** discipline upstream.
+
+Information framing connects **intent**, **Architecture IR**, **traceability**, **validation**, and **evidence**. For traceability specifically, see [traceability](../04-architecture-ir/04-05-traceability.md). For compilation as a transform that should preserve identity links, see [compilation](../04-architecture-ir/04-04-compilation.md). For **lossy reasoning** as the organizational problem statement, see [The problem of lossy reasoning](../00-foundations/00-02-the-problem-of-lossy-reasoning.md). For **runtime evidence**, see [runtime evidence](../05-kernel/05-06-runtime-evidence.md) when that chapter develops. Many targets may remain skeletal; links show continuity.
+
+For **machine-readable intent** as a prerequisite for safe automation, see [What STE is and is not](../00-foundations/00-07-what-ste-is-and-is-not.md) and [The STE thesis](../00-foundations/00-08-the-ste-thesis.md). Normative requirements for formats and semantics belong in **ste-spec**, not in this chapter.
+
+STE uses information vocabulary to explain why **canonical artifacts** matter: they reduce ambiguous reconstruction. An Architecture Decision Record (**ADR**) is not magic. It is a **lossless**-leaning container for **options**, **constraints**, and consequences relative to most chat threads.
 
 STE uses the same lens for **Architecture IR**. A canonical graph is a representation chosen so teams can align on identities and relationships. It is not guaranteed to be complete, but it is designed to be **diff**able and inspectable, which is a form of **redundancy** against oral tradition.
-
-The IR is also a coordination hack against “multiple sources of truth” that are not actually equivalent. Teams often maintain a diagram for executives, a dependency graph for engineers, and a spreadsheet for SREs. Each can be locally optimized and globally inconsistent. A canonical model does not magically eliminate politics, but it gives **governance** a place to say: this is the shared object we diff and assess against. That move reduces a class of **entropy** where nobody knows which picture is binding.
 
 **Traceability** is signal preservation across transforms: from **decision** to model element to **implementation** touchpoints to **evidence** of runtime behavior. When **traceability** breaks, organizations rediscover **entropy**: many stories fit the partial facts.
 
 **Evidence** packaging is also informational. **Evidence** should carry provenance: what was observed, under what scope, with what assumptions. Thin **evidence** is high-**entropy** for **governance**: it invites argument.
 
-### Agents and tools amplify explicitness
-
-When tools generate diffs, suggestions, or refactors, they read what is written: files, schemas, declared policies, graph edges. They do not reliably read culture. If **invariants** live only in meeting tone, automation will not “pick them up” except by accident. That is not a complaint about AI. It is the same lesson as tests: executability requires representation.
-
-STE’s push toward **machine-readable intent** is therefore an information discipline choice. It reduces **entropy** for both humans and tools by making commitments addressable.
-
-### Where the analogy stops
-
-STE does not claim you can measure the **entropy** of a design review in bits. It does not claim information theory “proves” STE correct. The vocabulary is explanatory.
-
-Nor does STE claim that structured artifacts remove all ambiguity. Humans will still debate. The goal is narrower: remove *avoidable* ambiguity about commitments that must guide change.
-
-Finally, compression is not evil. The handbook likes concise writing. The danger is **lossy** compression of **decision** content without noticing the loss.
-
-### Practical review prompts (informational)
+When tools generate diffs, suggestions, or refactors, they read what is written: files, schemas, declared policies, graph edges. They do not reliably read culture. If **invariants** live only in meeting tone, automation will not “pick them up” except by accident. STE’s push toward **machine-readable intent** is therefore an information discipline choice. It reduces **entropy** for both humans and tools by making **commitments** addressable.
 
 When reviewing an **intent** change, ask:
 
@@ -119,21 +118,21 @@ When reviewing an **intent** change, ask:
 - What identifier ties this statement to **embodiment** checks?
 - What **evidence** would show **conformance** without relying on memory?
 
-These questions are STE-flavored information checks. They do not require mathematics.
+Finally, compression is not evil. The handbook likes concise writing. The danger is **lossy** compression of **decision** content without noticing the loss.
 
-If a team cannot answer them, the organization may still ship. It will ship with higher **entropy** about what “correct” means.
+## The Reference Problem
 
-## Relationship to STE system
+**Intent** only works as a reference if it survives the channels it travels through. Meetings, chat, and ad hoc docs are **lossy** by default: distinctions blur, options merge, and six months later several plausible stories fit the artifacts you kept. Information-theoretic vocabulary names that failure mode without pretending you can measure the org in bits. **Architecture IR**, structured **ADRs**, and explicit **traceability** are engineering responses: they pick an authoritative representation and preserve identities across transforms so **governance** and **validation** are not arguing over ghosts. **Evidence** packaging matters for the same reason—thin **evidence** reintroduces ambiguity at the worst time, when someone must decide whether **embodiment** matches declared **intent**.
 
-### How this connects to Kernel and admission (at a high level)
+## If You Ignore This Discipline
 
-Later handbook material discusses **Kernel** logic: admission, assessment orchestration, and deterministic checks where honest. Information vocabulary clarifies what those mechanisms consume. They consume **signals** with defined shape: contracts, records, graph facts, test results, telemetry summaries. If inputs are ambiguous, the machinery will either refuse to act (good, if noisy) or act on the wrong interpretation (bad). **Noise** at input time is not fixed by more automation. It is fixed by better **intent** representation and better **evidence** discipline upstream.
+**Intent** turns **lossy**: prose-only **ADRs**, chat, and wikis smear distinctions; **machine-readable intent**, **Architecture IR**, and **traceability** never get the job of preserving meaning. **Kernel** automation and mechanical **validation** inherit **noise** and act on the wrong story. The chain STE tracks is: continuous change → **Intent** drifts → **embodiment** diverges → **conformance** becomes unknown → **governance** loses control → risk accumulates. **This chapter protects:** **intent** encoding and **traceability** across tools and time.
 
-Information framing connects **intent**, **Architecture IR**, **traceability**, **validation**, and **evidence**. For traceability specifically, see [traceability](../04-architecture-ir/04-05-traceability.md). For compilation as a transform that should preserve identity links, see [compilation](../04-architecture-ir/04-04-compilation.md). For **lossy reasoning** as the organizational problem statement, see [The problem of lossy reasoning](../00-foundations/00-02-the-problem-of-lossy-reasoning.md). For **EDR**-style **evidence** records, see [runtime evidence](../05-kernel/05-06-runtime-evidence.md) when that chapter develops. Many targets may remain skeletal; links show continuity.
+## Role in the STE Argument
 
-For **machine-readable intent** as a prerequisite for safe automation, see [The STE thesis](../00-foundations/00-07-the-ste-thesis.md). Normative requirements for formats and semantics belong in **ste-spec**, not in this chapter.
+Once a **system** is bounded, the next break is representation: how **intent** is encoded so it does not dissolve in **noise**. This chapter explains why STE insists on canonical, inspectable artifacts rather than oral tradition alone. **Machine-readable intent** and **traceability** are how organizations reduce ambiguous reconstruction when tools and teams churn. Information vocabulary also frames **evidence** as signal with provenance, not vibes. Without this link, **control** and **cybernetics** metaphors have nothing stable to compare or regulate.
 
-## Summary
+## Axioms
 
 - Information work is not separate from engineering work; representation choices determine how much uncertainty future readers inherit about **decisions** and **constraints**.
 - Informal channels are often **lossy**; **lossy** channels predictably increase uncertainty about **intent** unless **decision**-critical detail lives in durable structured artifacts.
@@ -144,3 +143,5 @@ For **machine-readable intent** as a prerequisite for safe automation, see [The 
 - **Kernel**-style automation depends on low-**noise** inputs; upstream **intent** and **evidence** discipline is how organizations earn reliable mechanical checks.
 - Prefer one authoritative channel for **decision**-critical facts, then mirror with links rather than duplicate prose that will diverge.
 - When two artifacts disagree, **governance** should pick the authority or fix the duplication, not leave teams guessing.
+
+**Next:** [Control theory](01-03-control-theory.md) (reference, **evidence**, **validation**, **drift**).
