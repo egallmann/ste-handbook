@@ -28,7 +28,7 @@ Software culture flips between extremes: everything labeled “safety” for dra
 
 Many severe software failures share a skeleton: a component had authority to cause harm (money movement, data exposure, physical actuation, privileged access), while the organizational **intent** about that authority was implicit. **Governance** could not see when authority expanded because expansion happened through small, unreviewed changes. Assurance was replaced by optimism.
 
-STE’s response is structural: make authority-related **invariants** explicit, connect them to **Architecture IR** elements where possible, and require **evidence** that changes affecting authority were reviewed as such. This is not only “security scanning.” It is **governance** of the **design space** where risk concentrates.
+STE’s response is structural: make authority-related **invariants** explicit, connect them to **Architecture IR** elements where possible, and require **evidence** that changes affecting authority were reviewed as such. This is not only “security scanning.” It is **governance** of the **design space** where risk concentrates. Handbook usage of **Architecture IR** follows **`ste-spec`** terminology (cross-repo contract); it is not **`ArchModel`** (the adr-architecture-kit internal compiler structure).
 
 ### What this field studies (practical slice)
 
