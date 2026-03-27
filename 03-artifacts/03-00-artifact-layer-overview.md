@@ -20,6 +20,8 @@ STE defines **canonical artifact types**: named roles, schemas, and lifecycles (
 
 The **artifact layer** carries that system: structured records, the canonical **Architecture IR**, bindings from observation to scopes, and the links that make **traceability** and **conformance** inspectable.
 
+Together, these records form a **computable substrate**: tools—including deterministic checkers and model-based assistants—can traverse the same graph-shaped commitments humans review, **within** explicit **rules** and **governance**, instead of inferring structure only from informal prose.
+
 ### Canonical groupings
 
 - **Intent artifacts:** requirements, **constraints**, decisions (**ADRs**), **invariants** (chapters [Architecture decision records](03-01-architecture-decision-records.md) through [Invariants](03-03-invariants.md)).
@@ -35,6 +37,8 @@ It is not the runtime kernel, not the full delivery toolchain, and not informal 
 ## How artifacts are used in STE
 
 Normative content is **specified** and **governed** by people; STE **materializes and maintains** structured records, **Architecture IR**, **trace** edges, **evidence** records, and **projections** under **ste-spec** and policy. Artifacts **compile**, **revise** on governed change, **observe** **embodiment** to produce **evidence**, and feed **conformance** evaluation. **Projections** render the same underlying commitments for review without becoming a second source of truth.
+
+In mature use, senior engineers and architects spend more effort refining **rules**, **invariants**, **constraints**, patterns, capture structure, and the **metamodel** that **compilation** targets—so the STE system can run **mechanical checks**, preserve **traceability**, and **guide** design with structured questions—rather than re-reviewing every low-level change by hand alone.
 
 The chapters that follow each treat one artifact type or cross-cutting structure. Together they should let you walk from a decision to a model element to a test result without guessing the intermediate links.
 

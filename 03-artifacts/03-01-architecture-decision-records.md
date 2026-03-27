@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Architecture Decision Records"
 status: structured
 maturity: L1
@@ -19,7 +19,7 @@ Important choices disappear into memory, tickets, or informal decks. Nobody can 
 
 ## What the artifact is
 
-An **ADR** is a structured record of an architecture **decision**: context, options considered, the chosen commitment, and consequences. In STE it is an **intent** artifact type. It is not an omnibus narrative that describes the whole system, and it is not source code. It may reference **Architecture IR** elements once compiled, but the record carries rationale and decision status that the IR does not replace.
+An **ADR** is a structured record of an architecture **decision**: context, options considered, the chosen commitment, and consequences. In STE it is an **intent** artifact type—an **authoritative closure** of **design space** for the commitment it records, not meeting minutes dressed as architecture. It is not an omnibus narrative that describes the whole system, and it is not source code. **Architecture** is not “ADRs alone”; **ADRs** supply rationale and status while **compilation** projects structural commitments into **Architecture IR** where STE defines that mapping. It may reference **Architecture IR** elements once compiled, but the record carries rationale and decision status that the IR does not replace.
 
 STE may distinguish multiple ADR surfaces (for example lifecycle or packaging) in **ste-spec**. At handbook altitude, treat them as one family: recorded decisions with explicit lifecycle.
 

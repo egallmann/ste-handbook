@@ -14,7 +14,7 @@ People use “model” to mean a picture, a spreadsheet, or an informal shared u
 
 ## The Reframe
 
-[Architecture model (Architecture IR) overview](04-00-architecture-ir-overview.md) defines **Architecture IR** and the **architecture model** idea. This chapter names the **system model**: the conceptual **whole** that IR carries—not one diagram and not one document, but the **graph-shaped** description whose nodes and edges are the referents for **traceability**, **compilation** output, and **projection** generation. It is the structural counterpart to **intent**: **intent** says what is allowed and why; the system model says what the architecture **is** in terms of components, boundaries, and links—**as committed** through the pipeline.
+[Architecture model (Architecture IR) overview](04-00-architecture-ir-overview.md) defines **Architecture IR** and the **architecture model** idea. This chapter names the **system model**: the conceptual **whole** that IR carries—not one diagram and not one document, but the **graph-shaped** description whose nodes and edges are the referents for **traceability**, **compilation** output, **projection** generation, and mechanical **queries** and analysis. It is the structural counterpart to **intent**: **intent** says what is allowed and why; the system model says what the architecture **is** in terms of components, boundaries, and links—**as committed** through the pipeline.
 
 Serialization format is secondary. What matters is that the model is **one** addressable object in engineering practice, even if stored in shards or services physically.
 

@@ -53,7 +53,7 @@ These terms are used with stable meanings in Part 0. They are introduced precise
 - **Evidence:** Observations, with provenance, about what **embodiment** did or is; input to **validation**.
 - **Validation:** **Evidence**-linked assessment of **conformance** under agreed **rules** and **scopes**.
 - **Architecture:** The **structure of decisions** that shape the system, not only diagrams.
-- **Architecture IR:** The canonical compiled **architecture** model derived from **intent** **artifacts**; machine-addressable and shared for inspection and diff.
+- **Architecture IR:** The canonical compiled **architecture** model—the **system model** at the architecture layer for an agreed **scope**—derived from **intent** **artifacts**; machine-addressable and shared for inspection, diff, and mechanical reasoning.
 - **Governed reasoning:** **Reasoning** constrained by explicit **rules**, **scope**, and **evidence** expectations, tied to versioned **artifacts** and **governance** loops.
 - **Governance:** Control over system change over time: review, versioning, escalation, and allowed change.
 - **Deterministic:** Repeatable assessment under defined **rules** and **inputs** (and stated assumptions), treated as stable for **governance** where honest.
@@ -62,6 +62,8 @@ These terms are used with stable meanings in Part 0. They are introduced precise
 ## The Implications
 
 Code, tests, and documentation each help, but none alone is a durable, structured home for **architectural** commitments that you can revisit, compare, and check as the system evolves. Part 0 connects those pieces into a single loop so readers can carry one vocabulary into later parts.
+
+STE treats **architecture** as **computable** in a practical sense: when **intent** and compiled **Architecture IR** are machine-addressable, teams can query, diff, analyze, and run checks against the same structural object instead of re-deriving it from narrative. That is what later parts mean by mechanical **traceability** and **validation**. It is not a claim that every engineering judgment reduces to automation.
 
 This book explains the ideas and how they fit together. Where exact contracts matter, they belong in **ste-spec** and in code and systems built to match them. The handbook orients you; it does not replace those authorities.
 
@@ -78,4 +80,4 @@ Part 0 concludes in [What STE is and is not](00-07-what-ste-is-and-is-not.md) an
 - Part 0 is one **logical chain** from **decisions** and **constraints** through **lossy reasoning**, **intent** versus **embodiment**, **architecture** as **artifacts**, **governed reasoning**, **deterministic** versus **stochastic** assessment, explicit STE positioning, and the integrated **STE thesis**.
 - **Decisions** close design space; **constraints** reduce options; **traceability** links commitments to **embodiment** and **evidence**.
 - **Drift** and **conformance** require two maintained sides; **validation** is **evidence**-linked assessment under **rules** and **scopes**.
-- **Governance** and **governed reasoning** keep change reviewable over time; **Architecture IR** is the shared compiled structural object for **architecture**.
+- **Governance** and **governed reasoning** keep change reviewable over time; **Architecture IR** is the shared compiled **system model** for **architecture** at the layer and **scope** STE names.

@@ -72,6 +72,8 @@ Tools that generate or modify **embodiment** can accelerate work. They can also 
 
 The constructive claim is narrower. Where **intent**, **rules**, **scope**, and **evidence** are explicit, mechanical assistants and automation can participate safely in parts of the loop. Where those are missing, **stochastic** tools become another **lossy** channel dressed as progress.
 
+STE does not exist because of AI. The dependency runs the other way: a **computable, governed system model** (**Architecture IR** plus linked **intent**) is what makes model-based assistance materially safer and more consistent than guessing from raw repositories and chat alone.
+
 ### Analogy: measurement and instrument error
 
 Metrology separates the quantity being measured, the instrument, and the calibration story. Measurements come with error bands; procedures specify how to reduce variance. Software assessment is similar. **Deterministic** checks are like calibrated gauges on a stable quantity. **Stochastic** domains need experimental design, not pretend precision.

@@ -31,9 +31,11 @@ Treat this chapter as a stabilization pass aligned to the handbook glossary mean
 | **Design space** | The set of feasible approaches remaining after **constraints** are applied. | “Design space” as brainstorming breadth without **constraints**. |
 | **Invariant** | A statement that must hold for the design to remain valid unless **governance** explicitly revises it. | “Invariant” as a test name only. Tests may be **evidence**; the invariant is the commitment. |
 | **ADR** | Architecture Decision Record: durable, reviewable record of a **decision**, often with context, options, and consequences. | “ADR” as a template file nobody reads. The object is the recorded **decision**, not the file ritual. |
-| **Architecture IR** | Canonical, machine-addressable architecture model compiled from **intent** **artifacts**; shared object for inspection, diff, and traceability. | “The model” or “the graph” when you mean the canonical IR. Say **Architecture IR** once, then proceed. |
+| **Architecture IR** | Canonical **system model** at the architecture layer for an agreed **scope**, compiled from structured **intent** **artifacts**; machine-addressable graph shared for inspection, diff, **query**, analysis, and traceability—not a diagram format and not “the architecture” because a picture exists. | “The model” or “the graph” when you mean the canonical IR. Say **Architecture IR** once, then proceed. |
 
 **Prefer / avoid:** Prefer **intent** over generic “requirements” when you mean normative STE commitments. If you truly mean contractual requirements management, say so explicitly and map to **intent** once.
+
+**Model-based assistants (handbook sense):** tools that propose or transform **artifacts** or **embodiment** using learned components. They are **one consumer class** over **Architecture IR** and linked **intent**, operating under **governance** and **rules**—not the authority for **intent**, not a replacement for **governance**, and not the definition of STE.
 
 ### Embodiment, evidence, and runtime-facing terms
 

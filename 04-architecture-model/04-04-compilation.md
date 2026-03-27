@@ -14,7 +14,7 @@ If **Architecture IR** is edited by hand like a wiki, it becomes another documen
 
 ## The Reframe
 
-**Compilation**, in STE handbook usage, is the **intent-to-IR** pipeline—not the programming-language sense alone. It parses normative inputs, resolves references, materializes **entities** and **relationships**, attaches metadata, and emits a model state suitable for storage, **diff**, **projection**, and **validation**. Determinism is an **expectation where honest**: same inputs and rules should yield the same structural result, modulo declared nondeterministic steps called out in policy.
+**Compilation**, in STE handbook usage, is the **intent-to-IR** pipeline—the **architecture model build** that turns governed **intent** **artifacts** into the canonical **Architecture IR**—not the programming-language sense alone. It parses normative inputs, resolves references, materializes **entities** and **relationships**, attaches metadata, and emits a model state suitable for storage, **diff**, **projection**, **query**, and **validation**. Determinism is an **expectation where honest**: same inputs and rules should yield the same structural result, modulo declared nondeterministic steps called out in policy.
 
 ## The Model
 

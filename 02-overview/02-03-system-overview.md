@@ -1,4 +1,4 @@
-﻿---
+---
 title: "System Overview"
 status: structured
 maturity: L2
@@ -20,12 +20,28 @@ STE behaves as one system with multiple layers. This chapter names the layers an
 
 Read what follows as one system diagram in prose: subsystems as nodes, artifacts on edges, and flows as paths you could draw on a whiteboard. **Evidence** is observation of **embodiment**: tests, telemetry, analysis outputs, and similar channels, captured as **EDR**-shaped records before assessment consumes it.
 
+### Closed-loop chain (control view)
+
+At handbook altitude, STE is a **closed-loop control** system, not a linear document pipeline. One pass through the loop looks like this:
+
+1. **Human intent** at the boundary (conversation, review, editing workflows).
+2. **Intent artifacts:** **ADRs**, requirements, **constraints**, **invariants**, and related normative records.
+3. **Compilation** from structured **intent** into **Architecture IR**.
+4. **Architecture IR:** the canonical **system model** at the architecture layer for an agreed **scope**.
+5. **Projections, queries, and analysis** on IR (human-facing views plus mechanical checks and impact questions—interfaces per **ste-spec** where they matter).
+6. **Implementation / embodiment:** what is built and run.
+7. **Evidence:** tests, telemetry, audits, and other observations with provenance.
+8. **Assessment:** **conformance**, risk, and acceptability claims for declared **scopes** under **rules** (often **Kernel**-shaped orchestration).
+9. **Governance:** authorized change that revises **intent**, **embodiment** plans, or both—and returns the loop to step 1 or 2.
+
+**Governance** is the feedback that makes the loop **closed**: assessment outcomes and policy decisions change what may be built or what is declared true next, instead of “shipping the doc.”
+
 ### Major conceptual components
 
 These are roles, not a repo checklist:
 
-1. **Intent plane.** Humans and agents author and revise structured **intent** **artifacts** (including **ADRs** and **invariants**). Conversation interfaces and editing workflows live here at the human boundary.
-2. **Compilation to Architecture IR.** Structured **intent** compiles into a canonical **Architecture IR**: the shared machine-addressable model used for inspection, diff, graph traversal, and downstream tooling.
+1. **Intent plane.** Humans and agents author and revise structured **intent** **artifacts** (including **ADRs** and **invariants**). Conversation interfaces and editing workflows live here at the human boundary. Agents are one **tool class**; they are not the source of accountable **intent** or **governance** judgments.
+2. **Compilation to Architecture IR.** Structured **intent** compiles into a canonical **Architecture IR**: the shared machine-addressable **system model** used for inspection, diff, graph traversal, queries, analysis, and downstream tooling.
 3. **Projections.** **Projections** render **Architecture IR** and related material into diagrams, documents, and other human-facing views. Multiple projections should track the same underlying commitments when the system is healthy.
 4. **Embodiment sources.** Repositories, builds, infrastructure definitions, and runtime systems realize **embodiment**. This is not a passive archive. It is what actually runs.
 5. **Evidence collection.** Tests, telemetry, analysis outputs, and similar observations become **evidence** records (**EDR**s in handbook language) with provenance suitable for assessment.
@@ -54,7 +70,7 @@ Take a backward-compatibility **decision** in **intent** **artifacts**. Compilat
 ### Human, agent, and governance interaction points
 
 - **Where humans are primary:** accountable **decisions**, **governance** judgments, approval or rejection of exceptions, and acceptance when the work is judgment-shaped.
-- **Where agents and automation help:** drafting and refactoring structured **intent**, maintaining **Architecture IR**, running checks, gathering **evidence**, and executing mechanical steps when **intent** and **rules** are explicit enough to delegate safely.
+- **Where agents and automation help:** drafting and refactoring structured **intent**, maintaining **Architecture IR**, running checks, gathering **evidence**, and executing mechanical steps when **intent** and **rules** are explicit enough to delegate safely—all **over** the canonical model, **within** the same **governance** story as human editors.
 - **Where governance must be visible:** any change to normative **intent**, any waiver that alters **constraints** or **invariants**, and any response to sustained non-**conformance** or **drift** that needs an owner.
 
 The boundary is not “human good, machine bad.” The boundary is which steps require explicit **governance** and recorded accountability.
@@ -119,6 +135,7 @@ Normative interfaces and behavior belong to **ste-spec** and the implementing re
 ## Summary
 
 - **Intent** **artifacts**, **Architecture IR**, **projections**, **embodiment**, **evidence**, **Kernel**-shaped assessment, and **governance** are the major structural roles; edges are as in Flows A through C.
+- The **closed-loop chain** states the same story as a control loop: **governance** feeds revised **intent** and **embodiment** plans, not a one-way document handoff.
 - Three flows cover compile, assess, and govern; real work cycles among them.
-- Humans own **governance** and judgment; automation expands where **intent** and **rules** are explicit.
+- Humans own **governance** and judgment; automation and model-based assistants expand where **intent**, **Architecture IR**, and **rules** are explicit. **Architecture IR** is the conceptual center; AI is not.
 - Later parts deepen each region; **ste-spec** defines exact contracts.

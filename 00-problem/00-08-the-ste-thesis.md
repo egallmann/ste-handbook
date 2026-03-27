@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The STE Thesis"
 status: structured
 maturity: L2
@@ -18,7 +18,9 @@ The problem is integration. The cost of poor integration is familiar: teams adop
 
 ## The Reframe
 
-**System of Thought Engineering (STE)** is a discipline for treating software-intensive systems as objects whose evolution is **governed** by explicit **decisions** under **constraints**, with **intent** held distinct from **embodiment** so **drift** and **conformance** (the claim that **embodiment** matches **intent**) stay definable, with **architecture** carried as structured, versioned **intent** **artifacts** compiled where appropriate into a canonical structural model (**Architecture IR**), and with change assessed through **evidence**-linked **validation** and **governed reasoning** that separates **deterministic** checks honestly from **stochastic** or judgment-shaped work. It is not a single product, a certification, or a replacement for **ste-spec**; it is a way to structure engineering so **reasoning** can be reviewed, revised, and checked against reality instead of dissolving into **lossy** channels.
+**System of Thought Engineering (STE)** is a discipline for treating software-intensive systems as objects whose evolution is **governed** by explicit **decisions** under **constraints**, with **intent** held distinct from **embodiment** so **drift** and **conformance** (the claim that **embodiment** matches **intent**) stay definable, with **architecture** carried as structured, versioned **intent** **artifacts** compiled where appropriate into a canonical **system model** (**Architecture IR**) so **architecture** is **computable** (queryable, diffable, and checkable under **rules**), and with change assessed through **evidence**-linked **validation** and **governed reasoning** that separates **deterministic** checks honestly from **stochastic** or judgment-shaped work. It is not a single product, a certification, or a replacement for **ste-spec**; it is a way to structure engineering so **reasoning** can be reviewed, revised, and checked against reality instead of dissolving into **lossy** channels.
+
+STE does not exist because of AI. Model-based assistants become more useful and safer when a **computable, governed system model** exists for them to operate on; they are not the authority, the source of **intent**, or a substitute for **governance**.
 
 The reframed question for a team is not only "what did we ship?" It includes:
 
@@ -35,7 +37,7 @@ The STE thesis bundles six commitments that map directly to Part 0:
 1. **Explicit decisions and constraints.** **Engineering** narrows a **design space**; those **decisions** deserve **traceability** and records (**ADRs** and related **intent** **artifacts**).
 2. **Intent separated from embodiment.** **Intent** is normative; **embodiment** is descriptive (including code-level **implementation** as part of that whole). **Drift** is any difference between maintained **intent** and observed **embodiment**, not a vibe.
 3. **Architecture as structured artifact.** **Architecture** is the **structure of decisions**, versioned and connected to code, configuration, and operations, not only narrative or static diagrams.
-4. **Architecture IR.** A canonical, machine-addressable model compiled from **intent** gives the organization a shared object for diff, query, and projection.
+4. **Architecture IR (canonical system model).** A canonical, machine-addressable model compiled from **intent** gives the organization a shared object for diff, query, projection, and mechanical analysis—making **architecture** **computable** at the layer and **scope** STE names.
 5. **Evidence-linked validation.** **Conformance** is the claim that **embodiment** matches declared **intent**; **validation** is **evidence**-linked assessment of that claim under **rules** and **scopes**.
 6. **Governed reasoning and governance over time.** Human and procedural **governance** closes the loop: versioning, review, escalation, and allowed change when assessments or **constraints** demand it.
 
@@ -58,7 +60,7 @@ If the thesis holds for your context:
 - **Onboarding** improves because **decisions** and **constraints** are recoverable instead of scattered across chat and heroic memory.
 - **Refactors** become negotiations against declared structure rather than repeated relitigation of settled trades.
 - **Incidents** and audits gain **traceability** from claimed **invariants** to **evidence**, or expose gaps honestly.
-- Automation and agents participate where **machine-readable intent** and **governed reasoning** make that participation safe.
+- Automation and agents participate where **machine-readable intent**, **Architecture IR**, and **governed reasoning** make that participation safe: they reason **over** the same graph-shaped commitments humans review, not instead of them.
 
 If the thesis is ignored while borrowing vocabulary:
 
@@ -92,4 +94,5 @@ Later parts of the handbook unpack **intent**, **Architecture IR**, the **Kernel
 - **Conformance** is the claim that **embodiment** matches **intent**; **validation** is **evidence**-linked assessment of that claim under **rules** and **scopes**; both are accountability, not perfection (A4).
 - **Governance** is control over time: versioning, review, escalation, and loops from assessment to allowed change (A5).
 - **Machine-readable intent** is a prerequisite for safe autonomous assistance; without it, automation amplifies inconsistency (A6).
+- **Architecture IR** is the canonical **system model** at the architecture layer; AI and other tools are consumers of that object under **governance**, not STE’s defining center.
 - STE integrates these into one discipline: **governed reasoning** on shared **artifacts**, honest **deterministic** bounds, and explicit treatment of **stochastic** work.

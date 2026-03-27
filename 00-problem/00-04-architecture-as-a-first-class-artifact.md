@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Architecture as a First-Class Artifact"
 status: structured
 maturity: L2
@@ -56,6 +56,8 @@ Later parts of this handbook develop **Architecture IR**: a canonical, machine-a
 **Architecture IR** is not a replacement for judgment. It is a place where judgment can attach to named elements, relationships, and rules so that **governance** and **validation** have something stable to work on. Informal "canonical model" language is easy to misread; when this book means **Architecture IR**, it says **Architecture IR**.
 
 Operationally, that object is supposed to be boring in a useful way: reviewers can diff it against the last approved baseline; tools can query stable identities; compilers and linters can fail a change set when a declared boundary or **invariant** is violated. None of that replaces human judgment about tradeoffs. It does replace “we think the graph still matches” as the only test.
+
+**Architecture IR** is the **canonical system model** at the architecture layer for an agreed **scope**: it is not a diagram file format, and a picture on a slide is not “the architecture” just because it looks authoritative. Informal diagrams and prose documents are **sources** or **projections**; the running system is **embodiment**. Model-based assistants and other tools need the same stable identities and edges as deterministic checkers when they participate safely.
 
 ### Projections and views
 
