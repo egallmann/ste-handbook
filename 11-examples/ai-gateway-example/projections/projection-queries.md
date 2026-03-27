@@ -59,3 +59,4 @@ ARCH.PROJECT mermaid_flowchart "system_context" {
 
 - **Projection = function(IR snapshot, query/spec, layout)**. The IR stays **canonical**; Mermaid is a **derived view**.
 - A mature STE toolchain compiles a **projection spec**—often **reached via conversation**, then stored for repeatability—to Mermaid, SVG, C4, or tabular reports from the **same** IR. This example uses a small JSON file and committed outputs to show the **shape** of that pipeline only.
+- **Fidelity scales with relationships.** The handbook IR lists only a handful of edges so readers can follow the story. Production **Architecture IR** typically carries **many more** relationship types and rows; denser graphs support **higher-fidelity** projections (clearer ownership, deployment context, trace overlays, and safer diffs). See also [Projections README](README.md) (*Projection fidelity*).

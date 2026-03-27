@@ -13,6 +13,10 @@ Files under [`generated/`](generated/) are **structural projections** of that IR
 - `ir-capability-component.md` — components, capabilities, `implements` / `depends_on` / `exposes` among those types.
 - `ir-system-context.md` — gateway component, platform auth component, external systems, and key cross-boundary edges.
 
+## Projection fidelity (this example vs production IR)
+
+[`architecture-ir.json`](../ir/architecture-ir.json) intentionally carries a **small** relationship set so the Part 11 walkthrough stays easy to read. In real programs, **projection fidelity**—how trustworthy, stable, and question-complete a diagram or report feels—**rises with a richer edge graph**: more `depends_on`, `declared_in`, ownership, deployment, policy, and trace edges give projection selectors and layout engines more structure to preserve semantics under change. The committed Mermaid here is **minimal by design**; it is not a ceiling on what STE projections can express.
+
 **Do not hand-edit generated files** in normal authoring. Change [`architecture-ir.json`](../ir/architecture-ir.json) (or your **projection adapter** configuration), then **regenerate** through your STE toolchain.
 
 ## Regeneration (adapter, not handbook code)

@@ -1,6 +1,8 @@
-%% GENERATED FILE — do not edit by hand.
-%% Source: ../../ir/architecture-ir.json
-%% Regenerated via STE projection adapter (see ../projection-queries.md).
+<!--
+  Generated projection — do not hand-edit.
+  Source: ../../ir/architecture-ir.json
+  Regenerated via STE projection adapter (see ../projection-queries.md).
+-->
 
 # System context projection (from Architecture IR)
 
