@@ -138,6 +138,7 @@ Deeper treatment appears in the part overviews for intent, Architecture IR, kern
 - [Projections overview](../04-architecture-model/04-08-projections-overview.md)
 - [Conversation engine overview](../09-human-interface/09-00-conversation-engine-overview.md)
 - [Lifecycle and governance overview](../06-governance/06-00-lifecycle-overview.md)
+- [Canonical example — AI Gateway through STE](../11-examples/00-overview.md) for intent → derived IR → embodiment → EDR → correction in one thread
 
 Normative interfaces and behavior belong to **ste-spec** and the implementing repositories named in the handbook README, not to this sketch.
 

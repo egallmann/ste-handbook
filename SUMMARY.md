@@ -132,12 +132,29 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 ## Part 11 — Examples
 
 - [Examples overview](11-examples/11-00-examples-overview.md)
-- [Example system](11-examples/11-01-example-system.md)
-- [Conversation to ADR](11-examples/11-02-conversation-to-adr.md)
-- [ADR to IR](11-examples/11-03-adr-to-ir.md)
-- [IR to projection](11-examples/11-04-ir-to-projection.md)
-- [Conformance example](11-examples/11-05-conformance-example.md)
-- [Drift example](11-examples/11-06-drift-example.md)
+- [Canonical example — one system through STE](11-examples/00-overview.md)
+- AI Gateway walkthrough (read in order):
+  - [Step 1 — Requirements snapshot](11-examples/ai-gateway-example/01-requirements-snapshot.md)
+  - [Step 2 — Decision ledger](11-examples/ai-gateway-example/02-decision-ledger.md)
+  - [Step 3 — Logical ADR](11-examples/ai-gateway-example/03-logical-adr.md)
+  - [Step 4 — Physical-system ADR](11-examples/ai-gateway-example/04-physical-system-adr.md)
+  - [Step 5 — Physical-component ADR](11-examples/ai-gateway-example/05-physical-component-adr.md)
+  - [Step 6 — Derived Architecture IR](11-examples/ai-gateway-example/06-derived-architecture-ir.md)
+  - [Step 7 — Code semantic linkage](11-examples/ai-gateway-example/07-code-semantic-linkage.md)
+  - [Step 8 — EDR example](11-examples/ai-gateway-example/08-edr-example.md)
+  - [Step 9 — Drift and correction](11-examples/ai-gateway-example/09-drift-and-correction.md)
+- Diagrams (AI Gateway):
+  - [Intent to design](11-examples/ai-gateway-example/diagrams/intent-to-design.md)
+  - [Canonical vs derived](11-examples/ai-gateway-example/diagrams/canonical-vs-derived.md)
+  - [Design to embodiment](11-examples/ai-gateway-example/diagrams/design-to-embodiment.md)
+  - [Feedback loop](11-examples/ai-gateway-example/diagrams/feedback-loop.md)
+- Additional placeholders (scaffolding):
+  - [Example system](11-examples/11-01-example-system.md)
+  - [Conversation to ADR](11-examples/11-02-conversation-to-adr.md)
+  - [ADR to IR](11-examples/11-03-adr-to-ir.md)
+  - [IR to projection](11-examples/11-04-ir-to-projection.md)
+  - [Conformance example](11-examples/11-05-conformance-example.md)
+  - [Drift example](11-examples/11-06-drift-example.md)
 
 ## Part 12 — Adoption
 

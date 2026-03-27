@@ -111,4 +111,6 @@ flowchart LR
   EM -->|observedBy| EV
 ```
 
+**See also:** [Canonical example — AI Gateway through STE](../11-examples/00-overview.md) for one system traced from requirements through derived IR, embodiment linkage, and EDR-shaped evidence.
+
 **Next:** [Architecture decision records](03-01-architecture-decision-records.md).

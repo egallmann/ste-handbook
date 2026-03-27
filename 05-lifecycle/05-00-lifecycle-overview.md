@@ -68,5 +68,6 @@ For the fuller STE picture—**compilation**, **Architecture IR**, **derived pro
 - Loop mechanics: [Control loop overview](../06-governance/06-07-control-loop-overview.md).
 - Policy and operations: [Governance overview](../06-governance/06-00-lifecycle-overview.md).
 - Normative contracts: **ste-spec**.
+- End-to-end illustration: [Canonical example — AI Gateway through STE](../11-examples/00-overview.md)
 
 **Next:** [Intent formation](05-01-intent-formation.md).

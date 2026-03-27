@@ -151,6 +151,7 @@ When you adopt STE-shaped tooling, expect the same division of labor: **govern**
 - **Projection bundle:** [IR as a graph](04-07-ir-as-a-graph.md).
 - **Reading discipline:** [How to read diagrams and projections](../02-overview/02-05-how-to-read-diagrams-and-projections.md).
 - **Closed loop:** [System overview](../02-overview/02-03-system-overview.md).
+- **Full lifecycle example (complementary):** [Part 11 — Canonical example: AI Gateway through STE](../11-examples/00-overview.md) walks requirements, ledger, ADR ladder, derived IR, embodiment linkage, EDR, and drift in one continuous story.
 
 ## Summary
 

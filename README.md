@@ -46,7 +46,7 @@ For the full table of contents with links, see **[SUMMARY.md](SUMMARY.md)**. For
 
 1. Open **[SUMMARY.md](SUMMARY.md)** for the complete reading order.
 2. Read **Part 0 (Problem)** and **Part 2 (Overview)** for orientation, or follow the parts in order for a linear read.
-3. Use the artifacts → architecture model → lifecycle → governance → kernel → runtime spine; use **Part 11** for integrated walkthroughs.
+3. Use the artifacts → architecture model → lifecycle → governance → kernel → runtime spine; use **[Part 11 — Canonical example](11-examples/00-overview.md)** for an integrated walkthrough (AI Gateway: intent through drift and correction).
 
 Diagrams under **`diagrams/`** are Mermaid sketches for learning; they are not authoritative architecture definitions. See **[DISCLAIMER.md](DISCLAIMER.md)** for limitations of use.
 
