@@ -1,17 +1,53 @@
-# View Consistency
+---
+title: "View consistency"
+status: structured
+maturity: L2
+diagrams: false
+last_reviewed: "2026-03-26"
+---
 
-This chapter analyzes consistency constraints across projections: detecting conflicts, defining reconciliation strategies, and documenting known tolerances. It complements validation and governance.
+# View consistency
 
-## Why this matters
+## The Problem
 
-Inconsistent views erode trust faster than missing views. This chapter names the problem and mitigation patterns.
+Inconsistent **projections** destroy trust faster than missing ones. If the deployment diagram shows a dependency the security view omits, reviewers cannot know which **governance** story was true. **View consistency** is the discipline that multiple **projections** **render** the same **Architecture IR** commitments for their **scopes**, modulo **explicit** tolerances.
 
-## Planned coverage
+## The Reframe
 
-- Consistency models
-- Detection strategies
-- Governance of exceptions
+**Consistency** is not “all views look identical.” It is “no view **contradicts** IR for the **claims** it makes.” Different slices may omit elements, but they must not **assert** edges or properties that IR forbids or lacks. **Validation** can automate some checks; **governance** owns the rest ([Governed reasoning](../00-problem/00-05-governed-reasoning.md)).
 
-## Relationship to other chapters
+## The Model
 
-- View consistency checks ([chapter](../07-kernel/07-03-validation.md))
+### Same snapshot, many renderings
+
+A **consistency** baseline is: projections consumed together in a **governance** event reference the **same** IR snapshot (or compatible versions under merge rules). Mixed snapshots recreate meeting arguments that no **diff** can settle.
+
+### Cross-projection predicates
+
+Useful checks include: every edge shown in view A exists in IR; every boundary in security view maps to a trust **entity** in IR; service names in docs match IR labels and IDs. Predicate design is policy and **ste-spec** territory; the handbook asserts the **category** of checks.
+
+### Tolerances and waivers
+
+Sometimes views **intentionally** simplify: collapsing clusters, showing logical rather than physical paths. **Tolerances** should be **documented**—what simplification is allowed, what must never be simplified. **Waivers** are **governance** objects when simplification risks **misleading** **assessment**.
+
+### Drift and conformance
+
+**Drift** between projections and IR is **structural** **debt**. **Conformance** discussions often assume IR matches **intent** and **embodiment**; projection **conformance** is the prior step: do **derived** views still **track** **canonical** structure? Skipping it makes **evidence** and **Kernel** work look green while humans steer from false pictures ([Drift](../06-governance/06-03-drift.md)).
+
+## The Implications
+
+Add **projection** checks to CI where practical: regenerate and **diff** outputs, fail on orphan elements, flag notation mappings that drop edge types. Pair automated checks with periodic human **review** of **viewpoint** definitions—**rules** rot too.
+
+## Relationship to STE system
+
+- **Projections cluster:** [Projections overview](04-08-projections-overview.md) through [Stakeholder views](04-13-stakeholder-views.md).
+- **Kernel validation:** [Validation](../07-kernel/07-03-validation.md).
+- **Publication versus projection:** [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md).
+
+## Summary
+
+- **View consistency** means **projections** do not **contradict** **Architecture IR** for the claims they make.
+- **Snapshots**, **predicates**, and **documented tolerances** make consistency **checkable**.
+- Projection **drift** undermines **conformance** before **evidence** is even collected.
+
+**Next:** Continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md) or deepen **Kernel** mechanics in [Kernel overview](../07-kernel/07-00-kernel-overview.md).

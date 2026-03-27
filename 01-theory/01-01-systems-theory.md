@@ -95,7 +95,7 @@ Systems theory alone does not tell you which **boundary** is correct. STE adds a
 
 ## Where This Appears in STE
 
-STE’s canonical compiled model, **Architecture IR**, is best understood as a **system model** in the sense above: not merely a diagram, but a shared object with identities and relationships that teams can diff, trace, and assess. For the IR’s role as holistic graph and referent for traceability, see [the system model](../04-architecture-model/04-01-the-system-model.md) and [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md). Those chapters may still be skeletal; they indicate where the book attaches **composition** discipline to machine-addressable structure.
+STE’s canonical compiled model, **Architecture IR**, is best understood as a **system model** in the sense above: not merely a diagram, but a shared object with identities and relationships that teams can diff, trace, and assess. For the IR’s role as holistic graph and referent for traceability, see [the system model](../04-architecture-model/04-01-the-system-model.md) and [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). Those chapters attach **composition** discipline to machine-addressable structure.
 
 **Intent** declares what the **system** is supposed to be. **Embodiment** is what exists. **Validation** compares them using **evidence**. **Governance** decides how **boundaries**, **interfaces**, and **invariants** may change over time. Systems vocabulary is what keeps those sentences from collapsing into vague “systemness.”
 

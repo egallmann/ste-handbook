@@ -44,4 +44,4 @@ IR changes should correlate with governed **intent** changes. Silent drift betwe
 - [Architecture decision records](03-01-architecture-decision-records.md): decisions supply rationale; IR supplies the structural projection of commitments.
 - [Traceability](03-06-traceability.md): IR is the hub for many **traceability** edges.
 - [Publication versus projection](03-08-publication-vs-projection.md): IR is published truth at the architecture model layer; diagrams are **projections**.
-- Part 4: [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md), [Compilation](../04-architecture-model/04-04-compilation.md), [Traceability](../04-architecture-model/04-05-traceability.md) for IR-centric depth.
+- Part 4: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md), [Compilation](../04-architecture-model/04-04-compilation.md), [Traceability in Architecture IR](../04-architecture-model/04-05-traceability.md) for IR-centric depth.

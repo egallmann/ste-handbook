@@ -1,4 +1,4 @@
----
+﻿---
 title: "Part 5: Lifecycle Overview"
 status: structured
 maturity: L1
@@ -62,7 +62,7 @@ flowchart LR
 
 - Orientation: [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md).
 - Artifact types: [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md).
-- Canonical model: [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md).
+- Canonical model: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md).
 - Loop mechanics: [Control loop overview](../06-governance/06-07-control-loop-overview.md).
 - Policy and operations: [Governance overview](../06-governance/06-00-lifecycle-overview.md).
 - Normative contracts: **ste-spec**.

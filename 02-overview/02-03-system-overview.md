@@ -1,4 +1,4 @@
----
+﻿---
 title: "System Overview"
 status: structured
 maturity: L2
@@ -105,7 +105,7 @@ If you can sketch the loop, later chapters become “zoom into this region.” I
 Deeper treatment appears in the part overviews for intent, Architecture IR, kernel, control loop, projections, conversation, and lifecycle. Useful next anchors:
 
 - [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md)
-- [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md)
+- [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)
 - [Kernel overview](../07-kernel/07-00-kernel-overview.md)
 - [Control loop overview](../06-governance/06-07-control-loop-overview.md)
 - [Projections overview](../04-architecture-model/04-08-projections-overview.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Architecture Decision Records"
 status: structured
 maturity: L1
@@ -45,5 +45,5 @@ Creating, superseding, or retiring an ADR should follow an explicit path: owner,
 - [Invariants](03-03-invariants.md): a decision may introduce or relax **invariants**; both should stay aligned.
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): compilation ties decisions to canonical elements where STE defines that mapping.
 - [Traceability](03-06-traceability.md): links from ADR identifiers to IR nodes and checks.
-- Part 4: [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md) for IR depth.
+- Part 4: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md) for IR depth.
 - Part 9: [Decision capture](../09-human-interface/09-03-decision-capture.md) for conversational capture that must still land in durable records.

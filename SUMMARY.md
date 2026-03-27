@@ -51,12 +51,12 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 
 ## Part 4 — Architecture model
 
-- [Architecture IR overview](04-architecture-model/04-00-architecture-ir-overview.md)
+- [Architecture model (Architecture IR) overview](04-architecture-model/04-00-architecture-ir-overview.md)
 - [The system model](04-architecture-model/04-01-the-system-model.md)
 - [Entities](04-architecture-model/04-02-entities.md)
 - [Relationships](04-architecture-model/04-03-relationships.md)
 - [Compilation](04-architecture-model/04-04-compilation.md)
-- [Traceability](04-architecture-model/04-05-traceability.md)
+- [Traceability in Architecture IR](04-architecture-model/04-05-traceability.md)
 - [Diff and change](04-architecture-model/04-06-diff-and-change.md)
 - [IR as a graph](04-architecture-model/04-07-ir-as-a-graph.md)
 - [Projections overview](04-architecture-model/04-08-projections-overview.md)

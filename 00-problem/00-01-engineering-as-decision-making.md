@@ -1,4 +1,4 @@
----
+﻿---
 title: "Engineering as Decision-Making"
 status: structured
 maturity: L2
@@ -82,7 +82,7 @@ These needs point forward to machinery the handbook develops later: **Architectu
 
 STE treats software-intensive systems as objects whose evolution is governed by explicit **decisions** under **constraints**. In that story, **decisions** feed the **intent** model: what the organization treats as binding. **Intent** feeds **validation**, because checks need declared targets and defined **constraints**. **Validation** compares declared **intent** to observed reality (including **system behavior** and **embodiment**) using **evidence** to assess **conformance**. **Governance** closes the loop over time: versioning, review, escalation, and allowed change when assessments show non-conformance or when **constraints** change.
 
-For the artifact layer and how **ADRs** fit, see [Part 3: Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md). For how **conformance** is assessed, see [validation](../07-kernel/07-03-validation.md). For the canonical structural compilation of intent, see [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md). For mismatch over time, see [drift](../06-governance/06-03-drift.md). For how human and procedural control operates on that loop, see [governance](../06-governance/06-06-governance.md). Some linked chapters are still outlines; they anchor where the argument continues rather than promising finished depth everywhere.
+For the artifact layer and how **ADRs** fit, see [Part 3: Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md). For how **conformance** is assessed, see [validation](../07-kernel/07-03-validation.md). For the canonical structural compilation of intent, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For mismatch over time, see [drift](../06-governance/06-03-drift.md). For how human and procedural control operates on that loop, see [governance](../06-governance/06-06-governance.md). Some linked chapters are still outlines; they anchor where the argument continues rather than promising finished depth everywhere.
 
 ## Summary
 
