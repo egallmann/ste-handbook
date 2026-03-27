@@ -3,7 +3,7 @@ title: "Architecture model (Architecture IR) overview"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-03-27"
 ---
 
 # Architecture model (Architecture IR) overview
@@ -105,6 +105,7 @@ You do not need every detail in IR on day one. You do need honesty about what is
 - **Foundations:** [The problem of lossy reasoning](../00-problem/00-02-the-problem-of-lossy-reasoning.md), [Governed reasoning](../00-problem/00-05-governed-reasoning.md).
 - **Theory bridge:** [Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md).
 - **Downstream:** [Kernel overview](../07-kernel/07-00-kernel-overview.md), [Runtime evidence](../08-runtime/08-00-runtime-evidence.md), [Conformance](../03-artifacts/03-07-conformance.md).
+- **Worked example chain:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md).
 
 Exact schemas, admission behavior, and wire formats remain in **ste-spec** where applicable.
 

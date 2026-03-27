@@ -2,8 +2,8 @@
 title: "Projections overview"
 status: structured
 maturity: L2
-diagrams: false
-last_reviewed: "2026-03-26"
+diagrams: true
+last_reviewed: "2026-03-27"
 ---
 
 # Projections overview
@@ -22,6 +22,31 @@ STE’s rule at this layer is strict: **Architecture IR** is **canonical** for s
 
 - **Canonical (architecture model layer):** **Architecture IR** as published structural truth for a declared **scope**.
 - **Derived:** every **projection**—even a “source” diagram in a design tool—once wired into STE’s pipeline—is accountable to IR, not freestanding.
+
+Normative **intent** records (**ADRs**, **invariants**, requirements, **constraints**, recorded **decisions**) sit on the **authority** side of the pipeline: they are what **governance** commits and revises. **Compilation** and linking produce **Architecture IR**; **manifests**, **indices**, **registries**, **graphs**, rendered docs, and many review or gap summaries are **regenerated** from that substrate. They speed reading and automation; they do not compete with **intent** or published IR as alternate “truths.”
+
+**How to read this diagram:** **derived** artifacts are **disposable and reproducible**; fix authority in **intent** or IR, then **regenerate**—do not “patch” derived files by hand as if they were canonical.
+
+```mermaid
+flowchart TB
+  subgraph canon ["Canonical authority"]
+    ADR[Intent_ADRs_and_decisions]
+    INV[Invariants_and_constraints]
+    IR[Published_Architecture_IR]
+  end
+  subgraph deriv ["Derived rebuildable projections"]
+    MAN[Manifest_and_architecture_index]
+    REG[Entity_and_relationship_registries]
+    GRA[Architecture_graph]
+    REN[Rendered_docs_and_summaries]
+  end
+  ADR -->|"compile_and_link"| IR
+  INV -->|"compile_and_link"| IR
+  IR -->|"deterministic_generation"| MAN
+  IR -->|"deterministic_generation"| REG
+  IR -->|"deterministic_generation"| GRA
+  IR -->|"deterministic_generation"| REN
+```
 
 ### Why many projections exist
 

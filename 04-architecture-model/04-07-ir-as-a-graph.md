@@ -2,8 +2,8 @@
 title: "IR as a graph"
 status: structured
 maturity: L2
-diagrams: false
-last_reviewed: "2026-03-26"
+diagrams: true
+last_reviewed: "2026-03-27"
 ---
 
 # IR as a graph
@@ -21,6 +21,27 @@ Treating **Architecture IR** as an unstructured document store throws away STE�
 ### Nodes, edges, attributes
 
 Nodes carry type and identity; edges carry type, direction, and endpoints; both may carry attributes used by **rules** and **projections**. The metamodel defines valid compositions—what may link to what.
+
+In mature toolchains, several **machine-facing** files together form the **projection bundle** over **Architecture IR**: an **architecture index** names the bundle and points at **entity**, **relationship**, **system**, **component**, **decision**, **invariant**, and **unresolved** registries (and often a graph or graph-shaped export). That bundle is the **reasoning substrate** assistants and checkers traverse—not a single pretty diagram.
+
+**How to read this diagram:** treat the index and registries as **compiled, queryable views** of the same commitments **Architecture IR** holds; they should **regenerate** when canonical inputs change.
+
+```mermaid
+flowchart TB
+  IR[Architecture_IR]
+  IDX[Architecture_index]
+  IR -->|"emit"| IDX
+  IDX --> ENT[Entity_registry]
+  IDX --> REL[Relationship_registry]
+  IDX --> SYS[System_registry]
+  IDX --> CMP[Component_registry]
+  IDX --> DEC[Decision_registry]
+  IDX --> INV[Invariant_registry]
+  IDX --> UNR[Unresolved_registry]
+  IDX --> GRA[Architecture_graph]
+```
+
+A companion sketch lives at [`diagrams/projection-bundle.mmd`](../diagrams/projection-bundle.mmd).
 
 ### Paths and neighborhoods
 

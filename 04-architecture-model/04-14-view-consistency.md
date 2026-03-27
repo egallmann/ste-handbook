@@ -3,7 +3,7 @@ title: "View consistency"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-03-27"
 ---
 
 # View consistency
@@ -50,4 +50,4 @@ Add **projection** checks to CI where practical: regenerate and **diff** outputs
 - **Snapshots**, **predicates**, and **documented tolerances** make consistency **checkable**.
 - Projection **drift** undermines **conformance** before **evidence** is even collected.
 
-**Next:** Continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md) or deepen **Kernel** mechanics in [Kernel overview](../07-kernel/07-00-kernel-overview.md).
+**Next:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md) shows minimal **intent**→**projection** shapes in one chain. Then continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md) or deepen **Kernel** mechanics in [Kernel overview](../07-kernel/07-00-kernel-overview.md).

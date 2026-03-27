@@ -3,7 +3,7 @@ title: "System Overview"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-24"
+last_reviewed: "2026-03-27"
 ---
 
 # System Overview
@@ -77,37 +77,48 @@ The boundary is not “human good, machine bad.” The boundary is which steps r
 
 ### Diagram companion
 
-A companion Mermaid sketch lives at [`diagrams/system-overview.mmd`](../diagrams/system-overview.mmd). It may evolve independently; this chapter’s prose is the orientation authority if they diverge during drafting.
+A companion Mermaid sketch lives at [`diagrams/system-overview.mmd`](../diagrams/system-overview.mmd). It may evolve independently; this chapter’s prose is the orientation authority if they diverge during drafting. For how to read handbook diagrams versus canonical truth, see [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md).
+
+**How to read this diagram:** it is a **control-loop** sketch—**governance** closes the loop back to human capture, **intent** **artifacts**, and **embodiment** plans; **compilation** and **extraction** feed **Architecture IR**; **derived projections** are regenerable views, not a second authority.
 
 ```mermaid
 flowchart LR
-  subgraph intentPlane ["Intent plane"]
-    A["Intent artifacts"]
+  subgraph humanBoundary ["Human and org boundary"]
+    H[Capture_review_obligations]
   end
-  subgraph canonical ["Canonical model"]
-    B["Architecture IR"]
+  subgraph intentPlane ["Intent artifacts"]
+    A[ADRs_constraints_invariants]
   end
-  subgraph views ["Projections"]
-    C["Human-readable views"]
+  subgraph pipeline ["Compile extract normalize"]
+    X[Compilation_and_extraction]
+  end
+  subgraph canonical ["Architecture IR"]
+    B[Canonical_model]
+  end
+  subgraph views ["Derived projections"]
+    C[Manifest_registries_graph_rendered]
   end
   subgraph built ["Embodiment"]
-    D["Running system"]
+    D[Running_system]
   end
   subgraph proof ["Evidence"]
-    E["EDRs and tests"]
+    E[EDRs_tests_freshness]
   end
   subgraph assess ["Assessment"]
-    F["Kernel role"]
+    F[Kernel_role]
   end
   subgraph gov ["Governance"]
-    G["Policy loop"]
+    G[Authorized_change]
   end
-  A --> B
+  H --> A
+  A --> X
+  X --> B
   B --> C
   B --> F
   D --> E
-  E --> F
+  E -->|"provenance_and_freshness"| F
   F --> G
+  G --> H
   G --> A
   G --> D
 ```
@@ -130,7 +141,7 @@ Deeper treatment appears in the part overviews for intent, Architecture IR, kern
 
 Normative interfaces and behavior belong to **ste-spec** and the implementing repositories named in the handbook README, not to this sketch.
 
-**Next:** Read [The STE lifecycle](02-04-the-ste-lifecycle.md) next. It uses this same structure as a repeating loop over time: **intent**, **architecture**, **embodiment**, **evidence**, assessment, **conformance**, **change**, and return.
+**Next:** If diagrams and derived handbook figures still feel ambiguous, read [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md). Then read [The STE lifecycle](02-04-the-ste-lifecycle.md); it uses this same structure as a repeating loop over time: **intent**, **architecture**, **embodiment**, **evidence**, assessment, **conformance**, **change**, and return.
 
 ## Summary
 

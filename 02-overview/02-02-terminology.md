@@ -3,7 +3,7 @@ title: "Terminology"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-24"
+last_reviewed: "2026-03-27"
 ---
 
 # Terminology
@@ -91,7 +91,7 @@ Deep dives in Parts 3 through 9 should inherit the meanings here rather than inv
 
 When two readings of a term would change an obligation, **ste-spec** and published contracts decide the technical meaning. This chapter orients reading; it does not override the specification.
 
-**Next:** Continue with [System overview](02-03-system-overview.md). The grouped senses here attach to named boxes, artifacts, and flows there. Read [The STE lifecycle](02-04-the-ste-lifecycle.md) after that for the same structure read as a repeating loop over time.
+**Next:** Continue with [System overview](02-03-system-overview.md). The grouped senses here attach to named boxes, artifacts, and flows there. Read [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md) when you need an explicit authority checklist for figures and generated registries; then [The STE lifecycle](02-04-the-ste-lifecycle.md) for the same structure read as a repeating loop over time.
 
 ## Summary
 

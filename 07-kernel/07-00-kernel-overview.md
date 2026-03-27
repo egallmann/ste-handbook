@@ -17,3 +17,4 @@ The kernel is where intent meets reality in STE’s story. Readers need a map be
 ## Relationship to other chapters
 
 - Kernel ([chapter](07-01-kernel.md))
+- Runtime evidence and the **runtime reasoning gate** (freshness, context assembly before assistant-facing tools): [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)

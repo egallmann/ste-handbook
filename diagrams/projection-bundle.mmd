@@ -1,0 +1,14 @@
+%% Projection bundle over Architecture IR (Diagram E). Companion to 04-architecture-model/04-07-ir-as-a-graph.md.
+
+flowchart TB
+  IR[Architecture_IR]
+  IDX[Architecture_index]
+  IR -->|"emit"| IDX
+  IDX --> ENT[Entity_registry]
+  IDX --> REL[Relationship_registry]
+  IDX --> SYS[System_registry]
+  IDX --> CMP[Component_registry]
+  IDX --> DEC[Decision_registry]
+  IDX --> INV[Invariant_registry]
+  IDX --> UNR[Unresolved_registry]
+  IDX --> GRA[Architecture_graph]

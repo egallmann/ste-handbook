@@ -3,7 +3,7 @@ title: "The STE Lifecycle"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-24"
+last_reviewed: "2026-03-27"
 ---
 
 # The STE Lifecycle
@@ -73,6 +73,7 @@ Stage-by-stage lifecycle accountability is in Part 5 ([Lifecycle overview](../05
 
 Related orienting chapters:
 
+- [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md)
 - [Control loop overview](../06-governance/06-07-control-loop-overview.md)
 - [Kernel overview](../07-kernel/07-00-kernel-overview.md)
 

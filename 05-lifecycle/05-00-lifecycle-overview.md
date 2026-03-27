@@ -1,9 +1,9 @@
-﻿---
+---
 title: "Part 5: Lifecycle Overview"
 status: structured
 maturity: L1
 diagrams: true
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-27"
 ---
 
 # Part 5: Lifecycle Overview
@@ -57,6 +57,8 @@ flowchart LR
   Decision --> Change
   Change --> Intent
 ```
+
+For the fuller STE picture—**compilation**, **Architecture IR**, **derived projections**, **Kernel**-shaped **assessment**, and **governance** return paths—use [System overview](../02-overview/02-03-system-overview.md).
 
 ## Relationship to other chapters
 
