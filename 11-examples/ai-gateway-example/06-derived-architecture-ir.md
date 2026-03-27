@@ -21,8 +21,8 @@ Show that **humans** author **canonical** intent and ADRs, while **compilation**
 This example keeps **one consolidated IR file** so diagrams can be **regenerated** from the same ids and edges as the narrative:
 
 - [`ir/architecture-ir.json`](./ir/architecture-ir.json) — entities and relationships (aligned with steps 3–5).
-- [`projections/generated/ir-capability-component.md`](./projections/generated/ir-capability-component.md) and [`ir-system-context.md`](./projections/generated/ir-system-context.md) — **Mermaid** views **generated** by [`generate_projections.py`](./generate_projections.py). Do not hand-edit those outputs.
-- [`projections/projection-queries.md`](./projections/projection-queries.md) — illustrative **projection-query** sketches (Arch DSL–style pedagogy) that describe **what** each generated view selects from IR.
+- [`projections/generated/ir-capability-component.md`](./projections/generated/ir-capability-component.md) and [`ir-system-context.md`](./projections/generated/ir-system-context.md) — **Mermaid** views produced by a **projection adapter** from that IR (selections sketched in [`projection-queries.md`](./projections/projection-queries.md)). The handbook commits these outputs; **do not hand-edit** them except via IR or adapter regeneration.
+- [`projections/projection-queries.md`](./projections/projection-queries.md) — illustrative **projection-query** sketches (Arch DSL–style pedagogy) that describe **what** each view selects from IR.
 
 That pipeline is the handbook’s demonstration of **projection = f(IR snapshot, query/spec, layout)**: the IR stays authoritative; Mermaid is a **derived** view. Conceptual process figures under [`diagrams/`](./diagrams/) are **not** claimed to be emitted from this JSON.
 

@@ -1,6 +1,6 @@
 %% GENERATED FILE — do not edit by hand.
 %% Source: ../../ir/architecture-ir.json
-%% Generator: 11-examples/ai-gateway-example/generate_projections.py
+%% Regenerated via STE projection adapter (see ../projection-queries.md).
 
 # Capability / component projection (from Architecture IR)
 

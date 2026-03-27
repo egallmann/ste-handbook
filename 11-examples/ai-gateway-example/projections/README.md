@@ -1,35 +1,25 @@
 # IR-driven projections (AI Gateway example)
 
-This folder shows how **Architecture IR** can feed **repeatable projections**—here, **Mermaid** diagrams (in Markdown fences) generated from the consolidated IR snapshot.
+This folder shows how **Architecture IR** can feed **repeatable projections**—here, **Mermaid** diagrams (in Markdown fences) aligned to the consolidated IR snapshot.
 
 ## Source of truth
 
 - IR snapshot: [`../ir/architecture-ir.json`](../ir/architecture-ir.json)
 
-## Generated outputs
+## Committed outputs
 
-Files under [`generated/`](generated/) are produced by [`../generate_projections.py`](../generate_projections.py):
+Files under [`generated/`](generated/) are **structural projections** of that IR (capability/component view and system context). They are **checked in** as the reader-visible illustration.
 
 - `ir-capability-component.md` — components, capabilities, `implements` / `depends_on` / `exposes` among those types.
 - `ir-system-context.md` — gateway component, platform auth component, external systems, and key cross-boundary edges.
 
-**Do not hand-edit generated files.** Change the IR JSON (or the generator), then re-run the script.
+**Do not hand-edit generated files** in normal authoring. Change [`architecture-ir.json`](../ir/architecture-ir.json) (or your **projection adapter** configuration), then **regenerate** through your STE toolchain.
 
-## Regenerate
+## Regeneration (adapter, not handbook code)
 
-From the **ste-handbook** repository root:
+The handbook does **not** ship an executable generator. In a full STE deployment, a **projection adapter** (compiler plugin, service, or internal tool) consumes **Architecture IR** plus a **projection spec**—conceptually the selections in [`projection-queries.md`](projection-queries.md)—and emits views such as these Markdown+Mermaid files.
 
-```bash
-python 11-examples/ai-gateway-example/generate_projections.py
-```
-
-Or from `11-examples/ai-gateway-example/`:
-
-```bash
-python generate_projections.py
-```
-
-Requires **Python 3** with the standard library only (uses `json`).
+Readers and integrators use the **adapter interface**; they do not need to edit projection code unless they are extending the platform. Maintainers who keep a **local** helper script for this example may do so; it is **gitignored** and not part of the public manuscript (see repository `.gitignore`).
 
 ## Query-shaped projection specs
 

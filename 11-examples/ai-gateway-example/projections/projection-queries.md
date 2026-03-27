@@ -2,7 +2,7 @@
 
 These snippets express **what** a projection selects from **Architecture IR**. They are **handbook pedagogy**—a readable stand-in for a real graph query or STE **projection specification DSL**, not normative syntax.
 
-The IR snapshot is [`../ir/architecture-ir.json`](../ir/architecture-ir.json). The generator script implements the same selections in Python; treat these blocks as **documentation of intent**.
+The IR snapshot is [`../ir/architecture-ir.json`](../ir/architecture-ir.json). A **projection adapter** in your STE toolchain implements equivalent selections; treat these blocks as **documentation of intent** for that adapter (the handbook does not ship generator source).
 
 ---
 
