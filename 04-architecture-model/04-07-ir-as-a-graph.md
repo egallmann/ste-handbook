@@ -30,9 +30,9 @@ Many engineering questions are **path** questions: dependencies of dependencies,
 
 **Scopes** for **validation**, **certification**, or **evidence** collection are often **subgraphs**: “this service and its transitive runtime dependencies.” IR lets **scopes** be **named** and **reused** instead of reinvented per checklist.
 
-### Algorithms without implementation detail
+### Algorithms and performance
 
-Centrality, cycle detection, reachability, and constraint propagation are examples of analyses STE enables once IR is real. This handbook does not prescribe algorithms or performance; it states that IR is shaped **so that** such analyses are legitimate engineering work, not one-off scripts scraping README files.
+Centrality, cycle detection, reachability, and constraint propagation are examples of analyses STE enables once IR is real. This handbook does not prescribe specific algorithms or performance targets; it states that IR is shaped **so that** such analyses are legitimate engineering work, not one-off scripts scraping README files.
 
 ## The Implications
 

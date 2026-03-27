@@ -14,7 +14,7 @@ Humans cannot read **Architecture IR** raw at scale. **Projections**—diagrams,
 
 ## The Reframe
 
-A **projection** is a **derived human-usable view** from **Architecture IR** (and, where allowed, related **intent** or **evidence** summaries), generated under explicit rules. Multiple projections coexist because stakeholders need different slices and notations; **consistency** is the obligation that they **do not contradict** the same IR snapshot without a documented exception ([Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md)).
+STE’s rule at this layer is strict: **Architecture IR** is **canonical** for structural commitments in a declared **scope**; anything rendered for humans from that graph is **derived** and must **track** IR when the pipeline is healthy. Multiple projections coexist because stakeholders need different slices and notations; **consistency** means they **do not contradict** the same IR snapshot without a documented exception ([Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md)). How selection, notation, and provenance work in practice is the subject of [Projections](04-09-projections.md).
 
 ## The Model
 

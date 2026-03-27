@@ -14,7 +14,7 @@ last_reviewed: "2026-03-26"
 
 ## The Reframe
 
-A **projection** is produced by a **projection function**: inputs include an IR snapshot (and configuration: layout, filters, notation), outputs include human-consumable artifacts (SVG, PDF, HTML, slides). The function should be **versioned** or **reproducible** so “what we reviewed” is answerable. This chapter stays conceptual; toolchains live outside the handbook.
+[Projections overview](04-08-projections-overview.md) states the policy: IR is **canonical**, projections are **derived**. Here, treat a **projection** as a **projection function**: inputs include an IR snapshot (and configuration: layout, filters, notation), outputs include human-consumable artifacts (SVG, PDF, HTML, slides). The function should be **versioned** or **reproducible** so “what we reviewed” is answerable. This chapter stays conceptual; toolchains live outside the handbook.
 
 ## The Model
 
@@ -36,7 +36,7 @@ Authoring tools may be interactive; **canonical** alignment happens when exports
 
 ## The Implications
 
-Treat broken regeneration as a **severity**: blocking for regulated **scopes**, warning otherwise—policy choice, but not invisible. **Agents** and humans both consume **projections**; reproducible generation keeps **governed reasoning** stable when automation drafts prose around diagrams.
+Treat broken regeneration as a **severity**: blocking for regulated **scopes**, warning otherwise—policy choice, but not invisible. Automation and humans both consume **projections**; reproducible generation keeps **governed reasoning** stable when generated or assisted prose ships next to diagrams.
 
 ## Relationship to STE system
 

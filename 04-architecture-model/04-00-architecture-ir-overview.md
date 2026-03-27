@@ -18,15 +18,13 @@ STE’s response is not “draw more carefully.” It is to treat the **architec
 
 In handbook language, that canonical architecture model is **Architecture IR**: the compiled, machine-addressable graph of architectural **entities** and **relationships** (and the metadata needed to interpret them), produced from structured **intent** and related inputs under **compilation** rules. “Architecture model” names the *idea*—what the system **is**, structurally and relationally, as committed through the intent pipeline. **Architecture IR** names the *proper object* STE uses for inspection, diff, linking, and downstream tooling.
 
-This part of the book is not a specification of wire formats (that belongs in **ste-spec**). It is the conceptual spine: what the model is for, how it sits between **intent** and **embodiment**, how it differs from diagrams and documents, and how **projections** keep humans aligned with the same graph.
+This part of the book is not a specification of wire formats (that belongs in **ste-spec**). It is the conceptual spine: what the model is for, how it sits between **intent** and **implementation** / **embodiment**, how it differs from diagrams and documents, and how **projections** keep humans aligned with the same graph.
 
 ## The Model
 
 ### What Architecture IR is
 
-**Architecture IR** is the structured representation of the system **as designed and committed** at the architecture layer relevant to STE: components, boundaries, interfaces, dependencies, capabilities, and similar structural facts, with stable identities and typed edges. It is the **central structural object** STE operates on for reasoning about **structure**—not the only artifact in the system ( **intent** **artifacts**, **evidence**, and **governance** records matter too), but the hub that lets those other artifacts **point at the same things**.
-
-It must be **machine-traversable** so automation can walk the graph, compute impact, and drive checks. It must stay **human-reviewable** because **projections** (diagrams, documents, views) render from it; when the pipeline is healthy, those views disagree only where **governance** allows explicit tolerance—not because reality forked silently.
+**Architecture IR** is the **central structural object** for STE at the architecture layer: not the only **artifact** in the loop (**intent** records, **evidence**, and **governance** matter too), but the hub that lets them **point at the same things**. It must be **machine-traversable** for automation and **human-reviewable** through **projections**; when the pipeline is healthy, views disagree only where **governance** allows explicit tolerance—not because reality forked silently. For the model as one coherent graph-shaped whole—components, boundaries, interfaces, dependencies, and the like—see [The system model](04-01-the-system-model.md).
 
 ### What it is not (boundary discipline)
 
@@ -34,13 +32,15 @@ It must be **machine-traversable** so automation can walk the graph, compute imp
 |---------------------|-------------|
 | **Diagrams** and informal sketches | **Projections** derived from IR; not authoritative over the graph |
 | **ADRs** and narrative **intent** | Record **decisions** and rationale; IR carries the **structural projection** of what was committed |
-| **Code**, repos, and running systems | **Implementation** and **embodiment**; IR **references** identities and scopes what observation means |
+| **Code**, repos, and running systems | **Implementation** (code-level) and **embodiment** (the full realized system); IR **references** identities and scopes what observation means |
 | **Kernel** and **runtime** mechanics | How IR is admitted, validated, and combined with **evidence** (Parts 7–8); not the definition of structure itself |
 | General **MBSE** repositories | STE aligns on canonical model discipline at the software-architecture layer; full MBSE scope is broader ([Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md)) |
 
 ### The flow this part assumes
 
 **Intent** (normative **artifacts**) → **compilation** → **Architecture IR** → **projections** for humans + references into **embodiment** → **evidence** about what exists and behaves → **assessment** / **validation** (Kernel role) under **rules** → **governance**. **Drift** and **conformance** are meaningful when **intent**, IR, and **evidence** can refer to the **same** structural objects—not when each tool rebuilds its own graph from scraps ([Intent versus implementation](../00-problem/00-03-intent-vs-implementation.md), [Architecture as a first-class artifact](../00-problem/00-04-architecture-as-a-first-class-artifact.md)).
+
+At handbook altitude, STE repeats the same chain [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md) states in one line: **intent** → **architecture** (**Architecture IR** and **projections**) → **implementation** / **embodiment** → **evidence** → **assessment**. **Architecture IR** sits between normative **intent** and what gets built and run; it expresses structural commitments in a shared, addressable form. **Evidence** observes **embodiment**; **assessment** (including **validation** under agreed **rules**, often orchestrated in the **Kernel** role) is where claims about **conformance** and mismatch are made against **intent**, IR, and **evidence** for a declared **scope**. For **implementation** versus **embodiment** naming, see [Terminology](../02-overview/02-02-terminology.md).
 
 ### Mental map of the handbook
 
@@ -73,7 +73,7 @@ flowchart LR
     V[Observations]
   end
   subgraph assess [Assessment]
-    K[Kernel_role]
+    K[Assessment_Kernel]
   end
   I --> M
   M --> P
@@ -82,9 +82,13 @@ flowchart LR
   V --> K
 ```
 
+**Reading the diagram:** **Assessment** names the lifecycle stage where **evidence** is weighed against commitments; **Kernel** names a common orchestration locus for that work in STE’s story—not the whole of human judgment in **assessment**.
+
 ### How Part 4 is organized
 
-Read [The system model](04-01-the-system-model.md), then [Entities](04-02-entities.md) and [Relationships](04-03-relationships.md) for the building blocks. [Compilation](04-04-compilation.md) explains the bridge from **intent** to IR. [Traceability in Architecture IR](04-05-traceability.md), [Diff and change](04-06-diff-and-change.md), and [IR as a graph](04-07-ir-as-a-graph.md) treat IR as a **reasoning surface**. [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) cover **canonical versus derived** views and consistency expectations.
+**Default path (matches chapter order):** Read [The system model](04-01-the-system-model.md), then [Entities](04-02-entities.md) and [Relationships](04-03-relationships.md) for the building blocks. [Compilation](04-04-compilation.md) explains the bridge from **intent** to IR. [Traceability in Architecture IR](04-05-traceability.md), [Diff and change](04-06-diff-and-change.md), and [IR as a graph](04-07-ir-as-a-graph.md) treat IR as a **reasoning surface**. [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) cover **canonical versus derived** views and consistency expectations.
+
+**Conceptual learning path (same material, different arc):** After [Relationships](04-03-relationships.md), read [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) if you want **human-facing views** before the deeper graph story. Then read [IR as a graph](04-07-ir-as-a-graph.md), [Traceability in Architecture IR](04-05-traceability.md), and [Diff and change](04-06-diff-and-change.md), and finish with [Compilation](04-04-compilation.md) as the full **intent**→IR bridge. **The flow this part assumes** already states that IR comes from **compilation**; that chapter is the detailed account.
 
 ## The Implications
 
@@ -105,10 +109,6 @@ Exact schemas, admission behavior, and wire formats remain in **ste-spec** where
 
 ## Summary
 
-- The **architecture model** is the structured, relational picture of what the system **is** at the architecture layer; **Architecture IR** is STE’s canonical, machine-addressable form of that model.
-- IR sits between **intent** and **embodiment**: it expresses structural commitments in a form tools and **trace** edges can use; it is not a substitute for **ADRs**, diagrams, or code.
-- **Compilation** produces IR from structured **intent**; **projections** make IR reviewable for humans.
-- **Evidence** and **assessment** gain traction when observations attach to the **same** identities IR maintains.
-- Part 4 explains concepts; **ste-spec** and implementation work nail precision.
+The **architecture model** is the structured, relational picture of what the system **is** at the architecture layer; **Architecture IR** is STE’s canonical, machine-addressable form of that model. IR sits between **intent** and **implementation** / **embodiment**: it expresses structural commitments so tools and **trace** edges can use them, without replacing **ADRs**, diagrams, or source code. **Compilation** produces IR from structured **intent**; **projections** make IR reviewable for humans. **Evidence** and **assessment** gain traction when observations attach to the **same** identities IR maintains. Part 4 stays conceptual; **ste-spec** and product contracts nail precision. For how IR sits in time-shaped engineering work, continue with Part 5 ([Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)); for how IR is admitted, validated, and combined with **evidence** in practice, see Part 7 ([Kernel overview](../07-kernel/07-00-kernel-overview.md)).
 
 **Next:** [The system model](04-01-the-system-model.md).
