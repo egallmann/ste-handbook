@@ -10,6 +10,7 @@ tools/
 
 # AI Gateway example: local projection generator (product exposes adapter; not part of public manuscript)
 11-examples/ai-gateway-example/generate_projections.py
+11-examples/instance-scheduler-example/generate_projections.py
 
 # Optional local agent notes (not part of the manuscript; keep untracked if you use it)
 AGENTS.md

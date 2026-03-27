@@ -1,0 +1,85 @@
+---
+title: "Example step 1 — Requirements snapshot (Instance Scheduler)"
+status: structured
+maturity: L2
+diagrams: false
+last_reviewed: "2026-03-27"
+---
+
+# Step 1 — Requirements snapshot
+
+## Purpose
+
+Freeze **bounded expectations** for a **realistic** AWS operational solution: reduce cost by **starting and stopping** EC2 and RDS instances on **schedules**, with optional **multi-account** deployment. Factual product behavior is described by AWS in the **[implementation guide](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/solution-overview.html)** and **[repository](https://github.com/aws-solutions/instance-scheduler-on-aws)**; this snapshot is **STE-shaped pedagogy** aligned to **[adr-architecture-kit](../../../adr-architecture-kit)** patterns.
+
+> **Illustrative only.** Pedagogical stub; **ste-spec** is normative.
+
+## Provenance
+
+- **Conversation seed:** [Step 0 — STE conversation (grounding)](./00-ste-conversation.md) — single-user chat with **conversation engine** + **Architect agent** (personas: FinOps, Security, AWS Cloud, Operations; full STE: activation from **ste-rules-library** projections) (`declared_in` analogue).
+- **Product references:** [Instance Scheduler on AWS — README](https://github.com/aws-solutions/instance-scheduler-on-aws/blob/main/README.md) (hub stack, remote/spoke stack, `source/app`, `source/instance-scheduler`, `source/cli`).
+
+## Illustrative excerpt
+
+```yaml
+# Requirements snapshot (Instance Scheduler – handbook illustration)
+type: requirements_snapshot
+snapshot_id: REQ-INST-2026-03-27
+
+conversation_ref: ./00-ste-conversation.md
+
+required_capabilities:
+  - req_item_id: RQCAP-5181
+    name: Scheduled EC2/RDS power management
+    description: >-
+      Start and stop EC2 and RDS instances on declared clock-based schedules—including off nights and weekends
+      and configurable weekday on/off windows—to reduce idle cost.
+  - req_item_id: RQCAP-5182
+    name: Cross-account scheduling
+    description: >-
+      Optional hub in a central account orchestrates schedules in member (spoke) accounts with explicit trust.
+
+required_constraints:
+  - req_item_id: RQCONST-5181
+    statement: >-
+      Control plane implemented with AWS-managed primitives (e.g., Lambda, DynamoDB, EventBridge) per solution design.
+  - req_item_id: RQCONST-5182
+    statement: >-
+      Customer-facing configuration uses stable concepts (schedules, periods, time zones) documented in the implementation guide.
+
+required_invariants:
+  - req_item_id: RQINV-5181
+    statement: >-
+      No instance stop/start outside declared schedule bindings and registered trust (no silent ad-hoc automation path).
+  - req_item_id: RQINV-5182
+    statement: >-
+      IAM roles in spoke accounts grant only the actions required for the hub scheduler principal (least privilege).
+
+required_nfrs:
+  - req_item_id: RQNFR-5181
+    statement: >-
+      Orchestration runs on a configurable interval (minutes granularity) suitable for batch schedule evaluation.
+  - req_item_id: RQNFR-5182
+    statement: >-
+      Operational visibility — logs/metrics/alarm hooks sufficient for platform owners to audit schedule actions.
+
+technology_signals:
+  language: python
+  infrastructure: aws
+  iac: aws_cdk
+  architecture_pattern: hub_spoke_lambda
+
+feeds_logical_adrs:
+  - ADR-L-INST-001
+  - ADR-L-INST-002
+```
+
+## What to read from it
+
+- **Capabilities** mirror the **problem statement** in the official solution (EC2/RDS; cross-account is a **first-class** optional mode).
+- **Invariants** carry **security and governance** posture from the conversation into **traceable** ids for the ledger and IR.
+- **`feeds_logical_adrs`** splits **domain scheduling** (`ADR-L-INST-001`) from **trust/account** concerns (`ADR-L-INST-002`)—a deliberate **higher-fidelity** split than a single logical ADR.
+
+---
+
+**Previous:** [Step 0](./00-ste-conversation.md) · **Next:** [Step 2 — Decision ledger](./02-decision-ledger.md) · **Diagram:** [Intent to design](./diagrams/intent-to-design.md)

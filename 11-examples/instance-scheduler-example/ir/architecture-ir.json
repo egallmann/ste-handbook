@@ -1,0 +1,265 @@
+{
+  "$schema_comment": "Illustrative Architecture IR for the Instance Scheduler handbook example. Includes requirement and invariant entities and trace edges; ste-spec is normative for semantic types and mechanical projection.",
+  "ir_snapshot_id": "INST-IR-2026-03-27",
+  "provenance": {
+    "compiled_from": [
+      "ADR-L-INST-001",
+      "ADR-L-INST-002",
+      "ADR-PS-INST-001",
+      "ADR-PS-INST-002",
+      "ADR-PC-INST-001",
+      "ADR-PC-INST-002",
+      "ADR-PC-INST-003"
+    ],
+    "handbook_example": "11-examples/instance-scheduler-example"
+  },
+  "entities": [
+    {
+      "id": "REQ-5181",
+      "entity_type": "requirement",
+      "name": "Cost-aware EC2/RDS schedule control",
+      "introduced_by": "REQ-INST-2026-03-27",
+      "note": "Snapshot item RQCAP-5181 / RQINV-5181 family — see 01-requirements-snapshot.md"
+    },
+    {
+      "id": "REQ-5182",
+      "entity_type": "requirement",
+      "name": "Explicit multi-account scheduling mode",
+      "introduced_by": "REQ-INST-2026-03-27",
+      "note": "Snapshot item RQCAP-5182 / RQINV-5182"
+    },
+    {
+      "id": "INV-5181",
+      "entity_type": "invariant",
+      "name": "Schedule-bound automation",
+      "introduced_by": "ADR-L-INST-001"
+    },
+    {
+      "id": "INV-5182",
+      "entity_type": "invariant",
+      "name": "Least-privilege spoke trust",
+      "introduced_by": "ADR-L-INST-002"
+    },
+    {
+      "id": "CAP-5181",
+      "entity_type": "capability",
+      "name": "Scheduled EC2/RDS power management",
+      "introduced_by": "ADR-L-INST-001"
+    },
+    {
+      "id": "CAP-5182",
+      "entity_type": "capability",
+      "name": "Cross-account scheduling",
+      "introduced_by": "ADR-L-INST-002"
+    },
+    {
+      "id": "CAP-5183",
+      "entity_type": "capability",
+      "name": "Configuration and run state persistence",
+      "introduced_by": "ADR-L-INST-001"
+    },
+    {
+      "id": "BOUND-5181",
+      "entity_type": "boundary",
+      "name": "Scheduling control plane",
+      "introduced_by": "ADR-L-INST-001"
+    },
+    {
+      "id": "DEC-5181",
+      "entity_type": "decision",
+      "name": "Tag-bound schedule selection",
+      "introduced_by": "ADR-L-INST-001"
+    },
+    {
+      "id": "DEC-5182",
+      "entity_type": "decision",
+      "name": "Interval-based orchestration backbone",
+      "introduced_by": "ADR-L-INST-001"
+    },
+    {
+      "id": "DEC-5183",
+      "entity_type": "decision",
+      "name": "Dedicated spoke stack for trust",
+      "introduced_by": "ADR-L-INST-002"
+    },
+    {
+      "id": "DEC-5184",
+      "entity_type": "decision",
+      "name": "DynamoDB persistence layer",
+      "introduced_by": "ADR-L-INST-001"
+    },
+    {
+      "id": "COMP-5181",
+      "entity_type": "component",
+      "name": "Scheduling orchestration Lambda suite",
+      "introduced_by": "ADR-PC-INST-001"
+    },
+    {
+      "id": "COMP-5182",
+      "entity_type": "component",
+      "name": "Scheduler DynamoDB tables",
+      "introduced_by": "ADR-PC-INST-002"
+    },
+    {
+      "id": "COMP-5183",
+      "entity_type": "component",
+      "name": "Instance Scheduler CLI",
+      "introduced_by": "ADR-PC-INST-003"
+    },
+    {
+      "id": "IFACE-5181",
+      "entity_type": "interface",
+      "name": "Internal Lambda orchestration invokes",
+      "introduced_by": "ADR-PC-INST-001"
+    },
+    {
+      "id": "IFACE-5182",
+      "entity_type": "interface",
+      "name": "DynamoDB access from Lambdas",
+      "introduced_by": "ADR-PC-INST-002"
+    },
+    {
+      "id": "IFACE-5183",
+      "entity_type": "interface",
+      "name": "Operator CLI commands",
+      "introduced_by": "ADR-PC-INST-003"
+    },
+    {
+      "id": "EXT-5181",
+      "entity_type": "external_system",
+      "name": "Amazon EC2",
+      "introduced_by": "ADR-PS-INST-001"
+    },
+    {
+      "id": "EXT-5182",
+      "entity_type": "external_system",
+      "name": "Amazon RDS",
+      "introduced_by": "ADR-PS-INST-001"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "REL-enabled_by-REQ5181-DEC5181",
+      "relationship_type": "enabled_by",
+      "from_entity_id": "REQ-5181",
+      "to_entity_id": "DEC-5181",
+      "provenance_classification": "explicit",
+      "note": "ste-spec §3.6 — requirement unlocked by recorded decision"
+    },
+    {
+      "id": "REL-enabled_by-REQ5182-DEC5183",
+      "relationship_type": "enabled_by",
+      "from_entity_id": "REQ-5182",
+      "to_entity_id": "DEC-5183",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-constrains-INV5181-COMP5181",
+      "relationship_type": "constrains",
+      "from_entity_id": "INV-5181",
+      "to_entity_id": "COMP-5181",
+      "provenance_classification": "explicit",
+      "note": "Maps to invariant_constrains_component under ste-spec §3.13 projection table (direction normalized in compiled IR)"
+    },
+    {
+      "id": "REL-constrains-INV5182-COMP5181",
+      "relationship_type": "constrains",
+      "from_entity_id": "INV-5182",
+      "to_entity_id": "COMP-5181",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-implements-COMP5181-CAP5181",
+      "relationship_type": "implements",
+      "from_entity_id": "COMP-5181",
+      "to_entity_id": "CAP-5181",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-implements-COMP5181-CAP5182",
+      "relationship_type": "implements",
+      "from_entity_id": "COMP-5181",
+      "to_entity_id": "CAP-5182",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-implements-COMP5182-CAP5183",
+      "relationship_type": "implements",
+      "from_entity_id": "COMP-5182",
+      "to_entity_id": "CAP-5183",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-implements-COMP5183-CAP5181",
+      "relationship_type": "implements",
+      "from_entity_id": "COMP-5183",
+      "to_entity_id": "CAP-5181",
+      "provenance_classification": "inferred",
+      "note": "CLI maintains schedule artifacts consumed by the same capability"
+    },
+    {
+      "id": "REL-depends-CAP5181-CAP5183",
+      "relationship_type": "depends_on",
+      "from_entity_id": "CAP-5181",
+      "to_entity_id": "CAP-5183",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-depends-COMP5181-COMP5182",
+      "relationship_type": "depends_on",
+      "from_entity_id": "COMP-5181",
+      "to_entity_id": "COMP-5182",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-exposes-COMP5181-IFACE5181",
+      "relationship_type": "exposes",
+      "from_entity_id": "COMP-5181",
+      "to_entity_id": "IFACE-5181",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-exposes-COMP5182-IFACE5182",
+      "relationship_type": "exposes",
+      "from_entity_id": "COMP-5182",
+      "to_entity_id": "IFACE-5182",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-exposes-COMP5183-IFACE5183",
+      "relationship_type": "exposes",
+      "from_entity_id": "COMP-5183",
+      "to_entity_id": "IFACE-5183",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-invokes-COMP5181-EXT5181",
+      "relationship_type": "invokes_provider",
+      "from_entity_id": "COMP-5181",
+      "to_entity_id": "EXT-5181",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-invokes-COMP5181-EXT5182",
+      "relationship_type": "invokes_provider",
+      "from_entity_id": "COMP-5181",
+      "to_entity_id": "EXT-5182",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-supports-DEC5181-CAP5181",
+      "relationship_type": "supports",
+      "from_entity_id": "DEC-5181",
+      "to_entity_id": "CAP-5181",
+      "provenance_classification": "explicit",
+      "note": "Informative: decision_supports_capability in ste-spec §3.13"
+    },
+    {
+      "id": "REL-supports-DEC5183-CAP5182",
+      "relationship_type": "supports",
+      "from_entity_id": "DEC-5183",
+      "to_entity_id": "CAP-5182",
+      "provenance_classification": "explicit"
+    }
+  ]
+}
