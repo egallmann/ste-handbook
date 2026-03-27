@@ -1,6 +1,12 @@
 # Illustrative projection queries (Arch DSL sketch)
 
-These snippets express **what** a projection selects from **Architecture IR**. They are **handbook pedagogy**—a readable stand-in for a real graph query or STE **projection specification DSL**, not normative syntax.
+These snippets express **what** a projection selects from **Architecture IR**. They are **handbook pedagogy**—a readable stand-in for a machine-facing **projection specification** (graph query, internal DSL, or adapter config), not normative syntax.
+
+## Conversation first, DSL as an internal seam
+
+STE’s **conversation engine** includes an **architecture projection subsystem** whose job is to **transpile** natural discussion into whatever **architecture DSL** (or structured projection spec) the toolchain needs. The design stance here is deliberate: **human operators should not be forced to learn a new language or syntax** just to ask for a view, a slice, or a diagram. The **human–computer interface** is biased toward what people already do well—**having a conversation**—while the system **materializes** durable, reviewable structure on the other side of the boundary ([Conversation engine overview](../../../09-human-interface/09-00-conversation-engine-overview.md), [Conversation interface](../../../09-human-interface/09-01-conversation-interface.md)).
+
+The blocks below are **not** “what authors type.” They are **explainability**: they show the **selection semantics** a projection adapter must honor so engineers, auditors, and tools agree on **what** was projected from **which** IR snapshot.
 
 The IR snapshot is [`../ir/architecture-ir.json`](../ir/architecture-ir.json). A **projection adapter** in your STE toolchain implements equivalent selections; treat these blocks as **documentation of intent** for that adapter (the handbook does not ship generator source).
 
@@ -29,7 +35,7 @@ WHERE a.id IN [...] AND b.id IN [...]
 RETURN a, r, b
 ```
 
-**Output:** [`generated/ir-capability-component.mmd`](generated/ir-capability-component.mmd)
+**Output:** [`generated/ir-capability-component.md`](generated/ir-capability-component.md)
 
 ---
 
@@ -45,11 +51,11 @@ ARCH.PROJECT mermaid_flowchart "system_context" {
 }
 ```
 
-**Output:** [`generated/ir-system-context.mmd`](generated/ir-system-context.mmd)
+**Output:** [`generated/ir-system-context.md`](generated/ir-system-context.md)
 
 ---
 
 ## Why this matters
 
 - **Projection = function(IR snapshot, query/spec, layout)**. The IR stays **canonical**; Mermaid is a **derived view**.
-- A mature STE toolchain might compile a **projection spec** to Mermaid, SVG, C4, or tabular reports from the **same** IR—this example only demonstrates the **shape** of that pipeline with a small JSON file and a tiny generator.
+- A mature STE toolchain compiles a **projection spec**—often **reached via conversation**, then stored for repeatability—to Mermaid, SVG, C4, or tabular reports from the **same** IR. This example uses a small JSON file and committed outputs to show the **shape** of that pipeline only.
