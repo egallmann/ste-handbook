@@ -34,6 +34,16 @@ A second common failure mode is **tag key drift**: operators change the **schedu
 - **Drift** spans **code, IAM, and data plane**—not only prose docs.
 - **Requirements and invariants** in IR make **FinOps + security** arguments **machine-addressable** in the same artifact family as components.
 
+## What this step produced and why it matters
+
+This step shows **governed correction**: drift is **visible** because **linkage** and **EDR** tie **reality** to **declarations**, and **remediation** must go through **authorized** paths—revert implementation, or **change** ADRs/intent if the org truly needs a new posture. **Silent** divergence is treated as **failure**, not convenience. That is the **closing beat** of the lifecycle: the system continues to **enforce** intent after deploy, not only at design time.
+
+## What This Example Demonstrates
+
+Taken together, the Instance Scheduler walkthrough shows STE as a **continuous, governed loop**, not a one-time documentation exercise. It connects **requirements** (bounded intent), **decisions** (ledger and resolved ADRs), **architecture** (logical and physical commitments), **implementation** (code and infra linkage), **runtime** (observable behavior), **governance** (evidence, scoring, obligations), and **correction** (drift response back into intent or code).
+
+STE is a **closed-loop system**: the same **model** carries from conversation through **IR** to **evidence** and **drift**—so the organization can **see** when reality diverges and **fix** it under **control**, instead of discovering gaps only through incidents or invoices.
+
 ---
 
 **Previous:** [Step 8](./08-edr-example.md) · **Return:** [Part 11 overview](../00-overview.md)

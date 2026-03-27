@@ -72,6 +72,10 @@ constraints:
 - **CONTRACT-5181** names the **integration shape** the physical-system ADRs will refine (IAM + AWS APIs).
 - **DEC-5183** is the logical **anchor** for **ADR-PS-INST-002** (remote topology).
 
+## What this step produced and why it matters
+
+Together with [Step 3a](./03a-logical-adr-scheduling.md), this ADR completes the **logical architecture** for the example: **trust**, **cross-account enablement**, and **contracts** are now **fixed commitments** that physical-system ADRs must **refine**, not reinterpret. After 3a–3b, you should be able to answer “**what did we decide at the logical layer?**” without opening CloudFormation or CDK—yet those decisions are **specific enough** to drive **deployable** shape next.
+
 ---
 
 **Previous:** [Step 3a](./03a-logical-adr-scheduling.md) · **Next:** [Step 4a — Physical-system ADR (hub)](./04a-physical-system-hub.md)

@@ -69,6 +69,10 @@ component_specifications:
 
 - **COMP-5182** is the **embodiment target** for persistence **NFRs** and ledger decision **LDEC-5184**.
 
+## What this step produced and why it matters
+
+The **data-layer** ADR pins **persistence**: tables (or equivalent), **SDK interfaces**, and **data-plane invariants** that **orchestration** and **operators** depend on. Without this slice, “schedule state” would be an **implicit** implementation detail—here it is an **architecture-owned** surface that **EDR** and **drift** checks can target later.
+
 ---
 
 **Previous:** [Step 5a](./05a-physical-component-orchestration.md) · **Next:** [Step 5c — Physical-component ADR (CLI)](./05c-physical-component-cli.md)

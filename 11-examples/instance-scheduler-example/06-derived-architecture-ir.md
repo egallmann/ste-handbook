@@ -14,6 +14,14 @@ Show **compilation** from **canonical** ADRs (steps 3–5) into a **consolidated
 
 > **Illustrative only.** Pedagogical stub; **ste-spec** is normative.
 
+## Architecture IR in the STE loop
+
+- **ADRs (Steps 3a–5c)** are the **source of truth** for architecture: human-reviewed **canonical** commitments (logical, physical-system, physical-component).
+- **Architecture IR** is the **compiled model** derived from those ADRs: a graph of **entities** (requirements, invariants, components, decisions, …) and **relationships** tools can **query**—not a replacement for ADRs, but the **machine-readable** shape of what they declare.
+- **Projections** are **views** generated from IR **plus** explicit queries—for example Mermaid diagrams and narrative indices under [`projections/`](./projections/) (see [`projections/generated/`](./projections/generated/) and [`projections/projection-queries.md`](./projections/projection-queries.md)). Change the IR (or the query), regenerate the view; do not treat diagrams as authority on their own.
+- **EDR** (Step 8) **attaches runtime and operational evidence** to **IR entities**—for example findings linked to **components** and **requirements**—so assessment is **grounded** in the same model as design.
+- **Drift** (Step 9) is detected by **comparing** the **declared model** (ADRs + IR + obligations) to **observed reality** (IAM, tags, logs, config) via **linkage** and **evidence**—then **correction** flows back through **governed** change to intent or implementation.
+
 **Diagram:** [Intent to design](./diagrams/intent-to-design.md)
 
 ## Machine-readable IR snapshot (honest projections)
@@ -64,6 +72,10 @@ relationships:
 
 - **Requirements** and **invariants** are **first-class nodes**, not only bullet rows inside Markdown—this supports **evidence subjects** and **governed trace** into components.
 - **Projection** remains **pure function** of IR + query: edit the IR (or adapter config), regenerate views—do not “fix” diagrams by hand unless you intentionally accept drift.
+
+## What this step produced and why it matters
+
+The **Architecture IR** snapshot is the **queryable system model** for this example: it consolidates what ADRs scattered across files **mean** as a **single graph**. Tooling can traverse **trace edges** (for example from **requirements** to **decisions** to **components**) without parsing Markdown by hand. That is what enables **repeatable projections**, **evidence attachment**, and **drift checks** in the later lifecycle steps—STE is operating on a **model**, not a pile of documents.
 
 ---
 

@@ -94,6 +94,10 @@ deployment_topology:
 - **SYSBOUND-5181** is the **whiteboard** you would draw next to the **hub CloudFormation stack** in the AWS console.
 - **component_topology** points forward to **three** physical-component ADRs for higher fidelity than the AI Gateway single-PC step.
 
+## What this step produced and why it matters
+
+The **hub** physical-system ADR turns logical commitments into a **deployable hub footprint**: boundaries, major **components**, and **relationships** you could sketch next to the **hub stack** in AWS. **Full** topology for the example—including **spoke** trust and registration—is completed only after [Step 4b](./04b-physical-system-remote.md). This step’s output is the **central** side of that story: what runs in the **hub account** and how it expects to **consume** remote trust and data.
+
 ---
 
 **Previous:** [Step 3b](./03b-logical-adr-trust.md) · **Next:** [Step 4b — Physical-system ADR (remote/spoke)](./04b-physical-system-remote.md)

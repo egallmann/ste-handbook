@@ -76,6 +76,10 @@ governance:
 - **F-5184** shows how **requirements** (`REQ-5182`) and **invariants** (`INV-5182`) participate in **scoring**, not only component ids.
 - **Obligations** close the loop toward **remediation**—picked up narratively in [Step 9](./09-drift-and-correction.md).
 
+## What this step produced and why it matters
+
+The **EDR** packages **runtime and operational evidence**—conformance or violations—**against IR entities** and **requirement/invariant ids**. That answers how **observed behavior** connects back to **Step 0–1 intent**: findings are not free-floating tickets; they **cite** the same **graph** the architecture uses. **Scores** and **obligations** turn evidence into **governed** action: promotion, review, or remediation, still tied to the **declared** model.
+
 ---
 
 **Previous:** [Step 7](./07-code-semantic-linkage.md) · **Next:** [Step 9 — Drift and correction](./09-drift-and-correction.md)

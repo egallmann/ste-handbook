@@ -62,6 +62,10 @@ constraints:
 - **LDEC-5183** is the bridge to the **remote / spoke** stack parameters described in the solution README (`InstanceSchedulerAccount`, `Namespace`, `UsingAWSOrganizations`).
 - **LDEC-5184** anticipates the **DynamoDB** data layer in the CDK (`ConfigTable`, `StateTable`, `MaintenanceWindowTable`, `ResourceRegistry` in `instance-scheduler-data-layer.ts` in the upstream repository).
 
+## What this step produced and why it matters
+
+The **decision ledger** states the **open architecture questions** that remain after intent is frozen—each row lists **alternatives** and points to **snapshot items** that justify why the topic is in scope. The **logical design space** is now **bounded**: logical ADRs in the next steps **resolve** these rows instead of inventing a second, untracked decision list. That discipline is what keeps STE **governed** as the model grows.
+
 ---
 
 **Previous:** [Step 1](./01-requirements-snapshot.md) · **Next:** [Step 3a — Logical ADR (scheduling domain)](./03a-logical-adr-scheduling.md) · **Diagram:** [Intent to design](./diagrams/intent-to-design.md)

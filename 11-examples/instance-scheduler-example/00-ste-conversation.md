@@ -1,9 +1,30 @@
 ---
-title: "Example step 0 — STE conversation (Instance Scheduler)"
+title: "Instance Scheduler example — how to read + Step 0 conversation"
 status: structured
 maturity: L2
 diagrams: false
 last_reviewed: "2026-03-27"
+---
+
+# How to Read This Example
+
+This walkthrough is a **full STE lifecycle**, not a lesson in “how to write ADRs.” Read it as one thread: **intent** hardens into **decisions** and **architecture**, the architecture **compiles** into a **system model (IR)**, **implementation** links to that model, **runtime evidence** attaches back to intent, and **drift** triggers **governed correction**.
+
+In a complete STE program, humans **do not** hand-author the **substrate**: you **talk about what you want** in governed design conversation (Step 0 is the illustration), and STE **owns** the rest—**generating**, **validating**, and **maintaining** canonical ADRs, the **compiled system model (Architecture IR)**, and the links that make drift and evidence machine-checkable. **ADRs and IR** are **AI- and toolchain-first**; you are free to **move on to design or exploration** while STE **processes** those plans in the background.
+
+**Losing the full shape of the system in your head is expected** at scale. **Projections** exist for **on-demand orientation**: pull the **explicit view** you need—traceability, topology, capability map—when you need to **re-ground**, without holding the entire graph in working memory.
+
+| Phase | Steps | What you are doing |
+|-------|-------|---------------------|
+| **Intent** | 0–2 | Conversation and convergence → **frozen requirements** → **decision questions** tied to those requirements |
+| **Architecture** | 3a–5c | **Logical** ADRs, then **physical-system** and **physical-component** ADRs (deployable shape and implementable units) |
+| **Compiled model** | 6 | ADRs **compiled** into **Architecture IR** (a queryable graph of the system) |
+| **Embodiment** | 7 | **Code and infrastructure** linked to IR entities |
+| **Evidence** | 8 | **EDR** attaches **runtime and operational** evidence to the model |
+| **Governance** | 9 | **Drift** (model vs reality) becomes visible; **correction** flows back through intent or implementation |
+
+**Step 0** below is the **grounding conversation** that produces traceable ids and ledger-sized questions for Steps 1–2.
+
 ---
 
 # Step 0 — STE conversation (grounding)
@@ -50,8 +71,28 @@ The dialogue below **simulates** steps 1–2 with **hand-authored** persona tags
 | **You** | Single user (design owner). You drive goals and trade-offs. |
 | **CE** | **Conversation engine** — keeps turns coherent, **explains** when the user is unclear (options, risks, common meanings), summarizes, checks for gaps. |
 | **Architect agent** *(persona: …)* | **Architect agent** with an **active persona** named in parentheses. Each turn is a **probe** that persona would own. |
+| **Steelman agent** | In full STE, a **Steelman** role **steel-mans** the **present-state** design (what has been said and implied so far) against **projected rules** and **obligations**: it **surfaces gaps** so you can **tighten intent** and **close** them in a **compliant** way, or **document explicit acknowledgement** when you **waive** a rule. This **shortened transcript** does **not** simulate Steelman turns—only **CE** and **Architect** lines appear. |
 
-Together, **CE + Architect agent** simulate **governed design chat**: the CE **teaches the design space** when needed; the Architect agent **pulls** specificity through **persona-shaped** questions until the model is **narrow enough** for a requirements snapshot and ledger.
+**Steelman and ADR-PC:** Steelman also carries the intent of **physical-component ADRs (ADR-PC)**: they are **executable architecture**—recorded **specifically enough** that implementation can proceed **without further human guidance** for decisions the ADR should have closed. **Underspecification** is a **gap** to **resolve** under the rules or to **waive** with **explicit acknowledgement**, same as any other obligation breach.
+
+Together, **CE + Architect agent** simulate **governed design chat**: the CE **teaches the design space** when needed; the Architect agent **pulls** specificity through **persona-shaped** questions until the model is **narrow enough** for a requirements snapshot and ledger. In a **complete** program, **Steelman** interleaves to **pressure-test** commitments before they freeze into ids.
+
+### Conversation topics → artifacts (preview)
+
+The dialogue below is a **design session**: topics resolve into **capabilities**, **invariants**, **ledger questions**, and **logical boundaries** (later split across **ADR-L-INST-001** and **ADR-L-INST-002**). Use this table while you read the transcript.
+
+| Conversation topic | Artifact produced (illustrative ids) |
+|--------------------|--------------------------------------|
+| Cost / idle waste | Capability (**RQCAP-5181**) |
+| Multi-account + single-account realism | Capability (**RQCAP-5182**) |
+| One auditable path; no shadow automation | Invariant (**RQINV-5181**) |
+| Schedule + trust binding; no ad-hoc stop/start | Invariant (**RQINV-5181**) |
+| Least-privilege; no org-wide power role | Invariant (**RQINV-5182**) |
+| How schedules attach; stable vocabulary | Decision ledger (**LDEC-5181**) |
+| Orchestration unit (interval vs event-driven) | Decision ledger (**LDEC-5182**) |
+| Multi-account trust packaging | Decision ledger (**LDEC-5183**) |
+| Where config, state, and registry live | Decision ledger (**LDEC-5184**) |
+| Hub vs per-account control plane; spoke blast radius | Logical boundary → **ADR-L-INST-001** / **ADR-L-INST-002** |
 
 ## Where this chapter sits in the STE control loop
 
@@ -60,13 +101,14 @@ This conversation is **not** a sidebar to engineering. In STE, **governed design
 **Flow (conceptual):**
 
 1. **This conversation** narrows the design space and surfaces **commitments**, **constraints**, and **open questions**.
-2. The CE’s **convergence summary** becomes the **prose precursor** to the **Requirements Snapshot** ([Step 1](./01-requirements-snapshot.md))—stable ids, capabilities, invariants, constraints, NFRs.
-3. Anything still **under-specified** (how schedules bind to resources, where state lives, periodic evaluation shape, trust packaging) becomes **Decision Ledger** rows ([Step 2](./02-decision-ledger.md)) that **logical ADRs** must later resolve—without inventing a parallel decision list.
-4. **ADRs**, **Architecture IR**, **EDR**, and drift checks **trace back** to what was said (or explicitly deferred) here.
+2. A **Steelman agent** (in full STE, alongside CE / Architect) **steel-mans** the **present-state** design against **rules** and **already accepted obligations**: it **surfaces gaps**—missing constraints, ambiguous trust, rule conflicts—so you can **define intent** and **close** those gaps in a **compliant** way, or **record** **documented acknowledgement** when you **intentionally waive** a rule. When conversation and later artifacts approach **physical-component** closure, the same posture applies the **ADR-PC** bar: **executable architecture** (implement **without** depending on unstated human judgment). *(This handbook transcript does not simulate Steelman dialogue; it is omitted for length.)*
+3. The CE’s **convergence summary** becomes the **prose precursor** to the **Requirements Snapshot** ([Step 1](./01-requirements-snapshot.md))—stable ids, capabilities, invariants, constraints, NFRs.
+4. Anything still **under-specified** (how schedules bind to resources, where state lives, periodic evaluation shape, trust packaging) becomes **Decision Ledger** rows ([Step 2](./02-decision-ledger.md)) that **logical ADRs** must later resolve—without inventing a parallel decision list.
+5. **ADRs**, **Architecture IR**, **EDR**, and drift checks **trace back** to what was said (or explicitly deferred) here—and to **compliant closure** or **recorded waiver** where Steelman forced a gap visible.
 
 STE starts with a **governed design conversation** that converges into **structured intent**; the rest of the example is the control loop operating on that intent.
 
-**Transcript vs trace notes:** Lines labeled **You**, **CE**, and **Architect agent** are the **simulated chat**. The design owner’s turns (**You**) use plain ALL CAPS for emphasis, not Markdown bold in the dialogue. Lines beginning with **`[Trace → …]`** are **handbook-only**: they show how an utterance feeds **requirements**, **ledger questions**, **logical ADR topics**, and (sparingly) **physical** design—for the reader, not an in-product UI.
+**Transcript vs trace notes:** Lines labeled **You**, **CE**, and **Architect agent** are the **simulated chat**; the **Steelman agent** is **not** voiced here (see table above). The design owner’s turns (**You**) use plain ALL CAPS for emphasis, not Markdown bold in the dialogue. Lines beginning with **`[Trace → …]`** are **handbook-only**: they show how an utterance feeds **requirements**, **ledger questions**, **logical ADR topics**, and (sparingly) **physical** design—for the reader, not an in-product UI.
 
 **Pacing:** The CE sometimes sends **several short turns in a row**—the way a design partner **explores options** before locking in—instead of one dense paragraph.
 
@@ -183,7 +225,9 @@ STE starts with a **governed design conversation** that converges into **structu
 
 **Architect agent** *(persona: Security)*: Some designs use a **broad org-wide** power role so “automation is easy.” That’s the opposite of what you just said. Are we **ruling that out**?
 
-**You:** RULED OUT. I don’t want a SINGLE role that can START/STOP EVERYTHING everywhere “because platform.” If we need power, it needs to be EXPLAINABLE and SCOPED to what this system actually does.
+**CE:** **Trust tradeoff, explicit:** a **single mega-role** minimizes template sprawl but **melts** blast-radius and reviewability—auditors cannot tell **which** automation touched **which** scope. **Hub principal + scoped spoke roles** costs more **IAM surface area** to maintain, but each attachment is **explainable** and maps to **this** workload.
+
+**You:** RULED OUT on mega-role. I don’t want a SINGLE role that can START/STOP EVERYTHING everywhere “because platform.” If we need power, it needs to be EXPLAINABLE and SCOPED to what this system actually does.
 
 [Trace → Invariant: **RQINV-5182** — spoke roles **scoped** to the **scheduler principal** and **actions required** (no org-wide generic power role).]
 
@@ -239,7 +283,41 @@ STE starts with a **governed design conversation** that converges into **structu
 
 ---
 
-## 10. Convergence summary (bounded intent)
+## 10. Orchestration unit (interval vs event-driven)
+
+**CE:** Clock-based schedules still need a **unit of orchestration**: a **periodic tick** (evaluate “what should be running now”) vs **purely event-driven** flows (react to every resource signal). Event-only designs can look elegant, but **EC2/RDS** life-cycle work and **audit** often want a **bounded evaluation slice** you can reason about and replay.
+
+**Architect agent** *(persona: Operations)*: For **non-prod cost**, do you need **sub-minute** reactivity, or is **minutes-scale batch evaluation** acceptable if the behavior is **predictable** and documented?
+
+**You:** Minutes are fine if the story is “it converges within N minutes,” not random surprises. I’m not optimizing for trading-floor latency on dev boxes—I’m optimizing for **predictable** automation I can explain in a review.
+
+[Trace → Decision Ledger Question: **LDEC-5182** — **fixed_interval_lambda** vs **streaming_events_only** vs mixed (ledger alternatives); conversation commits to **interval-shaped** orchestration for v1.]
+
+---
+
+## 11. Where state lives (store options)
+
+**CE:** A **managed** control plane needs an **API-addressable** place for **configuration, runtime state, and registry** rows. Common shapes: **DynamoDB** (keyed access, fits Lambda concurrency), **RDS** (relational reporting, more operational surface), **S3 manifests** (simple bulk, weaker for concurrent writers and fine-grained queries).
+
+**Architect agent** *(persona: FinOps)*: Where should **operational truth** live for “what schedule applies to which resource”—something operators and Lambdas can **query quickly**, with **encryption, backup, and alarms** as first-class?
+
+**You:** Platform-shaped data: keyed lookups, no “open a DBA ticket to explain why this instance never stopped.” If the **reference** solution is DynamoDB-shaped, we adopt that consciously and own **table metrics, alarms, and hygiene** in runbooks—not accidental sprawl.
+
+[Trace → Decision Ledger Question: **LDEC-5184** — **dynamodb_tables** vs **rds** vs **s3_manifests**; conversation aligns with **managed Lambda + fast lookups** without changing the ledger’s alternative list.]
+
+---
+
+## 12. Failure modes, visibility, and drift (foreshadow)
+
+**CE:** Two classes of hurt to **design visibility for**: **tag or parameter drift** (resources silently stop matching schedules) and **IAM break-glass** (someone attaches a **wide** policy during an incident and **never** removes it). If we cannot **see** “who changed policy” and “what the automation did,” we only have **folklore**—not a governed system.
+
+**You:** Agreed. I want **logs and metrics** that tie back to **schedule actions** and **config changes**, and enough **hooks** that security and FinOps can **prove** posture over time. Surprise bills or mystery stop/start are **failure modes**, not acceptable noise.
+
+[Trace → NFR: **RQNFR-5182** — **operational visibility** for audit (policy vs actions); foreshadows **EDR** and **drift** in Steps 8–9 without adding new finding ids.]
+
+---
+
+## 13. Convergence summary (bounded intent)
 
 **Architect agent** *(persona: Operations)*: Last ops check: schedules will be evaluated on a **cadence**—minutes granularity, not “once a day surprises.” Acceptable?
 
@@ -257,6 +335,7 @@ STE starts with a **governed design conversation** that converges into **structu
 - **Trust model:** **Hub/spoke** when multi-account; **single-account** must remain a **valid** deployment shape.
 - **Operator interface:** **IaC for deploy**; **CLI/API** for **day-2** schedule and config tweaks.
 - **Deferred / ledger-sized:** exact **attachment** mechanics, **evaluation** implementation choice, **trust packaging**, and **persistence** layout—those become **Decision Ledger** questions, not guesses in chat.
+- **Closed loop:** The ids above feed the **Requirements Snapshot**, **Decision Ledger**, **Architecture IR**, **code linkage**, **EDR**, and **drift checks** in later steps—STE treats this as a **continuous governed system**, not a one-time design write-up.
 
 This summary is the **prose precursor** to the **Requirements Snapshot** ([Step 1](./01-requirements-snapshot.md)). Anything we **deferred** becomes **Decision Ledger** rows ([Step 2](./02-decision-ledger.md)) that **logical ADRs** must **resolve**—so nothing “appears from nowhere” in later steps.
 
@@ -264,7 +343,7 @@ This summary is the **prose precursor** to the **Requirements Snapshot** ([Step 
 
 ---
 
-## 11. Trace ID table (conversation → later artifacts)
+## 14. Trace ID table (conversation → later artifacts)
 
 | Kind | Id | Short label |
 |------|-----|-------------|
@@ -285,7 +364,7 @@ These ids appear again in [Step 1](./01-requirements-snapshot.md) and [Step 2](.
 
 - **Governed conversation** is the **first** control-loop beat: it **bounds intent** before ids and ADRs exist.
 - **Personas** stand in for **domains of concern** (cost, trust, landing zone, ops)—not flavor text.
-- **Tradeoffs** (clock vs idle, hub vs per-account, managed vs pet controller) **narrow** the design space **explicitly**.
+- **Tradeoffs** (clock vs idle, hub vs per-account, managed vs pet controller, interval vs event-driven evaluation, DynamoDB vs RDS vs manifest-style storage, mega-role vs scoped hub/spoke trust) **narrow** the design space **explicitly**.
 - **Trace notes** and the **id table** make **provenance** visible: later **requirements**, **ledger questions**, and **ADRs** **inherit** from what was said here.
 
 ---

@@ -70,6 +70,10 @@ deployment_topology:
 - **implements_logical** ties **physical topology** directly to **ADR-L-INST-002**.
 - **Orchestration** implementation is still detailed in **ADR-PC-INST-001** (shared logical component name across hub and spoke responsibilities).
 
+## What this step produced and why it matters
+
+With the **remote/spoke** ADR, the example’s **deployable topology** is **complete**: hub plus spoke **stacks**, **trust direction**, and **integration** paths are declared in the same **canonical** family as the logical ADRs. Physical-component ADRs next **specialize** **responsibility** and **interfaces** inside these boundaries. Readers comparing **logical** vs **physical** should see: logical ADRs said **what** must hold; physical-system ADRs say **where** it lives in **accounts** and **stacks**.
+
 ---
 
 **Previous:** [Step 4a](./04a-physical-system-hub.md) · **Next:** [Step 5a — Physical-component ADR (orchestration)](./05a-physical-component-orchestration.md)

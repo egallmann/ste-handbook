@@ -73,6 +73,10 @@ deployment_topology:
 
 - **COMP-5183** completes the **three-way** split: **compute** (5181), **data** (5182), **operator tooling** (5183).
 
+## What this step produced and why it matters
+
+With **orchestration**, **data**, and **CLI** physical-component ADRs, the example is **implementable** as a coherent whole: each major **deployment** and **operator** surface has **named responsibilities**, **interfaces**, and **invariants**. Teams can map work to **components** without reversing engineering intent from prose. The next step **compiles** these commitments into a single **machine-traversable** model—the **Architecture IR**.
+
 ---
 
 **Previous:** [Step 5b](./05b-physical-component-data-layer.md) · **Next:** [Step 6 — Derived Architecture IR](./06-derived-architecture-ir.md)

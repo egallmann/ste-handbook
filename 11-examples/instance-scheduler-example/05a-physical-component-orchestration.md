@@ -75,6 +75,10 @@ component_specifications:
 - **Dual `implements_system`** reflects **shared** orchestration code paths that **participate** in both hub and spoke stacks.
 - **PCINV-5181** specializes **INV-5181** / **RQINV-5181** at the **component** layer for EDR linkage.
 
+## What this step produced and why it matters
+
+This physical-component ADR defines an **implementable orchestration unit**: **Lambdas**, **internal interfaces**, and **component invariants** that engineers can build and test against. It **implements** both hub and spoke **system** contexts, so the same **logical** orchestration story becomes **concrete** code paths. The example is not yet “fully implementable” until **data** and **CLI** components are also specified in 5b–5c.
+
 ---
 
 **Previous:** [Step 4b](./04b-physical-system-remote.md) · **Next:** [Step 5b — Physical-component ADR (data layer)](./05b-physical-component-data-layer.md)

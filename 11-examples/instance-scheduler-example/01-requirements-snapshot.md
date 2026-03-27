@@ -80,6 +80,10 @@ feeds_logical_adrs:
 - **Invariants** carry **security and governance** posture from the conversation into **traceable** ids for the ledger and IR.
 - **`feeds_logical_adrs`** splits **domain scheduling** (`ADR-L-INST-001`) from **trust/account** concerns (`ADR-L-INST-002`)—a deliberate **higher-fidelity** split than a single logical ADR.
 
+## What this step produced and why it matters
+
+The **requirements snapshot** freezes **intent** into **stable ids** (capabilities, constraints, invariants, NFRs) with explicit **provenance** back to [Step 0](./00-ste-conversation.md). Reviewers and tooling can ask “**where did this expectation come from?**” without relying on memory or chat logs. From here forward, **ledger rows** and **ADRs** must **cite** these items—so the design space stays **traceable** rather than a parallel story invented in later documents.
+
 ---
 
 **Previous:** [Step 0](./00-ste-conversation.md) · **Next:** [Step 2 — Decision ledger](./02-decision-ledger.md) · **Diagram:** [Intent to design](./diagrams/intent-to-design.md)
