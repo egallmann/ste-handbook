@@ -1,0 +1,145 @@
+{
+  "$schema_comment": "Consolidated illustrative Architecture IR for the AI Gateway handbook example. IDs align with steps 03–08; ste-spec is normative for real pipelines.",
+  "ir_snapshot_id": "AIGW-IR-2026-03-27",
+  "provenance": {
+    "compiled_from": [
+      "ADR-L-AIGW-001",
+      "ADR-PS-AIGW-001",
+      "ADR-PC-AIGW-001"
+    ],
+    "handbook_example": "11-examples/ai-gateway-example"
+  },
+  "entities": [
+    {
+      "id": "CAP-0001",
+      "entity_type": "capability",
+      "name": "User Authentication",
+      "introduced_by": "platform_catalog"
+    },
+    {
+      "id": "CAP-0015",
+      "entity_type": "capability",
+      "name": "AI Request Routing",
+      "introduced_by": "ADR-L-AIGW-001"
+    },
+    {
+      "id": "CAP-0016",
+      "entity_type": "capability",
+      "name": "Provider Failover",
+      "introduced_by": "ADR-L-AIGW-001"
+    },
+    {
+      "id": "BOUND-0008",
+      "entity_type": "boundary",
+      "name": "AI Gateway Boundary",
+      "introduced_by": "ADR-L-AIGW-001"
+    },
+    {
+      "id": "COMP-0003",
+      "entity_type": "component",
+      "name": "Auth Service",
+      "introduced_by": "platform_catalog"
+    },
+    {
+      "id": "COMP-0010",
+      "entity_type": "component",
+      "name": "AI Gateway Lambda",
+      "introduced_by": "ADR-PC-AIGW-001"
+    },
+    {
+      "id": "IFACE-0012",
+      "entity_type": "interface",
+      "name": "AI Gateway REST API",
+      "introduced_by": "ADR-PC-AIGW-001"
+    },
+    {
+      "id": "DEC-0025",
+      "entity_type": "decision",
+      "name": "Serverless gateway entry",
+      "introduced_by": "ADR-L-AIGW-001"
+    },
+    {
+      "id": "DEC-0026",
+      "entity_type": "decision",
+      "name": "Health checks plus bounded retries for failover",
+      "introduced_by": "ADR-L-AIGW-001"
+    },
+    {
+      "id": "DEC-0027",
+      "entity_type": "decision",
+      "name": "Secrets in AWS Secrets Manager",
+      "introduced_by": "ADR-L-AIGW-001"
+    },
+    {
+      "id": "EXT-OPENAI",
+      "entity_type": "external_system",
+      "name": "OpenAI API",
+      "introduced_by": "ADR-PS-AIGW-001"
+    },
+    {
+      "id": "EXT-AUTH",
+      "entity_type": "external_system",
+      "name": "Organization auth service",
+      "introduced_by": "ADR-PS-AIGW-001"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "REL-implements-COMP0010-CAP0015",
+      "relationship_type": "implements",
+      "from_entity_id": "COMP-0010",
+      "to_entity_id": "CAP-0015",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-implements-COMP0010-CAP0016",
+      "relationship_type": "implements",
+      "from_entity_id": "COMP-0010",
+      "to_entity_id": "CAP-0016",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-depends-CAP0015-CAP0001",
+      "relationship_type": "depends_on",
+      "from_entity_id": "CAP-0015",
+      "to_entity_id": "CAP-0001",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-depends-COMP0010-COMP0003",
+      "relationship_type": "depends_on",
+      "from_entity_id": "COMP-0010",
+      "to_entity_id": "COMP-0003",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-exposes-COMP0010-IFACE0012",
+      "relationship_type": "exposes",
+      "from_entity_id": "COMP-0010",
+      "to_entity_id": "IFACE-0012",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-invokes-COMP0010-EXTOPENAI",
+      "relationship_type": "invokes_provider",
+      "from_entity_id": "COMP-0010",
+      "to_entity_id": "EXT-OPENAI",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-depends-COMP0010-EXTAUTH",
+      "relationship_type": "depends_on",
+      "from_entity_id": "COMP-0010",
+      "to_entity_id": "EXT-AUTH",
+      "provenance_classification": "explicit"
+    },
+    {
+      "id": "REL-aligns-COMP0003-EXTAUTH",
+      "relationship_type": "realizes_external",
+      "from_entity_id": "COMP-0003",
+      "to_entity_id": "EXT-AUTH",
+      "provenance_classification": "inferred",
+      "note": "Auth Service component realizes the organization auth endpoint described at system boundary."
+    }
+  ]
+}

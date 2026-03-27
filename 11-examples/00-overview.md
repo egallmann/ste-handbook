@@ -64,6 +64,10 @@ See [Intent to design flow](./ai-gateway-example/diagrams/intent-to-design.md).
 - [Design to embodiment](./ai-gateway-example/diagrams/design-to-embodiment.md) (Diagram C)
 - [Feedback loop](./ai-gateway-example/diagrams/feedback-loop.md) (Diagram D)
 
+### IR snapshot and IR-generated Mermaid
+
+The example includes a consolidated [`architecture-ir.json`](./ai-gateway-example/ir/architecture-ir.json) and **regenerable** Mermaid under [`projections/generated/`](./ai-gateway-example/projections/generated/) (see [`projections/README.md`](./ai-gateway-example/projections/README.md)). That shows **honest** structural projections from one IR source. Illustrative **projection-query** sketches live in [`projection-queries.md`](./ai-gateway-example/projections/projection-queries.md).
+
 ## The Implications
 
 Treat this part as **pedagogy**, not a schema appendix: when a fragment disagrees with **ste-spec**, the specification wins. Use the same discipline in real programs: fix **canonical** intent or ADRs, then **regenerate** derived registries and graphs—do not “patch” derived files as if they were authority.

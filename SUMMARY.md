@@ -148,6 +148,14 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
   - [Canonical vs derived](11-examples/ai-gateway-example/diagrams/canonical-vs-derived.md)
   - [Design to embodiment](11-examples/ai-gateway-example/diagrams/design-to-embodiment.md)
   - [Feedback loop](11-examples/ai-gateway-example/diagrams/feedback-loop.md)
+- IR snapshot and projections (AI Gateway):
+  - [IR README](11-examples/ai-gateway-example/ir/README.md)
+  - [architecture-ir.json](11-examples/ai-gateway-example/ir/architecture-ir.json)
+  - [generate_projections.py](11-examples/ai-gateway-example/generate_projections.py)
+  - [Projections README](11-examples/ai-gateway-example/projections/README.md)
+  - [Projection queries (illustrative DSL)](11-examples/ai-gateway-example/projections/projection-queries.md)
+  - [Generated: capability / component](11-examples/ai-gateway-example/projections/generated/ir-capability-component.md)
+  - [Generated: system context](11-examples/ai-gateway-example/projections/generated/ir-system-context.md)
 - Additional placeholders (scaffolding):
   - [Example system](11-examples/11-01-example-system.md)
   - [Conversation to ADR](11-examples/11-02-conversation-to-adr.md)
