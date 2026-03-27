@@ -1,0 +1,40 @@
+_internal-references/
+
+artifacts/
+
+# --- Manuscript-only: do not publish tooling, CI, hooks, or maintainer docs ---
+.github/
+.githooks/
+scripts/
+tools/
+
+# Optional local agent notes (not part of the manuscript; keep untracked if you use it)
+AGENTS.md
+
+# Editor-local
+.cursor/
+
+# Optional local policy / automation inputs (not part of the public manuscript)
+.editorial/
+
+# Authoring rules and meta-docs stay private to maintainers (not public clone)
+.writing-rules/
+.writing-rules/**
+
+.ste-writing-system/
+.ste-writing-system/**
+
+# Maintainer-facing contribution guide (kept locally if needed)
+CONTRIBUTING.md
+
+# Internal migration / structure notes for authors (not reader manuscript)
+REPO-STRUCTURE-NOTES.md
+
+authoring-notes/
+draft-notes/
+
+# Python / editor noise if anything is run locally
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
