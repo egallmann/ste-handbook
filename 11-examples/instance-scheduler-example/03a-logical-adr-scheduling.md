@@ -89,6 +89,19 @@ non_functional_requirements:
 - **Capabilities** **CAP-5181** and **CAP-5183** split **user-visible scheduling** from **persistence**—both land in the hub’s logical scope before physical decomposition.
 - **INV-5181** is the **logical** counterpart to **RQINV-5181** for IR traceability.
 
+## Traceability — ADR-L satisfies requirements
+
+| ADR-L decision / record | Satisfies requirement | Resolves ledger (where applicable) |
+|-------------------------|----------------------|-----------------------------------|
+| **CAP-5181** | **RQCAP-5181** | — |
+| **CAP-5183** | **RQCAP-5181** (persistence of schedule/state), **RQNFR-5182** (operational data plane) | — |
+| **INV-5181** | **RQINV-5181** | — |
+| **DEC-5181** (tag-based schedule binding) | **RQCAP-5181**, **RQCONST-5182**, **RQINV-5181** | **LDEC-5181** |
+| **DEC-5182** (interval orchestration) | **RQCAP-5181**, **RQNFR-5181** | **LDEC-5182** |
+| **DEC-5184** (DynamoDB persistence) | **RQCONST-5181**, **RQNFR-5182** | **LDEC-5184** |
+| **CONST-5181** | **RQCONST-5182** | — |
+| **NFR-5181** | **RQNFR-5181** | — |
+
 ## What this step produced and why it matters
 
 This logical ADR **closes the scheduling domain** for ledger rows **LDEC-5181**, **LDEC-5182**, and **LDEC-5184**: how schedules bind, how **periodic evaluation** is conceived, and where **configuration and state** conceptually live. **Trust and multi-account** packaging is **not** finished here—it is intentionally carried in [Step 3b](./03b-logical-adr-trust.md). Treat this step as **half** of logical closure for the example: scheduling commitments are now **canonical** inputs to physical design.

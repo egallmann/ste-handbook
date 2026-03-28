@@ -44,6 +44,21 @@ Taken together, the Instance Scheduler walkthrough shows STE as a **continuous, 
 
 STE is a **closed-loop system**: the same **model** carries from conversation through **IR** to **evidence** and **drift**—so the organization can **see** when reality diverges and **fix** it under **control**, instead of discovering gaps only through incidents or invoices.
 
+## Example completeness (definition of done)
+
+This walkthrough is **complete** for a reader when they can answer **yes** to each item (see also [Part 11 overview](../00-overview.md)):
+
+1. See the **original problem** ([Phase 1 — Step 0](./00-ste-conversation.md)).
+2. See the **conversation** that explored it (same).
+3. See **requirements** with **trace** to dialogue ([Step 1](./01-requirements-snapshot.md)).
+4. See **logical architecture** ([Step 3a](./03a-logical-adr-scheduling.md), [Step 3b](./03b-logical-adr-trust.md)).
+5. See **physical system** design ([Steps 4a–4b](./04a-physical-system-hub.md)).
+6. See **physical component** design ([Steps 5a–5c](./05a-physical-component-orchestration.md)).
+7. See **which rules activated** ([Step 5d](./05d-rules-activation.md)).
+8. See the **compiled architecture model** ([Step 6](./06-derived-architecture-ir.md)).
+9. See **what system actually runs** ([Phase 8 in Step 7](./07-code-semantic-linkage.md#phase-8--runtime-system)).
+10. **Trace every artifact** back to its origin (lineage table in [Part 11 overview](../00-overview.md); trace tables in Steps **1**, **3a**, and **3b**).
+
 ---
 
 **Previous:** [Step 8](./08-edr-example.md) · **Return:** [Part 11 overview](../00-overview.md)

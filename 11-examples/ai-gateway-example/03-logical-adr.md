@@ -56,6 +56,17 @@ system_boundaries:
 - **Serverless**, **health checks + retries**, and **Secrets Manager** are the **chosen** alternatives from the ledger lists.
 - **BOUND-0008** states a **trust-relevant** edge: authentication before provider access echoes **RQINV-0001**.
 
+## Traceability — ADR-L decisions satisfy requirements
+
+| ADR-L decision / record | Satisfies requirement | Resolves ledger (where applicable) |
+|-------------------------|----------------------|-----------------------------------|
+| **CAP-0015** (capability) | **RQCAP-0001** — routing | — |
+| **CAP-0016** (capability) | **RQCAP-0002** — failover | — |
+| **BOUND-0008** | **RQINV-0001** — auth before provider access | — |
+| **DEC-0025** — serverless entrypoint | **RQCAP-0001**, **RQNFR-0001** / **RQNFR-0002** (operational fit of edge compute) | **LDEC-0001** |
+| **DEC-0026** — health checks + bounded retries | **RQCAP-0002**, **RQNFR-0001** | **LDEC-0002** |
+| **DEC-0027** — Secrets Manager | **RQINV-0002**, **RQCONST-0001** (multi-provider credentials) | **LDEC-0003** |
+
 ### Where these commitments reappear
 
 The same capability, boundary, and decision ids are not trapped in prose—they propagate:

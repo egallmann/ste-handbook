@@ -30,6 +30,10 @@ python generate_projections.py
 
 The script is a **local maintainer helper** (gitignored policy matches the AI Gateway example — see repository `.gitignore`).
 
+## Composite projection (rules + invariants + physical context)
+
+[`rules-invariants-system-context.md`](rules-invariants-system-context.md) joins **IR** (`constrains` edges, components, externals) with **Phase 6** [rules activation](../05d-rules-activation.md) for a **per-component** view of **invariants** and **activated rule families**. Spec: **Query D** in [`projection-queries.md`](projection-queries.md).
+
 ## Query-shaped projection specs
 
 See [`projection-queries.md`](projection-queries.md).

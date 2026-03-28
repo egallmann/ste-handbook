@@ -37,6 +37,21 @@ The gateway **scaled quickly**. A **new engineer** added a **direct provider cal
 
 STE is not “just MBSE” or “just an assistant”: it is a **governed lifecycle** where **evidence** forces **decisions** when reality moves.
 
+## Example completeness (definition of done)
+
+This walkthrough is **complete** for a reader when they can answer **yes** to each item (see also [Part 11 overview](../00-overview.md)):
+
+1. See the **original problem** ([Phase 1](./00-ste-conversation.md)).
+2. See the **conversation** that explored it (same).
+3. See **requirements** derived from it, with **trace** to dialogue ([Step 1](./01-requirements-snapshot.md)).
+4. See **logical architecture** ([Step 3](./03-logical-adr.md)).
+5. See **physical system** design ([Step 4](./04-physical-system-adr.md)).
+6. See **physical component** design ([Step 5](./05-physical-component-adr.md)).
+7. See **which rules activated** and why ([Step 5b](./05b-rules-activation.md)).
+8. See the **compiled architecture model** ([Step 6](./06-derived-architecture-ir.md)).
+9. See **what system actually runs** ([Phase 8 in Step 7](./07-code-semantic-linkage.md#phase-8--runtime-system)).
+10. **Trace every artifact** back to its origin (lineage table in [Part 11 overview](../00-overview.md); trace tables in Steps **1** and **3**).
+
 ---
 
 **Previous:** [Step 8](./08-edr-example.md) · **Return:** [Part 11 overview](../00-overview.md)

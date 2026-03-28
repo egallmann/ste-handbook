@@ -57,4 +57,4 @@ The **code semantic graph** in later steps will attach **evidence** to **COMP-00
 
 ---
 
-**Previous:** [Step 4](./04-physical-system-adr.md) · **Next:** [Step 6 — Derived Architecture IR](./06-derived-architecture-ir.md)
+**Previous:** [Step 4](./04-physical-system-adr.md) · **Next:** [Step 5b — Rules activation](./05b-rules-activation.md)

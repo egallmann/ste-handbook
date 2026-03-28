@@ -6,17 +6,17 @@ This chapter explains the examples part: end-to-end walkthroughs that illustrate
 
 ### AI Gateway (first walkthrough)
 
-The primary walkthrough is **[STE examples: systems through the full lifecycle](00-overview.md)** — AI Gateway section — followed in order by the steps under `ai-gateway-example/` (requirements snapshot → ledger → ADR ladder → derived IR → code linkage → EDR → drift and correction) and the companion diagrams in `ai-gateway-example/diagrams/`.
+The primary walkthrough is **[STE examples: systems through the full lifecycle](00-overview.md)**. Read it for the **canonical eight-phase pipeline** (conversation → requirements → ADR-L / ADR-PS / ADR-PC → **rules activation** → Architecture IR → **runtime system**), then the **extension** (embodiment linkage, EDR, drift). Follow the files under `ai-gateway-example/` in the order given in [00-overview.md](00-overview.md), including [Phase 1 — conversation](ai-gateway-example/00-ste-conversation.md), [rules activation](ai-gateway-example/05b-rules-activation.md), and companion diagrams in `ai-gateway-example/diagrams/`.
 
 For **Architecture IR → projection**, the same example includes [`ai-gateway-example/ir/architecture-ir.json`](ai-gateway-example/ir/architecture-ir.json) and **regenerated** Mermaid under [`ai-gateway-example/projections/generated/`](ai-gateway-example/projections/generated/), with [`projection-queries.md`](ai-gateway-example/projection-queries.md) as illustrative query-shaped specs.
 
 ### Instance Scheduler on AWS (second walkthrough, higher fidelity)
 
-The second walkthrough lives under [`instance-scheduler-example/`](instance-scheduler-example/). It adds **Step 0** (single-user design chat: **conversation engine** + **Architect agent** with **personas**—FinOps, Security, AWS Cloud, Operations; full STE: **ste-rules-library** projections select personas and **project into ADRs**), **split** logical and physical ADRs, **requirement** and **invariant** entities in [`instance-scheduler-example/ir/architecture-ir.json`](instance-scheduler-example/ir/architecture-ir.json), and **path-level** linkage to the public **[Instance Scheduler on AWS](https://github.com/aws-solutions/instance-scheduler-on-aws)** repository. Projections: [`instance-scheduler-example/projections/generated/`](instance-scheduler-example/projections/generated/) (includes a **traceability** view), with [`instance-scheduler-example/projections/projection-queries.md`](instance-scheduler-example/projections/projection-queries.md).
+The second walkthrough lives under [`instance-scheduler-example/`](instance-scheduler-example/). It adds **[Phase 1 — conversation](instance-scheduler-example/00-ste-conversation.md)** (**Stakeholder** + **Architect**; full STE may add a conversation engine, Steelman, and **persona-routed** probes—**ste-rules-library** projections select rules from **signals**), **split** logical and physical ADRs, **[Phase 6 — rules activation](instance-scheduler-example/05d-rules-activation.md)**, **requirement** and **invariant** entities in [`instance-scheduler-example/ir/architecture-ir.json`](instance-scheduler-example/ir/architecture-ir.json), and **path-level** linkage to the public **[Instance Scheduler on AWS](https://github.com/aws-solutions/instance-scheduler-on-aws)** repository. Projections: [`instance-scheduler-example/projections/generated/`](instance-scheduler-example/projections/generated/) (includes a **traceability** view), with [`instance-scheduler-example/projections/projection-queries.md`](instance-scheduler-example/projection-queries.md).
 
 ## Why this matters
 
-Examples bridge abstraction to practice. Readers use them to sanity-check understanding of earlier parts.
+Examples bridge abstraction to practice. Readers use them to sanity-check understanding of earlier parts. The **eight-phase spine** plus **artifact lineage** tables in [00-overview.md](00-overview.md) show STE as a **deterministic** path from conversation to runnable system, not a bag of templates.
 
 ## Planned coverage
 

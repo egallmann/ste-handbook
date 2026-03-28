@@ -16,6 +16,19 @@ Explain why **Architecture IR alone is not enough**. **Embodiment**—repositori
 
 **Diagram:** [Design to embodiment](./diagrams/design-to-embodiment.md)
 
+## Phase 8 — Runtime system
+
+Handbook **illustration** of the **embodied** system implied by Steps **4–5** (no single canonical upstream repo in this smaller example):
+
+| Category | What runs (illustrative) |
+|----------|---------------------------|
+| **Services** | **AWS Lambda** function implementing the **AI Gateway** entrypoint (**COMP-0010**); integrates with **Auth Service** (**COMP-0003**) before outbound calls |
+| **Flows** | **HTTPS request** → **authenticate** (Bearer validation) → **route** to selected **LLM provider** → **normalize** response envelope → return to caller; **failover** path uses **health-check** and **bounded retries** per **ADR-L-AIGW-001** |
+| **Scheduled jobs** | None required for the **edge gateway** v1 story (contrast **Instance Scheduler**); batch or cron would be a **separate** ADR if introduced |
+| **APIs** | **Amazon API Gateway** (or equivalent) **REST** route **POST /v1/ai/complete** (**IFACE-0012**); **external** HTTPS to **OpenAI / Anthropic / …** provider APIs |
+| **State stores** | **AWS Secrets Manager** for **provider credentials**; **no** long-lived **transactional** database in the minimal gateway sketch (session/state policies would be a separate decision) |
+| **Trust zones** | **Public edge** (untrusted callers) vs **provider** egress; **auth** boundary per **BOUND-0008** |
+
 ## Illustrative excerpt
 
 ```yaml

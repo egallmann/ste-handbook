@@ -14,4 +14,5 @@ Shows STE’s value in ongoing operation, not only initial design.
 
 ## Relationship to other chapters
 
+- Worked examples (drift and correction loop): [STE examples overview](00-overview.md)
 - Drift (lifecycle) ([chapter](../06-governance/06-03-drift.md))

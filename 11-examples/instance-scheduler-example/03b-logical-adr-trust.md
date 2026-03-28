@@ -72,6 +72,16 @@ constraints:
 - **CONTRACT-5181** names the **integration shape** the physical-system ADRs will refine (IAM + AWS APIs).
 - **DEC-5183** is the logical **anchor** for **ADR-PS-INST-002** (remote topology).
 
+## Traceability — ADR-L satisfies requirements
+
+| ADR-L decision / record | Satisfies requirement | Resolves ledger (where applicable) |
+|-------------------------|----------------------|-----------------------------------|
+| **CAP-5182** | **RQCAP-5182** | — |
+| **INV-5182** | **RQINV-5182** | — |
+| **CONTRACT-5181** | **RQCAP-5182**, **RQINV-5182** (explicit hub/spoke trust) | — |
+| **DEC-5183** (spoke stack + hub parameters) | **RQCAP-5182**, **RQINV-5182** | **LDEC-5183** |
+| **CONST-5182** | **RQCAP-5182** (explicit enablement; single-account remains valid) | — |
+
 ## What this step produced and why it matters
 
 Together with [Step 3a](./03a-logical-adr-scheduling.md), this ADR completes the **logical architecture** for the example: **trust**, **cross-account enablement**, and **contracts** are now **fixed commitments** that physical-system ADRs must **refine**, not reinterpret. After 3a–3b, you should be able to answer “**what did we decide at the logical layer?**” without opening CloudFormation or CDK—yet those decisions are **specific enough** to drive **deployable** shape next.

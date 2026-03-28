@@ -14,51 +14,120 @@ STE is easy to describe as layers and loops, yet still feel abstract: readers ma
 
 ## The Reframe
 
-Part 11 provides **two** walkthroughs. Start with the **AI Gateway** example—**small**, one logical ADR and one physical-system / physical-component pair—then optionally read the **Instance Scheduler** example for **higher fidelity**: a **single-user convergent design chat** (conversation engine + **Architect agent** with **personas**; full STE: **ste-rules-library** projections drive activation and later **ADR** projection), **split logical and physical ADRs**, **requirement and invariant nodes** in Architecture IR, and **path-level** linkage to a **real AWS Solutions** repository layout.
+Part 11 provides **two** walkthroughs. Start with the **AI Gateway** example—**small**, one logical ADR and one physical-system / physical-component pair—then optionally read the **Instance Scheduler** example for **higher fidelity**: **split** logical and physical ADRs, **requirement and invariant nodes** in Architecture IR, and **path-level** linkage to a **real AWS Solutions** repository layout.
+
+Both walkthroughs open with **Phase 1 — Conversation (problem discovery)**: a **grounded design dialogue** with ambiguity, constraints, tradeoffs, and risks. The **AI Gateway** transcript is **short**; the **Instance Scheduler** transcript is **longer** and uses **Stakeholder** and **Architect** speakers. In full STE, a **conversation engine**, **Steelman**, and **persona-routed** Architect probes (FinOps, Security, cloud landing zone, Operations) may augment that dialogue; **ste-rules-library** projections **activate** rules from **signals** in the emerging design. For readability, cross-cutting concerns are often **folded into one Architect voice** in the handbook.
 
 The YAML-shaped fragments in the steps are **illustrative** and **handbook-grade**. **ste-spec** is normative for **semantic** Architecture IR meaning; **adr-architecture-kit** (workspace sibling) is the reference for **ADR YAML field shapes** and **ID patterns**. **AWS documentation and the upstream GitHub repository** are authoritative for **Instance Scheduler product behavior**—the handbook **does not** vendor upstream code; it **synthesizes** STE-shaped artifacts for pedagogy.
+
+**Requirement row ids** in snapshots use the `RQCAP-*`, `RQCONST-*`, `RQINV-*`, `RQNFR-*` prefixes; you can read them as the handbook’s analogue of a **REQ-XXXX** list—each row is one traceable requirement-class item.
 
 ## The Model
 
 ### What this section is for
 
 - It follows **one or two systems** through STE end to end.
-- The **goal** is the **full lifecycle**: intent → bounded decisions → architecture commitments → derived model → embodiment linkage → evidence → assessment → corrective feedback.
+- The **goal** is the **full lifecycle**: intent → bounded decisions → architecture commitments → **rules activation** → compiled model → **runtime picture** → embodiment linkage → evidence → assessment → corrective feedback.
 - The **AI Gateway** example is **intentionally small** but **structurally realistic** (patterns aligned with workspace example shapes, not toy prose).
-- You should read **[AI Gateway step 1](./ai-gateway-example/01-requirements-snapshot.md) through [step 9](./ai-gateway-example/09-drift-and-correction.md) in order** first, using the companion diagrams as you go.
+- You should read **[AI Gateway Phase 1](./ai-gateway-example/00-ste-conversation.md) through [step 9](./ai-gateway-example/09-drift-and-correction.md) in order** first, using the companion diagrams as you go.
 
-### Diagram A — Intent to design
+### Authoring contract (canonical eight-phase pipeline)
 
-See [Intent to design flow](./ai-gateway-example/diagrams/intent-to-design.md).
+Every example under Part 11 follows the **same** phase spine so readers can compare systems without learning a new ladder each time.
 
-### Step map (reading order)
+| Phase | Name | What the reader should see |
+|-------|------|----------------------------|
+| 1 | Conversation | Realistic dialogue; problem statement, constraints, assumptions |
+| 2 | Requirements | Structured snapshot + **trace** to conversation segments |
+| 3 | Logical design (ADR-L) | Capabilities, boundaries, decisions + **satisfies-requirement** trace |
+| 4 | Physical system (ADR-PS) | Topology, trust zones, integrations |
+| 5 | Physical component (ADR-PC) | Interfaces, models, deployment targets, acceptance / test hints |
+| 6 | Rules activation | **Signal → rule → reason** (illustrative; **ste-rules-library** patterns) |
+| 7 | Compilation (Architecture IR) | Derived graph + **YAML excerpt** (components, relationships, boundaries, contracts, deployment mappings) |
+| 8 | Runtime system | **What actually runs** (services, flows, schedules, APIs, stores) |
 
-| Step | File | Lifecycle beat |
-|------|------|----------------|
-| 1 | [Requirements snapshot](./ai-gateway-example/01-requirements-snapshot.md) | Bounded expectations: capabilities, constraints, invariants, NFRs, technology signals |
-| 2 | [Decision ledger](./ai-gateway-example/02-decision-ledger.md) | Explicit design questions and alternatives, tied to requirements |
-| 3 | [Logical ADR](./ai-gateway-example/03-logical-adr.md) | Logical commitments that **resolve** the ledger (not ad hoc invention) |
-| 4 | [Physical-system ADR](./ai-gateway-example/04-physical-system-adr.md) | Deployable topology, boundaries, trust, externals |
-| 5 | [Physical-component ADR](./ai-gateway-example/05-physical-component-adr.md) | Implementable components, interfaces, deployment units |
-| 6 | [Derived Architecture IR](./ai-gateway-example/06-derived-architecture-ir.md) | Compiled entities and relationships machines traverse |
-| 7 | [Code semantic linkage](./ai-gateway-example/07-code-semantic-linkage.md) | Architecture linked to code and infrastructure |
-| 8 | [EDR example](./ai-gateway-example/08-edr-example.md) | Embodied evidence, scoring, obligations |
-| 9 | [Drift and correction](./ai-gateway-example/09-drift-and-correction.md) | Drift scenario and closing the self-correction loop |
+**Extension (operation and closure)** after Phase 8 in these walkthroughs: **code semantic linkage** (step 7 filename), **EDR** (step 8), **drift and correction** (step 9)—the bridge from the compiled model and runtime inventory to **kernel / runtime** operation.
+
+### Diagram — STE pipeline (conceptual)
+
+```mermaid
+flowchart TB
+  p1[Phase1_Conversation]
+  p2[Phase2_Requirements]
+  p3[Phase3_ADR_L]
+  p4[Phase4_ADR_PS]
+  p5[Phase5_ADR_PC]
+  p6[Phase6_RulesActivation]
+  p7[Phase7_ArchitectureIR]
+  p8[Phase8_RuntimeSystem]
+  e1[Extension_Embodiment_linkage]
+  e2[Extension_EDR]
+  e3[Extension_Drift_correction]
+  p1 --> p2 --> p3 --> p4 --> p5 --> p6 --> p7 --> p8
+  p8 --> e1 --> e2 --> e3
+```
+
+Per-example **customized** pipeline figures live under each example’s [`diagrams/intent-to-design.md`](./ai-gateway-example/diagrams/intent-to-design.md) (AI Gateway) and [`instance-scheduler-example/diagrams/intent-to-design.md`](./instance-scheduler-example/diagrams/intent-to-design.md) (Instance Scheduler).
+
+### Diagram A — Intent to design (entry)
+
+See [Intent to design flow](./ai-gateway-example/diagrams/intent-to-design.md) for the AI Gateway figure; [Intent to design (Instance Scheduler)](./instance-scheduler-example/diagrams/intent-to-design.md) for the second walkthrough.
+
+### Phase and step map — AI Gateway (reading order)
+
+| Phase | Step | File | Lifecycle beat |
+|-------|------|------|----------------|
+| 1 | (conversation) | [STE conversation](./ai-gateway-example/00-ste-conversation.md) | Problem discovery; trace seeds for requirements |
+| 2 | 1 | [Requirements snapshot](./ai-gateway-example/01-requirements-snapshot.md) | Bounded expectations + conversation trace table |
+| 2 | 2 | [Decision ledger](./ai-gateway-example/02-decision-ledger.md) | Explicit design questions tied to requirements |
+| 3 | 3 | [Logical ADR](./ai-gateway-example/03-logical-adr.md) | Logical commitments that resolve the ledger |
+| 4 | 4 | [Physical-system ADR](./ai-gateway-example/04-physical-system-adr.md) | Deployable topology, boundaries, trust |
+| 5 | 5 | [Physical-component ADR](./ai-gateway-example/05-physical-component-adr.md) | Implementable components and interfaces |
+| 6 | 5b | [Rules activation](./ai-gateway-example/05b-rules-activation.md) | Which rules activate from design signals |
+| 7 | 6 | [Derived Architecture IR](./ai-gateway-example/06-derived-architecture-ir.md) | Compiled entities and relationships |
+| 8 | 7 | [Code linkage + runtime](./ai-gateway-example/07-code-semantic-linkage.md) | What runs; linkage to embodiment |
+| Ext | 8 | [EDR example](./ai-gateway-example/08-edr-example.md) | Embodied evidence, scoring, obligations |
+| Ext | 9 | [Drift and correction](./ai-gateway-example/09-drift-and-correction.md) | Drift scenario; closing the loop |
+
+#### Artifact lineage — AI Gateway (illustrative)
+
+| Artifact | Derived from | STE phase |
+|----------|--------------|-----------|
+| RQCAP/RQINV/… rows | [Conversation](./ai-gateway-example/00-ste-conversation.md) | Phase 2 (snapshot) |
+| ADR-L-AIGW-001 | Requirements + ledger | Phase 3 |
+| ADR-PS-AIGW-001 | ADR-L-AIGW-001 | Phase 4 |
+| ADR-PC-AIGW-001 | ADR-PS-AIGW-001 | Phase 5 |
+| Rule activation set | ADR-PC + technology signals | Phase 6 |
+| Architecture IR | All ADRs (compile) | Phase 7 |
+| Runtime inventory + linkage | Architecture IR | Phase 8 (+ extension) |
+
+#### Definition of done — can the reader …?
+
+1. See the **original problem** (Phase 1).
+2. See the **conversation** that explored it (Phase 1).
+3. See **requirements** derived from it, with **trace** to dialogue (Phase 2).
+4. See **logical architecture** (ADR-L) (Phase 3).
+5. See **physical system** design (ADR-PS) (Phase 4).
+6. See **physical component** design (ADR-PC) (Phase 5).
+7. See **which rules activated** and why (Phase 6).
+8. See the **compiled architecture model** (IR) (Phase 7).
+9. See **what system actually runs** (Phase 8).
+10. **Trace every artifact** back to its origin (lineage + tables).
 
 ### What Part 11 teaches (concept → where you learn it)
 
 | Concept | Where you learn it |
 |---------|-------------------|
-| Intent vs design | Steps 1–2 |
-| Decision governance (ledger bounds logical ADR) | Steps 2–3 |
-| Logical vs physical | Step 3 vs Steps 4–5 |
-| Canonical vs derived | ADRs (Steps 3–5) vs registry / graph (Step 6) |
-| Architecture IR | Step 6 (derived model tooling may call it “registry”) |
-| Embodiment | Step 7 |
-| Evidence | Step 8 (EDR) |
-| Governance | Step 8 (score, obligations, review) |
-| Drift | Step 9 |
-| Self-correction | Step 9 |
+| Conversation → intent | Phase 1 |
+| Intent vs design | Phases 2–3 |
+| Decision governance (ledger bounds logical ADR) | Phase 2–3 |
+| Logical vs physical | Phase 3 vs Phases 4–5 |
+| Rules from signals | Phase 6 |
+| Rules + invariants per component (tabular projection) | [`projection-queries.md`](./ai-gateway-example/projections/projection-queries.md) Query D; [`rules-invariants-system-context.md`](./ai-gateway-example/projections/rules-invariants-system-context.md) |
+| Canonical vs derived | ADRs vs Architecture IR (Phase 7) |
+| Runtime vs linkage | Phase 8 vs extension (embodiment) |
+| Evidence | Extension — EDR step |
+| Drift / self-correction | Extension — drift step |
 
 ### Other diagrams
 
@@ -68,9 +137,9 @@ See [Intent to design flow](./ai-gateway-example/diagrams/intent-to-design.md).
 
 ### IR snapshot and IR-generated Mermaid
 
-The **AI Gateway** example includes a consolidated [`architecture-ir.json`](./ai-gateway-example/ir/architecture-ir.json) and **regenerable** Mermaid under [`projections/generated/`](./ai-gateway-example/projections/generated/) (see [`projections/README.md`](./ai-gateway-example/projections/README.md)). Illustrative **projection-query** sketches live in [`projection-queries.md`](./ai-gateway-example/projections/projection-queries.md).
+The **AI Gateway** example includes a consolidated [`architecture-ir.json`](./ai-gateway-example/ir/architecture-ir.json) and **regenerable** Mermaid under [`projections/generated/`](./ai-gateway-example/projections/generated/) (see [`projections/README.md`](./ai-gateway-example/projections/README.md)). Illustrative **projection-query** sketches live in [`projection-queries.md`](./ai-gateway-example/projection-queries.md). **Query D** adds a **composite** view—[`rules-invariants-system-context.md`](./ai-gateway-example/projections/rules-invariants-system-context.md)—that joins **IR**, **ADR-PS/ADR-PC** context, **invariants**, and **Phase 6** rule activation so readers can **explore** “what applies” per deployable unit (natural language compiles to **stored predicates** in full STE).
 
-The **Instance Scheduler** example adds [`instance-scheduler-example/ir/architecture-ir.json`](./instance-scheduler-example/ir/architecture-ir.json) with **requirement** and **invariant** entities plus trace edges, and **three** generated views under [`instance-scheduler-example/projections/generated/`](./instance-scheduler-example/projections/generated/) (see [`instance-scheduler-example/projections/README.md`](./instance-scheduler-example/projections/README.md) and [`projection-queries.md`](./instance-scheduler-example/projections/projection-queries.md)).
+The **Instance Scheduler** example adds [`instance-scheduler-example/ir/architecture-ir.json`](./instance-scheduler-example/ir/architecture-ir.json) with **requirement** and **invariant** entities plus trace edges, and **three** generated views under [`instance-scheduler-example/projections/generated/`](./instance-scheduler-example/projections/generated/) (see [`instance-scheduler-example/projections/README.md`](./instance-scheduler-example/projections/README.md) and [`projection-queries.md`](./instance-scheduler-example/projection-queries.md)). The same **Query D** pattern lives in [`rules-invariants-system-context.md`](./instance-scheduler-example/projections/rules-invariants-system-context.md).
 
 ### Second walkthrough — Instance Scheduler on AWS (higher fidelity)
 
@@ -78,22 +147,38 @@ Use this path after the AI Gateway steps when you want a **production-shaped** A
 
 **Diagram:** [Intent to design (Instance Scheduler)](./instance-scheduler-example/diagrams/intent-to-design.md)
 
-| Step | File | Lifecycle beat |
-|------|------|----------------|
-| 0 | [Mock STE conversation](./instance-scheduler-example/00-ste-conversation.md) | Single-user chat: CE + **Architect agent** personas (FinOps, Security, AWS Cloud, Ops); rules project into ADRs in full STE → bounded REQ/INV ids |
-| 1 | [Requirements snapshot](./instance-scheduler-example/01-requirements-snapshot.md) | Expectations tied to conversation + AWS references |
-| 2 | [Decision ledger](./instance-scheduler-example/02-decision-ledger.md) | Questions spanning scheduling, persistence, multi-account |
-| 3a–3b | [Logical ADR — scheduling](./instance-scheduler-example/03a-logical-adr-scheduling.md), [Logical ADR — trust](./instance-scheduler-example/03b-logical-adr-trust.md) | Split logical commitments |
-| 4a–4b | [Physical-system — hub](./instance-scheduler-example/04a-physical-system-hub.md), [Physical-system — remote](./instance-scheduler-example/04b-physical-system-remote.md) | Hub vs spoke topology |
-| 5a–5c | [Physical-component — orchestration](./instance-scheduler-example/05a-physical-component-orchestration.md), [data layer](./instance-scheduler-example/05b-physical-component-data-layer.md), [CLI](./instance-scheduler-example/05c-physical-component-cli.md) | Implementable units |
-| 6 | [Derived Architecture IR](./instance-scheduler-example/06-derived-architecture-ir.md) | IR with requirements, invariants, trace edges |
-| 7–9 | [Code linkage](./instance-scheduler-example/07-code-semantic-linkage.md), [EDR](./instance-scheduler-example/08-edr-example.md), [Drift](./instance-scheduler-example/09-drift-and-correction.md) | Embodiment, evidence, correction |
+| Phase | Step | File | Lifecycle beat |
+|-------|------|------|----------------|
+| 1 | 0 | [STE conversation](./instance-scheduler-example/00-ste-conversation.md) | Stakeholder + Architect; convergence and trace ids |
+| 2 | 1 | [Requirements snapshot](./instance-scheduler-example/01-requirements-snapshot.md) | Expectations + conversation trace table |
+| 2 | 2 | [Decision ledger](./instance-scheduler-example/02-decision-ledger.md) | Ledger questions |
+| 3 | 3a–3b | [Logical ADR — scheduling](./instance-scheduler-example/03a-logical-adr-scheduling.md), [trust](./instance-scheduler-example/03b-logical-adr-trust.md) | Split logical commitments |
+| 4 | 4a–4b | [Physical-system — hub](./instance-scheduler-example/04a-physical-system-hub.md), [remote](./instance-scheduler-example/04b-physical-system-remote.md) | Hub vs spoke topology |
+| 5 | 5a–5c | [Orchestration](./instance-scheduler-example/05a-physical-component-orchestration.md), [data](./instance-scheduler-example/05b-physical-component-data-layer.md), [CLI](./instance-scheduler-example/05c-physical-component-cli.md) | Implementable units |
+| 6 | 5d | [Rules activation](./instance-scheduler-example/05d-rules-activation.md) | Signals → rules |
+| 7 | 6 | [Derived Architecture IR](./instance-scheduler-example/06-derived-architecture-ir.md) | IR with requirements, invariants, trace edges |
+| 8 | 7 | [Code linkage + runtime](./instance-scheduler-example/07-code-semantic-linkage.md) | Runtime inventory + path linkage |
+| Ext | 8–9 | [EDR](./instance-scheduler-example/08-edr-example.md), [Drift](./instance-scheduler-example/09-drift-and-correction.md) | Evidence, correction |
+
+#### Artifact lineage — Instance Scheduler (illustrative)
+
+| Artifact | Derived from | STE phase |
+|----------|--------------|-----------|
+| RQCAP/RQINV/… rows | [Conversation](./instance-scheduler-example/00-ste-conversation.md) | Phase 2 |
+| ADR-L-INST-001 / 002 | Requirements + ledger | Phase 3 |
+| ADR-PS-INST-001 / 002 | ADR-L-INST-* | Phase 4 |
+| ADR-PC-INST-001–003 | ADR-PS-INST-* | Phase 5 |
+| Rule activation set | ADR-PC + signals | Phase 6 |
+| Architecture IR | All ADRs | Phase 7 |
+| Runtime inventory + linkage | IR + upstream repo | Phase 8 (+ extension) |
+
+Use the same **definition-of-done checklist** as for the AI Gateway (problem → traceability → IR → runtime → full lineage).
 
 ## The Implications
 
 Treat this part as **pedagogy**, not a schema appendix: when a fragment disagrees with **ste-spec**, the specification wins. Use the same discipline in real programs: fix **canonical** intent or ADRs, then **regenerate** derived registries and graphs—do not “patch” derived files as if they were authority.
 
-A **minimal reading path** that still conveys the whole STE shape is: **Part 0 (foundations)**, **Part 3 (intent artifacts)**, **Part 5 (lifecycle) together with runtime/evidence chapters you use as your “05” anchor**, and **this Part 11**. Earlier parts supply vocabulary and boundaries; **Part 11 is what makes the system concrete**: one thread from idea to drift and correction.
+A **minimal reading path** that still conveys the whole STE shape is: **Part 0 (foundations)**, **Part 3 (intent artifacts)**, **Part 5 (lifecycle) together with runtime/evidence chapters you use as your “05” anchor**, and **this Part 11**. Earlier parts supply vocabulary and boundaries; **Part 11 is what makes the system concrete**: one thread from idea through **deterministic phases** to drift and correction.
 
 ## Relationship to STE system
 
@@ -104,12 +189,13 @@ A **minimal reading path** that still conveys the whole STE shape is: **Part 0 (
 - **Lifecycle staging:** [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)
 - **Runtime evidence and freshness:** [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)
 
-**Begin the first walkthrough:** [AI Gateway — Step 1](./ai-gateway-example/01-requirements-snapshot.md). **Second walkthrough:** [Instance Scheduler — Step 0](./instance-scheduler-example/00-ste-conversation.md).
+**Begin the first walkthrough:** [AI Gateway — Phase 1 (conversation)](./ai-gateway-example/00-ste-conversation.md). **Second walkthrough:** [Instance Scheduler — Phase 1](./instance-scheduler-example/00-ste-conversation.md).
 
 ## Summary
 
-- A **Requirements Snapshot** bounds expectations; a **Decision Ledger** states the design questions; a **Logical ADR** **resolves** those questions—it does not invent a separate decision list.
+- **Phase 1** grounds intent in a **realistic** design conversation; **Phase 2** freezes **REQ-shaped** rows with **trace** back to dialogue.
+- A **Decision Ledger** states design questions; **ADR-L** **resolves** those questions—it does not invent a parallel decision list.
 - **Physical-system** and **physical-component** ADRs refine logical commitments into topology and implementable responsibility.
+- **Phase 6** makes **rule activation** explicit from **signals** in the design (handbook illustration; **ste-rules-library** owns real rule packs).
 - **Architecture IR** is the **derived**, machine-reasonable architecture model; registries and indices are **projections** of that model.
-- **Semantic linkage** connects the model to **embodiment**; an **EDR** packages observable evidence for **assessment**, **scoring**, and **obligations**.
-- Under pressure, **drift** shows up as broken linkage or violated invariants; STE’s loop makes that **visible** and drives **governed** correction back into **intent** and structure.
+- **Phase 8** states **what runs**; **semantic linkage** connects the model to **embodiment**; an **EDR** packages observable evidence for **assessment**; **drift** drives **governed** correction back into **intent** and structure.

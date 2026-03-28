@@ -14,4 +14,5 @@ Readers see how IR drives stakeholder-visible outputs.
 
 ## Relationship to other chapters
 
+- Worked examples (IR, projections, linkage): [STE examples overview](00-overview.md)
 - Conformance example ([chapter](11-05-conformance-example.md))

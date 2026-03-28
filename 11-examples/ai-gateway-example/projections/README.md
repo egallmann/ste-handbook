@@ -25,6 +25,10 @@ The handbook does **not** ship an executable generator. In a full STE deployment
 
 Readers and integrators use the **adapter interface**; they do not need to edit projection code unless they are extending the platform. Maintainers who keep a **local** helper script for this example may do so; it is **gitignored** and not part of the public manuscript (see repository `.gitignore`).
 
+## Composite projection (rules + invariants + physical context)
+
+[`rules-invariants-system-context.md`](rules-invariants-system-context.md) is a **hand-maintained** illustration of a **federated** view: **Architecture IR** joined with **Phase 6 rule activation** and **ADR-PC** invariant text. It answers “**what applies to this deployable unit?**” in table form. The query-shaped spec is **Query D** in [`projection-queries.md`](projection-queries.md).
+
 ## Query-shaped projection specs
 
 Illustrative “**architecture projection DSL**” sketches—how you might **select** subgraphs for a view—live in [`projection-queries.md`](projection-queries.md). They are **pedagogical**, not a normative **ste-spec** language.

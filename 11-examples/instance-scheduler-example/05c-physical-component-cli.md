@@ -79,4 +79,4 @@ With **orchestration**, **data**, and **CLI** physical-component ADRs, the examp
 
 ---
 
-**Previous:** [Step 5b](./05b-physical-component-data-layer.md) · **Next:** [Step 6 — Derived Architecture IR](./06-derived-architecture-ir.md)
+**Previous:** [Step 5b](./05b-physical-component-data-layer.md) · **Next:** [Step 5d — Rules activation](./05d-rules-activation.md)

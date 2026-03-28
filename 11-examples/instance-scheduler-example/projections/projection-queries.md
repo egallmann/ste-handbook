@@ -56,3 +56,38 @@ Illustrative **projection specs** — pedagogy only; not a normative **ste-spec*
 **Output**
 
 - [`generated/ir-traceability.md`](generated/ir-traceability.md)
+
+---
+
+## Query D — Rules, invariants, and physical-system context
+
+**Intent:** Project **ADR-PS** topology and **ADR-PC** deployables together with **invariants** (from IR `constrains` edges) and **Phase 6** **rule activation** rows from [Step 5d](../05d-rules-activation.md)—one place to see **what the system must satisfy** and **what rule pressure applies** per component.
+
+**Natural language (operator):**
+
+> For **hub** **physical** components, show **invariants** that **constrain** them and **rule families** activated from **signals** in the **physical** ADRs.
+
+**Architecture projection DSL (sketch):**
+
+```text
+ARCH.PROJECT tabular_report "rules_invariants_ps_pc_context" {
+  SOURCE ir_snapshot "../ir/architecture-ir.json"
+  SOURCE rule_activation "../05d-rules-activation.md"
+
+  LET pc = ENTITIES WHERE entity_type == "component" AND introduced_by STARTS_WITH "ADR-PC-INST-"
+  LET inv = ENTITIES WHERE entity_type == "invariant"
+  LET ext = ENTITIES WHERE entity_type == "external_system"
+
+  JOIN invariant_bind ON (inv)-[:constrains]->(pc)
+
+  JOIN ps_context ON REACHABLE(pc, ext,
+    THROUGH relationship_type IN ("invokes_provider", "depends_on"))
+
+  ATTACH rule_families FROM rule_activation
+    WHERE signal SATISFIED_BY_DEPLOYMENT_TRAITS(pc, interfaces, data_stores)
+
+  OUTPUT markdown_table "rules-invariants-system-context.md"
+}
+```
+
+**Rendered illustration:** [`rules-invariants-system-context.md`](rules-invariants-system-context.md)

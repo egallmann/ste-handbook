@@ -10,13 +10,13 @@ last_reviewed: "2026-03-27"
 
 ## Purpose
 
-Show **compilation** from **canonical** ADRs (steps 3–5) into a **consolidated Architecture IR** snapshot that tools can traverse. This example **adds** first-class **`requirement`** and **`invariant`** entities and **trace edges** (`enabled_by`, `constrains`, `supports`) that align with the **semantic** relationship grammar in **ste-spec** ([`STE-Architecture-Intermediate-Representation.md`](../../../ste-spec/architecture/STE-Architecture-Intermediate-Representation.md)). **adr-architecture-kit** remains the reference for **YAML authoring** shapes; **mechanical** `Compiled_IR_Document` edge enums stay **pinned** by ste-spec / ste-kernel contracts—this JSON is **handbook-illustrative**.
+Show **compilation** from **canonical** ADRs (**Steps 3a–5c**: logical, physical-system, physical-component) into a **consolidated Architecture IR** snapshot that tools can traverse. **Phase 6 — rules activation** ([Step 5d](./05d-rules-activation.md)) precedes this step in the reading order so **signal → rule** context is explicit before **Phase 7**. This example **adds** first-class **`requirement`** and **`invariant`** entities and **trace edges** (`enabled_by`, `constrains`, `supports`) that align with the **semantic** relationship grammar in **ste-spec** ([`STE-Architecture-Intermediate-Representation.md`](../../../ste-spec/architecture/STE-Architecture-Intermediate-Representation.md)). **adr-architecture-kit** remains the reference for **YAML authoring** shapes; **mechanical** `Compiled_IR_Document` edge enums stay **pinned** by ste-spec / ste-kernel contracts—this JSON is **handbook-illustrative**.
 
 > **Illustrative only.** Pedagogical stub; **ste-spec** is normative.
 
 ## Architecture IR in the STE loop
 
-- **ADRs (Steps 3a–5c)** are the **source of truth** for architecture: human-reviewed **canonical** commitments (logical, physical-system, physical-component).
+- **ADRs (Steps 3a–5c)** are the **source of truth** for architecture: human-reviewed **canonical** commitments (logical, physical-system, physical-component). **Phase 6 — rules activation** ([Step 5d](./05d-rules-activation.md)) records **signal → rule** pressure **before** compilation; it does not replace ADR authority.
 - **Architecture IR** is the **compiled model** derived from those ADRs: a graph of **entities** (requirements, invariants, components, decisions, …) and **relationships** tools can **query**—not a replacement for ADRs, but the **machine-readable** shape of what they declare.
 - **Projections** are **views** generated from IR **plus** explicit queries—for example Mermaid diagrams and narrative indices under [`projections/`](./projections/) (see [`projections/generated/`](./projections/generated/) and [`projections/projection-queries.md`](./projections/projection-queries.md)). Change the IR (or the query), regenerate the view; do not treat diagrams as authority on their own.
 - **EDR** (Step 8) **attaches runtime and operational evidence** to **IR entities**—for example findings linked to **components** and **requirements**—so assessment is **grounded** in the same model as design.
@@ -31,6 +31,7 @@ Show **compilation** from **canonical** ADRs (steps 3–5) into a **consolidated
 - [`projections/generated/ir-system-context.md`](./projections/generated/ir-system-context.md) — Mermaid: components, EC2/RDS externals, cross-boundary invokes.
 - [`projections/generated/ir-traceability.md`](./projections/generated/ir-traceability.md) — Mermaid: requirements, invariants, decisions, and selected trace edges.
 - [`projections/projection-queries.md`](./projections/projection-queries.md) — query-shaped specs for each view.
+- [`projections/rules-invariants-system-context.md`](./projections/rules-invariants-system-context.md) — **Query D**: **rules + invariants + physical-system context** per **ADR-PC** component (joins IR with [Step 5d](./05d-rules-activation.md)).
 
 Regenerate committed Mermaid with `python generate_projections.py` from this directory (maintainer helper; typically gitignored like the AI Gateway example).
 
@@ -66,6 +67,30 @@ relationships:
   - relationship_type: implements
     from: COMP-5181
     to: CAP-5181
+
+# Phase 7 — boundaries, contracts, deployment mappings (YAML excerpt)
+
+boundaries:
+  - boundary_id: BOUND-5181
+    name: Scheduling control plane
+    introduced_by: ADR-L-INST-001
+
+contracts:
+  - contract_id: CONTRACT-5181
+    parties: [hub_control_plane, spoke_account]
+    protocol: aws_iam_assume_role_and_tagging_apis
+    introduced_by: ADR-L-INST-002
+
+deployment_mappings:
+  - component_id: COMP-5181
+    deployment_target: aws_lambda
+    stack_context: hub
+  - component_id: COMP-5182
+    deployment_target: aws_dynamodb_tables
+    stack_context: hub_data_layer
+  - component_id: COMP-5183
+    deployment_target: python_cli_distribution
+    stack_context: operator_workstation
 ```
 
 ## What to read from it
@@ -79,4 +104,4 @@ The **Architecture IR** snapshot is the **queryable system model** for this exam
 
 ---
 
-**Previous:** [Step 5c](./05c-physical-component-cli.md) · **Next:** [Step 7 — Code semantic linkage](./07-code-semantic-linkage.md)
+**Previous:** [Step 5d — Rules activation](./05d-rules-activation.md) · **Next:** [Step 7 — Code semantic linkage](./07-code-semantic-linkage.md)

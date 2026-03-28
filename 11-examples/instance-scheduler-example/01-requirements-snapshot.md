@@ -3,7 +3,7 @@ title: "Example step 1 — Requirements snapshot (Instance Scheduler)"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-03-28"
 ---
 
 # Step 1 — Requirements snapshot
@@ -16,8 +16,23 @@ Freeze **bounded expectations** for a **realistic** AWS operational solution: re
 
 ## Provenance
 
-- **Conversation seed:** [Step 0 — STE conversation (grounding)](./00-ste-conversation.md) — single-user chat with **conversation engine** + **Architect agent** (personas: FinOps, Security, AWS Cloud, Operations; full STE: activation from **ste-rules-library** projections) (`declared_in` analogue).
+- **Conversation seed:** [Step 0 — STE conversation (grounding)](./00-ste-conversation.md) — **Architect + Stakeholder** design simulation; **full STE** may add **CE**, **Steelman**, **persona-routed** Architect probes, and toolchain-generated ADRs (`declared_in` analogue).
 - **Product references:** [Instance Scheduler on AWS — README](https://github.com/aws-solutions/instance-scheduler-on-aws/blob/main/README.md) (hub stack, remote/spoke stack, `source/app`, `source/instance-scheduler`, `source/cli`).
+
+Requirement-class rows use **`RQCAP-*` / `RQCONST-*` / `RQINV-*` / `RQNFR-*`** ids (handbook analogue of a flat **REQ-XXXX** list).
+
+## Traceability — requirement rows derived from conversation
+
+| Requirement row | Derived from conversation segment |
+|-----------------|-----------------------------------|
+| RQCAP-5181 | [§1 — Problem, platform bar, and safety posture](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture); [§2 — Automation shape](./00-ste-conversation.md#2-automation-shape-clock-vs-idle-vs-manual); [§3 — Scope](./00-ste-conversation.md#3-scope-environments-and-services) |
+| RQCAP-5182 | [§5 — Accounts, topology, and multi-account mechanics](./00-ste-conversation.md#5-accounts-topology-and-multi-account-mechanics) |
+| RQCONST-5181 | [§1](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture) (managed platform bar); [§12 — Convergence summary](./00-ste-conversation.md#12-convergence-summary-bounded-intent) |
+| RQCONST-5182 | [§8 — Human vocabulary and day-2 operations](./00-ste-conversation.md#8-human-vocabulary-and-day-2-operations) (schedules, periods, time zones); [§12](./00-ste-conversation.md#12-convergence-summary-bounded-intent) |
+| RQINV-5181 | [§1](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture) (positive binding; one governed path) |
+| RQINV-5182 | [§1](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture); [§5](./00-ste-conversation.md#5-accounts-topology-and-multi-account-mechanics) (least-privilege hub/spoke) |
+| RQNFR-5181 | [§10 — Orchestration unit](./00-ste-conversation.md#10-orchestration-unit-interval-vs-event-driven); [§12](./00-ste-conversation.md#12-convergence-summary-bounded-intent) |
+| RQNFR-5182 | [§4 — Explainability, audit, and observability](./00-ste-conversation.md#4-explainability-audit-and-observability-tradeoffs); [§11 — Drift, misconfiguration](./00-ste-conversation.md#11-drift-misconfiguration-and-evidence-hooks) |
 
 ## Illustrative excerpt
 

@@ -14,6 +14,21 @@ Anchor **Architecture IR** identities to **embodiment** in the **[Instance Sched
 
 > **Illustrative only.** Pedagogical stub; **ste-spec** is normative.
 
+## Phase 8 — Runtime system
+
+This is the **operational picture** implied by the AWS Solutions design and the **physical-component** ADRs (Steps 5a–5c). It connects **Architecture IR** to **running** behavior before **linkage claims** (below) tie entities to repository paths.
+
+| Category | What runs (illustrative) |
+|----------|---------------------------|
+| **Services** | **AWS Lambda** functions in the hub (schedule evaluation, EC2/RDS API orchestration) and supporting control-plane logic as defined in upstream `source/app` and CDK stacks |
+| **Flows** | **Periodic schedule evaluation** (“what should be running now?”) driving **start/stop** API calls against **tag-bound** EC2/RDS resources; optional **cross-account** **AssumeRole** into spoke roles |
+| **Scheduled jobs** | **Amazon EventBridge** (or equivalent) **rules** on a **configurable interval** (minutes-scale) invoking orchestration Lambdas—see solution parameters in the [implementation guide](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/solution-overview.html) |
+| **APIs / integrations** | **AWS SDK** calls to **EC2**, **RDS**, **DynamoDB**, **STS**; **CloudWatch** **Logs** / **metrics** for operational visibility |
+| **State stores** | **DynamoDB** tables for **configuration**, **state**, **maintenance windows**, and **resource registry** (names and wiring in CDK per **ADR-PC-INST-002**) |
+| **Operator surfaces** | **scheduler-cli** (Python) for day-2 configuration from workstations; **IaC** (CloudFormation/CDK) for deploy |
+
+**Trust zones:** **Hub account** hosts orchestration and central data plane; **spoke accounts** hold **scoped** IAM and enrolled resources—see Steps **4a–4b**.
+
 ## Upstream layout (reference)
 
 | Path (upstream repo) | Role |
