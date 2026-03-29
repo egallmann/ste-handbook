@@ -63,13 +63,15 @@ Every example under Part 11 follows the **same** phase spine so readers can comp
 | 3 | Logical design (ADR-L) | Capabilities, boundaries, decisions + **satisfies-requirement** trace |
 | 4 | Physical system (ADR-PS) | Topology, trust zones, integrations |
 | 5 | Physical component (ADR-PC) | Interfaces, models, deployment targets, acceptance / test hints |
-| 6 | Rules activation | **Signal → rule → reason** (illustrative; **ste-rules-library** patterns) |
+| 6 | Rules activation (recorded) | **Signal → rule → reason** made explicit for the walkthrough (illustrative; **ste-rules-library** patterns). **Governance signals and candidate rule activation accrue throughout Phases 1–5** as choices and technology land; this step **freezes** the activation set for compilation and teaching—not when rules first start to matter. |
 | 7 | Compilation (Architecture IR) | Derived graph + **YAML excerpt** (components, relationships, boundaries, contracts, deployment mappings) |
 | 8 | Runtime system | **What actually runs** (services, flows, schedules, APIs, stores) |
 
 **Extension (operation and closure)** after Phase 8 in these walkthroughs: **code semantic linkage** (step 7 filename), **EDR** (step 8), **drift and correction** (step 9)—the bridge from the compiled model and runtime inventory to **kernel / runtime** operation.
 
 ### Diagram — STE pipeline (conceptual)
+
+The linear spine below matches the **numbered walkthrough files**. **Rules activation is part of design**, not a late bolt-on: as Phases 1–5 unfold, **signals** in conversation, requirements, and ADRs **continuously inform** which governance rules apply. Phase 6 in the examples is where that story is **surfaced and recorded** (**signal → rule → reason**) for compilation and reader clarity—after physical-component choices have stabilized most technology signals.
 
 ```mermaid
 flowchart TB
@@ -78,13 +80,22 @@ flowchart TB
   p3[Phase3_ADR_L]
   p4[Phase4_ADR_PS]
   p5[Phase5_ADR_PC]
-  p6[Phase6_RulesActivation]
+  ra[Rules_activation_during_design]
+  p6[Phase6_Recorded_activation_set]
   p7[Phase7_ArchitectureIR]
   p8[Phase8_RuntimeSystem]
   e1[Extension_Embodiment_linkage]
   e2[Extension_EDR]
   e3[Extension_Drift_correction]
-  p1 --> p2 --> p3 --> p4 --> p5 --> p6 --> p7 --> p8
+  p1 --> p2 --> p3 --> p4 --> p5
+  p1 -.-> ra
+  p2 -.-> ra
+  p3 -.-> ra
+  p4 -.-> ra
+  p5 -.-> ra
+  p5 --> p6
+  ra -.-> p6
+  p6 --> p7 --> p8
   p8 --> e1 --> e2 --> e3
 ```
 
@@ -222,6 +233,6 @@ A **minimal reading path** that still conveys the whole STE shape is: **Part 0 (
 - **Phase 1** grounds intent in a **realistic** design conversation; **Phase 2** freezes **REQ-shaped** rows with **trace** back to dialogue.
 - A **Decision Ledger** states design questions; **ADR-L** **resolves** those questions—it does not invent a parallel decision list.
 - **Physical-system** and **physical-component** ADRs refine logical commitments into topology and implementable responsibility.
-- **Phase 6** makes **rule activation** explicit from **signals** in the design (handbook illustration; **ste-rules-library** owns real rule packs).
+- **Rules activation** is **continuous during design** (Phases 1–5); **Phase 6** in the walkthrough **records** **signal → rule → reason** once physical-component signals are clear (handbook illustration; **ste-rules-library** owns real rule packs).
 - **Architecture IR** is the **derived**, machine-reasonable architecture model; registries and indices are **projections** of that model.
 - **Phase 8** states **what runs**; **semantic linkage** connects the model to **embodiment**; an **EDR** packages observable evidence for **assessment**; **drift** drives **governed** correction back into **intent** and structure.

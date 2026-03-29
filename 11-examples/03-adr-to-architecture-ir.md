@@ -12,7 +12,7 @@ After **canonical design** is captured in ADRs, STE **compiles** a machine-consu
 
 ## Rules activation
 
-**Rules activation** connects **governance** to the emerging design: signals in ADRs and component choices **select** applicable rules (illustrated in Part 11 with **ste-rules-library** patterns). Activation records **why** a rule applies; they **inform** compilation and assessment. Treat activation as **derived governance context** tied to canonical design, not as a replacement for ADRs.
+**Rules activation** connects **governance** to the emerging design: signals in conversation, requirements, and ADRs—and especially **technology and responsibility choices** as they land—**select** applicable rules throughout the design arc (illustrated in Part 11 with **ste-rules-library** patterns). The walkthrough’s **rules activation** step **records** **signal → rule → reason** explicitly once those signals are stable enough to teach; that is not the first moment rules matter. Activation records **why** a rule applies; they **inform** compilation and assessment. Treat activation as **derived governance context** tied to canonical design, not as a replacement for ADRs.
 
 ## What Architecture IR is
 
