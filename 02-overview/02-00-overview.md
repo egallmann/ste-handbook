@@ -3,7 +3,7 @@ title: "Part 2: STE Overview"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-24"
+last_reviewed: "2026-03-27"
 ---
 
 # Part 2: STE Overview
@@ -24,12 +24,13 @@ Think of Part 2 as installing a map before you hike the terrain. The trail detai
 
 ### What Part 2 contains
 
-Part 2 is four chapters after this one, each with a narrow job:
+Part 2 is five chapters after this one, each with a narrow job:
 
 1. **[What is STE?](02-01-what-is-ste.md)** answers **What is STE?** Definition, scope, non-goals, and handbook versus **ste-spec**.
 2. **[Terminology](02-02-terminology.md)** answers **What do these words mean?** Grouped handbook senses, not a flat glossary.
 3. **[System overview](02-03-system-overview.md)** answers **What are the parts and how do they fit together?** Structure and flows live there.
-4. **[The STE lifecycle](02-04-the-ste-lifecycle.md)** answers **How does STE operate over time?** Loop framing at handbook altitude, not the full lifecycle part.
+4. **[How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md)** answers **Which figures and generated files are authoritative?** It separates **canonical** records from **derived** views.
+5. **[The STE lifecycle](02-04-the-ste-lifecycle.md)** answers **How does STE operate over time?** Loop framing at handbook altitude, not the full lifecycle part.
 
 ### How later parts deepen the map (high level)
 
@@ -45,7 +46,7 @@ If you skip Part 2 entirely, you may still learn fragments, but you will pay a r
 
 ## Relationship to STE system
 
-Continue into Part 2’s chapters in sequence when you can. If you need a single next step after foundations and theory, start with [What is STE?](02-01-what-is-ste.md), then [Terminology](02-02-terminology.md), then [System overview](02-03-system-overview.md), then [The STE lifecycle](02-04-the-ste-lifecycle.md).
+Continue into Part 2’s chapters in sequence when you can. If you need a single next step after foundations and theory, start with [What is STE?](02-01-what-is-ste.md), then [Terminology](02-02-terminology.md), then [System overview](02-03-system-overview.md), then [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md) if you want a reading discipline for figures and generated outputs, then [The STE lifecycle](02-04-the-ste-lifecycle.md).
 
 For normative semantics, schemas, and exact system contracts, **ste-spec** remains authoritative. This handbook explains relationships and intent; it does not replace the specification.
 
@@ -54,11 +55,11 @@ Handy return anchors from Part 0 and Part 1:
 - [The STE thesis](../00-problem/00-08-the-ste-thesis.md)
 - [What STE is and is not](../00-problem/00-07-what-ste-is-and-is-not.md)
 
-**Next:** Open [What is STE?](02-01-what-is-ste.md) next. It states STE in handbook terms and draws the line between this book and **ste-spec**. The chapters that follow add shared vocabulary, a structural picture, and a time-shaped loop. None of them replace that first definition job.
+**Next:** Open [What is STE?](02-01-what-is-ste.md) next. It states STE in handbook terms and draws the line between this book and **ste-spec**. The chapters that follow add shared vocabulary, a structural picture, a short guide to **diagrams** and **derived** outputs, and a time-shaped loop. None of them replace that first definition job.
 
 ## Summary
 
-- Part 2 supplies a **reading map** and sequence before deep dives: definition, vocabulary, structure, lifecycle.
-- The four chapters after this overview cover those jobs in that order.
+- Part 2 supplies a **reading map** and sequence before deep dives: definition, vocabulary, structure, how to read diagrams and **projections**, lifecycle.
+- The five chapters after this overview cover those jobs in that order.
 - Later parts zoom into layers; Part 2 tells you **which layer** each part is about.
 - **ste-spec** defines; the handbook orients.

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Software Architecture Theory"
 status: structured
 maturity: L2
@@ -94,7 +94,7 @@ STE’s technical spine includes a canonical model and multiple projections. Rea
 
 ## Where This Appears in STE
 
-For architecture views and projections, see [architecture views](../04-architecture-model/04-12-architecture-views.md) and [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md). For the system model concept, see [the system model](../04-architecture-model/04-01-the-system-model.md). For **intent** as the home of architectural **commitments**, see [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md). Linked chapters may be outlines; they still orient the reader.
+For architecture views and projections, see [architecture views](../04-architecture-model/04-12-architecture-views.md) and [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For the system model concept, see [the system model](../04-architecture-model/04-01-the-system-model.md). For **intent** as the home of architectural **commitments**, see [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md). Linked chapters may be outlines; they still orient the reader.
 
 For **implementation** vocabulary, revisit [Intent versus Implementation](../00-problem/00-03-intent-vs-implementation.md). Normative IR semantics belong in **ste-spec** where applicable.
 

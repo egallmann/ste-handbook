@@ -1,4 +1,4 @@
----
+﻿---
 title: "Control Theory"
 status: structured
 maturity: L2
@@ -111,7 +111,7 @@ STE’s story centers **intent** versus **embodiment**, **validation** with **ev
 
 For the operational loop narrative in the handbook, see [the control loop](../06-governance/06-08-the-control-loop.md). For **drift** as sustained mismatch, see [drift](../06-governance/06-03-drift.md). For **validation** mechanics, see [validation](../07-kernel/07-03-validation.md). For admission and orchestration logic tied to **evidence**, see material on the **Kernel** in Part 5. Linked chapters may still be outlines; treat them as directional anchors.
 
-For **decisions** as durable **commitments** that function as part of the reference, Part 0 remains foundational: [Engineering as decision-making](../00-problem/00-01-engineering-as-decision-making.md). For **Architecture IR** as a shared object you can compare projections against, see [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md).
+For **decisions** as durable **commitments** that function as part of the reference, Part 0 remains foundational: [Engineering as decision-making](../00-problem/00-01-engineering-as-decision-making.md). For **Architecture IR** as a shared object you can compare projections against, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md).
 
 This connects directly to **Kernel** framing in later chapters: orchestration that consumes **evidence** and contracts to support admission and assessment. The handbook does not promise that all important properties reduce to automatic gates. It does promise that hiding **error** is a predictable failure mode.
 

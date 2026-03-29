@@ -3,7 +3,7 @@ title: "Part 5: Lifecycle Overview"
 status: structured
 maturity: L1
 diagrams: true
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-03-27"
 ---
 
 # Part 5: Lifecycle Overview
@@ -58,13 +58,16 @@ flowchart LR
   Change --> Intent
 ```
 
+For the fuller STE picture—**compilation**, **Architecture IR**, **derived projections**, **Kernel**-shaped **assessment**, and **governance** return paths—use [System overview](../02-overview/02-03-system-overview.md).
+
 ## Relationship to other chapters
 
 - Orientation: [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md).
 - Artifact types: [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md).
-- Canonical model: [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md).
+- Canonical model: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md).
 - Loop mechanics: [Control loop overview](../06-governance/06-07-control-loop-overview.md).
 - Policy and operations: [Governance overview](../06-governance/06-00-lifecycle-overview.md).
 - Normative contracts: **ste-spec**.
+- End-to-end illustration: [Canonical example — AI Gateway through STE](../11-examples/00-overview.md)
 
 **Next:** [Intent formation](05-01-intent-formation.md).

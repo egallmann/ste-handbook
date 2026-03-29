@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Problem of Lossy Reasoning"
 status: structured
 maturity: L2
@@ -112,7 +112,7 @@ None of these outcomes requires negligence. They follow when the information an 
 
 STE does not promise perfect fidelity. No discipline can. It aims to make reasoning **less lossy** by giving rationale durable structure and by connecting that structure to what runs.
 
-Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented as artifacts, see [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md). For the canonical structural compilation of **architecture**, see [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **conformance** assessment, see [validation](../07-kernel/07-03-validation.md).
+Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented as artifacts, see [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md). For the canonical structural compilation of **architecture**, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **conformance** assessment, see [validation](../07-kernel/07-03-validation.md).
 
 ## Summary
 

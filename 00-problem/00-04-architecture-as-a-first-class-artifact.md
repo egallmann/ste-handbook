@@ -57,6 +57,8 @@ Later parts of this handbook develop **Architecture IR**: a canonical, machine-a
 
 Operationally, that object is supposed to be boring in a useful way: reviewers can diff it against the last approved baseline; tools can query stable identities; compilers and linters can fail a change set when a declared boundary or **invariant** is violated. None of that replaces human judgment about tradeoffs. It does replace “we think the graph still matches” as the only test.
 
+**Architecture IR** is the **canonical system model** at the architecture layer for an agreed **scope**: it is not a diagram file format, and a picture on a slide is not “the architecture” just because it looks authoritative. Informal diagrams and prose documents are **sources** or **projections**; the running system is **embodiment**. Model-based assistants and other tools need the same stable identities and edges as deterministic checkers when they participate safely.
+
 ### Projections and views
 
 Not every audience needs the full graph at full detail. **Projections** (security view, operational view, data-flow slice, team ownership map) are derived **views** of the same underlying commitments. They work when they are **projections of** a maintained whole, not competing private truths.
@@ -94,7 +96,7 @@ A structured **architecture** **artifact** gives **governance** and **validation
 
 STE treats **architecture** as structured **decisions** compiled into **Architecture IR**, then connected to **embodiment** and **evidence** through **traceability** and **validation**. **Governance** keeps those **artifacts** honest over time.
 
-For the **artifact** layer and **decision** records, see the [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md), [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md), and [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md). For **Architecture IR** specifically, see [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **drift** and **governance**, see [drift](../06-governance/06-03-drift.md) and [governance](../06-governance/06-06-governance.md).
+For the **artifact** layer and **decision** records, see the [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md), [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md), and [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md). For **Architecture IR** specifically, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **drift** and **governance**, see [drift](../06-governance/06-03-drift.md) and [governance](../06-governance/06-06-governance.md).
 
 ## Summary
 

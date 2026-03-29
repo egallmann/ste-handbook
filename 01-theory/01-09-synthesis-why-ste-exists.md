@@ -84,6 +84,8 @@ The gap is between **local engineering practices** (good teams, good tools, good
 
 STE fills that gap by naming an operational stack centered on **Architecture IR**, **intent** artifacts, **validation**, and **governance**, instead of treating each discipline as a separate essay about “quality.”
 
+Operationally, that stack is also an **organizational operating model** shift: senior engineers and architects spend less of their time manually re-deriving structure from raw repositories for every change, and more time refining **rules**, **invariants**, **constraints**, patterns, capture structure, and the **metamodel** that **compilation** targets—while services, checkers, and model-based assistants reason over a **stable Architecture IR** and linked **intent** instead of guessing from scattered docs. The point is not headcount replacement; it is **governed scale** for **traceability**, **conformance**, and **drift** detection.
+
 Individual fields often stop at professional boundaries: the organizational process is “somebody else’s methodology,” the canonical model is “a diagram tool issue,” runtime **evidence** is “operations telemetry,” and **governance** is “HR and policy.” STE refuses those splits for the specific job of keeping **intent** honest against **embodiment** over time in software-intensive delivery.
 
 ## What Happens Without STE
