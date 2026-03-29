@@ -50,7 +50,7 @@ The book is one loop described at different altitudes:
 1. **Part 0 — Foundations:** why **decisions**, **lossy reasoning**, **intent** versus **embodiment**, and **governed reasoning** matter ([Foundations overview](../00-problem/00-00-foundations-overview.md)).
 2. **Intent (artifact layer and lifecycle):** what the system **should** be—**ADRs**, **constraints**, **invariants**, and related structured records ([Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md), [Intent formation](../05-lifecycle/05-01-intent-formation.md)).
 3. **Part 4 — Architecture model (this part):** what the architecture **is** structurally—the **Architecture IR** and how it is compiled, linked, differenced, and viewed.
-4. **Kernel and runtime:** how the model is **built, checked, and consumed** with **evidence** ([Kernel overview](../07-kernel/07-00-kernel-overview.md), [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)).
+4. **Kernel and runtime:** how the model is **built, checked, and consumed** with **evidence** ([Kernel overview](../07-kernel/07-00-overview.md), [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)).
 5. **Evidence and assessment:** observations and claims about **conformance** ([Evidence](../03-artifacts/03-05-evidence.md), [Conformance and assessment](../05-lifecycle/05-05-conformance-and-assessment.md)).
 6. **Governance and drift:** legitimacy of change and mismatch over time ([Drift](../06-governance/06-03-drift.md), [Governance](../06-governance/06-06-governance.md)).
 
@@ -104,13 +104,13 @@ You do not need every detail in IR on day one. You do need honesty about what is
 - **Publication versus projection:** [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md) states what may be treated as published truth versus derived communication.
 - **Foundations:** [The problem of lossy reasoning](../00-problem/00-02-the-problem-of-lossy-reasoning.md), [Governed reasoning](../00-problem/00-05-governed-reasoning.md).
 - **Theory bridge:** [Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md).
-- **Downstream:** [Kernel overview](../07-kernel/07-00-kernel-overview.md), [Runtime evidence](../08-runtime/08-00-runtime-evidence.md), [Conformance](../03-artifacts/03-07-conformance.md).
+- **Downstream:** [Kernel overview](../07-kernel/07-00-overview.md), [Runtime evidence](../08-runtime/08-00-runtime-evidence.md), [Conformance](../03-artifacts/03-07-conformance.md).
 - **Worked example chain:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md).
 
 Exact schemas, admission behavior, and wire formats remain in **ste-spec** where applicable.
 
 ## Summary
 
-The **architecture model** is the structured, relational picture of what the system **is** at the architecture layer; **Architecture IR** is STE’s canonical, machine-addressable **system model**—the object that makes **architecture** **computable** for an agreed **scope**. IR sits between **intent** and **implementation** / **embodiment**: it expresses structural commitments so tools and **trace** edges can use them, without replacing **ADRs**, diagrams, or source code. **Compilation** produces IR from structured **intent**; **projections** make IR reviewable for humans. **Evidence** and **assessment** gain traction when observations attach to the **same** identities IR maintains. Part 4 stays conceptual; **ste-spec** and product contracts nail precision. For how IR sits in time-shaped engineering work, continue with Part 5 ([Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)); for how IR is admitted, validated, and combined with **evidence** in practice, see Part 7 ([Kernel overview](../07-kernel/07-00-kernel-overview.md)).
+The **architecture model** is the structured, relational picture of what the system **is** at the architecture layer; **Architecture IR** is STE’s canonical, machine-addressable **system model**—the object that makes **architecture** **computable** for an agreed **scope**. IR sits between **intent** and **implementation** / **embodiment**: it expresses structural commitments so tools and **trace** edges can use them, without replacing **ADRs**, diagrams, or source code. **Compilation** produces IR from structured **intent**; **projections** make IR reviewable for humans. **Evidence** and **assessment** gain traction when observations attach to the **same** identities IR maintains. Part 4 stays conceptual; **ste-spec** and product contracts nail precision. For how IR sits in time-shaped engineering work, continue with Part 5 ([Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)); for how IR is admitted, validated, and combined with **evidence** in practice, see Part 7 ([Kernel overview](../07-kernel/07-00-overview.md)).
 
 **Next:** [The system model](04-01-the-system-model.md).

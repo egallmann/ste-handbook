@@ -16,7 +16,7 @@ Turn “does it match what we said?” into inspectable results: mechanical chec
 
 ## Artifacts involved
 
-**Conformance** results, assessment reports, rule definitions, and links from findings back to **intent**, IR elements, and **evidence**. The **Kernel** role in STE orchestrates much of this machinery in implementations. See [Conformance](../03-artifacts/03-07-conformance.md), [Validation](../07-kernel/07-03-validation.md), and [Deterministic assessment](../07-kernel/07-07-deterministic-assessment.md).
+**Conformance** results, assessment reports, rule definitions, and links from findings back to **intent**, IR elements, and **evidence**. The **Kernel** role in STE orchestrates much of this machinery in implementations. See [Conformance](../03-artifacts/03-07-conformance.md), [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md), and [Determinism and fail-closed](../07-kernel/07-06-determinism-and-fail-closed.md).
 
 ## Human responsibility
 
@@ -42,7 +42,7 @@ When **assessment** surfaces material gaps or when **conformance** passes at a b
 
 - [Terminology](../02-overview/02-02-terminology.md) (**validation** sense)
 - [Assessment to decision](../06-governance/06-12-assessment-to-decision.md)
-- [Divergence](../07-kernel/07-04-divergence.md)
+- [Drift](../06-governance/06-03-drift.md)
 - **ste-spec** for assessment interfaces and result shapes.
 
 **Next:** [Governance and decision](05-06-governance-and-decision.md).

@@ -28,7 +28,7 @@ Together, these answer questions such as:
 - Are **required controls** present and attached to the right scopes?
 - Do **observations** (**EDR**, tests, telemetry) support or contradict the **designed** posture?
 
-Exact check definitions and kernel behavior live in **ste-spec** and [Conformance](../03-artifacts/03-07-conformance.md); [Kernel conformance](../07-kernel/07-06-conformance.md) describes assessment mechanics at a high level.
+Exact check definitions and kernel behavior live in **ste-spec** and [Conformance](../03-artifacts/03-07-conformance.md); [Kernel conformance](../05-lifecycle/05-05-conformance-and-assessment.md) describes assessment mechanics at a high level.
 
 ## Where the examples show this
 
@@ -40,6 +40,6 @@ Runtime inventory and **code semantic linkage** appear in step 7 of each walkthr
 ## Relationship to STE system
 
 - **Conformance (artifacts):** [Conformance](../03-artifacts/03-07-conformance.md)
-- **Validation and evidence:** [Validation](../07-kernel/07-03-validation.md), [Evidence](../03-artifacts/03-05-evidence.md)
+- **Kernel reasoning surface and evidence:** [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md), [Evidence](../03-artifacts/03-05-evidence.md)
 
 **Previous:** [IR to projections](./04-ir-to-projections.md) · **Next:** [Drift and correction](./06-drift.md) · **Part 11 index:** [00-overview](./00-overview.md)

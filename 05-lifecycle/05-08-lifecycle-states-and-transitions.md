@@ -43,4 +43,4 @@ This chapter completes the staged walkthrough of Part 5. The operational loop co
 - [Lifecycle overview](../06-governance/06-00-lifecycle-overview.md)
 - **ste-spec** for normative state names, transition guards, and interfaces.
 
-**Next:** Return to the loop entry at [Intent formation](05-01-intent-formation.md) as needed, or continue to Part 7 [Kernel overview](../07-kernel/07-00-kernel-overview.md) for admission and validation depth.
+**Next:** Return to the loop entry at [Intent formation](05-01-intent-formation.md) as needed, or continue to Part 7 [Kernel overview](../07-kernel/07-00-overview.md) for the reasoning surface, **Admission**, and **IR validation** depth.

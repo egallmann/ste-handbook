@@ -42,7 +42,7 @@ Treat broken regeneration as a **severity**: blocking for regulated **scopes**, 
 
 - **Neighbors:** [Diagrams](04-10-diagrams.md), [Projection documents](04-11-projection-documents.md), [View consistency](04-14-view-consistency.md).
 - **Publication versus projection:** [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md).
-- **Kernel / validation:** [Validation](../07-kernel/07-03-validation.md) (consistency checks may span projections and IR).
+- **Kernel / validation:** [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md) (consistency checks may span projections and IR).
 
 ## Summary
 

@@ -75,7 +75,7 @@ Related orienting chapters:
 
 - [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md)
 - [Control loop overview](../06-governance/06-07-control-loop-overview.md)
-- [Kernel overview](../07-kernel/07-00-kernel-overview.md)
+- [Kernel overview](../07-kernel/07-00-overview.md)
 
 Lifecycle semantics at the contract level remain in **ste-spec** where applicable.
 

@@ -32,7 +32,7 @@ Compilation failures are **governance signals**: missing links, contradictory **
 
 ### Relationship to admission
 
-**Admission** (Part 7) may consume compiled IR plus **evidence** and contracts to decide what may progress. This chapter stops at the **model-build** story; for admission framing see [The admission model](../07-kernel/07-02-the-admission-model.md).
+**Admission** (Part 7) may consume compiled IR plus **evidence** and contracts to decide what may progress. This chapter stops at the **model-build** story; for **Admission** framing see [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md).
 
 ## The Implications
 
@@ -44,7 +44,7 @@ Treat **compilation** as part of the engineering **supply chain**. Changes to **
 - **Artifact overview:** [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md).
 - **Terminology:** [Terminology](../02-overview/02-02-terminology.md) (**compilation** sense).
 - **Lifecycle:** [Architecture definition](../05-lifecycle/05-02-architecture-definition.md).
-- **Kernel:** [The admission model](../07-kernel/07-02-the-admission-model.md), [Validation](../07-kernel/07-03-validation.md).
+- **Kernel:** [Kernel overview](../07-kernel/07-00-overview.md), [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md).
 
 ## Summary
 

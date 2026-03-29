@@ -41,7 +41,7 @@ Add **projection** checks to CI where practical: regenerate and **diff** outputs
 ## Relationship to STE system
 
 - **Projections cluster:** [Projections overview](04-08-projections-overview.md) through [Stakeholder views](04-13-stakeholder-views.md).
-- **Kernel validation:** [Validation](../07-kernel/07-03-validation.md).
+- **Kernel** (**IR validation** and reasoning surface): [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md).
 - **Publication versus projection:** [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md).
 
 ## Summary
@@ -50,4 +50,4 @@ Add **projection** checks to CI where practical: regenerate and **diff** outputs
 - **Snapshots**, **predicates**, and **documented tolerances** make consistency **checkable**.
 - Projection **drift** undermines **conformance** before **evidence** is even collected.
 
-**Next:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md) shows minimal **intent**→**projection** shapes in one chain. Then continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md) or deepen **Kernel** mechanics in [Kernel overview](../07-kernel/07-00-kernel-overview.md).
+**Next:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md) shows minimal **intent**→**projection** shapes in one chain. Then continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md) or deepen **Kernel** mechanics in [Kernel overview](../07-kernel/07-00-overview.md).

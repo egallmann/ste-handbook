@@ -1,4 +1,4 @@
-Ôªø---
+---
 title: "The Problem of Lossy Reasoning"
 status: structured
 maturity: L2
@@ -62,7 +62,7 @@ Loss is not one event. It accumulates across ordinary work. A few common sites:
 
 **Long-lived systems after original designers are gone.** A service written ten years ago may still run well while the constraints that shaped it (hardware limits, partner APIs, org boundaries) have changed several times. Without a preserved rationale, every change is a small gamble about which old assumptions still bind.
 
-Those sites stack in real programs. A principal engineer agrees in a meeting that retries must stay bounded for a specific partner API; the ticket closes as ‚Äúfix retries‚Äù; the wiki still describes the old policy six months later; the author leaves; the on-call runbook mentions ‚Äúback off‚Äù without numbers. Two teams then ship different limits, each convinced they honored ‚Äúwhat we decided.‚Äù The **embodiment** is not mysterious. The recoverable **intent** is.
+Those sites stack in real programs. A principal engineer agrees in a meeting that retries must stay bounded for a specific partner API; the ticket closes as ìfix retriesî; the wiki still describes the old policy six months later; the author leaves; the on-call runbook mentions ìback offî without numbers. Two teams then ship different limits, each convinced they honored ìwhat we decided.î The **embodiment** is not mysterious. The recoverable **intent** is.
 
 Each site is normal. Together they form a pipeline that strips structure unless something counteracts it.
 
@@ -112,7 +112,7 @@ None of these outcomes requires negligence. They follow when the information an 
 
 STE does not promise perfect fidelity. No discipline can. It aims to make reasoning **less lossy** by giving rationale durable structure and by connecting that structure to what runs.
 
-Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented as artifacts, see [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md). For the canonical structural compilation of **architecture**, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **conformance** assessment, see [validation](../07-kernel/07-03-validation.md).
+Later handbook parts develop decision records, **intent** models, **Architecture IR**, **validation**, and **governed reasoning** as responses to that failure mode. For how **intent** is represented as artifacts, see [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md). For the canonical structural compilation of **architecture**, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **conformance** assessment, see [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md).
 
 ## Summary
 

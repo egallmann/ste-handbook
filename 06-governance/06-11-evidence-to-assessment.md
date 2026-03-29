@@ -14,4 +14,4 @@ Assessment is the interpretive step between data and action. This chapter clarif
 
 ## Relationship to other chapters
 
-- Validation ([chapter](../07-kernel/07-03-validation.md))
+- [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md)

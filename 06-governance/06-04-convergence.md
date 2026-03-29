@@ -14,4 +14,4 @@ Lifecycle convergence answers how teams schedule and fund alignment work, not on
 
 ## Relationship to other chapters
 
-- Convergence (kernel) ([chapter](../07-kernel/07-05-convergence.md))
+- **Kernel** reasoning surface: [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md), [Kernel overview](../07-kernel/07-00-overview.md).

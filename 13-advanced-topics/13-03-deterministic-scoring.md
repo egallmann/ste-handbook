@@ -14,4 +14,4 @@ Scoring is politically sensitive; determinism and explainability reduce disputes
 
 ## Relationship to other chapters
 
-- Deterministic assessment ([chapter](../07-kernel/07-07-deterministic-assessment.md))
+- [Determinism and fail-closed](../07-kernel/07-06-determinism-and-fail-closed.md)
