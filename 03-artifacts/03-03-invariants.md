@@ -21,7 +21,7 @@ Systems fail when unstated assumptions break: properties “everyone knew” wer
 
 An **invariant** is a statement of a property that must hold in a defined scope: data rules, ordering guarantees, safety boundaries, or architectural rules (“every external call passes through the gateway”). In STE **invariants** are **intent** artifacts. They are narrower than a full requirements catalog: they name what must remain true for the system to remain the same system in a **governance** sense.
 
-They are not **evidence** of correctness; they are commitments that **evidence** and rules may check. They are not the **Architecture IR** graph, though they link to IR elements when compilation defines that mapping.
+They are not **evidence** of correctness; they are commitments that **evidence** and rules may check. They are not the **Architecture IR** graph, though they link to IR elements when compilation defines that mapping. That linkage is how “must hold” statements become **mechanically targetable** alongside graph-shaped structure under agreed **rules**.
 
 ## How it is used in STE
 

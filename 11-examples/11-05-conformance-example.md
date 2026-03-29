@@ -14,4 +14,5 @@ Makes abstract conformance concrete.
 
 ## Relationship to other chapters
 
+- Worked examples (EDR and assessment): [STE examples overview](00-overview.md)
 - Drift example ([chapter](11-06-drift-example.md))

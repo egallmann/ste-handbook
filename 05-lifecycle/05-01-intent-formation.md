@@ -10,6 +10,8 @@ last_reviewed: "2026-03-25"
 
 **Intent formation** is when normative commitments take durable shape: what the system should do, what is ruled out, and which **decisions** record why. In STE this is never assumed to be a single front-loaded phase. **Intent** revises whenever strategy, risk, or learning demands it, always under **governance**.
 
+Much **intent** starts as conversation at the human boundary; STE’s job is to **materialize** that discussion into structured **intent** **artifacts** under capture and review policy, then **compile** toward **Architecture IR** when structure is ready—see [Conversation engine overview](../09-human-interface/09-00-conversation-engine-overview.md) and [System overview](../02-overview/02-03-system-overview.md).
+
 ## Purpose of this stage
 
 Establish and revise declared direction so that **embodiment** and **evidence** can be judged against something explicit, reviewable, and traceable rather than against memory or informal narrative.

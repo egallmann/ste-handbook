@@ -2,8 +2,8 @@
 title: "Architecture Decision Records"
 status: structured
 maturity: L1
-diagrams: false
-last_reviewed: "2026-03-26"
+diagrams: true
+last_reviewed: "2026-03-27"
 ---
 
 # Architecture Decision Records
@@ -19,9 +19,21 @@ Important choices disappear into memory, tickets, or informal decks. Nobody can 
 
 ## What the artifact is
 
-An **ADR** is a structured record of an architecture **decision**: context, options considered, the chosen commitment, and consequences. In STE it is an **intent** artifact type. It is not an omnibus narrative that describes the whole system, and it is not source code. It may reference **Architecture IR** elements once compiled, but the record carries rationale and decision status that the IR does not replace.
+An **ADR** is a structured record of an architecture **decision**: context, options considered, the chosen commitment, and consequences. In STE it is an **intent** artifact type—an **authoritative closure** of **design space** for the commitment it records, not meeting minutes dressed as architecture. It is not an omnibus narrative that describes the whole system, and it is not source code. **Architecture** is not “ADRs alone”; **ADRs** supply rationale and status while **compilation** projects structural commitments into **Architecture IR** where STE defines that mapping. It may reference **Architecture IR** elements once compiled, but the record carries rationale and decision status that the IR does not replace.
 
 STE may distinguish multiple ADR surfaces (for example lifecycle or packaging) in **ste-spec**. At handbook altitude, treat them as one family: recorded decisions with explicit lifecycle.
+
+At a finer grain, STE work often chains **logical** ADRs (what must be true and why), **physical-system** ADRs (subsystem boundaries and topology that realize that intent), and **physical-component** ADRs (implementable components, responsibilities, and interfaces). Lower layers **refine** upper layers: they carry intent forward into buildable structure and observable **evidence**; they do not invent a parallel authority tree.
+
+**How to read this diagram:** each step **realizes** the layer above; **runtime evidence** closes the loop for **assessment** against the same commitments.
+
+```mermaid
+flowchart TB
+  L[Logical_ADR] -->|"refines_into"| PS[Physical_System_ADR]
+  PS -->|"refines_into"| PC[Physical_Component_ADR]
+  PC -->|"realized_as"| IMPL[Implementation_surfaces]
+  IMPL -->|"observed_as"| RTE[Runtime_evidence]
+```
 
 ## How it is used in STE
 
@@ -45,5 +57,5 @@ Creating, superseding, or retiring an ADR should follow an explicit path: owner,
 - [Invariants](03-03-invariants.md): a decision may introduce or relax **invariants**; both should stay aligned.
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): compilation ties decisions to canonical elements where STE defines that mapping.
 - [Traceability](03-06-traceability.md): links from ADR identifiers to IR nodes and checks.
-- Part 4: [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md) for IR depth.
+- Part 4: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md) for IR depth.
 - Part 9: [Decision capture](../09-human-interface/09-03-decision-capture.md) for conversational capture that must still land in durable records.

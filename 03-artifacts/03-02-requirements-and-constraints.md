@@ -23,7 +23,7 @@ Work proceeds from tacit expectations. “We need it fast” and “it must neve
 
 **Capabilities** (what the system must be able to do) appear as requirement families or named obligation bundles, not as an untyped aside. A capability such as “authenticated clients may revoke sessions” should appear as explicit requirements with owners and review status, the same as any other normative statement.
 
-These artifact types are **intent**. They are not **Architecture IR** itself, though they compile into or reference IR elements where STE defines that binding. They differ from **invariants** (see [Invariants](03-03-invariants.md)): requirements and **constraints** name obligations and bounds; **invariants** name properties that must hold continuously in scope.
+These artifact types are **intent**. They are not **Architecture IR** itself, though they compile into or reference IR elements where STE defines that binding. When structured tightly enough, they become inputs to **deterministic** checks and policy tests against compiled structure—mechanical **enforceability** is a **governance** choice, not an accident of wording. They differ from **invariants** (see [Invariants](03-03-invariants.md)): requirements and **constraints** name obligations and bounds; **invariants** name properties that must hold continuously in scope.
 
 ## How it is used in STE
 

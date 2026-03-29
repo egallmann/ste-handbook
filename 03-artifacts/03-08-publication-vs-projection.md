@@ -3,7 +3,7 @@ title: "Publication versus Projection"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-03-27"
 ---
 
 # Publication versus Projection
@@ -46,4 +46,4 @@ Policy can require certain **projections** for review boards, but decisions must
 - [Traceability](03-06-traceability.md): links should target published IDs, not projection-only labels.
 - Part 4: [Projections overview](../04-architecture-model/04-08-projections-overview.md), [Diagrams](../04-architecture-model/04-10-diagrams.md), [View consistency](../04-architecture-model/04-14-view-consistency.md).
 
-Part 3 states the distinction; Part 4 develops **projection** practice and risks.
+Part 3 states the distinction; Part 4 develops **projection** practice and risks. A diagram of **canonical** versus **derived** surfaces sits in [Projections overview](../04-architecture-model/04-08-projections-overview.md).

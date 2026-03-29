@@ -14,4 +14,5 @@ Shows the human origin of machine-consumable intent.
 
 ## Relationship to other chapters
 
+- Worked examples (Phase 1 conversation → ADR ladder): [STE examples overview](00-overview.md)
 - ADR to IR ([chapter](11-03-adr-to-ir.md))

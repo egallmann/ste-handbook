@@ -14,4 +14,5 @@ Demonstrates the compilation bridge central to STE.
 
 ## Relationship to other chapters
 
+- Worked examples (ADR-L/PS/PC → rules activation → Architecture IR): [STE examples overview](00-overview.md)
 - IR to projection ([chapter](11-04-ir-to-projection.md))

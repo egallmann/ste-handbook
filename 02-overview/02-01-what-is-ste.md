@@ -26,6 +26,12 @@ The following single paragraph is the handbook definition of STE, written so you
 
 > **System of Thought Engineering (STE)** is the practice of engineering software-intensive systems so that **decisions** under **constraints** are recorded, structured, and traceable; **intent** stays distinct from **embodiment**; **architecture** is carried as durable **artifacts** and a canonical **Architecture IR** where compilation applies; change is assessed through **evidence**-linked **validation**; and **governance** closes the loop from assessment to allowed updates. STE is model-driven in the practical sense that shared structure is carried in explicit models and records, not only in chat and tacit team memory. It is architecture-centered because the primary durable commitments are architectural: what the system is allowed to be, how major decisions cohere, and what must remain true.
 
+#### Compact positioning (also quotable)
+
+> **System of Thought Engineering (STE)** is a system that maintains a **computable model** of a software-intensive system—connecting **declared intent** and **observed reality**—so the system can be continuously **analyzed, governed, and evolved** with **mechanical assistance**.
+
+STE is a **lifecycle**, a **control loop**, a **system model**, a **governance model**, and an **operating model**: tools (including model-based assistants) work **inside** it under declared **constraints** and **governance**, with **Architecture IR** as the shared structural center—not the other way around. STE does not exist because of AI; AI becomes more useful and safer when a **computable, governed system model** exists for it to operate on.
+
 ### Scope
 
 STE addresses:
@@ -53,7 +59,7 @@ Full handbook senses for **intent**, **evidence**, **conformance**, **governance
 
 ## The Implications
 
-If STE matches your problem, the shift is structural. Reviews attach to **artifacts** and **scopes**. Arguments cite compiled structure where it exists. Automation and agents participate where **machine-readable intent** and **governed reasoning** make participation safe, rather than wherever tooling is convenient.
+If STE matches your problem, the shift is structural. Reviews attach to **artifacts** and **scopes**. Arguments cite compiled structure where it exists. Automation and agents participate where **machine-readable intent**, **Architecture IR**, and **governed reasoning** make participation safe—reasoning **over** the canonical model as **one tool class**, not as the authority for **intent** or **governance**.
 
 If STE does not match your problem, forcing the vocabulary still produces theater. The discipline assumes you want traceable **decisions**, honest **validation**, and **governance** that can say “no” or “not yet.”
 

@@ -14,4 +14,5 @@ A single running example improves continuity across walkthrough chapters.
 
 ## Relationship to other chapters
 
+- Worked eight-phase walkthroughs (conversation through runtime and extension): [STE examples overview](00-overview.md)
 - Conversation to ADR ([chapter](11-02-conversation-to-adr.md))

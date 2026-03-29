@@ -1,4 +1,4 @@
----
+﻿---
 title: "Part 5: Architecture Definition"
 status: structured
 maturity: L1
@@ -16,7 +16,7 @@ Make **architecture** a first-class, inspectable object: a canonical arrangement
 
 ## Artifacts involved
 
-**Architecture IR**, structural elements and relationships, and **projections** derived from the canonical model. **Traceability** links connect **intent** artifacts to model elements. See [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md), [Traceability](../03-artifacts/03-06-traceability.md), [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md), and Part 4 ([Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md)).
+**Architecture IR**, structural elements and relationships, and **projections** derived from the canonical model. **Traceability** links connect **intent** artifacts to model elements. See [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md), [Traceability](../03-artifacts/03-06-traceability.md), [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md), and Part 4 ([Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)).
 
 ## Human responsibility
 
@@ -41,7 +41,7 @@ Work shifts toward **implementation and operation** when the organization commit
 ## Relationship to other chapters
 
 - [System overview](../02-overview/02-03-system-overview.md)
-- [Architecture IR overview](../04-architecture-model/04-00-architecture-ir-overview.md)
+- [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)
 - [Projections overview](../04-architecture-model/04-08-projections-overview.md)
 - [Intent to implementation](../06-governance/06-09-intent-to-implementation.md)
 - **ste-spec** for IR semantics and compilation contracts.

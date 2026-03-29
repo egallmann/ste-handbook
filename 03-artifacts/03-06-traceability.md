@@ -44,6 +44,6 @@ Weakening **traceability** (dropping IDs, orphaning records) is a **governance**
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): IR is the central spine for many edges.
 - [Evidence](03-05-evidence.md): **evidence** records must reference stable scopes to participate in **traceability**.
 - [Conformance](03-07-conformance.md): **conformance** uses **traceability** to bind obligations to checks and results.
-- Part 4: [Traceability](../04-architecture-model/04-05-traceability.md) for IR-internal and compilation-oriented mechanics.
+- Part 4: [Traceability in Architecture IR](../04-architecture-model/04-05-traceability.md) for IR-internal and compilation-oriented mechanics.
 
 Part 3 treats **traceability** as a layer-wide **governance** structure; Part 4 explains how IR carries it mechanically.

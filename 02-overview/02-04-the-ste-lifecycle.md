@@ -3,7 +3,7 @@ title: "The STE Lifecycle"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-24"
+last_reviewed: "2026-03-27"
 ---
 
 # The STE Lifecycle
@@ -16,7 +16,7 @@ If Part 2 implied a document phase model, it would mis-train readers for everyth
 
 ## The Reframe
 
-Treat STE as a living control loop. STE is lifecycle **governance**, not only a first-pass design exercise: legitimacy of change stays on the hook as **intent**, **architecture**, **embodiment**, and **evidence** move. Design and acceptance matter, but they repeat. **Evidence** is not a one-time gate. **Certification** or acceptance is a framed decision at a **scope** in time, not a permanent badge that excuses future drift. **Change** returns you to **decisions** and **invariants** with honest updates.
+Treat STE as a living **control loop**, not a phase model for documents. The useful analogy is feedback around a **reference** (**intent** and compiled **Architecture IR**), **measurements** (**evidence** about **embodiment**), and **actuators** (authorized edits to **intent**, **embodiment**, **rules**, and tooling) under **governance**—not “write requirements, then finish.” STE is lifecycle **governance**, not only a first-pass design exercise: legitimacy of change stays on the hook as **intent**, **architecture**, **embodiment**, and **evidence** move. Design and acceptance matter, but they repeat. **Evidence** is not a one-time gate. **Certification** or acceptance is a framed decision at a **scope** in time, not a permanent badge that excuses future drift. **Change** returns you to **decisions** and **invariants** with honest updates.
 
 ## The Model
 
@@ -25,7 +25,7 @@ Treat STE as a living control loop. STE is lifecycle **governance**, not only a 
 At the highest level, STE repeats:
 
 1. **Intent**
-2. **Architecture** (**Architecture IR** and **projections**, compiled from structured **intent**)
+2. **Architecture** (**Architecture IR** as the canonical **system model**, **projections** and mechanical **queries** / analysis on IR, compiled from structured **intent**)
 3. **Implementation** (**embodiment**)
 4. **Evidence**
 5. **Assessment**
@@ -65,7 +65,7 @@ Compatibility lived in declared **intent**; **embodiment** still diverged when a
 
 ## The Implications
 
-Readers should expect recurring passes, not a single heroic alignment project. Documentation-only STE fails precisely because it skips **evidence** and **governance** return paths. Tool-only STE fails when **intent** is thin and **governance** cannot say no.
+Readers should expect recurring passes, not a single heroic alignment project. If this chapter reads like a waterfall document flow, reread it as **control**: each stage produces signals that **governance** uses to update the **reference** or the **embodiment** plan. Documentation-only STE fails precisely because it skips **evidence** and **governance** return paths. Tool-only STE fails when **intent** is thin and **governance** cannot say no.
 
 ## Relationship to STE system
 
@@ -73,6 +73,7 @@ Stage-by-stage lifecycle accountability is in Part 5 ([Lifecycle overview](../05
 
 Related orienting chapters:
 
+- [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md)
 - [Control loop overview](../06-governance/06-07-control-loop-overview.md)
 - [Kernel overview](../07-kernel/07-00-kernel-overview.md)
 
@@ -82,7 +83,7 @@ Lifecycle semantics at the contract level remain in **ste-spec** where applicabl
 
 ## Summary
 
-- STE lifecycle language describes a repeating loop, not a single pass through documents.
+- STE lifecycle language describes a repeating **closed-loop control** story, not a single pass through documents.
 - Stages cover **intent**, **embodiment**, **evidence**, **assessment**, acceptance or certification, and **change**.
 - **Governance** attaches at transitions, exceptions, and revisions, not only at the end.
 - Parts 5 and 6 carry deeper lifecycle, governance, and control-loop framing; this chapter prevents waterfall misreadings.

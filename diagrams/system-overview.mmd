@@ -1,5 +1,43 @@
-%% Major STE components (intent, Architecture IR, kernel, projections, conversation interface)
-%% and primary flows between them. Replace placeholder with a full structural overview.
+%% STE closed loop (Diagram A): human/org intent through canonical artifacts, compilation and extraction,
+%% Architecture IR and derived projections, embodiment, evidence and freshness, assessment, governance.
+%% Companion to 02-overview/02-03-system-overview.md; prose there is orientation authority if they diverge.
 
-flowchart TB
-  placeholder[System overview diagram placeholder]
+flowchart LR
+  subgraph humanBoundary ["Human and org boundary"]
+    H[Capture_review_obligations]
+  end
+  subgraph intentPlane ["Intent artifacts"]
+    A[ADRs_constraints_invariants]
+  end
+  subgraph pipeline ["Compile extract normalize"]
+    X[Compilation_and_extraction]
+  end
+  subgraph canonical ["Architecture IR"]
+    B[Canonical_model]
+  end
+  subgraph views ["Derived projections"]
+    C[Manifest_registries_graph_rendered]
+  end
+  subgraph built ["Embodiment"]
+    D[Running_system]
+  end
+  subgraph proof ["Evidence"]
+    E[EDRs_tests_freshness]
+  end
+  subgraph assess ["Assessment"]
+    F[Kernel_role]
+  end
+  subgraph gov ["Governance"]
+    G[Authorized_change]
+  end
+  H --> A
+  A --> X
+  X --> B
+  B --> C
+  B --> F
+  D --> E
+  E -->|"provenance_and_freshness"| F
+  F --> G
+  G --> H
+  G --> A
+  G --> D
