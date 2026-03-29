@@ -3,7 +3,7 @@ title: "Example step 3a — Logical ADR scheduling domain (Instance Scheduler)"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-03-28"
 ---
 
 # Step 3a — Logical ADR (scheduling domain)
@@ -11,6 +11,8 @@ last_reviewed: "2026-03-27"
 ## Purpose
 
 Record **logical** commitments for **what** the solution does for EC2/RDS: schedule binding, periodic evaluation, and **where configuration/state** conceptually lives. This ADR **resolves** ledger rows **LDEC-5181**, **LDEC-5182**, and **LDEC-5184** for the scheduling surface.
+
+The **reader-facing decision** and **ADR steelman / gap deferrals** for this example are in [Part 4–6 of the canonical STE flow](./00-canonical-ste-flow.md#part-4--architectural-decision-record); **ADR-L-INST-001** is the **scheduling half** of that consolidated decision for toolchain and IR compilation.
 
 > **Illustrative only.** Pedagogical stub; **ste-spec** is normative; field names follow **[adr-architecture-kit](../../../adr-architecture-kit)** patterns where shown.
 
@@ -48,7 +50,10 @@ architectural_boundaries:
 
 invariants:
   - id: INV-5181
-    statement: Schedule-driven mutations only — no undocumented automation path may stop/start covered resources.
+    statement: >-
+      Schedule-driven mutations only — no undocumented automation path may stop/start covered resources.
+      Opt-in enrollment, non-production registry scope, always-on and backup-window protection, idempotency,
+      per-run blast-radius limits, and fail-closed behavior when safety inputs are ambiguous are upheld at evaluation time.
     scope: scheduling_control_plane
     enforcement_level: must
     enforcement_mechanism: policy
@@ -87,7 +92,7 @@ non_functional_requirements:
 ## What to read from it
 
 - **Capabilities** **CAP-5181** and **CAP-5183** split **user-visible scheduling** from **persistence**—both land in the hub’s logical scope before physical decomposition.
-- **INV-5181** is the **logical** counterpart to **RQINV-5181** for IR traceability.
+- **INV-5181** is the **logical** counterpart to **RQINV-5181** for IR traceability (including opt-in, fail-closed, idempotent, and blast-radius posture carried from [canonical flow Part 3](./00-canonical-ste-flow.md#part-3--extracted-artifacts-from-the-conversation)).
 
 ## Traceability — ADR-L satisfies requirements
 

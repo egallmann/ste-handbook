@@ -48,8 +48,8 @@ STE is a **closed-loop system**: the same **model** carries from conversation th
 
 This walkthrough is **complete** for a reader when they can answer **yes** to each item (see also [Part 11 overview](../00-overview.md)):
 
-1. See the **original problem** ([Phase 1 — Step 0](./00-ste-conversation.md)).
-2. See the **conversation** that explored it (same).
+1. See the **original problem** ([Part 1 — Problem statement](./00-canonical-ste-flow.md#part-1--problem-statement); [Phase 1 entry](./00-ste-conversation.md)).
+2. See the **conversation** that explored it ([Part 2 — Design conversation](./00-canonical-ste-flow.md#part-2--design-conversation)).
 3. See **requirements** with **trace** to dialogue ([Step 1](./01-requirements-snapshot.md)).
 4. See **logical architecture** ([Step 3a](./03a-logical-adr-scheduling.md), [Step 3b](./03b-logical-adr-trust.md)).
 5. See **physical system** design ([Steps 4a–4b](./04a-physical-system-hub.md)).

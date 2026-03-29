@@ -6,7 +6,7 @@
 
 ```mermaid
 flowchart TB
-  p1["Phase1_Conversation_Step0"]
+  p1["Phase1_Canonical_flow_Parts1to8"]
   p2["Phase2_Requirements_plus_ledger"]
   p3["Phase3_ADR_L_split"]
   p4["Phase4_ADR_PS_hub_spoke"]
@@ -25,7 +25,7 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-  CONV[Conversation]
+  CONV[Canonical_STE_flow]
   REQ[Requirements_snapshot]
   LED[Decision_ledger]
   L1[Logical_ADR_scheduling]
@@ -53,7 +53,8 @@ flowchart LR
 
 ## Files (reading order)
 
-- [Step 0 — Phase 1 conversation](../00-ste-conversation.md)
+- [Canonical STE flow — Parts 1–8](../00-canonical-ste-flow.md) (problem → conversation → extracted artifacts → ADR → ADR steelman → gaps/deferrals → architecture → traceability)
+- [Step 0 — Phase 1 entry](../00-ste-conversation.md) (optional navigation stub into the canonical flow)
 - [Step 1](../01-requirements-snapshot.md) through [Step 5c](../05c-physical-component-cli.md)
 - [Step 5d — Rules activation](../05d-rules-activation.md)
 - [Step 6 — Derived Architecture IR](../06-derived-architecture-ir.md)

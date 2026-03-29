@@ -143,6 +143,13 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
   - [Step 7 — Code semantic linkage](11-examples/ai-gateway-example/07-code-semantic-linkage.md)
   - [Step 8 — EDR example](11-examples/ai-gateway-example/08-edr-example.md)
   - [Step 9 — Drift and correction](11-examples/ai-gateway-example/09-drift-and-correction.md)
+- Instance Scheduler walkthrough (start with canonical flow, then formal steps):
+  - [Canonical STE flow — Parts 1–8](11-examples/instance-scheduler-example/00-canonical-ste-flow.md)
+  - [Phase 1 entry — Step 0](11-examples/instance-scheduler-example/00-ste-conversation.md)
+  - [Step 1 — Requirements snapshot](11-examples/instance-scheduler-example/01-requirements-snapshot.md)
+  - [Step 2 — Decision ledger](11-examples/instance-scheduler-example/02-decision-ledger.md)
+  - [Step 3a — Logical ADR (scheduling)](11-examples/instance-scheduler-example/03a-logical-adr-scheduling.md)
+  - [Step 3b — Logical ADR (trust)](11-examples/instance-scheduler-example/03b-logical-adr-trust.md)
 - Diagrams (AI Gateway):
   - [Intent to design](11-examples/ai-gateway-example/diagrams/intent-to-design.md)
   - [Canonical vs derived](11-examples/ai-gateway-example/diagrams/canonical-vs-derived.md)

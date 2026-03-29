@@ -3,7 +3,7 @@ title: "Part 11: STE examples — AI Gateway and Instance Scheduler"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-03-28"
 ---
 
 # STE examples: systems through the full lifecycle
@@ -16,7 +16,7 @@ STE is easy to describe as layers and loops, yet still feel abstract: readers ma
 
 Part 11 provides **two** walkthroughs. Start with the **AI Gateway** example—**small**, one logical ADR and one physical-system / physical-component pair—then optionally read the **Instance Scheduler** example for **higher fidelity**: **split** logical and physical ADRs, **requirement and invariant nodes** in Architecture IR, and **path-level** linkage to a **real AWS Solutions** repository layout.
 
-Both walkthroughs open with **Phase 1 — Conversation (problem discovery)**: a **grounded design dialogue** with ambiguity, constraints, tradeoffs, and risks. The **AI Gateway** transcript is **short**; the **Instance Scheduler** transcript is **longer** and uses **Stakeholder** and **Architect** speakers. In full STE, a **conversation engine**, **Steelman**, and **persona-routed** Architect probes (FinOps, Security, cloud landing zone, Operations) may augment that dialogue; **ste-rules-library** projections **activate** rules from **signals** in the emerging design. For readability, cross-cutting concerns are often **folded into one Architect voice** in the handbook.
+Both walkthroughs open with **Phase 1 — Conversation (problem discovery)**: a **grounded design dialogue** with ambiguity, constraints, tradeoffs, and risks. The **AI Gateway** transcript is **short**. The **Instance Scheduler** teaching path is **longer** and uses **Human** and **AI (Architecture Partner)** in **[canonical STE flow — Parts 1–8](./instance-scheduler-example/00-canonical-ste-flow.md)**: problem statement, dialogue, **extracted** requirements/invariants/governance/NFRs, a **reader-facing ADR**, **ADR steelman**, **gap resolution and deferrals**, a **final architecture view**, and a **traceability** table—then the walkthrough continues with the **formal** requirements snapshot and split ADRs. In full STE, a **conversation engine**, **Steelman** as a separate surfaced role, and **persona-routed** probes (FinOps, Security, cloud landing zone, Operations) may augment that dialogue; **ste-rules-library** projections **activate** rules from **signals** in the emerging design. For readability, cross-cutting concerns are often **folded into one architecture-partner voice** in the handbook.
 
 The YAML-shaped fragments in the steps are **illustrative** and **handbook-grade**. **ste-spec** is normative for **semantic** Architecture IR meaning; **adr-architecture-kit** (workspace sibling) is the reference for **ADR YAML field shapes** and **ID patterns**. **AWS documentation and the upstream GitHub repository** are authoritative for **Instance Scheduler product behavior**—the handbook **does not** vendor upstream code; it **synthesizes** STE-shaped artifacts for pedagogy.
 
@@ -149,8 +149,9 @@ Use this path after the AI Gateway steps when you want a **production-shaped** A
 
 | Phase | Step | File | Lifecycle beat |
 |-------|------|------|----------------|
-| 1 | 0 | [STE conversation](./instance-scheduler-example/00-ste-conversation.md) | Stakeholder + Architect; convergence and trace ids |
-| 2 | 1 | [Requirements snapshot](./instance-scheduler-example/01-requirements-snapshot.md) | Expectations + conversation trace table |
+| 1 | 0a | [Canonical STE flow — Parts 1–8](./instance-scheduler-example/00-canonical-ste-flow.md) | Human + AI conversation; extracted artifacts; ADR; **ADR steelman**; gaps/deferrals; architecture view; traceability example |
+| 1 | 0 | [Phase 1 entry](./instance-scheduler-example/00-ste-conversation.md) | Short pointer into **0a** |
+| 2 | 1 | [Requirements snapshot](./instance-scheduler-example/01-requirements-snapshot.md) | Formal ids + YAML; trace to Parts 1–8 |
 | 2 | 2 | [Decision ledger](./instance-scheduler-example/02-decision-ledger.md) | Ledger questions |
 | 3 | 3a–3b | [Logical ADR — scheduling](./instance-scheduler-example/03a-logical-adr-scheduling.md), [trust](./instance-scheduler-example/03b-logical-adr-trust.md) | Split logical commitments |
 | 4 | 4a–4b | [Physical-system — hub](./instance-scheduler-example/04a-physical-system-hub.md), [remote](./instance-scheduler-example/04b-physical-system-remote.md) | Hub vs spoke topology |
@@ -164,7 +165,7 @@ Use this path after the AI Gateway steps when you want a **production-shaped** A
 
 | Artifact | Derived from | STE phase |
 |----------|--------------|-----------|
-| RQCAP/RQINV/… rows | [Conversation](./instance-scheduler-example/00-ste-conversation.md) | Phase 2 |
+| RQCAP/RQINV/… rows | [Canonical flow Parts 1–3](./instance-scheduler-example/00-canonical-ste-flow.md) (via [Step 0 entry](./instance-scheduler-example/00-ste-conversation.md)) | Phase 2 |
 | ADR-L-INST-001 / 002 | Requirements + ledger | Phase 3 |
 | ADR-PS-INST-001 / 002 | ADR-L-INST-* | Phase 4 |
 | ADR-PC-INST-001–003 | ADR-PS-INST-* | Phase 5 |
@@ -189,7 +190,7 @@ A **minimal reading path** that still conveys the whole STE shape is: **Part 0 (
 - **Lifecycle staging:** [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)
 - **Runtime evidence and freshness:** [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)
 
-**Begin the first walkthrough:** [AI Gateway — Phase 1 (conversation)](./ai-gateway-example/00-ste-conversation.md). **Second walkthrough:** [Instance Scheduler — Phase 1](./instance-scheduler-example/00-ste-conversation.md).
+**Begin the first walkthrough:** [AI Gateway — Phase 1 (conversation)](./ai-gateway-example/00-ste-conversation.md). **Second walkthrough:** [Instance Scheduler — canonical STE flow (Parts 1–8)](./instance-scheduler-example/00-canonical-ste-flow.md), then continue from [Phase 1 entry / Step 0](./instance-scheduler-example/00-ste-conversation.md) if you prefer the navigation stub first.
 
 ## Summary
 

@@ -16,23 +16,24 @@ Freeze **bounded expectations** for a **realistic** AWS operational solution: re
 
 ## Provenance
 
-- **Conversation seed:** [Step 0 — STE conversation (grounding)](./00-ste-conversation.md) — **Architect + Stakeholder** design simulation; **full STE** may add **CE**, **Steelman**, **persona-routed** Architect probes, and toolchain-generated ADRs (`declared_in` analogue).
+- **Canonical STE flow (Parts 1–8):** [00-canonical-ste-flow.md](./00-canonical-ste-flow.md) — **Human + AI (Architecture Partner)** design session; **conversation → extracted artifacts → ADR → ADR steelman → gaps/deferrals → architecture view → traceability**.
+- **Phase 1 entry:** [Step 0](./00-ste-conversation.md) links the walkthrough into that canonical flow. **Full STE** may add a **conversation engine**, **Steelman** as a separate voiced role, **persona-routed** probes, and toolchain-generated ADRs (`declared_in` analogue).
 - **Product references:** [Instance Scheduler on AWS — README](https://github.com/aws-solutions/instance-scheduler-on-aws/blob/main/README.md) (hub stack, remote/spoke stack, `source/app`, `source/instance-scheduler`, `source/cli`).
 
 Requirement-class rows use **`RQCAP-*` / `RQCONST-*` / `RQINV-*` / `RQNFR-*`** ids (handbook analogue of a flat **REQ-XXXX** list).
 
 ## Traceability — requirement rows derived from conversation
 
-| Requirement row | Derived from conversation segment |
-|-----------------|-----------------------------------|
-| RQCAP-5181 | [§1 — Problem, platform bar, and safety posture](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture); [§2 — Automation shape](./00-ste-conversation.md#2-automation-shape-clock-vs-idle-vs-manual); [§3 — Scope](./00-ste-conversation.md#3-scope-environments-and-services) |
-| RQCAP-5182 | [§5 — Accounts, topology, and multi-account mechanics](./00-ste-conversation.md#5-accounts-topology-and-multi-account-mechanics) |
-| RQCONST-5181 | [§1](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture) (managed platform bar); [§12 — Convergence summary](./00-ste-conversation.md#12-convergence-summary-bounded-intent) |
-| RQCONST-5182 | [§8 — Human vocabulary and day-2 operations](./00-ste-conversation.md#8-human-vocabulary-and-day-2-operations) (schedules, periods, time zones); [§12](./00-ste-conversation.md#12-convergence-summary-bounded-intent) |
-| RQINV-5181 | [§1](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture) (positive binding; one governed path) |
-| RQINV-5182 | [§1](./00-ste-conversation.md#1-problem-platform-bar-and-safety-posture); [§5](./00-ste-conversation.md#5-accounts-topology-and-multi-account-mechanics) (least-privilege hub/spoke) |
-| RQNFR-5181 | [§10 — Orchestration unit](./00-ste-conversation.md#10-orchestration-unit-interval-vs-event-driven); [§12](./00-ste-conversation.md#12-convergence-summary-bounded-intent) |
-| RQNFR-5182 | [§4 — Explainability, audit, and observability](./00-ste-conversation.md#4-explainability-audit-and-observability-tradeoffs); [§11 — Drift, misconfiguration](./00-ste-conversation.md#11-drift-misconfiguration-and-evidence-hooks) |
+| Requirement row | Derived from canonical flow |
+|-----------------|----------------------------|
+| RQCAP-5181 | [Part 1 — Problem statement](./00-canonical-ste-flow.md#part-1--problem-statement); [Part 2 — Design conversation](./00-canonical-ste-flow.md#part-2--design-conversation); [Part 3 — Extracted artifacts](./00-canonical-ste-flow.md#part-3--extracted-artifacts-from-the-conversation) |
+| RQCAP-5182 | [Part 2](./00-canonical-ste-flow.md#part-2--design-conversation); [Part 3](./00-canonical-ste-flow.md#part-3--extracted-artifacts-from-the-conversation); [Part 4 — ADR](./00-canonical-ste-flow.md#part-4--architectural-decision-record) |
+| RQCONST-5181 | [Part 4 — ADR](./00-canonical-ste-flow.md#part-4--architectural-decision-record) (managed hub control plane); [Part 6](./00-canonical-ste-flow.md#part-6--gap-resolution-and-deferrals) (resolved posture) |
+| RQCONST-5182 | [Part 2](./00-canonical-ste-flow.md#part-2--design-conversation) (stable operator vocabulary); [Part 3](./00-canonical-ste-flow.md#part-3--extracted-artifacts-from-the-conversation) |
+| RQINV-5181 | [Part 2](./00-canonical-ste-flow.md#part-2--design-conversation) (invariant listing, classification, lock-in); [Part 3](./00-canonical-ste-flow.md#part-3--extracted-artifacts-from-the-conversation) |
+| RQINV-5182 | [Part 2](./00-canonical-ste-flow.md#part-2--design-conversation) (hub/spoke trust); [Part 4](./00-canonical-ste-flow.md#part-4--architectural-decision-record) (centralized control plane) |
+| RQNFR-5181 | [Part 2](./00-canonical-ste-flow.md#part-2--design-conversation) (evaluation cadence); [Part 3](./00-canonical-ste-flow.md#part-3--extracted-artifacts-from-the-conversation) |
+| RQNFR-5182 | [Part 2](./00-canonical-ste-flow.md#part-2--design-conversation); [Part 3](./00-canonical-ste-flow.md#part-3--extracted-artifacts-from-the-conversation); [Part 5](./00-canonical-ste-flow.md#part-5--adr-steelman-review) (observability gaps) |
 
 ## Illustrative excerpt
 
@@ -41,18 +42,22 @@ Requirement-class rows use **`RQCAP-*` / `RQCONST-*` / `RQINV-*` / `RQNFR-*`** i
 type: requirements_snapshot
 snapshot_id: REQ-INST-2026-03-27
 
-conversation_ref: ./00-ste-conversation.md
+conversation_ref: ./00-canonical-ste-flow.md
 
 required_capabilities:
   - req_item_id: RQCAP-5181
     name: Scheduled EC2/RDS power management
     description: >-
-      Start and stop EC2 and RDS instances on declared clock-based schedules—including off nights and weekends
-      and configurable weekday on/off windows—to reduce idle cost.
+      Start and stop EC2 and RDS in non-production accounts on declared clock-based schedules—including off nights
+      and weekends and configurable weekday windows—to reduce idle cost. Only resources explicitly opted in may be
+      affected. Always-on carve-outs and backup/maintenance windows must be respected. When safety-relevant inputs
+      are ambiguous or unavailable, the automation must fail closed (no stop/start) rather than guess.
   - req_item_id: RQCAP-5182
     name: Cross-account scheduling
     description: >-
-      Optional hub in a central account orchestrates schedules in member (spoke) accounts with explicit trust.
+      A centralized hub in a tools account orchestrates schedules across member (spoke) non-production accounts using
+      explicit cross-account trust. Account eligibility is aligned to the organization’s environment registry so
+      production-class accounts are never in scope for this automation.
 
 required_constraints:
   - req_item_id: RQCONST-5181
@@ -65,10 +70,16 @@ required_constraints:
 required_invariants:
   - req_item_id: RQINV-5181
     statement: >-
-      No instance stop/start outside declared schedule bindings and registered trust (no silent ad-hoc automation path).
+      No instance stop/start outside declared schedule bindings, registered trust, and explicit opt-in enrollment;
+      no silent ad-hoc automation path. Production workloads must never be stopped by this system. Only accounts
+      classified as non-production per the environment registry may be targeted. Always-on resources must not be
+      stopped. Backup and maintenance windows must be honored for stop decisions. Execution must be idempotent and
+      safe under duplicate runs. Each execution must cap how many resources it may mutate (blast-radius control).
+      When classification, registry data, or safety checks are ambiguous or unavailable, default to no mutation.
   - req_item_id: RQINV-5182
     statement: >-
-      IAM roles in spoke accounts grant only the actions required for the hub scheduler principal (least privilege).
+      IAM roles in spoke accounts grant only the actions required for the hub scheduler principal (least privilege);
+      no org-wide generic power role. Trust and registration must be explicit per spoke and reviewable.
 
 required_nfrs:
   - req_item_id: RQNFR-5181
@@ -76,7 +87,9 @@ required_nfrs:
       Orchestration runs on a configurable interval (minutes granularity) suitable for batch schedule evaluation.
   - req_item_id: RQNFR-5182
     statement: >-
-      Operational visibility — logs/metrics/alarm hooks sufficient for platform owners to audit schedule actions.
+      Operational visibility — durable logs, metrics, and alarm hooks sufficient for platform owners to audit
+      automation actions and material schedule or policy changes, including correlation adequate to answer “why did
+      this resource change state?” across hub and spokes.
 
 technology_signals:
   language: python
@@ -97,8 +110,8 @@ feeds_logical_adrs:
 
 ## What this step produced and why it matters
 
-The **requirements snapshot** freezes **intent** into **stable ids** (capabilities, constraints, invariants, NFRs) with explicit **provenance** back to [Step 0](./00-ste-conversation.md). Reviewers and tooling can ask “**where did this expectation come from?**” without relying on memory or chat logs. From here forward, **ledger rows** and **ADRs** must **cite** these items—so the design space stays **traceable** rather than a parallel story invented in later documents.
+The **requirements snapshot** freezes **intent** into **stable ids** (capabilities, constraints, invariants, NFRs) with explicit **provenance** back to [Parts 1–8](./00-canonical-ste-flow.md) (via [Step 0](./00-ste-conversation.md)). Reviewers and tooling can ask “**where did this expectation come from?**” without relying on memory or chat logs. From here forward, **ledger rows** and **ADRs** must **cite** these items—so the design space stays **traceable** rather than a parallel story invented in later documents.
 
 ---
 
-**Previous:** [Step 0](./00-ste-conversation.md) · **Next:** [Step 2 — Decision ledger](./02-decision-ledger.md) · **Diagram:** [Intent to design](./diagrams/intent-to-design.md)
+**Previous:** [Step 0](./00-ste-conversation.md) · [Canonical STE flow](./00-canonical-ste-flow.md) · **Next:** [Step 2 — Decision ledger](./02-decision-ledger.md) · **Diagram:** [Intent to design](./diagrams/intent-to-design.md)

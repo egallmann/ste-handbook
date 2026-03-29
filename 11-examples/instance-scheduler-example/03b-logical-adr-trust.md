@@ -3,7 +3,7 @@ title: "Example step 3b — Logical ADR trust and multi-account (Instance Schedu
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-03-28"
 ---
 
 # Step 3b — Logical ADR (trust and multi-account)
@@ -11,6 +11,8 @@ last_reviewed: "2026-03-27"
 ## Purpose
 
 Isolate **cross-account** and **trust** commitments: hub account identity, spoke registration, Organizations vs manual patterns. Resolves **LDEC-5183** and reinforces **RQINV-5182**.
+
+The **centralized hub** choice and **ADR steelman outcomes** are narrated in [Parts 4–6 of the canonical STE flow](./00-canonical-ste-flow.md#part-4--architectural-decision-record); **ADR-L-INST-002** is the **trust / multi-account** projection of that same decision.
 
 > **Illustrative only.** Pedagogical stub; align deployment parameters with the **[solution deployment guide](https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/deployment.html)** and README.
 

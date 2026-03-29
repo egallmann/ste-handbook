@@ -19,7 +19,7 @@
       "entity_type": "requirement",
       "name": "Cost-aware EC2/RDS schedule control",
       "introduced_by": "REQ-INST-2026-03-27",
-      "note": "Snapshot item RQCAP-5181 / RQINV-5181 family — see 01-requirements-snapshot.md"
+      "note": "Snapshot item RQCAP-5181 / RQINV-5181 family — see 01-requirements-snapshot.md; provenance dialogue in 00-canonical-ste-flow.md Parts 1–3"
     },
     {
       "id": "REQ-5182",

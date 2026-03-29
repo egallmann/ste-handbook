@@ -3,7 +3,7 @@ title: "Example step 2 — Decision ledger (Instance Scheduler)"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-03-28"
 ---
 
 # Step 2 — Decision ledger
@@ -11,6 +11,8 @@ last_reviewed: "2026-03-27"
 ## Purpose
 
 Bound the **logical** decision space before ADRs claim closure. Each question links to **snapshot items** so reviewers see **why** a topic is in scope. The **logical ADRs** in steps 3a–3b **resolve** these rows—they do not invent a parallel decision list.
+
+The **hub vs per-account control plane** fork is **closed in conversation** in [Part 2 of the canonical STE flow](./00-canonical-ste-flow.md#part-2--design-conversation); the ledger rows below are the **implementation-shaped** questions that remain for **logical ADRs** (tag binding, evaluation unit, trust packaging, persistence layout).
 
 > **Illustrative only.** Pedagogical stub; **ste-spec** is normative.
 
