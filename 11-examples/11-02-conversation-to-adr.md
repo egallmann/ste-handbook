@@ -1,18 +1,5 @@
-# Conversation to ADR
+# Conversation to ADR (redirect)
 
-This chapter walks from facilitated conversation to structured ADR artifacts on the example system. It highlights decision capture quality and trace seeds.
+This chapter’s content moved to **[Conversation to ADR](./02-conversation-to-adr.md)** (requirements snapshot, decision ledger, ADR ladder; ADRs as canonical design authority).
 
-## Why this matters
-
-Shows the human origin of machine-consumable intent.
-
-## Planned coverage
-
-- Scenario narrative
-- Produced artifacts (illustrative)
-- Lessons and pitfalls
-
-## Relationship to other chapters
-
-- Worked examples (Phase 1 conversation → ADR ladder): [STE examples overview](00-overview.md)
-- ADR to IR ([chapter](11-03-adr-to-ir.md))
+This filename is retained for older links.

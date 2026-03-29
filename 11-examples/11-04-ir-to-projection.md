@@ -1,18 +1,5 @@
-# IR to Projection
+# IR to projection (redirect)
 
-This chapter shows projections generated from the example IR: views, documents, and diagrams. It emphasizes lineage and refresh.
+This chapter’s content moved to **[IR to projections](./04-ir-to-projections.md)** (views from IR; regenerable outputs; fix upstream, then regenerate).
 
-## Why this matters
-
-Readers see how IR drives stakeholder-visible outputs.
-
-## Planned coverage
-
-- Selected projections
-- Refresh workflow
-- Consistency checks
-
-## Relationship to other chapters
-
-- Worked examples (IR, projections, linkage): [STE examples overview](00-overview.md)
-- Conformance example ([chapter](11-05-conformance-example.md))
+This filename is retained for older links.

@@ -1,18 +1,5 @@
-# Example System
+# Example system (redirect)
 
-This chapter sketches a fictional but realistic system used across subsequent example chapters: scope, stakeholders, and architectural stakes. It stays short and schematic.
+This chapter’s content moved to **[What is a system?](./01-what-is-a-system.md)**—the STE definition of a system (designed, compiled, running, observed) and how drift arises when those views diverge.
 
-## Why this matters
-
-A single running example improves continuity across walkthrough chapters.
-
-## Planned coverage
-
-- System context
-- Quality attributes at play
-- What the example will not cover
-
-## Relationship to other chapters
-
-- Worked eight-phase walkthroughs (conversation through runtime and extension): [STE examples overview](00-overview.md)
-- Conversation to ADR ([chapter](11-02-conversation-to-adr.md))
+This filename is retained for older links.

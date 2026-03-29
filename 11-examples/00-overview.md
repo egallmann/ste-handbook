@@ -24,12 +24,33 @@ The YAML-shaped fragments in the steps are **illustrative** and **handbook-grade
 
 ## The Model
 
+### How to read Part 11
+
+Earlier parts of this handbook **define** the STE model—artifact types, lifecycle stages, and governance vocabulary. **Part 11 shows that model operating on complete systems**: the same phases and artifacts, traced through two worked examples. This part teaches **understanding**; **ste-spec** remains normative for schemas and exact semantics.
+
+**Recommended reading order**
+
+1. **This page** for orientation, phase tables, and links into each walkthrough.
+2. The **conceptual spine** (one pass, short reads): [What is a system?](./01-what-is-a-system.md) → [Conversation to ADR](./02-conversation-to-adr.md) → [ADR to Architecture IR](./03-adr-to-architecture-ir.md) → [IR to projections](./04-ir-to-projections.md) → [Conformance](./05-conformance.md) → [Drift and correction](./06-drift.md). Together they explain the lifecycle the examples **demonstrate**; they do not replace the step-by-step files under each example folder.
+3. **First walkthrough:** [AI Gateway — Phase 1 (conversation)](./ai-gateway-example/00-ste-conversation.md) through [step 9 — drift and correction](./ai-gateway-example/09-drift-and-correction.md), in order, using companion diagrams as you go.
+4. **Second walkthrough (optional, higher fidelity):** [Instance Scheduler — canonical STE flow](./instance-scheduler-example/00-canonical-ste-flow.md) and the Instance Scheduler step table below.
+
+**Lifecycle in one line:** conversation and intent discovery → **requirements snapshot** (bounded expectations) → **decision ledger** (bounded design space) → **logical and physical ADRs** (intent and topology) → **rules activation** (governance from design signals) → **Architecture IR** (compiled model) → **projections** (regenerable views from IR) → **runtime embodiment** → **semantic linkage** → **evidence (EDR)** → **drift detection** → **governed correction** feeding back into intent, requirements, ADRs, IR, and runtime.
+
+**Canonical, derived, and runtime (high level)**
+
+| Layer | Role in Part 11 |
+|-------|-----------------|
+| **Canonical design** | Conversation-grounded capture, **requirements snapshot**, **decision ledger**, **ADR-L / ADR-PS / ADR-PC**—what teams govern and revise under policy. **ADRs are canonical design authority.** |
+| **Derived** | **Rules activation**, **Architecture IR** (compiled and linked from ADRs and rules inputs—not a parallel hand-authored design), and **projections** (diagrams, inventories, traceability and governance views). When authority changes, **recompile and regenerate**; do not patch derived artifacts as if they were source of truth. Published IR is the **structural substrate** for a declared scope; downstream projections must **track** it (see [Projections overview](../04-architecture-model/04-08-projections-overview.md)). |
+| **Runtime and closure** | What actually runs (**embodiment**), **semantic linkage** to design elements, **EDR**-shaped **evidence**, **conformance** checks, and **drift**—together they **close the loop** from design to reality and back to governed change. |
+
 ### What this section is for
 
 - It follows **one or two systems** through STE end to end.
-- The **goal** is the **full lifecycle**: intent → bounded decisions → architecture commitments → **rules activation** → compiled model → **runtime picture** → embodiment linkage → evidence → assessment → corrective feedback.
+- The **goal** is the **full lifecycle** summarized above: from bounded expectations through compiled model and runtime to evidence, assessment, and corrective feedback.
 - The **AI Gateway** example is **intentionally small** but **structurally realistic** (patterns aligned with workspace example shapes, not toy prose).
-- You should read **[AI Gateway Phase 1](./ai-gateway-example/00-ste-conversation.md) through [step 9](./ai-gateway-example/09-drift-and-correction.md) in order** first, using the companion diagrams as you go.
+- After the **conceptual spine** (`01`–`06`), follow the **AI Gateway** steps in order so each artifact has a concrete illustration.
 
 ### Authoring contract (canonical eight-phase pipeline)
 
@@ -124,10 +145,12 @@ See [Intent to design flow](./ai-gateway-example/diagrams/intent-to-design.md) f
 | Logical vs physical | Phase 3 vs Phases 4–5 |
 | Rules from signals | Phase 6 |
 | Rules + invariants per component (tabular projection) | [`projection-queries.md`](./ai-gateway-example/projections/projection-queries.md) Query D; [`rules-invariants-system-context.md`](./ai-gateway-example/projections/rules-invariants-system-context.md) |
-| Canonical vs derived | ADRs vs Architecture IR (Phase 7) |
-| Runtime vs linkage | Phase 8 vs extension (embodiment) |
-| Evidence | Extension — EDR step |
-| Drift / self-correction | Extension — drift step |
+| Canonical vs derived | [ADR to Architecture IR](./03-adr-to-architecture-ir.md), [IR to projections](./04-ir-to-projections.md); ADRs vs IR (Phase 7) |
+| Runtime vs linkage | [Conformance](./05-conformance.md); Phase 8 vs extension (embodiment) |
+| Evidence | Extension — EDR step; [Conformance](./05-conformance.md) |
+| Drift / self-correction | [Drift and correction](./06-drift.md); Extension — drift step |
+| What “system” means in STE | [What is a system?](./01-what-is-a-system.md) |
+| Intent → design | [Conversation to ADR](./02-conversation-to-adr.md) |
 
 ### Other diagrams
 
@@ -189,6 +212,8 @@ A **minimal reading path** that still conveys the whole STE shape is: **Part 0 (
 - **Narrow ladder/registry slice (complementary):** [Illustrative artifact walkthrough](../04-architecture-model/04-15-illustrative-walkthrough.md)
 - **Lifecycle staging:** [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)
 - **Runtime evidence and freshness:** [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)
+
+**Conceptual spine (read before or alongside steps):** [01 — What is a system?](./01-what-is-a-system.md) through [06 — Drift and correction](./06-drift.md).
 
 **Begin the first walkthrough:** [AI Gateway — Phase 1 (conversation)](./ai-gateway-example/00-ste-conversation.md). **Second walkthrough:** [Instance Scheduler — canonical STE flow (Parts 1–8)](./instance-scheduler-example/00-canonical-ste-flow.md), then continue from [Phase 1 entry / Step 0](./instance-scheduler-example/00-ste-conversation.md) if you prefer the navigation stub first.
 

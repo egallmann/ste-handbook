@@ -131,8 +131,14 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 
 ## Part 11 — Examples
 
-- [Examples overview](11-examples/11-00-examples-overview.md)
-- [Canonical example — one system through STE](11-examples/00-overview.md)
+- [STE examples — systems through the full lifecycle](11-examples/00-overview.md)
+- Conceptual spine (read with or before walkthrough steps):
+  - [What is a system?](11-examples/01-what-is-a-system.md)
+  - [Conversation to ADR](11-examples/02-conversation-to-adr.md)
+  - [ADR to Architecture IR](11-examples/03-adr-to-architecture-ir.md)
+  - [IR to projections](11-examples/04-ir-to-projections.md)
+  - [Conformance](11-examples/05-conformance.md)
+  - [Drift and correction](11-examples/06-drift.md)
 - AI Gateway walkthrough (read in order):
   - [Step 1 — Requirements snapshot](11-examples/ai-gateway-example/01-requirements-snapshot.md)
   - [Step 2 — Decision ledger](11-examples/ai-gateway-example/02-decision-ledger.md)
@@ -162,13 +168,7 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
   - [Projection queries (illustrative DSL)](11-examples/ai-gateway-example/projections/projection-queries.md)
   - [Generated: capability / component](11-examples/ai-gateway-example/projections/generated/ir-capability-component.md)
   - [Generated: system context](11-examples/ai-gateway-example/projections/generated/ir-system-context.md)
-- Additional placeholders (scaffolding):
-  - [Example system](11-examples/11-01-example-system.md)
-  - [Conversation to ADR](11-examples/11-02-conversation-to-adr.md)
-  - [ADR to IR](11-examples/11-03-adr-to-ir.md)
-  - [IR to projection](11-examples/11-04-ir-to-projection.md)
-  - [Conformance example](11-examples/11-05-conformance-example.md)
-  - [Drift example](11-examples/11-06-drift-example.md)
+- Legacy redirect filenames (bookmarks): [11-00](11-examples/11-00-examples-overview.md), [11-01](11-examples/11-01-example-system.md), [11-02](11-examples/11-02-conversation-to-adr.md), [11-03](11-examples/11-03-adr-to-ir.md), [11-04](11-examples/11-04-ir-to-projection.md), [11-05](11-examples/11-05-conformance-example.md), [11-06](11-examples/11-06-drift-example.md)
 
 ## Part 12 — Adoption
 

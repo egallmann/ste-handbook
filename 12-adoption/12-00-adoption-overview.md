@@ -15,4 +15,4 @@ The technical model does not deploy itself. Adoption mechanics determine whether
 ## Relationship to other chapters
 
 - [Overview](../02-overview/02-00-overview.md)
-- [Examples overview](../11-examples/11-00-examples-overview.md)
+- [STE examples overview](../11-examples/00-overview.md) (conceptual spine: [01](../11-examples/01-what-is-a-system.md)–[06](../11-examples/06-drift.md); legacy [examples redirect](../11-examples/11-00-examples-overview.md))

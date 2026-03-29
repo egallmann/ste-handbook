@@ -1,18 +1,5 @@
-# ADR to IR
+# ADR to IR (redirect)
 
-This chapter demonstrates compiling ADR-family intent into Architecture IR for the example: validation messages, graph shape, and trace links. Figures may reference diagram placeholders.
+This chapter’s content moved to **[ADR to Architecture IR](./03-adr-to-architecture-ir.md)** (rules activation, derived IR, traceability; ADRs remain design authority).
 
-## Why this matters
-
-Demonstrates the compilation bridge central to STE.
-
-## Planned coverage
-
-- Input artifacts
-- IR snapshot description
-- Common compilation issues
-
-## Relationship to other chapters
-
-- Worked examples (ADR-L/PS/PC → rules activation → Architecture IR): [STE examples overview](00-overview.md)
-- IR to projection ([chapter](11-04-ir-to-projection.md))
+This filename is retained for older links.

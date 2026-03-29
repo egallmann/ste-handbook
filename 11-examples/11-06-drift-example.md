@@ -1,18 +1,5 @@
-# Drift Example
+# Drift example (redirect)
 
-This chapter extends the example with drift: how changes accrue, how divergence is detected, and how convergence is planned. It references lifecycle chapters.
+This chapter’s content moved to **[Drift and correction](./06-drift.md)** (multi-layer drift, EDR, governed correction loop).
 
-## Why this matters
-
-Shows STE’s value in ongoing operation, not only initial design.
-
-## Planned coverage
-
-- Drift narrative
-- Detection outputs
-- Governance response
-
-## Relationship to other chapters
-
-- Worked examples (drift and correction loop): [STE examples overview](00-overview.md)
-- Drift (lifecycle) ([chapter](../06-governance/06-03-drift.md))
+This filename is retained for older links.
