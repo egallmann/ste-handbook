@@ -269,7 +269,7 @@ The lists below are **derived from Part 2**. They are not a separate brainstorm;
 
 In a full STE program, an ADR is usually **published as structured data** (plus reviewable narrative), not as a polished essay. Tooling may **draft** fields from the conversation and extracted artifacts; **humans** with decision authority **validate scope, alternatives, and invariant mapping** before the record is treated as canonical.
 
-The YAML below is **handbook-illustrative** but its **top-level shape** matches a real **logical ADR** in **adr-architecture-kit**—for example [`ADR-L-0006-rule-library-sub-module.yaml`](../../../adr-architecture-kit/adrs/logical/ADR-L-0006-rule-library-sub-module.yaml) (`schema_version`, `status`, `authors`, `context`, `domains`, `projection_signals`, `tags`, `decisions` with `consequences`, `invariants`, `capabilities`, `related_adrs`, `gaps`, `notes`). This **consolidated** id (**ADR-L-INST-000**) is a **pedagogical rollup**—the split records in Steps **3a–3b** remain **ADR-L-INST-001** and **ADR-L-INST-002**.
+The YAML below is **handbook-illustrative** but its **top-level shape** matches **logical ADRs** as authored in the **adr-architecture-kit** repository under `adrs/logical/` (same field families you would see on a kit ADR-L: `schema_version`, `status`, `authors`, `context`, `domains`, `projection_signals`, `tags`, `decisions` with `consequences`, `invariants`, `capabilities`, `related_adrs`, `gaps`, `notes`). Open that repository in your workspace when you want a live reference file beside this example. This **consolidated** id (**ADR-L-INST-000**) is a **pedagogical rollup**—the split records in Steps **3a–3b** remain **ADR-L-INST-001** and **ADR-L-INST-002**.
 
 ### ADR record (illustrative excerpt)
 
