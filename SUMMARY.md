@@ -168,7 +168,6 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
   - [Projection queries (illustrative DSL)](11-examples/ai-gateway-example/projections/projection-queries.md)
   - [Generated: capability / component](11-examples/ai-gateway-example/projections/generated/ir-capability-component.md)
   - [Generated: system context](11-examples/ai-gateway-example/projections/generated/ir-system-context.md)
-- Legacy redirect filenames (bookmarks): [11-00](11-examples/11-00-examples-overview.md), [11-01](11-examples/11-01-example-system.md), [11-02](11-examples/11-02-conversation-to-adr.md), [11-03](11-examples/11-03-adr-to-ir.md), [11-04](11-examples/11-04-ir-to-projection.md), [11-05](11-examples/11-05-conformance-example.md), [11-06](11-examples/11-06-drift-example.md)
 
 ## Part 12 — Adoption
 

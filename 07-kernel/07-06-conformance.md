@@ -14,4 +14,4 @@ Conformance is the operational face of STE’s guarantees. Readers need clarity 
 
 ## Relationship to other chapters
 
-- Conformance ([Part 11](../11-examples/05-conformance.md); [legacy filename](../11-examples/11-05-conformance-example.md))
+- Conformance ([Part 11](../11-examples/05-conformance.md))
