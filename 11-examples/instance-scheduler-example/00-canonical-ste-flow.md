@@ -267,102 +267,178 @@ The lists below are **derived from Part 2**. They are not a separate brainstorm;
 
 ## Part 4 — Architectural decision record
 
-In a full STE program, an ADR is usually **published as structured data** (plus reviewable narrative), not as a polished essay. Tooling may **draft** fields from the conversation and extracted artifacts; **humans** with decision authority **validate scope, alternatives, and invariant mapping** before the record is treated as canonical. The YAML below is **handbook-illustrative**: field names follow the same **shape** as the split logical excerpts in Steps **3a–3b**, but this **consolidated** id (**ADR-L-INST-000**) is a **pedagogical rollup**—the repository-facing records remain **ADR-L-INST-001** and **ADR-L-INST-002**.
+In a full STE program, an ADR is usually **published as structured data** (plus reviewable narrative), not as a polished essay. Tooling may **draft** fields from the conversation and extracted artifacts; **humans** with decision authority **validate scope, alternatives, and invariant mapping** before the record is treated as canonical.
+
+The YAML below is **handbook-illustrative** but its **top-level shape** matches a real **logical ADR** in **adr-architecture-kit**—for example [`ADR-L-0006-rule-library-sub-module.yaml`](../../../adr-architecture-kit/adrs/logical/ADR-L-0006-rule-library-sub-module.yaml) (`schema_version`, `status`, `authors`, `context`, `domains`, `projection_signals`, `tags`, `decisions` with `consequences`, `invariants`, `capabilities`, `related_adrs`, `gaps`, `notes`). This **consolidated** id (**ADR-L-INST-000**) is a **pedagogical rollup**—the split records in Steps **3a–3b** remain **ADR-L-INST-001** and **ADR-L-INST-002**.
 
 ### ADR record (illustrative excerpt)
 
 ```yaml
-# Illustrative consolidated logical ADR — ste-spec is normative for IR semantics;
-# adr-architecture-kit defines production field sets. This block teaches “what gets filed.”
+# Illustrative consolidated logical ADR — shape aligned to adr-architecture-kit adrs/logical/*.yaml
+# ste-spec is normative for IR semantics; production repos may add fields.
 
+schema_version: '1.0'
 adr_type: logical
 id: ADR-L-INST-000
 title: Centralized non-production EC2/RDS scheduler (hub control plane, cross-account execution)
-
-lifecycle:
-  status: proposed
-  decision_date: "2026-03-28"
-  supersedes: []
-  review_gate: adr_steelman_complete  # blocked until Part 5–6 closure recorded
-
-ownership:
-  decision_authority: platform_cloud_governance
-  technical_owner: cloud_platform_team
-  accountable_role: human_architect  # sign-off; tooling must not substitute for this
-
-provenance:
-  conversation_ref: ./00-canonical-ste-flow.md
-  extracted_artifact_refs:
-    - part_3_requirements_invariants_governance_nfr
-  compilation_note: >-
-    Initial YAML may be tooling-assisted from dialogue; published ADRs require human review
-    and explicit linkage to requirement ids (Step 1 snapshot).
+status: proposed
+created_date: '2026-03-28'
+modified_date: '2026-03-28'
+authors:
+  - ste-handbook-example
+  - platform_cloud_governance  # human decision authority; tooling drafts, humans publish
 
 context: |
   Non-production EC2 and RDS run continuously, driving avoidable cost. The estate spans multiple
   AWS accounts; an environment registry classifies production vs non-production. Safety,
-  auditability, and governed change outweigh maximum savings. Locked intent includes opt-in
-  enrollment, registry-scoped non-production targeting, backup/maintenance window protection,
-  fail-closed evaluation when inputs are ambiguous, idempotent execution, and per-run blast-radius caps.
+  auditability, and governed change outweigh maximum savings.
 
-decision: |
-  Deploy a hub-style scheduler control plane in a central tools account. Persist schedules and
-  operational configuration in a central store with strict access control. The hub assumes
-  narrowly scoped cross-account roles into eligible non-production spoke accounts and performs
-  bounded start/stop actions only against opted-in resources. Reconcile account eligibility to
-  the environment registry before mutation. Center logs, metrics, and alarms at the hub;
-  retain spoke-local signals where required for operations.
+  Locked intent from Part 2–3 includes opt-in enrollment, registry-scoped non-production targeting,
+  backup/maintenance window protection, fail-closed evaluation when inputs are ambiguous, idempotent
+  execution, and per-run blast-radius caps.
 
-alternatives_considered:
-  - id: ALT-per-account-scheduler
-    summary: Deploy an independent scheduler stack in each non-production account.
-    disposition: rejected
-    rationale: >-
-      Technically valid and strong on account isolation, but fragments schedules and weakens
-      centralized audit, global blast-radius caps, and org-wide pause; duplicates operational burden.
-  - id: ALT-idle-based-stop
-    summary: Drive stops from utilization or idle signals instead of clock schedules.
-    disposition: deferred
-    rationale: >-
-      Higher false-positive stop risk for RDS and long-running jobs for v1; clock-based schedules
-      trade savings for predictability and reviewability.
+  Formal requirement ids for compilation appear in Step 1 (RQCAP/RQINV/RQNFR family).
 
-consequences:
-  positive:
-    - Central correlation of actions and configuration changes.
-    - Consistent enforcement of caps and fail-closed rules; single place to pause scheduling in an incident.
-    - Clearer platform ownership of the control plane.
-  negative:
-    - Hub is a sensitivity surface—hardening, monitoring, and change control are mandatory.
-    - Cross-account IAM must stay narrow, reviewable, and tested; registry errors are high-impact
-      (mitigated by fail-closed behavior and registry change governance).
+domains:
+  - aws
+  - cost_operations
+  - scheduling
+  - multi_account
+  - iam
 
-invariants_enforced:
-  statement: >-
-    The hub design implements Part 3 locks: registry-scoped non-production targeting, opt-in only,
-    fail-closed evaluation, idempotency, per-run blast-radius limits, backup-window respect,
-    and always-on protection before any mutating API calls.
-  satisfies_requirements:
-    - RQINV-5181
-    - RQINV-5182
+projection_signals:
+  - aws
+  - hub-spoke
+  - non-production
 
-governance_model: |
-  Platform owns automation and schedule policy; application teams request changes through the
-  documented channel. IAM and change control align with existing cloud governance. Material scope
-  expansion (accounts, regions, policy patterns) requires explicit review and approval.
+tags:
+  - instance-scheduler
+  - environment-registry
+  - cross-account
 
-operational_considerations: |
-  Runbooks for hub outage (no new mutating actions when evaluation cannot run with integrity),
-  AssumeRole failure (fail closed per account/role), registry drift (reconciliation alerts, manual
-  verification), mis-schedules (rollback, emergency global pause), and compromised hub credentials
-  (blast radius bounded by least-privilege spokes).
+decisions:
+  - id: DEC-INST-R01
+    summary: Hub control plane with central schedule store and cross-account execution
+    rationale: |
+      Deploy a hub-style scheduler in a central tools account. Persist schedules and operational
+      configuration in a central store under strict access control. The hub assumes narrowly scoped
+      cross-account roles into eligible non-production spoke accounts and performs bounded start/stop
+      actions only against opted-in resources. Reconcile account eligibility to the environment
+      registry before mutation. Center logs, metrics, and alarms at the hub; retain spoke-local
+      signals where operations require them.
+    consequences:
+      positive:
+        - Central correlation of actions and configuration changes
+        - Consistent enforcement of caps and fail-closed rules; single place to pause scheduling in an incident
+        - Clearer platform ownership of the control plane
+      negative:
+        - Hub is a sensitivity surface—hardening, monitoring, and change control are mandatory
+        - Cross-account IAM must stay narrow, reviewable, and tested; registry errors are high-impact
+
+  - id: DEC-INST-R02
+    summary: Reject per-account duplicate scheduler stacks as the primary model
+    rationale: |
+      Per-account deployment is technically valid and improves account isolation, but it fragments
+      schedules, weakens centralized audit and global blast-radius caps, complicates org-wide pause,
+      and duplicates operational burden across non-production accounts.
+    consequences:
+      positive:
+        - Alternative remains documented for isolation-heavy edge cases
+      negative:
+        - Teams must accept hub as the governed automation path for this program
+
+  - id: DEC-INST-R03
+    summary: Defer idle- or utilization-based stop for v1
+    rationale: |
+      Idle-based automation raises false-positive stop risk for RDS and long-running jobs.
+      Clock-based schedules trade some savings for predictability and reviewability.
+    consequences:
+      positive:
+        - Simpler safety story for initial rollout
+      negative:
+        - Savings ceiling lower than a mature idle-detection design
+
+invariants:
+  - id: INV-INST-R01
+    statement: |
+      Production workloads MUST NOT be stopped by this scheduling automation.
+    scope: scheduling_control_plane
+    enforcement_level: must
+    enforcement_mechanism: policy
+    verification_method: audit
+    rationale: |
+      Satisfies RQINV-5181 / environment-registry alignment; fail-closed when classification unknown.
+  - id: INV-INST-R02
+    statement: |
+      Only opted-in resources in non-production accounts per registry MAY receive automated power actions;
+      always-on and backup-window protections MUST be enforced before any stop.
+    scope: scheduling_control_plane
+    enforcement_level: must
+    enforcement_mechanism: policy
+    verification_method: audit
+    rationale: |
+      Consolidates opt-in, always-on, backup windows, idempotency, blast-radius caps, and fail-closed
+      evaluation carried in RQINV-5181.
+  - id: INV-INST-R03
+    statement: |
+      Spoke IAM MUST grant only the actions required for the hub scheduler principal (least privilege).
+    scope: cross_account_trust
+    enforcement_level: must
+    enforcement_mechanism: policy
+    verification_method: audit
+    rationale: |
+      Matches RQINV-5182; no org-wide generic power role.
+
+capabilities:
+  - id: CAP-INST-R01
+    name: Scheduled EC2/RDS power management (non-production)
+    description: |
+      Clock-based start/stop for opted-in EC2 and RDS in registry-scoped non-production accounts.
+    acceptance_criteria:
+      - RQCAP-5181 satisfied in Step 1 snapshot
+      - Backup and maintenance windows respected in evaluation path
+  - id: CAP-INST-R02
+    name: Cross-account hub orchestration
+    description: |
+      Hub assumes documented roles into spokes; registration and trust packaging are explicit.
+    acceptance_criteria:
+      - RQCAP-5182 satisfied in Step 1 snapshot
+      - Spoke stack / parameters align with Instance Scheduler on AWS deployment model
+
+related_adrs:
+  - ADR-L-INST-001
+  - ADR-L-INST-002
+
+gaps:
+  - id: GAP-INST-R01
+    question: ADR steelman and gap closure not yet recorded against this rollup
+    context: 'Track Part 5–6 in this handbook example; update status when steelman completes.'
+    impact: medium
+    blocking: true
+  - id: GAP-INST-R02
+    question: Hard numeric caps for mutations per run and per account not yet bound to SLOs
+    context: 'Classification: operational detail; resolve in implementation or defer with recorded rationale.'
+    impact: medium
+    blocking: false
+
+notes: |
+  Governance: platform owns schedule policy; teams request changes through the documented channel.
+  Material scope expansion (accounts, regions, patterns) requires explicit review.
+
+  Operations: runbooks for hub outage (no new mutating actions when evaluation cannot run with integrity),
+  AssumeRole failure (fail closed per account/role), registry drift, mis-schedules (rollback, global pause),
+  and compromised hub credentials (blast radius bounded by least-privilege spokes).
+
+  Provenance: derived from ./00-canonical-ste-flow.md Parts 1–3; tooling may draft this file—human
+  architects must validate before treat-as-canonical. After steelman, split compilation uses ADR-L-INST-001/002.
 ```
 
 ### How to read this record
 
-- **Frontmatter-style fields** (`lifecycle`, `ownership`, `provenance`) exist so **automation** can route reviews, enforce gates, and attach evidence—without treating the ADR as free-form prose.
-- **`decision` and `alternatives_considered`** are where **disagreement** should show up in review; the per-account option stays visible as **rejected with rationale**, not erased.
-- **`accountable_role: human_architect`** is deliberate: the STE loop may be **tool-assisted**, but **accountability** for what ships stays **human**.
+- **`schema_version` / `status` / `authors` / dates** mirror **adr-architecture-kit** logical ADRs so the same **validators and projections** can apply in a real repo.
+- **`decisions`** carry **rationale** and **`consequences`** (positive and negative); **rejected** and **deferred** options stay as **first-class decision rows**, not footnotes.
+- **`invariants`** use the same **enforcement** and **verification** slots as kit ADRs; requirement linkage is spelled out in **`rationale`** where handbook ids (**RQINV-5181**, **RQINV-5182**) already exist.
+- **`gaps`** is where **pre-implementation** unknowns land (**blocking** vs not)—here **GAP-INST-R01** ties directly to **Part 5–6** of this example.
 
 **Mapping to split logical ADRs (toolchain)**
 
