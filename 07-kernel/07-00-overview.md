@@ -133,7 +133,7 @@ flowchart LR
 ## Relationship to STE system
 
 - **Architecture IR** as canonical model: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md).
-- **Evidence** and **Runtime**: [Runtime evidence](../08-runtime/08-00-runtime-evidence.md), [Evidence](../03-artifacts/03-05-evidence.md).
+- **Evidence** and **Runtime**: [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md), [Runtime–Kernel contract](../08-runtime/08-06-runtime-kernel-contract.md), [Evidence](../03-artifacts/03-05-evidence.md).
 - **Governance** loop: [Governance](../06-governance/06-06-governance.md), [Control loop overview](../06-governance/06-07-control-loop-overview.md).
 - **What the Kernel is** (role definition): [What is the Kernel?](07-01-what-is-the-kernel.md).
 

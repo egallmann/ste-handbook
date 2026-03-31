@@ -77,7 +77,7 @@ The following chapters are the spine of Part 3. Read them in order the first tim
 7. [Conformance](03-07-conformance.md)
 8. [Publication versus projection](03-08-publication-vs-projection.md)
 
-Later parts deepen the **architecture model** (Part 4, including IR and projections), **lifecycle** stages (Part 5), **governance** and the control loop (Part 6), the **Kernel** (Part 7), **runtime** evidence (Part 8), and human and AI interfaces (Parts 9–10). **ste-spec** remains normative for schemas, interfaces, and exact semantics; this handbook explains how the pieces fit.
+Later parts deepen the **architecture model** (Part 4, including IR and projections), **lifecycle** stages (Part 5), **governance** and the control loop (Part 6), the **Kernel** (Part 7), **Runtime** (Part 8: observation, evidence, freshness, and graph-facing discipline), and human and AI interfaces (Parts 9–10). **ste-spec** remains normative for schemas, interfaces, and exact semantics; this handbook explains how the pieces fit.
 
 ### Diagram sketch
 

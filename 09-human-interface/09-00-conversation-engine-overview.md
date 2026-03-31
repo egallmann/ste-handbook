@@ -21,4 +21,4 @@ Read that chain as part of the **closed loop** in [System overview](../02-overvi
 ## Relationship to other chapters
 
 - Conversation interface ([chapter](09-01-conversation-interface.md))
-- How assistant-facing tools should depend on **fresh** projected state: [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)
+- How assistant-facing tools should depend on **fresh** projected state: [Preflight and the Reasoning Gate](../08-runtime/08-04-preflight-and-reasoning-gate.md), [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md)

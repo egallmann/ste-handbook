@@ -43,7 +43,7 @@ The **Runtime** role produces **Evidence**, including **ArchitectureEvidence**-s
 
 ## Relationship to STE system
 
-- [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)
+- [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md), [Runtime–Kernel Contract](../08-runtime/08-06-runtime-kernel-contract.md), [Runtime Architecture Components and Flow](../08-runtime/08-09-runtime-architecture-components-and-flow.md)
 - [Evidence](../03-artifacts/03-05-evidence.md)
 - [Kernel inputs and outputs](07-04-kernel-inputs-and-outputs.md)
 

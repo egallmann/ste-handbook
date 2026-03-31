@@ -36,7 +36,7 @@ At handbook altitude: **physical-system** ADRs describe **subsystem** boundaries
 
 ## The Implications
 
-When something looks wrong in a **derived** file, ask first whether **intent** or **Architecture IR** is wrong, whether **compilation** failed silently, or whether **projections** are **stale**. When an assistant or operator consumes graph state, ask whether **freshness** and **reconciliation** **gates** were satisfied—not only whether the natural-language answer sounded plausible ([Runtime evidence](../08-runtime/08-00-runtime-evidence.md)).
+When something looks wrong in a **derived** file, ask first whether **intent** or **Architecture IR** is wrong, whether **compilation** failed silently, or whether **projections** are **stale**. When an assistant or operator consumes graph state, ask whether **freshness** and **reconciliation** **gates** were satisfied—not only whether the natural-language answer sounded plausible ([Preflight and the Reasoning Gate](../08-runtime/08-04-preflight-and-reasoning-gate.md)).
 
 ## Relationship to STE system
 
