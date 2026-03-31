@@ -97,7 +97,7 @@ If **governed reasoning** must be honest about what can repeat and what cannot, 
 
 ## Relationship to STE system
 
-For deeper treatment of **deterministic assessment**, see [deterministic assessment](../07-kernel/07-07-deterministic-assessment.md). For **validation** and **evidence**, see [validation](../07-kernel/07-03-validation.md) and [runtime evidence](../08-runtime/08-00-runtime-evidence.md). For **machine-readable intent** and autonomy in the integrated STE story, see [What STE is and is not](00-07-what-ste-is-and-is-not.md) and [The STE thesis](00-08-the-ste-thesis.md).
+For deeper treatment of **deterministic decisions** and **fail-closed** behavior, see [Determinism and fail-closed](../07-kernel/07-06-determinism-and-fail-closed.md). For **validation** and **evidence**, see [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md) and [runtime evidence](../08-runtime/08-00-runtime-evidence.md). For **machine-readable intent** and autonomy in the integrated STE story, see [What STE is and is not](00-07-what-ste-is-and-is-not.md) and [The STE thesis](00-08-the-ste-thesis.md).
 
 ## Summary
 

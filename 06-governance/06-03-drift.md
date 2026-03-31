@@ -14,4 +14,4 @@ Drift is the enemy of certification narratives. Naming it precisely supports rem
 
 ## Relationship to other chapters
 
-- Drift example ([chapter](../11-examples/11-06-drift-example.md))
+- Drift and correction ([Part 11](../11-examples/06-drift.md))

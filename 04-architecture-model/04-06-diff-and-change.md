@@ -43,7 +43,7 @@ Publish **architecture changelogs** derived from IR diff for human review; use t
 - **Graph framing:** [IR as a graph](04-07-ir-as-a-graph.md).
 - **Governance:** [Change management](../06-governance/06-02-change-management.md), [Drift](../06-governance/06-03-drift.md).
 - **Lifecycle:** [Architecture definition](../05-lifecycle/05-02-architecture-definition.md).
-- **Kernel:** [Divergence](../07-kernel/07-04-divergence.md), [Convergence](../07-kernel/07-05-convergence.md).
+- **Drift and convergence (lifecycle):** [Drift](../06-governance/06-03-drift.md), [Convergence (lifecycle)](../06-governance/06-04-convergence.md); **Kernel** reasoning: [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md).
 
 ## Summary
 

@@ -1,4 +1,4 @@
-Ôªø---
+---
 title: "Control Theory"
 status: structured
 maturity: L2
@@ -10,13 +10,13 @@ last_reviewed: "2026-03-24"
 
 ## The Failure Mode
 
-The release dashboard is green. The **invariant** everyone cares about (‚Äúno cross-region failover without explicit approval‚Äù) was never written into **intent**; it lived in a staff engineer‚Äôs head. **STE needs this chapter** because **validation** is only meaningful when you can name the **reference** you measured against and the **evidence** that counted.
+The release dashboard is green. The **invariant** everyone cares about (ìno cross-region failover without explicit approvalî) was never written into **intent**; it lived in a staff engineerís head. **STE needs this chapter** because **validation** is only meaningful when you can name the **reference** you measured against and the **evidence** that counted.
 
 You cannot steer what you do not measure against a declared reference. If **intent** is vague or unrecorded, **validation** has nothing to compare **embodiment** to, and **drift** becomes invisible until pain arrives. Engineers are not confused about whether software changes over time. They are confused about whether the organization is steering change, or only reacting after pain. Steering requires a declared target, a measurement practice, and authorized corrections. Reaction requires none of those. Reaction can look busy while **error** grows.
 
-Organizations love loop diagrams: a box labeled ‚Äúintent,‚Äù an arrow to ‚Äúbuild,‚Äù to ‚Äúoperate,‚Äù to ‚Äúlearn,‚Äù then a curved arrow back. It often hides a softer reality: nobody knows what signal is being measured, what the reference is supposed to be, or what actuator moves the organization when reality disagrees with the story. Without those pieces, ‚Äúfeedback‚Äù means ‚Äúwe talk after incidents.‚Äù That may be valuable culturally, but it is not a control system in any disciplined sense, and it is not what STE intends when it uses loop language for **validation**, **drift**, and continuous assurance.
+Organizations love loop diagrams: a box labeled ìintent,î an arrow to ìbuild,î to ìoperate,î to ìlearn,î then a curved arrow back. It often hides a softer reality: nobody knows what signal is being measured, what the reference is supposed to be, or what actuator moves the organization when reality disagrees with the story. Without those pieces, ìfeedbackî means ìwe talk after incidents.î That may be valuable culturally, but it is not a control system in any disciplined sense, and it is not what STE intends when it uses loop language for **validation**, **drift**, and continuous assurance.
 
-The risk runs both ways. Some readers hear ‚Äúcontrol‚Äù and imagine PID controllers and Laplace transforms. STE is not asking you to derive transfer functions for your engineering org. Other readers hear ‚Äúcontrol‚Äù and imagine nothing precise at all. STE is asking for a middle stance: **careful metaphor** with explicit limits.
+The risk runs both ways. Some readers hear ìcontrolî and imagine PID controllers and Laplace transforms. STE is not asking you to derive transfer functions for your engineering org. Other readers hear ìcontrolî and imagine nothing precise at all. STE is asking for a middle stance: **careful metaphor** with explicit limits.
 
 ## The Field Concept
 
@@ -28,7 +28,7 @@ Control theory, as STE uses it here, is a vocabulary for comparison and correcti
 - **feedback** that drives corrective action,
 - and, at a high level, **stability** as the idea that corrections do not constantly overshoot into worse failure modes.
 
-Unless normative specification says otherwise, STE‚Äôs ‚Äúcontrol loop‚Äù language is **not** a claim that the STE system is a literal plant-and-controller dynamical system with proven stability margins.
+Unless normative specification says otherwise, STEís ìcontrol loopî language is **not** a claim that the STE system is a literal plant-and-controller dynamical system with proven stability margins.
 
 ### What this field studies (in one practical slice)
 
@@ -36,19 +36,19 @@ Control engineering studies how to shape dynamic behavior using information and 
 
 ### Core concepts STE needs
 
-**Reference / setpoint.** The **reference** is the desired condition for the controlled variable. In STE framing, parts of **intent** behave like references: ‚Äúthis **invariant** must hold,‚Äù ‚Äúthis **interface** contract must remain,‚Äù ‚Äúthis risk budget is not exceeded.‚Äù A reference is not a wish. In disciplined usage, it should be something you can compare against observable **evidence**.
+**Reference / setpoint.** The **reference** is the desired condition for the controlled variable. In STE framing, parts of **intent** behave like references: ìthis **invariant** must hold,î ìthis **interface** contract must remain,î ìthis risk budget is not exceeded.î A reference is not a wish. In disciplined usage, it should be something you can compare against observable **evidence**.
 
-**Plant (metaphorical caution).** In classical control, the **plant** is the thing whose behavior you shape. In STE metaphor, the ‚Äúplant‚Äù might be ‚Äúthe embodied system plus the organization that changes it.‚Äù That is already a stretch. Different parts change at different rates. Code can change quickly. Habits change slowly. **Governance** changes slower still. STE uses the metaphor to highlight comparison and correction, not to claim a single unified dynamics.
+**Plant (metaphorical caution).** In classical control, the **plant** is the thing whose behavior you shape. In STE metaphor, the ìplantî might be ìthe embodied system plus the organization that changes it.î That is already a stretch. Different parts change at different rates. Code can change quickly. Habits change slowly. **Governance** changes slower still. STE uses the metaphor to highlight comparison and correction, not to claim a single unified dynamics.
 
 **Sensor / measurement.** A **measurement** is an observation used for control. In STE, measurements are **evidence**: tests, checks, telemetry, review artifacts, inventories, and other records with enough provenance to support **validation**. The failure mode is measuring the wrong variable, or measuring sporadically, or measuring without tying observations back to the declared reference.
 
-**Error.** **Error** is reference minus reality, in whatever units make sense, including discrete units (‚Äúpass/fail,‚Äù ‚Äúcontract violated/not violated‚Äù). **Drift** is closely related: sustained or growing **error** between maintained **intent** and observed **embodiment**, especially when the gap is unowned.
+**Error.** **Error** is reference minus reality, in whatever units make sense, including discrete units (ìpass/fail,î ìcontract violated/not violatedî). **Drift** is closely related: sustained or growing **error** between maintained **intent** and observed **embodiment**, especially when the gap is unowned.
 
-**Actuator (metaphorical caution).** An **actuator** applies corrective action. In software engineering, ‚Äúaction‚Äù might be a patch, a rollback, a policy change, a training change, or a **governance** decision to revise **intent**. STE does not assume a single actuator. It assumes accountability: someone or something authorized to move the system or the reference.
+**Actuator (metaphorical caution).** An **actuator** applies corrective action. In software engineering, ìactionî might be a patch, a rollback, a policy change, a training change, or a **governance** decision to revise **intent**. STE does not assume a single actuator. It assumes accountability: someone or something authorized to move the system or the reference.
 
 **Feedback.** **Feedback** routes measurement-derived information back into decisions. In STE, **feedback** is healthy when it closes the loop between **evidence** and **governance**: non-conformance is visible, attributable, and leads to an allowed response (fix **embodiment**, waive under explicit rules, or revise **intent**).
 
-**Stability (informal).** **Stability** here means only an informal picture: small disturbances should not automatically produce runaway oscillation in policy or architecture. Organizations can ‚Äúthrash‚Äù: rewrite **architecture** every quarter, flip standards, churn tooling, oscillate between centralization and federation. That behavior is not a literal unstable pole in a transfer function, but it is a useful warning image. **Governance** exists partly to keep correction from becoming noise.
+**Stability (informal).** **Stability** here means only an informal picture: small disturbances should not automatically produce runaway oscillation in policy or architecture. Organizations can ìthrashî: rewrite **architecture** every quarter, flip standards, churn tooling, oscillate between centralization and federation. That behavior is not a literal unstable pole in a transfer function, but it is a useful warning image. **Governance** exists partly to keep correction from becoming noise.
 
 ### Thermostat versus engineering organization (a non-software analogy)
 
@@ -60,7 +60,7 @@ An engineering organization is not a thermostat. References multiply (**invarian
 
 Control engineers talk about **disturbances**: external pushes that move the plant away from the reference. Software systems face constant disturbances: dependency updates, traffic shifts, hardware failures, human mistakes, new threats, and new business constraints. A static **architecture** diagram is not a control system. A managed engineering approach ties **disturbances** to **evidence**, routes **evidence** into review, and updates **intent** or **embodiment** under **rules**.
 
-STE does not require you to catalog every disturbance class. It does suggest that ‚Äúunexpected change‚Äù is not a special state. It is the default environment. The engineering question is whether your loop detects relevant deviations early enough for correction to be safe.
+STE does not require you to catalog every disturbance class. It does suggest that ìunexpected changeî is not a special state. It is the default environment. The engineering question is whether your loop detects relevant deviations early enough for correction to be safe.
 
 ### Where literal control thinking still helps
 
@@ -79,9 +79,9 @@ That does not relax the discipline. It relocates it. If a human decision is the 
 
 ### Second analogy: ship helm versus engine order
 
-Steering a ship separates commands from effects. The wheel is not the engine. The helmsperson‚Äôs immediate feedback is heading, not fuel burn. Large delay separates rudder action from course change. Organizations resemble this more than a thermostat: the ‚Äúactuator‚Äù you pull may not move the variable you care about on a timescale you expect.
+Steering a ship separates commands from effects. The wheel is not the engine. The helmspersonís immediate feedback is heading, not fuel burn. Large delay separates rudder action from course change. Organizations resemble this more than a thermostat: the ìactuatorî you pull may not move the variable you care about on a timescale you expect.
 
-The lesson for STE is not pessimism. It is alignment work: connect **evidence** to the actual variable, connect authorized actions to the actual levers, and write down the delays you are working under. Otherwise ‚Äúwe corrected it‚Äù means ‚Äúwe did something,‚Äù not ‚Äúwe reduced **error** against the declared reference.‚Äù
+The lesson for STE is not pessimism. It is alignment work: connect **evidence** to the actual variable, connect authorized actions to the actual levers, and write down the delays you are working under. Otherwise ìwe corrected itî means ìwe did something,î not ìwe reduced **error** against the declared reference.î
 
 ### Feedforward is not forbidden, but it does not replace feedback
 
@@ -107,9 +107,9 @@ Software organizations already think in loops, even when they do not name them. 
 
 ## Where This Appears in STE
 
-STE‚Äôs story centers **intent** versus **embodiment**, **validation** with **evidence**, and **governance** over time. Control vocabulary names the comparison-and-correction shape of that story.
+STEís story centers **intent** versus **embodiment**, **validation** with **evidence**, and **governance** over time. Control vocabulary names the comparison-and-correction shape of that story.
 
-For the operational loop narrative in the handbook, see [the control loop](../06-governance/06-08-the-control-loop.md). For **drift** as sustained mismatch, see [drift](../06-governance/06-03-drift.md). For **validation** mechanics, see [validation](../07-kernel/07-03-validation.md). For admission and orchestration logic tied to **evidence**, see material on the **Kernel** in Part 5. Linked chapters may still be outlines; treat them as directional anchors.
+For the operational loop narrative in the handbook, see [the control loop](../06-governance/06-08-the-control-loop.md). For **drift** as sustained mismatch, see [drift](../06-governance/06-03-drift.md). For **validation** mechanics, see [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md). For **Admission** and orchestration logic tied to **evidence**, see Part 7 ([Kernel overview](../07-kernel/07-00-overview.md)). Linked chapters may still be outlines; treat them as directional anchors.
 
 For **decisions** as durable **commitments** that function as part of the reference, Part 0 remains foundational: [Engineering as decision-making](../00-problem/00-01-engineering-as-decision-making.md). For **Architecture IR** as a shared object you can compare projections against, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md).
 
@@ -117,15 +117,15 @@ This connects directly to **Kernel** framing in later chapters: orchestration th
 
 A common loop-theater pattern: the pipeline is green, the **reference** **invariant** everyone cares about was never declared in **intent**, and the tests only exercise happy paths. **Embodiment** can violate the property teams *believe* they have while **evidence** stays superficially reassuring. Control vocabulary is a way to ask whether the measured variable matches the declared reference, not whether activity happened.
 
-**STE is not claiming a literal control system** unless normative specification states concrete dynamics, signals, and mechanisms in those terms. Control metaphors do not determine organizational politics or replace domain expertise. If you cannot name the **evidence** channel, you do not get to claim you are ‚Äúclosing the loop.‚Äù **Validation** is a measurement discipline, not a ritual. ‚ÄúContinuous‚Äù means the loop is designed on a cadence that matches risk and **constraints**, not that every property is checked every second.
+**STE is not claiming a literal control system** unless normative specification states concrete dynamics, signals, and mechanisms in those terms. Control metaphors do not determine organizational politics or replace domain expertise. If you cannot name the **evidence** channel, you do not get to claim you are ìclosing the loop.î **Validation** is a measurement discipline, not a ritual. ìContinuousî means the loop is designed on a cadence that matches risk and **constraints**, not that every property is checked every second.
 
 ## The Reference Problem
 
-Control vocabulary sharpens a distinction STE cannot fudge: there is a declared **reference** (**intent**, **invariants**, recorded **ADRs**), and there is what you actually **measure** through **embodiment** and **evidence**. **Drift** is sustained or unowned **error** between them. The reference problem here is not only ‚Äúwrite it down,‚Äù but ‚Äúmake comparison accountable.‚Äù If **validation** cannot name both sides of the gap, organizations celebrate motion while **non-conformance** hides in plain sight. Feedforward mitigations help, but assumptions rot; **feedback** tied to honest **evidence** is how teams discover when the reference and reality diverged.
+Control vocabulary sharpens a distinction STE cannot fudge: there is a declared **reference** (**intent**, **invariants**, recorded **ADRs**), and there is what you actually **measure** through **embodiment** and **evidence**. **Drift** is sustained or unowned **error** between them. The reference problem here is not only ìwrite it down,î but ìmake comparison accountable.î If **validation** cannot name both sides of the gap, organizations celebrate motion while **non-conformance** hides in plain sight. Feedforward mitigations help, but assumptions rot; **feedback** tied to honest **evidence** is how teams discover when the reference and reality diverged.
 
 ## If You Ignore This Discipline
 
-**Validation** becomes opinion: nobody names **reference** (**intent**) versus **measurement** (**evidence** of **embodiment**), so **conformance** stays unknown while activity continues. **Governance** cannot authorize real corrections when loops are theater. If you never close the comparison honestly, you still get the same cumulative story: continuous change ‚Üí **Intent** drifts ‚Üí **embodiment** diverges ‚Üí **conformance** becomes unknown ‚Üí **governance** loses control ‚Üí risk accumulates. **This chapter protects:** accountable **validation** and feedback against a declared reference.
+**Validation** becomes opinion: nobody names **reference** (**intent**) versus **measurement** (**evidence** of **embodiment**), so **conformance** stays unknown while activity continues. **Governance** cannot authorize real corrections when loops are theater. If you never close the comparison honestly, you still get the same cumulative story: continuous change ? **Intent** drifts ? **embodiment** diverges ? **conformance** becomes unknown ? **governance** loses control ? risk accumulates. **This chapter protects:** accountable **validation** and feedback against a declared reference.
 
 ## Role in the STE Argument
 
@@ -136,10 +136,10 @@ This chapter maps **intent** to reference, **embodiment** plus **evidence** to m
 - Control vocabulary gives STE a disciplined way to talk about **reference** (**intent**), measurement (**evidence**), **error**, **feedback**, and informal **stability** without pretending organizations are thermostats.
 - **Drift** is usefully read as sustained or unowned **error** between declared **intent** and observed **embodiment**.
 - **Validation** is the accountable comparison step; **governance** decides authorized corrections and honest **intent** revision.
-- Unless **ste-spec** or other normative contracts say otherwise, STE‚Äôs loop language is **metaphorical**, not a claim of literal dynamical control with proven guarantees.
+- Unless **ste-spec** or other normative contracts say otherwise, STEís loop language is **metaphorical**, not a claim of literal dynamical control with proven guarantees.
 - Strong use of the metaphor requires naming the **evidence** channel and the allowed **actuators**; otherwise diagrams are theater.
 - Feedforward mitigations help when assumptions are explicit; **feedback** still matters because assumptions and **embodiment** drift.
-- Treat ‚Äúwe fixed it‚Äù as a claim that needs the same **evidence** discipline as any other **conformance** statement, especially after incidents.
+- Treat ìwe fixed itî as a claim that needs the same **evidence** discipline as any other **conformance** statement, especially after incidents.
 - Name the time delay you are working under: slow loops can be stable if **governance** expects the delay.
 
 **Next:** [Cybernetics](01-04-cybernetics.md) (**governance** and institutions in the loop).
