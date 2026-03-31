@@ -42,7 +42,7 @@ Weakening graph-local trace endpoints—orphan IDs, stale compilation, renamed e
 
 - **Layer-wide traceability:** [Traceability](../03-artifacts/03-06-traceability.md) (governance artifact; cross-type story).
 - **Compilation:** [Compilation](04-04-compilation.md).
-- **Evidence binding:** [Evidence](../03-artifacts/03-05-evidence.md), [Runtime evidence](../08-runtime/08-00-runtime-evidence.md).
+- **Evidence binding:** [Evidence](../03-artifacts/03-05-evidence.md), [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md).
 - **Conformance:** [Conformance](../03-artifacts/03-07-conformance.md).
 - **MBSE alignment:** [Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md).
 

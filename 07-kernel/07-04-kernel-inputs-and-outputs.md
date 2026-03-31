@@ -60,7 +60,7 @@ They are sequential concerns in the integration story: invalid IR cannot silentl
 
 - Reasoning operations: [Kernel reasoning surface](07-05-kernel-reasoning-surface.md).
 - **Evidence** artifact layer: [Evidence](../03-artifacts/03-05-evidence.md).
-- **Runtime** role: [Runtime evidence](../08-runtime/08-00-runtime-evidence.md).
+- **Runtime** role: [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md), [Runtime–Kernel contract](../08-runtime/08-06-runtime-kernel-contract.md).
 
 ## Summary
 

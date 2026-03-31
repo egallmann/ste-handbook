@@ -222,7 +222,7 @@ A **minimal reading path** that still conveys the whole STE shape is: **Part 0 (
 - **Architecture IR and graph:** [IR as a graph](../04-architecture-model/04-07-ir-as-a-graph.md), [Projections overview](../04-architecture-model/04-08-projections-overview.md)
 - **Narrow ladder/registry slice (complementary):** [Illustrative artifact walkthrough](../04-architecture-model/04-15-illustrative-walkthrough.md)
 - **Lifecycle staging:** [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)
-- **Runtime evidence and freshness:** [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)
+- **Runtime evidence and freshness:** [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md), [Freshness and Validity](../08-runtime/08-03-freshness-and-validity.md)
 
 **Conceptual spine (read before or alongside steps):** [01 — What is a system?](./01-what-is-a-system.md) through [06 — Drift and correction](./06-drift.md).
 

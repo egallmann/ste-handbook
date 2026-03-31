@@ -114,7 +114,16 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 
 ## Part 8 — Runtime
 
-- [Runtime evidence](08-runtime/08-00-runtime-evidence.md)
+- [Runtime Overview](08-runtime/08-00-runtime-overview.md)
+- [The Runtime Model](08-runtime/08-01-the-runtime-model.md)
+- [Evidence and Observation](08-runtime/08-02-evidence-and-observation.md)
+- [Freshness and Validity](08-runtime/08-03-freshness-and-validity.md)
+- [Preflight and the Reasoning Gate](08-runtime/08-04-preflight-and-reasoning-gate.md)
+- [Context Assembly and Minimally Viable Context](08-runtime/08-05-context-assembly-and-mvc.md)
+- [Runtime–Kernel Contract](08-runtime/08-06-runtime-kernel-contract.md)
+- [Governance Signals and Semantic Graph Lifecycle](08-runtime/08-07-governance-signals-and-semantic-graph-lifecycle.md)
+- [Runtime Lifecycle, Failure Modes, and Degradation](08-runtime/08-08-runtime-lifecycle-failure-modes-and-degradation.md)
+- [Runtime Architecture Components and Flow](08-runtime/08-09-runtime-architecture-components-and-flow.md)
 
 ## Part 9 — Human interface
 

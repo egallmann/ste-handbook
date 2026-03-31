@@ -138,7 +138,7 @@ unresolved:
 | Preflight gate | **Physical-component** responsibility before assistant-facing work |
 | `declared_in` edge | **Relationship registry** makes ownership queryable |
 
-This table is not a runtime API; it shows how **obligations** and **freshness** semantics link layers readers already saw in [Runtime evidence](../08-runtime/08-00-runtime-evidence.md).
+This table is not a runtime API; it shows how **obligations** and **freshness** semantics link layers readers already saw in [Freshness and validity](../08-runtime/08-03-freshness-and-validity.md).
 
 ## The Implications
 
