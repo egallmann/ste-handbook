@@ -42,7 +42,7 @@ Assessment begins when **evidence** exists for a declared **scope** and rule set
 
 - [Conformance](../03-artifacts/03-07-conformance.md)
 - [Evidence to assessment](../06-governance/06-11-evidence-to-assessment.md)
-- [Runtime evidence](../08-runtime/08-00-runtime-evidence.md)
+- [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md)
 - **ste-spec** for **EDR** and evidence contracts.
 
 **Next:** [Conformance and assessment](05-05-conformance-and-assessment.md).

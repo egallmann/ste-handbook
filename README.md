@@ -61,7 +61,7 @@ For a short thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
 | 5 | Lifecycle | Lifecycle stages: intent through evidence, conformance, decisions, change, and state transitions. |
 | 6 | Governance | Policy, drift, certification, and the control loop as governed operation. |
 | 7 | Kernel | Admission, validation, divergence and convergence, conformance, deterministic assessment. |
-| 8 | Runtime | Runtime evidence and integration with live systems. |
+| 8 | Runtime | Observation, evidence, freshness, preflight, context assembly, and Runtime interfaces to Kernel, governance, and the semantic graph. |
 | 9 | Human interface | Conversation, interrogation, decision capture, steelman, reference patterns, human-in-the-loop. |
 | 10 | AI interface | Agents, rule activation, and machine-mediated STE surfaces. |
 | 11 | Examples | Walkthroughs linking conversation → ADR → IR → projections → conformance → drift. |

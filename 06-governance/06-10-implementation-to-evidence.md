@@ -14,4 +14,4 @@ Evidence must be anchored to architecture elements or assessments float free of 
 
 ## Relationship to other chapters
 
-- Runtime evidence ([chapter](../08-runtime/08-00-runtime-evidence.md))
+- Runtime ([Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md))
