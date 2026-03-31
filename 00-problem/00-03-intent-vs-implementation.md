@@ -94,7 +94,7 @@ Incident-shaped version of the same confusion: an outage review concludes “we 
 
 **Runtime evidence** captures descriptive reality in a shareable form: what ran, what was measured, what failed, under which version and environment. See [Runtime Evidence](../08-runtime/08-00-runtime-evidence.md).
 
-At the level this handbook cares about, the **control loop** is one sentence: compare intent-shaped artifacts to embodiment-shaped evidence using explicit rules, record the outcome, and act on it. Rules, **scope**, and reporting are part of [Validation](../07-kernel/07-03-validation.md). The loop is only as honest as the separation it assumes.
+At the level this handbook cares about, the **control loop** is one sentence: compare intent-shaped artifacts to embodiment-shaped evidence using explicit rules, record the outcome, and act on it. Rules, **scope**, and reporting are part of [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md). The loop is only as honest as the separation it assumes.
 
 ### Mental model
 
@@ -130,8 +130,8 @@ None of this requires perfect documents or perfect systems. It requires **honest
 
 - [The Problem of Lossy Reasoning](00-02-the-problem-of-lossy-reasoning.md) explains why rationale and commitments thin out over time. Separating **intent** from **embodiment** makes it easier to preserve and check what must survive that journey.
 - The [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md) describe where normative structure lives before and alongside compilation into other artifacts.
-- [Kernel overview](../07-kernel/07-00-kernel-overview.md) introduces the engine that performs assessment over declared structure and evidence.
-- [Runtime Evidence](../08-runtime/08-00-runtime-evidence.md) and [Validation](../07-kernel/07-03-validation.md) cover the evidence and rule side of the control loop.
+- [Kernel overview](../07-kernel/07-00-overview.md) introduces the engine that performs assessment over declared structure and evidence.
+- [Runtime Evidence](../08-runtime/08-00-runtime-evidence.md) and [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md) cover the evidence and rule side of the control loop.
 - [Drift](../06-governance/06-03-drift.md) names divergence between intent and reality over time; [Governance](../06-governance/06-06-governance.md) covers how organizations keep that comparison legitimate and actionable.
 
 ## Summary

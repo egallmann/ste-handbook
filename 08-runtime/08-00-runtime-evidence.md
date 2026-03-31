@@ -46,7 +46,7 @@ Invest in **provenance** and **regeneration** paths for machine-facing projectio
 
 ## Relationship to STE system
 
-- **Kernel:** [Kernel overview](../07-kernel/07-00-kernel-overview.md), [Validation](../07-kernel/07-03-validation.md) for orchestration of **assessment** over IR and **evidence**.
+- **Kernel:** [Kernel overview](../07-kernel/07-00-overview.md), [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md) for orchestration of **assessment** over IR and **evidence**.
 - **Human boundary:** [Conversation engine overview](../09-human-interface/09-00-conversation-engine-overview.md) for capture and review before **intent** hardens.
 - **Architecture IR:** [IR as a graph](../04-architecture-model/04-07-ir-as-a-graph.md) for the projection bundle assistants traverse.
 - **Lifecycle:** [Conformance and assessment](../05-lifecycle/05-05-conformance-and-assessment.md) when wired.
@@ -60,4 +60,4 @@ Normative interfaces and runtime contracts remain in **ste-spec** and implementi
 - A **runtime reasoning gate**—watch signals, **preflight** **freshness** / reconciliation, obligation-aware **context assembly**, then assistant-facing tools—reduces stale-graph failure modes.
 - **Freshness** and **provenance** are first-class engineering concerns, not documentation details.
 
-**Next:** [Kernel](../07-kernel/07-01-kernel.md) for mechanism depth, or return to [System overview](../02-overview/02-03-system-overview.md) for the full closed loop.
+**Next:** [What is the Kernel?](../07-kernel/07-01-what-is-the-kernel.md) for role depth, or return to [System overview](../02-overview/02-03-system-overview.md) for the full closed loop.
