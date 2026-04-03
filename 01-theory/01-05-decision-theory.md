@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Decision Theory"
 status: structured
 maturity: L2
@@ -95,7 +95,7 @@ STE is anchored in “engineering as decision-making under **constraints**.” I
 
 ## Where This Appears in STE
 
-For **architecture decisions** as an intent surface, see [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md). For **requirements** and **constraints**, see [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md). For **invariants** as **commitments** about what must remain true, see [Invariants](../03-artifacts/03-03-invariants.md). For **governance** as the mechanism that allows superseding and versioning, see [governance](../06-governance/06-06-governance.md). Many chapters may still be outlines; links mark where the story continues.
+For **architecture decisions** as an intent surface, see [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md). For **requirements** and **constraints**, see [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md). For **invariants** as **commitments** about what must remain true, see [Invariants](../03-artifacts/03-03-invariants.md). For **governance** as the mechanism that allows superseding and versioning, see [Section overview (Part 6)](../06-governance/06-00-section-overview.md).
 
 Part 0 anchors the vocabulary: [Engineering as decision-making](../00-problem/00-01-engineering-as-decision-making.md). For **traceability** from **decision** to **embodiment**, see [Traceability in Architecture IR](../04-architecture-model/04-05-traceability.md).
 

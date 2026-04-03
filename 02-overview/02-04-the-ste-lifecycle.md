@@ -69,17 +69,17 @@ Readers should expect recurring passes, not a single heroic alignment project. I
 
 ## Relationship to STE system
 
-Stage-by-stage lifecycle accountability is in Part 5 ([Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)). Control loop mechanics live in Part 6 ([Governance overview](../06-governance/06-00-lifecycle-overview.md)). Operational detail, roles, and policy interfaces expand in that same governance part; start from [Governance overview](../06-governance/06-00-lifecycle-overview.md); it may still be skeletal, but it names the deeper roadmap.
+Stage-by-stage lifecycle accountability is in Part 5 ([Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)). The **governance control model** lives in Part 6, starting from [Section overview](../06-governance/06-00-section-overview.md): authority, admission, enforcement posture, and auditability relative to the lifecycle loop.
 
 Related orienting chapters:
 
 - [How to read diagrams and projections](02-05-how-to-read-diagrams-and-projections.md)
-- [Control loop overview](../06-governance/06-07-control-loop-overview.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
 - [Kernel overview](../07-kernel/07-00-overview.md)
 
 Lifecycle semantics at the contract level remain in **ste-spec** where applicable.
 
-**Next:** Continue into Part 3 with [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md). Part 2 ends with orientation; the handbook becomes operational about **intent** **artifacts**, **decisions**, and **constraints** there. After Part 4, Part 5 walks the lifecycle in depth. Keep [Governance overview](../06-governance/06-00-lifecycle-overview.md) in view when you need policy-oriented lifecycle mechanics beyond that walkthrough.
+**Next:** Continue into Part 3 with [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md). Part 2 ends with orientation; the handbook becomes operational about **intent** **artifacts**, **decisions**, and **constraints** there. After Part 4, Part 5 walks the lifecycle in depth. Keep [Section overview (Part 6)](../06-governance/06-00-section-overview.md) in view when you need governance mechanics beyond that walkthrough.
 
 ## Summary
 

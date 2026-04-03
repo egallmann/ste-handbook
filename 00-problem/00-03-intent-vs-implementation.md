@@ -45,7 +45,7 @@ These are handbook definitions. They align teams; **ste-spec** remains the autho
 
 **Validation:** **Evidence**-linked assessment of whether that **conformance** claim holds under agreed **rules** and **scopes**.
 
-The definitions above are the Part 0 anchor; later chapters **reference** them instead of rephrasing. In prose, **intent** also carries policies and rationale that make commitments intelligible later. It answers "what ought to hold?" and often "why did we commit to that?" **Embodiment** answers "what is actually there?" and "what happened when we exercised it?" **Drift** often grows slowly and unowned; for lifecycle treatment, see [drift](../06-governance/06-03-drift.md).
+The definitions above are the Part 0 anchor; later chapters **reference** them instead of rephrasing. In prose, **intent** also carries policies and rationale that make commitments intelligible later. It answers "what ought to hold?" and often "why did we commit to that?" **Embodiment** answers "what is actually there?" and "what happened when we exercised it?" **Drift** often grows slowly and unowned; for lifecycle treatment, see [The governance model](../06-governance/06-02-the-governance-model.md).
 
 Both sides can be wrong or incomplete. Intent can be stale, vague, or internally inconsistent. Embodiment can be buggy, misconfigured, or absent. **Governance** and assessment need both in view so you can compare them on purpose.
 
@@ -132,7 +132,7 @@ None of this requires perfect documents or perfect systems. It requires **honest
 - The [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md) and [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md) describe where normative structure lives before and alongside compilation into other artifacts.
 - [Kernel overview](../07-kernel/07-00-overview.md) introduces the engine that performs assessment over declared structure and evidence.
 - [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md) and [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md) cover the evidence and rule side of the control loop.
-- [Drift](../06-governance/06-03-drift.md) names divergence between intent and reality over time; [Governance](../06-governance/06-06-governance.md) covers how organizations keep that comparison legitimate and actionable.
+- [The governance model](../06-governance/06-02-the-governance-model.md) frames drift and the closed loop as governance problems, not only documentation habits. [Section overview (Part 6)](../06-governance/06-00-section-overview.md) orients authority, admission, enforcement posture, and auditability.
 
 ## Summary
 

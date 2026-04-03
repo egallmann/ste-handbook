@@ -16,7 +16,7 @@ Replace implicit status (known only in chat or ticket color) with **durable, que
 
 ## Artifacts involved
 
-Lifecycle state records (as defined by policy and **ste-spec**), links to **conformance** results and **evidence**, **ADR** or **governance** records that justify **exceptions**, and **Architecture IR** revisions that accompany major transitions. See [Lifecycle overview](../06-governance/06-00-lifecycle-overview.md) and [Design lifecycle](../06-governance/06-01-design-lifecycle.md).
+Lifecycle state records (as defined by policy and **ste-spec**), links to **conformance** results and **evidence**, **ADR** or **governance** records that justify **exceptions**, and **Architecture IR** revisions that accompany major transitions. See [Lifecycle overview](../06-governance/06-00-section-overview.md) and [Design lifecycle](../06-governance/06-02-the-governance-model.md).
 
 ## Human responsibility
 
@@ -39,8 +39,8 @@ This chapter completes the staged walkthrough of Part 5. The operational loop co
 ## Relationship to other chapters
 
 - [Lifecycle overview](05-00-lifecycle-overview.md)
-- [Control loop overview](../06-governance/06-07-control-loop-overview.md)
-- [Lifecycle overview](../06-governance/06-00-lifecycle-overview.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
+- [Lifecycle overview](../06-governance/06-00-section-overview.md)
 - **ste-spec** for normative state names, transition guards, and interfaces.
 
 **Next:** Return to the loop entry at [Intent formation](05-01-intent-formation.md) as needed, or continue to Part 7 [Kernel overview](../07-kernel/07-00-overview.md) for the reasoning surface, **Admission**, and **IR validation** depth.

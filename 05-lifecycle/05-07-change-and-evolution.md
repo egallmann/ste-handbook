@@ -16,7 +16,7 @@ Close the control loop. Authorized **change** updates the artifacts and **embodi
 
 ## Artifacts involved
 
-Revised **intent** artifacts, updated **Architecture IR**, new or modified **implementation** artifacts, refreshed **trace** links, and new **evidence** after **change** lands. See [Change management](../06-governance/06-02-change-management.md) and [Diff and change](../04-architecture-model/04-06-diff-and-change.md).
+Revised **intent** artifacts, updated **Architecture IR**, new or modified **implementation** artifacts, refreshed **trace** links, and new **evidence** after **change** lands. See [Change management](../06-governance/06-05-steelman-obligations-and-change-control.md) and [Diff and change](../04-architecture-model/04-06-diff-and-change.md).
 
 ## Human responsibility
 
@@ -40,9 +40,9 @@ After **change**, the loop returns toward **intent formation** or **architecture
 
 ## Relationship to other chapters
 
-- [Drift](../06-governance/06-03-drift.md)
-- [Convergence](../06-governance/06-04-convergence.md)
-- [Decision to change](../06-governance/06-13-decision-to-change.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
+- [Convergence](../06-governance/06-02-the-governance-model.md)
+- [Steelman, obligations, and change control](../06-governance/06-05-steelman-obligations-and-change-control.md)
 - **ste-spec** for change and versioning semantics.
 
 **Next:** [Lifecycle states and transitions](05-08-lifecycle-states-and-transitions.md).

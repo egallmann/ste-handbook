@@ -27,8 +27,7 @@ Part 11’s closing steps show a **pedagogical** drift scenario and a **governed
 
 ## Relationship to STE system
 
-- **Drift (governance):** [Drift](../06-governance/06-03-drift.md)
-- **Control loop:** [Control loop overview](../06-governance/06-07-control-loop-overview.md)
+- **Governance model (drift in the loop):** [The governance model](../06-governance/06-02-the-governance-model.md)
 - **Lifecycle:** [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)
 - **Part 11 entry:** [STE examples overview](./00-overview.md)
 

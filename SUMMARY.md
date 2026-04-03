@@ -36,6 +36,7 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 - [Terminology](02-overview/02-02-terminology.md)
 - [System overview](02-overview/02-03-system-overview.md)
 - [The STE lifecycle](02-overview/02-04-the-ste-lifecycle.md)
+- [How to read diagrams and projections](02-overview/02-05-how-to-read-diagrams-and-projections.md)
 
 ## Part 3 — Artifacts
 
@@ -66,6 +67,7 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 - [Architecture views](04-architecture-model/04-12-architecture-views.md)
 - [Stakeholder views](04-architecture-model/04-13-stakeholder-views.md)
 - [View consistency](04-architecture-model/04-14-view-consistency.md)
+- [Illustrative walkthrough](04-architecture-model/04-15-illustrative-walkthrough.md)
 
 ## Part 5 — Lifecycle
 
@@ -81,21 +83,13 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 
 ## Part 6 — Governance
 
-- [Lifecycle overview](06-governance/06-00-lifecycle-overview.md)
-- [Design lifecycle](06-governance/06-01-design-lifecycle.md)
-- [Change management](06-governance/06-02-change-management.md)
-- [Drift](06-governance/06-03-drift.md)
-- [Convergence](06-governance/06-04-convergence.md)
-- [Certification](06-governance/06-05-certification.md)
-- [Governance](06-governance/06-06-governance.md)
-- [Control loop overview](06-governance/06-07-control-loop-overview.md)
-- [The control loop](06-governance/06-08-the-control-loop.md)
-- [Intent to implementation](06-governance/06-09-intent-to-implementation.md)
-- [Implementation to evidence](06-governance/06-10-implementation-to-evidence.md)
-- [Evidence to assessment](06-governance/06-11-evidence-to-assessment.md)
-- [Assessment to decision](06-governance/06-12-assessment-to-decision.md)
-- [Decision to change](06-governance/06-13-decision-to-change.md)
-- [Continuous certification](06-governance/06-14-continuous-certification.md)
+- [Section overview](06-governance/06-00-section-overview.md)
+- [Why governance exists](06-governance/06-01-why-governance-exists.md)
+- [The governance model](06-governance/06-02-the-governance-model.md)
+- [Authority and decision rights](06-governance/06-03-authority-and-decision-rights.md)
+- [Admission, eligibility, and enforcement](06-governance/06-04-admission-eligibility-and-enforcement.md)
+- [Steelman, obligations, and change control](06-governance/06-05-steelman-obligations-and-change-control.md)
+- [Determinism, provenance, and audit](06-governance/06-06-determinism-provenance-and-audit.md)
 
 ## Part 7 — Kernel
 
@@ -205,5 +199,6 @@ Illustrative placeholders under `diagrams/`:
 - [system-overview.mmd](diagrams/system-overview.mmd)
 - [lifecycle.mmd](diagrams/lifecycle.mmd)
 - [control-loop.mmd](diagrams/control-loop.mmd)
+- [projection-bundle.mmd](diagrams/projection-bundle.mmd)
 - [adr-relationships.mmd](diagrams/adr-relationships.mmd)
 - [architecture-ir-flow.mmd](diagrams/architecture-ir-flow.mmd)

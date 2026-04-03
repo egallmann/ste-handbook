@@ -14,4 +14,4 @@ Automation without human accountability fails organizations. This chapter states
 
 ## Relationship to other chapters
 
-- Governance ([chapter](../06-governance/06-06-governance.md))
+- Governance ([chapter](../06-governance/06-00-section-overview.md))

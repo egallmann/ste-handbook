@@ -96,7 +96,7 @@ A structured **architecture** **artifact** gives **governance** and **validation
 
 STE treats **architecture** as structured **decisions** compiled into **Architecture IR**, then connected to **embodiment** and **evidence** through **traceability** and **validation**. **Governance** keeps those **artifacts** honest over time.
 
-For the **artifact** layer and **decision** records, see the [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md), [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md), and [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md). For **Architecture IR** specifically, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **drift** and **governance**, see [drift](../06-governance/06-03-drift.md) and [governance](../06-governance/06-06-governance.md).
+For the **artifact** layer and **decision** records, see the [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md), [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md), and [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md). For **Architecture IR** specifically, see [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md). For **drift** and **governance**, see [The governance model](../06-governance/06-02-the-governance-model.md) and [Section overview (Part 6)](../06-governance/06-00-section-overview.md).
 
 ## Summary
 
