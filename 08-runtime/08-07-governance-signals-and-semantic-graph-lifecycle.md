@@ -83,8 +83,7 @@ flowchart LR
 - [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)
 - [Runtime–Kernel Contract](08-06-runtime-kernel-contract.md)
 - [Preflight and the Reasoning Gate](08-04-preflight-and-reasoning-gate.md), [Context Assembly and Minimally Viable Context](08-05-context-assembly-and-mvc.md)
-- [Control loop overview](../06-governance/06-07-control-loop-overview.md), [The control loop](../06-governance/06-08-the-control-loop.md)
-- [Drift](../06-governance/06-03-drift.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
 
 ## Summary
 

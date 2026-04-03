@@ -44,7 +44,7 @@ Teams should resist encoding the same fact twice under different edge types with
 - **Graph reasoning:** [IR as a graph](04-07-ir-as-a-graph.md), [Diff and change](04-06-diff-and-change.md).
 - **Traces on edges:** [Traceability in Architecture IR](04-05-traceability.md).
 - **Conformance structure:** [Conformance](../03-artifacts/03-07-conformance.md).
-- **Drift:** [Drift](../06-governance/06-03-drift.md).
+- **Drift:** [The governance model](../06-governance/06-02-the-governance-model.md).
 
 ## Summary
 

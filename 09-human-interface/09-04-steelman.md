@@ -11,3 +11,7 @@ Steelmanning complements interrogation by reducing strawman failures in architec
 - Practices and prompts (conceptual)
 - Integration with decision records
 - Limits and misuse risks
+
+## Relationship to other chapters
+
+- [Steelman, obligations, and change control](../06-governance/06-05-steelman-obligations-and-change-control.md)

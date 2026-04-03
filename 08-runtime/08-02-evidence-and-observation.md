@@ -86,7 +86,7 @@ How evidence is classified (fresh, stale, invalid, missing) is defined in [Fresh
 - [Evidence](../03-artifacts/03-05-evidence.md)
 - [Intent versus implementation](../00-problem/00-03-intent-vs-implementation.md)
 - [Entities](../04-architecture-model/04-02-entities.md), [Traceability in Architecture IR](../04-architecture-model/04-05-traceability.md)
-- [Evidence and observation](../05-lifecycle/05-04-evidence-and-observation.md), [Implementation to evidence](../06-governance/06-10-implementation-to-evidence.md)
+- [Evidence and observation](../05-lifecycle/05-04-evidence-and-observation.md), [The governance model](../06-governance/06-02-the-governance-model.md)
 - [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md)
 
 ## Summary

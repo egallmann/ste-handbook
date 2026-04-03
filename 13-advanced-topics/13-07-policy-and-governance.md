@@ -14,4 +14,4 @@ Organizations eventually need machine-checkable policy to scale STE.
 
 ## Relationship to other chapters
 
-- Governance ([chapter](../06-governance/06-06-governance.md))
+- [Section overview (Part 6)](../06-governance/06-00-section-overview.md)
