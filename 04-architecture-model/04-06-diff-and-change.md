@@ -41,9 +41,9 @@ Publish **architecture changelogs** derived from IR diff for human review; use t
 ## Relationship to STE system
 
 - **Graph framing:** [IR as a graph](04-07-ir-as-a-graph.md).
-- **Governance:** [Change management](../06-governance/06-02-change-management.md), [Drift](../06-governance/06-03-drift.md).
+- **Governance:** [Change management](../06-governance/06-05-steelman-obligations-and-change-control.md), [The governance model](../06-governance/06-02-the-governance-model.md).
 - **Lifecycle:** [Architecture definition](../05-lifecycle/05-02-architecture-definition.md).
-- **Drift and convergence (lifecycle):** [Drift](../06-governance/06-03-drift.md), [Convergence (lifecycle)](../06-governance/06-04-convergence.md); **Kernel** reasoning: [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md).
+- **Drift and convergence (lifecycle):** [The governance model](../06-governance/06-02-the-governance-model.md), [Convergence (lifecycle)](../06-governance/06-02-the-governance-model.md); **Kernel** reasoning: [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md).
 
 ## Summary
 

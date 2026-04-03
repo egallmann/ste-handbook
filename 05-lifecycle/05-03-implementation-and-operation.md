@@ -41,7 +41,7 @@ The loop moves toward **evidence and observation** when the system (or a defined
 ## Relationship to other chapters
 
 - [Intent versus implementation](../00-problem/00-03-intent-vs-implementation.md)
-- [Implementation to evidence](../06-governance/06-10-implementation-to-evidence.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
 - [Kernel overview](../07-kernel/07-00-overview.md) (admission and runtime perspective)
 - **ste-spec** for binding and observation interfaces where defined.
 

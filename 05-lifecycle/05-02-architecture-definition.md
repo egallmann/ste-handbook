@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Part 5: Architecture Definition"
 status: structured
 maturity: L1
@@ -43,7 +43,7 @@ Work shifts toward **implementation and operation** when the organization commit
 - [System overview](../02-overview/02-03-system-overview.md)
 - [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)
 - [Projections overview](../04-architecture-model/04-08-projections-overview.md)
-- [Intent to implementation](../06-governance/06-09-intent-to-implementation.md)
+- [Intent to implementation](../06-governance/06-02-the-governance-model.md)
 - **ste-spec** for IR semantics and compilation contracts.
 
 **Next:** [Implementation and operation](05-03-implementation-and-operation.md).

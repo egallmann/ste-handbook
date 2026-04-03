@@ -21,7 +21,7 @@ The **Kernel role** supplies **deterministic decisions** and structured findings
 ### Intended interaction
 
 - **Kernel** emits **machine-readable** outcomes (including **KernelAdmissionAssessment** for **Admission** where **ste-spec** applies).
-- **Governance** consumes outcomes within the control loop: [Assessment to decision](../06-governance/06-12-assessment-to-decision.md), [Decision to change](../06-governance/06-13-decision-to-change.md), [Governance](../06-governance/06-06-governance.md).
+- **Governance** consumes outcomes within the control loop: [Authority and decision rights](../06-governance/06-03-authority-and-decision-rights.md), [Steelman, obligations, and change control](../06-governance/06-05-steelman-obligations-and-change-control.md), [Section overview (Part 6)](../06-governance/06-00-section-overview.md).
 
 ### Capability posture (honest snapshot)
 
@@ -43,8 +43,9 @@ The **Kernel role** supplies **deterministic decisions** and structured findings
 
 ## Relationship to STE system
 
-- [Control loop overview](../06-governance/06-07-control-loop-overview.md)
-- [Drift](../06-governance/06-03-drift.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
+- [Authority and decision rights](../06-governance/06-03-authority-and-decision-rights.md)
+- [Admission, eligibility, and enforcement](../06-governance/06-04-admission-eligibility-and-enforcement.md)
 - [Kernel overview](07-00-overview.md)
 
 ## Summary

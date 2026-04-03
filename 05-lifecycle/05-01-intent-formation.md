@@ -45,7 +45,7 @@ The system moves toward **architecture definition** when enough **intent** exist
 - [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md)
 - [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md)
 - [Compilation](../04-architecture-model/04-04-compilation.md)
-- [Intent to implementation](../06-governance/06-09-intent-to-implementation.md)
+- [Intent to implementation](../06-governance/06-02-the-governance-model.md)
 - **ste-spec** for record schemas and workflow hooks.
 
 **Next:** [Architecture definition](05-02-architecture-definition.md).

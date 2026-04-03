@@ -16,7 +16,7 @@ Ensure that transitions in risk and quality are **owned**, **recorded**, and **r
 
 ## Artifacts involved
 
-Decision records (often **ADR**-shaped updates or addenda), approval artifacts, **exception** packages with **scope** and expiry where policy requires, lifecycle state transitions, and links to the **evidence** and **conformance** records that justified the call. See [Governance](../06-governance/06-06-governance.md) and [Certification](../06-governance/06-05-certification.md).
+Decision records (often **ADR**-shaped updates or addenda), approval artifacts, **exception** packages with **scope** and expiry where policy requires, lifecycle state transitions, and links to the **evidence** and **conformance** records that justified the call. See [Section overview (Part 6)](../06-governance/06-00-section-overview.md) and [Admission, eligibility, and enforcement](../06-governance/06-04-admission-eligibility-and-enforcement.md).
 
 ## Human responsibility
 
@@ -41,8 +41,8 @@ Authorized work enters **change and evolution**: updates to **intent**, **Archit
 ## Relationship to other chapters
 
 - [Governed reasoning](../00-problem/00-05-governed-reasoning.md)
-- [Decision to change](../06-governance/06-13-decision-to-change.md)
-- [Continuous certification](../06-governance/06-14-continuous-certification.md)
+- [Steelman, obligations, and change control](../06-governance/06-05-steelman-obligations-and-change-control.md)
+- [Determinism, provenance, and audit](../06-governance/06-06-determinism-provenance-and-audit.md)
 - **ste-spec** for policy interfaces and lifecycle hooks.
 
 **Next:** [Change and evolution](05-07-change-and-evolution.md).

@@ -42,7 +42,7 @@ Resist “views for politics” that hide uncomfortable edges. **Governed reason
 
 - **Architecture views:** [Architecture views](04-12-architecture-views.md).
 - **Projection documents:** [Projection documents](04-11-projection-documents.md).
-- **Lifecycle / governance:** [Governance and decision](../05-lifecycle/05-06-governance-and-decision.md), [Governance](../06-governance/06-06-governance.md).
+- **Lifecycle / governance:** [Governance and decision](../05-lifecycle/05-06-governance-and-decision.md), [Section overview (Part 6)](../06-governance/06-00-section-overview.md).
 
 ## Summary
 

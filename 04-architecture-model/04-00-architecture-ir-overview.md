@@ -52,7 +52,7 @@ The book is one loop described at different altitudes:
 3. **Part 4 — Architecture model (this part):** what the architecture **is** structurally—the **Architecture IR** and how it is compiled, linked, differenced, and viewed.
 4. **Kernel and runtime:** how the model is **built, checked, and consumed** with **evidence** ([Kernel overview](../07-kernel/07-00-overview.md), [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md)).
 5. **Evidence and assessment:** observations and claims about **conformance** ([Evidence](../03-artifacts/03-05-evidence.md), [Conformance and assessment](../05-lifecycle/05-05-conformance-and-assessment.md)).
-6. **Governance and drift:** legitimacy of change and mismatch over time ([Drift](../06-governance/06-03-drift.md), [Governance](../06-governance/06-06-governance.md)).
+6. **Governance and drift:** legitimacy of change and mismatch over time ([The governance model](../06-governance/06-02-the-governance-model.md), [Section overview (Part 6)](../06-governance/06-00-section-overview.md)).
 
 The diagram below is a **Part 4–centric** slice of the same story told more fully in [System overview](../02-overview/02-03-system-overview.md) and [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md).
 

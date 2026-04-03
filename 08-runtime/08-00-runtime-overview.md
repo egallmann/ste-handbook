@@ -118,7 +118,7 @@ Normative shapes remain in ste-spec; this handbook states concepts and boundarie
 - [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md)
 - [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)
 - [Kernel overview](../07-kernel/07-00-overview.md), [Kernel and runtime](../07-kernel/07-08-kernel-and-runtime.md)
-- [Control loop overview](../06-governance/06-07-control-loop-overview.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
 - [Evidence and observation](../05-lifecycle/05-04-evidence-and-observation.md) (lifecycle stage)
 
 ### Part-level data flow

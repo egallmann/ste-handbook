@@ -62,7 +62,7 @@ Loss is not one event. It accumulates across ordinary work. A few common sites:
 
 **Long-lived systems after original designers are gone.** A service written ten years ago may still run well while the constraints that shaped it (hardware limits, partner APIs, org boundaries) have changed several times. Without a preserved rationale, every change is a small gamble about which old assumptions still bind.
 
-Those sites stack in real programs. A principal engineer agrees in a meeting that retries must stay bounded for a specific partner API; the ticket closes as “fix retries”; the wiki still describes the old policy six months later; the author leaves; the on-call runbook mentions “back off” without numbers. Two teams then ship different limits, each convinced they honored “what we decided.” The **embodiment** is not mysterious. The recoverable **intent** is.
+Those sites stack in real programs. A principal engineer agrees in a meeting that retries must stay bounded for a specific partner API; the ticket closes as ï¿½fix retriesï¿½; the wiki still describes the old policy six months later; the author leaves; the on-call runbook mentions ï¿½back offï¿½ without numbers. Two teams then ship different limits, each convinced they honored ï¿½what we decided.ï¿½ The **embodiment** is not mysterious. The recoverable **intent** is.
 
 Each site is normal. Together they form a pipeline that strips structure unless something counteracts it.
 
@@ -98,9 +98,9 @@ When rationale thins, the organization pays in predictable ways:
 
 **Inconsistent decisions across teams.** Without shared, checkable statements of **intent**, each group improvises from local context. The system grows a patchwork of compatible-looking choices that do not compose into one coherent **architecture** story.
 
-**Drift between intent and system behavior.** Declared direction (in slides, wikis, or hallway consensus) diverges from what actually runs: an *outcome* of thinned rationale and weak records as much as of any single bad change. The gap is slow until it is expensive. For a fuller treatment of mismatch over time, see [drift](../06-governance/06-03-drift.md).
+**Drift between intent and system behavior.** Declared direction (in slides, wikis, or hallway consensus) diverges from what actually runs: an *outcome* of thinned rationale and weak records as much as of any single bad change. The gap is slow until it is expensive. For a fuller treatment of mismatch over time, see [The governance model](../06-governance/06-02-the-governance-model.md).
 
-**Weak audit and governance.** Auditors and regulators ask for **evidence** that controls and commitments are real. **Governance** asks who may change what, under which rules, with which **traceability**. If reasoning lives only in informal narrative, there is little stable object to version, review, or attach policy to. See [governance](../06-governance/06-06-governance.md).
+**Weak audit and governance.** Auditors and regulators ask for **evidence** that controls and commitments are real. **Governance** asks who may change what, under which rules, with which **traceability**. If reasoning lives only in informal narrative, there is little stable object to version, review, or attach policy to. See [Section overview (Part 6)](../06-governance/06-00-section-overview.md).
 
 None of these outcomes requires negligence. They follow when the information an organization needs to steer is not preserved in a form that stays reviewable.
 

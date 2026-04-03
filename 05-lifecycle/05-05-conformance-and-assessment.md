@@ -41,8 +41,8 @@ When **assessment** surfaces material gaps or when **conformance** passes at a b
 ## Relationship to other chapters
 
 - [Terminology](../02-overview/02-02-terminology.md) (**validation** sense)
-- [Assessment to decision](../06-governance/06-12-assessment-to-decision.md)
-- [Drift](../06-governance/06-03-drift.md)
+- [Authority and decision rights](../06-governance/06-03-authority-and-decision-rights.md)
+- [The governance model](../06-governance/06-02-the-governance-model.md)
 - **ste-spec** for assessment interfaces and result shapes.
 
 **Next:** [Governance and decision](05-06-governance-and-decision.md).

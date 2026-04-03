@@ -32,7 +32,7 @@ Sometimes views **intentionally** simplify: collapsing clusters, showing logical
 
 ### Drift and conformance
 
-**Drift** between projections and IR is **structural** **debt**. **Conformance** discussions often assume IR matches **intent** and **embodiment**; projection **conformance** is the prior step: do **derived** views still **track** **canonical** structure? Skipping it makes **evidence** and **Kernel** work look green while humans steer from false pictures ([Drift](../06-governance/06-03-drift.md)).
+**Drift** between projections and IR is **structural** **debt**. **Conformance** discussions often assume IR matches **intent** and **embodiment**; projection **conformance** is the prior step: do **derived** views still **track** **canonical** structure? Skipping it makes **evidence** and **Kernel** work look green while humans steer from false pictures ([The governance model](../06-governance/06-02-the-governance-model.md)).
 
 ## The Implications
 

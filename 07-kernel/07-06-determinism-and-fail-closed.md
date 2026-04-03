@@ -43,7 +43,7 @@ The **Kernel role** is a **decision engine**, not a brainstorming partner. Its o
 
 - Foundations: [Deterministic versus stochastic systems](../00-problem/00-06-deterministic-vs-stochastic-systems.md).
 - Reasoning surface: [Kernel reasoning surface](07-05-kernel-reasoning-surface.md).
-- Control loop: [The control loop](../06-governance/06-08-the-control-loop.md).
+- Governance model: [The governance model](../06-governance/06-02-the-governance-model.md).
 
 ## Summary
 

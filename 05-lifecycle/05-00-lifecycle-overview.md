@@ -8,7 +8,7 @@ last_reviewed: "2026-03-27"
 
 # Part 5: Lifecycle Overview
 
-STE is a **lifecycle governance** system. It is not only a way to produce a first design. The same commitments and records must stay legible while **intent**, **architecture**, **embodiment**, and **evidence** move. This part walks the stages of that movement in order. It complements Part 6, where the control loop mechanics and policy-oriented governance chapters live.
+STE is a **lifecycle governance** system. It is not only a way to produce a first design. The same commitments and records must stay legible while **intent**, **architecture**, **embodiment**, and **evidence** move. This part walks the stages of that movement in order. It complements Part 6, where the **governance control model** lives: authority, admission, enforcement posture, and auditability ([Section overview](../06-governance/06-00-section-overview.md)).
 
 ## Purpose of this stage
 
@@ -65,8 +65,8 @@ For the fuller STE picture—**compilation**, **Architecture IR**, **derived pro
 - Orientation: [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md).
 - Artifact types: [Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md).
 - Canonical model: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md).
-- Loop mechanics: [Control loop overview](../06-governance/06-07-control-loop-overview.md).
-- Policy and operations: [Governance overview](../06-governance/06-00-lifecycle-overview.md).
+- Loop mechanics: [The governance model](../06-governance/06-02-the-governance-model.md).
+- Policy and operations: [Section overview (Part 6)](../06-governance/06-00-section-overview.md).
 - Normative contracts: **ste-spec**.
 - End-to-end illustration: [Canonical example — AI Gateway through STE](../11-examples/00-overview.md)
 
