@@ -3,7 +3,7 @@ title: "Governance Signals and Semantic Graph Lifecycle"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-30"
+last_reviewed: "2026-05-26"
 ---
 
 # Governance Signals and Semantic Graph Lifecycle
@@ -29,24 +29,37 @@ This chapter moves in four steps: what **derived** views are (and are not), how 
 | Object | Role |
 |--------|------|
 | **Architecture IR** | Canonical compiled structural model for the architecture layer—not produced by **Runtime**. |
-| Projections / semantic graph views | **Derived** representations for tools and humans; trace lineage to **Architecture IR** revisions. |
+| Projections / semantic graph views | **Derived** representations for tools and humans; trace lineage to substrate and, where applicable, to **Architecture IR** identities. |
 
 **Runtime** orchestrates rebuild and publication of **derived** material when change detection fires ([Freshness and Validity](08-03-freshness-and-validity.md)); compilation of **Architecture IR** from intent remains outside **Runtime** authority.
 
 ### Projection and semantic graph lifecycle
 
-At handbook altitude, projection lifecycle includes:
+STE treats derived views as lifecycle-managed artifacts. [Projections](../04-architecture-model/04-09-projections.md) names two projection lineages that share discipline but differ in substrate; this chapter covers how **Runtime** participates in their lifecycle.
 
-- Build from a declared **Architecture IR** snapshot or approved export pipeline.
+Shared stages for both lineages:
+
 - Stamp with identity and lineage metadata sufficient for staleness checks.
-- Invalidate on **Architecture IR** revision, embodiment events, or observation failures per policy.
 - Serve read-only consumers through APIs or artifacts without implying **canonical** supremacy over **Architecture IR**.
+- Retire or supersede when policy marks them obsolete.
+
+Build and invalidation inputs differ by path:
+
+| Path | Substrate | Typical invalidation triggers |
+| --- | --- | --- |
+| **IR-anchored projections** | Compiled **Architecture IR** snapshot (plus projection configuration) | **Architecture IR** revision, compilation or linking events, policy-defined export pipeline failures |
+| **Runtime workspace projections** | Per-repository graph slices, cross-repo edges, merged workspace graph material, multi-resolution projection files | Embodiment and extraction events, RECON or observation failures, slice validation failures, partial merge state |
+
+**Runtime** orchestrates the workspace path directly and may participate in IR-anchored rebuild triggers when change detection ties invalidation to **Architecture IR** identities ([Freshness and Validity](08-03-freshness-and-validity.md)). Compilation of **Architecture IR** from intent remains outside **Runtime** authority in either path.
+
+On the workspace path, intermediate products help humans and tools navigate embodiment across repository boundaries. Their governance value comes from lineage and freshness, not from authority. A stale or partial merged graph is a signal to surface, not a fact to silently reason from.
 
 ### Governance-facing signals
 
 **Runtime** emits observation-side governance signals such as:
 
 - Projection staleness or failed rebuild.
+- Partial workspace graph construction or failed slice validation.
 - Gaps in observation coverage for obligations in scope.
 - Invalid or missing evidence clusters affecting certification narratives.
 - Change or drift hints tied to **Architecture IR** identities (not verdicts on whether drift is acceptable).
@@ -80,6 +93,7 @@ flowchart LR
 
 ## Relationship to STE system
 
+- [Projections](../04-architecture-model/04-09-projections.md) (IR-anchored versus runtime workspace lineages)
 - [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)
 - [Runtime–Kernel Contract](08-06-runtime-kernel-contract.md)
 - [Preflight and the Reasoning Gate](08-04-preflight-and-reasoning-gate.md), [Context Assembly and Minimally Viable Context](08-05-context-assembly-and-mvc.md)
@@ -87,7 +101,7 @@ flowchart LR
 
 ## Summary
 
-- Semantic graph and projections are **derived** from **Architecture IR**; **Runtime** manages lifecycle signals and updates under invalidation rules.
+- Semantic graph and projections are **derived**; **Runtime** manages lifecycle signals and updates under invalidation rules for both IR-anchored and runtime workspace lineages.
 - Governance consumes **Runtime** governance signals for process and risk; **Runtime** does not enforce policy.
 - Enforcement combines governance rules, **Kernel** assessment, and human judgment—not observation alone.
 

@@ -3,7 +3,7 @@ title: "Runtime Architecture Components and Flow"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-30"
+last_reviewed: "2026-05-29"
 ---
 
 # Runtime Architecture Components and Flow
@@ -30,12 +30,17 @@ Implementability requires stable boundaries between components and consumers. Wi
 |-----------|----------------|
 | Observation channels / ingestion | Collect structured observations from embodiment and toolchains (tests, telemetry, reconciliation, health probes—illustrative). |
 | Evidence builder / normalization | Promote observations to **ArchitectureEvidence** with provenance, scope, and **Architecture IR** bindings ([Evidence and Observation](08-02-evidence-and-observation.md)). |
+| Source-aware retrieval | Maintain references from runtime graph and context material back to owning artifacts without turning retrieved material into runtime authority. |
 | Freshness and validity classifier | Assign evidence states and evaluate bundle validity ([Freshness and Validity](08-03-freshness-and-validity.md)). |
 | Change detection | Detect events that require re-observation, invalidation, or reclassification; emit change and drift signals (observation-side, not policy decisions). |
 | Projection / semantic graph builder | Rebuild and publish **derived** views from declared **Architecture IR** lineage ([Governance Signals and Semantic Graph Lifecycle](08-07-governance-signals-and-semantic-graph-lifecycle.md)). |
+| Workspace graph builder | Assemble per-repository slices, cross-repo edges, and merged workspace graph material as runtime-owned **derived** state. |
+| Semantic compression / projection renderer | Produce deterministic multi-resolution projections while preserving traceability to source graph material. |
 | Preflight gate | Run reasoning safety checks before **MVC** assembly ([Preflight and the Reasoning Gate](08-04-preflight-and-reasoning-gate.md)). |
-| Context (**MVC**) builder | Assemble minimally viable context when preflight permits ([Context Assembly and Minimally Viable Context](08-05-context-assembly-and-mvc.md)). |
-| Contract / data product emission | Publish typed outputs to **Kernel**, governance tooling, humans, and AI consumers per ste-spec ([Runtime–Kernel Contract](08-06-runtime-kernel-contract.md)). |
+| Context baseline assembler | Gather evidence, source references, graph traversal context, provenance, freshness, and negative-space signals before minimization. |
+| Context (**MVC**) builder | Derive minimally viable context when preflight permits ([Context Assembly and Minimally Viable Context](08-05-context-assembly-and-mvc.md)). |
+| Context validator | Check that bounded context remains faithful to the baseline and does not hide provenance, freshness, or known gaps. |
+| Contract / data product emission | Publish typed outputs to **Kernel**, governance tooling, humans, and AI consumers per **ste-spec** ([Runtime–Kernel Contract](08-06-runtime-kernel-contract.md)). |
 
 **Runtime** is not a decision or policy enforcement node: it emits products and governance signals; **Kernel** and governance own assessment and control.
 
@@ -43,37 +48,59 @@ Implementability requires stable boundaries between components and consumers. Wi
 
 For a typical scoped operation:
 
-Embodiment → Observation → **ArchitectureEvidence** → Classification → Preflight → **MVC** → **Kernel** handoff
+Embodiment → Observation → **ArchitectureEvidence** and source references → derived graph discovery → compression / projection → Classification → Preflight → context baseline → **MVC** derivation → validation → **Kernel** handoff
 
 - Embodiment feeds ingestion and channels.
 - The evidence builder produces durable **ArchitectureEvidence**.
+- Source-aware retrieval keeps context entries traceable to owning artifacts without copying authority into runtime state.
 - The classifier and change detection label readiness and emit signals.
 - The projection builder refreshes **derived** views when invalidation requires it.
+- The workspace graph builder can merge repository slices and cross-repo edges into a derived graph for workspace-level queries.
+- The semantic compression layer can render multiple projection resolutions from the same graph material.
 - The preflight gate blocks unsafe assembly.
-- The **MVC** builder packages context for consumers.
+- The context baseline assembler gathers enough evidence, provenance, source references, graph context, and negative-space information to support faithful minimization.
+- The **MVC** builder derives bounded context for consumers.
+- The context validator checks that the bounded result remains traceable and honest about freshness, scope, and omissions.
 - Emission delivers products to **Kernel** and others without **Admission** verdicts.
+
+The diagram below shows both projection lineages from [Projections](../04-architecture-model/04-09-projections.md)—IR-anchored and runtime workspace—converging at preflight before **MVC** assembly.
 
 ```mermaid
 flowchart LR
   Emb[Embodiment]
   Ing[Ingestion_channels]
   EvB[Evidence_builder]
+  Src[Source_references]
   Cls[Classifier]
   Chg[Change_detection]
   Prj[Projection_builder]
+  Wsg[Workspace_graph_builder]
+  Cmp[Semantic_compression]
   PF[Preflight_gate]
+  Base[Context_baseline]
   MVCb[MVC_builder]
+  Val[Context_validator]
   Out[Emission_to_consumers]
 
   Emb --> Ing
   Ing --> EvB
+  Ing --> Src
+  Ing --> Wsg
   EvB --> Cls
+  Src --> Base
   Chg --> Cls
   Chg --> Prj
-  Cls --> PF
+  Chg --> Wsg
+  Wsg --> Cmp
   Prj --> PF
-  PF --> MVCb
-  MVCb --> Out
+  Cmp --> PF
+  Cls --> PF
+  PF --> Base
+  EvB --> Base
+  Cmp --> Base
+  Base --> MVCb
+  MVCb --> Val
+  Val --> Out
 ```
 
 ### Consumers (downstream)
@@ -94,13 +121,15 @@ flowchart LR
 ## Relationship to STE system
 
 - [The Runtime Model](08-01-the-runtime-model.md), [Runtime Overview](08-00-runtime-overview.md)
+- [Semantic Graphs](../13-advanced-topics/13-01-semantic-graphs.md), [Projections](../04-architecture-model/04-09-projections.md)
 - [Kernel and runtime](../07-kernel/07-08-kernel-and-runtime.md)
 - [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md)
 
 ## Summary
 
-- **Runtime** decomposes into ingestion, evidence building, classification, change detection, projection build, preflight, **MVC** assembly, and emission.
-- Internal flow runs Embodiment → Observation → Evidence → Classification → Preflight → **MVC** → **Kernel** handoff, aligned with Embodiment → **Runtime** → Evidence → **Kernel** → Decision → Governance.
+- **Runtime** decomposes into ingestion, evidence building, source-aware retrieval, classification, change detection, derived-view build, preflight, context baseline assembly, **MVC** derivation, validation, and emission.
+- Workspace graph and semantic compression components extend projection build for multi-repository reasoning while remaining derived-state producers.
+- Internal flow runs Embodiment → Observation → Evidence and source references → derived-view build → Preflight → baseline assembly → **MVC** derivation → validation → **Kernel** handoff, aligned with Embodiment → **Runtime** → Evidence → **Kernel** → Decision → Governance.
 - ste-spec owns wire formats; **Runtime** owns observation and readiness products, not **Admission** or policy enforcement.
 
 For Part 8 reading order return to [Runtime Overview](08-00-runtime-overview.md); for assessment mechanics outside this part, continue to [Kernel overview](../07-kernel/07-00-overview.md).
