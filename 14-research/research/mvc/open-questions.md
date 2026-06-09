@@ -28,7 +28,9 @@ Current open questions:
 - How should candidate equations evolve as more findings and reproductions accumulate?
 - How should candidate context artifacts map to MVC-S fixture outputs without implying production MVC-M?
 - Which hosted or rubric validation path is sufficient to move beyond local signal?
-- What live HSCA observation volume is enough to support substrate completeness claims?
+- When is full HSCA complete enough to lock `Q_fixture` — AI validates human and human validates AI against permitted substrate?
+- What apparatus is required so bidirectional HSCA is reproducible, not a manual review habit?
+- What live HSCA observation volume is enough to support substrate completeness claims after full cooperative validation exists?
 - Which repeated local results are stable enough to justify stronger evidence claims?
 - Which candidate equation variables are stable enough to keep, rename, or retire?
 - Which interaction terms dominate additive representation effects?
@@ -48,6 +50,7 @@ Each research program should track:
 
 Progress criteria:
 
+- full HSCA implemented: blinded `H_obs` and `A_obs`, AI validates human, human validates AI, automated or governed `D_cls`, fixture lock only after cooperative review,
 - live blinded HSCA observations at the active evidence boundary,
 - hosted or rubric validation path available,
 - adjudication protocol drafted,

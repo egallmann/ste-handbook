@@ -2,11 +2,15 @@
 title: "MVC Research Program"
 status: draft
 maturity: L1
-diagrams: false
+diagrams: true
 last_reviewed: "2026-06-09"
 ---
 
 # MVC Research Program
+
+![MVC assembly pipeline: bounded sources are assembled into task-scoped context before reasoning.](thesis/images/mvc-assembly-pipeline.png)
+
+*Conceptual research illustration for the representation ceiling thesis: context assembly as engineered substrate between knowledge and cognition. Source counts and compression figures are pedagogical, not empirical claims. "Minimality" in the diagram means task-scoped sufficiency (viable context), not smallest possible bundle. This is a candidate research model, not production MVC-M or Kernel admission authority. Image file: `thesis/images/mvc-assembly-pipeline.png`. Publication lineage: [MVC thesis publications](thesis/README.md).*
 
 ## The Problem
 
