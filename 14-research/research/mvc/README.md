@@ -8,9 +8,9 @@ last_reviewed: "2026-06-09"
 
 # MVC Research Program
 
-![MVC assembly pipeline: bounded sources are assembled into task-scoped context before reasoning.](thesis/images/mvc-assembly-pipeline.png)
+![MVC research program overview: Architecture IR, viable context assembly, projections, and the reasoning ceiling.](01-thesis/images/ste-reasoning-ceiling-hero.png)
 
-*Conceptual research illustration for the representation ceiling thesis: context assembly as engineered substrate between knowledge and cognition. Source counts and compression figures are pedagogical, not empirical claims. "Minimality" in the diagram means task-scoped sufficiency (viable context), not smallest possible bundle. This is a candidate research model, not production MVC-M or Kernel admission authority. Image file: `thesis/images/mvc-assembly-pipeline.png`. Publication lineage: [MVC thesis publications](thesis/README.md).*
+*Conceptual overview for the MVC research program: Architecture IR as research substrate, viable context assembly, human and AI projections, and the reasoning ceiling. The image is explanatory, not empirical evidence. It does not prove MVC, define production MVC-M behavior, or create Kernel admission authority. Image file: `01-thesis/images/ste-reasoning-ceiling-hero.png`. Publication lineage: [MVC thesis publications](01-thesis/README.md).*
 
 ## The Problem
 
@@ -46,12 +46,12 @@ related_methodologies:
 
 Program structure:
 
-- [Thesis](thesis/README.md)
-- [Methodology](methodology/README.md)
-- [Experiment design](experiment-design/README.md)
-- [Findings](findings/README.md)
-- [Reproductions](reproductions/README.md)
-- [Open questions](open-questions.md)
+- [01 - Thesis](01-thesis/README.md)
+- [02 - Methodology](02-methodology/README.md)
+- [03 - Experiment design](03-experiment-design/README.md)
+- [04 - Findings](04-findings/README.md)
+- [05 - Reproductions](05-reproductions/README.md)
+- [06 - Open questions](06-open-questions.md)
 
 ## The Implications
 

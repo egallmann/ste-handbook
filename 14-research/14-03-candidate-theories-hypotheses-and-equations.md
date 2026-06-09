@@ -106,7 +106,7 @@ For that reason, a candidate equation should explicitly mark interactions that t
 
 Candidate theories and equations protect [Traceability](../03-artifacts/03-06-traceability.md) for research claims. They also keep research from turning [Evidence](../03-artifacts/03-05-evidence.md) into authority without governance.
 
-MVC applies this doctrine in its [candidate equation variables](research/mvc/methodology/candidate-equation-variables.md) methodology note.
+MVC applies this doctrine in its [candidate equation variables](research/mvc/02-methodology/candidate-equation-variables.md) methodology note.
 
 ## Summary
 

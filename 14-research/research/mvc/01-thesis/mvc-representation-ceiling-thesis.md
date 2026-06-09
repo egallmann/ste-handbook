@@ -260,7 +260,7 @@ I am not claiming that STE solves this problem. I am claiming that the pattern I
 
 ## Relationship to STE system
 
-This thesis connects to the handbook's runtime and artifact chapters without defining normative contracts. For context assembly doctrine, see [Context Assembly and Minimally Viable Context](../../../../08-runtime/08-05-context-assembly-and-mvc.md). For architecture substrate and model concepts, see [Architecture IR](../../../../03-artifacts/03-04-architecture-model-and-ir.md), [Evidence](../../../../03-artifacts/03-05-evidence.md), and [Traceability](../../../../03-artifacts/03-06-traceability.md). For how the claim is tested, see [MVC Methodology](../methodology/mvc-methodology.md).
+This thesis connects to the handbook's runtime and artifact chapters without defining normative contracts. For context assembly doctrine, see [Context Assembly and Minimally Viable Context](../../../../08-runtime/08-05-context-assembly-and-mvc.md). For architecture substrate and model concepts, see [Architecture IR](../../../../03-artifacts/03-04-architecture-model-and-ir.md), [Evidence](../../../../03-artifacts/03-05-evidence.md), and [Traceability](../../../../03-artifacts/03-06-traceability.md). For how the claim is tested, see [MVC Methodology](../02-methodology/mvc-methodology.md).
 
 ---
 
@@ -274,7 +274,7 @@ Third, I may have overstated domain-independence. The core of this paper is grou
 
 What I can offer is the prediction itself. The representation ceiling is the context ceiling is the reasoning ceiling. If that chain is real, then improving representational quality should improve reasoning quality in observable, measurable ways, and improving reasoning engines without improving representations should yield diminishing returns. That is testable. I would rather be tested than believed.
 
-The next publication in this research program makes the test explicit: [MVC Methodology](../methodology/mvc-methodology.md) and related methodology pages describe the evaluation discipline. The operational harness remains outside the handbook. There is an irony in that order worth stating plainly. The harness is itself an attempt to operationalize the claim under test: that structure-guided context assembly can preserve more of the reasoning-relevant world than inference-guided reconstruction alone. The methodology publication describes the test discipline; this publication states why an experiment is needed.
+The next publication in this research program makes the test explicit: [MVC Methodology](../02-methodology/mvc-methodology.md) and related methodology pages describe the evaluation discipline. The operational harness remains outside the handbook. There is an irony in that order worth stating plainly. The harness is itself an attempt to operationalize the claim under test: that structure-guided context assembly can preserve more of the reasoning-relevant world than inference-guided reconstruction alone. The methodology publication describes the test discipline; this publication states why an experiment is needed.
 
 This paper is not a conclusion. It is an observation with a testable edge, from an engineer who expected three answers and found one. I am still working through what it means.
 

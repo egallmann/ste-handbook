@@ -31,7 +31,7 @@ Through that bidirectional loop, the study derives a defensible `Q_fixture` and 
 
 HSCA is not answer authority by itself. It is experimental evidence that makes memory confounds visible before they infect benchmarks.
 
-The target protocol is bidirectionally cooperative. The active harness at evidence boundary `draft-006` is collection and reporting readiness only. **Full HSCA is not implemented.** `Q_fixture`, rubric authority, and meaningful fitness comparison must wait until both validation directions exist in apparatus.
+The target protocol is bidirectionally cooperative. The current evidence boundary supports collection and reporting readiness only. **Full HSCA is not implemented.** `Q_fixture`, rubric authority, and meaningful fitness comparison must wait until both validation directions exist in apparatus.
 
 ## The Model
 
@@ -83,28 +83,28 @@ No task fixture should claim a known outcome (`Q_fixture`) until full HSCA compl
 
 Until these are satisfied, the MVC program may run instrument checks, pilot discrimination, and collection-readiness tests. It must not treat local mechanical scores or author judgment as `Q`.
 
-### Implemented today (`draft-006`)
+### Current capability boundary
 
-The local benchmark harness (outside this handbook) currently ships the following HSCA surface:
+The operational harness outside this handbook currently supports the following HSCA capabilities:
 
 | Capability | Status | Notes |
 |------------|--------|-------|
-| Blinded human observation capture | **Shipped** | `hsca_record_observation.py` writes append-only `H_obs` records with `memory_origin`, `evidence_sources`, blinding flag, fingerprints, and `authority_effect: observational_only`. |
-| Disagreement record schema | **Shipped** | `hsca-disagreement-record.schema.json` defines `D_cls`, `D_adj`, and observational-only boundary. |
-| Completeness report aggregation | **Shipped** | `hsca_report.py` counts existing `classification` values into `C_sub`, `C_asm`, `C_mem`, `C_rep`, and collection readiness fields. |
-| Synthetic fixture validation | **Shipped** | `fixtures/hsca/draft-006/` exercises schema shape, unresolved preservation, and report math. |
-| Validator integration | **Shipped** | `validate_benchmark_suite.py` checks HSCA manifest policy, record shape, generation/fingerprint alignment, and report fields. |
-| AI validates human claims against substrate | **Not shipped** | No script compares each claim in `H_obs` to packet/substrate content and emits sourced citations or gap findings. |
+| Blinded human observation capture | **Shipped** | The collection workflow writes append-only `H_obs` records with `memory_origin`, `evidence_sources`, blinding flag, fingerprints, and `authority_effect: observational_only`. |
+| Disagreement record schema | **Shipped** | The disagreement record shape defines `D_cls`, `D_adj`, and observational-only boundary. |
+| Completeness report aggregation | **Shipped** | The reporting workflow counts existing `classification` values into `C_sub`, `C_asm`, `C_mem`, `C_rep`, and collection readiness fields. |
+| Synthetic fixture validation | **Shipped** | Synthetic fixtures exercise record shape, unresolved preservation, and report math. |
+| Validator integration | **Shipped** | The validation layer checks HSCA manifest policy, record shape, generation/fingerprint alignment, and report fields. |
+| AI validates human claims against substrate | **Not shipped** | No automated review step compares each claim in `H_obs` to packet/substrate content and emits sourced citations or gap findings. |
 | Human validates AI claims against substrate | **Not shipped** | No protocol step records human confirm/reject of each substantive `A_obs` claim against permitted evidence. |
 | Automated `classify()` | **Not shipped** | `D_cls` is stored on disagreement records; it is not derived automatically from bidirectional substrate inspection in code today. |
-| Cooperative review driver | **Not shipped** | No harness command runs the full iterate-until-both-sides-sourced loop or locks `Q_fixture`. |
+| Cooperative review driver | **Not shipped** | No first-class workflow runs the full iterate-until-both-sides-sourced loop or locks `Q_fixture`. |
 | Dedicated HSCA `A_obs` path | **Not shipped** | Reasoner run records serve a different role; there is no first-class blinded `A_obs` paired to the HSCA cooperative step. |
 
 **Operator workflow today:**
 
 1. Participant answers blinded; operator records `H_obs` via the collection helper.
 2. A separate step authors or updates a disagreement record with `D_cls` (manual or out-of-band review today).
-3. `hsca_report.py` aggregates counts into `analysis/hsca-report.yaml`.
+3. The HSCA reporting step aggregates counts into a generation-scoped report.
 4. Interpretation uses those counts as evidence signals, not as answer authority.
 
 Synthetic fixtures prove steps 2–3 can run. They do not prove step 1 plus an automated step 2 on real tasks.
@@ -201,7 +201,7 @@ D_cls(task, candidate, generation) =
 
 `D_cls` is a structural gap label, not a correctness score and not a vote by the participant. Adjudication result (`D_adj`) may be recorded separately and must not silently promote observations into benchmark or architecture authority.
 
-**Harness note:** `hsca_report.py` aggregates whatever `classification` is already on disagreement records. The `classify(...)` function in the equation is **target behavior**, not current automation.
+**Harness note:** Current reporting aggregates whatever `classification` is already on disagreement records. The `classify(...)` function in the equation is **target behavior**, not current automation.
 
 **Completeness reports.** Classifications aggregate into count-only report families. Each family is a derived proxy, not ground-truth measurement:
 
@@ -360,7 +360,7 @@ Related MVC methodology pages:
 
 - HSCA stops latent human memory and unchecked AI inference from contaminating golden context and `Q_fixture`.
 - **Upstream:** earn `Q_fixture` only after bidirectional cooperative review. **Downstream:** guard reasoner interpretation when gaps remain.
-- **Full HSCA is not implemented** at `draft-006`.
+- **Full HSCA is not implemented** at the current evidence boundary.
 - **Shipped:** blinded `H_obs`, disagreement schema, count-only reports, synthetic validation.
 - **Not shipped:** AI validates human, human validates AI, automated `classify()`, cooperative loop driver, `Q_fixture` lock.
 - Gap labels are target outputs of substrate comparison; today they are authored on disagreement records.

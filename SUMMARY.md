@@ -205,11 +205,11 @@ Reading order follows Parts 0–14. Links are relative to this repository root.
 - [Research library](14-research/14-08-research-library.md)
 - [STE research index](14-research/research/README.md)
 - [MVC research program](14-research/research/mvc/README.md)
-- [MVC thesis publications](14-research/research/mvc/thesis/README.md)
-- [MVC representation ceiling thesis](14-research/research/mvc/thesis/mvc-representation-ceiling-thesis.md)
-- [MVC methodology](14-research/research/mvc/methodology/mvc-methodology.md)
-- [MVC candidate equation variables](14-research/research/mvc/methodology/candidate-equation-variables.md)
-- [MVC context preflight methodology](14-research/research/mvc/methodology/context-preflight-methodology.md)
+- [MVC thesis publications](14-research/research/mvc/01-thesis/README.md)
+- [MVC representation ceiling thesis](14-research/research/mvc/01-thesis/mvc-representation-ceiling-thesis.md)
+- [MVC methodology](14-research/research/mvc/02-methodology/mvc-methodology.md)
+- [MVC candidate equation variables](14-research/research/mvc/02-methodology/candidate-equation-variables.md)
+- [MVC context preflight methodology](14-research/research/mvc/02-methodology/context-preflight-methodology.md)
 
 ## Diagrams (Mermaid)
 

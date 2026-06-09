@@ -21,13 +21,14 @@ The research library is the canonical publication area for STE research programs
 Every research program should use this structure unless a justified exception exists:
 
 ```text
-Research Program
-├── Thesis
-├── Methodology
-├── Experiment Design
-├── Findings
-├── Reproductions
-└── Open Questions
+research/<program>/
+├── README.md
+├── 01-thesis/
+├── 02-methodology/
+├── 03-experiment-design/
+├── 04-findings/
+├── 05-reproductions/
+└── 06-open-questions.md
 ```
 
 Each `research/<program>/README.md` declares informational metadata:
@@ -51,7 +52,7 @@ MVC is the first reference implementation of this structure.
 
 ## The Implications
 
-- Future research programs should have the same durable homes for thesis, methodology, experiment design, findings, reproductions, and open questions.
+- Future research programs should have the same numbered durable homes for thesis, methodology, experiment design, findings, reproductions, and open questions.
 - Open questions are required living research artifacts.
 - Findings and reproductions should reference the research configuration and publication versions they derive from.
 - Operational artifacts remain outside the handbook unless intentionally published as prose or index entries.

@@ -94,7 +94,7 @@ These are research outcomes. They are not production verdicts.
 
 ## Relationship to STE system
 
-The design is connected to [MVC methodology](../methodology/mvc-methodology.md), [Context preflight methodology](../methodology/context-preflight-methodology.md), [Benchmark methodology](../methodology/benchmark-methodology.md), [HSCA methodology](../methodology/hsca-methodology.md), and [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md).
+The design is connected to [MVC methodology](../02-methodology/mvc-methodology.md), [Context preflight methodology](../02-methodology/context-preflight-methodology.md), [Benchmark methodology](../02-methodology/benchmark-methodology.md), [HSCA methodology](../02-methodology/hsca-methodology.md), and [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md).
 
 ## Summary
 

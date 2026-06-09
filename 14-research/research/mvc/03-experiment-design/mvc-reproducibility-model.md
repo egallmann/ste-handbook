@@ -77,7 +77,7 @@ Before interpreting a result, reviewers should confirm:
 
 ## Relationship to STE system
 
-The reproducibility model connects to [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md), [MVC experimental design](mvc-experimental-design.md), and [MVC reproductions](../reproductions/README.md). It is evidence metadata, not architecture authority.
+The reproducibility model connects to [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md), [MVC experimental design](mvc-experimental-design.md), and [MVC reproductions](../05-reproductions/README.md). It is evidence metadata, not architecture authority.
 
 ## Summary
 

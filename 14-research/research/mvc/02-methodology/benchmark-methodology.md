@@ -57,7 +57,7 @@ Mechanical scoring can detect expected concepts and unsupported assertions, but 
 
 ## Relationship to STE system
 
-Benchmark methodology supports [MVC methodology](mvc-methodology.md), [MVC experimental design](../experiment-design/mvc-experimental-design.md), and [Measurement and Validity](../../../14-06-measurement-and-validity.md). Benchmark governance remains separate from research evidence.
+Benchmark methodology supports [MVC methodology](mvc-methodology.md), [MVC experimental design](../03-experiment-design/mvc-experimental-design.md), and [Measurement and Validity](../../../14-06-measurement-and-validity.md). Benchmark governance remains separate from research evidence.
 
 ## Summary
 

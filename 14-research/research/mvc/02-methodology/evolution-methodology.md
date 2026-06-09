@@ -126,7 +126,7 @@ Configuration is a first-order experimental control. Each run should preserve co
 
 ## Relationship to STE system
 
-Evolution methodology connects to [MVC methodology](mvc-methodology.md), [MVC candidate equation variables](candidate-equation-variables.md), [Benchmark methodology](benchmark-methodology.md), and [MVC reproducibility model](../experiment-design/mvc-reproducibility-model.md). It does not define production MVC-D, MVC-S, MVC-M, or Kernel admission.
+Evolution methodology connects to [MVC methodology](mvc-methodology.md), [MVC candidate equation variables](candidate-equation-variables.md), [Benchmark methodology](benchmark-methodology.md), and [MVC reproducibility model](../03-experiment-design/mvc-reproducibility-model.md). It does not define production MVC-D, MVC-S, MVC-M, or Kernel admission.
 
 ## Summary
 

@@ -95,7 +95,7 @@ Preflight should end with one of three decisions:
 
 ## Relationship to STE system
 
-Context preflight is part of MVC research methodology. It connects to [MVC methodology](mvc-methodology.md), [MVC experimental design](../experiment-design/mvc-experimental-design.md), [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md), and [MVC open questions](../open-questions.md).
+Context preflight is part of MVC research methodology. It connects to [MVC methodology](mvc-methodology.md), [MVC experimental design](../03-experiment-design/mvc-experimental-design.md), [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md), and [MVC open questions](../06-open-questions.md).
 
 The operational workspace model may provide evidence for preflight, but generated graph state remains derived evidence and is not canonical architecture authority.
 

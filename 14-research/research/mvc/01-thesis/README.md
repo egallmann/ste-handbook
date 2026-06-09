@@ -8,7 +8,7 @@ last_reviewed: "2026-06-09"
 
 # MVC Thesis Publications
 
-The assembly-pipeline illustration lives on the [MVC research program](../README.md) landing page (`thesis/images/mvc-assembly-pipeline.png`). This page covers thesis publication lineage only.
+The reasoning-ceiling illustration lives on the [MVC research program](../README.md) landing page (`01-thesis/images/ste-reasoning-ceiling-hero.png`). It is a program overview image, not a modification to the thesis publication. This page covers thesis publication lineage only.
 
 ## The Problem
 
@@ -31,7 +31,7 @@ Preferred naming for substantive versions:
 - `mvc-thesis-v1.md`
 - `mvc-thesis-v2.md`
 
-The published thesis is [mvc-representation-ceiling-thesis.md](mvc-representation-ceiling-thesis.md). The assembly pipeline diagram on the program landing page summarizes the thesis claim in visual form: reasoning quality is bounded by the structural quality of assembled context, not by reasoning alone. Substantive revisions should create a new versioned publication file (for example `mvc-thesis-v2.md`) while keeping prior versions discoverable.
+The published thesis is [mvc-representation-ceiling-thesis.md](mvc-representation-ceiling-thesis.md). The program overview image on the landing page summarizes the research program around the thesis: reasoning quality is bounded by the structural quality of represented and assembled context, not by reasoning alone. Substantive revisions should create a new versioned publication file (for example `mvc-thesis-v2.md`) while keeping prior versions discoverable.
 
 ## The Implications
 
