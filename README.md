@@ -40,7 +40,7 @@ Humans remain the source of **judgment**, **trade-offs**, and **governance**. Ty
 
 ## How to read this handbook
 
-The manuscript is organized as **Parts 0 through 13**. **[SUMMARY.md](SUMMARY.md)** is the table of contents and suggested reading order.
+The manuscript is organized as **Parts 0 through 14**. **[SUMMARY.md](SUMMARY.md)** is the table of contents and suggested reading order.
 
 - **Orientation:** Part 0 (problem and thesis) and Part 2 (overview, terminology, system picture, lifecycle summary, and how to read diagrams and projections).
 - **Depth along the spine:** Part 3 (artifacts) → Part 4 (Architecture IR) → Part 5 (lifecycle stages) → Part 6 (governance control model) → Part 7 (kernel) → Part 8 (runtime).
@@ -49,7 +49,7 @@ The manuscript is organized as **Parts 0 through 13**. **[SUMMARY.md](SUMMARY.md
 
 For a short thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
 
-### Section map (Parts 0 through 13)
+### Section map (Parts 0 through 14)
 
 | Part | Title | Role |
 |------|--------|------|
@@ -67,6 +67,7 @@ For a short thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
 | 11 | Examples | Walkthroughs linking conversation → ADR → IR → projections → conformance → drift. |
 | 12 | Adoption | Introducing and scaling STE in organizations. |
 | 13 | Advanced topics | Deeper or emergent subjects (semantic graphs, scoring, multi-agent policy, safety framing). |
+| 14 | Research | STE research doctrine, lifecycle, candidate theories, methodology, evidence, interpretation, and the published research library. |
 
 **Where to start:** Open **[SUMMARY.md](SUMMARY.md)**, read Part 0 and Part 2 for orientation (or follow parts in order), then use the spine above. For an integrated walkthrough, use **[Part 11: Canonical example](11-examples/00-overview.md)** (AI Gateway: intent through drift and correction).
 
