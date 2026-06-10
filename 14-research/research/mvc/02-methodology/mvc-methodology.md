@@ -190,6 +190,4 @@ Runtime candidate boundaries make future production experiments more plausible, 
 - Evidence does not become authority without separate governance.
 - Current methodology supports controlled local research and HSCA; it does not claim scientific proof of the thesis.
 
-Read next: the next chapter instantiates this method as a concrete study design.
-
-**Next:** [MVC experimental design](../03-experiment-design/mvc-experimental-design.md).
+Read next: [MVC experimental design](../03-experiment-design/mvc-experimental-design.md) instantiates this method as a concrete study design.

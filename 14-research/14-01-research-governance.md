@@ -74,3 +74,5 @@ Research governance mirrors STE governance without replacing it. The research re
 - Promotion from evidence to authority is a separate governance process.
 - Failed and superseded research must remain discoverable.
 - Research governance controls knowledge creation; it does not create normative doctrine directly.
+
+Read next: [Research Lifecycle](14-02-research-lifecycle.md) names the maturity states that research claims pass through before any promotion review.

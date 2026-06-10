@@ -94,11 +94,13 @@ The operational harness outside this handbook currently supports the following H
 | Completeness report aggregation | **Shipped** | The reporting workflow counts existing `classification` values into `C_sub`, `C_asm`, `C_mem`, `C_rep`, and collection readiness fields. |
 | Synthetic fixture validation | **Shipped** | Synthetic fixtures exercise record shape, unresolved preservation, and report math. |
 | Validator integration | **Shipped** | The validation layer checks HSCA manifest policy, record shape, generation/fingerprint alignment, and report fields. |
-| AI validates human claims against substrate | **Not shipped** | No automated review step compares each claim in `H_obs` to packet/substrate content and emits sourced citations or gap findings. |
-| Human validates AI claims against substrate | **Not shipped** | No protocol step records human confirm/reject of each substantive `A_obs` claim against permitted evidence. |
-| Automated `classify()` | **Not shipped** | `D_cls` is stored on disagreement records; it is not derived automatically from bidirectional substrate inspection in code today. |
-| Cooperative review driver | **Not shipped** | No first-class workflow runs the full iterate-until-both-sides-sourced loop or locks `Q_fixture`. |
-| Dedicated HSCA `A_obs` path | **Not shipped** | Reasoner run records serve a different role; there is no first-class blinded `A_obs` paired to the HSCA cooperative step. |
+| Dedicated HSCA `A_obs` path | **Shipped: synthetic/mechanical tier** | Fixture-backed `A_obs` records can be paired with synthetic `H_obs`. **Not shipped:** live blinded `A_obs` collection or reasoner invocation under the cooperative protocol. |
+| AI validates human claims against substrate | **Shipped: synthetic/mechanical tier** | A deterministic mechanism checks synthetic `H_obs` claims against permitted packet substrate and emits claim-level validation artifacts. **Not shipped:** LLM-backed or human-operated review over live observations. |
+| Human validates AI claims against substrate | **Shipped: synthetic/mechanical tier** | Fixture-driven human review artifacts can confirm, reject, or mark synthetic `A_obs` claims uncertain. **Not shipped:** live operator review under blinding controls. |
+| Automated `classify()` | **Shipped: synthetic/mechanical tier** | Synthetic gap scenarios derive `D_cls` from validation artifacts. **Not shipped:** classification over completed live cooperative review or all future gap labels. |
+| Cooperative review driver | **Shipped: synthetic/mechanical tier** | The driver runs fixture-backed bidirectional review and emits tier-marked synthetic lock records with `q_fixture_authority: none` and `fitness_use_allowed: false`. **Not shipped:** real cooperative review, defensible real `Q_fixture` lock, or fitness-use authority. |
+
+The synthetic/mechanical tier proves apparatus readiness only. It does **not** complete full HSCA, produce defensible real `Q_fixture`, authorize fitness comparison, make live blinded collection shipped, or establish benchmark answer authority.
 
 **Operator workflow today:**
 
@@ -107,11 +109,11 @@ The operational harness outside this handbook currently supports the following H
 3. The HSCA reporting step aggregates counts into a generation-scoped report.
 4. Interpretation uses those counts as evidence signals, not as answer authority.
 
-Synthetic fixtures prove steps 2–3 can run. They do not prove step 1 plus an automated step 2 on real tasks.
+Synthetic fixtures now prove the mechanism tier of the bidirectional loop can run over controlled scenarios. They do not prove live blinded collection, live human review, LLM-backed claim inspection, or defensible `Q_fixture` lock-in on real tasks.
 
-### Target protocol (to build)
+### Full protocol still to build
 
-The next harness tranche should implement **full HSCA** — bidirectional cooperative validation — not more collection plumbing alone:
+The synthetic/mechanical mechanism tier is not full HSCA. The remaining harness work is **full live HSCA** — bidirectional cooperative validation over live observations, not more collection plumbing alone:
 
 1. **Blinded `A_obs`** — Record an AI answer under the same permitted-evidence boundary as `H_obs`, without exposing scores or gold to either side prematurely.
 2. **AI validates human** — For each substantive claim in `H_obs`, verify presence in permitted substrate. Emit present, absent, or cite `type:id`.
@@ -337,7 +339,7 @@ Shared symbols such as reasoning quality (`Q`), representational structural qual
 
 - HSCA protects golden context from latent human memory — the main confound in fixture authoring and in designer/researcher self-evaluation.
 - **Target:** bidirectional cooperative validation — AI checks the human, the human checks the AI — before `Q_fixture` lock-in.
-- **Today:** full HSCA is not implemented. Only blinded `H_obs` capture and count-only reports are shipped.
+- **Today:** full HSCA is not implemented. Blinded `H_obs` capture, count-only reports, and a synthetic/mechanical mechanism tier for bidirectional review are shipped.
 - **Blocked until full HSCA:** defensible `Q_fixture`, rubric/gold authority, and fitness comparisons that require known outcomes.
 - HSCA serves upstream fixture authoring and downstream reasoner interpretation; do not collapse the two roles.
 - Human memory does not become architecture authority unless captured through accepted artifacts. AI citations do not become answer authority without adjudication.
@@ -347,7 +349,7 @@ Shared symbols such as reasoning quality (`Q`), representational structural qual
 
 HSCA supports [Evidence](../../../../03-artifacts/03-05-evidence.md) and [Traceability](../../../../03-artifacts/03-06-traceability.md) by making completeness and disagreement inspectable. It does not replace ADRs, invariants, Architecture IR, benchmark adjudication, or Kernel admission.
 
-Operational harness behavior lives in the MVC benchmark suite repository path referenced by [Benchmark methodology](benchmark-methodology.md). The handbook records method and boundaries; it does not duplicate command-level harness documentation.
+Operational harness behavior lives in the owning research apparatus outside handbook prose. The handbook records method and boundaries; it does not duplicate command-level harness documentation.
 
 Related MVC methodology pages:
 
@@ -361,8 +363,10 @@ Related MVC methodology pages:
 - HSCA stops latent human memory and unchecked AI inference from contaminating golden context and `Q_fixture`.
 - **Upstream:** earn `Q_fixture` only after bidirectional cooperative review. **Downstream:** guard reasoner interpretation when gaps remain.
 - **Full HSCA is not implemented** at the current evidence boundary.
-- **Shipped:** blinded `H_obs`, disagreement schema, count-only reports, synthetic validation.
-- **Not shipped:** AI validates human, human validates AI, automated `classify()`, cooperative loop driver, `Q_fixture` lock.
-- Gap labels are target outputs of substrate comparison; today they are authored on disagreement records.
+- **Shipped:** blinded `H_obs`, disagreement schema, count-only reports, synthetic validation, and synthetic/mechanical bidirectional-review machinery.
+- **Not shipped:** live blinded `A_obs`, LLM or human-operated claim review, real cooperative review, defensible real `Q_fixture` lock, and fitness-use authority.
+- Gap labels are target outputs of substrate comparison; today the mechanism tier derives them only for synthetic scenarios.
 - Future substrate-arm studies may measure answerability under controlled decay and AI-generated question banks.
 - HSCA reports completeness and gaps as evidence, not benchmark or architecture authority.
+
+Read next: [MVC methodology](mvc-methodology.md) shows how HSCA fits into the broader MVC research unit and interpretation rules.

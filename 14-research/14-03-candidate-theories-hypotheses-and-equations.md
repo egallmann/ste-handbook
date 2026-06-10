@@ -16,7 +16,7 @@ If STE jumps directly from observation to benchmark, it can test vague impressio
 
 ## The Reframe
 
-STE research formalizes candidate theories before experimental evaluation. Candidate equations are a first-class research mechanism: they state how a theory expects variables to relate, even before the equation is fully measured or validated.
+STE research formalizes candidate theories before experimental evaluation. Candidate equations are a first-class research mechanism: they state how a theory expects variables to relate, even before the equation is fully measured or supported by evidence.
 
 ## The Model
 
@@ -114,3 +114,5 @@ MVC applies this doctrine in its [candidate equation variables](research/mvc/02-
 - Candidate theories explain mechanisms.
 - Candidate equations formalize relationships before evaluation.
 - Hypotheses and study designs should derive from the theory, not from the desired outcome.
+
+Read next: [Research Methodology](14-04-research-methodology.md) explains how testable claims become studies.

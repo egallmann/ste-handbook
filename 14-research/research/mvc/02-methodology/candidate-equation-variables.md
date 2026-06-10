@@ -124,18 +124,18 @@ MVC candidate equations should preserve interaction terms until evidence support
 
 | Interaction | Why It Matters |
 |-------------|----------------|
-| `S_b * A_c` | The same representational substrate (`S_b`) can look better or worse depending on which assembly configuration was selected or evolved for it (`A_c`). Substrate quality and assembly choice must be analyzed together. |
-| `S_af * A_c` | Substrate affordances (`S_af`) only affect outcomes when the selected assembly configuration (`A_c`) can actually use them. A rich affordance set with a configuration that ignores it is not a fair test of the substrate. |
-| `A_s * R_q` | The admissible assembly configuration space (`A_s`) can cap how much representational structural quality (`R_q`) the study can observe. A substrate may look weak because the search never reached a legitimate configuration. |
-| `C_var * R_q` | Varied configuration fields (`C_var`) can change measured representational structural quality (`R_q`) without any change in the underlying representation. Configuration movement can masquerade as representation improvement. |
-| `C_drift * Q` | Configuration drift (`C_drift`) can mimic or erase an apparent reasoning-quality (`Q`) effect. If the assembly changed between runs, the study may be measuring instability, not representation. |
-| `R_q * C_v` | Representational structural quality (`R_q`) matters through viable-context sufficiency (`C_v`). Strong structure that still fails the task is not sufficient context; sufficiency is where structural quality becomes reasoning-relevant. |
-| `A_d * D` | Assembly definition (`A_d`) and context-domain composition (`D`) are coupled. Change what assembly means and you change which domains can appear in the assembled context. |
-| `A_g * D` | Assembly algorithm and version (`A_g`) can change which domain structure is assembled (`D`), even when the declared assembly definition stays the same. |
-| `V * D` | Persona policy composition (`V`) changes which context domains matter (`D`) for the same task. The consumer shapes what counts as relevant structure. |
-| `L * R` | Source locator coverage (`L`) and candidate relationship preservation (`R`) interact. Relationships without locators, or locators without preserved edges, both degrade traceability and reasoning fidelity. |
-| `M * D` | Attribution or embodiment coverage (`M`) only helps when the domains that carry embodiment are actually assembled (`D`). Discovery without assembly produces coverage metrics, not usable context. |
-| `G_b * R` | Blast-radius graph quality (`G_b`) depends on whether dependency and attribution relationships (`R`) survive into the candidate context. Impact reasoning fails when the graph is present in principle but severed in assembly. |
+| `S_b * A_c` | Substrate effects depend on which assembly configuration is selected. |
+| `S_af * A_c` | Affordances matter only when the selected configuration can use them. |
+| `A_s * R_q` | Admissible assembly space can cap observable representation quality. |
+| `C_var * R_q` | Configuration variation can masquerade as representation-quality change. |
+| `C_drift * Q` | Configuration drift can mimic or erase a reasoning-quality effect. |
+| `R_q * C_v` | Structural quality becomes reasoning-relevant through viable-context sufficiency. |
+| `A_d * D` | Assembly definition changes which domains can appear in context. |
+| `A_g * D` | Algorithm or version choice can change assembled domain structure. |
+| `V * D` | Persona policy changes which domains matter for the same task. |
+| `L * R` | Source linkage and relationship preservation jointly determine traceability. |
+| `M * D` | Attribution coverage helps only when embodiment-bearing domains are assembled. |
+| `G_b * R` | Blast-radius quality depends on preserved dependency and attribution relationships. |
 
 The research program should estimate interaction effects where the design and sample size permit. Additive weights are hypotheses to test, not assumptions to inherit.
 

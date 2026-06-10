@@ -53,7 +53,7 @@ The public protocol stages are:
 | Stage | Purpose |
 |-------|---------|
 | Context preflight | Declare the task, intended validation authority, required context classes, discovery strategy, and stop or degrade criteria before sampling evidence. |
-| Instrument readiness | Confirm the instrument can run and validate its research configuration before aggregation. |
+| Instrument readiness | Confirm the instrument can run and check its research configuration before aggregation. |
 | Candidate separation | Confirm candidate contexts are distinct and not accidental duplicates. |
 | Task controls | Calibrate positive controls, negative controls, and expected signal. |
 | Packet-backed context | Use versioned candidate context artifacts with explicit identity, scope, health, and metrics. |

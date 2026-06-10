@@ -39,6 +39,20 @@ Common STE research threats include:
 - Local model or hosted model confounds.
 - Overfitting of candidate representations to expected outcomes.
 
+### Self-Reference and Instrumentation Bias
+
+STE research can use STE infrastructure to study STE claims. That self-reference is useful because it makes the research substrate explicit, but it also creates methodological risks:
+
+| Risk | Concern |
+|------|---------|
+| Same-designer bias | The people designing the theory may also design the tasks, substrate, or interpretation. |
+| Instrumentation bias | The tools may measure what STE makes easy to observe rather than what the hypothesis requires. |
+| Substrate bias | Architecture material authored for STE may favor STE-native representations. |
+| Dogfooding bias | Using the system to study itself can hide assumptions that an external reproducer would notice. |
+| Experimenter effects | Study design, task selection, or interpretation can drift toward expected outcomes. |
+
+These are methodological concerns, not reasons to discard the research. Part 14 mitigates them by requiring publication, reproducibility packages, validity analysis, falsification-oriented designs, open questions, explicit authority separation, and promotion boundaries.
+
 ## The Implications
 
 - Benchmark improvement does not automatically mean general capability improvement.
@@ -57,3 +71,5 @@ Validity language is part of evidence quality. It supports [Determinism, Provena
 - Validity threats are part of the evidence record.
 - Internal, external, construct, and statistical validity must be separated.
 - Strong interpretation requires visible limits.
+
+Read next: [Interpretation and Promotion](14-07-interpretation-and-promotion.md) explains how findings remain narrower than the evidence that supports them.

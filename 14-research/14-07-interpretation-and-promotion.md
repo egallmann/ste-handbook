@@ -56,3 +56,5 @@ Conservative interpretation protects governance. It ensures research evidence in
 - Statistical, benchmark, and local signals do not automatically generalize.
 - Negative results can expose weak instruments or weak claims.
 - Promotion to authority surfaces is a separate governance act.
+
+Read next: [Research Library](14-08-research-library.md) explains where research programs, findings, reproductions, and open questions are preserved.

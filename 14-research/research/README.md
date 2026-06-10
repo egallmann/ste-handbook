@@ -54,6 +54,8 @@ Current research programs:
 
 - [MVC](mvc/README.md) - representation ceiling, viable context, substrate completeness, and context-assembly research.
 
+MVC is the first instantiated program in the research index. It is not the definition of the index; future programs should use the same lifecycle structure unless they record a justified exception.
+
 ## The Implications
 
 Each research program must maintain open questions as a living artifact. Open questions include unvalidated assumptions, competing explanations, candidate theories, unresolved validity concerns, and future evidence needs.
@@ -68,3 +70,5 @@ The research index is a handbook publication surface. It does not replace `ste-s
 - Research programs use a common numbered lifecycle structure.
 - Research metadata is informational, not authoritative.
 - Open questions are required living artifacts.
+
+Read next: [MVC Research Program](mvc/README.md) shows the structure applied to the first STE research program.

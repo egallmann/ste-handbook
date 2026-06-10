@@ -48,7 +48,7 @@ related_methodologies:
 
 Metadata supports indexing, cataloging, discovery, and governance. It does not imply authority or maturity.
 
-MVC is the first reference implementation of this structure.
+MVC is the first instantiated research program using this structure. Future programs should be able to sit beside it without changing Part 14 doctrine.
 
 ## The Implications
 
@@ -65,5 +65,7 @@ The research library complements `ste-spec`, `ste-runtime`, and `adr-architectur
 
 - `14-research/research/` is the canonical research publication area.
 - Research programs should follow the same structure.
-- MVC is the first reference implementation.
+- MVC is the first instantiated program, not the definition of Part 14.
 - Research metadata is informational, not authoritative.
+
+Read next: [STE Research Index](research/README.md) lists the current research programs.

@@ -24,8 +24,34 @@ The handbook is the human projection of the STE system. It explains why STE exis
 |------------|-----------------------|
 | `ste-spec` | Defines normative contracts, schemas, invariants, and authority surfaces. |
 | `ste-runtime` | Operationalizes runtime behavior, context assembly, and research harness behavior where applicable. |
-| `adr-architecture-kit` | Authors and validates ADR and Architecture IR substrate used by STE research. |
+| `adr-architecture-kit` | Authors and checks ADR and Architecture IR substrate used by STE research. |
 | `ste-handbook` | Publishes research doctrine, theories, methodologies, findings, reproductions, and open questions in human-readable form. |
+
+### STE as Research Infrastructure
+
+Part 14 treats STE as research infrastructure. STE provides the modeled substrate, traceability, provenance, context assembly, and evidence discipline that make research programs possible. Research then uses those capabilities to evaluate hypotheses.
+
+That relationship is intentionally one-way. Research may produce evidence about STE claims, methods, or artifacts, but the existence of research does not validate STE by itself. Evidence remains evidence until a separate governance process promotes a change into an authority surface.
+
+```mermaid
+flowchart LR
+  STE[STE]
+  IR[Architecture_IR]
+  Trace[Traceability]
+  Prov[Provenance]
+  Context[Context_Assembly]
+  Evidence[Evidence]
+  Programs[Research_Programs]
+  MVC[MVC]
+
+  STE --> IR
+  IR --> Trace
+  Trace --> Prov
+  Prov --> Context
+  Context --> Evidence
+  Evidence --> Programs
+  Programs --> MVC
+```
 
 ## The Model
 
@@ -34,13 +60,17 @@ STE research separates doctrine from research programs:
 ```mermaid
 flowchart LR
   Doctrine[Research_doctrine]
-  Program[Research_program]
+  Program[Research_programs]
+  MVC[MVC]
+  Future[Future_program]
   Method[Methodology]
   Evidence[Evidence]
   Publication[Published_record]
   Authority[Authority_surfaces]
 
   Doctrine -->|governs| Program
+  Program --> MVC
+  Program --> Future
   Program -->|uses| Method
   Method -->|generates| Evidence
   Evidence -->|published_as| Publication
@@ -58,7 +88,7 @@ STE research initially includes five broad study classes:
 | Evolution research | Search, MVC-D evolution, optimization strategies, candidate selection. |
 | Human/AI collaboration research | HSCA, review workflows, augmentation methods, disagreement classification. |
 
-MVC is the first major STE research program. It does not define the purpose of Part 14.
+MVC is the first instantiated STE research program. It uses the research-program structure without defining the purpose of Part 14.
 
 ## The Implications
 
@@ -76,5 +106,7 @@ Research connects to [Evidence](../03-artifacts/03-05-evidence.md), [Traceabilit
 - Part 14 is the STE research record.
 - The handbook publishes research doctrine and research publications.
 - Normative authority remains outside research prose.
-- MVC is the first major research program, not the reason Part 14 exists.
+- MVC is the first instantiated research program, not the reason Part 14 exists.
 - Operational artifacts remain in their owning repositories or reproducibility packages.
+
+Read next: [Research Governance](14-01-research-governance.md) explains how evidence remains separated from authority.

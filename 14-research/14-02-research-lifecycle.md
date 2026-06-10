@@ -28,11 +28,17 @@ The research maturity lifecycle is:
 flowchart TD
   Observation --> Conjecture
   Conjecture --> CandidateTheory[Candidate_Theory]
-  CandidateTheory --> ResearchProgram[Research_Program]
-  ResearchProgram --> ExperimentalEvidence[Experimental_Evidence]
-  ExperimentalEvidence --> PublishedFinding[Published_Finding]
+  CandidateTheory --> CandidateEquation[Candidate_Equation]
+  CandidateEquation --> Hypothesis
+  Hypothesis --> ResearchProgram[Research_Program]
+  ResearchProgram --> Methodology
+  Methodology --> StudyDesign[Experiment_Design]
+  StudyDesign --> Evidence
+  Evidence --> PublishedFinding[Published_Finding]
   PublishedFinding --> ReproducedFinding[Reproduced_Finding]
   ReproducedFinding --> STESupported[STE-Supported_Position]
+  STESupported -.-> PromotionReview[Promotion_Review]
+  PromotionReview -. optional .-> Authority[Authority_Surface]
 ```
 
 | State | Meaning |
@@ -40,8 +46,12 @@ flowchart TD
 | Observation | Something appears to happen in practice. |
 | Conjecture | A possible explanation is proposed. |
 | Candidate Theory | A structured explanation is stable enough to investigate. |
+| Candidate Equation | A formalized variable relationship makes the theory testable. |
+| Hypothesis | A bounded claim is derived from the theory or equation. |
 | Research Program | The theory has a maintained home, methodology, open questions, and publication record. |
-| Experimental Evidence | A study produces bounded evidence under a declared research configuration. |
+| Methodology | The program defines how the claim will be tested and interpreted. |
+| Experiment Design | A specific study design instantiates the methodology. |
+| Evidence | A study produces bounded evidence under a declared research configuration. |
 | Published Finding | Evidence and interpretation are published in the research record. |
 | Reproduced Finding | A finding has been reproduced under an identified configuration. |
 | STE-Supported Position | The research record supports a position strongly enough to be cited as STE research guidance. |
@@ -68,3 +78,5 @@ The lifecycle supports [Traceability](../03-artifacts/03-06-traceability.md) for
 - STE-Supported Position is a research state, not normative doctrine.
 - Multiple findings may accumulate before promotion review.
 - Promotion into authority surfaces requires separate governance.
+
+Read next: [Candidate Theories, Hypotheses, and Equations](14-03-candidate-theories-hypotheses-and-equations.md) explains how observations become testable claims.

@@ -78,3 +78,5 @@ Reproducibility packages are research evidence. They are analogous to [Evidence]
 - Research configurations represent frozen study states.
 - Reproducibility packages should reference research configurations.
 - Research configurations are evidence metadata, not authority.
+
+Read next: [Measurement and Validity](14-06-measurement-and-validity.md) explains how research keeps evidence limits visible.
