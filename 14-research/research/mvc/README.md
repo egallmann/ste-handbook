@@ -18,9 +18,9 @@ MVC research needs a durable home that separates thesis, methodology, experiment
 
 ## The Reframe
 
-MVC is the first major STE research program. It investigates whether structured, viable context assembly can preserve more of the reasoning-relevant architectural world than weaker or more inference-dependent representations under controlled conditions.
+MVC is the first instantiated STE research program. It investigates whether structured, viable context assembly can preserve more of the reasoning-relevant architectural world than weaker or more inference-dependent representations under controlled conditions.
 
-MVC is not the purpose of Part 14. It is the reference implementation of the research program structure.
+MVC is not the purpose of Part 14 and does not define Part 14. It is the first program using the research-program structure that future programs can also use.
 
 ## The Model
 
@@ -29,7 +29,7 @@ program_id: mvc
 title: "Minimally Viable Context and the Representation Ceiling"
 status: "active"
 lead_authors:
-  - "STE maintainers"
+  - "Erik Gallmann"
 created: "2026-06-09"
 last_reviewed: "2026-06-09"
 research_state: "active"
@@ -63,6 +63,8 @@ MVC research connects to the runtime MVC chapter and to the research doctrine in
 
 ## Summary
 
-- MVC is the first STE research program scaffold.
+- MVC is the first instantiated STE research program.
 - MVC is not normative doctrine.
 - MVC research separates thesis, methodology, design, findings, reproductions, and open questions.
+
+Read next: [MVC Thesis Publications](01-thesis/README.md) starts the MVC research-program sequence.
