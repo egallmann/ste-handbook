@@ -33,7 +33,8 @@ flowchart TD
   Hypothesis --> ResearchProgram[Research_Program]
   ResearchProgram --> Methodology
   Methodology --> StudyDesign[Experiment_Design]
-  StudyDesign --> Evidence
+  StudyDesign --> ApparatusValidation[Apparatus_Validation]
+  ApparatusValidation --> Evidence
   Evidence --> PublishedFinding[Published_Finding]
   PublishedFinding --> ReproducedFinding[Reproduced_Finding]
   ReproducedFinding --> STESupported[STE-Supported_Position]
@@ -51,10 +52,13 @@ flowchart TD
 | Research Program | The theory has a maintained home, methodology, open questions, and publication record. |
 | Methodology | The program defines how the claim will be tested and interpreted. |
 | Experiment Design | A specific study design instantiates the methodology. |
+| Apparatus Validation | The harness, instrument, fixtures, schemas, records, report generation, fingerprints, validators, aggregation, configuration identity, and reproducibility plumbing are shown to run correctly and behave against known inputs. |
 | Evidence | A study produces bounded evidence under a declared research configuration. |
 | Published Finding | Evidence and interpretation are published in the research record. |
 | Reproduced Finding | A finding has been reproduced under an identified configuration. |
 | STE-Supported Position | The research record supports a position strongly enough to be cited as STE research guidance. |
+
+Apparatus validation is necessary but not sufficient for evidence. It shows that the research machinery is ready to produce inspectable records; it is not itself evidence about the hypothesis or the scientific construct under study.
 
 A STE-Supported Position is not normative doctrine. It is still research. Promotion to ADRs, contracts, invariants, benchmarks, Kernel admission, or other authority surfaces remains a separate governance process.
 

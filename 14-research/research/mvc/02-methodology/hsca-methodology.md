@@ -81,7 +81,9 @@ No task fixture should claim a known outcome (`Q_fixture`) until full HSCA compl
 | Representation revision | Packet or context updated when substrate is missing or unassembled |
 | Explicit `B_gap` or `U_d` | Authority missing and unresolved cases stay visible instead of forcing closure |
 
-Until these are satisfied, the MVC program may run instrument checks, pilot discrimination, and collection-readiness tests. It must not treat local mechanical scores or author judgment as `Q`.
+Until these are satisfied, the MVC program may run apparatus validation, instrument calibration, pilot discrimination, and collection-readiness tests. It must not treat local mechanical scores or author judgment as `Q`.
+
+The working dependency is conservative: no validated apparatus, no defensible `Q_fixture`; no defensible `Q_fixture`, no benchmark authority; no benchmark authority, no research fitness authority.
 
 ### Current capability boundary
 
@@ -99,8 +101,9 @@ The operational harness outside this handbook currently supports the following H
 | Human validates AI claims against substrate | **Shipped: synthetic/mechanical tier** | Fixture-driven human review artifacts can confirm, reject, or mark synthetic `A_obs` claims uncertain. **Not shipped:** live operator review under blinding controls. |
 | Automated `classify()` | **Shipped: synthetic/mechanical tier** | Synthetic gap scenarios derive `D_cls` from validation artifacts. **Not shipped:** classification over completed live cooperative review or all future gap labels. |
 | Cooperative review driver | **Shipped: synthetic/mechanical tier** | The driver runs fixture-backed bidirectional review and emits tier-marked synthetic lock records with `q_fixture_authority: none` and `fitness_use_allowed: false`. **Not shipped:** real cooperative review, defensible real `Q_fixture` lock, or fitness-use authority. |
+| GA calibration against synthetic `Q` | **Shipped: local-test harness tier** | A calibration-marked synthetic lock can be consumed by GA scoring only when an explicit local-test calibration mode is enabled. This is instrument calibration inside apparatus validation, not a pilot study or controlled experiment. Synthetic calibration artifacts carry `research_evidence_allowed: false` and `publication_allowed: false`. **Not shipped:** fitness use in actual study runs or benchmark answer authority. |
 
-The synthetic/mechanical tier proves apparatus readiness only. It does **not** complete full HSCA, produce defensible real `Q_fixture`, authorize fitness comparison, make live blinded collection shipped, or establish benchmark answer authority.
+The synthetic/mechanical and calibration tiers prove local harness readiness only. They establish apparatus correctness and local instrument calibration, not substrate completeness, benchmark authority, `Q_fixture`, representation quality, or reasoning quality. They do **not** complete full HSCA, produce defensible real `Q_fixture`, authorize research fitness comparison, make live blinded collection shipped, or establish benchmark answer authority. Synthetic outputs are never MVC experiment evidence.
 
 **Operator workflow today:**
 
@@ -109,7 +112,7 @@ The synthetic/mechanical tier proves apparatus readiness only. It does **not** c
 3. The HSCA reporting step aggregates counts into a generation-scoped report.
 4. Interpretation uses those counts as evidence signals, not as answer authority.
 
-Synthetic fixtures now prove the mechanism tier of the bidirectional loop can run over controlled scenarios. They do not prove live blinded collection, live human review, LLM-backed claim inspection, or defensible `Q_fixture` lock-in on real tasks.
+Synthetic fixtures now prove the mechanism tier of the bidirectional loop can run over controlled scenarios. The local-test calibration tier additionally proves that GA scoring can be wired to an explicitly enabled synthetic `Q` without affecting ordinary benchmark runs. Neither tier proves live blinded collection, live human review, LLM-backed claim inspection, or defensible `Q_fixture` lock-in on real tasks.
 
 ### Full protocol still to build
 
@@ -339,11 +342,11 @@ Shared symbols such as reasoning quality (`Q`), representational structural qual
 
 - HSCA protects golden context from latent human memory — the main confound in fixture authoring and in designer/researcher self-evaluation.
 - **Target:** bidirectional cooperative validation — AI checks the human, the human checks the AI — before `Q_fixture` lock-in.
-- **Today:** full HSCA is not implemented. Blinded `H_obs` capture, count-only reports, and a synthetic/mechanical mechanism tier for bidirectional review are shipped.
-- **Blocked until full HSCA:** defensible `Q_fixture`, rubric/gold authority, and fitness comparisons that require known outcomes.
+- **Today:** full HSCA is not implemented. Blinded `H_obs` capture, count-only reports, synthetic/mechanical bidirectional-review machinery, and a local-test GA calibration harness are shipped.
+- **Blocked until full HSCA:** defensible `Q_fixture`, rubric/gold authority, and research fitness comparisons that require known outcomes.
 - HSCA serves upstream fixture authoring and downstream reasoner interpretation; do not collapse the two roles.
 - Human memory does not become architecture authority unless captured through accepted artifacts. AI citations do not become answer authority without adjudication.
-- Publications must say whether HSCA claims rest on synthetic fixtures, live collection only, or completed cooperative review.
+- Publications must not treat synthetic/local-test HSCA outputs as MVC experiment evidence. Harness documentation should distinguish synthetic mechanism tests, local instrument calibration, live collection, and completed cooperative review.
 
 ## Relationship to STE system
 
@@ -363,8 +366,8 @@ Related MVC methodology pages:
 - HSCA stops latent human memory and unchecked AI inference from contaminating golden context and `Q_fixture`.
 - **Upstream:** earn `Q_fixture` only after bidirectional cooperative review. **Downstream:** guard reasoner interpretation when gaps remain.
 - **Full HSCA is not implemented** at the current evidence boundary.
-- **Shipped:** blinded `H_obs`, disagreement schema, count-only reports, synthetic validation, and synthetic/mechanical bidirectional-review machinery.
-- **Not shipped:** live blinded `A_obs`, LLM or human-operated claim review, real cooperative review, defensible real `Q_fixture` lock, and fitness-use authority.
+- **Shipped:** blinded `H_obs`, disagreement schema, count-only reports, synthetic validation, synthetic/mechanical bidirectional-review machinery, and local-test-only GA calibration wiring for instrument calibration.
+- **Not shipped:** live blinded `A_obs`, LLM or human-operated claim review, real cooperative review, defensible real `Q_fixture` lock, and research fitness-use authority.
 - Gap labels are target outputs of substrate comparison; today the mechanism tier derives them only for synthetic scenarios.
 - Future substrate-arm studies may measure answerability under controlled decay and AI-generated question banks.
 - HSCA reports completeness and gaps as evidence, not benchmark or architecture authority.

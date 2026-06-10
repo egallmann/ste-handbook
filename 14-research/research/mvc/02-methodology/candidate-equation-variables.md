@@ -35,6 +35,8 @@ Q_task,persona =
 
 `Q` means reasoning quality for a task and persona. It is a future target variable until answer correctness, answer completeness, source fidelity, hallucination, confidence, and repeated-run stability have suitable evaluation authority.
 
+The observed, derived, and future tiers are also the proxy-versus-construct boundary. Current `Q_local`, `R_q`, `C_v`, and HSCA-derived completeness reports are proxies or report signals unless a research configuration adds separate validation authority. The methodology should not introduce `Q_eval`, `R_packet`, or `R_condition` as new symbols until they name a real measurement distinction; a rubric-backed `Q_eval` may be added later as a future or derived variable only if it becomes distinct from `Q_local`.
+
 ### Observed Variables
 
 Observed variables are directly represented in the research substrate or evidence package:

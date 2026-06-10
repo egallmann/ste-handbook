@@ -27,6 +27,14 @@ Validity should be assessed in at least four dimensions:
 | Construct validity | Did the instrument measure the concept it claims to measure? |
 | Statistical validity | Are comparisons, sample sizes, and uncertainty handled honestly? |
 
+### Apparatus and Instrument Validity
+
+Apparatus validity asks whether the research machinery works as declared: schemas validate the intended records, fixtures exercise expected paths, hashes and fingerprints preserve identity, reports aggregate correctly, validators catch malformed states, and reproducibility plumbing can recreate the study condition.
+
+Instrument validity asks whether the measurement instrument behaves against known inputs before it is used for broader claims. A benchmark, scorer, HSCA mechanism, or calibration run may show local discrimination or calibration while still lacking authority over the scientific construct.
+
+"Mechanism works" does not mean the underlying scientific construct has been validated. Apparatus and instrument checks make later evidence more inspectable; they do not by themselves validate representation quality, reasoning quality, benchmark authority, or any future construct variable.
+
 Common STE research threats include:
 
 - Benchmark contamination.
