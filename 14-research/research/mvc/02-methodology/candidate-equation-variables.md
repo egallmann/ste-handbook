@@ -151,7 +151,7 @@ The research program should estimate interaction effects where the design and sa
 
 ## Relationship to STE system
 
-This page applies the general [candidate theories, hypotheses, and equations](../../../14-03-candidate-theories-hypotheses-and-equations.md) doctrine to the MVC research program. It connects to [MVC methodology](mvc-methodology.md), [Evolution methodology](evolution-methodology.md), and [MVC reproducibility model](../03-experiment-design/mvc-reproducibility-model.md).
+This page applies the general [candidate theories, hypotheses, and equations](../../../14-03-candidate-theories-hypotheses-and-equations.md) doctrine to the MVC research program. It connects to [MVC methodology](mvc-methodology.md), [Evolution methodology v2](evolution-methodology-v2.md), and [MVC reproducibility model](../03-experiment-design/mvc-reproducibility-model.md).
 
 ## Summary
 
