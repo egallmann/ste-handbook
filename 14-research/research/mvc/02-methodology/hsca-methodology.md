@@ -105,6 +105,23 @@ The operational harness outside this handbook currently supports the following H
 
 The synthetic/mechanical and calibration tiers prove local harness readiness only. They establish apparatus correctness and local instrument calibration, not substrate completeness, benchmark authority, `Q_fixture`, representation quality, or reasoning quality. They do **not** complete full HSCA, produce defensible real `Q_fixture`, authorize research fitness comparison, make live blinded collection shipped, or establish benchmark answer authority. Synthetic outputs are never MVC experiment evidence.
 
+### Collection apparatus readiness boundary
+
+HSCA requires a validated collection apparatus before live observations can become research evidence. This is analogous to laboratory instrumentation validation: before an experiment can use observations, the collection instrument must be shown to record the right metadata, preserve traceability, reject invalid inputs, and keep synthetic tests out of research evidence.
+
+The methodology requires four apparatus states, independent of any project-specific gate name or implementation plan:
+
+1. **Apparatus implementation.** The collection system has record shapes, producer paths, isolation controls, recorder-only storage, and validation entry points.
+2. **Apparatus validation.** Synthetic or local-test artifacts validate collection mechanics without creating research evidence.
+3. **Failure-mode validation.** The apparatus demonstrates fail-closed behavior, provenance checks, replayability, leakage detection, quarantine behavior, exclusion semantics, and traceability.
+4. **Apparatus readiness.** The validated apparatus is frozen or otherwise controlled so live evidence collection can begin under a known configuration.
+
+Only after apparatus readiness is established should live HSCA evidence collection begin. Subsequent GA, MVC, RSS, representation-ceiling, substrate-quality, human-performance, and AI-performance studies may consume evidence collected through that apparatus. Apparatus validation does not validate those later studies. It validates only the instrument they depend on.
+
+Apparatus validation is distinct from evidence collection, evidence adjudication, benchmark authority, rubric authority, publication evidence, experimental conclusions, and methodology claims. It does not validate HSCA hypotheses, validate MVC, validate production RSS, materialize MVC-M, invoke kernel admission, introduce authoritative `Q`, implement full GA, establish benchmark authority, establish rubric authority, create publication evidence, or support experimental conclusions.
+
+Synthetic local-test outputs are engineering validation artifacts only. They are not MVC experiment evidence, HSCA evidence, representation-ceiling evidence, benchmark answer authority, rubric authority, publication evidence, adjudication inputs, substrate-quality evidence, human-performance evidence, AI-performance evidence, or research conclusions. Their contribution is confidence that collection machinery can fail closed and preserve traceability before live HSCA evidence is collected.
+
 **Operator workflow today:**
 
 1. Participant answers blinded; operator records `H_obs` via the collection helper.
