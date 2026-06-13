@@ -1,6 +1,6 @@
 # STE Handbook — Table of Contents
 
-Reading order follows Parts 0–13. Links are relative to this repository root.
+Reading order follows Parts 0–14. Links are relative to this repository root.
 
 - [STE manifesto (short thesis)](STE-MANIFESTO.md)
 
@@ -191,6 +191,25 @@ Reading order follows Parts 0–13. Links are relative to this repository root.
 - [Multi-agent systems](13-advanced-topics/13-06-multi-agent-systems.md)
 - [Policy and governance](13-advanced-topics/13-07-policy-and-governance.md)
 - [Safety and alignment](13-advanced-topics/13-08-safety-and-alignment.md)
+
+## Part 14 — Research
+
+- [Research overview](14-research/14-00-research-overview.md)
+- [Research governance](14-research/14-01-research-governance.md)
+- [Research lifecycle](14-research/14-02-research-lifecycle.md)
+- [Candidate theories, hypotheses, and equations](14-research/14-03-candidate-theories-hypotheses-and-equations.md)
+- [Research methodology](14-research/14-04-research-methodology.md)
+- [Evidence and reproducibility](14-research/14-05-evidence-and-reproducibility.md)
+- [Measurement and validity](14-research/14-06-measurement-and-validity.md)
+- [Interpretation and promotion](14-research/14-07-interpretation-and-promotion.md)
+- [Research library](14-research/14-08-research-library.md)
+- [STE research index](14-research/research/README.md)
+- [MVC research program](14-research/research/mvc/README.md)
+- [MVC thesis publications](14-research/research/mvc/01-thesis/README.md)
+- [MVC representation ceiling thesis](14-research/research/mvc/01-thesis/mvc-representation-ceiling-thesis.md)
+- [MVC methodology](14-research/research/mvc/02-methodology/mvc-methodology.md)
+- [MVC candidate equation variables](14-research/research/mvc/02-methodology/candidate-equation-variables.md)
+- [MVC context preflight methodology](14-research/research/mvc/02-methodology/context-preflight-methodology.md)
 
 ## Diagrams (Mermaid)
 
