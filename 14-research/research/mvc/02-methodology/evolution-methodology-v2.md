@@ -41,7 +41,7 @@ Where the current apparatus diverges from this methodology, the divergence is a 
 
 ### Non-goals
 
-This methodology does not define schemas, validators, command-line behavior, file layouts, repository tasks, or engineering acceptance criteria. Those are future realization choices derived from the method.
+This methodology does not define schemas, validators, command-line behavior, file layouts, repository tasks, or engineering acceptance criteria. Those are future realization choices derived from the method. The current conceptual apparatus boundary is summarized in [MVC experimental apparatus](experimental-apparatus.md).
 
 It does not authorize synthetic fixtures, replay artifacts, evolution outputs, implementation reports, or current apparatus behavior as benchmark authority.
 
@@ -131,7 +131,7 @@ It is not intended to prove:
 
 - MVC,
 - HSCA,
-- Representation Sufficiency Scoring (RSS),
+- Runtime State Slicing (RSS),
 - the representation ceiling,
 - substrate quality,
 - human performance superiority,
@@ -652,7 +652,7 @@ The methodology must allow evidence to weaken interpretations.
 | Search behavior | Fitness improves under declared controls. | Search found true representation quality. | Causal proof. | Improvement disappears under replay, holdout, or authority-backed tasks. |
 | Candidate discrimination | Candidate conditions differ on controlled tasks. | General model capability changed. | Human/AI comparison. | Negative controls fail or packet health is invalid. |
 | Research fitness | Candidate scores against `Q_fixture`. | Universal correctness. | Production admission. | HSCA gaps, benchmark authority gaps, or scoring defects remain unresolved. |
-| Representation-ceiling support | Repeated benchmark-backed evidence aligns with thesis. | Thesis proven. | Spec authority. | Weaker representations match or outperform under controlled and adjudicated studies. |
+| Representation-ceiling support | Repeated benchmark-backed evidence aligns with thesis. | Thesis established conclusively. | Spec authority. | Weaker representations match or outperform under controlled and adjudicated studies. |
 | Substrate-quality interpretation | HSCA shows encoded and assembled evidence supports answers. | Substrate is generally superior. | Broad quality rating. | Missing-substrate, present-not-assembled, or memory-only counts remain high. |
 
 #### Conceptual search model
