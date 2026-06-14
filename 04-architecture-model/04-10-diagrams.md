@@ -10,7 +10,7 @@ last_reviewed: "2026-03-26"
 
 ## The Problem
 
-Diagrams are the most seductive **projection** because they look like “the architecture.” In STE, a diagram is **authoritative** only insofar as it **faithfully renders** **Architecture IR** for a chosen slice and notation. When diagrams lead IR, **drift** is guaranteed: the picture wins meetings, the graph lags, **evidence** attaches to the wrong **scope**.
+Diagrams are the most seductive **projection** because they look like “the architecture.” In STE, a diagram is review-grade only insofar as it **faithfully renders** **Architecture IR** for a chosen slice and notation. The diagram does not possess independent authority; its traceability comes from the IR, version, slice, and mapping it renders. When diagrams lead IR, **drift** is guaranteed: the picture wins meetings, the graph lags, **evidence** attaches to the wrong **scope**.
 
 ## The Reframe
 

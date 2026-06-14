@@ -81,6 +81,22 @@ HSCA is concerned with reasoning requirements rather than merely document comple
 
 The methodology deliberately separates authoritative substrate from its realized projection. Multiple candidate representations may legitimately exist over the same authoritative substrate, and the purpose of the experimental apparatus is to investigate those representations without treating any individual realization as authoritative merely because it was generated.
 
+### Concept relationship map
+
+The apparatus uses several related terms that must not collapse into one another:
+
+| Concept | Role in the apparatus | Boundary |
+|---------|-----------------------|----------|
+| **Machine-operable representation of understanding** | Conceptual requirement for a representation that machines can inspect, compare, traverse, or realize under declared rules. | Not a single canonical intermediate representation or storage format. |
+| **Candidate representation** | Experimental object arranged and observed by the apparatus. | Not answer, truth, authority, or knowledge. |
+| **Candidate MVC-D representation** | Candidate representation that proposes what domain-level structure may support a task family. | Not evidence that an actual MVC-D has been discovered. |
+| **Candidate context artifact** | Controlled experimental evidence input used before production MVC pathways are mature enough to study directly. | Not production MVC-S, MVC-M, benchmark authority, or Kernel-admitted context. |
+| **Context packet** | Versioned candidate evidence input that may participate in a realized condition. | Not architecture authority or a complete genome unless the search procedure explicitly treats it as encoded search state. |
+| **Deterministic realization** | Controlled transformation from candidate representation into observed context condition. | Not authority, correctness, or adjudication. |
+| **Genome** | Encoded object manipulated by an evolution or search procedure. | Not inherently a packet collection; packet references are one possible realization. |
+| **Phenotype** | Realized condition evaluated or observed by the apparatus. | Not the same object as the genome unless a declared realization makes that identity explicit. |
+| **MVC** | Task-scoped context made available for reasoning. | Current apparatus-local contexts are not production MVC-M or Kernel-admitted runtime context. |
+
 It also separates the research method from the interfaces that expose it:
 
 - **Substrate** is authoritative structural knowledge.
