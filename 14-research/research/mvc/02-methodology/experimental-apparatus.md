@@ -57,6 +57,21 @@ flowchart TD
 
 The loop is conceptual. It does not say that the apparatus has validated any candidate MVC-D representation. It says the apparatus can make candidate representations, realizations, and observations explicit enough to investigate.
 
+### Apparatus boundaries
+
+The apparatus is useful only if its objects keep their authority status visible. The table below is conceptual; operational contracts, schemas, validators, and research governance remain outside handbook prose.
+
+| Layer | Role in the apparatus | Authority status |
+|-------|-----------------------|------------------|
+| STE substrate | Governed architecture, evidence, linkage, and modeled structure that a study condition may consume. | Authority remains with the owning artifacts, contracts, evidence records, and governance surfaces. |
+| HSCA observations | Completeness, memory, assembly, and authority-gap signals for a task condition. | Observational only. They do not become answer authority by themselves. |
+| Candidate Q package | A bounded package of observations, claim reviews, substrate validations, gaps, and provenance. | Not `Q_fixture`; it is a candidate evidence package awaiting adjudication or blockage. |
+| `Q_fixture` | A known outcome usable by a benchmark or fitness interpretation within its declared boundary. | Requires explicit adjudication, rubric, gold, or equivalent benchmark authority. |
+| Candidate MVC-D representation | Experimental representation object describing what structure may be needed for a task family. | Candidate only. It is not evidence that an actual MVC-D has been discovered. |
+| Deterministic realization | Controlled transformation from candidate representation into an observed context condition. | Not authority, correctness, or adjudication. |
+| `F_sim_v0` | Deterministic local-test lexical apparatus observation. | Not research fitness, not representation quality, and not benchmark authority. |
+| Candidate representation evolution | Local-test mechanics for arranging and observing candidate representations. | Not search-quality evidence and not proof that selected representations are better. |
+
 ### Conceptual objects
 
 **HSCA** is Human-Assisted Substrate Completeness Analysis. It records and classifies whether required information appears to be present in authoritative substrate, absent from substrate, present but unassembled, supplied by memory, or unresolved. HSCA observations are evidence inputs, not answer authority by themselves.
