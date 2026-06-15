@@ -103,7 +103,7 @@ The operational harness outside this handbook currently supports the following H
 | Cooperative review driver | **Shipped: synthetic/mechanical tier** | The driver runs fixture-backed bidirectional review and emits tier-marked synthetic lock records with `q_fixture_authority: none` and `fitness_use_allowed: false`. **Not shipped:** real cooperative review, defensible real `Q_fixture` lock, or fitness-use authority. |
 | GA calibration against synthetic `Q` | **Shipped: local-test harness tier** | A calibration-marked synthetic lock can be consumed by GA scoring only when an explicit local-test calibration mode is enabled. This is instrument calibration inside apparatus validation, not a pilot study or controlled experiment. Synthetic calibration artifacts carry `research_evidence_allowed: false` and `publication_allowed: false`. **Not shipped:** fitness use in actual study runs or benchmark answer authority. |
 
-The synthetic/mechanical and calibration tiers prove local harness readiness only. They establish apparatus correctness and local instrument calibration, not substrate completeness, benchmark authority, `Q_fixture`, representation quality, or reasoning quality. They do **not** complete full HSCA, produce defensible real `Q_fixture`, authorize research fitness comparison, make live blinded collection shipped, or establish benchmark answer authority. Synthetic outputs are never MVC experiment evidence.
+The synthetic/mechanical and calibration tiers demonstrate local harness readiness only. They establish apparatus correctness and local instrument calibration, not substrate completeness, benchmark authority, `Q_fixture`, representation quality, or reasoning quality. They do **not** complete full HSCA, produce defensible real `Q_fixture`, authorize research fitness comparison, make live blinded collection shipped, or establish benchmark answer authority. Synthetic outputs are never MVC experiment evidence.
 
 ### Collection apparatus readiness boundary
 
@@ -122,6 +122,8 @@ Apparatus validation is distinct from evidence collection, evidence adjudication
 
 Synthetic local-test outputs are engineering validation artifacts only. They are not MVC experiment evidence, HSCA evidence, representation-ceiling evidence, benchmark answer authority, rubric authority, publication evidence, adjudication inputs, substrate-quality evidence, human-performance evidence, AI-performance evidence, or research conclusions. Their contribution is confidence that collection machinery can fail closed and preserve traceability before live HSCA evidence is collected.
 
+The broader conceptual instrument is described in [MVC experimental apparatus](experimental-apparatus.md). HSCA supplies the substrate-completeness and memory-confound side of that instrument; it does not make apparatus validation into research validation.
+
 **Operator workflow today:**
 
 1. Participant answers blinded; operator records `H_obs` via the collection helper.
@@ -129,7 +131,7 @@ Synthetic local-test outputs are engineering validation artifacts only. They are
 3. The HSCA reporting step aggregates counts into a generation-scoped report.
 4. Interpretation uses those counts as evidence signals, not as answer authority.
 
-Synthetic fixtures now prove the mechanism tier of the bidirectional loop can run over controlled scenarios. The local-test calibration tier additionally proves that GA scoring can be wired to an explicitly enabled synthetic `Q` without affecting ordinary benchmark runs. Neither tier proves live blinded collection, live human review, LLM-backed claim inspection, or defensible `Q_fixture` lock-in on real tasks.
+Synthetic fixtures demonstrate that the mechanism tier of the bidirectional loop can run over controlled scenarios. The local-test calibration tier additionally demonstrates that GA scoring can be wired to an explicitly enabled synthetic `Q` without affecting ordinary benchmark runs. Neither tier establishes live blinded collection, live human review, LLM-backed claim inspection, or defensible `Q_fixture` lock-in on real tasks.
 
 ### Full protocol still to build
 
@@ -158,6 +160,8 @@ Gap labels name what the cooperative check found — not what a participant gues
 - unresolved evidence — the cooperative check cannot close the case under current authority.
 
 In the target protocol, these labels are **outputs of substrate comparison**. In the current harness, they are **allowed values on disagreement records** awaiting automated derivation.
+
+Weak structural connectivity should not be collapsed into substrate missingness by default. A weak or absent relationship may mean the relationship does not exist, has not been observed, has not been represented, has not been adjudicated, sits outside current substrate scope, or lacks sufficient supporting evidence. HSCA records those possibilities as observational evidence about completeness and reasoning requirements. It does not turn any one observation into answer authority.
 
 ### Memory confound and lossy reasoning
 
@@ -375,6 +379,7 @@ Related MVC methodology pages:
 
 - [MVC methodology](mvc-methodology.md) — research unit, evidence boundary, interpretation rules
 - [Benchmark methodology](benchmark-methodology.md) — discrimination instrument and task controls
+- [MVC experimental apparatus](experimental-apparatus.md) — conceptual apparatus capability and non-claim boundaries
 - [Context preflight methodology](context-preflight-methodology.md) — what context was assembled before evaluation
 - [MVC candidate equation variables](candidate-equation-variables.md) — shared `Q`, `R_q`, `C_v` notation
 

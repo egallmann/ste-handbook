@@ -210,6 +210,7 @@ Reading order follows Parts 0–14. Links are relative to this repository root.
 - [MVC methodology](14-research/research/mvc/02-methodology/mvc-methodology.md)
 - [MVC candidate equation variables](14-research/research/mvc/02-methodology/candidate-equation-variables.md)
 - [MVC context preflight methodology](14-research/research/mvc/02-methodology/context-preflight-methodology.md)
+- [MVC experimental apparatus](14-research/research/mvc/02-methodology/experimental-apparatus.md)
 
 ## Diagrams (Mermaid)
 

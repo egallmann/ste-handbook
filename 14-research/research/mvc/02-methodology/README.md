@@ -36,6 +36,7 @@ Current methodology artifacts:
 - [Context preflight methodology](context-preflight-methodology.md)
 - [HSCA methodology](hsca-methodology.md)
 - [Benchmark methodology](benchmark-methodology.md)
+- [MVC experimental apparatus](experimental-apparatus.md)
 - [Evolution methodology v2](evolution-methodology-v2.md) — current complete evolution/search methodology
 - [Evolution methodology](evolution-methodology.md) — historical scaffold-level methodology
 

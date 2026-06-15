@@ -24,7 +24,7 @@ Typical inputs include **ADRs**, **requirements** and **constraints**, **invaria
 
 ### Stages (conceptual)
 
-A compilation story often includes: **ingest** (read and normalize inputs), **resolve** (identifiers, versions, scopes), **elaborate** (expand patterns into concrete edges), **validate** (metamodel and policy checks), and **emit** (write IR state). Boundaries between validate-here versus validate-in-**Kernel** vary by deployment; conceptually, **compilation** proves “this **intent** set corresponds to a coherent structural model,” while **Kernel** work often combines IR with **evidence** for **admission** and **conformance** claims.
+A compilation story often includes: **ingest** (read and normalize inputs), **resolve** (identifiers, versions, scopes), **elaborate** (expand patterns into concrete edges), **validate** (metamodel and policy checks), and **emit** (write IR state). Boundaries between validate-here versus validate-in-**Kernel** vary by deployment; conceptually, **compilation** establishes that an **intent** set can be transformed into a coherent structural model under the declared compilation rules. It does not by itself prove implementation correctness, governance acceptance, truth beyond those rules, **admission**, or **conformance**; **Kernel** work often combines IR with **evidence** for those claims.
 
 ### Errors and governance
 
