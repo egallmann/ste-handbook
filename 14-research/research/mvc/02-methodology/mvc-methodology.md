@@ -84,6 +84,8 @@ Reasoning Quality =
 
 **Context preflight** records the context assembled before evaluation: task intent, intended validation authority, required context classes, discovery strategy, known unknowns, exclusions, and stop or degrade criteria. Details live in [Context preflight methodology](context-preflight-methodology.md).
 
+**Experimental apparatus** names the conceptual research instrument used to preserve identity, provenance, determinism, and authority boundaries before stronger MVC claims are attempted. Details live in [MVC experimental apparatus](experimental-apparatus.md).
+
 ### Research unit
 
 The research unit is not a response alone. It is:
@@ -178,7 +180,7 @@ If a candidate context artifact performs well, the result supports the experimen
 
 ## Relationship to STE system
 
-This methodology is connected to [MVC Representation Ceiling Thesis](../01-thesis/mvc-representation-ceiling-thesis.md), [MVC candidate equation variables](candidate-equation-variables.md), [Context preflight methodology](context-preflight-methodology.md), [HSCA methodology](hsca-methodology.md), [Benchmark methodology](benchmark-methodology.md), [Evolution methodology v2](evolution-methodology-v2.md), [MVC experimental design](../03-experiment-design/mvc-experimental-design.md), and [MVC reproducibility model](../03-experiment-design/mvc-reproducibility-model.md).
+This methodology is connected to [MVC Representation Ceiling Thesis](../01-thesis/mvc-representation-ceiling-thesis.md), [MVC candidate equation variables](candidate-equation-variables.md), [Context preflight methodology](context-preflight-methodology.md), [HSCA methodology](hsca-methodology.md), [Benchmark methodology](benchmark-methodology.md), [MVC experimental apparatus](experimental-apparatus.md), [Evolution methodology v2](evolution-methodology-v2.md), [MVC experimental design](../03-experiment-design/mvc-experimental-design.md), and [MVC reproducibility model](../03-experiment-design/mvc-reproducibility-model.md).
 
 Runtime candidate boundaries make future production experiments more plausible, but this methodology does not treat them as production RSS or MVC-M unless a research configuration explicitly brings those surfaces under test.
 
