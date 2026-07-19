@@ -3,7 +3,7 @@ title: "STE Research Index"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # STE Research Index
@@ -63,6 +63,8 @@ Each research program must maintain open questions as a living artifact. Open qu
 ## Relationship to STE system
 
 The research index is a handbook publication surface. It does not replace `ste-spec`, `ste-runtime`, `adr-architecture-kit`, or any authority-bearing artifact.
+
+Program-local apparatus publications elaborate [Research Apparatus](../14-04-research-apparatus.md) without replacing Part 14 doctrine.
 
 ## Summary
 

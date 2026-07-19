@@ -3,7 +3,7 @@ title: "MVC Reproducibility Model"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Reproducibility Model
@@ -64,7 +64,7 @@ Before interpreting a result, reviewers should confirm:
 - HSCA claims distinguish synthetic mechanics checks from live observations,
 - substrate affordances and admissible assembly space are declared where substrate comparison is claimed,
 - configuration identity, fingerprint, and drift status are declared,
-- generated outputs remain evidence, not canonical authority.
+- generated outputs and projections remain derived and non-authoritative unless the methodology explicitly admits them; they never become canonical architecture authority,
 
 ## The Implications
 
@@ -77,11 +77,11 @@ Before interpreting a result, reviewers should confirm:
 
 ## Relationship to STE system
 
-The reproducibility model connects to [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md), [MVC experimental design](mvc-experimental-design.md), and [MVC reproductions](../05-reproductions/README.md). It is evidence metadata, not architecture authority.
+The reproducibility model connects to [Evidence and Reproducibility](../../../14-06-evidence-and-reproducibility.md), [MVC experimental design](mvc-experimental-design.md), and [MVC reproductions](../05-reproductions/README.md). It is evidence metadata, not architecture authority.
 
 ## Summary
 
 - MVC reproducibility is organized around research configurations.
 - Generation and fingerprint boundaries protect comparison.
 - Reproducibility packages identify the study condition and publication version.
-- Generated outputs remain evidence, not authority.
+- Generated outputs are derived by default; admission as evidence requires methodology rules, and they still are not authority.

@@ -67,7 +67,7 @@ For a short thesis statement, see **[STE-MANIFESTO.md](STE-MANIFESTO.md)**.
 | 11 | Examples | Walkthroughs linking conversation → ADR → IR → projections → conformance → drift. |
 | 12 | Adoption | Introducing and scaling STE in organizations. |
 | 13 | Advanced topics | Deeper or emergent subjects (semantic graphs, scoring, multi-agent policy, safety framing). |
-| 14 | Research | STE research doctrine, lifecycle, candidate theories, methodology, evidence, interpretation, and the published research library. |
+| 14 | Research | STE research doctrine, Research Apparatus, lifecycle, candidate theories, methodology, evidence, interpretation, and the published research library. |
 
 **Where to start:** Open **[SUMMARY.md](SUMMARY.md)**, read Part 0 and Part 2 for orientation (or follow parts in order), then use the spine above. For an integrated walkthrough, use **[Part 11: Canonical example](11-examples/00-overview.md)** (AI Gateway: intent through drift and correction).
 

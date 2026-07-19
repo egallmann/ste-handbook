@@ -3,7 +3,7 @@ title: "Research Library"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Research Library
@@ -60,6 +60,8 @@ MVC is the first instantiated research program using this structure. Future prog
 ## Relationship to STE system
 
 The research library complements `ste-spec`, `ste-runtime`, and `adr-architecture-kit`. It explains and preserves research; it does not define contracts, runtime behavior, or ADR authority.
+
+Program-local apparatus publications elaborate [Research Apparatus](14-04-research-apparatus.md) without replacing Part 14 doctrine.
 
 ## Summary
 

@@ -3,35 +3,47 @@ title: "MVC Harness Architecture"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Harness Architecture
 
-This page is a public conceptual description of the research harness boundary. It is not an operational guide and does not publish implementation internals.
+## The Problem
 
-## Why this matters
+Readers need a public boundary for the MVC research harness without turning the handbook into an operations manual or result archive.
 
-Readers need to understand where the harness fits without treating the handbook as an operations manual or raw result archive.
+## The Reframe
 
-## Planned coverage
+The harness is the operational embodiment of the MVC Research Apparatus. Handbook prose states the conceptual boundary only. Owning repositories hold schemas, executors, and raw artifacts.
 
-The public conceptual architecture may describe:
+## The Model
 
-- Research configuration.
-- Candidate representation condition.
-- Study task or scenario boundary.
-- Reasoner or participant condition.
-- Scoring or observation method.
-- Evidence package.
-- Findings publication.
+The public conceptual harness boundary includes:
 
-Non-goals:
+| Concern | In handbook scope | Out of handbook scope |
+|---------|-------------------|------------------------|
+| Research configuration identity | Yes, as evidence metadata | Executable config stores |
+| Candidate representation condition | Yes, conceptually | Packet binaries and private mappings |
+| Task or scenario boundary | Yes, as controls | Task-bank contents |
+| Reasoner or participant condition | Yes, as study factor | Reasoner identity details |
+| Scoring or observation method | Yes, as method class | Scoring implementations |
+| Sealed collection and review roles | Yes, as protocol roles | Operator runbooks and scripts |
+| Evidence package | Yes, as publication object | Generated execution records and continuation state |
 
-- No task-bank contents.
-- No scoring implementation.
-- No generated execution records.
-- No continuation state.
-- No reasoner identity details.
-- No operational commands.
-- No unpublished results.
+The harness may validate apparatus mechanics, support sealed collection, assist review, and enforce research exclusion. It does not create `Q_fixture`, research fitness, Kernel admission, or production MVC-M by running successfully.
+
+## The Implications
+
+- Harness success is instrument evidence, not hypothesis support.
+- Public architecture descriptions must remain configuration-level, not command-level.
+- Missing live closure records can coexist with existing mechanical closure contracts; both facts should stay visible in methodology pages, not here as inventory.
+
+## Relationship to STE system
+
+This page supports [MVC experimental apparatus](../02-methodology/experimental-apparatus.md) and Part 14 [Research Apparatus](../../../14-04-research-apparatus.md). It does not replace runtime or specification authority.
+
+## Summary
+
+- The handbook describes the harness boundary, not operations.
+- Configuration, roles, and evidence packages are in scope; raw results and commands are not.
+- Harness behavior does not grant benchmark or production authority.

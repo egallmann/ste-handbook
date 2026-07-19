@@ -3,7 +3,7 @@ title: "HSCA Methodology"
 status: draft
 maturity: L2
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # HSCA Methodology
@@ -25,13 +25,13 @@ It is a **cooperative** protocol, not a human-versus-AI contest and not a taxono
 1. **Human → substrate** — A blinded human answers from permitted evidence only. An AI reviewer checks whether each substantive claim is **present in the substrate**, cites the source when it is, and calls out gaps when it is not.
 2. **Human → AI** — The same human reviews the AI answer against permitted evidence. The human rejects unsupported AI claims, confirms sourced claims, and records where the AI inferred beyond substrate.
 
-Neither direction alone is enough. AI-only validation still hallucinates structure. Human-only validation still smuggles in memory. **Full HSCA requires both checks** before a known outcome (`Q_fixture`) or golden context can be locked.
+Neither direction alone is enough. AI-only validation still hallucinates structure. Human-only validation still smuggles in memory. **Full HSCA requires both checks** before a substrate-closed `Q` or golden context can be locked. `Q_fixture` requires a later, separate benchmark adjudication.
 
-Through that bidirectional loop, the study derives a defensible `Q_fixture` and a defensible golden context: a representation that actually carries what a good answer requires, with both human and AI answers audited against substrate.
+Through that bidirectional loop, the study may derive a substrate-closed `Q`: a complete answer whose material claims are supported by the permitted authoritative substrate at a named evidence boundary. `Q` remains distinct from `Q_fixture`. A later benchmark or fitness workflow may promote a closed `Q` to `Q_fixture` only through its own explicit adjudication and authority process.
 
 HSCA is not answer authority by itself. It is experimental evidence that makes memory confounds visible before they infect benchmarks.
 
-The target protocol is bidirectionally cooperative. The current evidence boundary supports collection and reporting readiness only. **Full HSCA is not implemented.** `Q_fixture`, rubric authority, and meaningful fitness comparison must wait until both validation directions exist in apparatus.
+The target protocol is bidirectionally cooperative. The current evidence boundary supports live sealed collection and operator-assisted review entry. **Full HSCA is not complete.** Mechanical closure and substrate-closed `Q` promotion contracts exist, but there are no live closure or live `Q` records yet. `Q_fixture`, rubric or gold benchmark adjudication, and research fitness remain absent. Collection provenance must not be read as completeness or correctness.
 
 ## The Model
 
@@ -41,12 +41,27 @@ HSCA serves two distinct jobs. They share vocabulary but run at different times:
 
 | Role | When | Question |
 |------|------|----------|
-| **Upstream — golden context** | Before a task fixture or known outcome (`Q_fixture`) is locked | Does this representation actually encode what a good answer requires, or did memory fill the gaps? |
+| **Upstream — golden context** | Before substrate-closed `Q`, and before any later `Q_fixture` adjudication | Does this representation actually encode what a good answer requires, or did memory fill the gaps? |
 | **Downstream — interpretation guard** | After a reasoner or benchmark run | Did this result fail because of the model, or because substrate, assembly, or memory confounded the condition? |
 
 Upstream HSCA is how fixture authoring earns defensible `Q`. Downstream HSCA stops post-hoc scores from being read as model evidence when the golden context was never validated.
 
 Both roles need the same gap vocabulary. Only upstream currently has the strongest claim on the cooperative human-plus-AI substrate check.
+
+### Observation modes and stream boundaries
+
+HSCA distinguishes the observation condition from the participant type. Each sealed answer records one explicit mode:
+
+| Observation mode | Meaning |
+|------------------|---------|
+| `human_memory_only` | A human answers without substrate access. The answer records recall as an observation; it does not grant recalled material substrate authority. |
+| `human_evidence_assisted` | A human answers with access only to the declared permitted substrate. The answer remains observational until its claims are mapped and adjudicated. |
+| `ai_original_substrate` | An AI answers from the declared permitted substrate under the original collection ordering and isolation controls. |
+| `ai_repaired_substrate` | An AI produces a new append-only observation after a defect in the original AI input version, boundary, or execution condition is corrected. It links to, but never replaces, the original observation. |
+
+Each human and AI observation stream has its own immutable observation boundary. That boundary identifies the question, permitted evidence, substrate snapshot, execution condition, and sealed answer without exposing the other stream before both independent observations are complete. The later closure-review boundary may include both streams and their mappings; it does not retroactively change either observation condition.
+
+A repaired AI observation may be used in closure only with its repair lineage and changed execution condition made explicit. It cannot inherit or assert the chronology of an original AI observation, including an original AI-before-human ordering that the repaired execution did not satisfy. The original and repaired observations remain separately addressable research artifacts.
 
 ### Cooperative validation loop (target)
 
@@ -54,22 +69,101 @@ The core loop is bidirectional review, not classification by intuition:
 
 ```text
 task + permitted substrate
-  → human blinded answer (H_obs)
-  → AI blinded answer (A_obs)
-  → AI validates human: each H_obs claim present in substrate? cite or gap
-  → human validates AI: each A_obs claim present in substrate? confirm or reject
-  → gap record (D_cls) for unsupported claims in either direction
+  → AI blinded answer sealed before human exposure (A_obs)
+  → human blinded answer (H_obs) under sealed collection controls
+  → independently decompose both answers into exact claim spans
+  → independently map each claim to permitted substrate
+  → normalize semantically related claims without discarding qualifiers
+  → AI validates human mappings; human validates AI mappings
+  → adjudicate every claim and preserve unsupported or incorrect claims
+  → derive required answer elements independently from substrate
+  → construct a candidate authoritative answer from supported claims
+  → map every candidate-answer sentence back to adjudicated claims
+  → validate correctness, completeness, authority, and reproducibility
+  → reciprocal AI review approves the candidate and closure package hashes
+  → human reviews the same package and locks the final candidate and package hashes
+  → mechanically validate and promote the bounded answer to Q
   → revise context or packet (not only rewrite answer prose)
-  → repeat until both answers are substrate-sourced or gaps are explicit
+  → repeat when any material gap or rejection remains
 ```
+
+Sealed collection uses AI-before-human ordering; reciprocal review later remains bidirectional.
 
 Blinding matters because a participant who has already seen model scores, gold strings, or rubric outcomes can unconsciously supply the missing substrate from memory.
 
 This loop is the **north-star protocol**. It is not implemented in the benchmark harness yet.
 
-### `Q_fixture` prerequisite
+### Closure records and review projection
 
-No task fixture should claim a known outcome (`Q_fixture`) until full HSCA completes for that task at the active evidence boundary.
+The canonical closure evidence is an append-only record set, not a mutable table. It preserves:
+
+- the two unchanged sealed answers;
+- exact claim spans and hashes for each answer;
+- normalization relations between semantically related claims;
+- claim-to-substrate mappings;
+- reciprocal reviewer judgments;
+- adjudicated claim status;
+- independently derived required answer elements;
+- candidate-answer versions and sentence-level traceability;
+- validation results, reviewer approvals, and closure lineage.
+
+A claim matrix is the primary human review projection over those records:
+
+| Claim ID | Normalized claim | Relation | Human claim | Human status | AI claim | AI status | Authoritative source | Authority class | Manifest status | Locator | Authoritative verbiage | Adjudication | Evidence confidence |
+|----------|------------------|----------|-------------|--------------|----------|-----------|----------------------|-----------------|-----------------|---------|-------------------------|--------------|---------------------|
+
+Exact wording need not match for two claims to be related. Normalization must record whether claims are equivalent, overlap, subsume one another, conflict, or remain unrelated. It must preserve modality, scope, conditions, exceptions, and authority qualifiers. A normalized claim is an alignment object, not a replacement for either original claim.
+
+Status values are `supported`, `qualified`, `unsupported`, `incorrect`, `incomplete`, `not_applicable`, and `unresolved`. Unsupported and incorrect claims remain part of the record. Their preserved existence does not block closure after valid adjudication, provided they are excluded from the final answer or corrected there. Shared agreement does not convert an unsupported claim into a supported one.
+
+The matrix cannot establish completeness by itself because both answers may omit the same required proposition. A separate completeness ledger derives required answer elements from authoritative substrate independently of either answer:
+
+| Required answer element | Authoritative source and verbiage | Human coverage | AI coverage | Final-answer coverage | Status |
+|-------------------------|-----------------------------------|----------------|-------------|-----------------------|--------|
+
+### Source discovery and claim authority
+
+Derived discovery surfaces may accelerate traversal without becoming claim authority. A source-locator registry can resolve entity identity, repository, path, source hash, provenance class, and graph snapshot. An owning ADR or artifact manifest can establish membership, lifecycle status, supersession, and declared ownership. Neither surface substitutes for the resolved source artifact.
+
+The required traversal is:
+
+```text
+source-locator registry
+  → owning artifact manifest
+  → resolved authoritative artifact
+  → exact supporting or contradicting verbiage
+  → claim mapping and reviewer judgment
+```
+
+Every supported or qualified mapping records artifact identity, authority class, manifest status, snapshot or version, source hash where available, precise locator, short exact verbiage, mapping rationale, and evidence confidence. Reviewers must verify that the cited language entails the claim at its stated scope. Discovery metadata may prove where an artifact came from; it does not prove the claim the artifact is cited to support.
+
+### Adjudication and answer construction
+
+Adjudication and authoritative-answer construction are separate artifacts. Adjudication decides which propositions are supported, qualified, unsupported, incorrect, incomplete, not applicable, or unresolved. Construction assembles the smallest complete answer warranted by the adjudicated claim set and the independent completeness ledger.
+
+Every sentence in the candidate authoritative answer must trace to one or more adjudicated claims and their source mappings. The candidate answer is then decomposed and mapped again. Human and AI reviewers approve support, correctness, completeness, and authority boundaries against the identical candidate-answer hash. Rejection creates a new immutable closure round; it does not overwrite prior reasoning.
+
+The reciprocal AI review precedes the final human lock. That lock binds the exact candidate-answer hash and the already reviewed closure-package hash. Once the lock exists, promotion is a deterministic validation and publication operation: it performs no further semantic interpretation and invokes no semantic model. Any semantic change requires a new append-only candidate round, reciprocal review, and human lock.
+
+### Validation profile
+
+Closure reports separate dimensions rather than blending them into one compensatory score:
+
+- observation-claim coverage;
+- required-answer-element coverage;
+- evidentiary sufficiency;
+- claim-to-source mapping confidence;
+- authority validity;
+- citation reproducibility;
+- normalization validity;
+- final-answer sentence traceability;
+- reciprocal-review completion.
+
+If a headline completeness confidence is required, it is the minimum of the required dimensions, not their average. A numeric value never overrides a hard blocker. Unclassified material claims, absent required elements, unverifiable citations, invalid authority, unresolved contamination, incomplete reciprocal review, unapproved answer hashes, or unsupported claims carried into the final answer block closure regardless of other scores.
+
+### `Q` and `Q_fixture` prerequisites
+
+No question should be promoted to substrate-closed `Q` until full HSCA completes for that task at the active evidence boundary. No task fixture should claim a benchmark known outcome (`Q_fixture`) until `Q` exists and a separate benchmark adjudication grants that authority.
 
 | Prerequisite | Why |
 |--------------|-----|
@@ -80,30 +174,44 @@ No task fixture should claim a known outcome (`Q_fixture`) until full HSCA compl
 | `D_cls` from comparison | Gaps are structural outputs, not unchecked judgment |
 | Representation revision | Packet or context updated when substrate is missing or unassembled |
 | Explicit `B_gap` or `U_d` | Authority missing and unresolved cases stay visible instead of forcing closure |
+| Complete claim matrix | Every material human and AI claim remains visible and classified |
+| Independent completeness ledger | Shared omissions cannot pass as a complete answer |
+| Revalidated candidate answer | Every final sentence traces to adjudicated authoritative claims |
+| Reciprocal review and final human lock | AI review and human approval bind the same bounded answer and closure package without rewriting sealed observations |
 
-Until these are satisfied, the MVC program may run apparatus validation, instrument calibration, pilot discrimination, and collection-readiness tests. It must not treat local mechanical scores or author judgment as `Q`.
+Until these are satisfied, the MVC program may run apparatus validation, instrument calibration, and collection-readiness tests. Local discrimination under a fixed reasoner may be reported as instrument sensitivity only. It must not be treated as research fitness, and it must not treat local mechanical scores, source discovery, reviewer consensus, or author judgment as `Q` or `Q_fixture`.
 
-The working dependency is conservative: no validated apparatus, no defensible `Q_fixture`; no defensible `Q_fixture`, no benchmark authority; no benchmark authority, no research fitness authority.
+Promotion to `Q` additionally requires:
+
+- valid sealed-answer identities and hashes;
+- an immutable, replayable evidence boundary;
+- complete claim decomposition for both answers;
+- reviewed normalization relations;
+- classification of every material claim;
+- reproducible evidence for every supported or qualified claim;
+- preserved unsupported and incorrect claims;
+- registry resolution, owning-manifest checks, source-hash verification, and supersession checks where those surfaces exist;
+- independent enumeration and coverage of required answer elements;
+- sentence-level traceability for the final answer;
+- final-answer revalidation;
+- reciprocal AI review followed by a final human lock over the same answer and closure-package hashes;
+- no unresolved material authority, provenance, contamination, snapshot, or completeness blocker;
+- an explicit authority ceiling that denies automatic `Q_fixture`, benchmark, fitness, publication, architecture, runtime, or production authority.
+
+The working dependency is conservative: no validated apparatus, no defensible `Q`; no defensible `Q`, no eligible input to `Q_fixture` adjudication; no adjudicated `Q_fixture`, no benchmark authority; no benchmark authority, no research fitness authority.
 
 ### Current capability boundary
 
-The operational harness outside this handbook currently supports the following HSCA capabilities:
+Handbook status uses durable capability classes, not dated run inventories:
 
-| Capability | Status | Notes |
-|------------|--------|-------|
-| Blinded human observation capture | **Shipped** | The collection workflow writes append-only `H_obs` records with `memory_origin`, `evidence_sources`, blinding flag, fingerprints, and `authority_effect: observational_only`. |
-| Disagreement record schema | **Shipped** | The disagreement record shape defines `D_cls`, `D_adj`, and observational-only boundary. |
-| Completeness report aggregation | **Shipped** | The reporting workflow counts existing `classification` values into `C_sub`, `C_asm`, `C_mem`, `C_rep`, and collection readiness fields. |
-| Synthetic fixture validation | **Shipped** | Synthetic fixtures exercise record shape, unresolved preservation, and report math. |
-| Validator integration | **Shipped** | The validation layer checks HSCA manifest policy, record shape, generation/fingerprint alignment, and report fields. |
-| Dedicated HSCA `A_obs` path | **Shipped: synthetic/mechanical tier** | Fixture-backed `A_obs` records can be paired with synthetic `H_obs`. **Not shipped:** live blinded `A_obs` collection or reasoner invocation under the cooperative protocol. |
-| AI validates human claims against substrate | **Shipped: synthetic/mechanical tier** | A deterministic mechanism checks synthetic `H_obs` claims against permitted packet substrate and emits claim-level validation artifacts. **Not shipped:** LLM-backed or human-operated review over live observations. |
-| Human validates AI claims against substrate | **Shipped: synthetic/mechanical tier** | Fixture-driven human review artifacts can confirm, reject, or mark synthetic `A_obs` claims uncertain. **Not shipped:** live operator review under blinding controls. |
-| Automated `classify()` | **Shipped: synthetic/mechanical tier** | Synthetic gap scenarios derive `D_cls` from validation artifacts. **Not shipped:** classification over completed live cooperative review or all future gap labels. |
-| Cooperative review driver | **Shipped: synthetic/mechanical tier** | The driver runs fixture-backed bidirectional review and emits tier-marked synthetic lock records with `q_fixture_authority: none` and `fitness_use_allowed: false`. **Not shipped:** real cooperative review, defensible real `Q_fixture` lock, or fitness-use authority. |
-| GA calibration against synthetic `Q` | **Shipped: local-test harness tier** | A calibration-marked synthetic lock can be consumed by GA scoring only when an explicit local-test calibration mode is enabled. This is instrument calibration inside apparatus validation, not a pilot study or controlled experiment. Synthetic calibration artifacts carry `research_evidence_allowed: false` and `publication_allowed: false`. **Not shipped:** fitness use in actual study runs or benchmark answer authority. |
+| Capability class | Status | Meaning |
+|------------------|--------|---------|
+| Live sealed paired collection | Present | Independent AI-before-human sealing, append-only locks, isolation, contamination accounting; observational only. |
+| Operator-assisted semantic review | Partial | Live review-workspace entry and operator-assisted decomposition/mapping exist; apparatus-integrated durable recording of live review remains incomplete; synthetic rehearsal still used for some builders. |
+| Mechanical closure and `Q` promotion contracts | Present without live records | Deterministic gates and promotion contracts exist; no live closure or live substrate-closed `Q` records yet. |
+| Benchmark adjudication to `Q_fixture` | Absent | No rubric/gold adjudication path; no research fitness authority. |
 
-The synthetic/mechanical and calibration tiers demonstrate local harness readiness only. They establish apparatus correctness and local instrument calibration, not substrate completeness, benchmark authority, `Q_fixture`, representation quality, or reasoning quality. They do **not** complete full HSCA, produce defensible real `Q_fixture`, authorize research fitness comparison, make live blinded collection shipped, or establish benchmark answer authority. Synthetic outputs are never MVC experiment evidence.
+Live sealed collection establishes provenance and ordering. It does not establish substrate completeness or answer correctness. Synthetic review establishes wiring and fail-closed behavior. It does not complete live reciprocal review or grant `Q_fixture`.
 
 ### Collection apparatus readiness boundary
 
@@ -126,23 +234,25 @@ The broader conceptual instrument is described in [MVC experimental apparatus](e
 
 **Operator workflow today:**
 
-1. Participant answers blinded; operator records `H_obs` via the collection helper.
-2. A separate step authors or updates a disagreement record with `D_cls` (manual or out-of-band review today).
-3. The HSCA reporting step aggregates counts into a generation-scoped report.
-4. Interpretation uses those counts as evidence signals, not as answer authority.
+1. Prepare a sealed question bank and immutable question identities.
+2. Import and lock independent substrate-grounded AI answers before human exposure.
+3. Present one participant surface at a time and lock the human memory-only answer verbatim.
+4. Validate collection ordering, isolation, hashes, deviations, contamination fields, and paired-answer completeness.
+5. Regenerate the durable generation-scoped report.
+6. Interpret collection counts as readiness and provenance evidence, not answer authority.
+7. Use the operator closure protocol for independent decomposition, mapping, normalization, completeness audit, candidate construction, traceability validation, and reciprocal review.
+8. Stop before durable `Q` promotion until apparatus-integrated durable recording of live review is available.
 
-Synthetic fixtures demonstrate that the mechanism tier of the bidirectional loop can run over controlled scenarios. The local-test calibration tier additionally demonstrates that GA scoring can be wired to an explicitly enabled synthetic `Q` without affecting ordinary benchmark runs. Neither tier establishes live blinded collection, live human review, LLM-backed claim inspection, or defensible `Q_fixture` lock-in on real tasks.
+### Remaining live closure capabilities
 
-### Full protocol still to build
+Live paired observation collection and operator-assisted closure orchestration are shipped. The semantic steps below are executable through the operator protocol; the remaining harness work is to embody them as durable, schema-governed apparatus records:
 
-The synthetic/mechanical mechanism tier is not full HSCA. The remaining harness work is **full live HSCA** — bidirectional cooperative validation over live observations, not more collection plumbing alone:
-
-1. **Blinded `A_obs`** — Record an AI answer under the same permitted-evidence boundary as `H_obs`, without exposing scores or gold to either side prematurely.
-2. **AI validates human** — For each substantive claim in `H_obs`, verify presence in permitted substrate. Emit present, absent, or cite `type:id`.
-3. **Human validates AI** — For each substantive claim in `A_obs`, the human confirms or rejects against permitted substrate and records rationale. Unsupported AI inference becomes a first-class gap, not silent acceptance.
-4. **Gap write** — Produce `D_cls` from both comparisons plus `M_org` and `E_src`, not from either participant's unchecked judgment.
-5. **Revision hook** — When gaps are substrate-missing or present-not-assembled, require packet/context revision before fixture lock-in.
-6. **Fixture lock** — Record `Q_fixture` only when **both** `H_obs` and `A_obs` are substrate-sourced, gaps are explicit, or `B_gap` blocks progress.
+1. **Durable closure record model** — Represent exact claims, mapper outputs, normalization relations, source mappings, reciprocal judgments, completeness ledger, candidate-answer rounds, sentence traceability, validation dimensions, approvals, and blockers as append-only records.
+2. **Apparatus-owned writers** — Accept operator-authored semantic inputs without generating synthetic content, preserve immutable lineage, and write only under ignored live review roots.
+3. **Process-graph validation** — Verify question, run, snapshot, lock, source, claim, relation, adjudication, candidate, approval, and predecessor identities across the complete closure lifecycle.
+4. **Durable reporting and replay** — Aggregate live closure status without converting absent review into zero gaps; reproduce matrix and candidate-answer lineage from frozen inputs.
+5. **Atomic Q promotion** — Write bounded substrate-closed `Q` only when the mechanical gate and both reviewer approvals reference the same answer hash and every material blocker is resolved.
+6. **Fixture adjudication** — Promote `Q` to `Q_fixture` only through a separate benchmark-authority process. HSCA closure alone does not grant fitness use.
 
 Until those steps exist, the handbook equations below describe **target notation**. Reports already implement the aggregation half.
 
@@ -266,10 +376,10 @@ B_gap   = benchmark authority gaps
 U_d     = unresolved disagreements
 ```
 
-**Golden-context and known outcome.** HSCA is how a task fixture earns its `Q`. The bidirectional cooperative loop above is the authoring path; the equation is the compact form:
+**Golden-context and known outcome.** HSCA is how a question earns a substrate-closed `Q`. The bidirectional cooperative loop above is the authoring path; the equation is the compact form:
 
 ```text
-Q_fixture(task, generation) =
+Q(task, generation, substrate_snapshot) =
   cooperative_review(
     task,
     draft context or packet,
@@ -279,14 +389,15 @@ Q_fixture(task, generation) =
     validate_human_checks_AI(A_obs, substrate),
     D_cls
   )
-  until H_obs and A_obs claims are substrate-sourced
-     OR gaps are explicit and unresolved (U_d)
-     OR authority is missing (B_gap)
+  until every material claim is adjudicated,
+        every required answer element is covered,
+        every final sentence is traceable,
+        and both reviewers approve the same answer hash
 ```
 
-`Q_fixture` is blocked until both validation directions complete. A gold answer string stored without that review is not a known outcome; it is unchecked author judgment.
+`Q` is blocked while material gaps, missing authority, incomplete provenance, contamination, or reciprocal-review failures remain. Explicit unresolved gaps remain valid HSCA outcomes, but material unresolved gaps block `Q` rather than being forced closed. A gold answer string stored without this review is unchecked author judgment. `Q_fixture` remains a separate downstream adjudication.
 
-**Link to reasoner evaluation.** After fixture lock-in, HSCA reports still guard interpretation of reasoner results:
+**Link to reasoner evaluation.** After any later `Q_fixture` adjudication, HSCA reports still guard interpretation of reasoner results:
 
 ```text
 Interpret(Q_local or Q_reasoner) requires
@@ -314,7 +425,7 @@ Each arm holds the question bank and evaluation protocol constant while changing
 Use HSCA evidence conservatively:
 
 - If `H_obs` cites knowledge with no matching `evidence_sources` entry in permitted substrate, treat it as a **memory-only signal** until the cooperative check closes or refutes it.
-- If `C_sub` or `C_mem` counts are high for a task used in fitness comparison, **do not lock `Q_fixture`** for that task until upstream review completes.
+- If `C_sub` or `C_mem` counts are high for a task used in fitness comparison, **do not close `Q` or promote `Q_fixture`** for that task until upstream review completes.
 - If reasoner scores move but HSCA shows assembly or substrate gaps, investigate **fixture and packet quality** before interpreting representation effects.
 - If `U_d` or `B_gap` is non-zero, preserve the uncertainty in publications. Unresolved and authority-missing are valid outcomes, not defects to hide.
 - A positive reasoner result does not override a negative HSCA completeness signal. They measure different things.
@@ -362,9 +473,8 @@ Shared symbols such as reasoning quality (`Q`), representational structural qual
 ## The Implications
 
 - HSCA protects golden context from latent human memory — the main confound in fixture authoring and in designer/researcher self-evaluation.
-- **Target:** bidirectional cooperative validation — AI checks the human, the human checks the AI — before `Q_fixture` lock-in.
-- **Today:** full HSCA is not implemented. Blinded `H_obs` capture, count-only reports, synthetic/mechanical bidirectional-review machinery, and a local-test GA calibration harness are shipped.
-- **Blocked until full HSCA:** defensible `Q_fixture`, rubric/gold authority, and research fitness comparisons that require known outcomes.
+- **Target:** bidirectional cooperative validation, claim adjudication, independent completeness checking, and reciprocal approval before bounded `Q` closure.
+- **Blocked until full HSCA:** substrate-closed `Q`; `Q_fixture`, rubric/gold authority, and research fitness remain blocked until their separate downstream adjudication also completes.
 - HSCA serves upstream fixture authoring and downstream reasoner interpretation; do not collapse the two roles.
 - Human memory does not become architecture authority unless captured through accepted artifacts. AI citations do not become answer authority without adjudication.
 - Publications must not treat synthetic/local-test HSCA outputs as MVC experiment evidence. Harness documentation should distinguish synthetic mechanism tests, local instrument calibration, live collection, and completed cooperative review.
@@ -385,11 +495,14 @@ Related MVC methodology pages:
 
 ## Summary
 
-- HSCA stops latent human memory and unchecked AI inference from contaminating golden context and `Q_fixture`.
-- **Upstream:** earn `Q_fixture` only after bidirectional cooperative review. **Downstream:** guard reasoner interpretation when gaps remain.
-- **Full HSCA is not implemented** at the current evidence boundary.
-- **Shipped:** blinded `H_obs`, disagreement schema, count-only reports, synthetic validation, synthetic/mechanical bidirectional-review machinery, and local-test-only GA calibration wiring for instrument calibration.
-- **Not shipped:** live blinded `A_obs`, LLM or human-operated claim review, real cooperative review, defensible real `Q_fixture` lock, and research fitness-use authority.
+- HSCA stops latent human memory, unchecked AI inference, normalization loss, and shared omission from contaminating golden context.
+- **Upstream:** earn substrate-closed `Q` only after claim-level evidence review, independent completeness checking, answer revalidation, and reciprocal approval. **Downstream:** separately adjudicate any `Q_fixture` and guard reasoner interpretation when gaps remain.
+- A final human Q lock follows reciprocal AI review and ends semantic work for that round; deterministic validation and publication alone may follow it.
+- **Full HSCA is not complete** at the current evidence boundary.
+- **Shipped — live:** sealed question identity, independent substrate-grounded AI prelock, human memory-only capture, strict ordering, paired answer locks, deviation and contamination accounting, and durable collection reporting.
+- **Shipped — operator-assisted:** independent claim mapping, qualified source traversal, normalization, completeness audit, candidate-answer review, matrix and traceability validation, and mechanical promotion gating.
+- **Not shipped — apparatus integration:** durable closure records and writers, complete process-graph validation, closure reporting and replay, reciprocal approval records, atomic substrate-closed `Q`, separate real `Q_fixture` promotion, and research fitness-use authority.
+- Zero live gap counts currently mean no live closure records have been persisted through the apparatus, not demonstrated substrate completeness.
 - Gap labels are target outputs of substrate comparison; today the mechanism tier derives them only for synthetic scenarios.
 - Future substrate-arm studies may measure answerability under controlled decay and AI-generated question banks.
 - HSCA reports completeness and gaps as evidence, not benchmark or architecture authority.

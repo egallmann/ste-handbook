@@ -3,7 +3,7 @@ title: "MVC Reproductions"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Reproductions
@@ -31,6 +31,15 @@ Reproductions must identify what they attempted to reproduce, under which resear
 - Failed reproductions remain part of the research record.
 - Reproductions must identify the research configuration being reproduced.
 - Reproductions should identify the finding and publication version under test.
+
+### Disallowed as reproductions
+
+The following must not be recorded as reproductions of research findings:
+
+- re-running synthetic fixtures or local-test loops,
+- replay-hash checks presented as finding reproduction,
+- harness readiness demonstrations,
+- any package that cannot cite the finding identity, research configuration, and authority markers of the original claim.
 
 ## Relationship to STE system
 

@@ -3,7 +3,7 @@ title: "Research Lifecycle"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Research Lifecycle
@@ -22,7 +22,11 @@ Those are different dimensions.
 
 ## The Model
 
-The research maturity lifecycle is:
+Research maturity has two axes that must not be collapsed.
+
+### Claim maturity
+
+Claim maturity describes how far a knowledge claim has moved from observation toward a STE-supported research position.
 
 ```mermaid
 flowchart TD
@@ -33,8 +37,7 @@ flowchart TD
   Hypothesis --> ResearchProgram[Research_Program]
   ResearchProgram --> Methodology
   Methodology --> StudyDesign[Experiment_Design]
-  StudyDesign --> ApparatusValidation[Apparatus_Validation]
-  ApparatusValidation --> Evidence
+  StudyDesign --> Evidence
   Evidence --> PublishedFinding[Published_Finding]
   PublishedFinding --> ReproducedFinding[Reproduced_Finding]
   ReproducedFinding --> STESupported[STE-Supported_Position]
@@ -52,15 +55,40 @@ flowchart TD
 | Research Program | The theory has a maintained home, methodology, open questions, and publication record. |
 | Methodology | The program defines how the claim will be tested and interpreted. |
 | Experiment Design | A specific study design instantiates the methodology. |
-| Apparatus Validation | The harness, instrument, fixtures, schemas, records, report generation, fingerprints, validators, aggregation, configuration identity, and reproducibility plumbing are shown to run correctly and behave against known inputs. |
 | Evidence | A study produces bounded evidence under a declared research configuration. |
 | Published Finding | Evidence and interpretation are published in the research record. |
 | Reproduced Finding | A finding has been reproduced under an identified configuration. |
 | STE-Supported Position | The research record supports a position strongly enough to be cited as STE research guidance. |
 
-Apparatus validation is necessary but not sufficient for evidence. It shows that the research machinery is ready to produce inspectable records; it is not itself evidence about the hypothesis or the scientific construct under study.
+### Instrument maturity
 
-A STE-Supported Position is not normative doctrine. It is still research. Promotion to ADRs, contracts, invariants, benchmarks, Kernel admission, or other authority surfaces remains a separate governance process.
+Instrument maturity describes whether the **Research Apparatus** is validated and ready. It is independent of claim maturity.
+
+```mermaid
+flowchart TD
+  Impl[Apparatus_implementation]
+  Val[Apparatus_validation]
+  Fail[Failure_mode_validation]
+  Ready[Apparatus_readiness]
+  Live[Live_collection_or_study_execution]
+
+  Impl --> Val
+  Val --> Fail
+  Fail --> Ready
+  Ready --> Live
+```
+
+| State | Meaning |
+|-------|---------|
+| Apparatus implementation | Record shapes, producers, isolation, and validation entry points exist for the instrument. |
+| Apparatus validation | Synthetic or local-test artifacts show mechanics behave as declared. |
+| Failure-mode validation | Fail-closed exclusion, leakage detection, quarantine, and traceability behave as declared. |
+| Apparatus readiness | The validated instrument is controlled so live collection or study execution may begin. |
+| Live collection or study execution | Observations are gathered under the ready configuration; they are still not automatically admitted evidence. |
+
+Apparatus validation is necessary but not sufficient for evidence. It shows the research machinery can produce inspectable records; it is not itself evidence about the hypothesis or the scientific construct under study. A claim may be mature on paper while the instrument is unready; an instrument may be ready while claims remain conjectural.
+
+A STE-Supported Position is not normative doctrine. Promotion to ADRs, contracts, invariants, benchmarks, Kernel admission, or other authority surfaces remains a separate governance process.
 
 Multiple findings may exist before any promotion review occurs. They may agree, conflict, or remain inconclusive.
 
