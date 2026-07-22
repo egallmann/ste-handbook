@@ -31,7 +31,7 @@ Through that bidirectional loop, the study may derive a substrate-closed `Q`: a 
 
 HSCA is not answer authority by itself. It is experimental evidence that makes memory confounds visible before they infect benchmarks.
 
-The target protocol is bidirectionally cooperative. The current evidence boundary supports live sealed collection and operator-assisted review entry. **Full HSCA is not complete.** Mechanical closure and substrate-closed `Q` promotion contracts exist, but there are no live closure or live `Q` records yet. `Q_fixture`, rubric or gold benchmark adjudication, and research fitness remain absent. Collection provenance must not be read as completeness or correctness.
+The target protocol is bidirectionally cooperative. The current evidence boundary supports live sealed collection, durable claim-level closure, and bounded substrate-closed `Q` promotion. B1Q1 and B1Q2 have completed that closure protocol for their named evidence boundaries. This does not establish that all questions or batches are closed. `Q_fixture`, rubric or gold benchmark adjudication, and research fitness remain absent. Collection provenance must not be read as completeness or correctness, and a closed `Q` must not be read beyond its declared boundary or authority ceiling.
 
 ## The Model
 
@@ -207,8 +207,8 @@ Handbook status uses durable capability classes, not dated run inventories:
 | Capability class | Status | Meaning |
 |------------------|--------|---------|
 | Live sealed paired collection | Present | Independent AI-before-human sealing, append-only locks, isolation, contamination accounting; observational only. |
-| Operator-assisted semantic review | Partial | Live review-workspace entry and operator-assisted decomposition/mapping exist; apparatus-integrated durable recording of live review remains incomplete; synthetic rehearsal still used for some builders. |
-| Mechanical closure and `Q` promotion contracts | Present without live records | Deterministic gates and promotion contracts exist; no live closure or live substrate-closed `Q` records yet. |
+| Apparatus-integrated semantic review | Present for closed questions | Independent mappings, normalization, adjudication, completeness, candidate traceability, reciprocal review, and final human lock are durably recorded for B1Q1 and B1Q2. Other questions remain open until they complete the same protocol. |
+| Mechanical closure and `Q` promotion contracts | Present with live records | Deterministic gates, bounded promotion, replay, and repository-admitted evidence exist. B1Q1 and B1Q2 have immutable substrate-closed `Q` records. |
 | Benchmark adjudication to `Q_fixture` | Absent | No rubric/gold adjudication path; no research fitness authority. |
 
 Live sealed collection establishes provenance and ordering. It does not establish substrate completeness or answer correctness. Synthetic review establishes wiring and fail-closed behavior. It does not complete live reciprocal review or grant `Q_fixture`.
@@ -241,20 +241,21 @@ The broader conceptual instrument is described in [MVC experimental apparatus](e
 5. Regenerate the durable generation-scoped report.
 6. Interpret collection counts as readiness and provenance evidence, not answer authority.
 7. Use the operator closure protocol for independent decomposition, mapping, normalization, completeness audit, candidate construction, traceability validation, and reciprocal review.
-8. Stop before durable `Q` promotion until apparatus-integrated durable recording of live review is available.
+8. After reciprocal review and explicit human approval bind the same candidate and package hashes, record the final lock, promote the bounded `Q` mechanically, and admit the exact promotion dependency closure as tracked research evidence.
 
-### Remaining live closure capabilities
+### Implemented closure capabilities and remaining boundary
 
-Live paired observation collection and operator-assisted closure orchestration are shipped. The semantic steps below are executable through the operator protocol; the remaining harness work is to embody them as durable, schema-governed apparatus records:
+Live paired observation collection and apparatus-integrated closure are shipped. The realization includes:
 
-1. **Durable closure record model** — Represent exact claims, mapper outputs, normalization relations, source mappings, reciprocal judgments, completeness ledger, candidate-answer rounds, sentence traceability, validation dimensions, approvals, and blockers as append-only records.
-2. **Apparatus-owned writers** — Accept operator-authored semantic inputs without generating synthetic content, preserve immutable lineage, and write only under ignored live review roots.
-3. **Process-graph validation** — Verify question, run, snapshot, lock, source, claim, relation, adjudication, candidate, approval, and predecessor identities across the complete closure lifecycle.
-4. **Durable reporting and replay** — Aggregate live closure status without converting absent review into zero gaps; reproduce matrix and candidate-answer lineage from frozen inputs.
-5. **Atomic Q promotion** — Write bounded substrate-closed `Q` only when the mechanical gate and both reviewer approvals reference the same answer hash and every material blocker is resolved.
-6. **Fixture adjudication** — Promote `Q` to `Q_fixture` only through a separate benchmark-authority process. HSCA closure alone does not grant fitness use.
+1. **Durable closure records** — Exact claims, independent mapper outputs, normalization relations, evidence mappings, reciprocal judgments, completeness requirements, candidate-answer rounds, clause traceability, validation dimensions, approvals, and blockers are append-only records.
+2. **Apparatus-owned writers** — Semantic workers return bounded proposals; deterministic writers bind identities, hashes, evidence metadata, lifecycle state, and immutable phase commits.
+3. **Process-graph validation** — Question, run, snapshot, lock, source, claim, relation, adjudication, candidate, approval, and predecessor identities are verified across the closure lifecycle.
+4. **Durable reporting and replay** — Closure state and human review surfaces are projections from immutable records. Mechanical replay does not silently reproduce or replace semantic judgments.
+5. **Atomic Q promotion** — A bounded substrate-closed `Q` is written only when the mechanical gate and both reviewer approvals reference the same answer and package hashes and every material blocker is resolved.
+6. **Repository admission** — After promotion, the exact immutable `Q`, promotion commit, closure dependency graph, selected observations, question identity, and snapshot lineage are admitted as tracked evidence through a hash-bound manifest. Unpromoted live collection remains ignored and isolated.
+7. **Closure after-action review and Q lineage** — Append-only AAR records may evaluate apparatus cost, failures, and schema pressure without changing the closed evidence. Later answers supersede, coexist with, or withdraw earlier `Q` records through explicit relationships rather than mutation.
 
-Until those steps exist, the handbook equations below describe **target notation**. Reports already implement the aggregation half.
+The remaining boundary is separate **fixture adjudication**: promotion from `Q` to `Q_fixture` requires its own benchmark-authority process. HSCA closure alone does not grant fitness use. The equations below remain methodological notation; their operational records are governed by the apparatus contracts rather than duplicated here.
 
 ### Gap labels
 
@@ -474,7 +475,7 @@ Shared symbols such as reasoning quality (`Q`), representational structural qual
 
 - HSCA protects golden context from latent human memory — the main confound in fixture authoring and in designer/researcher self-evaluation.
 - **Target:** bidirectional cooperative validation, claim adjudication, independent completeness checking, and reciprocal approval before bounded `Q` closure.
-- **Blocked until full HSCA:** substrate-closed `Q`; `Q_fixture`, rubric/gold authority, and research fitness remain blocked until their separate downstream adjudication also completes.
+- **Closed per question:** substrate-closed `Q` is available only for a question whose claim-level review, completeness validation, reciprocal approval, and promotion gates have completed. `Q_fixture`, rubric/gold authority, and research fitness remain blocked until their separate downstream adjudication also completes.
 - HSCA serves upstream fixture authoring and downstream reasoner interpretation; do not collapse the two roles.
 - Human memory does not become architecture authority unless captured through accepted artifacts. AI citations do not become answer authority without adjudication.
 - Publications must not treat synthetic/local-test HSCA outputs as MVC experiment evidence. Harness documentation should distinguish synthetic mechanism tests, local instrument calibration, live collection, and completed cooperative review.
@@ -498,12 +499,12 @@ Related MVC methodology pages:
 - HSCA stops latent human memory, unchecked AI inference, normalization loss, and shared omission from contaminating golden context.
 - **Upstream:** earn substrate-closed `Q` only after claim-level evidence review, independent completeness checking, answer revalidation, and reciprocal approval. **Downstream:** separately adjudicate any `Q_fixture` and guard reasoner interpretation when gaps remain.
 - A final human Q lock follows reciprocal AI review and ends semantic work for that round; deterministic validation and publication alone may follow it.
-- **Full HSCA is not complete** at the current evidence boundary.
+- **Full HSCA is complete for B1Q1 and B1Q2 at their declared evidence boundaries; it is not complete for the remaining question set.**
 - **Shipped — live:** sealed question identity, independent substrate-grounded AI prelock, human memory-only capture, strict ordering, paired answer locks, deviation and contamination accounting, and durable collection reporting.
-- **Shipped — operator-assisted:** independent claim mapping, qualified source traversal, normalization, completeness audit, candidate-answer review, matrix and traceability validation, and mechanical promotion gating.
-- **Not shipped — apparatus integration:** durable closure records and writers, complete process-graph validation, closure reporting and replay, reciprocal approval records, atomic substrate-closed `Q`, separate real `Q_fixture` promotion, and research fitness-use authority.
-- Zero live gap counts currently mean no live closure records have been persisted through the apparatus, not demonstrated substrate completeness.
-- Gap labels are target outputs of substrate comparison; today the mechanism tier derives them only for synthetic scenarios.
+- **Shipped — apparatus-integrated closure:** independent claim mapping, qualified source traversal, normalization, completeness audit, candidate-answer review, matrix and traceability validation, reciprocal approval, deterministic locking and promotion, repository admission, replay, and bounded substrate-closed `Q` records.
+- **Not shipped — downstream authority:** separate real `Q_fixture` promotion, benchmark or rubric authority, and research fitness-use authority.
+- A zero gap count is meaningful only within a completed closure record and its named evidence boundary; an absent closure record is missing evidence, not zero gaps.
+- Gap labels are outputs of substrate comparison. Synthetic scenarios validate mechanisms; live closed-question records supply research-apparatus evidence within their declared authority ceilings.
 - Future substrate-arm studies may measure answerability under controlled decay and AI-generated question banks.
 - HSCA reports completeness and gaps as evidence, not benchmark or architecture authority.
 
