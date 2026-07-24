@@ -14,4 +14,5 @@ Agents are force multipliers with risk. STE needs a disciplined framing aligned 
 
 ## Relationship to other chapters
 
-- Multi-agent systems (advanced) ([chapter](../13-advanced-topics/13-06-multi-agent-systems.md))
+- [Human in the loop](../09-human-interface/09-07-human-in-the-loop.md) (oversight; safety/alignment deep dive not yet published in Part 13)
+- [Rule activation](10-02-rule-activation.md)

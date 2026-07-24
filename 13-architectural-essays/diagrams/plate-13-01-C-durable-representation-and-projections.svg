@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-01-C plate-desc-13-01-C">
+  <title id="plate-title-13-01-C">Plate 13-01-C: Durable representation and selective projections</title>
+  <desc id="plate-desc-13-01-C">
+    Center hub: durable representation of architectural state. Six surrounding
+    projections: decision record, diagram, executive, engineer, auditor, and
+    computational bounded representation.
+  </desc>
+
+  <defs>
+    <marker id="arrow-out-13-01-C"
+            viewBox="0 0 8 8"
+            refX="8"
+            refY="4"
+            markerWidth="8"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3F3F46"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #FAFAFA; stroke: #D4D4D8; stroke-width: 1; }
+      .hub { fill: #E8F0FE; stroke: #1D4ED8; stroke-width: 3; }
+      .proj { fill: #F4F4F5; stroke: #52525B; stroke-width: 1.5; }
+      .proj-comp { fill: #FEF3C7; stroke: #B45309; stroke-width: 2; }
+      .connector { fill: none; stroke: #3F3F46; stroke-width: 2; }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #18181B; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #71717A; }
+      .t-hub-title { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #1D4ED8; }
+      .t-title { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #18181B; }
+      .t-body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #3F3F46; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #18181B; }
+      .t-foot2 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #52525B; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .hub { fill: #12253F; stroke: #58A6FF; }
+        .proj { fill: #21262D; stroke: #8B949E; }
+        .proj-comp { fill: #3D2E12; stroke: #D29922; }
+        .connector { stroke: #C9D1D9; }
+        #arrow-out-13-01-C path { fill: #C9D1D9; }
+        .t-header { fill: #F0F6FC; }
+        .t-plate-id { fill: #8B949E; }
+        .t-hub-title { fill: #58A6FF; }
+        .t-title { fill: #F0F6FC; }
+        .t-body { fill: #C9D1D9; }
+        .t-foot1 { fill: #F0F6FC; }
+        .t-foot2 { fill: #8B949E; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+  <rect class="band" x="32" y="32" width="1216" height="56"/>
+
+  <!-- Connectors (under cards where ends meet boxes) -->
+  <line class="connector" x1="640" y1="280" x2="640" y2="192" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="420" y1="330" x2="356" y2="278" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="860" y1="330" x2="924" y2="278" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="420" y1="400" x2="356" y2="452" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="860" y1="400" x2="924" y2="452" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="640" y1="432" x2="640" y2="492" marker-end="url(#arrow-out-13-01-C)"/>
+
+  <rect class="proj" x="460" y="112" width="360" height="72" rx="6"/>
+  <rect class="proj" x="48" y="200" width="300" height="88" rx="6"/>
+  <rect class="proj" x="932" y="200" width="300" height="88" rx="6"/>
+  <rect class="proj" x="48" y="460" width="300" height="88" rx="6"/>
+  <rect class="proj" x="932" y="460" width="300" height="88" rx="6"/>
+  <rect class="proj-comp" x="420" y="500" width="440" height="80" rx="6"/>
+  <rect class="hub" x="420" y="280" width="440" height="152" rx="8"/>
+
+  <rect class="band" x="32" y="616" width="1216" height="72"/>
+
+  <text class="t-title" x="474" y="140">Decision record</text>
+  <text class="t-body" x="474" y="164">Narrative of what was decided and why</text>
+
+  <text class="t-title" x="62" y="228">Diagram</text>
+  <text class="t-body" x="62" y="252">Selective view</text>
+  <text class="t-body" x="62" y="272">Traceable to the elements it depicts</text>
+
+  <text class="t-title" x="946" y="228">Executive projection</text>
+  <text class="t-body" x="946" y="252">Capabilities, risk,</text>
+  <text class="t-body" x="946" y="272">and unresolved choices</text>
+
+  <text class="t-hub-title" x="436" y="312">Durable representation of architectural state</text>
+  <text class="t-body" x="436" y="336">Identity, relationships, authority, provenance,</text>
+  <text class="t-body" x="436" y="356">scope, and lifecycle - explicit enough to survive</text>
+  <text class="t-body" x="436" y="376">changes in presentation</text>
+
+  <text class="t-title" x="62" y="488">Engineer projection</text>
+  <text class="t-body" x="62" y="512">Governing intent, constraints,</text>
+  <text class="t-body" x="62" y="532">affected components, evidence obligations</text>
+
+  <text class="t-title" x="946" y="488">Auditor projection</text>
+  <text class="t-body" x="946" y="512">Obligation to decision to</text>
+  <text class="t-body" x="946" y="532">embodiment to evidence</text>
+
+  <text class="t-title" x="436" y="528">Computational projection</text>
+  <text class="t-body" x="436" y="552">Bounded identities and relationships required for a task</text>
+
+  <text class="t-header" x="48" y="68">Durable representation and selective projections</text>
+  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-C</text>
+
+  <text class="t-foot1" x="640" y="646" text-anchor="middle">Projections are selective views, not demotions of documents and diagrams.</text>
+  <text class="t-foot2" x="640" y="668" text-anchor="middle">One universal artifact optimized for both narrative and machine traversal serves neither well.</text>
+</svg>

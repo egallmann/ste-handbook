@@ -3,7 +3,7 @@ title: "Interpretation and Promotion"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Interpretation and Promotion
@@ -20,7 +20,25 @@ Promotion is separate. A finding may motivate a proposal to change ADRs, contrac
 
 ## The Model
 
-Interpretation rules:
+### From observation to authority
+
+```mermaid
+flowchart LR
+  Observation --> AdmittedEvidence[Admitted_evidence]
+  AdmittedEvidence --> Finding
+  Finding --> Proposal[Promotion_proposal]
+  Proposal --> Authority[Authority_surface]
+```
+
+| Stage | Meaning |
+|-------|---------|
+| Observation | Recorded under a declared condition; not yet evidence. |
+| Admitted evidence | Observation accepted under methodology with provenance and bounds. |
+| Finding | Published interpretation within those bounds. |
+| Promotion proposal | Optional request to change an authority surface. |
+| Authority surface | ADR, contract, invariant, benchmark adjudication, Kernel admission, or equivalent — changed only by its own governance process. |
+
+Interpretation rules still constrain every arrow:
 
 - A statistically significant result does not imply production viability.
 - A benchmark improvement does not imply general capability improvement.
@@ -57,4 +75,4 @@ Conservative interpretation protects governance. It ensures research evidence in
 - Negative results can expose weak instruments or weak claims.
 - Promotion to authority surfaces is a separate governance act.
 
-Read next: [Research Library](14-08-research-library.md) explains where research programs, findings, reproductions, and open questions are preserved.
+Read next: [Research Library](14-09-research-library.md) explains where research programs, findings, reproductions, and open questions are preserved.

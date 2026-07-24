@@ -3,7 +3,7 @@ title: "MVC Findings"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Findings
@@ -32,6 +32,17 @@ Findings must preserve positive, negative, inconclusive, and superseded outcomes
 - Superseded findings must remain discoverable.
 - Positive findings receive no special authority.
 - Findings should identify the research configuration and publication version they derive from.
+
+### Disallowed as findings
+
+The following must not be published as MVC findings:
+
+- apparatus validation or calibration successes,
+- synthetic or local-test outputs, including lexical screening scores,
+- sealed collection counts without admitted evidence analysis,
+- mechanical closure contract existence without live closure records,
+- scores lacking `Q_fixture` (or equivalent) where correctness or fitness is claimed,
+- projections or generated views treated as canonical authority.
 
 ## Relationship to STE system
 

@@ -37,6 +37,9 @@ REPO-STRUCTURE-NOTES.md
 authoring-notes/
 draft-notes/
 
+# Part 13 demoted drafts (not published manuscript)
+13-architectural-essays/unpublished/
+
 # Python / editor noise if anything is run locally
 **/__pycache__/
 *.py[cod]

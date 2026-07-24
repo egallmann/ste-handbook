@@ -3,7 +3,7 @@ title: "Research Governance"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Research Governance
@@ -19,6 +19,8 @@ Research artifacts also look precise: scores, fixtures, observations, reports, a
 Research governance is control over knowledge creation. It gives research the same discipline STE expects from architecture work: explicit intent, versioned artifacts, evidence retention, bounded interpretation, and governed promotion.
 
 Research generates evidence. It does not define authority.
+
+The [Research Apparatus](14-04-research-apparatus.md) is governed as an instrument: validation and readiness are engineering controls, not authority creation. Observations become admissible evidence only under methodology; findings may motivate promotion proposals; authority surfaces change only through their own governance processes.
 
 ## The Model
 
@@ -38,6 +40,8 @@ flowchart LR
   Proposal -->|reviewed_under_governance| Authority
   Evidence -.->|does_not_directly_define| Authority
 ```
+
+*Research evidence: admitted under methodology.*
 
 Research does not define:
 

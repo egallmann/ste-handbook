@@ -3,7 +3,7 @@ title: "Research Methodology"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Research Methodology
@@ -26,6 +26,7 @@ An STE methodology should state:
 - The candidate equation or mechanism under test.
 - The study class and method.
 - The research configuration.
+- Apparatus validation and readiness requirements for the study class.
 - Controls and baselines.
 - Evidence generation process.
 - Measurement and validity strategy.
@@ -40,16 +41,22 @@ flowchart LR
   Claim[Claim]
   Method[Methodology]
   Design[Experiment_Design]
+  Val[Apparatus_validation]
+  Ready[Apparatus_readiness]
   Evidence[Evidence]
   Finding[Finding]
   Reproduction[Reproduction]
 
   Claim --> Method
   Method --> Design
-  Design --> Evidence
+  Design --> Val
+  Val --> Ready
+  Ready --> Evidence
   Evidence --> Finding
   Finding --> Reproduction
 ```
+
+Methodology states how claims are tested. The Research Apparatus supplies the instrument boundary. Apparatus validation and readiness are methodological prerequisites for admitting study observations as evidence; they are not findings about the claim.
 
 ## The Implications
 
@@ -70,4 +77,4 @@ Research methodology connects handbook research to operational repositories with
 - Methodology should be versioned and tied to research configurations.
 - Operational implementation remains outside handbook prose.
 
-Read next: [Evidence and Reproducibility](14-05-evidence-and-reproducibility.md) explains how study conditions are preserved for review.
+Read next: [Evidence and Reproducibility](14-06-evidence-and-reproducibility.md) explains how study conditions are preserved for review.
