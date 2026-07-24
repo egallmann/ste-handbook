@@ -3,7 +3,7 @@ title: "Measurement and Validity"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Measurement and Validity
@@ -80,4 +80,4 @@ Validity language is part of evidence quality. It supports [Determinism, Provena
 - Internal, external, construct, and statistical validity must be separated.
 - Strong interpretation requires visible limits.
 
-Read next: [Interpretation and Promotion](14-07-interpretation-and-promotion.md) explains how findings remain narrower than the evidence that supports them.
+Read next: [Interpretation and Promotion](14-08-interpretation-and-promotion.md) explains how findings remain narrower than the evidence that supports them.

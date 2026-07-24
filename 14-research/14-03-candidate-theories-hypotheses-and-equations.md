@@ -3,7 +3,7 @@ title: "Candidate Theories, Hypotheses, and Equations"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Candidate Theories, Hypotheses, and Equations
@@ -115,4 +115,4 @@ MVC applies this doctrine in its [candidate equation variables](research/mvc/02-
 - Candidate equations formalize relationships before evaluation.
 - Hypotheses and study designs should derive from the theory, not from the desired outcome.
 
-Read next: [Research Methodology](14-04-research-methodology.md) explains how testable claims become studies.
+Read next: [Research Apparatus](14-04-research-apparatus.md) explains the instrument boundary that must exist before testable claims become studies.

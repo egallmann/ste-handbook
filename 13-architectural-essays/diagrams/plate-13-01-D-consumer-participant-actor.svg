@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-01-D plate-desc-13-01-D">
+  <title id="plate-title-13-01-D">Plate 13-01-D: Consumer, participant, actor</title>
+  <desc id="plate-desc-13-01-D">
+    Left to right: machine consumer of closed products, computational participant
+    that remains advisory, governance gate of organizational permission and authority
+    boundaries, then actor permitted to alter architectural or operational state.
+  </desc>
+
+  <defs>
+    <marker id="arrow-right-13-01-D"
+            viewBox="0 0 8 8"
+            refX="8"
+            refY="4"
+            markerWidth="8"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3F3F46"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #FAFAFA; stroke: #D4D4D8; stroke-width: 1; }
+      .consumer { fill: #ECFDF5; stroke: #047857; stroke-width: 2; }
+      .participant { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .gate { fill: #E8F0FE; stroke: #1D4ED8; stroke-width: 3; }
+      .actor { fill: #FEE2E2; stroke: #B91C1C; stroke-width: 2.5; }
+      .connector { fill: none; stroke: #3F3F46; stroke-width: 2; }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #18181B; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #71717A; }
+      .t-role { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #18181B; }
+      .t-body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #3F3F46; }
+      .t-gate-title { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #1D4ED8; }
+      .t-gate-body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #1E3A8A; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #18181B; }
+      .t-foot2 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #52525B; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .consumer { fill: #12261E; stroke: #3FB950; }
+        .participant { fill: #3D2E12; stroke: #D29922; }
+        .gate { fill: #12253F; stroke: #58A6FF; }
+        .actor { fill: #3D1515; stroke: #F85149; }
+        .connector { stroke: #C9D1D9; }
+        #arrow-right-13-01-D path { fill: #C9D1D9; }
+        .t-header { fill: #F0F6FC; }
+        .t-plate-id { fill: #8B949E; }
+        .t-role { fill: #F0F6FC; }
+        .t-body { fill: #C9D1D9; }
+        .t-gate-title { fill: #58A6FF; }
+        .t-gate-body { fill: #79B8FF; }
+        .t-foot1 { fill: #F0F6FC; }
+        .t-foot2 { fill: #8B949E; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+  <rect class="band" x="32" y="32" width="1216" height="56"/>
+
+  <rect class="consumer" x="48" y="168" width="300" height="360" rx="8"/>
+  <rect class="participant" x="400" y="168" width="300" height="360" rx="8"/>
+  <rect class="actor" x="924" y="168" width="300" height="360" rx="8"/>
+  <rect class="gate" x="740" y="268" width="140" height="160" rx="8"/>
+
+  <rect class="band" x="32" y="616" width="1216" height="72"/>
+
+  <line class="connector" x1="348" y1="348" x2="392" y2="348" marker-end="url(#arrow-right-13-01-D)"/>
+  <line class="connector" x1="700" y1="348" x2="732" y2="348" marker-end="url(#arrow-right-13-01-D)"/>
+  <line class="connector" x1="880" y1="348" x2="916" y2="348" marker-end="url(#arrow-right-13-01-D)"/>
+
+  <text class="t-role" x="62" y="196">Machine consumer</text>
+  <text class="t-body" x="62" y="224">Closed-enough products for a</text>
+  <text class="t-body" x="62" y="244">bounded operation</text>
+  <text class="t-body" x="62" y="272">Compilers, deployers, policy engines</text>
+  <text class="t-body" x="62" y="296">Formal tools, MBSE, executable architecture</text>
+  <text class="t-body" x="62" y="320">Execute, check, generate, compose, simulate</text>
+  <text class="t-body" x="62" y="344">Does not invent organizational intent</text>
+
+  <text class="t-role" x="414" y="196">Computational participant</text>
+  <text class="t-body" x="414" y="224">May consume formal architecture</text>
+  <text class="t-body" x="414" y="244">when present</text>
+  <text class="t-body" x="414" y="272">May help before closed representation</text>
+  <text class="t-body" x="414" y="292">exists</text>
+  <text class="t-body" x="414" y="320">Orientation, assembly, analysis,</text>
+  <text class="t-body" x="414" y="340">validation, recommendation</text>
+  <text class="t-body" x="414" y="368">Remains advisory</text>
+
+  <text class="t-gate-title" x="810" y="320" text-anchor="middle">Authority</text>
+  <text class="t-gate-title" x="810" y="338" text-anchor="middle">boundaries</text>
+  <text class="t-gate-body" x="810" y="366" text-anchor="middle">Organizational</text>
+  <text class="t-gate-body" x="810" y="384" text-anchor="middle">permission</text>
+
+  <text class="t-role" x="938" y="196">Actor</text>
+  <text class="t-body" x="938" y="224">Permitted to alter architectural</text>
+  <text class="t-body" x="938" y="244">or operational state</text>
+  <text class="t-body" x="938" y="272">Inside explicit authority</text>
+  <text class="t-body" x="938" y="292">boundaries</text>
+  <text class="t-body" x="938" y="320">Granted by the organization</text>
+  <text class="t-body" x="938" y="344">Not a capability upgrade</text>
+
+  <text class="t-header" x="48" y="68">Consumer, participant, actor</text>
+  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-D</text>
+
+  <text class="t-foot1" x="640" y="646" text-anchor="middle">Participation remains advisory. Actor status is organizational permission to alter state.</text>
+  <text class="t-foot2" x="640" y="668" text-anchor="middle">The gate is a governance distinction, not a claim of greater intelligence or autonomy.</text>
+</svg>

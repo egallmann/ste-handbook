@@ -3,7 +3,7 @@ title: "Evidence and Reproducibility"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Evidence and Reproducibility
@@ -44,6 +44,19 @@ configuration_drift_status:
 
 The exact fields vary by research program. The principle is stable: the configuration should preserve the study condition well enough that a future reader can distinguish a theory effect from a substrate change, task change, scorer change, model change, assembly change, or configuration drift.
 
+### Conceptual reproducibility controls
+
+Beyond field lists, reproducibility depends on instrument controls:
+
+| Control | Role | Limit |
+|---------|------|-------|
+| Sealed identity | Questions, answers, packages, and configurations remain addressable and tamper-evident under the study boundary. | Identity is not correctness. |
+| Append-only lineage | Corrections and repairs add records; they do not silently rewrite prior observations. | Lineage is not adjudication. |
+| Bounded replay | Re-checking under declared controls supports reproducibility claims. | Replay is not proof of truth. |
+| Research exclusion | Synthetic and local-test artifacts remain marked and fail closed out of research-evidence paths. | Exclusion is not a finding. |
+
+Generated projections and derived views remain non-authoritative unless the methodology explicitly admits them as evidence inputs. A reproducibility package that cannot show these controls is at best mechanically repeatable.
+
 A reproducibility package should reference a research configuration and identify:
 
 - Research question.
@@ -79,4 +92,4 @@ Reproducibility packages are research evidence. They are analogous to [Evidence]
 - Reproducibility packages should reference research configurations.
 - Research configurations are evidence metadata, not authority.
 
-Read next: [Measurement and Validity](14-06-measurement-and-validity.md) explains how research keeps evidence limits visible.
+Read next: [Measurement and Validity](14-07-measurement-and-validity.md) explains how research keeps evidence limits visible.

@@ -3,7 +3,7 @@ title: "Evolution Methodology v2"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-12"
+last_reviewed: "2026-07-19"
 ---
 
 # Evolution Methodology v2
@@ -24,18 +24,18 @@ Evolution is not authority. It is a controlled way to explore a design space und
 
 In the MVC research program, evolution/search studies candidate context and assembly conditions. A search run may discover candidates that perform better under a declared instrument. That is an observation about the search configuration, the evaluation apparatus, and the candidate space. It is not a proof that MVC is true, that HSCA is valid, that representation quality caused the result, or that a generated packet should become production MVC material.
 
-This methodology is the research-method authority for MVC evolution/search studies. It is not STE specification authority, architecture authority, benchmark authority, or implementation authority. Future implementation plans and future implementations are derived artifacts. They may realize the methodology in different ways, including genetic algorithms, evolutionary strategies, Bayesian optimization, enumerative search, constraint-guided search, or other search procedures, provided they preserve the same authority boundaries, evidence model, provenance obligations, and interpretation limits.
+This methodology is the methodological baseline for MVC evolution/search studies. It is not STE specification authority, architecture authority, benchmark authority, or implementation authority. Future implementation plans and future implementations are derived artifacts. They may realize the methodology in different ways, including genetic algorithms, evolutionary strategies, Bayesian optimization, enumerative search, constraint-guided search, or other search procedures, provided they preserve the same authority boundaries, evidence model, provenance obligations, and interpretation limits.
 
 Four layers must remain separate:
 
 | Layer | Status | Role |
 |-------|--------|------|
-| Normative methodology | Research-method authority for this program | Defines required meanings, boundaries, evidence rules, and claim limits. |
+| Methodological baseline | Study-conformance baseline for this program | Defines required meanings, boundaries, evidence rules, and claim limits. |
 | Conceptual search model | Implementation-independent model | Defines search space, state, candidate representation, population, fitness, operators, and measurement. |
 | GA realization | Illustrative first realization | Shows how a genetic algorithm can instantiate the conceptual model without becoming methodology authority. |
 | Implementation realization | Descriptive embodiment | Records what a repository or harness currently does. It is evidence about one realization, not a constraint on the methodology. |
 
-In this document, **Normative methodology** means the methodological baseline for studies and reports that claim conformance to this MVC evolution/search method. It does not mean STE specification authority.
+In this document, **Methodological baseline** means the baseline for studies and reports that claim conformance to this MVC evolution/search method. It does not mean STE specification authority.
 
 Where the current apparatus diverges from this methodology, the divergence is a realization coverage gap, not a reason to weaken the methodology.
 
@@ -51,7 +51,7 @@ It does not validate MVC, HSCA, RSS, representation ceilings, substrate quality,
 
 ### 1. Research Ontology
 
-#### Normative methodology
+#### Methodological baseline
 
 The methodology uses the following ontology. These terms define the conformance vocabulary for MVC evolution/search research reports.
 
@@ -64,7 +64,7 @@ The methodology uses the following ontology. These terms define the conformance 
 | Benchmark authority | Explicit gold, rubric, adjudication, or equivalent authority surface that defines what a task outcome means. | Authoritative only when explicitly created. |
 | Fixture | A named artifact used to hold task, context, observation, scoring, or replay material. | Synthetic, observational, or authoritative depending on provenance and adjudication. |
 | `Q_synthetic` | A synthetic or local-test known-outcome placeholder used to test apparatus wiring or calibration. | Synthetic and derived; never benchmark authority. |
-| `Q_fixture` | A known outcome locked through an explicit adjudication protocol such as completed HSCA or an equivalent authority process. | Adjudicated benchmark authority for its declared boundary. |
+| `Q_fixture` | A known outcome locked through a **separate benchmark adjudication** (gold, rubric, or equivalent) after an eligible substrate-closed `Q` exists. Completed HSCA closure alone does not create `Q_fixture`. | Adjudicated benchmark authority for its declared boundary. |
 | Adjudication | A governed process that converts observations and evidence into an explicit authority artifact or blocks that conversion. | Authority-producing only when the protocol says so. |
 | Calibration artifact | An artifact used to check whether apparatus mechanics or scoring wiring behave as expected. | Engineering evidence only. |
 | Synthetic artifact | An artifact generated or hand-authored to exercise apparatus behavior. | Synthetic; not research evidence unless a separate protocol explicitly says otherwise. |
@@ -93,18 +93,12 @@ flowchart TD
   researchObject[Research object] --> observation[Observation]
   observation --> provenance[Provenance]
   provenance --> evidence[Evidence]
-  evidence --> adjudication[Adjudication]
-  adjudication --> qFixture["Q_fixture"]
-  adjudication --> blocked[Blocked or unknown]
-  qSynthetic["Q_synthetic"] --> calibration[Calibration artifact]
-  calibration --> apparatusEvidence[Engineering evidence]
-  contextPacket[Context packet] --> phenotype[Phenotype]
-  genome[Genome] --> phenotype
-  phenotype --> evaluation[Evaluation]
-  evaluation --> observation
-  replayArtifact[Replay artifact] --> replay[Replay]
-  replay --> reproducibilityEvidence[Reproducibility evidence]
-  qFixture -->|"after adjudication"| benchmarkAuthority[Benchmark authority]
+  evidence --> hscaClosure[HSCA_closure]
+  hscaClosure --> substrateQ["Substrate-closed_Q"]
+  substrateQ --> benchAdj[Separate_benchmark_adjudication]
+  benchAdj --> qFixture["Q_fixture"]
+  benchAdj --> blocked[Blocked or unknown]
+  qFixture --> fitness[Research_fitness]
 ```
 
 The diagram is explanatory. It shows permitted authority movement only where adjudication or a declared protocol creates that movement; arrows do not make artifacts authoritative by themselves.
@@ -123,7 +117,7 @@ The current apparatus contains a static population and an evaluation ladder. It 
 
 ### 2. Purpose of Evolution Research
 
-#### Normative methodology
+#### Methodological baseline
 
 Evolution/search is intended to explore how candidate context and assembly conditions perform under controlled evaluation. It is intended to optimize candidate selection within a declared search space and evidence boundary.
 
@@ -162,7 +156,7 @@ The current apparatus can support apparatus and calibration observations. Its sy
 
 ### 3. Experimental Object and Conceptual Model
 
-#### Normative methodology
+#### Methodological baseline
 
 An evolution/search study must declare:
 
@@ -206,7 +200,7 @@ The current population file maps candidate identifiers to packets and hand-seede
 
 ### 4. Population and Generation Semantics
 
-#### Normative methodology
+#### Methodological baseline
 
 A population is a bounded set of candidate search states eligible for evaluation and selection under one generation identity. A generation is a controlled transition step with fixed evidence boundaries and declared operators.
 
@@ -254,7 +248,7 @@ The current apparatus has a bank generation and a static population, but it does
 
 ### 5. Fitness Semantics
 
-#### Normative methodology
+#### Methodological baseline
 
 Fitness is a declared measurement function. It is not benchmark authority and not theory validation.
 
@@ -284,7 +278,7 @@ Composite fitness must declare:
 
 `Q_synthetic` is allowed only for engineering calibration and synthetic/local-test wiring validation. It must be marked synthetic, local-test, and non-authoritative. It must never become benchmark authority or research fitness authority.
 
-`Q_fixture` requires completed adjudication, such as the target HSCA bidirectional cooperative review described in [HSCA methodology](hsca-methodology.md), or an equivalent declared authority process. Without `Q_fixture` or equivalent benchmark authority, a search may optimize only engineering or pilot signals, not authoritative research fitness.
+`Q_fixture` requires separate benchmark adjudication after an eligible substrate-closed `Q` exists. HSCA closure is a prerequisite path to `Q`, not a synonym for `Q_fixture`. Without `Q_fixture` or equivalent benchmark authority, a search may optimize only engineering, calibration, or pilot-instrument signals — not authoritative research fitness.
 
 `F_sim` is a screening or simulation signal. It may reduce cost or select candidates for fuller evaluation. It is not reasoning quality and not research fitness unless a future methodology explicitly gives it an authority-backed role.
 
@@ -312,11 +306,11 @@ A GA may use `F_sim` for early screening, `F_full` for finalist evaluation, and 
 
 #### Current apparatus state
 
-The current apparatus supports synthetic/local-test calibration and static `F_sim` screening. It does not have real `Q_fixture`; therefore it cannot produce authoritative research fitness.
+The current apparatus supports local-test calibration and lexical screening under research exclusion. These signals are local-test only: they do not produce research evidence, research fitness, or Phase C fitness readings. The apparatus does not have `Q_fixture` and therefore cannot produce authoritative research fitness.
 
 ### 6. Evolution Operators and Lifecycle
 
-#### Normative methodology
+#### Methodological baseline
 
 Evolution/search lifecycle steps must have declared meaning, constraints, and failure behavior:
 
@@ -351,7 +345,7 @@ The current ladder has selection by pre-seeded `F_sim` and checkpointing for ful
 
 ### 7. Parameter Model
 
-#### Normative methodology
+#### Methodological baseline
 
 Parameters define the search condition. They are not fixed by this methodology unless a specific study declares them.
 
@@ -383,7 +377,7 @@ The current apparatus has top-k and checkpoint settings. Those are ladder contro
 
 ### 8. Controls, Measurement Model, and Validity Boundaries
 
-#### Normative methodology
+#### Methodological baseline
 
 Required controls:
 
@@ -452,7 +446,7 @@ The current apparatus already uses several useful controls, including bank gener
 
 ### 9. Research Phases
 
-#### Normative methodology
+#### Methodological baseline
 
 Evolution/search research proceeds through phases. Promotion is explicit and evidence-bound.
 
@@ -460,8 +454,8 @@ Evolution/search research proceeds through phases. Promotion is explicit and evi
 |-------|---------|---------------------|-------------------------|--------------------|--------------------|
 | Phase A: `Q_synthetic` calibration | Check scoring and wiring mechanics. | Engineering calibration behaves as expected. | MVC, HSCA, benchmark, or fitness validation. | Synthetic/local-test markers. | Calibration artifacts pass fail-closed checks and remain excluded from research evidence. |
 | Phase B: synthetic/local-test wiring validation | Check generation, evaluation, replay, quarantine, and traceability mechanics. | Apparatus can execute declared mechanics. | Research evidence or hypothesis support. | Local-test authority only. | No leakage into research paths; replay and exclusion behavior pass. |
-| Phase C: pilot evolution with controlled tasks | Observe search and instrument behavior under controlled but non-authoritative tasks. | Pilot observations about optimization and discrimination. | Benchmark-backed claims or theory validation. | Pilot protocol and task controls. | Candidate separation, task health, provenance, and interpretation boundaries pass. |
-| Phase D: evolution with HSCA-adjudicated `Q_fixture` | Run search against benchmark-backed authority. | Benchmark-backed observations within declared boundary; evolution outputs remain observational or derived. | General theory support without replication and analysis. | `Q_fixture` or equivalent benchmark authority. | Completed adjudication, stable controls, replay, and threat analysis. |
+| Phase C: controlled search-instrument pilot | Observe search and instrument behavior under controlled tasks **without** treating scores as research fitness. | Pilot observations about search mechanics, provenance, and instrument sensitivity. | Research fitness, benchmark-backed candidate quality, or theory validation. | Apparatus readiness plus explicit non-authority markers on outcomes. | No fitness narration; exclusion markers hold; interpretation boundaries pass. Promotion toward Phase D requires `Q_fixture` or equivalent benchmark authority. |
+| Phase D: evolution with benchmark-adjudicated `Q_fixture` | Run search against benchmark-backed authority. | Benchmark-backed observations within declared boundary; evolution outputs remain observational or derived. | General theory support without replication and analysis. | `Q_fixture` or equivalent benchmark authority. | Completed separate benchmark adjudication, stable controls, replay, and threat analysis. |
 | Phase E: future research claims | Interpret accumulated evidence across studies. | Supported hypotheses where evidence warrants. | Causal proof without causal design; production authority. | Published methodology, evidence analysis, replication where needed. | Reproducible evidence, explicit claim ladder, unresolved uncertainty preserved. |
 
 #### Conceptual search model
@@ -474,11 +468,11 @@ The first GA realization should enter Phase A or B unless real `Q_fixture` and f
 
 #### Current apparatus state
 
-Current synthetic HSCA and local-test calibration partially realize Phase A and Phase B. They do not realize Phase C, D, or E.
+Current local-test calibration partially realizes Phase A and Phase B under research exclusion. It does not constitute an admitted Phase C study and does not realize Phase D or E.
 
 ### 10. Claim Ladder and Research Interpretation Model
 
-#### Normative methodology
+#### Methodological baseline
 
 Reports must locate claims on this ladder:
 
@@ -490,7 +484,8 @@ Reports must locate claims on this ladder:
 | Replay validation | Replay artifacts match controls. | Run is reproducible under conditions. | Result is true. | Stable inputs and hash verification. |
 | Pilot observation | Controlled non-authoritative study. | Candidate or instrument behavior observed. | Hypothesis validation. | Task health and interpretation boundary. |
 | Benchmark observation | Benchmark-backed run. | Candidate behavior under benchmark. | General theory support. | Benchmark authority and controls. |
-| HSCA-adjudicated observation | Completed HSCA or equivalent. | Known outcome authority within scope. | Universal correctness. | Adjudication record and unresolved gaps. |
+| Substrate-closed `Q` | Completed HSCA closure. | Eligible substrate-grounded answer within scope. | Benchmark authority or universal correctness. | Closure record and unresolved gaps. |
+| Benchmark-adjudicated observation | Separate gold, rubric, or equivalent adjudication producing `Q_fixture`. | Known outcome authority within scope. | Universal correctness. | Benchmark adjudication record and declared boundary. |
 | Reproducible research evidence | Repeated or independently replayable evidence. | Stronger bounded evidence. | Causal proof without design. | Replication and threat analysis. |
 | Supported hypothesis | Evidence supports a defined hypothesis. | Bounded hypothesis support. | Production or STE spec authority. | Published analysis and claim boundary. |
 | Future theory support | Multiple studies align with theory. | Theory is supported under scope. | Final proof. | Cross-study synthesis and remaining uncertainty. |
@@ -525,7 +520,7 @@ Current results should be interpreted no higher than engineering validation, app
 
 ### 11. Interpretation Boundary
 
-#### Normative methodology
+#### Methodological baseline
 
 Every reported result must classify each reported claim as:
 
@@ -549,11 +544,11 @@ A GA report should label best candidate, best fitness, convergence, diversity, r
 
 #### Current apparatus state
 
-Current reports that aggregate synthetic or local-test outputs must preserve `research_evidence_allowed: false` and equivalent markers in interpretation.
+Current reports that aggregate synthetic or local-test outputs must preserve explicit research-exclusion markers in interpretation.
 
 ### 12. Authority Graph
 
-#### Normative methodology
+#### Methodological baseline
 
 Authority owners and permitted uses must be explicit:
 
@@ -563,7 +558,10 @@ flowchart TD
   researchMethod[Research methodology] -->|"defines method"| protocol[Experimental protocol]
   protocol --> observations[Observations]
   observations --> evidence[Evidence]
-  hsca[HSCA adjudication] -->|"may authorize"| qFixture["Q_fixture"]
+  evidence --> hsca[HSCA closure]
+  hsca -->|"may produce"| substrateQ["Substrate-closed Q"]
+  substrateQ --> benchmarkAdjudication[Separate benchmark adjudication]
+  benchmarkAdjudication -->|"may lock"| qFixture["Q_fixture"]
   qFixture -->|"within declared scope"| benchmarkAuthority[Benchmark authority]
   qSynthetic["Q_synthetic"] --> calibrationOnly[Calibration only]
   evolutionRun[Evolution output] --> observations
@@ -578,8 +576,8 @@ The authority graph is explanatory. It preserves the rule that authority is expl
 | Artifact | Authority owner | Authority level | Permitted use | Prohibited use | Promotion path | Evidence status |
 |----------|-----------------|-----------------|---------------|----------------|----------------|-----------------|
 | `Q_synthetic` | Apparatus calibration protocol | Local-test only | Wiring and calibration checks | Benchmark authority, research fitness | None; replace with `Q_fixture` | Synthetic engineering evidence |
-| `Q_fixture` | HSCA or equivalent adjudication | Benchmark authority within scope | Research fitness and benchmark scoring | General theory proof | Adjudication record and protocol | Adjudicated evidence |
-| HSCA observations | Collection protocol | Observational | Completeness and gap evidence | Answer authority by themselves | Adjudication | Observational evidence |
+| `Q_fixture` | Separate benchmark adjudication | Benchmark authority within scope | Research fitness and benchmark scoring | General theory proof | Gold, rubric, or equivalent adjudication after an eligible substrate-closed `Q` exists | Adjudicated evidence |
+| HSCA observations | Collection protocol | Observational | Completeness and gap evidence | Answer authority by themselves | HSCA closure toward substrate-closed `Q`; separate benchmark adjudication remains required for `Q_fixture` | Observational evidence |
 | Human observations | Collection protocol | Observational | Probe substrate completeness | Human authority | HSCA review | Observational evidence |
 | AI observations | Collection protocol | Observational | Probe substrate and reasoning behavior | AI authority | HSCA review | Observational evidence |
 | Evolution outputs | Search protocol | Observational or derived | Candidate behavior under search | Benchmark authority | Later study or adjudication | Search evidence |
@@ -600,11 +598,11 @@ GA outputs include selected candidates, populations, lineages, and reports. They
 
 #### Current apparatus state
 
-The current apparatus correctly marks many synthetic and local-test artifacts. That marking is an implementation realization of the authority boundary, not the source of the boundary.
+The current apparatus correctly marks many synthetic and local-test artifacts. Its projections remain derived and non-authoritative. Those markings are an implementation realization of the authority boundary, not the source of the boundary.
 
 ### 13. Threats to Validity
 
-#### Normative methodology
+#### Methodological baseline
 
 Threats are first-class research objects. Each report must preserve detection, mitigation, and remaining uncertainty.
 
@@ -616,7 +614,7 @@ Threats are first-class research objects. Each report must preserve detection, m
 | Internal validity | Model confound | Runtime/model changes affect scores. | Candidate effect confused with model effect. | Model identifiers and fingerprints. | Fixed model/runtime per boundary. | Hosted/local equivalence remains separate. |
 | Internal validity | Scoring weakness | Mechanical score misses correctness. | Wrong candidate selected. | HSCA, adjudication, error audits. | Use benchmark authority for research fitness. | Some semantic errors remain hard to score. |
 | Internal validity | Same-designer bias | Designer shapes tasks and candidates. | Search validates designer expectations. | Independent review and blinded fixtures. | Separate authoring and adjudication. | Bias cannot be eliminated fully. |
-| Internal validity | Latent human memory | Human supplies missing substrate. | `Q_fixture` contaminated. | `memory_origin`, `evidence_sources`, HSCA. | Bidirectional HSCA before lock. | Memory origin may be imperfectly reported. |
+| Internal validity | Latent human memory | Human supplies missing substrate. | Substrate-closed `Q` or later benchmark adjudication contaminated. | Memory-origin records, evidence sources, HSCA. | Bidirectional HSCA before closure. | Memory origin may be imperfectly reported. |
 | Internal validity | Human-assisted leakage | Humans see answers, scores, or gold early. | Circular evidence. | Blinding records and deviation logs. | Quarantine and exclusion. | Undetected exposure possible. |
 | Internal validity | Machine-assisted leakage | Machine reads forbidden records. | Replay or answer contamination. | Input manifests and path guards. | Isolation and fail-closed checks. | Hidden cache or environment leakage remains possible. |
 | Internal validity | Generation mixing | Results from different boundaries are compared. | Invalid statistics. | Generation and fingerprint checks. | Exclude mismatched records. | Future cross-generation studies need design. |
@@ -642,7 +640,7 @@ Current synthetic/local-test controls address apparatus validity and leakage ris
 
 ### 14. Falsifiability
 
-#### Normative methodology
+#### Methodological baseline
 
 The methodology must allow evidence to weaken interpretations.
 
@@ -669,7 +667,7 @@ Current apparatus wiring can be weakened by validation failure, leakage, replay 
 
 ### 15. Future Extensibility
 
-#### Normative methodology
+#### Methodological baseline
 
 The methodology requires:
 
@@ -701,7 +699,7 @@ Optional future extensions:
 - causal designs,
 - stronger statistical models,
 - richer diversity metrics,
-- automated HSCA-assisted fixture promotion after authority exists.
+- HSCA-assisted substrate closure followed by separate benchmark adjudication.
 
 Non-required implementation details:
 
@@ -726,7 +724,7 @@ The current apparatus may later implement this methodology, but it is not the de
 
 ### 16. Known Unknowns
 
-#### Normative methodology
+#### Methodological baseline
 
 Unknowns are first-class research outputs. The methodology should preserve uncertainty rather than resolve it through assumption.
 
@@ -737,7 +735,7 @@ Known unknowns include:
 | What genome representation best preserves context semantics? | Future research | Different representations may search different state spaces. |
 | When is crossover meaningful for context packets? | Human judgment and empirical evidence | Recombination can break provenance or source coherence. |
 | What fitness weighting is defensible? | Benchmark authority and empirical evidence | Weights encode research priorities and must not be arbitrary. |
-| What level of HSCA completion is enough for `Q_fixture`? | Adjudication | The authority process must define lock and block conditions. |
+| What HSCA completion is enough for substrate-closed `Q`, and what separate benchmark adjudication can then create `Q_fixture`? | Adjudication | Closure and benchmark lock are distinct authority transitions with separate block conditions. |
 | How much pilot evidence justifies Phase D? | Human judgment and empirical evidence | Promotion depends on instrument health and risk tolerance. |
 | How should cross-generation evidence be compared? | Future research | Generation boundaries protect validity but may limit synthesis. |
 | What diversity metrics matter for MVC packets? | Future research | Diversity in text, source coverage, graph topology, and negative space may diverge. |
@@ -755,7 +753,7 @@ A GA run may discover unknowns: invalid mutation regions, fragile packet structu
 
 #### Current apparatus state
 
-The current apparatus has already surfaced a major unknown: it validates wiring but does not yet provide real `Q_fixture` or research fitness authority.
+The current apparatus has already surfaced a major unknown: it validates wiring, but live substrate-closed `Q` records and separate benchmark adjudication to `Q_fixture` remain absent. It therefore does not provide research fitness authority.
 
 ## The Implications
 
@@ -769,7 +767,7 @@ For the current apparatus, the boundary is clear. Static candidate screening and
 
 ## Relationship to STE system
 
-Evolution methodology sits inside the MVC research program, which remains research rather than STE specification authority. It connects to [MVC methodology](mvc-methodology.md) for the broader research unit and interpretation rules, [MVC candidate equation variables](candidate-equation-variables.md) for shared notation, [Context preflight methodology](context-preflight-methodology.md) for assembled context conditions, [HSCA methodology](hsca-methodology.md) for `Q_fixture` prerequisites and gap interpretation, [Benchmark methodology](benchmark-methodology.md) for task controls and scoring limits, and [MVC reproducibility model](../03-experiment-design/mvc-reproducibility-model.md) for replay and evidence boundaries.
+Evolution methodology sits inside the MVC research program, which remains research rather than STE specification authority. It connects to [MVC methodology](mvc-methodology.md) for the broader research unit and interpretation rules, [MVC candidate equation variables](candidate-equation-variables.md) for shared notation, [Context preflight methodology](context-preflight-methodology.md) for assembled context conditions, [HSCA methodology](hsca-methodology.md) for substrate-closed `Q` prerequisites and gap interpretation, [Benchmark methodology](benchmark-methodology.md) for task controls and separate benchmark adjudication, and [MVC reproducibility model](../03-experiment-design/mvc-reproducibility-model.md) for replay and evidence boundaries.
 
 This v2 publication supersedes the scaffold-level method in [Evolution methodology](evolution-methodology.md) for future complete evolution/search studies. The earlier version remains a historical methodology artifact. Its distinction between `F_sim` and `F_full`, candidate search dimensions, and scaffold/full-evolution boundary remains useful, but v2 makes the missing semantics explicit: genome, phenotype, population identity, generation transition, operators, parameters, measurement, interpretation boundary, authority graph, falsifiability, and unknowns.
 

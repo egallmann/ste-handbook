@@ -3,7 +3,7 @@ title: "MVC Experimental Design"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Experimental Design
@@ -53,7 +53,9 @@ The public protocol stages are:
 | Stage | Purpose |
 |-------|---------|
 | Context preflight | Declare the task, intended validation authority, required context classes, discovery strategy, and stop or degrade criteria before sampling evidence. |
-| Instrument readiness | Confirm the instrument can run and check its research configuration before aggregation. |
+| Apparatus validation | Confirm synthetic/local-test mechanics behave as declared before live reliance. |
+| Apparatus readiness | Confirm the validated instrument boundary is controlled before live collection or study execution. |
+| Instrument sensitivity checks | Confirm the measurement instrument responds to known controls; not hypothesis support. |
 | Candidate separation | Confirm candidate contexts are distinct and not accidental duplicates. |
 | Task controls | Calibrate positive controls, negative controls, and expected signal. |
 | Packet-backed context | Use versioned candidate context artifacts with explicit identity, scope, health, and metrics. |
@@ -81,7 +83,7 @@ The design should distinguish:
 - authority gaps,
 - unresolved observations.
 
-These are research outcomes. They are not production verdicts.
+These are **study result classes** under a declared research configuration. They are not production verdicts, not automatic admitted evidence, and not research fitness unless benchmark authority exists for the reading being claimed.
 
 ## The Implications
 
@@ -94,7 +96,7 @@ These are research outcomes. They are not production verdicts.
 
 ## Relationship to STE system
 
-The design is connected to [MVC methodology](../02-methodology/mvc-methodology.md), [Context preflight methodology](../02-methodology/context-preflight-methodology.md), [Benchmark methodology](../02-methodology/benchmark-methodology.md), [HSCA methodology](../02-methodology/hsca-methodology.md), and [Evidence and Reproducibility](../../../14-05-evidence-and-reproducibility.md).
+The design is connected to [MVC methodology](../02-methodology/mvc-methodology.md), [Context preflight methodology](../02-methodology/context-preflight-methodology.md), [Benchmark methodology](../02-methodology/benchmark-methodology.md), [HSCA methodology](../02-methodology/hsca-methodology.md), and [Evidence and Reproducibility](../../../14-06-evidence-and-reproducibility.md).
 
 ## Summary
 

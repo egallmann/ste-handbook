@@ -3,7 +3,7 @@ title: "Benchmark Methodology"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Benchmark Methodology
@@ -14,13 +14,27 @@ Benchmarks can produce persuasive numbers while hiding contamination, scoring we
 
 ## The Reframe
 
-The MVC benchmark methodology treats benchmark outputs as research evidence. Benchmark scores do not become answer authority, production claims, or STE validation by themselves.
+The MVC benchmark methodology is a **condition-discrimination instrument under a fixed reasoner condition**. Its first job is to ask whether distinct candidate context conditions produce measurably different outcomes on tasks designed to require different context features.
+
+Benchmark outputs are not automatically research evidence, answer authority, production claims, or STE validation. Correctness and research-fitness readings require `Q_fixture` (or equivalent gold/rubric adjudication) for the declared boundary. Without that authority, scores remain instrument or pilot observations.
+
+Anti-leaderboard stance: rankings, aggregate “wins,” and model-vs-model score chasing are out of scope unless a study explicitly declares a comparison that the configuration can support.
 
 ## The Model
 
 ### Benchmark purpose
 
-The benchmark asks whether candidate context conditions produce measurably different outcomes on tasks designed to require different context features. It is a discrimination instrument before it is a correctness oracle.
+Discrimination comes before correctness. A nondiscriminating bank with healthy instrument checks may indicate weak tasks, weak gold, or weak scoring sensitivity rather than a failure of the representation-ceiling thesis.
+
+### Authority prerequisite
+
+| Reading | Requires |
+|---------|----------|
+| Local discrimination / instrument sensitivity | Fixed reasoner condition, candidate separation, task controls |
+| Correctness-backed benchmark observation | `Q_fixture` or equivalent benchmark authority |
+| Research fitness | Benchmark authority within scope, plus methodology admission |
+
+Mechanical scoring without adjudicated known outcomes must not be narrated as correctness or fitness.
 
 ### Task controls
 
@@ -57,11 +71,11 @@ Mechanical scoring can detect expected concepts and unsupported assertions, but 
 
 ## Relationship to STE system
 
-Benchmark methodology supports [MVC methodology](mvc-methodology.md), [MVC experimental design](../03-experiment-design/mvc-experimental-design.md), and [Measurement and Validity](../../../14-06-measurement-and-validity.md). Benchmark governance remains separate from research evidence.
+Benchmark methodology supports [MVC methodology](mvc-methodology.md), [MVC experimental design](../03-experiment-design/mvc-experimental-design.md), and [Measurement and Validity](../../../14-07-measurement-and-validity.md). Benchmark governance remains separate from research evidence.
 
 ## Summary
 
-- MVC benchmark outputs are research evidence.
+- MVC benchmark outputs remain instrument or pilot observations until methodology admission.
 - Task controls make discrimination interpretable.
 - Local discrimination is not general reasoner validation.
 - Scoring limits must be visible before findings are published.

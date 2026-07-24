@@ -51,6 +51,6 @@ Wire formats and contract families evolve; **ste-spec** `status.md` marks which 
 - [Section overview](06-00-section-overview.md)
 - [Admission, eligibility, and enforcement](06-04-admission-eligibility-and-enforcement.md)
 - [Kernel and governance](../07-kernel/07-07-kernel-and-governance.md)
-- [Policy and governance (advanced)](../13-advanced-topics/13-07-policy-and-governance.md)
+- [Architectural Essays and Deep Dives overview](../13-architectural-essays/13-00-essays-and-deep-dives-overview.md) (optional depth; policy/analytics deep dive not yet published)
 
 **Back to:** [Section overview](06-00-section-overview.md).

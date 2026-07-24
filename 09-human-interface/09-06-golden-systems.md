@@ -1,6 +1,6 @@
 # Golden Systems (Conversation Context)
 
-This chapter introduces golden systems as exemplar implementations or models used in conversation to illustrate conformance patterns and healthy traces. Advanced treatment continues in Part 11.
+This chapter introduces golden systems as exemplar implementations or models used in conversation to illustrate conformance patterns and healthy traces. Governed-asset treatment of goldens remains a future Part 13 technical deep dive; conversational calibration here is not that asset-governance story.
 
 ## Why this matters
 
@@ -14,4 +14,4 @@ Golden systems help calibrate expectations for evidence and structure. Misuse ca
 
 ## Relationship to other chapters
 
-- Golden systems (advanced) ([chapter](../13-advanced-topics/13-05-golden-systems.md))
+- [Architectural Essays and Deep Dives overview](../13-architectural-essays/13-00-essays-and-deep-dives-overview.md) (curated optional depth; golden-systems deep dive not yet published)

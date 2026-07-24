@@ -3,7 +3,7 @@ title: "MVC Experimental Apparatus"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-14"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Experimental Apparatus
@@ -25,6 +25,8 @@ Its purpose is not to establish the truth of the underlying hypotheses. Its purp
 Apparatus validation is therefore analogous to laboratory instrumentation validation. It asks whether the instrument can preserve identity, provenance, traceability, determinism, authority boundaries, and fail-closed behavior. It does not ask whether the scientific hypothesis has been supported.
 
 The handbook is explanatory documentation describing the conceptual research apparatus. It is not the normative authority for experimental execution, adjudication, implementation contracts, or research governance.
+
+This page is the MVC program-local elaboration of Part 14 [Research Apparatus](../../../14-04-research-apparatus.md). It does not redefine Part 14 doctrine. Implementation contracts, schemas, validators, and repository workflows remain outside the handbook.
 
 ## The Model
 
@@ -65,7 +67,7 @@ The apparatus is useful only if its objects keep their authority status visible.
 |-------|-----------------------|------------------|
 | STE substrate | Governed architecture, evidence, linkage, and modeled structure that a study condition may consume. | Authority remains with the owning artifacts, contracts, evidence records, and governance surfaces. |
 | HSCA observations | Completeness, memory, assembly, and authority-gap signals for a task condition. | Observational only. They do not become answer authority by themselves. |
-| Candidate Q package | A bounded package of observations, claim reviews, substrate validations, gaps, and provenance. | Not `Q_fixture`; it is a candidate evidence package awaiting adjudication or blockage. |
+| Candidate Q package | A bounded package of observations, claim reviews, substrate validations, gaps, and provenance. | Awaiting mechanical closure toward substrate-closed `Q`, then separate benchmark adjudication for `Q_fixture`. |
 | `Q_fixture` | A known outcome usable by a benchmark or fitness interpretation within its declared boundary. | Requires explicit adjudication, rubric, gold, or equivalent benchmark authority. |
 | Candidate MVC-D representation | Experimental representation object describing what structure may be needed for a task family. | Candidate only. It is not evidence that an actual MVC-D has been discovered. |
 | Deterministic realization | Controlled transformation from candidate representation into an observed context condition. | Not authority, correctness, or adjudication. |

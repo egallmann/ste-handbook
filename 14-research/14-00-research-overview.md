@@ -3,7 +3,7 @@ title: "Research Overview"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # Research Overview
@@ -27,31 +27,45 @@ The handbook is the human projection of the STE system. It explains why STE exis
 | `adr-architecture-kit` | Authors and checks ADR and Architecture IR substrate used by STE research. |
 | `ste-handbook` | Publishes research doctrine, theories, methodologies, findings, reproductions, and open questions in human-readable form. |
 
-### STE as Research Infrastructure
+### STE infrastructure and Research Apparatus
 
-Part 14 treats STE as research infrastructure. STE provides the modeled substrate, traceability, provenance, context assembly, and evidence discipline that make research programs possible. Research then uses those capabilities to evaluate hypotheses.
+Part 14 treats STE as **research infrastructure**: modeled substrate, traceability, provenance, context assembly, and evidence discipline that make research programs possible. Infrastructure is enabling. It is not the experimental instrument itself.
 
-That relationship is intentionally one-way. Research may produce evidence about STE claims, methods, or artifacts, but the existence of research does not validate STE by itself. Evidence remains evidence until a separate governance process promotes a change into an authority surface.
+A **Research Apparatus** is the governed instrument a research program uses to collect and preserve observations under controlled conditions. Infrastructure without an apparatus leaves studies dependent on informal tools. An apparatus without methodology and governance collapses instrument success into claimed evidence.
+
+The conceptual stack is:
+
+```text
+STE infrastructure
+  → research doctrine
+  → research program
+  → Research Apparatus
+  → methodology
+  → bounded evidence and findings
+```
 
 ```mermaid
 flowchart LR
-  STE[STE]
-  IR[Architecture_IR]
-  Trace[Traceability]
-  Prov[Provenance]
-  Context[Context_Assembly]
-  Evidence[Evidence]
-  Programs[Research_Programs]
-  MVC[MVC]
+  Infra[STE_infrastructure]
+  Doctrine[Research_doctrine]
+  Program[Research_program]
+  Apparatus[Research_Apparatus]
+  Method[Methodology]
+  Evidence[Bounded_evidence]
+  Authority[Authority_surfaces]
 
-  STE --> IR
-  IR --> Trace
-  Trace --> Prov
-  Prov --> Context
-  Context --> Evidence
-  Evidence --> Programs
-  Programs --> MVC
+  Infra --> Doctrine
+  Doctrine --> Program
+  Program --> Apparatus
+  Apparatus --> Method
+  Method --> Evidence
+  Evidence -.->|may_inform| Authority
+  Evidence -.->|does_not_define| Authority
 ```
+
+That relationship remains one-way. Research may produce evidence about STE claims, but research does not validate STE by itself. Evidence remains evidence until a separate governance process promotes a change into an authority surface.
+
+Detail on apparatus topology, validation versus readiness, and the observation-to-authority pipeline lives in [Research Apparatus](14-04-research-apparatus.md).
 
 ## The Model
 
@@ -63,6 +77,7 @@ flowchart LR
   Program[Research_programs]
   MVC[MVC]
   Future[Future_program]
+  Apparatus[Research_Apparatus]
   Method[Methodology]
   Evidence[Evidence]
   Publication[Published_record]
@@ -71,7 +86,8 @@ flowchart LR
   Doctrine -->|governs| Program
   Program --> MVC
   Program --> Future
-  Program -->|uses| Method
+  Program -->|operates| Apparatus
+  Apparatus -->|instruments| Method
   Method -->|generates| Evidence
   Evidence -->|published_as| Publication
   Publication -.->|may_inform| Authority
@@ -105,6 +121,7 @@ Research connects to [Evidence](../03-artifacts/03-05-evidence.md), [Traceabilit
 
 - Part 14 is the STE research record.
 - The handbook publishes research doctrine and research publications.
+- Research Apparatus is distinct from STE infrastructure and from methodology.
 - Normative authority remains outside research prose.
 - MVC is the first instantiated research program, not the reason Part 14 exists.
 - Operational artifacts remain in their owning repositories or reproducibility packages.

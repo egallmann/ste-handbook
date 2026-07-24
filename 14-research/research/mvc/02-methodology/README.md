@@ -3,7 +3,7 @@ title: "MVC Methodology Publications"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-12"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Methodology Publications
@@ -37,8 +37,8 @@ Current methodology artifacts:
 - [HSCA methodology](hsca-methodology.md)
 - [Benchmark methodology](benchmark-methodology.md)
 - [MVC experimental apparatus](experimental-apparatus.md)
-- [Evolution methodology v2](evolution-methodology-v2.md) — current complete evolution/search methodology
-- [Evolution methodology](evolution-methodology.md) — historical scaffold-level methodology
+- [Evolution methodology v2](evolution-methodology-v2.md) — current evolution/search methodological baseline
+- [Evolution methodology (v1, deprecated)](evolution-methodology.md) — historical scaffold; retained for lineage only; do not use for new studies
 
 ## The Implications
 

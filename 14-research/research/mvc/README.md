@@ -3,7 +3,7 @@ title: "MVC Research Program"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Research Program
@@ -31,7 +31,7 @@ status: "active"
 lead_authors:
   - "Erik Gallmann"
 created: "2026-06-09"
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 research_state: "active"
 related_theories:
   - "representation ceiling"
@@ -41,7 +41,8 @@ related_methodologies:
   - "MVC methodology"
   - "HSCA"
   - "benchmark methodology"
-  - "evolution methodology"
+  - "MVC experimental apparatus"
+  - "evolution methodology v2"
 ```
 
 Program structure:

@@ -48,7 +48,7 @@ Read these terms consistently across Part 6 and the rest of the handbook:
 
 The **governance doctrine** in STE (authority split, canonical versus derived, deterministic assessment at the Kernel boundary, Runtime as evidence producer) is **stable enough to build on** and aligns with the public **ste-spec** handoff boundary described in **ste-spec** `status.md`.
 
-**Mechanical governance** (unified enforcement across CI, IDE, lifecycle, and conversation surfaces) is **phased**. Where implementation is still catching up, this part states that explicitly instead of implying a finished control plane. Deep policy-as-code and analytics belong with [Policy and governance (advanced)](../13-advanced-topics/13-07-policy-and-governance.md).
+**Mechanical governance** (unified enforcement across CI, IDE, lifecycle, and conversation surfaces) is **phased**. Where implementation is still catching up, this part states that explicitly instead of implying a finished control plane. Deeper policy-as-code and governance analytics remain a future Part 13 technical deep dive; Part 6 remains the home for the current control model.
 
 ## Reading order (Part 6)
 

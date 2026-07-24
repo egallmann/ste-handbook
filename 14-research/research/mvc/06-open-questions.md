@@ -3,7 +3,7 @@ title: "MVC Open Questions"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-07-19"
 ---
 
 # MVC Open Questions
@@ -28,7 +28,7 @@ Current open questions:
 - How should candidate equations evolve as more findings and reproductions accumulate?
 - How should candidate context artifacts map to MVC-S fixture outputs without implying production MVC-M?
 - Which hosted or rubric validation path is sufficient to move beyond local signal?
-- When is full HSCA complete enough to lock `Q_fixture` — AI validates human and human validates AI against permitted substrate?
+- When does separate benchmark adjudication (gold, rubric, or equivalent) lock `Q_fixture` after substrate-closed `Q` exists — and which HSCA completion conditions are merely prerequisites rather than the lock itself?
 - What apparatus is required so bidirectional HSCA is reproducible, not a manual review habit?
 - What live HSCA observation volume is enough to support substrate completeness claims after full cooperative validation exists?
 - Which repeated local results are stable enough to justify stronger evidence claims?
@@ -50,13 +50,14 @@ Each research program should track:
 
 Progress criteria:
 
-- full HSCA implemented: blinded `H_obs` and `A_obs`, AI validates human, human validates AI, automated or governed `D_cls`, fixture lock only after cooperative review,
-- live blinded HSCA observations at the active evidence boundary,
-- hosted or rubric validation path available,
-- adjudication protocol drafted,
-- candidate context to MVC-S fixture mapping defined,
-- repeated local runs show stable candidate discrimination,
-- evolution operators defined and tested under governed fitness weighting.
+- live sealed collection with AI-before-human ordering and contamination accounting,
+- operator-assisted review path with durable lineage toward substrate-closed `Q`,
+- mechanical closure/`Q` promotion usable on live records (not only contracts),
+- separate benchmark adjudication protocol that can produce `Q_fixture`,
+- hosted or rubric validation path available where claimed,
+- candidate context to fixture mapping defined without implying production MVC-M,
+- repeated local runs interpreted only within their authority markers,
+- evolution/search operators used under declared phase bounds; local-test operators remain excluded from research fitness until `Q_fixture` exists,
 - configuration identity, equivalence, and drift are captured consistently enough for reproduction.
 
 Potential falsification remains explicit:
