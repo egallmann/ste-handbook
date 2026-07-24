@@ -2,14 +2,14 @@
 
 **Plate ID:** `13-01-A`  
 **Parent work:** `13-01-when-machines-stopped-waiting.md`  
-**Rendered projection:** `plate-13-01-A.svg` (must match this specification)  
+**Rendered projection:** `plate-13-01-A-when-machine-work-begins.svg` (must match this specification)  
 **Status:** Engineering layout specification (canonical). Not artwork.  
 **Reproduce in:** SVG or draw.io without additional design decisions.  
 **Authority:** Explanatory aid only. Essay prose remains interpretive authority if figure and text diverge during drafting.
 
 **Insight (one sentence):** Historical machines act after enough understanding is represented for a bounded operation; the newer computational participant is invited while architectural work is still open.
 
-**Sync rule:** When `plate-13-01-A.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
+**Sync rule:** When `plate-13-01-A-when-machine-work-begins.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
 
 ---
 
@@ -409,5 +409,5 @@ The plate is correct if and only if:
 6. Stage 1 to Stage 2 arrows show a visible shaft, not a squashed head-only glyph.
 7. Stage 3 text is fully inside the box borders.
 8. Stage 2 to Stage 3 shafts connect box bottoms to box tops; markers are not reversed.
-9. `plate-13-01-A.svg` matches this document within +/- 8 px.
+9. `plate-13-01-A-when-machine-work-begins.svg` matches this document within +/- 8 px.
 10. The SVG file is well-formed UTF-8 XML with no encoding error when opened outside the IDE.

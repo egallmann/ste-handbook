@@ -4,16 +4,16 @@
      width="1280"
      height="720"
      role="img"
-     aria-labelledby="plate-title plate-desc">
-  <title id="plate-title">Plate 13-01-A: When machine work begins</title>
-  <desc id="plate-desc">
+     aria-labelledby="plate-title-13-01-A plate-desc-13-01-A">
+  <title id="plate-title-13-01-A">Plate 13-01-A: When machine work begins</title>
+  <desc id="plate-desc-13-01-A">
     Two parallel columns. Left: historical path after closure for a bounded operation,
     ending in historical machine consumers. Right: earlier path before the architecture
     has fully converged, ending in a computational participant.
   </desc>
 
   <defs>
-    <marker id="arrow-down"
+    <marker id="arrow-down-13-01-A"
             viewBox="0 0 8 8"
             refX="8"
             refY="4"
@@ -54,7 +54,7 @@
         .stage3-left { fill: #12261E; stroke: #3FB950; }
         .stage3-right { fill: #3D1515; stroke: #F85149; }
         .connector { stroke: #C9D1D9; }
-        #arrow-down path { fill: #C9D1D9; }
+        #arrow-down-13-01-A path { fill: #C9D1D9; }
         .t-header { fill: #F0F6FC; }
         .t-plate-id { fill: #8B949E; }
         .t-col { fill: #E6EDF3; }
@@ -88,10 +88,10 @@
   <rect class="band" x="32" y="616" width="1216" height="72"/>
 
   <!-- Shafts: Stage1 bottom 248 -> Stage2 top 304; Stage2 bottom 384 -> Stage3 top 448 -->
-  <line class="connector" x1="308" y1="248" x2="308" y2="296" marker-end="url(#arrow-down)"/>
-  <line class="connector" x1="308" y1="384" x2="308" y2="440" marker-end="url(#arrow-down)"/>
-  <line class="connector" x1="940" y1="248" x2="940" y2="296" marker-end="url(#arrow-down)"/>
-  <line class="connector" x1="940" y1="384" x2="940" y2="440" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="308" y1="248" x2="308" y2="296" marker-end="url(#arrow-down-13-01-A)"/>
+  <line class="connector" x1="308" y1="384" x2="308" y2="440" marker-end="url(#arrow-down-13-01-A)"/>
+  <line class="connector" x1="940" y1="248" x2="940" y2="296" marker-end="url(#arrow-down-13-01-A)"/>
+  <line class="connector" x1="940" y1="384" x2="940" y2="440" marker-end="url(#arrow-down-13-01-A)"/>
 
   <!-- Side labels right of Stage2->Stage3 shafts -->
   <text class="t-side" x="320" y="410">Machine consumes</text>

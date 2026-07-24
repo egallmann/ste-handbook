@@ -4,16 +4,16 @@
      width="1280"
      height="720"
      role="img"
-     aria-labelledby="plate-title plate-desc">
-  <title id="plate-title">Plate 13-01-B: Consumer, participant, actor</title>
-  <desc id="plate-desc">
+     aria-labelledby="plate-title-13-01-D plate-desc-13-01-D">
+  <title id="plate-title-13-01-D">Plate 13-01-D: Consumer, participant, actor</title>
+  <desc id="plate-desc-13-01-D">
     Left to right: machine consumer of closed products, computational participant
     that remains advisory, governance gate of organizational permission and authority
     boundaries, then actor permitted to alter architectural or operational state.
   </desc>
 
   <defs>
-    <marker id="arrow-right"
+    <marker id="arrow-right-13-01-D"
             viewBox="0 0 8 8"
             refX="8"
             refY="4"
@@ -48,7 +48,7 @@
         .gate { fill: #12253F; stroke: #58A6FF; }
         .actor { fill: #3D1515; stroke: #F85149; }
         .connector { stroke: #C9D1D9; }
-        #arrow-right path { fill: #C9D1D9; }
+        #arrow-right-13-01-D path { fill: #C9D1D9; }
         .t-header { fill: #F0F6FC; }
         .t-plate-id { fill: #8B949E; }
         .t-role { fill: #F0F6FC; }
@@ -71,9 +71,9 @@
 
   <rect class="band" x="32" y="616" width="1216" height="72"/>
 
-  <line class="connector" x1="348" y1="348" x2="392" y2="348" marker-end="url(#arrow-right)"/>
-  <line class="connector" x1="700" y1="348" x2="732" y2="348" marker-end="url(#arrow-right)"/>
-  <line class="connector" x1="880" y1="348" x2="916" y2="348" marker-end="url(#arrow-right)"/>
+  <line class="connector" x1="348" y1="348" x2="392" y2="348" marker-end="url(#arrow-right-13-01-D)"/>
+  <line class="connector" x1="700" y1="348" x2="732" y2="348" marker-end="url(#arrow-right-13-01-D)"/>
+  <line class="connector" x1="880" y1="348" x2="916" y2="348" marker-end="url(#arrow-right-13-01-D)"/>
 
   <text class="t-role" x="62" y="196">Machine consumer</text>
   <text class="t-body" x="62" y="224">Closed-enough products for a</text>
@@ -106,7 +106,7 @@
   <text class="t-body" x="938" y="344">Not a capability upgrade</text>
 
   <text class="t-header" x="48" y="68">Consumer, participant, actor</text>
-  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-B</text>
+  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-D</text>
 
   <text class="t-foot1" x="640" y="646" text-anchor="middle">Participation remains advisory. Actor status is organizational permission to alter state.</text>
   <text class="t-foot2" x="640" y="668" text-anchor="middle">The gate is a governance distinction, not a claim of greater intelligence or autonomy.</text>

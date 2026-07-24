@@ -1,15 +1,15 @@
-# Plate 13-01-B - Consumer, participant, actor
+# Plate 13-01-D - Consumer, participant, actor
 
-**Plate ID:** `13-01-B`  
+**Plate ID:** `13-01-D`  
 **Parent work:** `13-01-when-machines-stopped-waiting.md`  
-**Rendered projection:** `plate-13-01-B-consumer-participant-actor.svg` (must match this specification)  
+**Rendered projection:** `plate-13-01-D-consumer-participant-actor.svg` (must match this specification)  
 **Status:** Engineering layout specification (canonical). Not artwork.  
 **Reproduce in:** SVG or draw.io without additional design decisions.  
 **Authority:** Explanatory aid only. Essay prose remains interpretive authority if figure and text diverge during drafting.
 
 **Insight (one sentence):** Participation is advisory help before or around understanding; becoming an actor is permission to alter architectural or operational state inside authority boundaries, not a capability upgrade.
 
-**Sync rule:** When `plate-13-01-B-consumer-participant-actor.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
+**Sync rule:** When `plate-13-01-D-consumer-participant-actor.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
 
 ---
 
@@ -222,7 +222,7 @@ Gate text is the only transition annotation between Participant and Actor.
 | Field | Exact text |
 | --- | --- |
 | Title | `Consumer, participant, actor` |
-| Plate ID | `Plate 13-01-B` |
+| Plate ID | `Plate 13-01-D` |
 
 ### 10.2 Consumer
 
@@ -336,5 +336,5 @@ The plate is correct if and only if:
 4. Actor is reachable only through the governance gate.
 5. No intelligence, autonomy, or STE implementation machinery appears.
 6. Horizontal shafts are visible (not head-only glyphs).
-7. `plate-13-01-B-consumer-participant-actor.svg` matches this document within +/- 8 px.
+7. `plate-13-01-D-consumer-participant-actor.svg` matches this document within +/- 8 px.
 8. The SVG file is well-formed UTF-8 XML.

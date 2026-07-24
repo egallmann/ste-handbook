@@ -75,7 +75,7 @@ Architecture practice developed around a different kind of completion for everyt
 
 ## Then the work started earlier
 
-![Plate 13-01-A: When machine work begins. Historical path after closure for a bounded operation versus earlier computational participation before the architecture has fully converged.](diagrams/plate-13-01-A.svg)
+![Plate 13-01-A: When machine work begins. Historical path after closure for a bounded operation versus earlier computational participation before the architecture has fully converged.](diagrams/plate-13-01-A-when-machine-work-begins.svg)
 
 **Plate 13-01-A.** When machine work begins. Historical machines consume a closed-enough product for a bounded operation; the computational participant enters while architectural work remains open. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 
@@ -123,9 +123,9 @@ Reconstruction is also not a one-time activity completed at the beginning of a p
 
 That is why recurrence matters more than any single reconstruction. Inference paid only once can look like ordinary craft. Inference performed independently across many tasks, teams, and tools leaves the organization reconstructing what it had already known. Durable representation lets recovered understanding survive beyond the event that produced it. Later discovery, planning, implementation, review, governance, incident response, and computational participation can begin from what was previously represented rather than inventing it again from tickets, memory, and conflicting documents. The engineering benefit is not merely that information was stored. It is that validated understanding can participate in future reasoning without requiring the same reconstruction. As architectural complexity grows, as organizational scope widens, as authority domains diverge, as historical decisions accumulate, and as implementation surfaces proliferate, the share of understanding that can be reused should grow if that representation is governed well. This is not fundamentally an argument about machines. It is an architectural argument about repeated inference versus understanding that outlives the task that recovered it.
 
-![Plate 13-01-C: When reconstruction survives the task. Without durable representation, understanding dies with the task and inference repeats; with representation under care, validated understanding participates in later reasoning.](diagrams/plate-13-01-C.svg)
+![Plate 13-01-B: When reconstruction survives the task. Without durable representation, understanding dies with the task and inference repeats; with representation under care, validated understanding participates in later reasoning.](diagrams/plate-13-01-B-reconstruction-vs-participation.svg)
 
-**Plate 13-01-C.** When reconstruction survives the task. Successful reconstruction usually ends with the task unless deliberately represented; preserved understanding can participate in later reasoning without the same reconstruction. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
+**Plate 13-01-B.** When reconstruction survives the task. Successful reconstruction usually ends with the task unless deliberately represented; preserved understanding can participate in later reasoning without the same reconstruction. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 
 ## Why representation becomes the work
 
@@ -159,9 +159,9 @@ Trying to serve both through one universal artifact tends to serve neither well.
 
 The durable representation of architectural state can separate from the projections through which particular consumers engage with it. A decision record can remain a narrative of what was decided and why while referring to stable entities and relationships beneath the presentation. A diagram can remain a selective view while retaining traceability to the elements it depicts. An executive can receive a projection emphasizing capabilities, risk, and unresolved choices. An engineer can receive governing intent, constraints, affected components, and evidence obligations. An auditor can follow obligation to decision to embodiment to evidence. A computational reasoner can receive a bounded representation containing the identities and relationships required for a task.
 
-![Plate 13-01-D: Durable representation and selective projections. One durable representation of architectural state supports many projections; a single universal artifact optimized for both human narrative and machine traversal serves neither well.](diagrams/plate-13-01-D-durable-representation-and-projections.svg)
+![Plate 13-01-C: Durable representation and selective projections. One durable representation of architectural state supports many projections; a single universal artifact optimized for both human narrative and machine traversal serves neither well.](diagrams/plate-13-01-C-durable-representation-and-projections.svg)
 
-**Plate 13-01-D.** Durable representation and selective projections. One durable representation can support many projections; calling documents and diagrams projections does not demote them. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
+**Plate 13-01-C.** Durable representation and selective projections. One durable representation can support many projections; calling documents and diagrams projections does not demote them. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 
 Calling documents and diagrams projections does not demote them. It releases them from carrying incompatible jobs at once. A human document no longer has to be both an effective explanation and the only computational source from which every architectural relationship must be recovered. It can communicate better to people because identity, provenance, lifecycle, and relationship semantics exist elsewhere in a governed representation. Narrative still belongs. Some meaning cannot be reduced without damage: the conditions under which a tradeoff was accepted, the competing values, the organizational reasoning behind a risk. The represented system can preserve that explanation while distinguishing it from the identity, relationships, scope, and authority that should not drift with wording.
 
@@ -193,9 +193,9 @@ In that environment, accepted decisions can be encoded with explicit identity an
 
 Participation alone does not make a computational system an actor. A participant may help with orientation, context assembly, analysis, candidate generation, validation, or recommendation and still remain advisory. It becomes an actor only when the organization permits it, inside explicit authority boundaries, to perform engineering work that can alter architectural or operational state. That turn is a governance distinction, not a claim that the system has become more intelligent or autonomous.
 
-![Plate 13-01-B: Consumer, participant, actor. Participation remains advisory; actor status is organizational permission to alter state inside authority boundaries, not a capability upgrade.](diagrams/plate-13-01-B-consumer-participant-actor.svg)
+![Plate 13-01-D: Consumer, participant, actor. Participation remains advisory; actor status is organizational permission to alter state inside authority boundaries, not a capability upgrade.](diagrams/plate-13-01-D-consumer-participant-actor.svg)
 
-**Plate 13-01-B.** Consumer, participant, actor. Participation remains advisory; becoming an actor is organizational permission to alter architectural or operational state inside authority boundaries. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
+**Plate 13-01-D.** Consumer, participant, actor. Participation remains advisory; becoming an actor is organizational permission to alter architectural or operational state inside authority boundaries. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 
 Architecture still has human readers. It has always had machine consumers of closed products. It now has computational participants asked to work earlier. Under controlled conditions those participants become actors.
 

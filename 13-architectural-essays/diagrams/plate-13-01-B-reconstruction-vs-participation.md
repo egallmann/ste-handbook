@@ -1,15 +1,15 @@
-# Plate 13-01-C - Reconstruction that dies vs understanding that participates
+# Plate 13-01-B - Reconstruction that dies vs understanding that participates
 
-**Plate ID:** `13-01-C`  
+**Plate ID:** `13-01-B`  
 **Parent work:** `13-01-when-machines-stopped-waiting.md`  
-**Rendered projection:** `plate-13-01-C.svg` (must match this specification)  
+**Rendered projection:** `plate-13-01-B-reconstruction-vs-participation.svg` (must match this specification)  
 **Status:** Engineering layout specification (canonical). Not artwork.  
 **Reproduce in:** SVG or draw.io without additional design decisions.  
 **Authority:** Explanatory aid only. Essay prose remains interpretive authority if figure and text diverge during drafting.
 
 **Insight (one sentence):** Successful reconstruction usually ends with the task unless deliberately represented; preserved understanding can participate in later reasoning without the same reconstruction.
 
-**Sync rule:** When `plate-13-01-C.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
+**Sync rule:** When `plate-13-01-B-reconstruction-vs-participation.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
 
 ---
 
@@ -210,7 +210,7 @@ Column titles carry the fork contrast.
 | Field | Exact text |
 | --- | --- |
 | Title | `When reconstruction survives the task` |
-| Plate ID | `Plate 13-01-C` |
+| Plate ID | `Plate 13-01-B` |
 
 ### 10.2 Engineering task
 
@@ -321,5 +321,5 @@ Column-title underline: 2 px `#A1A1AA`.
 3. Right path shows representation under care enabling later participation.
 4. No STE stack, ROI, or storage-product imagery.
 5. Vertical shafts visible on stem and fork drops.
-6. `plate-13-01-C.svg` matches this document within +/- 8 px.
+6. `plate-13-01-B-reconstruction-vs-participation.svg` matches this document within +/- 8 px.
 7. SVG is well-formed UTF-8 XML.

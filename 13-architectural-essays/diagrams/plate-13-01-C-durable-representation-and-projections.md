@@ -1,15 +1,15 @@
-# Plate 13-01-D - Durable representation and selective projections
+# Plate 13-01-C - Durable representation and selective projections
 
-**Plate ID:** `13-01-D`  
+**Plate ID:** `13-01-C`  
 **Parent work:** `13-01-when-machines-stopped-waiting.md`  
-**Rendered projection:** `plate-13-01-D-durable-representation-and-projections.svg` (must match this specification)  
+**Rendered projection:** `plate-13-01-C-durable-representation-and-projections.svg` (must match this specification)  
 **Status:** Engineering layout specification (canonical). Not artwork.  
 **Reproduce in:** SVG or draw.io without additional design decisions.  
 **Authority:** Explanatory aid only. Essay prose remains interpretive authority if figure and text diverge during drafting.
 
 **Insight (one sentence):** One durable representation of architectural state can support many projections; a single universal artifact optimized for both human narrative and machine traversal serves neither well.
 
-**Sync rule:** When `plate-13-01-D-durable-representation-and-projections.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
+**Sync rule:** When `plate-13-01-C-durable-representation-and-projections.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
 
 ---
 
@@ -110,14 +110,14 @@ Straight lines from hub edge toward each projection. Marker on the projection en
 | P5 | (860,400)-(924,452) | Auditor |
 | P6 | (640,432)-(640,492) | Computational |
 
-Connector style: solid 2 px `#3F3F46`; marker `arrow-out-13-01-D`.
+Connector style: solid 2 px `#3F3F46`; marker `arrow-out-13-01-C`.
 
 ---
 
 ## 7. Arrow / marker
 
 ```
-id: arrow-out-13-01-D
+id: arrow-out-13-01-C
 viewBox: 0 0 8 8
 refX: 8
 refY: 4
@@ -128,7 +128,7 @@ path: M0,0 L8,4 L0,8 Z
 fill: #3F3F46
 ```
 
-Use unique element IDs on this plate (`plate-title-13-01-D`, `plate-desc-13-01-D`, marker id above) so multiple handbook SVGs on one GitHub page do not collide.
+Use unique element IDs on this plate (`plate-title-13-01-C`, `plate-desc-13-01-C`, marker id above) so multiple handbook SVGs on one GitHub page do not collide.
 
 ---
 
@@ -157,7 +157,7 @@ Line 2: `One universal artifact optimized for both narrative and machine travers
 | Field | Exact text |
 | --- | --- |
 | Title | `Durable representation and selective projections` |
-| Plate ID | `Plate 13-01-D` |
+| Plate ID | `Plate 13-01-C` |
 
 ### 10.2 Hub
 

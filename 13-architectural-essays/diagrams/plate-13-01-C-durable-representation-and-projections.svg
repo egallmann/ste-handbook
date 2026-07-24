@@ -4,16 +4,16 @@
      width="1280"
      height="720"
      role="img"
-     aria-labelledby="plate-title-13-01-D plate-desc-13-01-D">
-  <title id="plate-title-13-01-D">Plate 13-01-D: Durable representation and selective projections</title>
-  <desc id="plate-desc-13-01-D">
+     aria-labelledby="plate-title-13-01-C plate-desc-13-01-C">
+  <title id="plate-title-13-01-C">Plate 13-01-C: Durable representation and selective projections</title>
+  <desc id="plate-desc-13-01-C">
     Center hub: durable representation of architectural state. Six surrounding
     projections: decision record, diagram, executive, engineer, auditor, and
     computational bounded representation.
   </desc>
 
   <defs>
-    <marker id="arrow-out-13-01-D"
+    <marker id="arrow-out-13-01-C"
             viewBox="0 0 8 8"
             refX="8"
             refY="4"
@@ -45,7 +45,7 @@
         .proj { fill: #21262D; stroke: #8B949E; }
         .proj-comp { fill: #3D2E12; stroke: #D29922; }
         .connector { stroke: #C9D1D9; }
-        #arrow-out-13-01-D path { fill: #C9D1D9; }
+        #arrow-out-13-01-C path { fill: #C9D1D9; }
         .t-header { fill: #F0F6FC; }
         .t-plate-id { fill: #8B949E; }
         .t-hub-title { fill: #58A6FF; }
@@ -61,12 +61,12 @@
   <rect class="band" x="32" y="32" width="1216" height="56"/>
 
   <!-- Connectors (under cards where ends meet boxes) -->
-  <line class="connector" x1="640" y1="280" x2="640" y2="192" marker-end="url(#arrow-out-13-01-D)"/>
-  <line class="connector" x1="420" y1="330" x2="356" y2="278" marker-end="url(#arrow-out-13-01-D)"/>
-  <line class="connector" x1="860" y1="330" x2="924" y2="278" marker-end="url(#arrow-out-13-01-D)"/>
-  <line class="connector" x1="420" y1="400" x2="356" y2="452" marker-end="url(#arrow-out-13-01-D)"/>
-  <line class="connector" x1="860" y1="400" x2="924" y2="452" marker-end="url(#arrow-out-13-01-D)"/>
-  <line class="connector" x1="640" y1="432" x2="640" y2="492" marker-end="url(#arrow-out-13-01-D)"/>
+  <line class="connector" x1="640" y1="280" x2="640" y2="192" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="420" y1="330" x2="356" y2="278" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="860" y1="330" x2="924" y2="278" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="420" y1="400" x2="356" y2="452" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="860" y1="400" x2="924" y2="452" marker-end="url(#arrow-out-13-01-C)"/>
+  <line class="connector" x1="640" y1="432" x2="640" y2="492" marker-end="url(#arrow-out-13-01-C)"/>
 
   <rect class="proj" x="460" y="112" width="360" height="72" rx="6"/>
   <rect class="proj" x="48" y="200" width="300" height="88" rx="6"/>
@@ -106,7 +106,7 @@
   <text class="t-body" x="436" y="552">Bounded identities and relationships required for a task</text>
 
   <text class="t-header" x="48" y="68">Durable representation and selective projections</text>
-  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-D</text>
+  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-C</text>
 
   <text class="t-foot1" x="640" y="646" text-anchor="middle">Projections are selective views, not demotions of documents and diagrams.</text>
   <text class="t-foot2" x="640" y="668" text-anchor="middle">One universal artifact optimized for both narrative and machine traversal serves neither well.</text>

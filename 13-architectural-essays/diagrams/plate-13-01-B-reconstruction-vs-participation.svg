@@ -4,16 +4,16 @@
      width="1280"
      height="720"
      role="img"
-     aria-labelledby="plate-title plate-desc">
-  <title id="plate-title">Plate 13-01-C: When reconstruction survives the task</title>
-  <desc id="plate-desc">
+     aria-labelledby="plate-title-13-01-B plate-desc-13-01-B">
+  <title id="plate-title-13-01-B">Plate 13-01-B: When reconstruction survives the task</title>
+  <desc id="plate-desc-13-01-B">
     Shared stem from engineering task through reconstruction, then a fork:
     left path where understanding dies with the task and inference repeats;
     right path where durable represented understanding participates in later reasoning.
   </desc>
 
   <defs>
-    <marker id="arrow-down"
+    <marker id="arrow-down-13-01-B"
             viewBox="0 0 8 8"
             refX="8"
             refY="4"
@@ -52,7 +52,7 @@
         .durable { fill: #12261E; stroke: #3FB950; }
         .later { fill: #12253F; stroke: #58A6FF; }
         .connector { stroke: #C9D1D9; }
-        #arrow-down path { fill: #C9D1D9; }
+        #arrow-down-13-01-B path { fill: #C9D1D9; }
         .t-header { fill: #F0F6FC; }
         .t-plate-id { fill: #8B949E; }
         .t-col { fill: #E6EDF3; }
@@ -79,16 +79,16 @@
   <rect class="band" x="32" y="616" width="1216" height="72"/>
 
   <!-- Stem -->
-  <line class="connector" x1="640" y1="184" x2="640" y2="208" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="640" y1="184" x2="640" y2="208" marker-end="url(#arrow-down-13-01-B)"/>
   <!-- Fork junction -->
   <line class="connector" x1="640" y1="304" x2="640" y2="328"/>
   <line class="connector" x1="640" y1="328" x2="308" y2="328"/>
-  <line class="connector" x1="308" y1="328" x2="308" y2="360" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="308" y1="328" x2="308" y2="360" marker-end="url(#arrow-down-13-01-B)"/>
   <line class="connector" x1="640" y1="328" x2="924" y2="328"/>
-  <line class="connector" x1="924" y1="328" x2="924" y2="360" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="924" y1="328" x2="924" y2="360" marker-end="url(#arrow-down-13-01-B)"/>
   <!-- Lower fork -->
-  <line class="connector" x1="308" y1="464" x2="308" y2="492" marker-end="url(#arrow-down)"/>
-  <line class="connector" x1="924" y1="464" x2="924" y2="492" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="308" y1="464" x2="308" y2="492" marker-end="url(#arrow-down-13-01-B)"/>
+  <line class="connector" x1="924" y1="464" x2="924" y2="492" marker-end="url(#arrow-down-13-01-B)"/>
 
   <text class="t-col" x="48" y="348">Without durable representation</text>
   <line class="col-underline" x1="48" y1="354" x2="280" y2="354"/>
@@ -120,7 +120,7 @@
   <text class="t-body" x="678" y="572">Validated understanding participates without the same reconstruction</text>
 
   <text class="t-header" x="48" y="68">When reconstruction survives the task</text>
-  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-C</text>
+  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-B</text>
 
   <text class="t-foot1" x="640" y="646" text-anchor="middle">Recurrence matters more than any single reconstruction.</text>
   <text class="t-foot2" x="640" y="668" text-anchor="middle">Left: inference repeats. Right: validated understanding participates in later reasoning.</text>
