@@ -75,9 +75,9 @@ Architecture practice developed around a different kind of completion for everyt
 
 ## Then the work started earlier
 
-![Plate 13-01-B: When machine work begins. Historical path after closure for a bounded operation versus earlier computational participation before the architecture has fully converged.](diagrams/plate-13-01-B.svg)
+![Plate 13-01-A: When machine work begins. Historical path after closure for a bounded operation versus earlier computational participation before the architecture has fully converged.](diagrams/plate-13-01-A.svg)
 
-**Plate 13-01-B.** When machine work begins. Historical machines consume a closed-enough product for a bounded operation; the computational participant enters while architectural work remains open. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
+**Plate 13-01-A.** When machine work begins. Historical machines consume a closed-enough product for a bounded operation; the computational participant enters while architectural work remains open. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 
 Something shifted in how computational systems entered architectural work, not that machines arrived for the first time, but that they were invited into a different stage of it.
 
@@ -184,6 +184,10 @@ System of Thought Engineering (STE) is one attempt to build an environment equal
 In that environment, accepted decisions can be encoded with explicit identity and relationships; projections can serve human explanation without becoming the only recoverable source of truth; and executable architecture can be derived from represented substrate rather than reconstructed from prose for every change. ADR-PS and ADR-PC records are one family of artifacts aimed at that kind of composition. Separately, governed execution, where invalid state cannot simply be papered over by retrying an answer, belongs to a related discipline of how reasoning runs once obligations exist. This essay operates one layer earlier: what representation must exist if computational participation is to be governable, reusable, and safe before the work is finished for the machine.
 
 Participation alone does not make a computational system an actor. A participant may help with orientation, context assembly, analysis, candidate generation, validation, or recommendation and still remain advisory. It becomes an actor only when the organization permits it, inside explicit authority boundaries, to perform engineering work that can alter architectural or operational state. That turn is a governance distinction, not a claim that the system has become more intelligent or autonomous.
+
+![Plate 13-01-B: Consumer, participant, actor. Participation remains advisory; actor status is organizational permission to alter state inside authority boundaries, not a capability upgrade.](diagrams/plate-13-01-B.svg)
+
+**Plate 13-01-B.** Consumer, participant, actor. Participation remains advisory; becoming an actor is organizational permission to alter architectural or operational state inside authority boundaries. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 
 Architecture still has human readers. It has always had machine consumers of closed products. It now has computational participants asked to work earlier. Under controlled conditions those participants become actors.
 

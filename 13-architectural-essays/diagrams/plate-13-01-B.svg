@@ -5,15 +5,15 @@
      height="720"
      role="img"
      aria-labelledby="plate-title plate-desc">
-  <title id="plate-title">Plate 13-01-B: When machine work begins</title>
+  <title id="plate-title">Plate 13-01-B: Consumer, participant, actor</title>
   <desc id="plate-desc">
-    Two parallel columns. Left: historical path after closure for a bounded operation,
-    ending in historical machine consumers. Right: earlier path before the architecture
-    has fully converged, ending in a computational participant.
+    Left to right: machine consumer of closed products, computational participant
+    that remains advisory, governance gate of organizational permission and authority
+    boundaries, then actor permitted to alter architectural or operational state.
   </desc>
 
   <defs>
-    <marker id="arrow-down"
+    <marker id="arrow-right"
             viewBox="0 0 8 8"
             refX="8"
             refY="4"
@@ -26,123 +26,88 @@
     <style type="text/css"><![CDATA[
       .canvas-bg { fill: #FFFFFF; }
       .band { fill: #FAFAFA; stroke: #D4D4D8; stroke-width: 1; }
-      .col-frame { fill: #FFFFFF; stroke: #A1A1AA; stroke-width: 1.5; }
-      .stage1 { fill: #F4F4F5; stroke: #52525B; stroke-width: 1.5; }
-      .stage2-left { fill: #E8F0FE; stroke: #1D4ED8; stroke-width: 2; }
-      .stage2-right { fill: #FEF3C7; stroke: #B45309; stroke-width: 2; }
-      .stage3-left { fill: #ECFDF5; stroke: #047857; stroke-width: 2.5; }
-      .stage3-right { fill: #FEE2E2; stroke: #B91C1C; stroke-width: 2.5; }
+      .consumer { fill: #ECFDF5; stroke: #047857; stroke-width: 2; }
+      .participant { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .gate { fill: #E8F0FE; stroke: #1D4ED8; stroke-width: 3; }
+      .actor { fill: #FEE2E2; stroke: #B91C1C; stroke-width: 2.5; }
       .connector { fill: none; stroke: #3F3F46; stroke-width: 2; }
       .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #18181B; }
       .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #71717A; }
-      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #27272A; }
-      .t-node-title { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #18181B; }
-      .t-node-body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #3F3F46; }
-      .t-side { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #3F3F46; }
-      .t-caption { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #52525B; }
+      .t-role { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #18181B; }
+      .t-body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #3F3F46; }
+      .t-gate-title { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #1D4ED8; }
+      .t-gate-body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #1E3A8A; }
       .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #18181B; }
       .t-foot2 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #52525B; }
-      .col-underline { stroke: #A1A1AA; stroke-width: 2; fill: none; }
 
       @media (prefers-color-scheme: dark) {
         .canvas-bg { fill: #0D1117; }
         .band { fill: #161B22; stroke: #30363D; }
-        .col-frame { fill: #0D1117; stroke: #484F58; }
-        .stage1 { fill: #21262D; stroke: #8B949E; }
-        .stage2-left { fill: #12253F; stroke: #58A6FF; }
-        .stage2-right { fill: #3D2E12; stroke: #D29922; }
-        .stage3-left { fill: #12261E; stroke: #3FB950; }
-        .stage3-right { fill: #3D1515; stroke: #F85149; }
+        .consumer { fill: #12261E; stroke: #3FB950; }
+        .participant { fill: #3D2E12; stroke: #D29922; }
+        .gate { fill: #12253F; stroke: #58A6FF; }
+        .actor { fill: #3D1515; stroke: #F85149; }
         .connector { stroke: #C9D1D9; }
-        #arrow-down path { fill: #C9D1D9; }
+        #arrow-right path { fill: #C9D1D9; }
         .t-header { fill: #F0F6FC; }
         .t-plate-id { fill: #8B949E; }
-        .t-col { fill: #E6EDF3; }
-        .t-node-title { fill: #F0F6FC; }
-        .t-node-body { fill: #C9D1D9; }
-        .t-side { fill: #C9D1D9; }
-        .t-caption { fill: #8B949E; }
+        .t-role { fill: #F0F6FC; }
+        .t-body { fill: #C9D1D9; }
+        .t-gate-title { fill: #58A6FF; }
+        .t-gate-body { fill: #79B8FF; }
         .t-foot1 { fill: #F0F6FC; }
         .t-foot2 { fill: #8B949E; }
-        .col-underline { stroke: #484F58; }
       }
     ]]></style>
   </defs>
 
   <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
-
   <rect class="band" x="32" y="32" width="1216" height="56"/>
 
-  <rect class="col-frame" x="32" y="104" width="584" height="488" rx="8"/>
-  <rect class="col-frame" x="664" y="104" width="584" height="488" rx="8"/>
-
-  <!-- Stage1/2 h=80; Stage3 h=112. Stage1->Stage2 gap ~56px so shaft is visible -->
-  <rect class="stage1" x="48" y="168" width="520" height="80" rx="6"/>
-  <rect class="stage2-left" x="48" y="304" width="520" height="80" rx="6"/>
-  <rect class="stage3-left" x="48" y="448" width="520" height="112" rx="8"/>
-
-  <rect class="stage1" x="680" y="168" width="520" height="80" rx="6"/>
-  <rect class="stage2-right" x="680" y="304" width="520" height="80" rx="6"/>
-  <rect class="stage3-right" x="680" y="448" width="520" height="112" rx="8"/>
+  <rect class="consumer" x="48" y="168" width="300" height="360" rx="8"/>
+  <rect class="participant" x="400" y="168" width="300" height="360" rx="8"/>
+  <rect class="actor" x="924" y="168" width="300" height="360" rx="8"/>
+  <rect class="gate" x="740" y="268" width="140" height="160" rx="8"/>
 
   <rect class="band" x="32" y="616" width="1216" height="72"/>
 
-  <!-- Shafts: Stage1 bottom 248 -> Stage2 top 304; Stage2 bottom 384 -> Stage3 top 448 -->
-  <line class="connector" x1="308" y1="248" x2="308" y2="296" marker-end="url(#arrow-down)"/>
-  <line class="connector" x1="308" y1="384" x2="308" y2="440" marker-end="url(#arrow-down)"/>
-  <line class="connector" x1="940" y1="248" x2="940" y2="296" marker-end="url(#arrow-down)"/>
-  <line class="connector" x1="940" y1="384" x2="940" y2="440" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="348" y1="348" x2="392" y2="348" marker-end="url(#arrow-right)"/>
+  <line class="connector" x1="700" y1="348" x2="732" y2="348" marker-end="url(#arrow-right)"/>
+  <line class="connector" x1="880" y1="348" x2="916" y2="348" marker-end="url(#arrow-right)"/>
 
-  <!-- Side labels right of Stage2->Stage3 shafts -->
-  <text class="t-side" x="320" y="410">Machine consumes</text>
-  <text class="t-side" x="320" y="424">closed-enough product</text>
-  <text class="t-side" x="952" y="410">Participant enters while</text>
-  <text class="t-side" x="952" y="424">work remains open</text>
+  <text class="t-role" x="62" y="196">Machine consumer</text>
+  <text class="t-body" x="62" y="224">Closed-enough products for a</text>
+  <text class="t-body" x="62" y="244">bounded operation</text>
+  <text class="t-body" x="62" y="272">Compilers, deployers, policy engines</text>
+  <text class="t-body" x="62" y="296">Formal tools, MBSE, executable architecture</text>
+  <text class="t-body" x="62" y="320">Execute, check, generate, compose, simulate</text>
+  <text class="t-body" x="62" y="344">Does not invent organizational intent</text>
 
-  <!-- Stage-2 captions left of midline -->
-  <text class="t-caption" x="48" y="400">Closure is relative to the operation,</text>
-  <text class="t-caption" x="48" y="414">not universal completeness.</text>
-  <text class="t-caption" x="680" y="400">Requirements, alternatives, and governing</text>
-  <text class="t-caption" x="680" y="414">constraints may still be unsettled.</text>
+  <text class="t-role" x="414" y="196">Computational participant</text>
+  <text class="t-body" x="414" y="224">May consume formal architecture</text>
+  <text class="t-body" x="414" y="244">when present</text>
+  <text class="t-body" x="414" y="272">May help before closed representation</text>
+  <text class="t-body" x="414" y="292">exists</text>
+  <text class="t-body" x="414" y="320">Orientation, assembly, analysis,</text>
+  <text class="t-body" x="414" y="340">validation, recommendation</text>
+  <text class="t-body" x="414" y="368">Remains advisory</text>
 
-  <text class="t-col" x="48" y="136">Historical path: after closure for a bounded operation</text>
-  <line class="col-underline" x1="48" y1="142" x2="430" y2="142"/>
-  <text class="t-col" x="680" y="136">Earlier path: before the architecture has fully converged</text>
-  <line class="col-underline" x1="680" y1="142" x2="1070" y2="142"/>
+  <text class="t-gate-title" x="810" y="320" text-anchor="middle">Authority</text>
+  <text class="t-gate-title" x="810" y="338" text-anchor="middle">boundaries</text>
+  <text class="t-gate-body" x="810" y="366" text-anchor="middle">Organizational</text>
+  <text class="t-gate-body" x="810" y="384" text-anchor="middle">permission</text>
 
-  <text class="t-node-title" x="62" y="192">Human interpretive work</text>
-  <text class="t-node-body" x="62" y="210">Interpret requirements that matter for the step</text>
-  <text class="t-node-body" x="62" y="226">Select among alternatives that matter for the step</text>
-  <text class="t-node-body" x="62" y="242">Resolve competing constraints that matter for the step</text>
+  <text class="t-role" x="938" y="196">Actor</text>
+  <text class="t-body" x="938" y="224">Permitted to alter architectural</text>
+  <text class="t-body" x="938" y="244">or operational state</text>
+  <text class="t-body" x="938" y="272">Inside explicit authority</text>
+  <text class="t-body" x="938" y="292">boundaries</text>
+  <text class="t-body" x="938" y="320">Granted by the organization</text>
+  <text class="t-body" x="938" y="344">Not a capability upgrade</text>
 
-  <text class="t-node-title" x="62" y="328">Represented product (closed enough for the operation)</text>
-  <text class="t-node-body" x="62" y="346">Source, manifest, rules, model, transitions, or executable definition</text>
-  <text class="t-node-body" x="62" y="362">Machine may treat this input as given</text>
-
-  <text class="t-node-title" x="62" y="472">Historical machine consumers</text>
-  <text class="t-node-body" x="62" y="490">Compilers &#183; build systems &#183; deployers &#183; policy engines</text>
-  <text class="t-node-body" x="62" y="506">Analyzers &#183; model checkers &#183; generators &#183; simulation</text>
-  <text class="t-node-body" x="62" y="522">MBSE environments &#183; executable / composable architecture definitions</text>
-  <text class="t-node-body" x="62" y="538">Execute, check, generate, compose, or simulate</text>
-
-  <text class="t-node-title" x="694" y="192">Human interpretive work (incomplete for the change)</text>
-  <text class="t-node-body" x="694" y="210">Stakeholder tension may remain unresolved</text>
-  <text class="t-node-body" x="694" y="226">Governing constraints may still be contested</text>
-  <text class="t-node-body" x="694" y="242">Authors of prior decisions may be gone</text>
-
-  <text class="t-node-title" x="694" y="328">Open architectural work</text>
-  <text class="t-node-body" x="694" y="346">Architecture has not fully converged</text>
-  <text class="t-node-body" x="694" y="362">Understanding is still being assembled and interpreted</text>
-
-  <text class="t-node-title" x="694" y="472">Computational participant</text>
-  <text class="t-node-body" x="694" y="490">Assemble context from tickets, diagrams, policies, code, deployment, evidence</text>
-  <text class="t-node-body" x="694" y="506">Compare alternatives &#183; recover intent &#183; propose design</text>
-  <text class="t-node-body" x="694" y="522">Implement or compose a change &#183; draft the later decision record</text>
-  <text class="t-node-body" x="694" y="538">May help produce understanding, or act as if it already exists</text>
-
-  <text class="t-header" x="48" y="68">When machine work begins</text>
+  <text class="t-header" x="48" y="68">Consumer, participant, actor</text>
   <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-B</text>
 
-  <text class="t-foot1" x="640" y="646" text-anchor="middle">Contrast: not whether machines consume architecture, but when they enter the work.</text>
-  <text class="t-foot2" x="640" y="668" text-anchor="middle">Left: after represented semantics for a bounded operation. Right: before the architecture has fully converged.</text>
+  <text class="t-foot1" x="640" y="646" text-anchor="middle">Participation remains advisory. Actor status is organizational permission to alter state.</text>
+  <text class="t-foot2" x="640" y="668" text-anchor="middle">The gate is a governance distinction, not a claim of greater intelligence or autonomy.</text>
 </svg>
