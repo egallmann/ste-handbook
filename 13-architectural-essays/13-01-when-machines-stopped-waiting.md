@@ -123,6 +123,10 @@ Reconstruction is also not a one-time activity completed at the beginning of a p
 
 That is why recurrence matters more than any single reconstruction. Inference paid only once can look like ordinary craft. Inference performed independently across many tasks, teams, and tools leaves the organization reconstructing what it had already known. Durable representation lets recovered understanding survive beyond the event that produced it. Later discovery, planning, implementation, review, governance, incident response, and computational participation can begin from what was previously represented rather than inventing it again from tickets, memory, and conflicting documents. The engineering benefit is not merely that information was stored. It is that validated understanding can participate in future reasoning without requiring the same reconstruction. As architectural complexity grows, as organizational scope widens, as authority domains diverge, as historical decisions accumulate, and as implementation surfaces proliferate, the share of understanding that can be reused should grow if that representation is governed well. This is not fundamentally an argument about machines. It is an architectural argument about repeated inference versus understanding that outlives the task that recovered it.
 
+![Plate 13-01-C: When reconstruction survives the task. Without durable representation, understanding dies with the task and inference repeats; with representation under care, validated understanding participates in later reasoning.](diagrams/plate-13-01-C.svg)
+
+**Plate 13-01-C.** When reconstruction survives the task. Successful reconstruction usually ends with the task unless deliberately represented; preserved understanding can participate in later reasoning without the same reconstruction. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
+
 ## Why representation becomes the work
 
 Most organizations never decide, formally, what their canonical architectural representation is. Canonical state accumulates. Requirements systems hold some of it. Diagrams hold some. Decision records hold some. Source, infrastructure, tickets, reviews, policies, and operational systems hold more. Experienced engineers hold the rest.
@@ -185,7 +189,7 @@ In that environment, accepted decisions can be encoded with explicit identity an
 
 Participation alone does not make a computational system an actor. A participant may help with orientation, context assembly, analysis, candidate generation, validation, or recommendation and still remain advisory. It becomes an actor only when the organization permits it, inside explicit authority boundaries, to perform engineering work that can alter architectural or operational state. That turn is a governance distinction, not a claim that the system has become more intelligent or autonomous.
 
-![Plate 13-01-B: Consumer, participant, actor. Participation remains advisory; actor status is organizational permission to alter state inside authority boundaries, not a capability upgrade.](diagrams/plate-13-01-B.svg)
+![Plate 13-01-B: Consumer, participant, actor. Participation remains advisory; actor status is organizational permission to alter state inside authority boundaries, not a capability upgrade.](diagrams/plate-13-01-B-consumer-participant-actor.svg)
 
 **Plate 13-01-B.** Consumer, participant, actor. Participation remains advisory; becoming an actor is organizational permission to alter architectural or operational state inside authority boundaries. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 

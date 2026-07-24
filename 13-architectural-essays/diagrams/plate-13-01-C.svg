@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title plate-desc">
+  <title id="plate-title">Plate 13-01-C: When reconstruction survives the task</title>
+  <desc id="plate-desc">
+    Shared stem from engineering task through reconstruction, then a fork:
+    left path where understanding dies with the task and inference repeats;
+    right path where durable represented understanding participates in later reasoning.
+  </desc>
+
+  <defs>
+    <marker id="arrow-down"
+            viewBox="0 0 8 8"
+            refX="8"
+            refY="4"
+            markerWidth="8"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3F3F46"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #FAFAFA; stroke: #D4D4D8; stroke-width: 1; }
+      .task { fill: #F4F4F5; stroke: #52525B; stroke-width: 1.5; }
+      .recon { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .dies { fill: #FEE2E2; stroke: #B91C1C; stroke-width: 2; }
+      .repeat { fill: #F4F4F5; stroke: #52525B; stroke-width: 1.5; }
+      .durable { fill: #ECFDF5; stroke: #047857; stroke-width: 2.5; }
+      .later { fill: #E8F0FE; stroke: #1D4ED8; stroke-width: 2; }
+      .connector { fill: none; stroke: #3F3F46; stroke-width: 2; }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #18181B; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #71717A; }
+      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #27272A; }
+      .t-title { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #18181B; }
+      .t-body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #3F3F46; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #18181B; }
+      .t-foot2 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #52525B; }
+      .col-underline { stroke: #A1A1AA; stroke-width: 2; fill: none; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .task { fill: #21262D; stroke: #8B949E; }
+        .recon { fill: #3D2E12; stroke: #D29922; }
+        .dies { fill: #3D1515; stroke: #F85149; }
+        .repeat { fill: #21262D; stroke: #8B949E; }
+        .durable { fill: #12261E; stroke: #3FB950; }
+        .later { fill: #12253F; stroke: #58A6FF; }
+        .connector { stroke: #C9D1D9; }
+        #arrow-down path { fill: #C9D1D9; }
+        .t-header { fill: #F0F6FC; }
+        .t-plate-id { fill: #8B949E; }
+        .t-col { fill: #E6EDF3; }
+        .t-title { fill: #F0F6FC; }
+        .t-body { fill: #C9D1D9; }
+        .t-foot1 { fill: #F0F6FC; }
+        .t-foot2 { fill: #8B949E; }
+        .col-underline { stroke: #484F58; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+  <rect class="band" x="32" y="32" width="1216" height="56"/>
+
+  <rect class="task" x="440" y="112" width="400" height="72" rx="6"/>
+  <rect class="recon" x="440" y="216" width="400" height="88" rx="8"/>
+
+  <rect class="dies" x="48" y="368" width="520" height="96" rx="6"/>
+  <rect class="repeat" x="48" y="500" width="520" height="88" rx="6"/>
+  <rect class="durable" x="664" y="368" width="520" height="96" rx="6"/>
+  <rect class="later" x="664" y="500" width="520" height="88" rx="6"/>
+
+  <rect class="band" x="32" y="616" width="1216" height="72"/>
+
+  <!-- Stem -->
+  <line class="connector" x1="640" y1="184" x2="640" y2="208" marker-end="url(#arrow-down)"/>
+  <!-- Fork junction -->
+  <line class="connector" x1="640" y1="304" x2="640" y2="328"/>
+  <line class="connector" x1="640" y1="328" x2="308" y2="328"/>
+  <line class="connector" x1="308" y1="328" x2="308" y2="360" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="640" y1="328" x2="924" y2="328"/>
+  <line class="connector" x1="924" y1="328" x2="924" y2="360" marker-end="url(#arrow-down)"/>
+  <!-- Lower fork -->
+  <line class="connector" x1="308" y1="464" x2="308" y2="492" marker-end="url(#arrow-down)"/>
+  <line class="connector" x1="924" y1="464" x2="924" y2="492" marker-end="url(#arrow-down)"/>
+
+  <text class="t-col" x="48" y="348">Without durable representation</text>
+  <line class="col-underline" x1="48" y1="354" x2="280" y2="354"/>
+  <text class="t-col" x="664" y="348">With durable representation under care</text>
+  <line class="col-underline" x1="664" y1="354" x2="980" y2="354"/>
+
+  <text class="t-title" x="454" y="140">Engineering task</text>
+  <text class="t-body" x="454" y="162">Discovery, planning, implementation, review,</text>
+  <text class="t-body" x="454" y="178">incidents, modernization, governance, AI-assisted work</text>
+
+  <text class="t-title" x="454" y="244">Reconstruction / inference event</text>
+  <text class="t-body" x="454" y="268">Recover enough architectural understanding</text>
+  <text class="t-body" x="454" y="288">to reason safely about what may change</text>
+
+  <text class="t-title" x="62" y="396">Understanding dies with the task</text>
+  <text class="t-body" x="62" y="420">Recovery may succeed</text>
+  <text class="t-body" x="62" y="440">Without deliberate representation under care, it usually ends here</text>
+
+  <text class="t-title" x="62" y="528">Next reasoning event</text>
+  <text class="t-body" x="62" y="552">Repeats much of the same inference</text>
+  <text class="t-body" x="62" y="572">from tickets, memory, and conflicting documents</text>
+
+  <text class="t-title" x="678" y="396">Durable represented understanding</text>
+  <text class="t-body" x="678" y="420">Recovered understanding survives the event</text>
+  <text class="t-body" x="678" y="440">Kept under care beyond the task that produced it</text>
+
+  <text class="t-title" x="678" y="528">Later reasoning events</text>
+  <text class="t-body" x="678" y="552">Begin from what was previously represented</text>
+  <text class="t-body" x="678" y="572">Validated understanding participates without the same reconstruction</text>
+
+  <text class="t-header" x="48" y="68">When reconstruction survives the task</text>
+  <text class="t-plate-id" x="1232" y="66" text-anchor="end">Plate 13-01-C</text>
+
+  <text class="t-foot1" x="640" y="646" text-anchor="middle">Recurrence matters more than any single reconstruction.</text>
+  <text class="t-foot2" x="640" y="668" text-anchor="middle">Left: inference repeats. Right: validated understanding participates in later reasoning.</text>
+</svg>
