@@ -180,17 +180,13 @@ Reading order follows Parts 0–14. Links are relative to this repository root.
 
 - [Adoption overview](12-adoption/12-00-adoption-overview.md)
 
-## Part 13 — Advanced topics
+## Part 13 — Architectural Essays and Deep Dives
 
-- [Advanced topics overview](13-advanced-topics/13-00-advanced-topics-overview.md)
-- [Semantic graphs](13-advanced-topics/13-01-semantic-graphs.md)
-- [Embodied decision records](13-advanced-topics/13-02-embodied-decision-records.md)
-- [Deterministic scoring](13-advanced-topics/13-03-deterministic-scoring.md)
-- [Reference architectures](13-advanced-topics/13-04-reference-architectures.md)
-- [Golden systems](13-advanced-topics/13-05-golden-systems.md)
-- [Multi-agent systems](13-advanced-topics/13-06-multi-agent-systems.md)
-- [Policy and governance](13-advanced-topics/13-07-policy-and-governance.md)
-- [Safety and alignment](13-advanced-topics/13-08-safety-and-alignment.md)
+- [Architectural Essays and Deep Dives overview](13-architectural-essays/13-00-essays-and-deep-dives-overview.md)
+
+### Conceptual essays
+
+- [When Machines Stopped Waiting](13-architectural-essays/13-01-when-machines-stopped-waiting.md)
 
 ## Part 14 — Research
 

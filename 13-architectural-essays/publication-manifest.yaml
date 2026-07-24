@@ -1,0 +1,76 @@
+# GENERATED — DO NOT EDIT
+# integrity_schema_version: 1
+# generated: deterministic_projection_v1
+# artifact_kind: work_catalog
+# generator_id: ste-handbook-publication-manifest
+# generator_version: 0.1.0
+# hash_algorithm: sha256
+# source_hash: sha256:95ea52a35f5715b7a0731c7e76318335d9c522b24d09e92ad3f28229ba97ef56
+# rendered_hash: sha256:8f612ac2e67198f6cb2ab63ebd05b801ee0308fdc156db78008d67b88b8e3ac9
+# catalog_of: works
+schema_version: 0.1.0
+type: work_catalog
+implementing_system: ste-handbook
+domain_status: emerging
+generated_date: '2026-07-24T03:14:23Z'
+generated_from: 13-architectural-essays/13-*.md
+works:
+- work_id: work-essays-and-deep-dives-overview
+  title: Architectural Essays and Deep Dives overview
+  content_type: part-overview
+  authority: explanatory
+  context_kind: explanatory
+  maturity: L2
+  status: structured
+  standalone: false
+  normative: false
+  research_claims: false
+  relationships: []
+  editions:
+  - edition_id: handbook
+    label: Handbook Edition
+    projections:
+    - format: markdown
+      path: 13-architectural-essays/13-00-essays-and-deep-dives-overview.md
+      content_hash: sha256:991c5362f55cce9ca3ab1d658a5e3bb77a51e8cbe26c4d6c1b3a42e916bd3e47
+      validation_status: pass
+- work_id: work-architecture-has-a-second-consumer
+  title: When Machines Stopped Waiting
+  content_type: conceptual-essay
+  authority: explanatory
+  context_kind: explanatory
+  maturity: L3
+  status: argument-complete
+  standalone: true
+  normative: false
+  research_claims: false
+  relationships:
+  - type: extends
+    target: 00-problem/00-02-the-problem-of-lossy-reasoning.md
+  - type: extends
+    target: 00-problem/00-04-architecture-as-a-first-class-artifact.md
+  - type: extends
+    target: 00-problem/00-08-the-ste-thesis.md
+  - type: extends
+    target: 03-artifacts/03-01-architecture-decision-records.md
+  - type: extends
+    target: 04-architecture-model/04-00-architecture-ir-overview.md
+  - type: extends
+    target: 06-governance/06-03-authority-and-decision-rights.md
+  - type: extends
+    target: 10-ai-interface/10-01-agents.md
+  editions:
+  - edition_id: handbook
+    label: Handbook Edition
+    projections:
+    - format: markdown
+      path: 13-architectural-essays/13-01-when-machines-stopped-waiting.md
+      content_hash: sha256:ddb5fcf65b1419a69f3a399a151609fc2437adb9b0915109deeb7c9ed17e922a
+      validation_status: pass
+statistics:
+  work_count: 2
+  edition_count: 2
+  projection_count: 2
+  by_content_type:
+    conceptual-essay: 1
+    part-overview: 1
