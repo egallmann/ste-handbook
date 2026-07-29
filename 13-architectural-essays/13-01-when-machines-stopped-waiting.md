@@ -218,3 +218,4 @@ Detailed doctrine for the obligation it motivates lives in the core handbook:
 Normative semantics remain in **ste-spec**. Research claims and methods remain in [Part 14](../14-research/14-00-research-overview.md).
 
 **Previous:** [Architectural Essays and Deep Dives overview](13-00-essays-and-deep-dives-overview.md)
+**Next:** [The Understanding We Keep Rebuilding](13-02-the-understanding-we-keep-rebuilding.md)

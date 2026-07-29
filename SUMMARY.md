@@ -187,6 +187,7 @@ Reading order follows Parts 0–14. Links are relative to this repository root.
 ### Conceptual essays
 
 - [When Machines Stopped Waiting](13-architectural-essays/13-01-when-machines-stopped-waiting.md)
+- [The Understanding We Keep Rebuilding](13-architectural-essays/13-02-the-understanding-we-keep-rebuilding.md)
 
 ## Part 14 — Research
 
