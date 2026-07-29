@@ -68,6 +68,7 @@ The Publication Domain (Work → Edition → Projection and related governance) 
 | Work | Form |
 | --- | --- |
 | [When Machines Stopped Waiting](13-01-when-machines-stopped-waiting.md) | Conceptual essay |
+| [The Understanding We Keep Rebuilding](13-02-the-understanding-we-keep-rebuilding.md) | Conceptual essay |
 
 ## Summary
 
