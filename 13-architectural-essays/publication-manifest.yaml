@@ -5,14 +5,14 @@
 # generator_id: ste-handbook-publication-manifest
 # generator_version: 0.1.0
 # hash_algorithm: sha256
-# source_hash: sha256:95ea52a35f5715b7a0731c7e76318335d9c522b24d09e92ad3f28229ba97ef56
-# rendered_hash: sha256:8f612ac2e67198f6cb2ab63ebd05b801ee0308fdc156db78008d67b88b8e3ac9
+# source_hash: sha256:eabfbdf36eb7709d0b4c82a4457be6ca0a15cc95c1e63edcbbdb429689703e94
+# rendered_hash: sha256:659c4982aa3b964a13272fe952fc0056918ec3770447871e06f75afc819355c0
 # catalog_of: works
 schema_version: 0.1.0
 type: work_catalog
 implementing_system: ste-handbook
 domain_status: emerging
-generated_date: '2026-07-24T03:14:23Z'
+generated_date: '2026-07-29T04:31:32Z'
 generated_from: 13-architectural-essays/13-*.md
 works:
 - work_id: work-essays-and-deep-dives-overview
@@ -32,7 +32,7 @@ works:
     projections:
     - format: markdown
       path: 13-architectural-essays/13-00-essays-and-deep-dives-overview.md
-      content_hash: sha256:991c5362f55cce9ca3ab1d658a5e3bb77a51e8cbe26c4d6c1b3a42e916bd3e47
+      content_hash: sha256:02644cddeca5b4d9fd66d6c4763b11b2c3c614c6d3514c15c71ac691f05e570e
       validation_status: pass
 - work_id: work-architecture-has-a-second-consumer
   title: When Machines Stopped Waiting
@@ -65,12 +65,41 @@ works:
     projections:
     - format: markdown
       path: 13-architectural-essays/13-01-when-machines-stopped-waiting.md
-      content_hash: sha256:ddb5fcf65b1419a69f3a399a151609fc2437adb9b0915109deeb7c9ed17e922a
+      content_hash: sha256:d1c79c427c1c41c56de70a4e4cc24485c471333bb905881e3b47ad1e582c76f4
+      validation_status: pass
+- work_id: work-understanding-as-unpreserved-capital
+  title: The Understanding We Keep Rebuilding
+  content_type: conceptual-essay
+  authority: explanatory
+  context_kind: explanatory
+  maturity: L3
+  status: argument-complete
+  standalone: true
+  normative: false
+  research_claims: false
+  relationships:
+  - type: extends
+    target: 00-problem/00-02-the-problem-of-lossy-reasoning.md
+  - type: extends
+    target: 00-problem/00-04-architecture-as-a-first-class-artifact.md
+  - type: extends
+    target: 00-problem/00-08-the-ste-thesis.md
+  - type: extends
+    target: 03-artifacts/03-01-architecture-decision-records.md
+  - type: extends
+    target: 06-governance/06-03-authority-and-decision-rights.md
+  editions:
+  - edition_id: handbook
+    label: Handbook Edition
+    projections:
+    - format: markdown
+      path: 13-architectural-essays/13-02-the-understanding-we-keep-rebuilding.md
+      content_hash: sha256:9e57ee019db639ddbec7ee235703c2b9008f9b57ebf378a72312e0b3290ae86a
       validation_status: pass
 statistics:
-  work_count: 2
-  edition_count: 2
-  projection_count: 2
+  work_count: 3
+  edition_count: 3
+  projection_count: 3
   by_content_type:
-    conceptual-essay: 1
+    conceptual-essay: 2
     part-overview: 1
