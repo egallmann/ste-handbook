@@ -3,7 +3,7 @@ title: "Research Apparatus"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # Research Apparatus
@@ -58,11 +58,22 @@ flowchart TD
 
 **Calibration** checks wiring or sensitivity against known non-authoritative markers. Calibration is not gold lock and not adjudication.
 
+### Operating capability versus evidentiary authority
+
+Operating capability and evidentiary authority are orthogonal. Progress on the instrument does not grant evidence authority.
+
+| Dimension | Members (illustrative) |
+|-----------|------------------------|
+| Operating capability | Apparatus construction; apparatus validation; calibration; local-test execution; live experimental collection; closure execution; replay and reproducibility support |
+| Authority or evidence status | Engineering validation artifact; collected observation; candidate evidence; admitted experimental evidence; bounded substrate-closed `Q`; benchmark authority; research fitness; research conclusion |
+
+A program may advance operating capability while authority statuses above collected observation remain blocked. Collection success is not admission. Bounded substrate-closed `Q` is not `Q_fixture`. Program-local pages such as [MVC experimental apparatus](research/mvc/02-methodology/experimental-apparatus.md) elaborate the distinction without replacing this doctrine.
+
 ### Authority pipeline
 
 ```mermaid
 flowchart LR
-  Obs[Observation]
+  Obs[Collected_observation]
   Adm[Admitted_evidence]
   Find[Finding]
   Prop[Promotion_proposal]
@@ -74,18 +85,21 @@ flowchart LR
   Prop --> Auth
 ```
 
-For HSCA-backed known outcomes, the narrower pipeline is:
+Admission is a separate governed transition. Collected observations do not become admitted evidence merely because collection succeeded.
+
+For HSCA-backed known outcomes, the narrower path is:
 
 ```text
-sealed observations
-  → cooperative review and mechanical closure
-  → substrate-closed Q
+sealed observations (collected records)
+  → cooperative review and governed closure
+    (bounded semantic adjudication + deterministic validation, assembly, identity, hashing, and promotion controls)
+  → substrate-closed Q (bounded; explicit ceilings)
   → separate benchmark adjudication
   → Q_fixture
   → research fitness / benchmark-backed readings
 ```
 
-Mechanical closure contracts can exist before any live closure record exists. Substrate-closed `Q` is not `Q_fixture`. Apparatus success never grants benchmark authority.
+Governed closure contracts can exist before any live closure record exists. Substrate-closed `Q` is not `Q_fixture`. Apparatus success never grants benchmark authority.
 
 ### Conceptual controls
 
@@ -100,7 +114,7 @@ Research apparatus doctrine keeps these controls visible even when program pages
 ## The Implications
 
 - Apparatus validation is necessary and never sufficient for research claims.
-- Live sealed collection can establish provenance without establishing completeness or correctness.
+- Live sealed collection can establish provenance without establishing completeness, correctness, or admission.
 - Pilot and calibration results remain narrower than adjudicated benchmark readings.
 - Program-local apparatus pages explain one instrument family; they do not replace this doctrine chapter.
 - Operational schemas, scripts, gate names, and repository paths stay outside handbook prose.
@@ -112,7 +126,8 @@ Research Apparatus sits between research programs and methodologies in Part 14. 
 ## Summary
 
 - Research Apparatus is the program’s experimental instrument, not STE as a whole.
-- Validation, readiness, calibration, and study evidence are different states.
+- Operating capability and evidentiary authority remain orthogonal.
+- Validation, readiness, calibration, collected observation, admission, and study evidence are different states.
 - Observations become authority only through admitted evidence, findings, proposals, and separate governance.
 - Substrate-closed `Q` and `Q_fixture` remain distinct; fitness requires benchmark authority.
 - Apparatus success never validates the hypothesis under study.

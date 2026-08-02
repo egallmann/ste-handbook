@@ -3,7 +3,7 @@ title: "MVC Harness Architecture"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # MVC Harness Architecture
@@ -14,7 +14,7 @@ Readers need a public boundary for the MVC research harness without turning the 
 
 ## The Reframe
 
-The harness is the operational embodiment of the MVC Research Apparatus. Handbook prose states the conceptual boundary only. Owning repositories hold schemas, executors, and raw artifacts.
+The harness is the operational embodiment of the MVC Research Apparatus. The public conceptual map of shared controls and parallel tracks lives in [MVC experimental apparatus](../02-methodology/experimental-apparatus.md). Handbook prose on this page states the harness boundary only. Owning repositories hold schemas, executors, and raw artifacts.
 
 ## The Model
 
@@ -36,7 +36,7 @@ The harness may validate apparatus mechanics, support sealed collection, assist 
 
 - Harness success is instrument evidence, not hypothesis support.
 - Public architecture descriptions must remain configuration-level, not command-level.
-- Missing live closure records can coexist with existing mechanical closure contracts; both facts should stay visible in methodology pages, not here as inventory.
+- Collected observations, admitted evidence, and bounded substrate-closed `Q` remain distinct; collection success is not admission. Capability inventories belong on methodology pages, not here.
 
 ## Relationship to STE system
 

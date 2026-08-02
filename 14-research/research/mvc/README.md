@@ -3,7 +3,7 @@ title: "MVC Research Program"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # MVC Research Program
@@ -22,6 +22,8 @@ MVC is the first instantiated STE research program. It investigates whether stru
 
 MVC is not the purpose of Part 14 and does not define Part 14. It is the first program using the research-program structure that future programs can also use.
 
+The program protects experimental validity through a coordinated Research Apparatus: shared controls and parallel tracks for representation, evolution validation, evaluation and collection, HSCA closure, and evidence admission. How that instrument is organized—and what it does not prove—is mapped in [MVC experimental apparatus](02-methodology/experimental-apparatus.md).
+
 ## The Model
 
 ```yaml
@@ -31,7 +33,7 @@ status: "active"
 lead_authors:
   - "Erik Gallmann"
 created: "2026-06-09"
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 research_state: "active"
 related_theories:
   - "representation ceiling"
@@ -66,6 +68,7 @@ MVC research connects to the runtime MVC chapter and to the research doctrine in
 
 - MVC is the first instantiated STE research program.
 - MVC is not normative doctrine.
+- The program uses a coordinated experimental apparatus to protect validity without treating instrument success as thesis proof.
 - MVC research separates thesis, methodology, design, findings, reproductions, and open questions.
 
 Read next: [MVC Thesis Publications](01-thesis/README.md) starts the MVC research-program sequence.
