@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-03-C plate-desc-13-03-C">
+  <title id="plate-title-13-03-C">Plate 13-03-C: Expected shape without inventing the edge</title>
+  <desc id="plate-desc-13-03-C">
+    Three swimlanes. Left: primary ordinary walk under purple MVC-D expected
+    shape, reaching implementation and decision. Middle: MVC-D validation
+    finds gaps and triggers supplemental traversal. Right: same task entry,
+    expected shape, and depth-bounded walk, then newly reaches requirement
+    as independently resolved and leaves frontend unresolved.
+  </desc>
+
+  <defs>
+    <marker id="arrow-solid-13-03-C"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-miss-13-03-C"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#B45309"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #F1F5F9; stroke: #94A3B8; stroke-width: 1; }
+      .frame { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .frame-miss { fill: #FFFBEB; stroke: #D97706; stroke-width: 2; }
+      .task { fill: #EEF2FF; stroke: #4338CA; stroke-width: 2; }
+      .expect { fill: #F5F3FF; stroke: #6D28D9; stroke-width: 2; }
+      .walk { fill: #F8FAFC; stroke: #475569; stroke-width: 1.5; }
+      .reached { fill: #ECFDF5; stroke: #047857; stroke-width: 1.5; }
+      .label-band { fill: #F8FAFC; stroke: #94A3B8; stroke-width: 1; }
+      .state-indep { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .state-unres { fill: #F8FAFC; stroke: #64748B; stroke-width: 1.5; }
+      .why { fill: #FFF7ED; stroke: #EA580C; stroke-width: 1.5; }
+      .fail-name { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .conn-solid { fill: none; stroke: #334155; stroke-width: 2; marker-end: url(#arrow-solid-13-03-C); }
+      .conn-miss { fill: none; stroke: #B45309; stroke-width: 2; stroke-dasharray: 8 6; marker-end: url(#arrow-miss-13-03-C); }
+      .conn-miss-thin { fill: none; stroke: #D97706; stroke-width: 1.5; stroke-dasharray: 8 6; marker-end: url(#arrow-miss-13-03-C); }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0F172A; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #475569; }
+      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #334155; }
+      .t-col-miss { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #B45309; }
+      .t-prim { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #0F172A; }
+      .t-sec { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-label { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #334155; }
+      .t-fail-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #0F172A; }
+      .t-fail-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-state-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #0F172A; }
+      .t-state-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-why { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #334155; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 500; fill: #0F172A; }
+      .t-foot3 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #64748B; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .frame { fill: #0D1117; stroke: #30363D; }
+        .frame-miss { fill: #2A2111; stroke: #D29922; }
+        .task { fill: #1C2333; stroke: #818CF8; }
+        .expect { fill: #221C33; stroke: #A78BFA; }
+        .walk { fill: #21262D; stroke: #8B949E; }
+        .reached { fill: #12261E; stroke: #3FB950; }
+        .label-band { fill: #161B22; stroke: #30363D; }
+        .state-indep, .fail-name { fill: #3D2E12; stroke: #D29922; }
+        .state-unres { fill: #21262D; stroke: #8B949E; }
+        .why { fill: #2A1810; stroke: #F0883E; }
+        .conn-solid { stroke: #C9D1D9; }
+        .conn-miss, .conn-miss-thin { stroke: #D29922; }
+        #arrow-solid-13-03-C path { fill: #C9D1D9; }
+        #arrow-miss-13-03-C path { fill: #D29922; stroke: none; }
+        .t-header, .t-prim, .t-fail-p, .t-state-p, .t-foot1 { fill: #F0F6FC; }
+        .t-plate-id, .t-foot3 { fill: #8B949E; }
+        .t-col, .t-sec, .t-label, .t-fail-s, .t-state-s, .t-why { fill: #C9D1D9; }
+        .t-col-miss { fill: #D29922; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+
+  <g id="plate-header-13-03-C">
+    <rect class="band" x="32" y="32" width="1216" height="56" rx="8"/>
+    <text class="t-header" x="48" y="68">Expected shape without inventing the edge</text>
+    <text class="t-plate-id" x="1232" y="66" text-anchor="end">13-03-C</text>
+  </g>
+
+  <g id="plate-frames-13-03-C">
+    <rect class="frame" x="32" y="124" width="400" height="428" rx="8"/>
+    <rect class="frame-miss" x="456" y="124" width="240" height="428" rx="8"/>
+    <rect class="frame" x="720" y="124" width="528" height="428" rx="8"/>
+    <text class="t-col" x="48" y="120">Ordinary walk under expectation</text>
+    <text class="t-col-miss" x="576" y="120" text-anchor="middle">MVC-D validation</text>
+    <text class="t-col" x="736" y="120">Supplemental traversal (bounded)</text>
+  </g>
+
+  <g id="plate-content-shift-13-03-C" transform="translate(0,20)">
+  <g id="plate-left-13-03-C">
+    <rect class="task" x="48" y="128" width="368" height="48" rx="8"/>
+    <text class="t-prim" x="64" y="148">Task entry</text>
+    <text class="t-sec" x="64" y="166">Change a field on the payments API</text>
+
+    <rect class="expect" x="48" y="188" width="368" height="72" rx="8"/>
+    <text class="t-prim" x="64" y="210">MVC-D expected shape</text>
+    <text class="t-sec" x="64" y="228">Implementation - Decision - Requirement</text>
+    <text class="t-sec" x="64" y="246">Frontend consumer</text>
+
+    <rect class="walk" x="48" y="276" width="368" height="48" rx="8"/>
+    <text class="t-prim" x="64" y="296">Depth-bounded traversal</text>
+    <text class="t-sec" x="64" y="314">Stop at declared depth</text>
+
+    <rect class="reached" x="48" y="344" width="160" height="72" rx="8"/>
+    <text class="t-label" x="64" y="364">Reached</text>
+    <text class="t-prim" x="64" y="384">Implementation</text>
+    <text class="t-sec" x="64" y="402">API handler</text>
+
+    <rect class="reached" x="256" y="344" width="160" height="72" rx="8"/>
+    <text class="t-label" x="272" y="364">Reached</text>
+    <text class="t-prim" x="272" y="384">Decision</text>
+    <text class="t-sec" x="272" y="402">ADR on the field</text>
+
+    <rect class="label-band" x="48" y="432" width="368" height="40" rx="8"/>
+    <text class="t-label" x="64" y="456">Primary walk returned these</text>
+  </g>
+
+  <g id="plate-mid-13-03-C">
+    <rect class="fail-name" x="468" y="208" width="216" height="240" rx="8"/>
+    <text class="t-fail-p" x="576" y="240" text-anchor="middle">MVC-D validation</text>
+    <text class="t-fail-s" x="576" y="272" text-anchor="middle">Compare expected</text>
+    <text class="t-fail-s" x="576" y="292" text-anchor="middle">shape vs realized</text>
+    <text class="t-fail-s" x="576" y="322" text-anchor="middle">Gap: Domain -</text>
+    <text class="t-fail-s" x="576" y="342" text-anchor="middle">Requirement, Frontend</text>
+    <text class="t-fail-s" x="576" y="372" text-anchor="middle">Trigger supplemental walk</text>
+    <text class="t-fail-s" x="576" y="404" text-anchor="middle">Near-term direction</text>
+  </g>
+
+  <g id="plate-right-13-03-C">
+    <rect class="task" x="744" y="128" width="480" height="48" rx="8"/>
+    <text class="t-prim" x="760" y="148">Task entry</text>
+    <text class="t-sec" x="760" y="166">Same task - same declaration</text>
+
+    <rect class="expect" x="744" y="188" width="480" height="72" rx="8"/>
+    <text class="t-prim" x="760" y="210">MVC-D expected shape</text>
+    <text class="t-sec" x="760" y="228">Same loaded definition</text>
+    <text class="t-sec" x="760" y="246">Gaps still required</text>
+
+    <rect class="walk" x="744" y="276" width="480" height="40" rx="8"/>
+    <text class="t-prim" x="760" y="294">Depth-bounded traversal</text>
+    <text class="t-sec" x="760" y="310">Still bounded - gap-directed</text>
+
+    <rect class="state-indep" x="744" y="332" width="480" height="72" rx="8"/>
+    <text class="t-label" x="760" y="352">Independently resolved</text>
+    <text class="t-state-p" x="760" y="372">Requirement</text>
+    <text class="t-state-s" x="760" y="390">Primary walk could not reach</text>
+
+    <rect class="state-unres" x="744" y="420" width="480" height="64" rx="8"/>
+    <text class="t-label" x="760" y="440">Unresolved</text>
+    <text class="t-state-p" x="760" y="458">Frontend consumer</text>
+    <text class="t-state-s" x="760" y="474">Still no qualifying material</text>
+
+    <rect class="why" x="744" y="500" width="480" height="32" rx="8"/>
+    <text class="t-why" x="760" y="520">New context for gaps - not an invented graph edge</text>
+  </g>
+
+  <g id="plate-connectors-13-03-C">
+    <line class="conn-solid" x1="208" y1="380" x2="256" y2="380"/>
+  </g>
+
+  <g id="plate-miss-path-13-03-C">
+    <line class="conn-miss" x1="416" y1="380" x2="468" y2="328"/>
+    <line class="conn-miss" x1="684" y1="268" x2="744" y2="152"/>
+    <line class="conn-miss" x1="684" y1="340" x2="744" y2="368"/>
+    <line class="conn-miss-thin" x1="684" y1="400" x2="744" y2="452"/>
+  </g>
+  </g>
+
+  <g id="plate-footer-13-03-C">
+    <rect class="band" x="32" y="576" width="1216" height="112" rx="8"/>
+    <text class="t-foot1" x="640" y="616" text-anchor="middle">Supplemental traversal repeats task, expected shape, and depth bound - then reaches context the primary walk missed.</text>
+    <text class="t-foot1" x="640" y="648" text-anchor="middle">Independently resolved is not graph-connected. Unresolved stays unresolved. Near-term direction - not current RSS.</text>
+    <text class="t-foot3" x="640" y="676" text-anchor="middle">Explanatory projection only; essay prose is authoritative if figure and text diverge.</text>
+  </g>
+</svg>

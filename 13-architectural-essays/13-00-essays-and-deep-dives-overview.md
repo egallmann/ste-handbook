@@ -69,6 +69,7 @@ The Publication Domain (Work → Edition → Projection and related governance) 
 | --- | --- |
 | [When Machines Stopped Waiting](13-01-when-machines-stopped-waiting.md) | Conceptual essay |
 | [The Understanding We Keep Rebuilding](13-02-the-understanding-we-keep-rebuilding.md) | Conceptual essay |
+| [The Shape of Sufficient Context](13-03-the-shape-of-sufficient-context.md) | Conceptual essay |
 
 ## Summary
 
