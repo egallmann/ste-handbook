@@ -62,6 +62,8 @@ Then I want to understand the rule.
 
 Here is the claim I will test: a privacy property can fail under composition even when the individual observations, relationships, companies, and disclosures remain locally permitted.
 
+That claim has ancestors. Helen Nissenbaum's **contextual integrity** treats privacy in terms of appropriate information flows and contextual norms, not secrecy alone. **Mosaic theory** in Fourth Amendment law has long asked whether individually permissible observations can acquire a different privacy character once they are aggregated or connected over time. I am not trying to replace those frameworks, and I am not offering a legal brief. I am trying to stress-test them against the kind of system engineers actually assemble: observations, relationships, identity, inference, latency, and standing conditions joined by ordinary boxes and arrows.
+
 Because if that relationship is too much, I have some questions about everything else we appear willing to let technical systems reconstruct.
 
 ---
@@ -536,6 +538,8 @@ ACME Vision contributed observations. ACME Analytics contributed relationships. 
 No one component had to contain it.
 
 That feels like the first real composition problem in the synthetic.
+
+It also sounded uncomfortably familiar. Mosaic reasoning already asks whether a set of individually lawful observations can reveal more together than any one observation was supposed to reveal alone. Contextual integrity would ask whether the resulting flow still respects the norms of the contexts those observations came from. The synthetic does not answer those questions for me. It makes the composition visible enough that I can no longer treat each box as if it were the whole story.
 
 By this point it was also worth noticing how little I had actually built. ACME Vision observed things it was permitted to observe. ACME Analytics created probabilistic relationships among those observations. Another permitted source eventually contributed an identity edge. Everything else was time, confidence, and the ability to connect one relationship to another.
 
@@ -1814,6 +1818,8 @@ I had been doing that throughout the exercise.
 
 And existing privacy law is more composition-aware than a simplistic version of this argument would admit.
 
+So is much of privacy theory. Contextual integrity already treats privacy as a property of flows and contexts rather than mere concealment. Mosaic theory already treats aggregation as potentially transformative. What kept bothering me was how easily a compliant architecture could preserve every local rule while still producing the composed capability I cared about.
+
 Washington's [My Health My Data Act](https://app.leg.wa.gov/RCW/default.aspx?cite=19.373.010) can reach information derived or extrapolated from nonhealth information when it becomes consumer health data, including proxy, derivative, inferred, or emergent data. Colorado requires [data-protection assessments](https://coag.gov/resources/colorado-privacy-act/) for forms of sensitive and high-risk processing and treats precise geolocation as sensitive. Maryland defines [profiling](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&enactments=false&section=14-4801) broadly enough to include automated evaluation or prediction of a person's behavior, location, or movements and separately treats precise geolocation as sensitive data. California likewise treats [precise geolocation](https://cppa.ca.gov/faq.html) as sensitive personal information.
 
 Those are real protections.
@@ -2333,6 +2339,8 @@ Detailed doctrine for the obligation it motivates lives in the core handbook:
 - Authority ceilings: [Authority and decision rights](../06-governance/06-03-authority-and-decision-rights.md)
 
 Related conceptual argument in this part: [The Shape of Sufficient Context](13-03-the-shape-of-sufficient-context.md) treats missing or invented structure as a reasoning failure. This essay asks the complementary question: what capability appears when permitted edges are allowed to compose.
+
+Related privacy scholarship: contextual integrity (Nissenbaum) and mosaic-theory aggregation analysis in Fourth Amendment law already treat composition as central rather than exceptional. This essay applies that intuition to traversable technical systems and accountability edges, not only to the legal classification of individual records.
 
 Normative semantics remain in **ste-spec**. Research claims and methods remain in [Part 14](../14-research/14-00-research-overview.md).
 
