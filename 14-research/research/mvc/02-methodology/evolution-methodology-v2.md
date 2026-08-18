@@ -3,7 +3,7 @@ title: "Evolution Methodology v2"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # Evolution Methodology v2
@@ -753,7 +753,7 @@ A GA run may discover unknowns: invalid mutation regions, fragile packet structu
 
 #### Current apparatus state
 
-The current apparatus has already surfaced a major unknown: it validates wiring, but live substrate-closed `Q` records and separate benchmark adjudication to `Q_fixture` remain absent. It therefore does not provide research fitness authority.
+The current apparatus has already surfaced a major unknown for evolution and fitness use: named questions may complete governed HSCA closure to a bounded substrate-closed `Q` under explicit ceilings, but separate benchmark adjudication to `Q_fixture` remains absent. Live sealed collection and bounded closure do not grant research fitness authority. Local-test evolution and wiring validation remain engineering controls. See [HSCA methodology](hsca-methodology.md) and [MVC experimental apparatus](experimental-apparatus.md).
 
 ## The Implications
 

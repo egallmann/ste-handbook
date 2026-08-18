@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-03-B plate-desc-13-03-B">
+  <title id="plate-title-13-03-B">Plate 13-03-B: Correct traversal, incomplete neighborhood</title>
+  <desc id="plate-desc-13-03-B">
+    Three swimlanes. Left: task entry, depth-bounded traversal, and reached
+    implementation plus decision. Middle: graph failure named - required hop
+    not connected. Right: required artifact that exists elsewhere but stays
+    outside the reached subgraph.
+  </desc>
+
+  <defs>
+    <marker id="arrow-solid-13-03-B"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-miss-13-03-B"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#B45309"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #F1F5F9; stroke: #94A3B8; stroke-width: 1; }
+      .frame { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .frame-miss { fill: #FFFBEB; stroke: #D97706; stroke-width: 2; }
+      .task { fill: #EEF2FF; stroke: #4338CA; stroke-width: 2; }
+      .walk { fill: #F8FAFC; stroke: #475569; stroke-width: 1.5; }
+      .reached { fill: #ECFDF5; stroke: #047857; stroke-width: 1.5; }
+      .label-band { fill: #F8FAFC; stroke: #94A3B8; stroke-width: 1; }
+      .miss-climax { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .miss-sib { fill: #FFFBEB; stroke: #D97706; stroke-width: 1.5; }
+      .why { fill: #FFF7ED; stroke: #EA580C; stroke-width: 1.5; }
+      .fail-name { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .conn-solid { fill: none; stroke: #334155; stroke-width: 2; marker-end: url(#arrow-solid-13-03-B); }
+      .conn-miss { fill: none; stroke: #B45309; stroke-width: 2; stroke-dasharray: 8 6; marker-end: url(#arrow-miss-13-03-B); }
+      .conn-miss-thin { fill: none; stroke: #D97706; stroke-width: 1.5; stroke-dasharray: 8 6; marker-end: url(#arrow-miss-13-03-B); }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0F172A; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #475569; }
+      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #334155; }
+      .t-col-miss { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #B45309; }
+      .t-prim { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #0F172A; }
+      .t-sec { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-climax-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #0F172A; }
+      .t-climax-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-sib-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #0F172A; }
+      .t-sib-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-fail-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #0F172A; }
+      .t-fail-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-label { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #334155; }
+      .t-why { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #0F172A; }
+      .t-foot3 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #64748B; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .frame { fill: #0D1117; stroke: #30363D; }
+        .frame-miss { fill: #2A2111; stroke: #D29922; }
+        .task { fill: #1C2333; stroke: #818CF8; }
+        .walk { fill: #21262D; stroke: #8B949E; }
+        .reached { fill: #12261E; stroke: #3FB950; }
+        .label-band { fill: #161B22; stroke: #30363D; }
+        .miss-climax { fill: #3D2E12; stroke: #D29922; }
+        .miss-sib { fill: #2A2111; stroke: #D29922; }
+        .why { fill: #2A1810; stroke: #F0883E; }
+        .fail-name { fill: #3D2E12; stroke: #D29922; }
+        .conn-solid { stroke: #C9D1D9; }
+        .conn-miss { stroke: #D29922; }
+        .conn-miss-thin { stroke: #D29922; }
+        #arrow-solid-13-03-B path { fill: #C9D1D9; }
+        #arrow-miss-13-03-B path { fill: #D29922; stroke: none; }
+        .t-header, .t-prim, .t-climax-p, .t-sib-p, .t-fail-p, .t-foot1 { fill: #F0F6FC; }
+        .t-plate-id, .t-foot3 { fill: #8B949E; }
+        .t-col, .t-sec, .t-climax-s, .t-sib-s, .t-fail-s, .t-label, .t-why { fill: #C9D1D9; }
+        .t-col-miss { fill: #D29922; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+
+  <g id="plate-header-13-03-B">
+    <rect class="band" x="32" y="32" width="1216" height="56" rx="8"/>
+    <text class="t-header" x="48" y="68">Correct traversal, incomplete neighborhood</text>
+    <text class="t-plate-id" x="1232" y="66" text-anchor="end">13-03-B</text>
+  </g>
+
+  <g id="plate-frames-13-03-B">
+    <rect class="frame" x="32" y="124" width="400" height="428" rx="8"/>
+    <rect class="frame-miss" x="456" y="124" width="240" height="428" rx="8"/>
+    <rect class="frame" x="720" y="124" width="528" height="428" rx="8"/>
+    <text class="t-col" x="48" y="120">What the walk reached</text>
+    <text class="t-col-miss" x="576" y="120" text-anchor="middle">The miss</text>
+    <text class="t-col" x="736" y="120">What still exists outside reach</text>
+  </g>
+
+  <g id="plate-content-shift-13-03-B" transform="translate(0,20)">
+  <g id="plate-left-13-03-B">
+    <rect class="task" x="48" y="128" width="368" height="64" rx="8"/>
+    <text class="t-prim" x="64" y="154">Task entry</text>
+    <text class="t-sec" x="64" y="176">Change a field on the payments API</text>
+
+    <rect class="walk" x="48" y="248" width="368" height="72" rx="8"/>
+    <text class="t-prim" x="64" y="272">Depth-bounded traversal</text>
+    <text class="t-sec" x="64" y="292">Follow credible relationships</text>
+    <text class="t-sec" x="64" y="310">Stop at declared depth</text>
+
+    <rect class="reached" x="48" y="376" width="160" height="80" rx="8"/>
+    <text class="t-label" x="64" y="398">Reached</text>
+    <text class="t-prim" x="64" y="420">Implementation</text>
+    <text class="t-sec" x="64" y="440">API handler</text>
+
+    <rect class="reached" x="256" y="376" width="160" height="80" rx="8"/>
+    <text class="t-label" x="272" y="398">Reached</text>
+    <text class="t-prim" x="272" y="420">Decision</text>
+    <text class="t-sec" x="272" y="440">ADR on the field</text>
+
+    <rect class="label-band" x="48" y="480" width="368" height="48" rx="8"/>
+    <text class="t-label" x="64" y="500">Assembled reached subgraph</text>
+    <text class="t-label" x="64" y="516">Walk was mechanically correct</text>
+  </g>
+
+  <g id="plate-mid-13-03-B">
+    <rect class="fail-name" x="480" y="248" width="192" height="160" rx="8"/>
+    <text class="t-fail-p" x="576" y="288" text-anchor="middle">Graph failure</text>
+    <text class="t-fail-s" x="576" y="316" text-anchor="middle">Familiar incomplete-graph case</text>
+    <text class="t-fail-s" x="576" y="344" text-anchor="middle">Absent edge or beyond depth</text>
+    <text class="t-fail-s" x="576" y="366" text-anchor="middle">Walk cannot invent a path</text>
+  </g>
+
+  <g id="plate-right-13-03-B">
+    <rect class="miss-climax" x="744" y="128" width="480" height="128" rx="8"/>
+    <text class="t-label" x="760" y="156">Unreached</text>
+    <text class="t-climax-p" x="760" y="180">Beyond declared depth</text>
+    <text class="t-climax-s" x="760" y="208">Frontend consumer</text>
+    <text class="t-climax-s" x="760" y="232">Needed - path sits past the bound</text>
+
+    <rect class="miss-climax" x="744" y="280" width="480" height="128" rx="8"/>
+    <text class="t-label" x="760" y="308">Unreached</text>
+    <text class="t-climax-p" x="760" y="332">Absent edge</text>
+    <text class="t-climax-s" x="760" y="360">Requirement</text>
+    <text class="t-climax-s" x="760" y="384">In the available tree - no hop from Decision</text>
+
+    <rect class="why" x="744" y="432" width="480" height="96" rx="8"/>
+    <text class="t-why" x="760" y="464">Same visible miss: needed, present, not in the packet</text>
+    <text class="t-why" x="760" y="488">Absent edge or beyond depth. Do not invent a path.</text>
+  </g>
+
+  <g id="plate-connectors-13-03-B">
+    <line class="conn-solid" x1="232" y1="192" x2="232" y2="248"/>
+    <line class="conn-solid" x1="232" y1="320" x2="232" y2="376"/>
+    <line class="conn-solid" x1="208" y1="416" x2="256" y2="416"/>
+  </g>
+
+  <g id="plate-miss-path-13-03-B">
+    <line class="conn-miss" x1="416" y1="416" x2="480" y2="328"/>
+    <line class="conn-miss" x1="672" y1="280" x2="744" y2="192"/>
+    <line class="conn-miss-thin" x1="672" y1="360" x2="744" y2="344"/>
+  </g>
+  </g>
+
+  <g id="plate-footer-13-03-B">
+    <rect class="band" x="32" y="576" width="1216" height="112" rx="8"/>
+    <text class="t-foot1" x="640" y="616" text-anchor="middle">Incomplete graphs under bounded reachability routinely leave required structure outside the packet.</text>
+    <text class="t-foot1" x="640" y="648" text-anchor="middle">Graph failure names that familiar case: correct walk, incomplete neighborhood - not permission to rewrite the graph.</text>
+    <text class="t-foot3" x="640" y="676" text-anchor="middle">Explanatory projection only; essay prose is authoritative if figure and text diverge.</text>
+  </g>
+</svg>
