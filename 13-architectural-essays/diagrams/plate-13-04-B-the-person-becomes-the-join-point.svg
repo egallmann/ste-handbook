@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-04-B plate-desc-13-04-B">
+  <title id="plate-title-13-04-B">Plate 13-04-B: The person becomes the join point</title>
+  <desc id="plate-desc-13-04-B">
+    Four zones. Left: observations, observable signals, public context,
+    and identity, each permitted separately. Mid-left: ordinary ACME
+    processing around Enrichment. Mid-right: Erik as the join point among
+    employer, public mention, property, signals, vehicle X, Person B,
+    household/address context, and place/time history. Right: reconstructable
+    view without a canonical dossier or a name search.
+  </desc>
+
+  <defs>
+    <marker id="arrow-solid-13-04-B"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-join-13-04-B"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#B45309"/>
+    </marker>
+    <marker id="arrow-dashed-13-04-B"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#64748B"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #F1F5F9; stroke: #94A3B8; stroke-width: 1; }
+      .frame { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .frame-z3 { fill: #FFFBEB; stroke: #D97706; stroke-width: 2; }
+      .input { fill: #F8FAFC; stroke: #475569; stroke-width: 1.5; }
+      .company { fill: #EEF2FF; stroke: #4338CA; stroke-width: 1.5; }
+      .enrich { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .erik { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .rel { fill: #FFFBEB; stroke: #D97706; stroke-width: 1.5; }
+      .cap { fill: #EEF2FF; stroke: #4338CA; stroke-width: 1.5; }
+      .conn-solid { fill: none; stroke: #334155; stroke-width: 2; stroke-linecap: butt; marker-end: url(#arrow-solid-13-04-B); }
+      .conn-solid-bus { fill: none; stroke: #334155; stroke-width: 2; stroke-linecap: butt; }
+      .conn-join { fill: none; stroke: #B45309; stroke-width: 2.5; stroke-linecap: butt; marker-end: url(#arrow-join-13-04-B); }
+      .conn-join-bus { fill: none; stroke: #B45309; stroke-width: 2.5; stroke-linecap: butt; }
+      .conn-join-dash { fill: none; stroke: #B45309; stroke-width: 2; stroke-dasharray: 8 6; stroke-linecap: butt; marker-end: url(#arrow-join-13-04-B); }
+      .conn-join-dash-bus { fill: none; stroke: #B45309; stroke-width: 2; stroke-dasharray: 8 6; stroke-linecap: butt; }
+      .conn-cap { fill: none; stroke: #64748B; stroke-width: 2; stroke-dasharray: 8 6; stroke-linecap: butt; marker-end: url(#arrow-dashed-13-04-B); }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0F172A; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #475569; }
+      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #334155; }
+      .t-col-z3 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #B45309; }
+      .t-co-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #0F172A; }
+      .t-co-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-en-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #0F172A; }
+      .t-erik { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #0F172A; }
+      .t-rel { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #0F172A; }
+      .t-edge { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #92400E; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 500; fill: #0F172A; }
+      .t-foot4 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #64748B; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .frame { fill: #0D1117; stroke: #30363D; }
+        .frame-z3 { fill: #2A2111; stroke: #D29922; }
+        .input { fill: #21262D; stroke: #8B949E; }
+        .company { fill: #1C2333; stroke: #818CF8; }
+        .enrich, .erik { fill: #3D2E12; stroke: #D29922; }
+        .rel { fill: #2A2111; stroke: #D29922; }
+        .cap { fill: #1C2333; stroke: #818CF8; }
+        .conn-solid, .conn-solid-bus { stroke: #C9D1D9; }
+        .conn-join, .conn-join-dash, .conn-join-bus, .conn-join-dash-bus { stroke: #D29922; }
+        .conn-cap { stroke: #8B949E; }
+        #arrow-solid-13-04-B path { fill: #C9D1D9; }
+        #arrow-join-13-04-B path { fill: #D29922; }
+        #arrow-dashed-13-04-B path { fill: #8B949E; }
+        .t-header, .t-co-p, .t-en-p, .t-erik, .t-rel, .t-foot1 { fill: #F0F6FC; }
+        .t-plate-id, .t-foot4 { fill: #8B949E; }
+        .t-col, .t-co-s { fill: #C9D1D9; }
+        .t-col-z3, .t-edge { fill: #D29922; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+
+  <g id="plate-header-13-04-B">
+    <rect class="band" x="32" y="32" width="1216" height="56" rx="8"/>
+    <text class="t-header" x="48" y="68">The person becomes the join point</text>
+    <text class="t-plate-id" x="1232" y="66" text-anchor="end">13-04-B</text>
+  </g>
+
+  <g id="plate-footer-13-04-B">
+    <rect class="band" x="32" y="576" width="1216" height="112" rx="8"/>
+    <text class="t-foot1" x="640" y="614" text-anchor="middle">Each box still sounds ordinary when described by itself.</text>
+    <text class="t-foot1" x="640" y="638" text-anchor="middle">Identity can join context, observations, signals, places, and other people without assembling a dossier.</text>
+    <text class="t-foot4" x="640" y="668" text-anchor="middle">Explanatory projection only; essay prose is authoritative if figure and text diverge.</text>
+  </g>
+
+  <rect class="frame" x="32" y="104" width="216" height="456" rx="8"/>
+  <rect class="frame" x="264" y="104" width="248" height="456" rx="8"/>
+  <rect class="frame-z3" x="528" y="104" width="488" height="456" rx="8"/>
+  <rect class="frame" x="1032" y="104" width="216" height="456" rx="8"/>
+  <text class="t-col" x="48" y="128">Permitted separately</text>
+  <text class="t-col" x="280" y="128">Ordinary processing</text>
+  <text class="t-col-z3" x="544" y="128">The person becomes the join point</text>
+  <text class="t-col" x="1048" y="128">Resulting capability</text>
+
+  <g id="plate-zone1-13-04-B">
+    <rect class="input" x="44" y="148" width="192" height="72" rx="8"/>
+    <text class="t-co-p" x="140" y="178" text-anchor="middle">Permitted</text>
+    <text class="t-co-s" x="140" y="198" text-anchor="middle">observations</text>
+    <rect class="input" x="44" y="236" width="192" height="72" rx="8"/>
+    <text class="t-co-p" x="140" y="266" text-anchor="middle">Permitted</text>
+    <text class="t-co-s" x="140" y="286" text-anchor="middle">observable signals</text>
+    <rect class="input" x="44" y="324" width="192" height="88" rx="8"/>
+    <text class="t-co-p" x="140" y="352" text-anchor="middle">Permitted public /</text>
+    <text class="t-co-s" x="140" y="370" text-anchor="middle">professional /</text>
+    <text class="t-co-s" x="140" y="388" text-anchor="middle">commercial context</text>
+    <rect class="input" x="44" y="432" width="192" height="72" rx="8"/>
+    <text class="t-co-p" x="140" y="462" text-anchor="middle">Permitted identity</text>
+    <text class="t-co-s" x="140" y="482" text-anchor="middle">relationship</text>
+  </g>
+
+  <g id="plate-zone2-13-04-B">
+    <rect class="company" x="276" y="152" width="108" height="68" rx="8"/>
+    <text class="t-co-p" x="330" y="178" text-anchor="middle">ACME Vision</text>
+    <text class="t-co-s" x="330" y="196" text-anchor="middle">observation</text>
+    <rect class="company" x="392" y="152" width="108" height="68" rx="8"/>
+    <text class="t-co-p" x="446" y="170" text-anchor="middle">ACME</text>
+    <text class="t-co-p" x="446" y="186" text-anchor="middle">Analytics</text>
+    <text class="t-co-s" x="446" y="204" text-anchor="middle">continuity</text>
+    <rect class="enrich" x="316" y="260" width="144" height="88" rx="8"/>
+    <text class="t-en-p" x="388" y="298" text-anchor="middle">ACME Enrichment</text>
+    <text class="t-co-s" x="388" y="320" text-anchor="middle">identity + context</text>
+    <rect class="company" x="276" y="396" width="108" height="68" rx="8"/>
+    <text class="t-co-p" x="330" y="418" text-anchor="middle">ACME</text>
+    <text class="t-co-p" x="330" y="434" text-anchor="middle">Intelligence</text>
+    <text class="t-co-s" x="330" y="450" text-anchor="middle">traversal</text>
+    <rect class="company" x="392" y="396" width="108" height="68" rx="8"/>
+    <text class="t-co-p" x="446" y="414" text-anchor="middle">ACME Real-Time</text>
+    <text class="t-co-p" x="446" y="430" text-anchor="middle">Security</text>
+    <text class="t-co-s" x="446" y="448" text-anchor="middle">predicate / alert</text>
+  </g>
+
+  <g id="plate-zone3-13-04-B">
+    <rect class="rel" x="540" y="148" width="96" height="44" rx="8"/>
+    <text class="t-rel" x="588" y="176" text-anchor="middle">Employer</text>
+    <rect class="rel" x="716" y="148" width="112" height="44" rx="8"/>
+    <text class="t-rel" x="772" y="176" text-anchor="middle">Public mention</text>
+    <rect class="rel" x="908" y="148" width="96" height="44" rx="8"/>
+    <text class="t-rel" x="956" y="176" text-anchor="middle">Property</text>
+    <rect class="erik" x="716" y="248" width="112" height="48" rx="24"/>
+    <text class="t-erik" x="772" y="278" text-anchor="middle">Erik</text>
+    <rect class="rel" x="540" y="324" width="96" height="52" rx="8"/>
+    <text class="t-rel" x="588" y="348" text-anchor="middle">Signal A</text>
+    <text class="t-co-s" x="588" y="364" text-anchor="middle">observable</text>
+    <rect class="rel" x="908" y="260" width="96" height="56" rx="8"/>
+    <text class="t-rel" x="956" y="298" text-anchor="middle">Person B</text>
+    <rect class="rel" x="540" y="392" width="96" height="52" rx="8"/>
+    <text class="t-rel" x="588" y="412" text-anchor="middle">Signal B</text>
+    <text class="t-co-s" x="588" y="430" text-anchor="middle">observable</text>
+    <rect class="rel" x="716" y="392" width="112" height="52" rx="8"/>
+    <text class="t-rel" x="772" y="424" text-anchor="middle">Vehicle X</text>
+    <rect class="rel" x="908" y="392" width="96" height="52" rx="8"/>
+    <text class="t-rel" x="956" y="412" text-anchor="middle">Household /</text>
+    <text class="t-rel" x="956" y="428" text-anchor="middle">address context</text>
+    <rect class="rel" x="656" y="504" width="232" height="36" rx="8"/>
+    <text class="t-rel" x="772" y="528" text-anchor="middle">Place / time history</text>
+  </g>
+
+  <g id="plate-zone4-13-04-B">
+    <rect class="cap" x="1044" y="160" width="192" height="80" rx="8"/>
+    <text class="t-co-p" x="1140" y="186" text-anchor="middle">Reconstructable view</text>
+    <text class="t-co-s" x="1140" y="206" text-anchor="middle">The picture can be</text>
+    <text class="t-co-s" x="1140" y="222" text-anchor="middle">assembled from paths</text>
+    <rect class="cap" x="1044" y="288" width="192" height="80" rx="8"/>
+    <text class="t-co-p" x="1140" y="314" text-anchor="middle">No canonical dossier</text>
+    <text class="t-co-p" x="1140" y="330" text-anchor="middle">required</text>
+    <text class="t-co-s" x="1140" y="348" text-anchor="middle">Relationships can be</text>
+    <text class="t-co-s" x="1140" y="364" text-anchor="middle">traversed together</text>
+    <rect class="cap" x="1044" y="416" width="192" height="80" rx="8"/>
+    <text class="t-co-p" x="1140" y="442" text-anchor="middle">No name search</text>
+    <text class="t-co-p" x="1140" y="458" text-anchor="middle">required</text>
+    <text class="t-co-s" x="1140" y="476" text-anchor="middle">Identity can unify</text>
+    <text class="t-co-s" x="1140" y="492" text-anchor="middle">older observations</text>
+  </g>
+
+  <g id="plate-connectors-13-04-B">
+    <line class="conn-solid" x1="330" y1="220" x2="330" y2="252"/>
+    <line class="conn-solid" x1="446" y1="220" x2="446" y2="252"/>
+    <line class="conn-join" x1="360" y1="348" x2="330" y2="388"/>
+    <line class="conn-join" x1="416" y1="348" x2="446" y2="388"/>
+    <polyline class="conn-join-dash-bus" points="460,304 512,304 512,272"/>
+    <line class="conn-join-dash" x1="512" y1="272" x2="708" y2="272"/>
+    <line class="conn-join" x1="772" y1="248" x2="772" y2="200"/>
+    <line class="conn-join" x1="716" y1="248" x2="588" y2="200"/>
+    <line class="conn-join" x1="828" y1="248" x2="956" y2="200"/>
+    <line class="conn-join" x1="772" y1="296" x2="772" y2="384"/>
+    <line class="conn-join" x1="772" y1="444" x2="772" y2="496"/>
+    <line class="conn-join" x1="636" y1="350" x2="708" y2="296"/>
+    <line class="conn-join" x1="636" y1="368" x2="708" y2="384"/>
+    <line class="conn-join" x1="636" y1="418" x2="708" y2="418"/>
+    <line class="conn-join" x1="828" y1="272" x2="900" y2="272"/>
+    <line class="conn-join" x1="956" y1="316" x2="956" y2="384"/>
+    <line class="conn-cap" x1="1004" y1="200" x2="1036" y2="200"/>
+    <polyline class="conn-cap" points="1004,368 1016,368 1016,328 1036,328"/>
+    <line class="conn-cap" x1="1004" y1="456" x2="1036" y2="456"/>
+  </g>
+
+  <g id="plate-connector-labels-13-04-B">
+    <text class="t-edge" x="610" y="288" text-anchor="middle">identity + context joined</text>
+    <text class="t-edge" x="798" y="224">mentioned in</text>
+    <text class="t-edge" x="658" y="206">employed by</text>
+    <text class="t-edge" x="916" y="236">associated with</text>
+    <text class="t-edge" x="786" y="354">associated with</text>
+    <text class="t-edge" x="786" y="478">observed at</text>
+    <text class="t-edge" x="604" y="308">later associated</text>
+    <text class="t-edge" x="604" y="320">with</text>
+    <text class="t-edge" x="702" y="364" text-anchor="middle">repeatedly observed</text>
+    <text class="t-edge" x="702" y="376" text-anchor="middle">near</text>
+    <text class="t-edge" x="676" y="396" text-anchor="middle">recurring</text>
+    <text class="t-edge" x="676" y="408" text-anchor="middle">co-observation</text>
+    <text class="t-edge" x="884" y="246" text-anchor="middle">repeatedly</text>
+    <text class="t-edge" x="884" y="258" text-anchor="middle">co-located with</text>
+    <text class="t-edge" x="968" y="342">associated</text>
+    <text class="t-edge" x="968" y="354">with</text>
+  </g>
+</svg>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-03-A plate-desc-13-03-A">
+  <title id="plate-title-13-03-A">Plate 13-03-A: Nearby hits, related structure missed</title>
+  <desc id="plate-desc-13-03-A">
+    Three swimlanes. Left: backend task, word search, and local hits.
+    Middle: the miss named - no shared words to follow.
+    Right: related structure that remained unreached - frontend consumer,
+    shared data contract, and tests.
+  </desc>
+
+  <defs>
+    <marker id="arrow-solid-13-03-A"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-miss-13-03-A"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#B45309"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #F1F5F9; stroke: #94A3B8; stroke-width: 1; }
+      .frame { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .frame-miss { fill: #FFFBEB; stroke: #D97706; stroke-width: 2; }
+      .task { fill: #EEF2FF; stroke: #4338CA; stroke-width: 2; }
+      .search { fill: #F8FAFC; stroke: #475569; stroke-width: 1.5; }
+      .hit { fill: #ECFDF5; stroke: #047857; stroke-width: 1.5; }
+      .label-band { fill: #F8FAFC; stroke: #94A3B8; stroke-width: 1; }
+      .miss-climax { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .miss-sib { fill: #FFFBEB; stroke: #D97706; stroke-width: 1.5; }
+      .why { fill: #FFF7ED; stroke: #EA580C; stroke-width: 1.5; }
+      .fail-name { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .conn-solid { fill: none; stroke: #334155; stroke-width: 2; marker-end: url(#arrow-solid-13-03-A); }
+      .conn-miss { fill: none; stroke: #B45309; stroke-width: 2; stroke-dasharray: 8 6; marker-end: url(#arrow-miss-13-03-A); }
+      .conn-miss-thin { fill: none; stroke: #D97706; stroke-width: 1.5; stroke-dasharray: 8 6; marker-end: url(#arrow-miss-13-03-A); }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0F172A; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #475569; }
+      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #334155; }
+      .t-col-miss { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #B45309; }
+      .t-prim { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #0F172A; }
+      .t-sec { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-climax-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #0F172A; }
+      .t-climax-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-sib-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #0F172A; }
+      .t-sib-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-fail-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #0F172A; }
+      .t-fail-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-label { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #334155; }
+      .t-why { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #0F172A; }
+      .t-foot3 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #64748B; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .frame { fill: #0D1117; stroke: #30363D; }
+        .frame-miss { fill: #2A2111; stroke: #D29922; }
+        .task { fill: #1C2333; stroke: #818CF8; }
+        .search { fill: #21262D; stroke: #8B949E; }
+        .hit { fill: #12261E; stroke: #3FB950; }
+        .label-band { fill: #161B22; stroke: #30363D; }
+        .miss-climax { fill: #3D2E12; stroke: #D29922; }
+        .miss-sib { fill: #2A2111; stroke: #D29922; }
+        .why { fill: #2A1810; stroke: #F0883E; }
+        .fail-name { fill: #3D2E12; stroke: #D29922; }
+        .conn-solid { stroke: #C9D1D9; }
+        .conn-miss { stroke: #D29922; }
+        .conn-miss-thin { stroke: #D29922; }
+        #arrow-solid-13-03-A path { fill: #C9D1D9; }
+        #arrow-miss-13-03-A path { fill: #D29922; stroke: none; }
+        .t-header, .t-prim, .t-climax-p, .t-sib-p, .t-fail-p, .t-foot1 { fill: #F0F6FC; }
+        .t-plate-id, .t-foot3 { fill: #8B949E; }
+        .t-col, .t-sec, .t-climax-s, .t-sib-s, .t-fail-s, .t-label, .t-why { fill: #C9D1D9; }
+        .t-col-miss { fill: #D29922; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+
+  <g id="plate-header-13-03-A">
+    <rect class="band" x="32" y="32" width="1216" height="56" rx="8"/>
+    <text class="t-header" x="48" y="68">Nearby hits, related structure missed</text>
+    <text class="t-plate-id" x="1232" y="66" text-anchor="end">13-03-A</text>
+  </g>
+
+  <g id="plate-footer-13-03-A">
+    <rect class="band" x="32" y="576" width="1216" height="112" rx="8"/>
+    <text class="t-foot1" x="640" y="616" text-anchor="middle">Local hits can look complete while dependent structure elsewhere never appears.</text>
+    <text class="t-foot1" x="640" y="648" text-anchor="middle">Word search follows vocabulary in the neighborhood it was given. It cannot follow relationships that do not share terms.</text>
+    <text class="t-foot3" x="640" y="676" text-anchor="middle">Explanatory projection only; essay prose is authoritative if figure and text diverge.</text>
+  </g>
+
+  <!-- three swimlane frames -->
+  <rect class="frame" x="32" y="124" width="400" height="428" rx="8"/>
+  <rect class="frame-miss" x="456" y="124" width="240" height="428" rx="8"/>
+  <rect class="frame" x="720" y="124" width="528" height="428" rx="8"/>
+
+  <text class="t-col" x="48" y="120">What the search returned</text>
+  <text class="t-col-miss" x="576" y="120" text-anchor="middle">The miss</text>
+  <text class="t-col" x="736" y="120">What the task also needed</text>
+
+  <!-- LEFT lane -->
+  <g id="plate-content-shift-13-03-A" transform="translate(0,20)">
+  <g id="plate-left-13-03-A">
+    <rect class="task" x="48" y="128" width="368" height="64" rx="8"/>
+    <text class="t-prim" x="64" y="154">Task - Backend repo</text>
+    <text class="t-sec" x="64" y="174">Change a field on the payments API</text>
+
+    <rect class="search" x="48" y="248" width="368" height="72" rx="8"/>
+    <text class="t-prim" x="64" y="272">Word search</text>
+    <text class="t-sec" x="64" y="292">query: &quot;payments API&quot;</text>
+    <text class="t-sec" x="64" y="310">Looks for matching words</text>
+
+    <rect class="hit" x="48" y="376" width="112" height="80" rx="8"/>
+    <text class="t-prim" x="56" y="402">Hit</text>
+    <text class="t-sec" x="56" y="422">API handler</text>
+    <text class="t-sec" x="56" y="440">same repo</text>
+
+    <rect class="hit" x="176" y="376" width="112" height="80" rx="8"/>
+    <text class="t-prim" x="184" y="402">Hit</text>
+    <text class="t-sec" x="184" y="422">README</text>
+    <text class="t-sec" x="184" y="440">same phrase</text>
+
+    <rect class="hit" x="304" y="376" width="112" height="80" rx="8"/>
+    <text class="t-prim" x="312" y="402">Hit</text>
+    <text class="t-sec" x="312" y="422">Ticket</text>
+    <text class="t-sec" x="312" y="440">same phrase</text>
+
+    <rect class="label-band" x="48" y="480" width="368" height="48" rx="8"/>
+    <text class="t-label" x="64" y="500">Plausible local set</text>
+    <text class="t-label" x="64" y="516">Shared vocabulary in this repo</text>
+  </g>
+
+  <!-- MIDDLE lane: names the fail -->
+  <g id="plate-mid-13-03-A">
+    <rect class="fail-name" x="480" y="248" width="192" height="160" rx="8"/>
+    <text class="t-fail-p" x="576" y="300" text-anchor="middle">No shared</text>
+    <text class="t-fail-p" x="576" y="324" text-anchor="middle">words to follow</text>
+    <text class="t-fail-s" x="576" y="356" text-anchor="middle">Word search cannot</text>
+    <text class="t-fail-s" x="576" y="376" text-anchor="middle">follow the relationship</text>
+  </g>
+
+  <!-- RIGHT lane -->
+  <g id="plate-right-13-03-A">
+    <rect class="miss-climax" x="744" y="128" width="480" height="120" rx="8"/>
+    <text class="t-climax-p" x="760" y="156">Related, but unreached</text>
+    <text class="t-climax-p" x="760" y="178">Frontend consumer</text>
+    <text class="t-climax-s" x="760" y="200">Still calls the old field</text>
+    <text class="t-climax-s" x="760" y="220">Different repo - different words</text>
+
+    <rect class="miss-sib" x="744" y="304" width="228" height="88" rx="8"/>
+    <text class="t-sib-p" x="760" y="332">Also unreached</text>
+    <text class="t-sib-s" x="760" y="352">Shared data contract</text>
+    <text class="t-sib-s" x="760" y="372">Other systems depend on it</text>
+
+    <rect class="miss-sib" x="996" y="304" width="228" height="88" rx="8"/>
+    <text class="t-sib-p" x="1012" y="332">Also unreached</text>
+    <text class="t-sib-s" x="1012" y="352">Tests</text>
+    <text class="t-sib-s" x="1012" y="372">Encode the real obligation</text>
+
+    <rect class="why" x="744" y="416" width="480" height="104" rx="8"/>
+    <text class="t-why" x="760" y="444">Needed by relationship to the task - consumers,</text>
+    <text class="t-why" x="760" y="464">contracts, tests - not by matching the query words.</text>
+    <text class="t-why" x="760" y="484">Reminding one example does not fix the class of miss.</text>
+  </g>
+
+  <!-- connectors: vertical stack on left; dashed point into miss lane then to unreached -->
+  <g id="plate-connectors-13-03-A">
+    <path class="conn-solid" d="M232,192 L232,248"/>
+    <path class="conn-solid" d="M232,320 L232,376"/>
+  </g>
+
+  <g id="plate-miss-path-13-03-A">
+    <!-- hits point at the named miss -->
+    <path class="conn-miss" d="M416,416 L480,328"/>
+    <!-- miss points at climax -->
+    <path class="conn-miss" d="M672,280 L744,188"/>
+    <!-- miss points at leftmost Also unreached -->
+    <path class="conn-miss-thin" d="M672,360 L744,348"/>
+  </g>
+  </g>
+</svg>

@@ -3,7 +3,7 @@ title: "MVC Methodology"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-06-09"
+last_reviewed: "2026-08-02"
 ---
 
 # MVC Methodology
@@ -17,6 +17,8 @@ The MVC thesis is not useful as research unless it can be tested without confusi
 The MVC methodology turns the representation ceiling thesis into a controlled research protocol. It tests whether structured architectural representation and structure-guided context assembly produce stronger measured signals than degraded, unstructured, or inference-guided context under named comparison metrics.
 
 This methodology remains explanatory and experimental. It does not prove STE, MVC, RSS, any runtime implementation, production MVC-M, Kernel admission, or benchmark answer authority.
+
+Methodology declares how claims are interpreted and when observations may become admitted evidence. The [MVC experimental apparatus](experimental-apparatus.md) enforces shared identity, contamination, exclusion, and authority ceilings across parallel tracks. Apparatus success is not hypothesis support.
 
 ## The Model
 
@@ -84,7 +86,7 @@ Reasoning Quality =
 
 **Context preflight** records the context assembled before evaluation: task intent, intended validation authority, required context classes, discovery strategy, known unknowns, exclusions, and stop or degrade criteria. Details live in [Context preflight methodology](context-preflight-methodology.md).
 
-**Experimental apparatus** names the conceptual research instrument used to preserve identity, provenance, determinism, and authority boundaries before stronger MVC claims are attempted. Details live in [MVC experimental apparatus](experimental-apparatus.md).
+**Experimental apparatus** names the conceptual research instrument—shared validity controls and parallel tracks for representation, evolution validation, evaluation and collection, HSCA closure, and admission—used before stronger MVC claims are attempted. Details live in [MVC experimental apparatus](experimental-apparatus.md).
 
 ### Research unit
 

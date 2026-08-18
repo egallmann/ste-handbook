@@ -3,7 +3,7 @@ title: "Measurement and Validity"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # Measurement and Validity
@@ -46,6 +46,8 @@ Common STE research threats include:
 - Human memory contamination.
 - Local model or hosted model confounds.
 - Overfitting of candidate representations to expected outcomes.
+
+Program-local validity controls for the MVC Research Apparatus—including the threat-to-control map and the operating-capability versus evidentiary-authority distinction—are summarized in [MVC experimental apparatus](research/mvc/02-methodology/experimental-apparatus.md). That page does not replace the validity types above.
 
 ### Self-Reference and Instrumentation Bias
 

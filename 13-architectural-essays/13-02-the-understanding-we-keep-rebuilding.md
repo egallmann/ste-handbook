@@ -219,9 +219,10 @@ Detailed doctrine for the obligation it motivates lives in the core handbook:
 - Decisions and durable intent: [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md)
 - Authority ceilings: [Authority and decision rights](../06-governance/06-03-authority-and-decision-rights.md)
 
-Related conceptual argument in this part: [When Machines Stopped Waiting](13-01-when-machines-stopped-waiting.md). That essay develops durable representation under care as one way participation can outlast the people and folders that produced the original answer. The claim here is smaller and prior: if the reconstructed understanding does not survive the work, the next project will pay again—and call it discovery.
+Related conceptual argument in this part: [When Machines Stopped Waiting](13-01-when-machines-stopped-waiting.md). That essay develops durable representation under care as one way participation can outlast the people and folders that produced the original answer. The claim here is smaller and prior: if the reconstructed understanding does not survive the work, the next project will pay again—and call it discovery. A later essay, [The Shape of Sufficient Context](13-03-the-shape-of-sufficient-context.md), takes the next step: once understanding can participate, research can search for the task-relative shape of that participation without rewriting the substrate.
 
 Normative semantics remain in **ste-spec**. Research claims and methods remain in [Part 14](../14-research/14-00-research-overview.md).
 
 **Previous:** [When Machines Stopped Waiting](13-01-when-machines-stopped-waiting.md)
+**Next:** [The Shape of Sufficient Context](13-03-the-shape-of-sufficient-context.md)
 **Up:** [Architectural Essays and Deep Dives overview](13-00-essays-and-deep-dives-overview.md)

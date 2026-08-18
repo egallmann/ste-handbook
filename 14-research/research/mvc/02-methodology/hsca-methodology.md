@@ -3,7 +3,7 @@ title: "HSCA Methodology"
 status: draft
 maturity: L2
 diagrams: true
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # HSCA Methodology
@@ -91,7 +91,7 @@ Sealed collection uses AI-before-human ordering; reciprocal review later remains
 
 Blinding matters because a participant who has already seen model scores, gold strings, or rubric outcomes can unconsciously supply the missing substrate from memory.
 
-This loop is the **north-star protocol**. It is not implemented in the benchmark harness yet.
+This loop is the **north-star protocol**. It is realized for closed questions at their named evidence boundaries (currently B1Q1 and B1Q2 via apparatus-integrated closure). It is not yet a general or scaled closure capability, and it does not grant `Q_fixture`, benchmark adjudication, or research-fitness authority.
 
 ### Closure records and review projection
 

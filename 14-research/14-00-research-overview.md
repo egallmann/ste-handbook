@@ -3,7 +3,7 @@ title: "Research Overview"
 status: draft
 maturity: L1
 diagrams: true
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # Research Overview
@@ -65,7 +65,7 @@ flowchart LR
 
 That relationship remains one-way. Research may produce evidence about STE claims, but research does not validate STE by itself. Evidence remains evidence until a separate governance process promotes a change into an authority surface.
 
-Detail on apparatus topology, validation versus readiness, and the observation-to-authority pipeline lives in [Research Apparatus](14-04-research-apparatus.md).
+Detail on apparatus topology, validation versus readiness, and the observation-to-authority pipeline lives in [Research Apparatus](14-04-research-apparatus.md). The first program-local map of shared controls and parallel apparatus tracks is the [MVC experimental apparatus](research/mvc/02-methodology/experimental-apparatus.md).
 
 ## The Model
 

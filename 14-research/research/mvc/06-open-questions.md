@@ -3,7 +3,7 @@ title: "MVC Open Questions"
 status: draft
 maturity: L1
 diagrams: false
-last_reviewed: "2026-07-19"
+last_reviewed: "2026-08-02"
 ---
 
 # MVC Open Questions
@@ -52,7 +52,7 @@ Progress criteria:
 
 - live sealed collection with AI-before-human ordering and contamination accounting,
 - operator-assisted review path with durable lineage toward substrate-closed `Q`,
-- mechanical closure/`Q` promotion usable on live records (not only contracts),
+- governed closure/`Q` promotion usable on live records (not only contracts), combining bounded semantic adjudication with deterministic validation and promotion controls,
 - separate benchmark adjudication protocol that can produce `Q_fixture`,
 - hosted or rubric validation path available where claimed,
 - candidate context to fixture mapping defined without implying production MVC-M,
