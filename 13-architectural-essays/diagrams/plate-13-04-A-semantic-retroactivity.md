@@ -346,14 +346,12 @@ Font stack: Inter, "Helvetica Neue", Arial, sans-serif.
 
 ---
 
-## Notes for later essay embed (not part of the drawing)
+## Essay embed
 
-Suggested manuscript placement: in **The Archive Changed Without Changing**, immediately after the paragraph that names **semantic retroactivity**, before “That made me reconsider how much comfort…”.
+Embedded in `13-04-privacy-has-a-composition-problem.md` immediately after the paragraph that names **semantic retroactivity**, before “That made me reconsider how much comfort…”.
 
 Keep the yesterday/today text graphs in prose. The plate does not replace them.
 
-Suggested caption:
+Caption in manuscript:
 
 `**Plate 13-04-A.** A relationship established today can change what yesterday's observations can reveal without rewriting the archive. Explanatory projection only; the essay prose is authoritative if figure and text diverge.`
-
-Do not embed until the SVG exists and essay frontmatter `diagrams` remains `true`.
