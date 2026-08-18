@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-04-A plate-desc-13-04-A">
+  <title id="plate-title-13-04-A">Plate 13-04-A: The archive did not change</title>
+  <desc id="plate-desc-13-04-A">
+    Shared unchanged archive of ACME Vision observations and ACME Analytics
+    relationships. Yesterday the traversable path is vehicle X observed at
+    location A. Today a permitted source adds Erik associated with vehicle X,
+    so the same observations participate in a path about Erik.
+  </desc>
+
+  <defs>
+    <marker id="arrow-solid-13-04-A"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-new-13-04-A"
+            viewBox="0 0 10 8"
+            refX="10"
+            refY="4"
+            markerWidth="10"
+            markerHeight="8"
+            orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#B45309"/>
+    </marker>
+    <marker id="arrow-source-13-04-A"
+            viewBox="0 0 8 6"
+            refX="8"
+            refY="3"
+            markerWidth="8"
+            markerHeight="6"
+            orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#D97706"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #F1F5F9; stroke: #94A3B8; stroke-width: 1; }
+      .frame-archive { fill: #FFFFFF; stroke: #94A3B8; stroke-width: 1.5; }
+      .frame-yesterday { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .frame-today { fill: #FFFBEB; stroke: #D97706; stroke-width: 2; }
+      .archive-box { fill: #F8FAFC; stroke: #475569; stroke-width: 1.5; }
+      .path-node { fill: #EEF2FF; stroke: #4338CA; stroke-width: 1.5; }
+      .erik { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
+      .source { fill: #FFFBEB; stroke: #D97706; stroke-width: 1.5; }
+      .conn-solid { fill: none; stroke: #334155; stroke-width: 2; marker-end: url(#arrow-solid-13-04-A); }
+      .conn-new { fill: none; stroke: #B45309; stroke-width: 2.5; marker-end: url(#arrow-new-13-04-A); }
+      .conn-source { fill: none; stroke: #D97706; stroke-width: 1.5; marker-end: url(#arrow-source-13-04-A); }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0F172A; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #475569; }
+      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #334155; }
+      .t-col-today { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #B45309; }
+      .t-prim { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #0F172A; }
+      .t-sec { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #334155; }
+      .t-absence { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 500; fill: #64748B; }
+      .t-edge { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 600; fill: #334155; }
+      .t-edge-new { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 600; fill: #B45309; }
+      .t-source { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 600; fill: #0F172A; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #0F172A; }
+      .t-foot4 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #64748B; }
+      .label-pad-yesterday { fill: #FFFFFF; stroke: none; }
+      .label-pad-today { fill: #FFFBEB; stroke: none; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .frame-archive { fill: #0D1117; stroke: #30363D; }
+        .frame-yesterday { fill: #0D1117; stroke: #30363D; }
+        .frame-today { fill: #2A2111; stroke: #D29922; }
+        .archive-box { fill: #21262D; stroke: #8B949E; }
+        .path-node { fill: #1C2333; stroke: #818CF8; }
+        .erik { fill: #3D2E12; stroke: #D29922; }
+        .source { fill: #2A2111; stroke: #D29922; }
+        .conn-solid { stroke: #C9D1D9; }
+        .conn-new { stroke: #D29922; }
+        .conn-source { stroke: #D29922; }
+        #arrow-solid-13-04-A path { fill: #C9D1D9; }
+        #arrow-new-13-04-A path { fill: #D29922; }
+        #arrow-source-13-04-A path { fill: #D29922; }
+        .t-header, .t-prim, .t-source, .t-foot1 { fill: #F0F6FC; }
+        .t-plate-id, .t-absence, .t-foot4 { fill: #8B949E; }
+        .t-col, .t-sec, .t-edge { fill: #C9D1D9; }
+        .t-col-today, .t-edge-new { fill: #D29922; }
+        .label-pad-yesterday { fill: #0D1117; }
+        .label-pad-today { fill: #2A2111; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+
+  <g id="plate-header-13-04-A">
+    <rect class="band" x="32" y="32" width="1216" height="56" rx="8"/>
+    <text class="t-header" x="48" y="68">The archive did not change</text>
+    <text class="t-plate-id" x="1232" y="66" text-anchor="end">13-04-A</text>
+  </g>
+
+  <g id="plate-footer-13-04-A">
+    <rect class="band" x="32" y="556" width="1216" height="132" rx="8"/>
+    <text class="t-foot1" x="640" y="588" text-anchor="middle">One edge appeared. The historical observation did not become more detailed.</text>
+    <text class="t-foot1" x="640" y="616" text-anchor="middle">Yesterday the path stopped at the vehicle. Today the same observations can participate in a path about Erik.</text>
+    <text class="t-foot1" x="640" y="644" text-anchor="middle">Neither ACME Vision nor ACME Analytics had to become an identity company.</text>
+    <text class="t-foot4" x="640" y="668" text-anchor="middle">Explanatory projection only; essay prose is authoritative if figure and text diverge.</text>
+  </g>
+
+  <rect class="frame-archive" x="32" y="96" width="1216" height="120" rx="8"/>
+  <rect class="frame-yesterday" x="32" y="228" width="584" height="312" rx="8"/>
+  <rect class="frame-today" x="664" y="228" width="584" height="312" rx="8"/>
+  <text class="t-col" x="48" y="120">The archive did not change</text>
+  <text class="t-col" x="48" y="252">Yesterday</text>
+  <text class="t-col-today" x="680" y="252">Today</text>
+
+  <g id="plate-archive-13-04-A">
+    <rect class="archive-box" x="48" y="132" width="568" height="72" rx="8"/>
+    <text class="t-prim" x="62" y="156">ACME Vision</text>
+    <text class="t-sec" x="62" y="174">Observations of vehicle X</text>
+    <text class="t-sec" x="62" y="192">Unchanged</text>
+    <rect class="archive-box" x="664" y="132" width="568" height="72" rx="8"/>
+    <text class="t-prim" x="678" y="156">ACME Analytics</text>
+    <text class="t-sec" x="678" y="174">Candidate relationships among those observations</text>
+    <text class="t-sec" x="678" y="192">Unchanged</text>
+  </g>
+
+  <g id="plate-yesterday-13-04-A">
+    <text class="t-absence" x="324" y="298" text-anchor="middle">The archive did not contain Erik</text>
+    <rect class="path-node" x="168" y="372" width="312" height="48" rx="8"/>
+    <text class="t-prim" x="324" y="403" text-anchor="middle">vehicle X</text>
+    <rect class="path-node" x="168" y="476" width="312" height="48" rx="8"/>
+    <text class="t-prim" x="324" y="507" text-anchor="middle">location A</text>
+  </g>
+
+  <g id="plate-today-13-04-A">
+    <rect class="source" x="680" y="268" width="104" height="48" rx="8"/>
+    <text class="t-source" x="732" y="287" text-anchor="middle">Permitted</text>
+    <text class="t-source" x="732" y="304" text-anchor="middle">source</text>
+    <rect class="erik" x="832" y="268" width="312" height="48" rx="8"/>
+    <text class="t-prim" x="988" y="299" text-anchor="middle">Erik</text>
+    <rect class="path-node" x="832" y="372" width="312" height="48" rx="8"/>
+    <text class="t-prim" x="988" y="403" text-anchor="middle">vehicle X</text>
+    <rect class="path-node" x="832" y="476" width="312" height="48" rx="8"/>
+    <text class="t-prim" x="988" y="507" text-anchor="middle">location A</text>
+  </g>
+
+  <g id="plate-connectors-13-04-A">
+    <line class="conn-solid" x1="324" y1="420" x2="324" y2="468"/>
+    <line class="conn-source" x1="784" y1="292" x2="824" y2="292"/>
+    <line class="conn-new" x1="988" y1="316" x2="988" y2="364"/>
+    <line class="conn-solid" x1="988" y1="420" x2="988" y2="468"/>
+    <rect class="label-pad-yesterday" x="340" y="434" width="80" height="18" rx="2"/>
+    <text class="t-edge" x="344" y="448">observed at</text>
+    <rect class="label-pad-today" x="1004" y="330" width="108" height="18" rx="2"/>
+    <text class="t-edge-new" x="1008" y="344">associated with</text>
+    <rect class="label-pad-today" x="1004" y="434" width="80" height="18" rx="2"/>
+    <text class="t-edge" x="1008" y="448">observed at</text>
+  </g>
+</svg>

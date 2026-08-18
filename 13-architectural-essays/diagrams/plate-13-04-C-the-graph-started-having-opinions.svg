@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280"
+     height="720"
+     role="img"
+     aria-labelledby="plate-title-13-04-C plate-desc-13-04-C">
+  <title id="plate-title-13-04-C">Plate 13-04-C: The graph started having opinions</title>
+  <desc id="plate-desc-13-04-C">
+    Ordinary records, signals, and other-people associations feed Enrichment
+    and Intelligence. Morality Guard manufactures first-order and association
+    judgments, condenses them into a high concern person class, and Real-Time
+    Security deploys that class to subscribers as standing watches, live alerts,
+    and quiet intervention.
+  </desc>
+
+  <defs>
+    <marker id="arrow-source-13-04-C"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-assembly-13-04-C"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#4338CA"/>
+    </marker>
+    <marker id="arrow-vile-13-04-C"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-dashed-vile-13-04-C"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#B91C1C"/>
+    </marker>
+    <marker id="arrow-activation-13-04-C"
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#C2410C"/>
+    </marker>
+
+    <style type="text/css"><![CDATA[
+      .canvas-bg { fill: #FFFFFF; }
+      .band { fill: #F1F5F9; stroke: #94A3B8; stroke-width: 1; }
+      .frame { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; }
+      .frame-z3 { fill: #FEF2F2; stroke: #DC2626; stroke-width: 2; }
+      .frame-z4 { fill: #FFF7ED; stroke: #C2410C; stroke-width: 2; }
+      .source { fill: #F8FAFC; stroke: #475569; stroke-width: 1.5; }
+      .company { fill: #EEF2FF; stroke: #4338CA; stroke-width: 1.5; }
+      .mg { fill: #FEE2E2; stroke: #B91C1C; stroke-width: 2.5; }
+      .profile { fill: #FEF2F2; stroke: #DC2626; stroke-width: 1.5; }
+      .pair { fill: #FEF2F2; stroke: #B91C1C; stroke-width: 2; }
+      .concern { fill: #FECACA; stroke: #B91C1C; stroke-width: 2.5; }
+      .activate { fill: #FFF7ED; stroke: #C2410C; stroke-width: 1.5; }
+      .conn-source { fill: none; stroke: #334155; stroke-width: 2; stroke-linecap: butt; marker-end: url(#arrow-source-13-04-C); }
+      .conn-bus { fill: none; stroke: #334155; stroke-width: 2; stroke-linecap: butt; }
+      .conn-assembly { fill: none; stroke: #4338CA; stroke-width: 2; stroke-linecap: butt; marker-end: url(#arrow-assembly-13-04-C); }
+      .conn-vile { fill: none; stroke: #B91C1C; stroke-width: 2.5; stroke-linecap: butt; marker-end: url(#arrow-vile-13-04-C); }
+      .conn-vile-bus { fill: none; stroke: #B91C1C; stroke-width: 2.5; stroke-linecap: butt; }
+      .conn-vile-dash { fill: none; stroke: #B91C1C; stroke-width: 2; stroke-dasharray: 8 6; stroke-linecap: butt; marker-end: url(#arrow-dashed-vile-13-04-C); }
+      .conn-vile-dash-bus { fill: none; stroke: #B91C1C; stroke-width: 2; stroke-dasharray: 8 6; stroke-linecap: butt; }
+      .conn-act { fill: none; stroke: #C2410C; stroke-width: 2; stroke-linecap: butt; marker-end: url(#arrow-activation-13-04-C); }
+      .conn-act-bus { fill: none; stroke: #C2410C; stroke-width: 2; stroke-linecap: butt; }
+      .conn-act-dash { fill: none; stroke: #C2410C; stroke-width: 2; stroke-dasharray: 8 6; stroke-linecap: butt; marker-end: url(#arrow-activation-13-04-C); }
+      .conn-act-dash-bus { fill: none; stroke: #C2410C; stroke-width: 2; stroke-dasharray: 8 6; stroke-linecap: butt; }
+      .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0F172A; }
+      .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #475569; }
+      .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #334155; }
+      .t-col-z3 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #991B1B; }
+      .t-col-z3-sub { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 600; fill: #991B1B; }
+      .t-col-z4 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #9A3412; }
+      .t-co-p { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #0F172A; }
+      .t-co-s { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #334155; }
+      .t-mg { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 700; fill: #7F1D1D; }
+      .t-pair { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #7F1D1D; }
+      .t-concern { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 700; fill: #7F1D1D; }
+      .t-edge { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #7F1D1D; }
+      .t-edge-act { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #9A3412; }
+      .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 500; fill: #0F172A; }
+      .t-foot4 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #64748B; }
+
+      @media (prefers-color-scheme: dark) {
+        .canvas-bg { fill: #0D1117; }
+        .band { fill: #161B22; stroke: #30363D; }
+        .frame { fill: #0D1117; stroke: #30363D; }
+        .frame-z3 { fill: #3D1215; stroke: #F85149; }
+        .frame-z4 { fill: #3D2914; stroke: #F0883E; }
+        .source { fill: #21262D; stroke: #8B949E; }
+        .company { fill: #1C2333; stroke: #818CF8; }
+        .mg, .concern { fill: #3D1215; stroke: #F85149; }
+        .profile, .pair { fill: #2D1215; stroke: #F85149; }
+        .activate { fill: #3D2914; stroke: #F0883E; }
+        .conn-source, .conn-bus { stroke: #C9D1D9; }
+        .conn-assembly { stroke: #818CF8; }
+        .conn-vile, .conn-vile-bus, .conn-vile-dash, .conn-vile-dash-bus { stroke: #F85149; }
+        .conn-act, .conn-act-bus, .conn-act-dash, .conn-act-dash-bus { stroke: #F0883E; }
+        #arrow-source-13-04-C path { fill: #C9D1D9; }
+        #arrow-assembly-13-04-C path { fill: #818CF8; }
+        #arrow-vile-13-04-C path, #arrow-dashed-vile-13-04-C path { fill: #F85149; }
+        #arrow-activation-13-04-C path { fill: #F0883E; }
+        .t-header, .t-co-p, .t-foot1 { fill: #F0F6FC; }
+        .t-plate-id, .t-foot4 { fill: #8B949E; }
+        .t-col, .t-co-s { fill: #C9D1D9; }
+        .t-col-z3, .t-col-z3-sub, .t-mg, .t-pair, .t-concern, .t-edge { fill: #F85149; }
+        .t-col-z4, .t-edge-act { fill: #F0883E; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect class="canvas-bg" x="0" y="0" width="1280" height="720"/>
+
+  <g id="plate-header-13-04-C">
+    <rect class="band" x="32" y="32" width="1216" height="56" rx="8"/>
+    <text class="t-header" x="48" y="68">The graph started having opinions</text>
+    <text class="t-plate-id" x="1232" y="66" text-anchor="end">13-04-C</text>
+  </g>
+
+  <g id="plate-footer-13-04-C">
+    <rect class="band" x="32" y="576" width="1216" height="112" rx="8"/>
+    <text class="t-foot1" x="640" y="608" text-anchor="middle">Morality Guard manufactures judgments from a joined graph, including who someone associates with.</text>
+    <text class="t-foot1" x="640" y="632" text-anchor="middle">A condensed class can drive standing watches, alerts, and quiet intervention without a name search.</text>
+    <text class="t-foot4" x="640" y="664" text-anchor="middle">Explanatory projection only; essay prose is authoritative if figure and text diverge.</text>
+  </g>
+
+  <rect class="frame" x="32" y="104" width="216" height="456" rx="8"/>
+  <rect class="frame" x="264" y="104" width="240" height="456" rx="8"/>
+  <rect class="frame-z3" x="520" y="104" width="488" height="456" rx="8"/>
+  <rect class="frame-z4" x="1024" y="104" width="224" height="456" rx="8"/>
+  <text class="t-col" x="48" y="128">What the world exposes</text>
+  <text class="t-col" x="280" y="128">Join, infer, operationalize</text>
+  <text class="t-col-z3" x="536" y="128">What the graph can now say about you</text>
+  <text class="t-col-z4" x="1040" y="128">How &#8220;safety&#8221; deploys it</text>
+
+  <g id="plate-zone1-13-04-C">
+    <rect class="source" x="44" y="148" width="188" height="48" rx="8"/>
+    <text class="t-co-p" x="138" y="166" text-anchor="middle">Plate / asset</text>
+    <text class="t-co-s" x="138" y="182" text-anchor="middle">observations</text>
+    <rect class="source" x="44" y="204" width="188" height="48" rx="8"/>
+    <text class="t-co-p" x="138" y="222" text-anchor="middle">Observable signals</text>
+    <text class="t-co-s" x="138" y="238" text-anchor="middle">recurring proximity</text>
+    <rect class="source" x="44" y="260" width="188" height="48" rx="8"/>
+    <text class="t-co-p" x="138" y="278" text-anchor="middle">Property / deed /</text>
+    <text class="t-co-s" x="138" y="294" text-anchor="middle">LLC records</text>
+    <rect class="source" x="44" y="316" width="188" height="48" rx="8"/>
+    <text class="t-co-p" x="138" y="334" text-anchor="middle">Court / arrest /</text>
+    <text class="t-co-s" x="138" y="350" text-anchor="middle">divorce dockets</text>
+    <rect class="source" x="44" y="372" width="188" height="48" rx="8"/>
+    <text class="t-co-p" x="138" y="390" text-anchor="middle">Social / public</text>
+    <text class="t-co-s" x="138" y="406" text-anchor="middle">web traces</text>
+    <rect class="source" x="44" y="428" width="188" height="48" rx="8"/>
+    <text class="t-co-p" x="138" y="446" text-anchor="middle">People-search /</text>
+    <text class="t-co-s" x="138" y="462" text-anchor="middle">broker context</text>
+    <rect class="source" x="44" y="484" width="188" height="48" rx="8"/>
+    <text class="t-co-p" x="138" y="502" text-anchor="middle">Other-people / household</text>
+    <text class="t-co-s" x="138" y="518" text-anchor="middle">associations</text>
+  </g>
+
+  <g id="plate-zone2-13-04-C">
+    <rect class="company" x="304" y="160" width="176" height="72" rx="8"/>
+    <text class="t-co-p" x="392" y="184" text-anchor="middle">ACME Enrichment</text>
+    <text class="t-co-s" x="392" y="200" text-anchor="middle">join people, vehicles,</text>
+    <text class="t-co-s" x="392" y="216" text-anchor="middle">signals, and records</text>
+    <rect class="company" x="304" y="268" width="176" height="72" rx="8"/>
+    <text class="t-co-p" x="392" y="292" text-anchor="middle">ACME Intelligence</text>
+    <text class="t-co-s" x="392" y="308" text-anchor="middle">traverse / correlate</text>
+    <text class="t-co-s" x="392" y="324" text-anchor="middle">assemble graph paths</text>
+    <rect class="mg" x="296" y="372" width="192" height="88" rx="8"/>
+    <text class="t-mg" x="392" y="400" text-anchor="middle">Morality Guard</text>
+    <text class="t-co-s" x="392" y="420" text-anchor="middle">manufactures moralized</text>
+    <text class="t-co-s" x="392" y="436" text-anchor="middle">and association claims</text>
+    <rect class="company" x="296" y="492" width="192" height="64" rx="8"/>
+    <text class="t-co-p" x="392" y="516" text-anchor="middle">ACME Real-Time Security</text>
+    <text class="t-co-s" x="392" y="536" text-anchor="middle">standing watches / alerts</text>
+  </g>
+
+  <g id="plate-zone3-13-04-C">
+    <text class="t-col-z3-sub" x="640" y="146" text-anchor="middle">First-order claims</text>
+    <text class="t-col-z3-sub" x="880" y="146" text-anchor="middle">Association claims</text>
+    <rect class="profile" x="560" y="172" width="160" height="48" rx="8"/>
+    <text class="t-co-p" x="640" y="202" text-anchor="middle">Likely affair</text>
+    <rect class="profile" x="800" y="172" width="160" height="48" rx="8"/>
+    <text class="t-co-p" x="880" y="190" text-anchor="middle">Associates with</text>
+    <text class="t-co-p" x="880" y="206" text-anchor="middle">high-concern people</text>
+    <rect class="profile" x="560" y="236" width="160" height="48" rx="8"/>
+    <text class="t-co-p" x="640" y="266" text-anchor="middle">Gambling pattern</text>
+    <rect class="profile" x="800" y="236" width="160" height="48" rx="8"/>
+    <text class="t-co-p" x="880" y="254" text-anchor="middle">Household linked to</text>
+    <text class="t-co-p" x="880" y="270" text-anchor="middle">flagged person</text>
+    <rect class="pair" x="560" y="300" width="160" height="56" rx="8"/>
+    <text class="t-pair" x="640" y="322" text-anchor="middle">Godliness score</text>
+    <text class="t-pair" x="640" y="340" text-anchor="middle">37</text>
+    <rect class="pair" x="800" y="300" width="160" height="56" rx="8"/>
+    <text class="t-pair" x="880" y="322" text-anchor="middle">Behavioral suitability</text>
+    <text class="t-pair" x="880" y="340" text-anchor="middle">LOW</text>
+    <rect class="concern" x="672" y="420" width="176" height="72" rx="8"/>
+    <text class="t-concern" x="760" y="450" text-anchor="middle">High concern</text>
+    <text class="t-concern" x="760" y="472" text-anchor="middle">person</text>
+  </g>
+
+  <g id="plate-zone4-13-04-C">
+    <rect class="activate" x="1036" y="164" width="200" height="76" rx="8"/>
+    <text class="t-co-p" x="1136" y="186" text-anchor="middle">Real-time subscribers</text>
+    <text class="t-co-s" x="1136" y="202" text-anchor="middle">people, vehicles, profile</text>
+    <text class="t-co-s" x="1136" y="218" text-anchor="middle">classes, or graph-neighborhoods</text>
+    <rect class="activate" x="1036" y="256" width="200" height="64" rx="8"/>
+    <text class="t-co-p" x="1136" y="278" text-anchor="middle">Quiet intervention</text>
+    <text class="t-co-s" x="1136" y="294" text-anchor="middle">attention, denial,</text>
+    <text class="t-co-s" x="1136" y="308" text-anchor="middle">rerouting, scrutiny</text>
+    <rect class="activate" x="1036" y="344" width="200" height="72" rx="8"/>
+    <text class="t-co-p" x="1136" y="366" text-anchor="middle">Live area alert</text>
+    <text class="t-co-s" x="1136" y="384" text-anchor="middle">condition matched nearby</text>
+    <text class="t-co-s" x="1136" y="400" text-anchor="middle">nobody typed a name</text>
+    <rect class="activate" x="1036" y="440" width="200" height="104" rx="8"/>
+    <text class="t-co-p" x="1136" y="458" text-anchor="middle">Standing conditions</text>
+    <text class="t-co-s" x="1136" y="474" text-anchor="middle">notify if a high concern</text>
+    <text class="t-co-s" x="1136" y="488" text-anchor="middle">person enters this area,</text>
+    <text class="t-co-s" x="1136" y="502" text-anchor="middle">or a person within 2 hops</text>
+    <text class="t-co-s" x="1136" y="516" text-anchor="middle">of a flagged cluster</text>
+    <text class="t-co-s" x="1136" y="530" text-anchor="middle">appears nearby</text>
+  </g>
+
+  <g id="plate-connectors-13-04-C">
+    <line class="conn-bus" x1="232" y1="172" x2="256" y2="172"/>
+    <line class="conn-bus" x1="232" y1="228" x2="256" y2="228"/>
+    <line class="conn-bus" x1="232" y1="284" x2="256" y2="284"/>
+    <line class="conn-bus" x1="232" y1="340" x2="256" y2="340"/>
+    <line class="conn-bus" x1="232" y1="396" x2="256" y2="396"/>
+    <line class="conn-bus" x1="232" y1="452" x2="256" y2="452"/>
+    <line class="conn-bus" x1="232" y1="508" x2="256" y2="508"/>
+    <line class="conn-bus" x1="256" y1="172" x2="256" y2="508"/>
+    <line class="conn-source" x1="256" y1="196" x2="296" y2="196"/>
+    <line class="conn-assembly" x1="392" y1="232" x2="392" y2="260"/>
+    <line class="conn-vile" x1="392" y1="340" x2="392" y2="364"/>
+    <line class="conn-vile" x1="392" y1="460" x2="392" y2="484"/>
+    <polyline class="conn-vile-bus" points="488,400 528,400 528,158 760,158 760,328"/>
+    <line class="conn-vile" x1="528" y1="196" x2="552" y2="196"/>
+    <line class="conn-vile" x1="528" y1="260" x2="552" y2="260"/>
+    <line class="conn-vile" x1="528" y1="328" x2="552" y2="328"/>
+    <line class="conn-vile" x1="760" y1="196" x2="792" y2="196"/>
+    <line class="conn-vile" x1="760" y1="260" x2="792" y2="260"/>
+    <line class="conn-vile" x1="760" y1="328" x2="792" y2="328"/>
+    <line class="conn-vile" x1="488" y1="440" x2="664" y2="456"/>
+    <polyline class="conn-vile-dash-bus" points="640,356 640,388 760,388 880,388 880,356"/>
+    <line class="conn-vile-dash" x1="760" y1="388" x2="760" y2="412"/>
+    <polyline class="conn-act-dash-bus" points="848,456 988,456 988,202"/>
+    <line class="conn-act-dash" x1="988" y1="202" x2="1028" y2="202"/>
+    <polyline class="conn-act-bus" points="488,524 1028,524"/>
+    <line class="conn-act" x1="1028" y1="524" x2="1036" y2="524"/>
+    <line class="conn-act" x1="1136" y1="440" x2="1136" y2="424"/>
+    <line class="conn-act" x1="1136" y1="344" x2="1136" y2="328"/>
+  </g>
+
+  <g id="plate-connector-labels-13-04-C">
+    <text class="t-edge" x="404" y="248">joined context</text>
+    <text class="t-edge" x="404" y="356">inferred relationships</text>
+    <text class="t-edge" x="404" y="476">operationalize</text>
+    <text class="t-edge" x="544" y="436">condense</text>
+    <text class="t-edge-act" x="758" y="512" text-anchor="middle">watch people, vehicles, classes, or 2-hop neighborhoods</text>
+  </g>
+</svg>

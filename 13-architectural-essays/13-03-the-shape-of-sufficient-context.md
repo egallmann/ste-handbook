@@ -257,6 +257,16 @@ explicitly excluded or not applicable
 
 RSS can remain useful over incomplete structure if incompleteness stays visible rather than being repaired by inference.
 
+## From assembly to execution
+
+Plate C and the near-term RSS path can be misread as a second, smarter search. That understates the destination.
+
+The intended use is stronger. Skills provide the activation boundary, not the assembly procedure. A qualifying skill declares the task and consumer and triggers RSS. RSS then handles definition selection, depth, ordinary traversal, expected-shape validation, bounded supplemental assembly, and compilation of the context condition. Once activated, that path should be mechanical. Semantic work does not begin until the condition has been compiled or its unresolved expectations have been surfaced. The graph is not repaired. The bundle may include independently resolved material, but that material stays marked as not graph-connected. Graph defects still belong on the governed return path.
+
+In that model, the compiled context condition is the mandatory reasoning substrate for consequential calls. Not every chat message must rerun assembly. Every model invocation that designs, analyzes, or mutates under the activated task boundary must receive a condition compiled under the applicable MVC-D. The bundle can be compiled once for a stable boundary, content-addressed and reused while its inputs remain valid, incrementally refreshed when task, substrate, or mutation state changes, and revalidated before consequential execution.
+
+This is why the research object matters outside the apparatus. We already know that understanding has to be preserved, and that sufficient context may have shape. MVC-D is how that shape becomes enforceable without asking a human to orchestrate the packet every time. The machine is not left to improvise from nearby text. It is asked to reason inside a task-relative condition whose absences are still visible.
+
 ## Compiler-like assembly
 
 The same mechanical-versus-semantic cut, applied forward, suggests a future assembly pattern for RSS.
@@ -338,4 +348,5 @@ Detailed doctrine and research method live elsewhere:
 Normative semantics remain in **ste-spec**. Research claims and methods remain in [Part 14](../14-research/14-00-research-overview.md).
 
 **Previous:** [The Understanding We Keep Rebuilding](13-02-the-understanding-we-keep-rebuilding.md)
+**Next:** [Privacy Has a Composition Problem](13-04-privacy-has-a-composition-problem.md)
 **Up:** [Architectural Essays and Deep Dives overview](13-00-essays-and-deep-dives-overview.md)

@@ -5,14 +5,14 @@
 # generator_id: ste-handbook-publication-manifest
 # generator_version: 0.1.0
 # hash_algorithm: sha256
-# source_hash: sha256:faba3ccb85ebd76d950034cdafbd94e178fe8cd57f315feb2d3651ec73acd04f
-# rendered_hash: sha256:2caa017b2b3247d26e644249c52707ca4037b4440c9a71d6805bef0b96bd4c69
+# source_hash: sha256:c84e06163e7eb739099ffefed58cec07dcb108425e1150cbf77f153d46012058
+# rendered_hash: sha256:c6822ac6db57a42530f60f35d3044261902bc69f327b4d5099a38a28f108234f
 # catalog_of: works
 schema_version: 0.1.0
 type: work_catalog
 implementing_system: ste-handbook
 domain_status: emerging
-generated_date: '2026-08-03T20:30:17Z'
+generated_date: '2026-08-17T23:55:12Z'
 generated_from: 13-architectural-essays/13-*.md
 works:
 - work_id: work-essays-and-deep-dives-overview
@@ -32,7 +32,7 @@ works:
     projections:
     - format: markdown
       path: 13-architectural-essays/13-00-essays-and-deep-dives-overview.md
-      content_hash: sha256:7842db18bb461674a3b249f2e303a027a2a812cddbc0e8581baab8cf916b28f1
+      content_hash: sha256:24c6ac2e92ae0e18b9de66d140f38813aea41affcec446f42e7ea3fb6d7ce949
       validation_status: pass
 - work_id: work-architecture-has-a-second-consumer
   title: When Machines Stopped Waiting
@@ -129,12 +129,41 @@ works:
     projections:
     - format: markdown
       path: 13-architectural-essays/13-03-the-shape-of-sufficient-context.md
-      content_hash: sha256:3147d5ef15af344c771ab97cc9d055309993f498b9b394d5d809567c0d0e19bc
+      content_hash: sha256:4b938a805e72a0c0073eb9493a12bb26c76254e11b819d170ac5534cdb600b60
+      validation_status: pass
+- work_id: work-privacy-has-a-composition-problem
+  title: Privacy Has a Composition Problem
+  content_type: conceptual-essay
+  authority: explanatory
+  context_kind: explanatory
+  maturity: L3
+  status: argument-complete
+  standalone: true
+  normative: false
+  research_claims: false
+  relationships:
+  - type: extends
+    target: 00-problem/00-02-the-problem-of-lossy-reasoning.md
+  - type: extends
+    target: 00-problem/00-04-architecture-as-a-first-class-artifact.md
+  - type: extends
+    target: 00-problem/00-08-the-ste-thesis.md
+  - type: extends
+    target: 04-architecture-model/04-07-ir-as-a-graph.md
+  - type: extends
+    target: 06-governance/06-03-authority-and-decision-rights.md
+  editions:
+  - edition_id: handbook
+    label: Handbook Edition
+    projections:
+    - format: markdown
+      path: 13-architectural-essays/13-04-privacy-has-a-composition-problem.md
+      content_hash: sha256:7383cf9b4b4ed5e5525f18305e53170c28c2b3cd66d70fd007ff26a56070dfe3
       validation_status: pass
 statistics:
-  work_count: 4
-  edition_count: 4
-  projection_count: 4
+  work_count: 5
+  edition_count: 5
+  projection_count: 5
   by_content_type:
-    conceptual-essay: 3
+    conceptual-essay: 4
     part-overview: 1
