@@ -2,14 +2,14 @@
 
 **Plate ID:** `13-04-A`  
 **Parent work:** `13-04-privacy-has-a-composition-problem.md`  
-**Rendered projection:** `plate-13-04-A-semantic-retroactivity.svg` (must match this specification)  
+**Rendered projection:** `plate-13-04-A-the-archive-did-not-change.svg` (must match this specification)  
 **Status:** Engineering layout specification (canonical). Not artwork.  
 **Reproduce in:** SVG or draw.io without additional design decisions.  
 **Authority:** Explanatory aid only. Essay prose remains interpretive authority if figure and text diverge during drafting.
 
 **Insight (one sentence):** A relationship established today can change what information collected yesterday is capable of revealing, without changing the historical information itself.
 
-**Sync rule:** When `plate-13-04-A-semantic-retroactivity.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
+**Sync rule:** When `plate-13-04-A-the-archive-did-not-change.svg` is refined for layout or rendering, update this file in the same change so SVG and specification remain identical.
 
 **Lettering note:** `13-04-A` assumes this is the first plate embedded in the essay. If an earlier figure ships first, renumber IDs, filenames, captions, and SVG chrome in the same change.
 
@@ -199,15 +199,15 @@ Do not connect Yesterday to Today. Do not connect the archive boxes to the path 
 
 Marker IDs: `arrow-solid-13-04-A`, `arrow-new-13-04-A`, `arrow-source-13-04-A`.
 
-Edge labels sit **20 px** to the right of vertical shafts (clearance from shaft centerline to the first glyph). Each label has a backing rect in the column fill, 4 px padding around the glyphs, so the shaft does not show through the letters. No horizontal-shaft labels in this plate. 11 px, weight 600. `associated with` uses `#B45309`. `observed at` uses `#334155`.
+Edge labels sit **12–20 px** off vertical shafts with transparent background (no backing rects). No horizontal-shaft labels in this plate. 11 px, weight 600. `associated with` uses `#B45309`. `observed at` uses `#334155`.
 
 Label geometry (authoritative):
 
-| Label | Text x, y | Backing rect x, y, w, h | Backing fill |
-| --- | --- | --- | --- |
-| c1 `observed at` | 344, 448 | 340, 434, 80, 18 | `#FFFFFF` (Yesterday frame) |
-| c3 `associated with` | 1008, 344 | 1004, 330, 108, 18 | `#FFFBEB` (Today frame) |
-| c4 `observed at` | 1008, 448 | 1004, 434, 80, 18 | `#FFFBEB` (Today frame) |
+| Label | Text x, y |
+| --- | --- |
+| c1 `observed at` | 336, 440 |
+| c3 `associated with` | 836, 284 |
+| c4 `observed at` | 1000, 440 |
 
 ---
 
@@ -302,6 +302,7 @@ Font stack: Inter, "Helvetica Neue", Arial, sans-serif.
 | `plate-yesterday-13-04-A` | Left column boxes and caption |
 | `plate-today-13-04-A` | Right column boxes |
 | `plate-connectors-13-04-A` | Path arrows and source-to-Erik arrow |
+| `plate-connector-labels-13-04-A` | Edge labels (transparent background) |
 | `plate-footer-13-04-A` | Footer |
 
 ---
@@ -317,7 +318,7 @@ Font stack: Inter, "Helvetica Neue", Arial, sans-serif.
 7. Diff labels against Section 9.
 8. Validate XML is well-formed UTF-8 (ASCII punctuation preferred).
 9. Confirm no connector is head-only (visible shaft >= 40 px).
-10. Edge labels sit 20 px right of shafts with 4 px padded backing rects; glyphs do not sit on the line.
+10. Edge labels sit off the shaft with transparent background (no backing rects); glyphs do not sit on the line.
 
 ---
 
@@ -342,7 +343,7 @@ Font stack: Inter, "Helvetica Neue", Arial, sans-serif.
 6. Geometry within ±8 px of this document.  
 7. Plate-scoped IDs; GitHub-legible at ~640 px width.  
 8. Every connector shows a visible shaft of at least 40 px, not only an arrowhead.  
-9. Edge labels do not intersect arrow shafts; backing rects keep column fill behind the glyphs.
+9. Edge labels do not intersect arrow shafts; labels use transparent background.
 
 ---
 

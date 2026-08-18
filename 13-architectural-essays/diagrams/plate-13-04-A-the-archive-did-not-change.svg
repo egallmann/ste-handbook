@@ -16,30 +16,36 @@
   <defs>
     <marker id="arrow-solid-13-04-A"
             viewBox="0 0 10 8"
-            refX="10"
+            refX="9"
             refY="4"
-            markerWidth="10"
-            markerHeight="8"
-            orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#334155"/>
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#334155"/>
     </marker>
     <marker id="arrow-new-13-04-A"
             viewBox="0 0 10 8"
-            refX="10"
+            refX="9"
             refY="4"
-            markerWidth="10"
-            markerHeight="8"
-            orient="auto">
-      <path d="M0,0 L10,4 L0,8 Z" fill="#B45309"/>
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#B45309"/>
     </marker>
     <marker id="arrow-source-13-04-A"
-            viewBox="0 0 8 6"
-            refX="8"
-            refY="3"
-            markerWidth="8"
-            markerHeight="6"
-            orient="auto">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#D97706"/>
+            viewBox="0 0 10 8"
+            refX="9"
+            refY="4"
+            markerWidth="9"
+            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            orient="auto"
+            overflow="visible">
+      <path d="M0,0.5 L9,4 L0,7.5 Z" fill="#D97706"/>
     </marker>
 
     <style type="text/css"><![CDATA[
@@ -52,9 +58,9 @@
       .path-node { fill: #EEF2FF; stroke: #4338CA; stroke-width: 1.5; }
       .erik { fill: #FEF3C7; stroke: #B45309; stroke-width: 2.5; }
       .source { fill: #FFFBEB; stroke: #D97706; stroke-width: 1.5; }
-      .conn-solid { fill: none; stroke: #334155; stroke-width: 2; marker-end: url(#arrow-solid-13-04-A); }
-      .conn-new { fill: none; stroke: #B45309; stroke-width: 2.5; marker-end: url(#arrow-new-13-04-A); }
-      .conn-source { fill: none; stroke: #D97706; stroke-width: 1.5; marker-end: url(#arrow-source-13-04-A); }
+      .conn-solid { fill: none; stroke: #334155; stroke-width: 2; stroke-linecap: butt; marker-end: url(#arrow-solid-13-04-A); }
+      .conn-new { fill: none; stroke: #B45309; stroke-width: 2.5; stroke-linecap: butt; marker-end: url(#arrow-new-13-04-A); }
+      .conn-source { fill: none; stroke: #D97706; stroke-width: 1.5; stroke-linecap: butt; marker-end: url(#arrow-source-13-04-A); }
       .t-header { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0F172A; }
       .t-plate-id { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #475569; }
       .t-col { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #334155; }
@@ -67,8 +73,6 @@
       .t-source { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 600; fill: #0F172A; }
       .t-foot1 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #0F172A; }
       .t-foot4 { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 400; fill: #64748B; }
-      .label-pad-yesterday { fill: #FFFFFF; stroke: none; }
-      .label-pad-today { fill: #FFFBEB; stroke: none; }
 
       @media (prefers-color-scheme: dark) {
         .canvas-bg { fill: #0D1117; }
@@ -90,8 +94,6 @@
         .t-plate-id, .t-absence, .t-foot4 { fill: #8B949E; }
         .t-col, .t-sec, .t-edge { fill: #C9D1D9; }
         .t-col-today, .t-edge-new { fill: #D29922; }
-        .label-pad-yesterday { fill: #0D1117; }
-        .label-pad-today { fill: #2A2111; }
       }
     ]]></style>
   </defs>
@@ -155,11 +157,11 @@
     <line class="conn-source" x1="784" y1="292" x2="824" y2="292"/>
     <line class="conn-new" x1="988" y1="316" x2="988" y2="364"/>
     <line class="conn-solid" x1="988" y1="420" x2="988" y2="468"/>
-    <rect class="label-pad-yesterday" x="340" y="434" width="80" height="18" rx="2"/>
-    <text class="t-edge" x="344" y="448">observed at</text>
-    <rect class="label-pad-today" x="1004" y="330" width="108" height="18" rx="2"/>
-    <text class="t-edge-new" x="1008" y="344">associated with</text>
-    <rect class="label-pad-today" x="1004" y="434" width="80" height="18" rx="2"/>
-    <text class="t-edge" x="1008" y="448">observed at</text>
+  </g>
+
+  <g id="plate-connector-labels-13-04-A">
+    <text class="t-edge" x="336" y="440">observed at</text>
+    <text class="t-edge-new" x="836" y="284">associated with</text>
+    <text class="t-edge" x="1000" y="440">observed at</text>
   </g>
 </svg>

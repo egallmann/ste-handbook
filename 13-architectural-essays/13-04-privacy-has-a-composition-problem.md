@@ -483,7 +483,7 @@ That difference is almost embarrassingly small in the graph. One edge appeared. 
 
 I started calling this **semantic retroactivity** because I did not have a better phrase for what had happened. A relationship established today can change what information collected yesterday is capable of revealing, without changing the historical information itself.
 
-![Plate 13-04-A: Semantic retroactivity](diagrams/plate-13-04-A-semantic-retroactivity.svg)
+![Plate 13-04-A: The archive did not change](diagrams/plate-13-04-A-the-archive-did-not-change.svg)
 
 **Plate 13-04-A.** A relationship established today can change what yesterday's observations can reveal without rewriting the archive. Explanatory projection only; the essay prose is authoritative if figure and text diverge.
 
