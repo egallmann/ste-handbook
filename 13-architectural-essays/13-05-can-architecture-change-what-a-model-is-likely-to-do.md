@@ -150,7 +150,7 @@ ADR-Kit already had invariants. Why was another semantic type necessary?
 
 But the invariant model and the decision model answer different questions. An invariant asks what must remain true across the governed architecture. An ADR records an architectural choice and its authority. There is still a useful local question between those structures and the eventual code: given this decision, what does it require, prohibit, recommend, discourage, or permit **within its own scope**?
 
-That was the shape I needed the semantic model to preserve. One useful way to locate the responsibilities—not a universal parent-child chain—looks like this:
+That was the shape I needed the semantic model to preserve. One useful way to locate the responsibilities, and not a universal parent-child chain, looks like this:
 
 ```text
 Invariant
