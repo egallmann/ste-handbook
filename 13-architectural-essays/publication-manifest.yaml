@@ -5,14 +5,14 @@
 # generator_id: ste-handbook-publication-manifest
 # generator_version: 0.1.0
 # hash_algorithm: sha256
-# source_hash: sha256:c84e06163e7eb739099ffefed58cec07dcb108425e1150cbf77f153d46012058
-# rendered_hash: sha256:c6822ac6db57a42530f60f35d3044261902bc69f327b4d5099a38a28f108234f
+# source_hash: sha256:6144c939b1a82249f08268c9762dfb979a23858e718e691406a8b1f0a3406b35
+# rendered_hash: sha256:74994d3ac403ef2dccef5a8264feb28efc2b3db1d2907132de0355f4aa4906d0
 # catalog_of: works
 schema_version: 0.1.0
 type: work_catalog
 implementing_system: ste-handbook
 domain_status: emerging
-generated_date: '2026-08-17T23:55:12Z'
+generated_date: '2026-09-30T01:16:55Z'
 generated_from: 13-architectural-essays/13-*.md
 works:
 - work_id: work-essays-and-deep-dives-overview
@@ -32,7 +32,7 @@ works:
     projections:
     - format: markdown
       path: 13-architectural-essays/13-00-essays-and-deep-dives-overview.md
-      content_hash: sha256:24c6ac2e92ae0e18b9de66d140f38813aea41affcec446f42e7ea3fb6d7ce949
+      content_hash: sha256:db919fb4bed814a4b36692554f8b8d8093e7e96d04049bd308970cf700521344
       validation_status: pass
 - work_id: work-architecture-has-a-second-consumer
   title: When Machines Stopped Waiting
@@ -158,12 +158,47 @@ works:
     projections:
     - format: markdown
       path: 13-architectural-essays/13-04-privacy-has-a-composition-problem.md
-      content_hash: sha256:7383cf9b4b4ed5e5525f18305e53170c28c2b3cd66d70fd007ff26a56070dfe3
+      content_hash: sha256:bbc88c35b2a017508188cf6106b6fa39bd11221b8e48f46ee0a6a7af20d0cee7
+      validation_status: pass
+- work_id: work-architecture-as-model-condition
+  title: Can Architecture Change What a Model Is Likely to Do?
+  content_type: conceptual-essay
+  authority: explanatory
+  context_kind: explanatory
+  maturity: L3
+  status: argument-complete
+  standalone: true
+  normative: false
+  research_claims: false
+  relationships:
+  - type: extends
+    target: 00-problem/00-02-the-problem-of-lossy-reasoning.md
+  - type: extends
+    target: 00-problem/00-04-architecture-as-a-first-class-artifact.md
+  - type: extends
+    target: 00-problem/00-08-the-ste-thesis.md
+  - type: extends
+    target: 03-artifacts/03-01-architecture-decision-records.md
+  - type: extends
+    target: 03-artifacts/03-03-invariants.md
+  - type: extends
+    target: 06-governance/06-03-authority-and-decision-rights.md
+  - type: extends
+    target: 08-runtime/08-05-context-assembly-and-mvc.md
+  - type: extends
+    target: 10-ai-interface/10-01-agents.md
+  editions:
+  - edition_id: handbook
+    label: Handbook Edition
+    projections:
+    - format: markdown
+      path: 13-architectural-essays/13-05-can-architecture-change-what-a-model-is-likely-to-do.md
+      content_hash: sha256:6030ccb113d125221f4ab74dac82b254048cec0f65bd9642331cfb4c090098dd
       validation_status: pass
 statistics:
-  work_count: 5
-  edition_count: 5
-  projection_count: 5
+  work_count: 6
+  edition_count: 6
+  projection_count: 6
   by_content_type:
-    conceptual-essay: 4
+    conceptual-essay: 5
     part-overview: 1

@@ -71,6 +71,7 @@ The Publication Domain (Work → Edition → Projection and related governance) 
 | [The Understanding We Keep Rebuilding](13-02-the-understanding-we-keep-rebuilding.md) | Conceptual essay |
 | [The Shape of Sufficient Context](13-03-the-shape-of-sufficient-context.md) | Conceptual essay |
 | [Privacy Has a Composition Problem](13-04-privacy-has-a-composition-problem.md) | Conceptual essay |
+| [Can Architecture Change What a Model Is Likely to Do?](13-05-can-architecture-change-what-a-model-is-likely-to-do.md) | Conceptual essay |
 
 ## Summary
 
