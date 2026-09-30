@@ -5,14 +5,14 @@
 # generator_id: ste-handbook-publication-manifest
 # generator_version: 0.1.0
 # hash_algorithm: sha256
-# source_hash: sha256:6144c939b1a82249f08268c9762dfb979a23858e718e691406a8b1f0a3406b35
-# rendered_hash: sha256:74994d3ac403ef2dccef5a8264feb28efc2b3db1d2907132de0355f4aa4906d0
+# source_hash: sha256:3ab13793953c186cb3b553ef01bc58f0fab4932e527ec8e0b18a5bec9c83459a
+# rendered_hash: sha256:e73853b30640b44fec6f29df577789d0e4124bd4b52ed2c94b68595890f0916f
 # catalog_of: works
 schema_version: 0.1.0
 type: work_catalog
 implementing_system: ste-handbook
 domain_status: emerging
-generated_date: '2026-09-30T01:16:55Z'
+generated_date: '2026-09-30T01:22:52Z'
 generated_from: 13-architectural-essays/13-*.md
 works:
 - work_id: work-essays-and-deep-dives-overview
@@ -193,7 +193,7 @@ works:
     projections:
     - format: markdown
       path: 13-architectural-essays/13-05-can-architecture-change-what-a-model-is-likely-to-do.md
-      content_hash: sha256:6030ccb113d125221f4ab74dac82b254048cec0f65bd9642331cfb4c090098dd
+      content_hash: sha256:3ffd0c38eb0854b0d22a5144c826345ab36ef4a5c84b5bdeb02a5236064213e0
       validation_status: pass
 statistics:
   work_count: 6
