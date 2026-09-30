@@ -3,54 +3,88 @@ title: "Entities"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-09-30"
 ---
 
 # Entities
 
 ## The Problem
 
-Architecture conversations mix nouns freely—“service,” “module,” “subsystem,” “bounded context”—without saying which ones are **first-class in the model**. If those nouns do not map to stable **entities** in **Architecture IR**, tools cannot align, **traces** cannot land, and **evidence** cannot target a definite **scope**. The failure looks like tooling gaps; the cause is often missing entity discipline.
+Architecture conversations mix nouns freely—“service,” “module,” “decision,” “MUST statement”—without saying which ones are **first-class in the model**. If those nouns do not map to stable **entities** in **Architecture IR**, tools cannot align, **traces** cannot land, and **evidence** cannot target a definite **scope**. The failure looks like tooling gaps; the cause is often missing entity discipline.
+
+That discipline is not only structural. When Normative Propositions and invariants exist only as prose fragments, reviewers reconstruct meaning from modal language, and identity and authority blur.
 
 ## The Reframe
 
-An **entity** in **Architecture IR** is a typed node in the system model: something that can be referenced, versioned, linked, and projected. Examples at the architecture layer include logical components, deployable units, interfaces, data stores, external systems, and capability groupings—**exact** inventories belong in **ste-spec** and your metamodel; the handbook fixes the *role* of entities as **the addressable units of structure**.
+In Architecture IR, an **entity** is a **typed node** in the architecture model: an independently addressable semantic object admitted under the governed Architecture IR ontology. ste-spec names the canonical semantic entity types and how they may realize onto mechanical surfaces at a pinned IR version. Exact inventories and schemas belong there; the handbook fixes the *role* of entities as the addressable units of the machine-oriented architecture model.
 
-Entities are **not** the same as files or classes, though they may **map** to **implementation** identities. The model stays at the abstraction where architectural commitments live.
+Entities are **not** the same as files or classes, though they may **map** to **implementation** identities. Being an entity does **not** make all entity types peers in authority. Different families have different ownership and lifecycle rules.
 
 ## The Model
 
+### Conceptual families (not an exhaustive inventory)
+
+Under current accepted Architecture IR semantics, entity types include families such as:
+
+**Structural semantics** — for example systems, components, interfaces, integrations, and related structural types.
+
+**Intent / normative and decision semantics** — including **Decision**, **Invariant**, and **NormativeProposition**, among other architecture-facing types ste-spec admits (for example constraint and capability where in scope).
+
+**Evidence and governance-facing semantics** — such as evidence, gaps, reviews, overrides, and remediation where the ontology includes them.
+
+**Contract-governed extension semantics** — custom or consumer-qualified entities only where current authority permits them. Arbitrary modal prose does not become a Normative Proposition; mechanical tooling must not infer NP admission from MUST/SHOULD wording alone.
+
+**NormativeProposition** and **Invariant** are peer semantic types. An invariant expresses must-remain-true semantics under its governed scope. A Normative Proposition expresses ADR-local required/prohibited/recommended/discouraged/permitted meaning through a closed normative-force vocabulary. Neither is collapsed into the other because both may use modal language.
+
+### Normative Proposition as addressability without independent authority
+
+A Normative Proposition is the clearest handbook example of:
+
+```text
+stable identity + addressability
+        WITHOUT
+independent authority / lifecycle
+```
+
+In authoring, the NP is **ADR-contained**; authority and lifecycle remain with the declaring ADR. In normalized embodiment surfaces, an NP envelope may carry explicit declaring-ADR qualification and source-artifact qualification so ownership and provenance survive detachment from source position. That qualification **preserves** authority derived from the declaring ADR; it does not create new authority.
+
+Do not invent a dedicated compiled Architecture IR `kind` for NormativeProposition where ste-spec has not established one. Mechanical realization and CE-01 identity unification remain deferred where accepted authority says they are deferred.
+
 ### Typing and roles
 
-Each entity has a **type** (or metamodel class) that constrains which **relationships** it may participate in and which attributes matter. Typing is what makes the graph **mechanical**: queries and rules can ask for “all components exposing this interface” instead of scraping labels.
+Each entity has a **type** that constrains which **relationships** it may participate in and which attributes matter. Typing is what makes the graph **mechanical**: queries and rules can ask for typed neighborhoods instead of scraping labels.
 
 ### Identity
 
-Entities carry **identifiers** stable across updates within the versioning story. Identity ties **intent** references, **compilation** output, **projection** anchors, and **evidence** **scopes** to the **same** object. Without that, “component A” in a test report and “component A” in a diagram are accidents of wording.
+Entities carry **identifiers** stable across updates within the versioning story. Where identity doctrine applies, identity is not derived from prose, paths, hashes, ordering, source location, or composition position. Human recognition surfaces such as alias identifiers and alias names (where used) are not canonical identity.
+
+Identity ties **intent** references, construction and materialization output, **projection** anchors, and **evidence** **scopes** to the **same** object. Without that, “component A” in a test report and “component A” in a diagram are accidents of wording—and the same is true for Normative Propositions reviewed across tools.
 
 ### Attributes and annotations
 
-Beyond graph edges, entities may carry **annotations**: ownership, criticality, lifecycle state, links to external systems of record, and similar metadata. Annotations participate in **governance** and **validation** when **rules** reference them; they should not become a shadow model that contradicts the graph.
+Beyond graph edges, entities may carry attributes and annotations: ownership, criticality, lifecycle state (where applicable to that type), links to external systems of record, and similar metadata. Normative Propositions, under current ADR-Kit embodiment evidence, do not invent an independent governance lifecycle merely by being represented. Annotations must not become a shadow model that contradicts declaring authority or graph semantics.
 
-### Boundaries as entities
+### Product surfaces versus STE ontology
 
-Boundary elements—trust zones, deployment boundaries, API surfaces—often appear as entities or as first-class facets of entities. Their job is to make **constraints** from **intent** **bindable** to structure: “no dependency across this edge” is a claim about **relationships** anchored on identifiable **entities**.
+Authoring and normalized product registries may use implementation vocabulary such as entity-type strings and entity registries. Those surfaces are embodiment evidence. They are **not** Architecture IR unless accepted ste-spec establishes that mapping. Handbook doctrine follows ste-spec’s Entity ontology, not product implementation names.
 
 ## The Implications
 
-Defining entity types is a **design** act, not clerical overhead. Too few types collapse distinct concerns; too many duplicate **implementation** detail in IR. The right cut depends on the system and **governance** appetite; STE expects the cut to be **explicit** and **stable** enough to compile and review.
+Defining which entity types are in play for a scope is a **design** and **governance** act. Too few types collapse distinct concerns; too many duplicate **implementation** detail in the model. STE expects the cut to be **explicit**, **contract-admitted**, and **stable** enough to construct, validate, and review—without treating every node as equally authoritative.
 
 ## Relationship to STE system
 
 - **Structure:** [The system model](04-01-the-system-model.md), [Relationships](04-03-relationships.md).
-- **Trace attachment:** [Traceability in Architecture IR](04-05-traceability.md), [IR as a graph](04-07-ir-as-a-graph.md).
-- **Intent binding:** [Invariants](../03-artifacts/03-03-invariants.md), [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md).
+- **Trace attachment:** [Traceability in Architecture IR](04-05-traceability.md), [IR as a semantic graph](04-07-ir-as-a-graph.md).
+- **Intent binding:** [Invariants](../03-artifacts/03-03-invariants.md), [Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md), [Requirements and constraints](../03-artifacts/03-02-requirements-and-constraints.md).
 - **Embodiment mapping:** [Implementation and operation](../05-lifecycle/05-03-implementation-and-operation.md).
+- **Explanatory depth:** [Can architecture change what a model is likely to do?](../13-architectural-essays/13-05-can-architecture-change-what-a-model-is-likely-to-do.md).
 
 ## Summary
 
-- **Entities** are typed, identifiable nodes in **Architecture IR**—the units **traceability** and **evidence** attach to.
-- **Identity** and **typing** make automated reasoning and **diff** possible.
-- Entities sit at **architecture** abstraction; they **reference** **implementation**, they do not replace source code.
+- **Entities** are typed, identifiable nodes in **Architecture IR**—the addressable units of the semantic architecture model.
+- Structural types and governed semantic types (including **Decision**, **Invariant**, and **NormativeProposition**) may all be entities; authority and lifecycle rules differ by type.
+- **NormativeProposition** and **Invariant** are peers; NP identity is addressability, not independent policy authority.
+- ste-spec owns STE Entity ontology; product registry vocabulary is embodiment evidence, not automatic IR doctrine.
 
 **Next:** [Relationships](04-03-relationships.md).

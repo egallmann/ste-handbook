@@ -1,9 +1,11 @@
 %% Projection bundle over Architecture IR (Diagram E). Companion to 04-architecture-model/04-07-ir-as-a-graph.md.
+%% Registries are queryable embodiment/projection surfaces—not automatic Architecture IR ontology.
+%% Normative Propositions appear as typed entities in the entity registry where admitted; no separate NP registry invented.
 
 flowchart TB
-  IR[Architecture_IR]
+  IR[Architecture_IR_semantic_graph]
   IDX[Architecture_index]
-  IR -->|"emit"| IDX
+  IR -->|"emit_or_project"| IDX
   IDX --> ENT[Entity_registry]
   IDX --> REL[Relationship_registry]
   IDX --> SYS[System_registry]
@@ -12,3 +14,4 @@ flowchart TB
   IDX --> INV[Invariant_registry]
   IDX --> UNR[Unresolved_registry]
   IDX --> GRA[Architecture_graph]
+  ENT -->|"typed_NPs_where_admitted"| NP[NormativeProposition_entities]

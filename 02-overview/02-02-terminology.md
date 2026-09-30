@@ -31,7 +31,7 @@ Treat this chapter as a stabilization pass aligned to the handbook glossary mean
 | **Design space** | The set of feasible approaches remaining after **constraints** are applied. | “Design space” as brainstorming breadth without **constraints**. |
 | **Invariant** | A statement that must hold for the design to remain valid unless **governance** explicitly revises it. | “Invariant” as a test name only. Tests may be **evidence**; the invariant is the commitment. |
 | **ADR** | Architecture Decision Record: durable, reviewable record of a **decision**, often with context, options, and consequences. | “ADR” as a template file nobody reads. The object is the recorded **decision**, not the file ritual. |
-| **Architecture IR** | Canonical **system model** at the architecture layer for an agreed **scope**, compiled from structured **intent** **artifacts**; machine-addressable graph shared for inspection, diff, **query**, analysis, and traceability—not a diagram format and not “the architecture” because a picture exists. | “The model” or “the graph” when you mean the canonical IR. Say **Architecture IR** once, then proceed. |
+| **Architecture IR** | Canonical machine-oriented **semantic** **system model** at the architecture layer for an agreed **scope**, produced from structured **intent** **artifacts** under governed construction/materialization; machine-addressable graph of structural and other admitted semantic entities shared for inspection, diff, **query**, analysis, and traceability—not a diagram format, not declaring authority merely by representation, and not “the architecture” because a picture exists. | “The model” or “the graph” when you mean the canonical IR. Say **Architecture IR** once, then proceed. Do not reduce IR to topology alone. |
 
 **Prefer / avoid:** Prefer **intent** over generic “requirements” when you mean normative STE commitments. If you truly mean contractual requirements management, say so explicitly and map to **intent** once.
 
@@ -66,7 +66,7 @@ Treat this chapter as a stabilization pass aligned to the handbook glossary mean
 | Term | Handbook sense | Common confusion |
 |------|------------------|------------------|
 | **Projection** | A derived human-usable view from a canonical source, intended to track the same commitments as other projections when the pipeline is healthy. | Any diagram or document. Projections are accountable views, not freeform summaries. |
-| **Compilation** | The structured transformation from **intent** **artifacts** into **Architecture IR** where that pipeline exists. | “Compilation” as only compiler builds. Here it names the intent-to-IR transform. |
+| **Compilation** | The structured bridge from governed **intent** **artifacts** toward **Architecture IR** where that pipeline exists—including construction, qualification, normalization, and mapping responsibilities as distinct where contracts separate them. | “Compilation” as only compiler builds, or as one verb for persist/admit/promote/conform. |
 | **Traceability** | Ability to follow links from **decisions** and **invariants** through structure to **evidence** and **governance** outcomes. | Traceability matrices as an end in themselves. Matrices are a means; accountable chains are the goal. |
 
 **Prefer / avoid:** Prefer **projection** as the canonical handbook term; when bridging classic architecture literature “views,” tie **views** to **projections** once and continue with **projection**.
