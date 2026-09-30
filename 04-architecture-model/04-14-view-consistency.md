@@ -3,18 +3,26 @@ title: "View consistency"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-09-30"
 ---
 
 # View consistency
 
 ## The Problem
 
-Inconsistent **projections** destroy trust faster than missing ones. If the deployment diagram shows a dependency the security view omits, reviewers cannot know which **governance** story was true. **View consistency** is the discipline that multiple **projections** **render** the same **Architecture IR** commitments for their **scopes**, modulo **explicit** tolerances.
+Inconsistent **projections** destroy trust faster than missing ones. If the deployment diagram shows a dependency the security view omits without saying so, or a document quotes a Normative Proposition without its declaring ADR and force, reviewers cannot know which **governance** story was true. **View consistency** is the discipline that multiple **projections** **render** the same architecture-model commitments for their **scopes**, modulo **explicit** tolerances—without structural contradiction or normative-semantic distortion.
 
 ## The Reframe
 
-**Consistency** is not “all views look identical.” It is “no view **contradicts** IR for the **claims** it makes.” Different slices may omit elements, but they must not **assert** edges or properties that IR forbids or lacks. **Validation** can automate some checks; **governance** owns the rest ([Governed reasoning](../00-problem/00-05-governed-reasoning.md)).
+**Consistency** is not “all views look identical.” It is “no view **contradicts** Architecture IR for the **claims** it makes.” Different slices may omit elements, but they must not **assert** edges or properties that IR forbids or lacks. For normative semantics, consistency also means a projection must not:
+
+- alter normative force;
+- sever declaring authority;
+- present historical or ineffective semantics as current without marking them;
+- imply applicability from inclusion;
+- omit qualification in a way that materially changes interpretation.
+
+Omission may be legitimate selection. Misrepresentation is not. **Validation** can automate some checks; **governance** owns the rest ([Governed reasoning](../00-problem/00-05-governed-reasoning.md)).
 
 ## The Model
 
@@ -24,19 +32,19 @@ A **consistency** baseline is: projections consumed together in a **governance**
 
 ### Cross-projection predicates
 
-Useful checks include: every edge shown in view A exists in IR; every boundary in security view maps to a trust **entity** in IR; service names in docs match IR labels and IDs. Predicate design is policy and **ste-spec** territory; the handbook asserts the **category** of checks.
+Useful checks include: every edge shown in view A exists in IR; every boundary in security view maps to a trust **entity** in IR; service names in docs match IR labels and IDs; Normative Propositions shown retain identity, declaring authority, force, and scope consistent with the model. Predicate design is policy and **ste-spec** territory; the handbook asserts the **category** of checks.
 
 ### Tolerances and waivers
 
-Sometimes views **intentionally** simplify: collapsing clusters, showing logical rather than physical paths. **Tolerances** should be **documented**—what simplification is allowed, what must never be simplified. **Waivers** are **governance** objects when simplification risks **misleading** **assessment**.
+Sometimes views **intentionally** simplify: collapsing clusters, showing logical rather than physical paths, omitting Normative Propositions outside the stakeholder concern. **Tolerances** should be **documented**—what simplification is allowed, what must never be simplified. **Waivers** are **governance** objects when simplification risks **misleading** **assessment**.
 
 ### Drift and conformance
 
-**Drift** between projections and IR is **structural** **debt**. **Conformance** discussions often assume IR matches **intent** and **embodiment**; projection **conformance** is the prior step: do **derived** views still **track** **canonical** structure? Skipping it makes **evidence** and **Kernel** work look green while humans steer from false pictures ([The governance model](../06-governance/06-02-the-governance-model.md)).
+**Drift** between projections and IR is architecture-model **debt**. **Conformance** discussions often assume IR matches **intent** and **embodiment**; projection **conformance** is the prior step: do **derived** views still **track** **canonical** representation without inventing authority or applicability? Skipping it makes **evidence** and **Kernel** work look green while humans steer from false pictures ([The governance model](../06-governance/06-02-the-governance-model.md)).
 
 ## The Implications
 
-Add **projection** checks to CI where practical: regenerate and **diff** outputs, fail on orphan elements, flag notation mappings that drop edge types. Pair automated checks with periodic human **review** of **viewpoint** definitions—**rules** rot too.
+Add **projection** checks to CI where practical: regenerate and **diff** outputs, fail on orphan elements, flag notation mappings that drop edge types or strip normative qualification. Pair automated checks with periodic human **review** of **viewpoint** definitions—**rules** rot too.
 
 ## Relationship to STE system
 
@@ -46,8 +54,8 @@ Add **projection** checks to CI where practical: regenerate and **diff** outputs
 
 ## Summary
 
-- **View consistency** means **projections** do not **contradict** **Architecture IR** for the claims they make.
-- **Snapshots**, **predicates**, and **documented tolerances** make consistency **checkable**.
+- **View consistency** means **projections** do not **contradict** **Architecture IR** for the claims they make—structurally or in normative-semantic qualification.
+- **Snapshots**, **predicates**, and **documented tolerances** make consistency **checkable**; omission may be selection, distortion may not.
 - Projection **drift** undermines **conformance** before **evidence** is even collected.
 
 **Next:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md) shows minimal **intent**→**projection** shapes in one chain. Then continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md) or deepen **Kernel** mechanics in [Kernel overview](../07-kernel/07-00-overview.md).

@@ -174,7 +174,7 @@ Implementation
 
 This is not a mandatory hierarchy. An invariant and an NP are peer semantic types; NP authority remains with the ADR that declares it. `ADR-L-0028` makes that boundary explicit.
 
-Authoring v1.6 gives the proposition first-class fields for stable identity, alias identity, statement, closed normative force (`MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, `MAY`), scope, and optional rationale, with authority remaining on the containing ADR. Logical, physical-system, and physical-component models all expose the collection.
+Authoring v1.6 gives the proposition first-class fields for stable `id`, `alias_id`, `alias_name`, `statement`, closed normative force (`MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, `MAY`), `scope`, and optional `rationale`, with authority remaining on the containing ADR. Logical, physical-system, and physical-component models all expose the collection.
 
 There is a historical wrinkle I do not want to smooth over. `ADR-L-0029` was authored under schema v1.5. It therefore could not carry a first-class `normative_propositions` collection, and I do not want to reconstruct history for convenience. The concrete identity obligation already existed in the forms that schema could validate. One accepted representation is `INV-0114`, an invariant—not a hidden or retroactive NP:
 
@@ -256,7 +256,7 @@ A capable model can reject some branches by reading the repository carefully. Ex
 
 No single proposition describes the implementation I want. That would miss the point. The shaping effect comes from multiple applicable propositions acting together. One closes replacement identity. One closes deriving identity from aliases or source-location properties. One closes persistence or admission as a side effect of construction. One closes invention of missing material intent. Those are different architectural dimensions.
 
-Expressed in the later NP form, the relevant accepted semantics would look approximately like this:
+Using the later NP vocabulary to isolate those accepted semantics, the relevant propositions can be sketched approximately like this:
 
 ```yaml
 normative_propositions:
@@ -487,7 +487,7 @@ I was trying to stop making the prompt remember what the architecture should hav
 
 This essay is a **conceptual essay** in [Part 13: Architectural Essays and Deep Dives](13-00-essays-and-deep-dives-overview.md). It is explanatory. It does not define STE contracts, and it is not research evidence.
 
-It argues that Normative Propositions give ADR-local architectural meaning a durable shape so models and reviewers can reason from governed requirements rather than reconstructing them from prompts. ADR-Kit is the running case, including its earlier demonstration that architecture can constrain semantic properties before selecting a technology embodiment. The essay does not establish Normative Propositions as handbook doctrine, and it does not claim measured conformance uplift.
+It argues that Normative Propositions give ADR-local architectural meaning a durable shape so models and reviewers can reason from governed requirements rather than reconstructing them from prompts. ADR-Kit is the running case, including its earlier demonstration that architecture can constrain semantic properties before selecting a technology embodiment. Normative Propositions are governed STE semantics; this essay examines their architectural consequence rather than establishing their normative definition. It also does not claim measured conformance uplift.
 
 Detailed doctrine for the obligation it motivates lives in the core handbook:
 

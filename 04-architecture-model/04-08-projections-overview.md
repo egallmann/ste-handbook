@@ -3,45 +3,60 @@ title: "Projections overview"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-09-30"
 ---
 
 # Projections overview
 
 ## The Problem
 
-Humans cannot read **Architecture IR** raw at scale. **Projections**—diagrams, documents, tables, API explorers—are how architecture is **reviewed** and **taught**. The failure mode is treating any projection as **canonical**: three diagrams disagree, each claims truth, and **governance** argues about ink instead of structure. STE requires a clear rule: **IR** is **canonical** for structural commitments; **projections** are **derived** and must **track** IR when the pipeline is healthy.
+Humans cannot read **Architecture IR** raw at scale. **Projections**—diagrams, documents, tables, API explorers—are how architecture is **reviewed** and **taught**. The failure mode is treating any projection as **canonical**—or as declaring authority for Normative Propositions merely because they appear in a view. Three diagrams disagree, each claims truth, and **governance** argues about ink instead of architecture. STE requires a clear rule: declaring sources retain normative authority; **Architecture IR** is **canonical machine representation** for a declared **scope**; **projections** are **derived** and must **track** that representation when the pipeline is healthy.
 
 ## The Reframe
 
-STE’s rule at this layer is strict: **Architecture IR** is **canonical** for structural commitments in a declared **scope**; anything rendered for humans from that graph is **derived** and must **track** IR when the pipeline is healthy. Multiple projections coexist because stakeholders need different slices and notations; **consistency** means they **do not contradict** the same IR snapshot without a documented exception ([Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md)). How selection, notation, and provenance work in practice is the subject of [Projections](04-09-projections.md).
+STE’s rule at this layer is strict but layered. **Governed source artifacts** (ADRs, invariants, constraints, and related intent) remain declaring authority. **Architecture IR** is **canonical machine representation** of admitted architecture semantics for a declared **scope**. Anything rendered for humans from that model is **derived** and must **track** IR when the pipeline is healthy. Multiple projections coexist because stakeholders need different slices and notations; **consistency** means they **do not contradict** the same IR snapshot for the claims they make without a documented exception ([Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md)). How selection, notation, and provenance work in practice is the subject of [Projections](04-09-projections.md).
+
+A projection of a Normative Proposition does not become the NP’s authority, does not become applicable merely by being displayed, and must preserve identity, declaring authority, force, scope, and provenance sufficiently to avoid misleading the reviewer.
 
 ## The Model
 
-### Canonical versus derived
+### Canonical representation versus declaring authority versus derived views
 
-- **Canonical (architecture model layer):** **Architecture IR** as published structural truth for a declared **scope**.
-- **Derived:** every **projection**—even a “source” diagram in a design tool—once wired into STE’s pipeline—is accountable to IR, not freestanding.
+```text
+governed source authority
+        ↓
+semantic representation / Architecture IR
+        ↓
+derived projections
+```
 
-Normative **intent** records (**ADRs**, **invariants**, requirements, **constraints**, recorded **decisions**) sit on the **authority** side of the pipeline: they are what **governance** commits and revises. **Compilation** and linking produce **Architecture IR**; **manifests**, **indices**, **registries**, **graphs**, rendered docs, and many review or gap summaries are **regenerated** from that substrate. They speed reading and automation; they do not compete with **intent** or published IR as alternate “truths.”
+Do **not** put all three inside one “canonical authority” box as if they were equivalent.
 
-**How to read this diagram:** **derived** artifacts are **disposable and reproducible**; fix authority in **intent** or IR, then **regenerate**—do not “patch” derived files by hand as if they were canonical.
+- **Declaring authority:** **ADRs** and related intent records—what **governance** commits and revises, including ADR-local Normative Propositions.
+- **Canonical machine representation:** **Architecture IR** (and governed mapping into it) for a declared **scope**—addressable structural and semantic commitments.
+- **Derived:** every **projection**—manifests, indices, registries, graphs, rendered docs, review summaries—accountable to the model, not freestanding, and not a second declaring authority.
+
+**Compilation** and related materialization produce machine-facing representation; **projections** regenerate from that substrate. They speed reading and automation; they do not compete with **intent** as alternate normative truths, and they do not invent applicability by selection.
+
+**How to read this diagram:** **derived** artifacts are **disposable and reproducible**; fix authority in declaring sources (and regenerate the model), then **regenerate** projections—do not “patch” derived files by hand as if they were canonical or authoritative.
 
 ```mermaid
 flowchart TB
-  subgraph canon ["Canonical authority"]
-    ADR[Intent_ADRs_and_decisions]
+  subgraph declare ["Declaring_source_authority"]
+    ADR[Intent_ADRs_decisions_NPs]
     INV[Invariants_and_constraints]
-    IR[Published_Architecture_IR]
   end
-  subgraph deriv ["Derived rebuildable projections"]
+  subgraph machine ["Canonical_machine_representation"]
+    IR[Architecture_IR]
+  end
+  subgraph deriv ["Derived_rebuildable_projections"]
     MAN[Manifest_and_architecture_index]
     REG[Entity_and_relationship_registries]
     GRA[Architecture_graph]
     REN[Rendered_docs_and_summaries]
   end
-  ADR -->|"compile_and_link"| IR
-  INV -->|"compile_and_link"| IR
+  ADR -->|"represent_not_replace"| IR
+  INV -->|"represent_not_replace"| IR
   IR -->|"deterministic_generation"| MAN
   IR -->|"deterministic_generation"| REG
   IR -->|"deterministic_generation"| GRA
@@ -50,19 +65,19 @@ flowchart TB
 
 ### Why many projections exist
 
-Legitimate reasons include: audience (executive summary versus engineer detail), notation (C4, deployment, data flow), and task (onboarding versus **compliance** review). Illegitimate reasons include private diagrams that bypass **compilation** and **governance**.
+Legitimate reasons include: audience (executive summary versus engineer detail), notation (C4, deployment, data flow), and task (onboarding versus **compliance** review). Illegitimate reasons include private diagrams that bypass construction/materialization and **governance**, or views that strip normative qualification until obligations look freestanding.
 
 ### Pipeline expectations
 
-Healthy flow: **intent** → **compilation** → IR update → **projection** regeneration → human review. Skipping steps forks reality; **drift** between projection and IR is a **defect** or an **explicit waiver**, not an informal norm.
+Healthy flow: governed **intent** → construction/materialization → IR update (where mapped) → **projection** regeneration → human review. Skipping steps forks reality; **drift** between projection and IR is a **defect** or an **explicit waiver**, not an informal norm. Including a Normative Proposition in a regenerated view does not prove it applies to the reviewer’s task.
 
 ### Relationship to views literature
 
-Classic **architecture views** map cleanly onto **projections** in STE vocabulary: views are **not** separate truths; they are **renderings** of commitments anchored in IR ([Architecture views](04-12-architecture-views.md)).
+Classic **architecture views** map cleanly onto **projections** in STE vocabulary: views are **not** separate truths; they are **renderings** of commitments anchored in the architecture model ([Architecture views](04-12-architecture-views.md)).
 
 ## The Implications
 
-Invest in **projection** tooling as seriously as **compilation**. Stale diagrams erode trust faster than missing diagrams. **View consistency** checks ([View consistency](04-14-view-consistency.md)) belong in the same **governed reasoning** story as code checks.
+Invest in **projection** tooling as seriously as construction and materialization. Stale diagrams erode trust faster than missing diagrams. **View consistency** checks ([View consistency](04-14-view-consistency.md)) belong in the same **governed reasoning** story as code checks—and must cover normative-semantic distortion, not only missing boxes.
 
 ## Relationship to STE system
 
@@ -73,8 +88,8 @@ Invest in **projection** tooling as seriously as **compilation**. Stale diagrams
 
 ## Summary
 
-- **Projections** are **derived**; **Architecture IR** is **canonical** for structure.
-- Multiple projections are normal; **contradiction** without policy is not.
-- **Projection** health is part of **governed reasoning**, not “documentation polish.”
+- **Projections** are **derived**; **Architecture IR** is **canonical machine representation**; declaring sources retain normative authority.
+- Multiple projections are normal; **contradiction** or silent stripping of normative qualification without policy is not.
+- Selection and display do not imply applicability; **projection** health is part of **governed reasoning**, not “documentation polish.”
 
 **Next:** [Projections](04-09-projections.md).
