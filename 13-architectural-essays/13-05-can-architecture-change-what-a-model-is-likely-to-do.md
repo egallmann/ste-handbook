@@ -176,22 +176,25 @@ This is not a mandatory hierarchy. An invariant and an NP are peer semantic type
 
 Authoring v1.6 gives the proposition first-class fields for stable identity, alias identity, statement, closed normative force (`MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, `MAY`), scope, and optional rationale, with authority remaining on the containing ADR. Logical, physical-system, and physical-component models all expose the collection.
 
-There is a historical wrinkle: the accepted ADRs that forced this design were authored before the native field existed. If one of `ADR-L-0029`'s accepted identity rules were expressed through the later v1.6 NP shape, its essential semantic content would be approximately:
+There is a historical wrinkle I do not want to smooth over. `ADR-L-0029` was authored under schema v1.5. It therefore could not carry a first-class `normative_propositions` collection, and I do not want to reconstruct history for convenience. The concrete identity obligation already existed in the forms that schema could validate. One accepted representation is `INV-0114`, an invariant—not a hidden or retroactive NP:
 
 ```yaml
-normative_propositions:
-  - alias_name: preserve-update-identity
-    statement: "Update MUST preserve UUID identity."
-    normative_force: MUST
-    scope: authoring-update
+invariants:
+  - alias_id: INV-0114
+    alias_name: canonical-identity-is-explicit-and-stable
+    statement: >
+      Valid supplied UUIDv7 identity MUST be preserved, update MUST preserve
+      UUID identity, and ADR-Kit MUST NOT silently replace supplied identity
+      or derive canonical identity from presentation or source-location
+      properties; create MAY mint UUIDv7 without implying admission.
     rationale: >
-      Canonical identity is independent of aliases, prose, paths,
-      hashes, ordering, and composition position.
+      Canonical identity is independent of aliases, prose, paths, hashes,
+      ordering, and composition position.
 ```
 
-That is an illustrative later projection of accepted `ADR-L-0029` semantics—not a claim that the historical ADR already contained this first-class NP. The architecture now has a native place to say that this local statement is normative, what its force is, where it applies, why it exists, and which ADR supplies its authority. A downstream consumer no longer has to invent that classification from the prose.
+That is the historical representation I actually had. `INV-0114` is an invariant, not a first-class NP, and I do not want to rewrite it into one after the fact. `ADR-L-0029` was nevertheless already pointing toward the later form. `DEC-0194` (`preserve-normative-proposition-construction-boundaries`) explicitly preserved Normative Proposition as a peer semantic type to Invariant for future construction. It required explicit proposition content and exactly one normative force, and it prohibited tooling from inferring propositions, materiality, applicability, competence, or effectivity from prose. The ADR carried the obligation in the forms v1.5 could validate while also preserving the future Normative Proposition boundary. The meaning came first. Authoring v1.6 gave that meaning a first-class place to live.
 
-First-class representation also creates an admission problem. A statement should become a Normative Proposition only when it carries durable ADR-local meaning whose violation would materially change what the declaring ADR considers acceptable. A useful test is subtraction. Remove the candidate proposition. If the acceptable implementation envelope does not materially change, the statement probably does not belong as an NP. If removing it leaves open an outcome the ADR intends to reject, the proposition may be carrying material normative intent. That judgment is semantic, not schema validation. Without it, every preference becomes an NP and the mechanism degenerates into architectural verbosity.
+Once that representation exists, another problem appears: not every architectural statement deserves to become an NP. A statement should become a Normative Proposition only when it carries durable ADR-local meaning whose violation would materially change what the declaring ADR considers acceptable. A useful test is subtraction. Remove the candidate proposition. If the acceptable implementation envelope does not materially change, the statement probably does not belong as an NP. If removing it leaves open an outcome the ADR intends to reject, the proposition may be carrying material normative intent. That judgment is semantic, not schema validation. Without it, every preference becomes an NP and the mechanism degenerates into architectural verbosity.
 
 The question is not whether a proposition mentions a technology. The question is whether violating it changes architectural acceptability. Because the shaping effect is compositional, authoring discipline favors one dominant normative proposition per NP. Permissions or exceptions may qualify that meaning, but a single NP should not become a miniature specification packing several unrelated obligations.
 
