@@ -46,7 +46,7 @@ In reviews, ask: **which IR version** does this diagram represent, and **what sl
 
 ## Summary
 
-- Diagrams are **projections** of **Architecture IR**, not parallel sources of structural truth.
+- Diagrams are **projections** of **Architecture IR**, not parallel sources of architecture truth or declaring authority.
 - **Notation** must preserve **entity** and **relationship** semantics.
 - **Provenance** and **diff** alignment keep diagrams **accountable**.
 

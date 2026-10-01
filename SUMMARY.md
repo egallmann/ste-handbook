@@ -56,10 +56,10 @@ Reading order follows Parts 0–14. Links are relative to this repository root.
 - [The system model](04-architecture-model/04-01-the-system-model.md)
 - [Entities](04-architecture-model/04-02-entities.md)
 - [Relationships](04-architecture-model/04-03-relationships.md)
-- [Compilation](04-architecture-model/04-04-compilation.md)
+- [Compilation and semantic materialization](04-architecture-model/04-04-compilation.md)
 - [Traceability in Architecture IR](04-architecture-model/04-05-traceability.md)
 - [Diff and change](04-architecture-model/04-06-diff-and-change.md)
-- [IR as a graph](04-architecture-model/04-07-ir-as-a-graph.md)
+- [IR as a semantic graph](04-architecture-model/04-07-ir-as-a-graph.md)
 - [Projections overview](04-architecture-model/04-08-projections-overview.md)
 - [Projections](04-architecture-model/04-09-projections.md)
 - [Diagrams](04-architecture-model/04-10-diagrams.md)
@@ -190,6 +190,7 @@ Reading order follows Parts 0–14. Links are relative to this repository root.
 - [The Understanding We Keep Rebuilding](13-architectural-essays/13-02-the-understanding-we-keep-rebuilding.md)
 - [The Shape of Sufficient Context](13-architectural-essays/13-03-the-shape-of-sufficient-context.md)
 - [Privacy Has a Composition Problem](13-architectural-essays/13-04-privacy-has-a-composition-problem.md)
+- [Can Architecture Change What a Model Is Likely to Do?](13-architectural-essays/13-05-can-architecture-change-what-a-model-is-likely-to-do.md)
 
 ## Part 14 — Research
 

@@ -2345,4 +2345,5 @@ Related privacy scholarship: contextual integrity (Nissenbaum) and mosaic-theory
 Normative semantics remain in **ste-spec**. Research claims and methods remain in [Part 14](../14-research/14-00-research-overview.md).
 
 **Previous:** [The Shape of Sufficient Context](13-03-the-shape-of-sufficient-context.md)
+**Next:** [Can Architecture Change What a Model Is Likely to Do?](13-05-can-architecture-change-what-a-model-is-likely-to-do.md)
 **Up:** [Architectural Essays and Deep Dives overview](13-00-essays-and-deep-dives-overview.md)
