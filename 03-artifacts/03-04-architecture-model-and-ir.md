@@ -8,18 +8,18 @@ last_reviewed: "2026-03-26"
 
 # Architecture Model and IR
 
-**Artifact type:** Canonical **Architecture IR** (compiled architecture model and decompositions).  
-**Role in STE:** Provide the **structural** single source of truth for tooling, linking, and **projection** generation.  
-**Primary concern:** structural.  
-**Connects to:** intent artifact types (inputs to compilation), **implementation** identities, **evidence** scopes, **traceability**, **conformance**, **publication** versus **projection**.
+**Artifact type:** Canonical **Architecture IR** (machine-oriented semantic architecture model and decompositions).  
+**Role in STE:** Provide the canonical machine-addressable architecture model for tooling, linking, and **projection** generation—without replacing declaring-source authority.  
+**Primary concern:** semantic architecture representation (structural and other admitted semantic entities).  
+**Connects to:** intent artifact types (inputs to construction/compilation), **implementation** identities, **evidence** scopes, **traceability**, **conformance**, **publication** versus **projection**.
 
 ## The Problem this artifact solves
 
-Without a single canonical architecture model, every tool builds its own graph from scraps. Views disagree, diffs are meaningless across teams, and automation cannot tell whether two changes touch the same dependency. **Architecture IR** exists so STE has one **machine-readable** structural truth compiled from **intent** and related inputs, suitable for inspection, **traceability**, and assessment.
+Without a single canonical architecture model, every tool builds its own graph from scraps. Views disagree, diffs are meaningless across teams, and automation cannot tell whether two changes touch the same dependency or the same Normative Proposition. **Architecture IR** exists so STE has one **machine-readable** semantic architecture model produced from **intent** and related inputs, suitable for inspection, **traceability**, and assessment.
 
 ## What the artifact is
 
-**Architecture IR** is STE’s canonical **system model** at the architecture layer for an agreed **scope**: entities, relationships, and metadata needed for deterministic tooling and for shared mechanical reasoning. It is the compiled structural **intent** at the architecture level, materialized as graph-shaped records, not an informal wiki and not “just another diagram format.” “Architecture model” in handbook language refers to that canonical IR and its consistency rules as a product of compilation.
+**Architecture IR** is STE’s canonical **system model** at the architecture layer for an agreed **scope**: typed entities, relationships, and metadata needed for deterministic tooling and for shared mechanical reasoning. It carries structural semantics and other admitted semantic types (including decisions, invariants, and Normative Propositions where governed), materialized as graph-shaped records—not an informal wiki and not “just another diagram format.” “Architecture model” in handbook language refers to that canonical IR and its consistency rules as a product of compilation and related materialization. Representation does not transfer declaring authority from ADRs or other source artifacts.
 
 It is not source code, though it maps to repositories and services. It is not a **projection** diagram, though **projections** render from it.
 
@@ -31,7 +31,7 @@ It is not source code, though it maps to repositories and services. It is not a 
 
 ## How it relates to intent, implementation, or evidence
 
-- **Intent:** IR is derived from **ADRs**, requirements, **constraints**, and **invariants** plus compilation rules.
+- **Intent:** IR represents commitments from **ADRs** (including ADR-local Normative Propositions where declared), requirements, **constraints**, and **invariants** plus compilation/materialization rules—without becoming the declaring authority.
 - **Implementation:** IR references **embodiment** identities (services, repos, environments) so observation can target real artifacts.
 - **Evidence:** ties to IR scopes (components, interfaces, paths) so results attach to the same objects **governance** discusses.
 
@@ -41,7 +41,7 @@ IR changes should correlate with governed **intent** changes. Silent drift betwe
 
 ## Relationship to other artifacts
 
-- [Architecture decision records](03-01-architecture-decision-records.md): decisions supply rationale; IR supplies the structural projection of commitments.
+- [Architecture decision records](03-01-architecture-decision-records.md): decisions supply rationale and declaring authority; IR supplies machine-addressable representation of commitments.
 - [Traceability](03-06-traceability.md): IR is the hub for many **traceability** edges.
-- [Publication versus projection](03-08-publication-vs-projection.md): IR is published truth at the architecture model layer; diagrams are **projections**.
-- Part 4: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md), [Compilation](../04-architecture-model/04-04-compilation.md), [Traceability in Architecture IR](../04-architecture-model/04-05-traceability.md) for IR-centric depth.
+- [Publication versus projection](03-08-publication-vs-projection.md): IR is published machine representation at the architecture model layer; diagrams are **projections**; declaring sources remain authority for normative intent.
+- Part 4: [Architecture model (Architecture IR) overview](../04-architecture-model/04-00-architecture-ir-overview.md), [Compilation and semantic materialization](../04-architecture-model/04-04-compilation.md), [Traceability in Architecture IR](../04-architecture-model/04-05-traceability.md) for IR-centric depth.

@@ -25,7 +25,7 @@ Together, these records form a **computable substrate**: tools—including deter
 ### Canonical groupings
 
 - **Intent artifacts:** requirements, **constraints**, decisions (**ADRs**), **invariants** (chapters [Architecture decision records](03-01-architecture-decision-records.md) through [Invariants](03-03-invariants.md)).
-- **Structural artifacts:** architecture models, decompositions, **Architecture IR** ([Architecture model and IR](03-04-architecture-model-and-ir.md)).
+- **Architecture model artifacts:** architecture models, decompositions, **Architecture IR** as the machine-oriented semantic architecture model ([Architecture model and IR](03-04-architecture-model-and-ir.md)).
 - **Implementation artifacts:** code, infrastructure definitions, configurations. In handbook vocabulary this is **embodiment**. Part 3 explains how the layer **connects** to these; it does not teach implementation craft.
 - **Evidence artifacts:** tests, logs, metrics, runtime observations, and **EDR**-shaped evidence records with provenance ([Evidence](03-05-evidence.md)).
 - **Governance artifacts:** trace links, conformance results, reviews, approvals, lifecycle state records ([Traceability](03-06-traceability.md), [Conformance](03-07-conformance.md); organizational mechanics also in Part 9).

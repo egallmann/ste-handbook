@@ -20,7 +20,7 @@ A **stakeholder view** is an **architecture view** (a **projection** package) wh
 
 ### Audience and obligations
 
-Name the **stakeholder**, their **decisions**, and the **obligations** they must see: which **constraints**, which **invariants**, which **interfaces**. The projection should make omissions **visible** (“out of scope for this sheet”) rather than silent.
+Name the **stakeholder**, their **decisions**, and the **obligations** they must see: which **constraints**, which **invariants**, which Normative Propositions (as candidates), which **interfaces**. The projection should make omissions **visible** (“out of scope for this sheet”) rather than silent, and must not drop declaring authority, force, or scope qualification around normative semantics in a way that changes interpretation.
 
 ### Abstraction level
 

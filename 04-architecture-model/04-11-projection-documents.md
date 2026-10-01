@@ -14,7 +14,7 @@ Long-form write-ups—decision summaries, onboarding guides, **compliance** narr
 
 ## The Reframe
 
-A **projection document** is a **text-first projection**: templated sections, embedded references to IR elements, tables produced from queries, and **provenance** of the IR snapshot. It is still a **projection**—not a second **canonical** model. Human editing may wrap generated cores with judgment-shaped context; **governance** should separate **generated structural facts** from **commentary** when **assessment** requires clarity.
+A **projection document** is a **text-first projection**: templated sections, embedded references to IR elements, tables produced from queries, and **provenance** of the IR snapshot. It is still a **projection**—not a second **canonical** model and not declaring authority for Normative Propositions it may quote. Human editing may wrap generated cores with judgment-shaped context; **governance** should separate **generated architecture facts** from **commentary** when **assessment** requires clarity.
 
 ## The Model
 
@@ -47,7 +47,7 @@ Documentation teams and engineers share responsibility: templates and **projecti
 ## Summary
 
 - **Projection documents** ground narrative in **Architecture IR** via templates, queries, and stable references.
-- Separate **generated structural facts** from interpretive prose for **assessment** clarity.
+- Separate **generated architecture facts** from interpretive prose for **assessment** clarity.
 - Elevation to **publication** is a **governance** choice, not the default for generated docs.
 
 **Next:** [Architecture views](04-12-architecture-views.md).

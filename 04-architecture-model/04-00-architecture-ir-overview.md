@@ -3,66 +3,116 @@ title: "Architecture model (Architecture IR) overview"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-09-30"
 ---
 
 # Architecture model (Architecture IR) overview
 
 ## The Problem
 
-Teams routinely say “the architecture” while pointing at different objects: a diagram on a whiteboard, a section in a wiki, a dependency graph extracted from a build, or a mental picture held by a few senior engineers. None of those is wrong as a *view*, but none is sufficient as a **shared referent**. When structure lives only in informal or fragmented forms, **traceability** breaks, **diff** across time is meaningless, and **evidence** cannot attach to stable architectural identities. **Lossy reasoning** is not only a social failure; it is the predictable output of missing a canonical structural object.
+Teams routinely say “the architecture” while pointing at different objects: a whiteboard diagram, a wiki section, a dependency graph from a build, or a mental picture held by a few senior engineers. None of those is wrong as a *view*, but none is sufficient as a **shared referent**. When architecture lives only in informal or fragmented forms, **traceability** breaks, **diff** across time is meaningless, and **evidence** cannot attach to stable architectural identities. **Lossy reasoning** is the predictable output of missing a canonical machine-oriented architecture model.
 
-STE’s response is not “draw more carefully.” It is to treat the **architecture model** as a first-class, maintained representation: explicit enough for machines to traverse, compare, **query**, and analyze, and reviewable enough for humans to trust—chiefly through **projections** that track the same commitments. **Architecture IR** is the **canonical system model** at this layer for an agreed **scope**; it is not a diagram interchange format, and a diagram is not the architecture just because it is visually compelling.
+That failure is not only about missing boxes and lines. Governed meaning—**decisions**, **invariants**, and ADR-local **Normative Propositions**—also needs addressable form. If normative intent stays only in prose while “the architecture model” means topology alone, tools and reviewers reconstruct obligations from scraps, and representation and authority blur.
 
 ## The Reframe
 
-In handbook language, that canonical architecture model is **Architecture IR**: the compiled, machine-addressable graph of architectural **entities** and **relationships** (and the metadata needed to interpret them), produced from structured **intent** and related inputs under **compilation** rules. “Architecture model” names the *idea*—what the system **is**, structurally and relationally, as committed through the intent pipeline. **Architecture IR** names the *proper object* STE uses for inspection, diff, linking, mechanical analysis, and downstream tooling. Normative **intent** records (**ADRs**, requirements, **constraints**, **invariants**) **compile into** and **link through** IR with **traceability** attaching **evidence** to shared identities; exact containment versus linking belongs to **ste-spec** where it matters.
+**Architecture IR** is the canonical **machine-oriented semantic architecture model** for a declared **scope**: the shared object through which STE makes governed architecture **addressable**, **traversable**, **comparable**, and **projectable**.
 
-This part of the book is not a specification of wire formats (that belongs in **ste-spec**). It is the conceptual spine: what the model is for, how it sits between **intent** and **implementation** / **embodiment**, how it differs from diagrams and documents, and how **projections** keep humans aligned with the same graph.
+It carries and relates admitted architecture semantics—not only structural entities and relationships, but also decision semantics, invariant semantics, Normative Proposition semantics, provenance and qualification, and other contract-admitted meanings. Exact inventories and wire formats belong in **ste-spec**; this part states the conceptual spine.
+
+**Architecture IR does not replace the declaring source.** ADRs, contracts, and other documentation-state artifacts remain the authorities that declare decisions and Normative Propositions. IR represents governed meaning so machines and humans can reason over it. Representation does not transfer authority into the graph.
+
+This part is not a specification of schemas or product APIs. It is the doctrinal placement of the model between governed sources and projections, embodiment linkage, and later assessment.
 
 ## The Model
 
 ### What Architecture IR is
 
-**Architecture IR** is the **central structural object** and **canonical system model** for STE at the architecture layer: not the only **artifact** in the loop (**intent** records, **evidence**, and **governance** matter too), but the hub that lets them **point at the same things**. It must be **machine-traversable** for automation—including model-based assistants where policy allows—and **human-reviewable** through **projections**; when the pipeline is healthy, views disagree only where **governance** allows explicit tolerance—not because reality forked silently. For the model as one coherent graph-shaped whole—components, boundaries, interfaces, dependencies, and the like—see [The system model](04-01-the-system-model.md).
+**Architecture IR** is the central **canonical system model** at the architecture layer: machine-traversable for automation and human-reviewable through **projections**. Within a declared **scope**, it is the shared referent for inspection, **diff**, linking, mechanical analysis, and downstream tooling.
+
+It is a **semantic** model. Structural entities (systems, components, interfaces, boundaries, and the like) remain first-class. So do other admitted semantic entity types—among them **Decision**, **Invariant**, and **NormativeProposition**—as governed by accepted STE semantic authority. **NormativeProposition** and **Invariant** are peer semantic types; neither subtypes the other. A Normative Proposition remains owned by its declaring ADR; stable identity makes it addressable without granting independent lifecycle or policy authority. The corresponding ste-spec mechanical / corpus integration remains deferred.
+
+For the model as one coherent whole, see [The system model](04-01-the-system-model.md).
+
+### Representation does not transfer authority
+
+Load-bearing distinction:
+
+```text
+declaring ADR
+     ↓ authority / lifecycle
+Normative Proposition (and other declared semantics)
+     ↓ represented / normalized / linked
+Architecture IR / machine-facing semantic surfaces
+     ↓ traversal / projection / candidate context
+consumer
+```
+
+At no point does inclusion in IR, a normalized registry, or a projection invent independent authority, effectivity, applicability, or conformance. Representation, persistence, normalization, projection, inference, implementation, and graph structure **must not** manufacture architectural authority.
+
+For an NP specifically:
+
+- the declaring ADR remains authority for the proposition and its lifecycle;
+- normalized or IR representation may preserve declaring-ADR qualification and provenance;
+- graph presence or reachability does not make the proposition applicable to a task;
+- retrieval or display does not prove conformance.
 
 ### What it is not (boundary discipline)
 
 | Often confused with | Role in STE |
 |---------------------|-------------|
-| **Diagrams** and informal sketches | **Projections** derived from IR; not authoritative over the graph |
-| Wiki pages and prose **documents** | **Sources** and communication; not the canonical architecture—only what compiles or links into IR under **governance** counts as structural truth at this layer |
-| **ADRs** and narrative **intent** | Record **decisions** and rationale; IR carries the **structural projection** of what was committed (**architecture** is not ADRs alone) |
-| **Code**, repos, and running systems | **Implementation** (code-level) and **embodiment** (the full realized system); IR **references** identities and scopes what observation means |
-| **Kernel** and **runtime** mechanics | How IR is admitted, validated, and combined with **evidence** (Parts 7–8); not the definition of structure itself |
-| General **MBSE** repositories | STE aligns on canonical model discipline at the software-architecture layer; full MBSE scope is broader ([Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md)) |
+| **Diagrams** and informal sketches | **Projections** derived from the model; not authoritative over it |
+| Wiki pages and prose **documents** | Communication and sometimes **sources**; not the canonical machine model unless admitted under **governance** |
+| **ADRs** and other declaring **intent** | Source authority for decisions and ADR-local Normative Propositions; IR represents those commitments without replacing the ADR |
+| Product **normalized** authoring/registry surfaces | Embodiment evidence that semantics can be represented and addressed; **not** automatically identical to Architecture IR unless accepted STE semantic authority establishes that mapping |
+| **Code**, repos, and running systems | **Implementation** and **embodiment**; IR references identities and scopes what observation means |
+| **Kernel** and **runtime** mechanics | How models are admitted, validated, and combined with **evidence** (Parts 7–8); not the definition of architecture semantics themselves |
+| General **MBSE** repositories | Related discipline; full MBSE scope is broader ([Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md)) |
 
 ### The flow this part assumes
 
-**Intent** (normative **artifacts**) → **compilation** → **Architecture IR** → **projections** for humans plus **queries** and mechanical analysis on IR → references into **embodiment** → **evidence** about what exists and behaves → **assessment** / **validation** (Kernel role) under **rules** → **governance** (authorized change back to **intent** and/or **embodiment** plans). **Drift** and **conformance** are meaningful when **intent**, IR, and **evidence** can refer to the **same** structural objects—not when each tool rebuilds its own graph from scraps ([Intent versus implementation](../00-problem/00-03-intent-vs-implementation.md), [Architecture as a first-class artifact](../00-problem/00-04-architecture-as-a-first-class-artifact.md)).
+Conceptual responsibilities (not one mandatory implementation pipeline):
 
-At handbook altitude, STE repeats the same chain [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md) states in one line: **intent** → **architecture** (**Architecture IR** and **projections**) → **implementation** / **embodiment** → **evidence** → **assessment**. **Architecture IR** sits between normative **intent** and what gets built and run; it expresses structural commitments in a shared, addressable form. **Evidence** observes **embodiment**; **assessment** (including **validation** under agreed **rules**, often orchestrated in the **Kernel** role) is where claims about **conformance** and mismatch are made against **intent**, IR, and **evidence** for a declared **scope**. For **implementation** versus **embodiment** naming, see [Terminology](../02-overview/02-02-terminology.md).
+```text
+governed authoring intent
+        ↓
+candidate construction
+        ↓
+qualification / exact semantic basis
+        ↓
+interpretation / validation
+        ↓
+normalized semantic representation
+        ↓
+governed mapping / integration where applicable
+        ↓
+Architecture IR / downstream semantic consumers
+        ↓
+query / traversal / projections
+        ↓
+embodiment linkage / evidence / assessment
+```
+
+Collapse stages only where contracts define them as one operation. **Construction** is not persistence, repository admission, governance promotion, Runtime admission, Snapshot mutation, or conformance. **Semantic normalization** is not Runtime graph admission. **Materialization** does not create authority. Exact qualification of contracts and versions is not “ambient latest.”
+
+At handbook altitude, STE still sits between normative **intent** and what gets built and run ([The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md)). **Evidence** observes **embodiment**; **assessment** weighs claims about **conformance** against intent, the architecture model, and evidence for a declared **scope**. Task-relative **applicability** and context assembly belong later (conceptually toward Part 8); Part 4 establishes model properties those stages need, not their algorithms.
 
 ### Mental map of the handbook
 
-The book is one loop described at different altitudes:
-
 1. **Part 0 — Foundations:** why **decisions**, **lossy reasoning**, **intent** versus **embodiment**, and **governed reasoning** matter ([Foundations overview](../00-problem/00-00-foundations-overview.md)).
 2. **Intent (artifact layer and lifecycle):** what the system **should** be—**ADRs**, **constraints**, **invariants**, and related structured records ([Artifact layer overview](../03-artifacts/03-00-artifact-layer-overview.md), [Intent formation](../05-lifecycle/05-01-intent-formation.md)).
-3. **Part 4 — Architecture model (this part):** what the architecture **is** structurally—the **Architecture IR** and how it is compiled, linked, differenced, and viewed.
+3. **Part 4 — Architecture model (this part):** the machine-oriented semantic architecture model—**Architecture IR**—and how it is constructed, materialized, linked, differenced, and viewed without transferring declaring authority.
 4. **Kernel and runtime:** how the model is **built, checked, and consumed** with **evidence** ([Kernel overview](../07-kernel/07-00-overview.md), [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md)).
 5. **Evidence and assessment:** observations and claims about **conformance** ([Evidence](../03-artifacts/03-05-evidence.md), [Conformance and assessment](../05-lifecycle/05-05-conformance-and-assessment.md)).
-6. **Governance and drift:** legitimacy of change and mismatch over time ([The governance model](../06-governance/06-02-the-governance-model.md), [Section overview (Part 6)](../06-governance/06-00-section-overview.md)).
-
-The diagram below is a **Part 4–centric** slice of the same story told more fully in [System overview](../02-overview/02-03-system-overview.md) and [The STE lifecycle](../02-overview/02-04-the-ste-lifecycle.md).
+6. **Governance and drift:** legitimacy of change and mismatch over time ([The governance model](../06-governance/06-02-the-governance-model.md)).
 
 ```mermaid
 flowchart LR
-  subgraph intentLayer [Intent_artifacts]
-    I[Normative_intent]
+  subgraph sources [Governed_sources]
+    I[Declaring_intent]
   end
-  subgraph canonical [Architecture_IR]
-    M[Canonical_model]
+  subgraph machine [Architecture_IR]
+    M[Semantic_model]
   end
   subgraph views [Projections]
     P[Human_views]
@@ -76,41 +126,44 @@ flowchart LR
   subgraph assess [Assessment]
     K[Assessment_Kernel]
   end
-  I --> M
+  I -->|"represent_not_replace"| M
   M --> P
   M --> K
   E --> V
   V --> K
 ```
 
-**Reading the diagram:** **Assessment** names the lifecycle stage where **evidence** is weighed against commitments; **Kernel** names a common orchestration locus for that work in STE’s story—not the whole of human judgment in **assessment**.
+**Reading the diagram:** declaring sources remain authority; Architecture IR is the machine-facing semantic hub; **projections** are derived; **assessment** weighs evidence against commitments. **Kernel** names a common orchestration locus—not the whole of human judgment in assessment.
 
 ### How Part 4 is organized
 
-**Default path (matches chapter order):** Read [The system model](04-01-the-system-model.md), then [Entities](04-02-entities.md) and [Relationships](04-03-relationships.md) for the building blocks. [Compilation](04-04-compilation.md) explains the bridge from **intent** to IR. [Traceability in Architecture IR](04-05-traceability.md), [Diff and change](04-06-diff-and-change.md), and [IR as a graph](04-07-ir-as-a-graph.md) treat IR as a **reasoning surface**. [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) cover **canonical versus derived** views and consistency expectations.
-
-**Conceptual learning path (same material, different arc):** After [Relationships](04-03-relationships.md), read [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) if you want **human-facing views** before the deeper graph story. Then read [IR as a graph](04-07-ir-as-a-graph.md), [Traceability in Architecture IR](04-05-traceability.md), and [Diff and change](04-06-diff-and-change.md), and finish with [Compilation](04-04-compilation.md) as the full **intent**→IR bridge. **The flow this part assumes** already states that IR comes from **compilation**; that chapter is the detailed account.
+**Default path (matches chapter order):** [The system model](04-01-the-system-model.md), then [Entities](04-02-entities.md) and [Relationships](04-03-relationships.md). [Compilation and semantic materialization](04-04-compilation.md) explains construction, qualification, normalization, and mapping toward IR. [Traceability in Architecture IR](04-05-traceability.md), [Diff and change](04-06-diff-and-change.md), and [IR as a semantic graph](04-07-ir-as-a-graph.md) treat the model as a reasoning surface. [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) cover canonical versus derived views. [Illustrative walkthrough](04-15-illustrative-walkthrough.md) shows the semantic model without schema authority.
 
 ## The Implications
 
-If you accept this reframe, several obligations follow. **Intent** must be structured enough to **compile**; otherwise IR becomes a manual duplicate and will **drift** from what **governance** believes. **Projections** must be treated as **accountable views** of the same commitments, not private illustrations. Tooling that invents parallel graphs undermines the whole story: the win is **one** structural spine that **evidence** and **assessment** can target.
+If you accept this reframe, several obligations follow. Governed sources must be structured enough to construct and validate candidate semantics visibly. **Projections** must remain accountable views of the same commitments, not private illustrations. Tooling that invents parallel graphs, or that treats registry inclusion as applicability, undermines the model.
 
-You do not need every detail in IR on day one. You do need honesty about what is **canonical**, what is **derived**, and what happens when they diverge.
+You do not need every semantic type realized on day one. You do need honesty about what is **canonical machine representation**, what is **declaring authority**, what is **derived**, and what remains deferred in mechanical realization (including the deferred canonical-entity / identity realization (CE-01) and compiled IR mapping where accepted STE semantic authority defers them).
 
 ## Relationship to STE system
 
-- **Terminology and naming:** [Terminology](../02-overview/02-02-terminology.md) defines **Architecture IR** and related words; this part uses that glossary consistently.
-- **Artifact role summary:** [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md) positions IR among other **artifacts**.
-- **Publication versus projection:** [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md) states what may be treated as published truth versus derived communication.
+- **Terminology and naming:** [Terminology](../02-overview/02-02-terminology.md).
+- **Artifact role summary:** [Architecture model and IR](../03-artifacts/03-04-architecture-model-and-ir.md).
+- **Publication versus projection:** [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md).
 - **Foundations:** [The problem of lossy reasoning](../00-problem/00-02-the-problem-of-lossy-reasoning.md), [Governed reasoning](../00-problem/00-05-governed-reasoning.md).
 - **Theory bridge:** [Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md).
-- **Downstream:** [Kernel overview](../07-kernel/07-00-overview.md), [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md), [Conformance](../03-artifacts/03-07-conformance.md).
+- **Downstream:** [Kernel overview](../07-kernel/07-00-overview.md), [Part 8: Runtime Overview](../08-runtime/08-00-runtime-overview.md), [Context assembly and MVC](../08-runtime/08-05-context-assembly-and-mvc.md), [Conformance](../03-artifacts/03-07-conformance.md).
 - **Worked example chain:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md).
+- **Explanatory consequences:** [Can architecture change what a model is likely to do?](../13-architectural-essays/13-05-can-architecture-change-what-a-model-is-likely-to-do.md) (explanatory essay; not the normative definition of Normative Propositions).
 
-Exact schemas, admission behavior, and wire formats remain in **ste-spec** where applicable.
+Exact schemas, admission behavior, and Architecture IR ontology remain STE-wide concerns under **ste-spec** where published. Concrete ADR-Kit authoring, normalized-model, interpretation, and semantic-contract shapes live in ADR-Kit’s released contract resources; they demonstrate embodiment and do not redefine STE Architecture IR ontology by themselves.
 
 ## Summary
 
-The **architecture model** is the structured, relational picture of what the system **is** at the architecture layer; **Architecture IR** is STE’s canonical, machine-addressable **system model**—the object that makes **architecture** **computable** for an agreed **scope**. IR sits between **intent** and **implementation** / **embodiment**: it expresses structural commitments so tools and **trace** edges can use them, without replacing **ADRs**, diagrams, or source code. **Compilation** produces IR from structured **intent**; **projections** make IR reviewable for humans. **Evidence** and **assessment** gain traction when observations attach to the **same** identities IR maintains. Part 4 stays conceptual; **ste-spec** and product contracts nail precision. For how IR sits in time-shaped engineering work, continue with Part 5 ([Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md)); for how IR is admitted, validated, and combined with **evidence** in practice, see Part 7 ([Kernel overview](../07-kernel/07-00-overview.md)).
+- **Architecture IR** is STE’s canonical machine-oriented **semantic** architecture model for an agreed **scope**—addressable, traversable, comparable, and projectable.
+- The model includes structural semantics and governed semantic types such as **Decision**, **Invariant**, and **NormativeProposition**; NormativeProposition and Invariant remain peers.
+- Declaring sources retain authority; representation does not manufacture authority, effectivity, applicability, or conformance.
+- Construction, normalization, mapping, Runtime admission, and governance promotion are distinct responsibilities.
+- Part 4 stays conceptual; **ste-spec** owns STE-wide Architecture IR authority where integrated, and ADR-Kit released contracts nail embodiment shapes without collapsing embodiment into ontology.
 
 **Next:** [The system model](04-01-the-system-model.md).

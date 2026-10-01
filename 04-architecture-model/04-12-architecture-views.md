@@ -14,7 +14,7 @@ Classic architecture literature talks about **views** to manage complexity. With
 
 ## The Reframe
 
-An **architecture view** (in this handbook) is a **governed projection package**: a selected subgraph (or derived summary) of IR, a notation or document template, and a stated **concern**—security, deployment, data flow, development structure, and so on. Multiple views are **orthogonal lenses** on **one** structural object, not competing truths.
+An **architecture view** (in this handbook) is a **governed projection package**: a selected subgraph (or derived summary) of the architecture model, a notation or document template, and a stated **concern**—security, deployment, data flow, development structure, normative review, and so on. Multiple views are **orthogonal lenses** on **one** architecture model, not competing truths. View selection does not by itself establish applicability or governance for Normative Propositions included in the slice.
 
 ## The Model
 
