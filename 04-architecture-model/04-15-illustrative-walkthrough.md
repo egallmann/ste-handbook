@@ -3,7 +3,7 @@ title: "Illustrative artifact walkthrough"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-09-30"
+last_reviewed: "2026-10-01"
 ---
 
 # Illustrative artifact walkthrough
@@ -16,7 +16,7 @@ Reading about **intent**, **Architecture IR**, and **projections** in the abstra
 
 ## The Reframe
 
-Think of the following fragments as one **story**: governed ADR intent → a local normative consequence as a Normative Proposition with stable identity → structural realization → normalized registry representation (embodiment evidence) → projection → and the negative claim that being represented or reachable does not prove applicability or conformance.
+Think of the following fragments as one **story**: governed ADR intent → a local normative consequence as a Normative Proposition with stable identity → structural realization → normalized representation (embodiment evidence) → projection → and the negative claim that being represented or reachable does not prove applicability or conformance.
 
 Normalized representation is **not** automatically Architecture IR. Mapping into compiled IR remains where ste-spec establishes it; CE-01 remains deferred.
 
@@ -29,10 +29,13 @@ A **logical** ADR states decisions above any single module layout. An ADR-local 
 ```yaml
 # Illustrative logical ADR with NP (semantic sketch — not a complete authoring object)
 adr_type: logical
-id: ADR-L-ILLU-0001
+id: "01999999-0000-7000-8000-000000000010"  # illustrative UUIDv7-shaped id
+alias_id: ADR-L-0001
+alias_name: refuse-stale-graph-work-decision
 title: Preflight gate must refuse stale graph work
 decisions:
-  - id: DEC-ILLU-0001
+  - id: "01999999-0000-7000-8000-000000000011"
+    alias_id: DEC-0001
     summary: Assistant-facing work requires a freshness gate before execution
 normative_propositions:
   - id: "01999999-0000-7000-8000-000000000001"  # illustrative UUIDv7-shaped id
@@ -54,27 +57,30 @@ A **physical-component** ADR refines where the obligation is embodied—still un
 ```yaml
 # Illustrative physical-component ADR (trimmed)
 adr_type: physical-component
-id: ADR-PC-ILLU-0003
+id: "01999999-0000-7000-8000-000000000020"
+alias_id: ADR-PC-0003
 title: Preflight freshness gate
 implements_logical:
-  - ADR-L-ILLU-0001
+  - ADR-L-0001
 component_specifications:
-  - id: COMP-ILLU-0003
+  - id: "01999999-0000-7000-8000-000000000021"
+    alias_id: COMP-0003
     name: Preflight freshness and reconciliation gate
     responsibilities: |
       - Evaluate graph freshness for the requested scope
       - Refuse assistant-facing work when freshness fails
 ```
-
 ### 3. Normalized entity row (embodiment evidence)
 
-Registries are **normalized / compiled rows**—handy for tools, wrong to “fix by hand” when the bug is upstream **intent**. Here a Normative Proposition appears as a typed entity. The `declaring_adr` field is **normalized qualification**: it preserves ownership/provenance after detachment from source position; it does **not** create authority. This registry surface is **not** itself Architecture IR unless ste-spec establishes that mapping.
+This example shows a **normalized machine-facing entity row**. Registry, index, normalized, and compiled-IR surfaces retain distinct governed roles; do not treat this row as Architecture IR, Architecture Index, or `Compiled_IR_Document`. Hand-editing normalized rows when the bug is upstream **intent** is the wrong control surface.
+
+Here a Normative Proposition appears as a typed entity. The `declaring_adr` and `source_artifact` objects are **normalized qualification**: they preserve ownership/provenance after detachment from source position; they do **not** create authority. Fields are illustrative and trimmed; omit unused contract ceremony rather than inventing scalar shapes.
 
 ```yaml
-# Illustrative normalized entity_registry row for an NP (trimmed)
+# Illustrative normalized NP entity row (semantic sketch — trimmed)
 entities:
   - entity_type: normative_proposition
-    id: "01999999-0000-7000-8000-000000000001"
+    id: "01999999-0000-7000-8000-000000000001"  # illustrative UUIDv7-shaped id
     alias_id: NP-0001
     alias_name: refuse-stale-graph-work
     statement: >
@@ -82,8 +88,16 @@ entities:
       evaluation reports the semantic graph as stale for the requested scope.
     normative_force: MUST NOT
     scope: Assistant-facing preflight over the declared runtime orchestration boundary
-    declaring_adr: ADR-L-ILLU-0001
-    source_artifact: ADR-L-ILLU-0001
+    declaring_adr:
+      provider: adr-kit.authoring
+      id: "01999999-0000-7000-8000-000000000010"  # declaring ADR UUIDv7-shaped id
+      alias_id: ADR-L-0001
+      alias_name: refuse-stale-graph-work-decision
+    source_artifact:
+      source_type: logical_adr
+      source_ref: ADR-L-0001
+      artifact_path: adrs/logical/ADR-L-0001-refuse-stale-graph-work.yaml
+      content_digest: "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
 ```
 
 ### 4. Structural entity and relationship rows
@@ -91,16 +105,17 @@ entities:
 ```yaml
 # Illustrative component entity (trimmed)
 entities:
-  - entity_id: COMP-ILLU-0003
+  - id: "01999999-0000-7000-8000-000000000021"
+    alias_id: COMP-0003
     entity_type: component
     name: Preflight freshness and reconciliation gate
-    introduced_by: ADR-PC-ILLU-0003
+    introduced_by: ADR-PC-0003
 
 # Illustrative relationship (trimmed)
 relationships:
   - relationship_type: declared_in
-    from_entity_id: DEC-ILLU-0001
-    to_entity_id: ADR-L-ILLU-0001
+    from_entity_id: "01999999-0000-7000-8000-000000000011"
+    to_entity_id: "01999999-0000-7000-8000-000000000010"
     provenance_classification: explicit
 ```
 
@@ -111,18 +126,17 @@ A human-facing projection may list the Normative Proposition for review. Inclusi
 ```text
 Projection: preflight-normative-candidates (illustrative)
 IR / model snapshot: (declared scope)
-Selected because: linked to ADR-L-ILLU-0001 and COMP-ILLU-0003 neighborhood
+Selected because: linked to ADR-L-0001 and COMP-0003 neighborhood
 
 - NP-0001 refuse-stale-graph-work
   force: MUST NOT
-  declaring ADR: ADR-L-ILLU-0001
+  declaring ADR: ADR-L-0001
   scope: Assistant-facing preflight over the declared runtime orchestration boundary
   note: Included in this view ≠ proven applicable to every task; ≠ conformance.
 ```
-
 ### 6. Negative claim (mandatory)
 
-Being represented in a normalized registry, reachable from a component, or visible in a projection does **not** prove:
+Being represented on a normalized surface, reachable from a component, or visible in a projection does **not** prove:
 
 - independent NP authority;
 - effectivity for a concrete runtime moment;
@@ -136,13 +150,13 @@ Task-relative applicability remains later work ([Context assembly and MVC](../08
 | Declaring ADR | Authority and lifecycle for the NP |
 | Normative Proposition | Addressable ADR-local normative meaning |
 | Structure | Component that realizes related decisions |
-| Normalized registry | Detached qualification via `declaring_adr` (embodiment evidence) |
+| Normalized surface | Detached structured `declaring_adr` / `source_artifact` qualification (embodiment evidence) |
 | Projection | Derived view preserving force/authority/scope |
 | Not shown as done | CE-01 identity unification; compiled IR NP `kind`; applicability algorithm |
 
 ## The Implications
 
-When you adopt STE-shaped tooling, expect the same division of labor: **govern** and version **intent** and published machine representation; **generate** manifests and registries; **never** let a derived file become the silent source of truth or a silent applicability engine. If a walkthrough fragment disagrees with **ste-spec**, the specification wins.
+When you adopt STE-shaped tooling, expect the same division of labor: **govern** and version **intent** and published machine representation; maintain Index, registries, normalized, and compiled surfaces under their contracts; **never** let a derived projection become the silent source of truth or a silent applicability engine. If a walkthrough fragment disagrees with **ste-spec**, the specification wins.
 
 ## Relationship to STE system
 
@@ -157,8 +171,8 @@ When you adopt STE-shaped tooling, expect the same division of labor: **govern**
 ## Summary
 
 - **Logical** ADRs may declare Normative Propositions with stable identity while retaining declaring authority and lifecycle.
-- Normalized `declaring_adr` qualification preserves ownership after detachment; it does not create authority.
-- Registries and projections are **derived** embodiment/consumer surfaces; they are not automatic Architecture IR and not applicability engines.
+- Normalized structured `declaring_adr` / `source_artifact` qualification preserves ownership after detachment; it does not create authority.
+- Normalized, registry, index, and compiled-IR surfaces retain distinct roles; projections are derived human/task renderings—not automatic Architecture IR and not applicability engines.
 - Represented or reachable ≠ applicable or conformant.
 
 **Next:** Continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md).

@@ -3,7 +3,7 @@ title: "Compilation and semantic materialization"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-09-30"
+last_reviewed: "2026-10-01"
 ---
 
 # Compilation and semantic materialization
@@ -92,7 +92,7 @@ Failures are **governance signals**: missing links, contradictory constraints, u
 
 Treat construction and materialization as part of the engineering **supply chain**. Changes to **intent** without re-running the governed bridge produce **drift** between what **governance** approved and what machine surfaces claim. Automation makes **projections** and checks trustworthy; skipping it trades speed for unreviewable semantics.
 
-Do not predict unreleased package promotion from the existence of successor contracts. Describe implemented and accepted architecture honestly; keep supported, executable, public, released, preferred, current, and default states distinct.
+Keep supported, executable, public, released, preferred, current, and default states distinct. Package release does not by itself promote a successor contract to current/default. Where product materialization profiles exist, treat current/default versus explicit opt-in successor routes as separate facts: released and executable do not imply preferred or current unless the governing contract says so. Exact qualification is not ambient latest.
 
 ## Relationship to STE system
 

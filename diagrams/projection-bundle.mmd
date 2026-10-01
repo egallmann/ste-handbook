@@ -1,17 +1,18 @@
-%% Projection bundle over Architecture IR (Diagram E). Companion to 04-architecture-model/04-07-ir-as-a-graph.md.
-%% Registries are queryable embodiment/projection surfaces—not automatic Architecture IR ontology.
-%% Normative Propositions appear as typed entities in the entity registry where admitted; no separate NP registry invented.
+%% Role surfaces related to Architecture IR (Diagram E). Companion to 04-architecture-model/04-07-ir-as-a-graph.md.
+%% Role-oriented: NOT a mandatory IR -> Index -> registries storage/authority pipeline.
+%% Architecture Index ≠ projection; Architecture Index ≠ Compiled_IR_Document;
+%% normalized ADR-Kit entity ≠ compiled IR entity.
 
 flowchart TB
-  IR[Architecture_IR_semantic_graph]
-  IDX[Architecture_index]
-  IR -->|"emit_or_project"| IDX
-  IDX --> ENT[Entity_registry]
-  IDX --> REL[Relationship_registry]
-  IDX --> SYS[System_registry]
-  IDX --> CMP[Component_registry]
-  IDX --> DEC[Decision_registry]
-  IDX --> INV[Invariant_registry]
-  IDX --> UNR[Unresolved_registry]
-  IDX --> GRA[Architecture_graph]
-  ENT -->|"typed_NPs_where_admitted"| NP[NormativeProposition_entities]
+  IR[Semantic_Architecture_IR]
+  DOC[Documentation_and_index_surfaces]
+  IDX[Architecture_Index]
+  REG[Governed_registries]
+  COMP[Compiled_IR_Document]
+  PROJ[Derived_projections]
+  IR -->|"represented_by_and_summarized_in"| DOC
+  DOC --> IDX
+  DOC --> REG
+  IR -->|"governed_mapping_where_applicable"| COMP
+  IR -->|"rendered_as"| PROJ
+  DOC -->|"rendered_as"| PROJ
