@@ -8,7 +8,7 @@ last_reviewed: "2026-10-01"
 
 # Illustrative artifact walkthrough
 
-> **Illustrative only.** The YAML-shaped fragments below are **pedagogical stubs** and semantic sketches. They are **not** normative schema documentation and do **not** claim completed CE-01 or compiled Architecture IR `kind` realization for Normative Propositions. Field names follow patterns seen in current authoring/normalized embodiment surfaces; precise contracts live in **ste-spec** and product generators.
+> **Illustrative only.** The YAML-shaped fragments below are **pedagogical stubs** and semantic sketches. They are **not** normative schema documentation and do **not** claim completed canonical-entity / identity realization (CE-01) or compiled Architecture IR `kind` realization for Normative Propositions. Field names follow patterns seen in released ADR-Kit authoring and normalized-model contract resources. STE-wide semantic and Architecture IR authority lives in ste-spec. Concrete ADR-Kit authoring, normalized-model, interpretation, and semantic-contract shapes live in ADR-Kit’s released contract resources.
 
 ## The Problem
 
@@ -18,7 +18,7 @@ Reading about **intent**, **Architecture IR**, and **projections** in the abstra
 
 Think of the following fragments as one **story**: governed ADR intent → a local normative consequence as a Normative Proposition with stable identity → structural realization → normalized representation (embodiment evidence) → projection → and the negative claim that being represented or reachable does not prove applicability or conformance.
 
-Normalized representation is **not** automatically Architecture IR. Mapping into compiled IR remains where ste-spec establishes it; CE-01 remains deferred.
+Normalized representation is **not** automatically Architecture IR. Mapping into compiled IR remains where accepted STE semantic authority establishes it; the deferred canonical-entity / identity realization (CE-01) remains deferred, and the corresponding ste-spec mechanical / corpus integration remains deferred.
 
 ## The Model
 
@@ -152,11 +152,11 @@ Task-relative applicability remains later work ([Context assembly and MVC](../08
 | Structure | Component that realizes related decisions |
 | Normalized surface | Detached structured `declaring_adr` / `source_artifact` qualification (embodiment evidence) |
 | Projection | Derived view preserving force/authority/scope |
-| Not shown as done | CE-01 identity unification; compiled IR NP `kind`; applicability algorithm |
+| Not shown as done | Deferred canonical-entity / identity realization (CE-01); compiled IR NP `kind`; applicability algorithm |
 
 ## The Implications
 
-When you adopt STE-shaped tooling, expect the same division of labor: **govern** and version **intent** and published machine representation; maintain Index, registries, normalized, and compiled surfaces under their contracts; **never** let a derived projection become the silent source of truth or a silent applicability engine. If a walkthrough fragment disagrees with **ste-spec**, the specification wins.
+When you adopt STE-shaped tooling, expect the same division of labor: **govern** and version **intent** and published machine representation; maintain Index, registries, normalized, and compiled surfaces under their contracts; **never** let a derived projection become the silent source of truth or a silent applicability engine. If a walkthrough fragment disagrees with accepted STE semantic authority or with ADR-Kit’s released contract resources for ADR-Kit shapes, those authorities win in their respective domains.
 
 ## Relationship to STE system
 

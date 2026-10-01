@@ -42,7 +42,7 @@ Architecture IR / downstream semantic consumers
 
 Collapse stages only when authoritative contracts define them as one operation.
 
-**Normalized semantic representation ≠ Architecture IR** unless accepted ste-spec establishes that mapping. Product normalized models demonstrate that Decision, Invariant, NormativeProposition, and related semantics can be represented and addressed; they do not automatically become compiled Architecture IR kinds or identity schemes.
+**Normalized semantic representation ≠ Architecture IR** unless accepted STE semantic authority establishes that mapping. Product normalized models demonstrate that Decision, Invariant, NormativeProposition, and related semantics can be represented and addressed; they do not automatically become compiled Architecture IR kinds or identity schemes.
 
 ### Construction (detached candidates)
 
@@ -78,7 +78,7 @@ Normalization produces machine-facing semantic surfaces under those contracts. *
 
 ### Mapping toward Architecture IR
 
-Where ste-spec and adapters define governed mapping or integration, normalized or authored semantics may realize onto Architecture IR and related consumer surfaces. Where mapping is incomplete or deferred—including NormativeProposition compiled `kind` and CE-01 identity unification—handbook prose must not invent completion. Downstream consumers may still use normalized surfaces as embodiment evidence without renaming them Architecture IR.
+Where ste-spec and adapters define governed mapping or integration, normalized or authored semantics may realize onto Architecture IR and related consumer surfaces. Where mapping is incomplete or deferred—including NormativeProposition compiled `kind` and the deferred canonical-entity / identity realization (CE-01)—handbook prose must not invent completion. The corresponding ste-spec mechanical / corpus integration remains deferred. Downstream consumers may still use normalized surfaces as embodiment evidence without renaming them Architecture IR.
 
 ### Errors and governance
 

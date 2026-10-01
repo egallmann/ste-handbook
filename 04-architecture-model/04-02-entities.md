@@ -24,11 +24,11 @@ Entities are **not** the same as files or classes, though they may **map** to **
 
 ### Conceptual families (not an exhaustive inventory)
 
-Under current accepted Architecture IR semantics, entity types include families such as:
+Under accepted Architecture IR semantics, entity types include families such as:
 
 **Structural semantics** — for example systems, components, interfaces, integrations, and related structural types.
 
-**Intent / normative and decision semantics** — including **Decision**, **Invariant**, and **NormativeProposition**, among other architecture-facing types ste-spec admits (for example constraint and capability where in scope).
+**Intent / normative and decision semantics** — including **Decision**, **Invariant**, and **NormativeProposition**, among other architecture-facing types accepted STE semantic authority admits (for example constraint and capability where in scope).
 
 **Evidence and governance-facing semantics** — such as evidence, gaps, reviews, overrides, and remediation where the ontology includes them.
 
@@ -48,7 +48,7 @@ independent authority / lifecycle
 
 In authoring, the NP is **ADR-contained**; authority and lifecycle remain with the declaring ADR. In normalized embodiment surfaces, an NP envelope may carry explicit declaring-ADR qualification and source-artifact qualification so ownership and provenance survive detachment from source position. That qualification **preserves** authority derived from the declaring ADR; it does not create new authority.
 
-Do not invent a dedicated compiled Architecture IR `kind` for NormativeProposition where ste-spec has not established one. Mechanical realization and CE-01 identity unification remain deferred where accepted authority says they are deferred.
+Do not invent a dedicated compiled Architecture IR `kind` for NormativeProposition where accepted STE semantic authority has not established one. Mechanical realization and the deferred canonical-entity / identity realization (CE-01) remain deferred; the corresponding ste-spec mechanical / corpus integration remains deferred.
 
 ### Typing and roles
 
@@ -62,11 +62,11 @@ Identity ties **intent** references, construction and materialization output, **
 
 ### Attributes and annotations
 
-Beyond graph edges, entities may carry attributes and annotations: ownership, criticality, lifecycle state (where applicable to that type), links to external systems of record, and similar metadata. Normative Propositions, under current ADR-Kit embodiment evidence, do not invent an independent governance lifecycle merely by being represented. Annotations must not become a shadow model that contradicts declaring authority or graph semantics.
+Beyond graph edges, entities may carry attributes and annotations: ownership, criticality, lifecycle state (where applicable to that type), links to external systems of record, and similar metadata. Normative Propositions, under released ADR-Kit embodiment evidence, do not invent an independent governance lifecycle merely by being represented. Annotations must not become a shadow model that contradicts declaring authority or graph semantics.
 
 ### Product surfaces versus STE ontology
 
-Authoring and normalized product registries may use implementation vocabulary such as entity-type strings and entity registries. Those surfaces are embodiment evidence. They are **not** Architecture IR unless accepted ste-spec establishes that mapping. Handbook doctrine follows ste-spec’s Entity ontology, not product implementation names.
+Authoring and normalized product registries may use implementation vocabulary such as entity-type strings and entity registries. Those surfaces are embodiment evidence. They are **not** Architecture IR unless accepted STE semantic authority establishes that mapping. Handbook doctrine follows the STE Entity ontology, not product implementation names.
 
 ## The Implications
 
@@ -85,6 +85,6 @@ Defining which entity types are in play for a scope is a **design** and **govern
 - **Entities** are typed, identifiable nodes in **Architecture IR**—the addressable units of the semantic architecture model.
 - Structural types and governed semantic types (including **Decision**, **Invariant**, and **NormativeProposition**) may all be entities; authority and lifecycle rules differ by type.
 - **NormativeProposition** and **Invariant** are peers; NP identity is addressability, not independent policy authority.
-- ste-spec owns STE Entity ontology; product registry vocabulary is embodiment evidence, not automatic IR doctrine.
+- ste-spec remains STE-wide Architecture IR authority where integrated; product registry vocabulary is embodiment evidence, not automatic IR doctrine.
 
 **Next:** [Relationships](04-03-relationships.md).

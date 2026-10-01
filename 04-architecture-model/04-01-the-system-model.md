@@ -46,7 +46,7 @@ A given **Architecture IR** instance corresponds to a declared **scope**: a prod
 
 ### Representation without authority transfer
 
-The model can contain representations of normative semantics without becoming their declaring authority. Product normalized surfaces may demonstrate the same idea as embodiment evidence; they are not automatically Architecture IR unless ste-spec establishes that mapping ([Architecture model (Architecture IR) overview](04-00-architecture-ir-overview.md)).
+The model can contain representations of normative semantics without becoming their declaring authority. Product normalized surfaces may demonstrate the same idea as embodiment evidence; they are not automatically Architecture IR unless accepted STE semantic authority establishes that mapping ([Architecture model (Architecture IR) overview](04-00-architecture-ir-overview.md)).
 
 ## The Implications
 

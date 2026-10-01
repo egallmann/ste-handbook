@@ -18,7 +18,7 @@ An older mental model that lists only structural registries (and perhaps decisio
 
 **Architecture IR** is usefully understood as a **typed, attributed semantic graph**: **entities** as nodes, **relationships** as edges, with schemas constraining valid neighborhoods. Nodes include structural semantics **and** governed semantic entities such as decisions, invariants, and Normative Propositions where admitted. This is a **mental model**, not a mandate for a specific database technology. Storage may be relational, document, or graph-native; **reasoning** still follows graph semantics.
 
-Distinguish the **conceptual semantic graph** from **current compiled IR realization**. Accepted ste-spec admits NormativeProposition as a semantic type while deferring CE-01 and a dedicated compiled IR `kind`. Semantic Architecture IR may be wider than current mechanical `kind` and relationship enums. Embodiment toolchains may expose Normative Propositions on normalized registries without those surfaces being Architecture IR themselves.
+Distinguish the **conceptual semantic graph** from **mechanical compiled IR realization**. Accepted STE semantic authority admits NormativeProposition as a semantic type while deferring canonical-entity / identity realization (CE-01) and a dedicated compiled IR `kind`. The corresponding ste-spec mechanical / corpus integration remains deferred. Semantic Architecture IR may be wider than mechanical `kind` and relationship enums at a pinned IR version. Embodiment toolchains may expose Normative Propositions on normalized registries without those surfaces being Architecture IR themselves.
 
 ## The Model
 
@@ -106,7 +106,7 @@ Task-relative applicability and MVC assembly remain later work ([Context assembl
 ## Summary
 
 - **Architecture IR** is a **typed semantic graph** for reasoning: paths, **scopes**, and structural and normative queries are first-class at the conceptual level.
-- Conceptual graph semantics are distinct from current compiled IR realization; CE-01 and NP compiled kinds remain deferred where ste-spec defers them.
+- Conceptual graph semantics are distinct from mechanical compiled IR realization; the deferred canonical-entity / identity realization (CE-01) and NP compiled kinds remain deferred where accepted STE semantic authority defers them.
 - Architecture Index, registries, `Compiled_IR_Document`, and projections have distinct governed roles; Index is not merely a projection.
 - Presence and reachability do not imply applicability; the graph is a reasoning substrate, not a governance oracle.
 

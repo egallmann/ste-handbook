@@ -30,7 +30,7 @@ This part is not a specification of schemas or product APIs. It is the doctrinal
 
 **Architecture IR** is the central **canonical system model** at the architecture layer: machine-traversable for automation and human-reviewable through **projections**. Within a declared **scope**, it is the shared referent for inspection, **diff**, linking, mechanical analysis, and downstream tooling.
 
-It is a **semantic** model. Structural entities (systems, components, interfaces, boundaries, and the like) remain first-class. So do other admitted semantic entity types—among them **Decision**, **Invariant**, and **NormativeProposition**—as governed by accepted ste-spec authority. **NormativeProposition** and **Invariant** are peer semantic types; neither subtypes the other. A Normative Proposition remains owned by its declaring ADR; stable identity makes it addressable without granting independent lifecycle or policy authority.
+It is a **semantic** model. Structural entities (systems, components, interfaces, boundaries, and the like) remain first-class. So do other admitted semantic entity types—among them **Decision**, **Invariant**, and **NormativeProposition**—as governed by accepted STE semantic authority. **NormativeProposition** and **Invariant** are peer semantic types; neither subtypes the other. A Normative Proposition remains owned by its declaring ADR; stable identity makes it addressable without granting independent lifecycle or policy authority. The corresponding ste-spec mechanical / corpus integration remains deferred.
 
 For the model as one coherent whole, see [The system model](04-01-the-system-model.md).
 
@@ -64,7 +64,7 @@ For an NP specifically:
 | **Diagrams** and informal sketches | **Projections** derived from the model; not authoritative over it |
 | Wiki pages and prose **documents** | Communication and sometimes **sources**; not the canonical machine model unless admitted under **governance** |
 | **ADRs** and other declaring **intent** | Source authority for decisions and ADR-local Normative Propositions; IR represents those commitments without replacing the ADR |
-| Product **normalized** authoring/registry surfaces | Embodiment evidence that semantics can be represented and addressed; **not** automatically identical to Architecture IR unless ste-spec establishes that mapping |
+| Product **normalized** authoring/registry surfaces | Embodiment evidence that semantics can be represented and addressed; **not** automatically identical to Architecture IR unless accepted STE semantic authority establishes that mapping |
 | **Code**, repos, and running systems | **Implementation** and **embodiment**; IR references identities and scopes what observation means |
 | **Kernel** and **runtime** mechanics | How models are admitted, validated, and combined with **evidence** (Parts 7–8); not the definition of architecture semantics themselves |
 | General **MBSE** repositories | Related discipline; full MBSE scope is broader ([Model-based systems engineering](../01-theory/01-08-model-based-systems-engineering.md)) |
@@ -137,13 +137,13 @@ flowchart LR
 
 ### How Part 4 is organized
 
-**Default path (matches chapter order):** [The system model](04-01-the-system-model.md), then [Entities](04-02-entities.md) and [Relationships](04-03-relationships.md). [Compilation and semantic materialization](04-04-compilation.md) explains construction, qualification, normalization, and mapping toward IR. [Traceability in Architecture IR](04-05-traceability.md), [Diff and change](04-06-diff-and-change.md), and [IR as a semantic graph](04-07-ir-as-a-graph.md) treat the model as a reasoning surface. [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) cover canonical versus derived views. [Illustrative walkthrough](04-15-illustrative-walkthrough.md) shows the current model without schema authority.
+**Default path (matches chapter order):** [The system model](04-01-the-system-model.md), then [Entities](04-02-entities.md) and [Relationships](04-03-relationships.md). [Compilation and semantic materialization](04-04-compilation.md) explains construction, qualification, normalization, and mapping toward IR. [Traceability in Architecture IR](04-05-traceability.md), [Diff and change](04-06-diff-and-change.md), and [IR as a semantic graph](04-07-ir-as-a-graph.md) treat the model as a reasoning surface. [Projections overview](04-08-projections-overview.md) through [View consistency](04-14-view-consistency.md) cover canonical versus derived views. [Illustrative walkthrough](04-15-illustrative-walkthrough.md) shows the semantic model without schema authority.
 
 ## The Implications
 
 If you accept this reframe, several obligations follow. Governed sources must be structured enough to construct and validate candidate semantics visibly. **Projections** must remain accountable views of the same commitments, not private illustrations. Tooling that invents parallel graphs, or that treats registry inclusion as applicability, undermines the model.
 
-You do not need every semantic type realized on day one. You do need honesty about what is **canonical machine representation**, what is **declaring authority**, what is **derived**, and what remains deferred in mechanical realization (including CE-01 and compiled IR mapping where ste-spec defers them).
+You do not need every semantic type realized on day one. You do need honesty about what is **canonical machine representation**, what is **declaring authority**, what is **derived**, and what remains deferred in mechanical realization (including the deferred canonical-entity / identity realization (CE-01) and compiled IR mapping where accepted STE semantic authority defers them).
 
 ## Relationship to STE system
 
@@ -156,7 +156,7 @@ You do not need every semantic type realized on day one. You do need honesty abo
 - **Worked example chain:** [Illustrative walkthrough](04-15-illustrative-walkthrough.md).
 - **Explanatory consequences:** [Can architecture change what a model is likely to do?](../13-architectural-essays/13-05-can-architecture-change-what-a-model-is-likely-to-do.md) (explanatory essay; not the normative definition of Normative Propositions).
 
-Exact schemas, admission behavior, and wire formats remain in **ste-spec** where applicable. Product embodiment contracts (for example ADR-Kit authoring and normalized surfaces) demonstrate representation; they do not redefine STE Architecture IR ontology by themselves.
+Exact schemas, admission behavior, and Architecture IR ontology remain STE-wide concerns under **ste-spec** where published. Concrete ADR-Kit authoring, normalized-model, interpretation, and semantic-contract shapes live in ADR-Kit’s released contract resources; they demonstrate embodiment and do not redefine STE Architecture IR ontology by themselves.
 
 ## Summary
 
@@ -164,6 +164,6 @@ Exact schemas, admission behavior, and wire formats remain in **ste-spec** where
 - The model includes structural semantics and governed semantic types such as **Decision**, **Invariant**, and **NormativeProposition**; NormativeProposition and Invariant remain peers.
 - Declaring sources retain authority; representation does not manufacture authority, effectivity, applicability, or conformance.
 - Construction, normalization, mapping, Runtime admission, and governance promotion are distinct responsibilities.
-- Part 4 stays conceptual; **ste-spec** and product contracts nail precision without collapsing embodiment into ontology.
+- Part 4 stays conceptual; **ste-spec** owns STE-wide Architecture IR authority where integrated, and ADR-Kit released contracts nail embodiment shapes without collapsing embodiment into ontology.
 
 **Next:** [The system model](04-01-the-system-model.md).
