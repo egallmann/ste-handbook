@@ -3,7 +3,7 @@ title: "Architecture views"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-10-06"
 ---
 
 # Architecture views
@@ -30,6 +30,10 @@ A **viewpoint** is the pattern behind a family of views: conventions, metamodel 
 
 Because views share IR, a change should propagate: update IR once, regenerate views. **Inconsistency** between views signals pipeline failure, outdated snapshots, or **explicit** tolerances documented under **governance** ([View consistency](04-14-view-consistency.md)).
 
+### Surfaces a view must not replace
+
+A view filters Architecture IR. It does not replace an Architecture Index, a registry, or a compiled IR document, and those surfaces are not views by default. Filtering a Normative Proposition out of a slice is omission for a concern. It is not a change of force or declaring authority. Selecting a neighborhood from a discovery index does not interpret that neighborhood. **Discovery ≠ interpretation.**
+
 ### Standards alignment
 
 ISO/IEC/IEEE 42010-style thinking fits STE as long as **view** means **projection** tied to IR. STE adds the **compilation** and **evidence** spine missing from document-only view practices.
@@ -47,7 +51,7 @@ Define viewpoints **explicitly** for your organization; do not rely on informal 
 
 ## Summary
 
-- **Architecture views** are **governed projections** answering named **concerns** from shared **Architecture IR**.
+- **Architecture views** are **governed projections** answering named **concerns** from shared **Architecture IR**. They are not repository discovery and not a second model.
 - **Viewpoints** standardize how slices are taken and presented.
 - **Consistency** is expected because views are **not** independent models.
 

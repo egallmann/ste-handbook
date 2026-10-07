@@ -3,7 +3,7 @@ title: "Part 5: Architecture Definition"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-10-06"
 ---
 
 # Architecture definition
@@ -13,6 +13,8 @@ last_reviewed: "2026-03-25"
 ## Purpose of this stage
 
 Make **architecture** a first-class, inspectable object: a canonical arrangement of elements and relationships that teams can diff, trace, and assess instead of relying on divergent diagrams or tacit knowledge.
+
+**Human act:** people accept the decision the record carries. **Machine surface:** the ADR-Kit authoring API produces the canonical record; authoring validation evaluates that source and regenerates derived discovery. Interpretation, when it applies, consumes an exact source basis bound from the canonical source, not a validation product and not an index. **Forbidden conclusion:** this stage does not observe embodiment and does not admit a runtime graph. Discovery is not semantic meaning.
 
 ## Artifacts involved
 
@@ -24,7 +26,7 @@ Architects and accountable owners define or accept the structural commitments th
 
 ## STE system responsibility
 
-STE compiles structured **intent** and related inputs into **Architecture IR**, maintains internal consistency where automated checks exist, preserves change history and **diff**, maintains **trace** edges from **intent** to IR, and regenerates **projections** from canonical sources.
+The authoring kit validates canonical source and regenerates derived discovery. Those machine surfaces are not the semantic basis. Where **Architecture IR** mapping exists, it is representation under **ste-spec**, not a repository index. The kit does not admit architecture.
 
 ## Transitions to the next stage
 

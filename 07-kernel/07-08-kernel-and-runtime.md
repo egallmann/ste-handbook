@@ -23,22 +23,13 @@ The **Runtime** role produces **Evidence**, including **ArchitectureEvidence**-s
 - **Runtime** gathers observations (freshness, diagnostics, reconciliation signals) into **Evidence** records.
 - **Kernel** loads **Evidence**, runs **Query** / **Explain** / **Coverage** / **Admission** as scoped, and emits **deterministic decisions**.
 
-### Capability posture (honest snapshot)
+### Implementation posture
 
-| Capability | Current | Planned |
-|------------|---------|---------|
-| **Governance** enforcement | No | Yes |
-| **Lifecycle** evaluation | No | Yes |
-| Runtime compliance | Partial | Yes |
-| IDE integration | No | Yes |
-| **Conversation Engine** interface | No | Yes |
-| Control plane | Emerging | Yes |
-
-**Emphasis (this section):** **Runtime compliance** is **Partial** today—**Evidence** paths exist, but uniform policy interpretation across workspaces remains uneven.
+Posture is stated once in [Kernel responsibilities](07-03-kernel-responsibilities.md). Runtime observes. The kernel role decides when a supported producer provides that decision. The authoring kit does not produce admission decisions. This chapter describes the logical split. It does not claim that no runtime exists, and it does not claim a particular repository is the current supported producer.
 
 ## The Implications
 
-- Treat **ArchitectureEvidence** as an input contract, not a verdict.
+- Treat evidence as an observation, not a verdict. Named evidence envelopes in this part are ahead of the active supported producer.
 - Align **RECON** and related runtime narratives with **Evidence** handoffs described in **ste-spec**.
 
 ## Relationship to STE system

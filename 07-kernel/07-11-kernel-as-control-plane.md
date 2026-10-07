@@ -24,18 +24,9 @@ The **Kernel role** is STE’s emerging **control plane**: the locus where **Arc
 - **Repeatable** evaluation keyed to **Compiled IR Document** identity and validated **Evidence** inputs.
 - **Composable** enforcement: CI, IDE, and **governance** workflows attach to the same outputs.
 
-### Capability posture (honest snapshot)
+### Implementation posture
 
-| Capability | Current | Planned |
-|------------|---------|---------|
-| **Governance** enforcement | No | Yes |
-| **Lifecycle** evaluation | No | Yes |
-| Runtime compliance | Partial | Yes |
-| IDE integration | No | Yes |
-| **Conversation Engine** interface | No | Yes |
-| Control plane | Emerging | Yes |
-
-**Emphasis (this section):** **Control plane** capability is **Emerging** now and **Planned** to deepen as integrations converge on **ste-spec** contracts and unified policy consumption.
+Posture is stated once in [Kernel responsibilities](07-03-kernel-responsibilities.md). A control plane is the direction of the reserved decision role. It is not the current supported/public integration seam. The discovery bundle an integration might load is authoring discovery, not interpreted meaning and not admission.
 
 ### Normative pointers
 
@@ -43,7 +34,7 @@ Conceptual framing for IR-mediated evolution and integration authority appears i
 
 ## The Implications
 
-- Invest in contract stability (**Architecture IR**, **ArchitectureEvidence**, **KernelAdmissionAssessment**) before multiplying bespoke checks.
+- Keep Architecture IR semantics in **ste-spec**. Do not multiply bespoke checks that treat discovery indexes or handbook admission payloads as the current integration center.
 - Treat **IR validation** and **Admission** as foundational stages in any control-plane story.
 
 ## Relationship to STE system
@@ -55,4 +46,4 @@ Conceptual framing for IR-mediated evolution and integration authority appears i
 ## Summary
 
 - The **Kernel role** is STE’s **control plane** in intent: **deterministic decisions** consumed across tooling and **governance**.
-- Today’s maturity is **Emerging**; deeper enforcement and lifecycle integration are **Planned**.
+- The role remains. There is no current supported/public admission producer in this path. The authoring kit does not produce admission decisions.

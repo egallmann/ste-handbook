@@ -2,7 +2,7 @@
 title: "Kernel responsibilities"
 status: draft
 maturity: L2
-last_reviewed: "2026-03-28"
+last_reviewed: "2026-10-06"
 diagrams: no
 ---
 
@@ -14,32 +14,26 @@ Without an explicit responsibility list, teams assign “kernel work” to compi
 
 ## The Reframe
 
-This table states what the **Kernel role** is responsible for at the STE model level. **Implemented** rows reflect capabilities that exist in the reference integration path today; **Planned** rows name obligations the architecture expects to deepen over time. Exact mechanics remain in **ste-spec** and implementing components.
+This chapter states what the **Kernel role** must guarantee when a supported producer provides it. It does not describe the authoring kit, and it does not treat an older reference snapshot as the current integration seam.
 
-**Maturity note:** For this chapter, treat **Implemented** as **L2** (defined and present in reference integrations but still evolving) and **Planned** as **L1** (concept and contract direction without full product coverage).
+When a supported producer provides the role, the guarantees are: the same inputs yield the same outcome; evidence is not a verdict until evaluated; IR validation is not admission.
 
 ## The Model
 
-| Responsibility | Description | Status |
-|----------------|-------------|--------|
-| Load **Architecture IR** | Consume the unified architecture model inputs required for evaluation (including the validated **Compiled IR Document** per **ste-spec**). | Implemented |
-| Load **Evidence** | Consume **Evidence** inputs (including **ArchitectureEvidence**-shaped payloads) for assessment contexts. | Implemented |
-| Query architecture | Answer what exists: components, decisions, capabilities, **invariants**, and related entities as modeled in **Architecture IR**. | Implemented |
-| Explain architecture | Answer why it exists: trace edges from structure to **intent**, rules, and supporting **Evidence**. | Implemented |
-| Coverage analysis | Identify missing or weakly governed architecture: gaps, orphans, missing **Evidence**, unconstrained elements. | Implemented |
-| **Admission** control | Evaluate **change proposals** under declared constraints; emit **Admission** outcomes (**KernelAdmissionAssessment** where **ste-spec** applies). | Implemented |
-| **Governance** enforcement | Apply **governance rules** as mechanical obligations beyond core **IR validation** (policy-shaped outcomes). | Planned |
-| **Lifecycle** evaluation | Evaluate architecture state across **lifecycle** transitions and time-sliced expectations. | Planned |
-| Drift detection | Classify sustained mismatch between declared **Architecture IR** and **Evidence** about **embodiment** (feeds **governance** narratives). | Planned |
-| **Conversation Engine** interface | Support structured handoffs so elicited **intent** can be evaluated consistently (without making conversation the decision core). | Planned |
-| IDE integration | Support development tooling consuming the same **deterministic decisions** as CI. | Planned |
+There is no current supported/public admission producer in this path. The authoring kit does not produce admission decisions. The reference/public path should not be treated as the current integration seam.
 
-**IR validation** (mechanical validation of **Architecture IR** / **Compiled IR Document** under **ste-spec**) is part of the integration path that prepares inputs for **Admission** evaluation; it is not the same activity as **Admission** itself.
+Kernel admission is a **reserved / logical architectural role**. Query, Explain, Coverage, and Admission name that role. They are not implemented product behavior on the current supported/public path. Named payloads such as **ArchitectureEvidence** and **KernelAdmissionAssessment** are handbook models ahead of the active supported producer. Do not build the authoring integration against them as if they were the live seam.
+
+A discovery bundle (index and manifest) is an authoring projection. A separate integration might load it. Loading it is not a decision and not semantic interpretation.
+
+**IR validation** and **Admission** remain different obligations inside the role. Conflating them, or conflating either with authoring validation, is a false equivalence.
+
+The repeated posture tables that used to appear in the adjacency chapters point here. They are not a second status catalogue.
 
 ## The Implications
 
-- **Planned** rows are roadmap truth for the handbook, not promises about a single release.
-- Product prioritization may implement **Planned** rows in different order; **ste-spec** governs interchange when those capabilities land.
+- The role stays. The older “Implemented” snapshot does not.
+- **ste-spec** governs interchange when a supported producer exists. This chapter does not invent that producer.
 
 ## Relationship to STE system
 
@@ -49,5 +43,5 @@ This table states what the **Kernel role** is responsible for at the STE model l
 
 ## Summary
 
-- The **Kernel role** loads **Architecture IR** and **Evidence**, answers **Query** / **Explain** / **Coverage**, and performs **Admission**.
-- **Governance** enforcement, **lifecycle** evaluation, drift, conversation, and IDE integrations are **Planned** expansions of the same role model.
+- The **Kernel role** is reserved on this path: Query, Explain, Coverage, and Admission describe what a supported producer must do, not what the authoring kit does now.
+- There is no current supported/public admission producer in this path. The authoring kit does not produce admission decisions.

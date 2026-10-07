@@ -3,7 +3,7 @@ title: "Stakeholder views"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-10-06"
 ---
 
 # Stakeholder views
@@ -29,6 +29,10 @@ Executives need aggregates; engineers need interfaces and dependencies. Both sho
 ### Evidence hooks
 
 Stakeholder views can embed **evidence** pointers: which checks cover this boundary, which monitors watch this data path. That binds **assessment** stories to structure without duplicating **evidence** records ([Evidence](../03-artifacts/03-05-evidence.md)).
+
+### Honesty about normative force
+
+A stakeholder sheet may omit neighbors. It must not redraw a Normative Proposition so that force, declaring authority, or scope looks weaker or stronger than the canonical record. An index row included for navigation is discovery, not interpretation, and not Architecture IR.
 
 ### Governance participation
 

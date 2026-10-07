@@ -67,7 +67,7 @@ Exact envelopes are ste-spec; the handbook requires addressability relative to *
 
 ### Categories (handbook level)
 
-Tests, audits, telemetry, and similar channels become **ArchitectureEvidence** when packaged; binding to **Architecture IR** makes assessment legible. Shapes are normative in ste-spec.
+Tests, audits, telemetry, and similar channels become evidence records when packaged; binding to **Architecture IR** makes assessment legible. The envelope names in this chapter are handbook models ahead of the active supported producer. They are not the current supported integration seam.
 
 ### Immutability and supersession
 

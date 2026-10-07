@@ -3,7 +3,7 @@ title: "Part 5: Intent Formation"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-10-06"
 ---
 
 # Intent formation
@@ -15,6 +15,8 @@ Much **intent** starts as conversation at the human boundary; STE’s job is to 
 ## Purpose of this stage
 
 Establish and revise declared direction so that **embodiment** and **evidence** can be judged against something explicit, reviewable, and traceable rather than against memory or informal narrative.
+
+**Human act:** a person remains accountable for the decision. **Machine surface:** the ADR-Kit authoring API produces the canonical record. It is not hand-authored. **Forbidden conclusion:** forming intent does not validate architecture into admission, and it does not observe embodiment.
 
 ## Artifacts involved
 

@@ -3,7 +3,7 @@ title: "Illustrative artifact walkthrough"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-10-01"
+last_reviewed: "2026-10-06"
 ---
 
 # Illustrative artifact walkthrough
@@ -16,11 +16,19 @@ Reading about **intent**, **Architecture IR**, and **projections** in the abstra
 
 ## The Reframe
 
-Think of the following fragments as one **story**: governed ADR intent → a local normative consequence as a Normative Proposition with stable identity → structural realization → normalized representation (embodiment evidence) → projection → and the negative claim that being represented or reachable does not prove applicability or conformance.
+Think of the following fragments as stops, not as one compiler pipe. Each stop names its input and what that stop must not conclude. The derived row is for inspection. It is not fed onward as the basis of interpretation. Two readers of “the latest schema” are not reading the same contract. Interpretation requires an exact source basis bound from the canonical ADR, not from a validation result and not from an index. **Discovery ≠ interpretation.**
 
 Normalized representation is **not** automatically Architecture IR. Mapping into compiled IR remains where accepted STE semantic authority establishes it; the deferred canonical-entity / identity realization (CE-01) remains deferred, and the corresponding ste-spec mechanical / corpus integration remains deferred.
 
 ## The Model
+
+Each stop below names its input and what it must not conclude.
+
+- **Canonical ADR.** Input: a record produced through the ADR-Kit authoring API, not a hand-authored file. Must not conclude that a check passed, that an index is meaning, or that embodiment conforms.
+- **Physical-component refinement.** Input: the logical ADR it refines. Must not open a second authority or jump straight to a runtime verdict.
+- **Normalized row.** Input: governed representation for inspection, not a discovery file and not a validation result. Must not prove authority, effectivity, applicability, or conformance, and must not be fed onward as the exact source basis.
+- **Projection.** Input: a selected rendering. Must not become declaring authority or interpreted meaning.
+- **Exact source basis**, when interpretation is discussed at all. Input: canonical authoring source. Must not be an index, registry, manifest, rendered projection, or validation result.
 
 ### 1. Logical ADR intent with a Normative Proposition (authoring sketch)
 
@@ -173,6 +181,6 @@ When you adopt STE-shaped tooling, expect the same division of labor: **govern**
 - **Logical** ADRs may declare Normative Propositions with stable identity while retaining declaring authority and lifecycle.
 - Normalized structured `declaring_adr` / `source_artifact` qualification preserves ownership after detachment; it does not create authority.
 - Normalized, registry, index, and compiled-IR surfaces retain distinct roles; projections are derived human/task renderings—not automatic Architecture IR and not applicability engines.
-- Represented or reachable ≠ applicable or conformant.
+- Represented or reachable ≠ applicable or conformant. A derived row is not an exact source basis, and validation does not construct that basis.
 
 **Next:** Continue to Part 5 — [Lifecycle overview](../05-lifecycle/05-00-lifecycle-overview.md).

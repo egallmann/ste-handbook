@@ -3,7 +3,7 @@ title: "Projection documents"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-10-06"
 ---
 
 # Projection documents
@@ -30,6 +30,10 @@ Stable **references** (IDs, deep links) connect paragraphs to **entities** and *
 
 Some paragraphs will remain hand-written: rationale, historical context, customer commitments. STE does not forbid prose; it demands **honesty** about what is **machine-backed** versus interpretive. **ADRs** remain the durable home for **decision** rationale; projection documents **summarize** and **navigate**, they do not replace **intent** records ([Architecture decision records](../03-artifacts/03-01-architecture-decision-records.md)).
 
+### Surfaces that are not projection documents
+
+An Architecture Index, entity and relationship registries, and a compiled IR document are governed surfaces with their own roles. They are not narrative projections, and they are not Architecture IR. Quoting a Normative Proposition in a document must preserve force, declaring ADR, and scope. A document generated from an index is still a derived view. It does not become the exact source basis, and it does not reconstruct interpreted meaning. **Discovery ≠ interpretation.**
+
 ### Publication boundaries
 
 If a document is **published truth** for a **scope**, classify it per [Publication versus projection](../03-artifacts/03-08-publication-vs-projection.md). Most projection documents are **derived**; a few may be elevated to **publication** with explicit **governance**.
@@ -46,7 +50,7 @@ Documentation teams and engineers share responsibility: templates and **projecti
 
 ## Summary
 
-- **Projection documents** ground narrative in **Architecture IR** via templates, queries, and stable references.
+- **Projection documents** ground narrative in **Architecture IR** via templates, queries, and stable references. They are not the index, and they are not declaring authority.
 - Separate **generated architecture facts** from interpretive prose for **assessment** clarity.
 - Elevation to **publication** is a **governance** choice, not the default for generated docs.
 

@@ -2,7 +2,7 @@
 title: "Kernel and governance"
 status: draft
 maturity: L1
-last_reviewed: "2026-03-28"
+last_reviewed: "2026-10-06"
 diagrams: no
 ---
 
@@ -23,18 +23,9 @@ The **Kernel role** supplies **deterministic decisions** and structured findings
 - **Kernel** emits **machine-readable** outcomes (including **KernelAdmissionAssessment** for **Admission** where **ste-spec** applies).
 - **Governance** consumes outcomes within the control loop: [Authority and decision rights](../06-governance/06-03-authority-and-decision-rights.md), [Steelman, obligations, and change control](../06-governance/06-05-steelman-obligations-and-change-control.md), [Section overview (Part 6)](../06-governance/06-00-section-overview.md).
 
-### Capability posture (honest snapshot)
+### Implementation posture
 
-| Capability | Current | Planned |
-|------------|---------|---------|
-| **Governance** enforcement | No | Yes |
-| **Lifecycle** evaluation | No | Yes |
-| Runtime compliance | Partial | Yes |
-| IDE integration | No | Yes |
-| **Conversation Engine** interface | No | Yes |
-| Control plane | Emerging | Yes |
-
-**Emphasis (this section):** **Governance** enforcement rows are **Planned** mechanical depth; today, **governance** processes often interpret Kernel-style outputs outside a single unified enforcement plane.
+Posture for this role is stated once in [Kernel responsibilities](07-03-kernel-responsibilities.md). There is no current supported/public admission producer in this path. The authoring kit does not produce admission decisions. The reference/public path should not be treated as the current integration seam. Governance still owns authorization. The kernel role informs that authorization when a supported producer exists. It does not replace judgment.
 
 ## The Implications
 
@@ -51,4 +42,4 @@ The **Kernel role** supplies **deterministic decisions** and structured findings
 ## Summary
 
 - The **Kernel role** produces structured assessments; **governance** authorizes change.
-- Deep mechanical **governance** enforcement through the Kernel plane is **Planned**; the handbook snapshot above states current versus intended coverage.
+- Deep mechanical governance enforcement is not the current supported authoring seam. The role remains. See [Kernel responsibilities](07-03-kernel-responsibilities.md).

@@ -3,7 +3,7 @@ title: "Runtime Architecture Components and Flow"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-30"
+last_reviewed: "2026-10-06"
 ---
 
 # Runtime Architecture Components and Flow
@@ -14,7 +14,9 @@ Teams implement observation piecemeal—one CI job, one graph export, one assist
 
 ## The Reframe
 
-**Runtime** is an observation and readiness subsystem with named components. This chapter maps ingestion through emission for implementers, aligned with Embodiment → **Runtime** → Evidence → **Kernel** → Decision → Governance. ste-spec defines contracts; the handbook defines responsibilities and flow.
+**Runtime** is an observation and readiness subsystem with named components. This chapter describes the logical runtime role rather than a claim that this exact component topology is the currently supported producer. The map is not an admission pipeline. ste-spec remains the home of normative contracts when they are accepted. The names in this chapter are handbook models ahead of the active supported producer.
+
+Runtime workspace state lives outside the authoring repository. The authoring kit does not write it and does not read it back as authority. A graph rebuild here is derived workspace state. It is not compilation of Architecture IR, and it is not semantic interpretation of a discovery index.
 
 The **Runtime** role, responsibility table, and data product catalog are in [The Runtime Model](08-01-the-runtime-model.md); they are not repeated here.
 

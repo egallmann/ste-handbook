@@ -3,7 +3,7 @@ title: "Evidence"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-10-06"
 ---
 
 # Evidence
@@ -21,7 +21,7 @@ Teams confuse “we ran tests” with “we know what we proved.” Raw logs sca
 
 **Evidence** in STE is structured observation of **embodiment**: test results, analysis outputs, telemetry snapshots, logs, metrics, or similar channels, captured as records (handbook sense: **EDR**-shaped) with enough metadata to interpret them later. An evidence record is not **intent**; it does not define what should be true. It records what was observed, when, where, and under which scope.
 
-This chapter is artifact-shaped. **Kernel** mechanics for ingestion and assessment live in Part 5.
+This chapter is artifact-shaped. Evidence and conformance are later obligations than authoring validation. Authoring-kit attribution linkage, where it exists, is non-authoritative. It is not an admission result. Named evidence envelopes in later chapters are handbook models ahead of the active supported producer on this path. They are not a claim that a particular schema is the current integration to build against. Observation mechanics belong to the Runtime role (Part 8). Assessment behavior belongs to the Kernel role (Part 7), which remains a reserved decision role on the authoring path.
 
 ## How it is used in STE
 
@@ -46,4 +46,4 @@ Retention, access, and integrity rules for **evidence** are policy matters. **Go
 - [Architecture model and IR](03-04-architecture-model-and-ir.md): scopes reference canonical elements.
 - Part 8: [Runtime Overview](../08-runtime/08-00-runtime-overview.md), [Evidence and Observation](../08-runtime/08-02-evidence-and-observation.md); Part 7: [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md) for assessment behavior.
 
-This chapter states what the **evidence** artifact is for at the layer level; Part 5 states how assessment uses it in the lifecycle.
+This chapter states what the **evidence** artifact is for at the layer level. Part 5 states how the lifecycle uses assessment. Part 7 states the decision role. Part 8 states observation. None of those chapters makes the authoring kit an evidence authority.

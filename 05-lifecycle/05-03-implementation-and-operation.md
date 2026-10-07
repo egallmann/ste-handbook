@@ -3,7 +3,7 @@ title: "Part 5: Implementation and Operation"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-10-06"
 ---
 
 # Implementation and operation
@@ -13,6 +13,8 @@ This stage is where **embodiment** exists: repositories, builds, infrastructure,
 ## Purpose of this stage
 
 Turn declared structure and **intent** into a system that actually runs, scales, fails, and changes in production or equivalent environments, while remaining connectable back to **Architecture IR** and **trace** expectations.
+
+**Human act:** people build and run embodiment against accepted commitments. **Machine surface:** repositories, builds, and running systems. **Forbidden conclusion:** what runs is not intent, and shipping it is not an admission verdict.
 
 ## Artifacts involved
 

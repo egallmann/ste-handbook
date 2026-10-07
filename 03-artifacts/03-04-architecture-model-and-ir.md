@@ -3,7 +3,7 @@ title: "Architecture Model and IR"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-10-06"
 ---
 
 # Architecture Model and IR
@@ -21,11 +21,11 @@ Without a single canonical architecture model, every tool builds its own graph f
 
 **Architecture IR** is STE’s canonical **system model** at the architecture layer for an agreed **scope**: typed entities, relationships, and metadata needed for deterministic tooling and for shared mechanical reasoning. It carries structural semantics and other admitted semantic types (including decisions, invariants, and Normative Propositions where governed), materialized as graph-shaped records—not an informal wiki and not “just another diagram format.” “Architecture model” in handbook language refers to that canonical IR and its consistency rules as a product of compilation and related materialization. Representation does not transfer declaring authority from ADRs or other source artifacts.
 
-It is not source code, though it maps to repositories and services. It is not a **projection** diagram, though **projections** render from it.
+It is not source code, though it maps to repositories and services. It is not a **projection** diagram, though **projections** render from it. It is not a repository index, manifest, or entity registry. Those discovery surfaces are generated from the validated authoring path. They are not compiled into semantic meaning, and they are not the exact source basis interpretation reads.
 
 ## How it is used in STE
 
-**Intent** drives compilation; STE **maintains** IR updates, diffs, and consistency. Tools traverse the graph and drive **validation** rules; model-based assistants are one consumer class when **governance** and **rules** make that safe. The **Kernel** role (Part 7) consumes IR together with **evidence** to assess **conformance** claims. **Projections** (Part 4) render human-facing views from the same IR so review does not fork reality.
+Canonical records are produced through the ADR-Kit authoring API, not by hand. Authoring validation evaluates those records and regenerates discovery. It does not construct the exact source basis. Where mapping to **Architecture IR** exists, that representation stays distinct from the index. The **Kernel** role (Part 7) is the reserved decision role that may consume IR together with **evidence**. The authoring kit does not produce admission decisions. **Projections** (Part 4) render human-facing views so review does not fork reality. A projection is not the IR.
 
 **Example:** A new dependency from the payment service to a marketing database appears in IR after compilation. A policy rule flags it because **intent** forbids that edge. The failure is visible before merge because the model is shared and addressable.
 

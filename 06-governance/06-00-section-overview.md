@@ -3,7 +3,7 @@ title: "Part 6: Governance - Section overview"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-04-02"
+last_reviewed: "2026-10-06"
 ---
 
 # Part 6: Governance - section overview
@@ -49,6 +49,8 @@ Read these terms consistently across Part 6 and the rest of the handbook:
 The **governance doctrine** in STE (authority split, canonical versus derived, deterministic assessment at the Kernel boundary, Runtime as evidence producer) is **stable enough to build on** and aligns with the public **ste-spec** handoff boundary described in **ste-spec** `status.md`.
 
 **Mechanical governance** (unified enforcement across CI, IDE, lifecycle, and conversation surfaces) is **phased**. Where implementation is still catching up, this part states that explicitly instead of implying a finished control plane. Deeper policy-as-code and governance analytics remain a future Part 13 technical deep dive; Part 6 remains the home for the current control model.
+
+**Checks that are implemented / available now** on the authoring path are authoring validation, cross-reference checks, and regeneration of derived discovery surfaces. Those checks evaluate canonical source and inventory. They are not admission. **Admission** verdicts, eligibility over freshness, and blocking merges on kernel assessments belong to the reserved decision role. The authoring kit does not produce them. This is not a claim that no admission implementation exists outside that path. It is a claim about what governance can treat as the current supported authoring seam.
 
 ## Reading order (Part 6)
 

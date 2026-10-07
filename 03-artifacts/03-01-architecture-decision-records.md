@@ -3,7 +3,7 @@ title: "Architecture Decision Records"
 status: structured
 maturity: L1
 diagrams: true
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-10-06"
 ---
 
 # Architecture Decision Records
@@ -23,21 +23,30 @@ An **ADR** is a structured record of an architecture **decision**: context, opti
 
 STE may distinguish multiple ADR surfaces (for example lifecycle or packaging) in **ste-spec**. At handbook altitude, treat them as one family: recorded decisions with explicit lifecycle.
 
-At a finer grain, STE work often chains **logical** ADRs (what must be true and why), **physical-system** ADRs (subsystem boundaries and topology that realize that intent), and **physical-component** ADRs (implementable components, responsibilities, and interfaces). Lower layers **refine** upper layers: they carry intent forward into buildable structure and observable **evidence**; they do not invent a parallel authority tree.
+At a finer grain, current authoring chains **logical** ADRs, **physical-system** ADRs, and **physical-component** ADRs. That ladder is **implemented / available now**. A generic physical ADR (`ADR-P`) is not the preferred current type. Lower layers **refine** upper layers. They do not invent a parallel authority tree.
 
-**How to read this diagram:** each step **realizes** the layer above; **runtime evidence** closes the loop for **assessment** against the same commitments.
+**What each layer is for**
+
+- A **logical** ADR answers what must be true and why. It must not invent subsystem topology or component interfaces in order to look complete.
+- A **physical-system** ADR answers which subsystem boundaries and topology realize that intent. It refines the logical record. It must not replace the logical commitment with a second decision.
+- A **physical-component** ADR answers which implementable components, responsibilities, and interfaces carry that topology. It refines the physical-system record. It must not become its own authority tree.
+
+Observation of embodiment is a later role. It is not the next step of authoring, and it is not something the authoring kit performs by compiling the component record.
+
+**How to read this diagram:** each lower ADR **refines** the layer above. Implementation is embodiment of those commitments. Evidence is a separate, later role.
 
 ```mermaid
 flowchart TB
   L[Logical_ADR] -->|"refines_into"| PS[Physical_System_ADR]
   PS -->|"refines_into"| PC[Physical_Component_ADR]
   PC -->|"realized_as"| IMPL[Implementation_surfaces]
-  IMPL -->|"observed_as"| RTE[Runtime_evidence]
 ```
 
 ## How it is used in STE
 
-People **decide**; STE **materializes** ADR records under governed workflows where **ste-spec** defines capture. **Governance** approves superseding records when the organization changes course. Compilation aligns **Architecture IR** and downstream checks. Reviewers use ADRs to ask whether **embodiment** matches recorded commitments.
+A canonical ADR is produced through the ADR-Kit authoring API. It is not a hand-authored file. **Authoring validation** evaluates that record. **Derived discovery** surfaces are regenerated from that validated path for inventory and inspection. Regeneration does not turn the index into the semantic source. Refinement downward does not create a second authority. **Governance** approves superseding records when the organization changes course.
+
+Validation does not admit the architecture, and it does not produce an **exact source basis**. When interpretation is in view, that basis is bound from the canonical ADR. **Discovery ≠ interpretation.** A fresh index does not establish interpreted meaning. Reviewers use ADRs to ask whether **embodiment** matches recorded commitments. That question is conformance, which is later than authoring validation.
 
 **Example:** An ADR states public API v1 remains backward compatible for twelve months. A breaking change proposal triggers **governance**: supersede the ADR or reject the change, not a debate about memory.
 

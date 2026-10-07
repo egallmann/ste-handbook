@@ -3,7 +3,7 @@ title: "Part 3: Artifact Layer Overview"
 status: structured
 maturity: L1
 diagrams: true
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-10-06"
 ---
 
 # Part 3: Artifact Layer Overview
@@ -36,7 +36,7 @@ It is not the runtime kernel, not the full delivery toolchain, and not informal 
 
 ## How artifacts are used in STE
 
-Normative content is **specified** and **governed** by people; STE **materializes and maintains** structured records, **Architecture IR**, **trace** edges, **evidence** records, and **projections** under **ste-spec** and policy. Artifacts **compile**, **revise** on governed change, **observe** **embodiment** to produce **evidence**, and feed **conformance** evaluation. **Projections** render the same underlying commitments for review without becoming a second source of truth.
+People remain accountable for decisions and for **governance**. Canonical ADRs are structured records produced through the ADR-Kit authoring API. They are not hand-authored files. Authoring validation evaluates that API-produced source and regenerates **derived discovery** for inventory and inspection. An **exact source basis** is bound from the same canonical source when semantic interpretation is in view. Validation does not construct that basis, and discovery is not interpreted meaning. **Architecture IR**, where **ste-spec** defines the mapping, is representation, not a repository index and not declaring authority. **Projections** render commitments for review without becoming a second source of truth. Evidence and conformance are later obligations. Observation is not a verdict.
 
 In mature use, senior engineers and architects spend more effort refining **rules**, **invariants**, **constraints**, patterns, capture structure, and the **metamodel** that **compilation** targets—so the STE system can run **mechanical checks**, preserve **traceability**, and **guide** design with structured questions—rather than re-reviewing every low-level change by hand alone.
 
@@ -54,9 +54,9 @@ When those three stay linked in the artifact graph, **drift** becomes inspectabl
 
 **Humans** remain accountable for: stating goals and **intent**; specifying requirements and **constraints**; making architectural decisions; defining **invariants** and non-negotiable truths; reviewing system-produced records and views; accepting or rejecting judgments and proposed changes under **governance**.
 
-**STE** (automation and governed services that implement STE) is responsible for: materializing **formal records** from governed capture and compilation (including ADR-shaped, requirement, and invariant records where the workflow defines it); maintaining **Architecture IR** and structural consistency; maintaining **trace links** between artifact types; collecting and structuring observations into **evidence** records with provenance; running **conformance** checks and recording outcomes; managing **lifecycle state** where policy assigns that to the system; producing **publications** and **projections** from canonical sources.
+The ADR-Kit authoring API produces the canonical ADR. Validation evaluates that source and regenerates derived discovery. Interpretation, on a separate path, reads an exact source basis bound from that same canonical source. The kit does not treat an index as semantic authority, and it does not admit architecture. Observation, evidence structuring, and conformance recording belong to later roles. The authoring kit does not produce admission decisions.
 
-**Foundational principle:** humans **specify and govern** intent; STE **formalizes, structures, and maintains** the artifact graph. Formal engineering artifacts in STE are **system-maintained structured representations** grounded in human intent and observed reality, not primarily free-form hand-authored files.
+**Foundational principle:** people **govern** decisions. The ADR-Kit authoring API **authors** the canonical ADR. Nothing on that path is hand-authored. Validation **evaluates** the API-produced source and **maintains derived** discovery. Semantic interpretation reads an exact source basis bound from that canonical source. Derived surfaces are not a second authority.
 
 ## How the layer participates in lifecycle and governance
 
@@ -102,7 +102,7 @@ flowchart LR
   subgraph viewRegion [Projections]
     PR[Human_facing_views]
   end
-  IA -->|compilesTo| IR
+  IA -->|representsIn| IR
   IR --> TR
   EV --> TR
   IR --> CF

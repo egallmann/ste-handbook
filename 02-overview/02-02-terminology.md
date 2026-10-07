@@ -3,7 +3,7 @@ title: "Terminology"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-10-06"
 ---
 
 # Terminology
@@ -30,10 +30,22 @@ Treat this chapter as a stabilization pass aligned to the handbook glossary mean
 | **Constraint** | A boundary on allowed behavior or allowed change; shrinks the **design space** or binds evolution. | “Constraint” as only external regulation. Internal invariants are **constraints** too. |
 | **Design space** | The set of feasible approaches remaining after **constraints** are applied. | “Design space” as brainstorming breadth without **constraints**. |
 | **Invariant** | A statement that must hold for the design to remain valid unless **governance** explicitly revises it. | “Invariant” as a test name only. Tests may be **evidence**; the invariant is the commitment. |
-| **ADR** | Architecture Decision Record: durable, reviewable record of a **decision**, often with context, options, and consequences. | “ADR” as a template file nobody reads. The object is the recorded **decision**, not the file ritual. |
-| **Architecture IR** | Canonical machine-oriented **semantic** **system model** at the architecture layer for an agreed **scope**, produced from structured **intent** **artifacts** under governed construction/materialization; machine-addressable graph of structural and other admitted semantic entities shared for inspection, diff, **query**, analysis, and traceability—not a diagram format, not declaring authority merely by representation, and not “the architecture” because a picture exists. | “The model” or “the graph” when you mean the canonical IR. Say **Architecture IR** once, then proceed. Do not reduce IR to topology alone. |
+| **ADR** | Architecture Decision Record: the canonical record of a **decision**, produced through the ADR-Kit authoring API, not by hand. Current authoring uses **logical**, **physical-system**, and **physical-component** records. A lower layer refines an upper layer. It does not open a second authority. People remain accountable for the decision. | “ADR” as a file someone typed by hand, or as a generic physical record (`ADR-P`) when the current ladder is logical / physical-system / physical-component. The object is the API-produced record of the **decision**. |
+| **Architecture IR** | Canonical machine-oriented **semantic** **system model** at the architecture layer for an agreed **scope**, owned as semantics by **ste-spec**. It is a representation of governed intent, not declaring authority, not a diagram format, and not a repository index, manifest, or registry. | “The model,” “the graph,” or “the index” when you mean the canonical IR. Say **Architecture IR**. Do not reduce IR to topology, and do not treat discovery surfaces as IR. |
 
 **Prefer / avoid:** Prefer **intent** over generic “requirements” when you mean normative STE commitments. If you truly mean contractual requirements management, say so explicitly and map to **intent** once.
+
+### Authoring surfaces
+
+These words keep the authoring path from collapsing into one pipe. Both **authoring validation** and **exact source basis** binding originate from the canonical ADR. Validation does not construct the basis.
+
+| Term | Handbook sense | Common confusion |
+|------|------------------|------------------|
+| **Authoring validation** | Evaluation of a canonical ADR against its authoring contracts. It feeds **derived discovery**. It is not **admission**, and it is not construction of an **exact source basis**. | Treating a successful check as a verdict that architecture may proceed, or as the object interpretation reads. |
+| **Derived discovery surface** | A generated inventory for navigation, inspection, and repository discovery: manifest, index, registries where applicable, and rendered projections. Produced from the validated authoring path. Non-canonical. | Reading a fresh index as interpreted meaning, or as **Architecture IR**. **Discovery ≠ interpretation.** |
+| **Exact source basis** | A binding, from canonical authoring source, of the authoritative artifacts semantic interpretation is allowed to read. It is not an index, registry, manifest, rendered projection, or validation result. | “Whatever schema is latest,” or a basis assembled by replaying discovery files. |
+| **Detached candidate** | The result semantic construction is authorized to produce: candidate semantic state that is not persisted, promoted, admitted, or treated as conformance. Posture: **accepted / designed but not yet released** on the supported authoring host. Not a callable operation in this handbook. | Treating construction as a save, a promotion, or an admission. |
+| **Admission** | The **Kernel** role’s verdict over structured inputs. On the authoring path this is a **reserved / logical architectural role**. The authoring kit does not produce admission decisions. | Using “admission” for authoring validation, repository checks, or a discovery load. |
 
 **Model-based assistants (handbook sense):** tools that propose or transform **artifacts** or **embodiment** using learned components. They are **one consumer class** over **Architecture IR** and linked **intent**, operating under **governance** and **rules**—not the authority for **intent**, not a replacement for **governance**, and not the definition of STE.
 
@@ -66,7 +78,7 @@ Treat this chapter as a stabilization pass aligned to the handbook glossary mean
 | Term | Handbook sense | Common confusion |
 |------|------------------|------------------|
 | **Projection** | A derived human-usable view from a canonical source, intended to track the same commitments as other projections when the pipeline is healthy. | Any diagram or document. Projections are accountable views, not freeform summaries. |
-| **Compilation** | The structured bridge from governed **intent** **artifacts** toward **Architecture IR** where that pipeline exists—including construction, qualification, normalization, and mapping responsibilities as distinct where contracts separate them. | “Compilation” as only compiler builds, or as one verb for persist/admit/promote/conform. |
+| **Compilation** | The structured bridge from governed **intent** **artifacts** toward machine-facing semantics and, where mapped, **Architecture IR**. Construction, qualification, normalization, and mapping stay distinct. Authoring validation and exact-source-basis binding are siblings of that story, not one output. | “Compilation” as only compiler builds; as one verb for persist, admit, promote, or conform; or as “indexes compiled into meaning.” |
 | **Traceability** | Ability to follow links from **decisions** and **invariants** through structure to **evidence** and **governance** outcomes. | Traceability matrices as an end in themselves. Matrices are a means; accountable chains are the goal. |
 
 **Prefer / avoid:** Prefer **projection** as the canonical handbook term; when bridging classic architecture literature “views,” tie **views** to **projections** once and continue with **projection**.
@@ -95,7 +107,8 @@ When two readings of a term would change an obligation, **ste-spec** and publish
 
 ## Summary
 
-- Terms are grouped by role: **intent** and **architecture**, **embodiment** and **evidence**, **governance** and assessment, **projection**, lifecycle.
+- Terms are grouped by role: **intent** and **architecture**, authoring surfaces, **embodiment** and **evidence**, **governance** and assessment, **projection**, lifecycle.
+- **Canonical ADR**, **authoring validation**, **derived discovery**, **exact source basis**, **Architecture IR**, **Kernel**, and **admission** stay distinct. **Discovery ≠ interpretation.** Validation does not construct the exact source basis.
 - **Architecture IR**, **Kernel**, **ADR**, **EDR**, **validation**, and **conformance** are STE load-bearing words: use them consistently.
 - Prefer **embodiment** over using **implementation** as a stand-in for the whole built system.
 - **ste-spec** is authoritative when precise semantics matter; this list aligns reading, not contracts.

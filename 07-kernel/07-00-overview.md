@@ -2,7 +2,7 @@
 title: "Kernel overview"
 status: draft
 maturity: L2
-last_reviewed: "2026-03-28"
+last_reviewed: "2026-10-06"
 diagrams: yes
 ---
 
@@ -92,7 +92,7 @@ flowchart LR
 
 ### Diagram — artifacts, IR, decisions, execution (secondary)
 
-How compiled structure and **Evidence** feed decisions consumed by tooling and **governance** (role names; **ste-kernel** implements the Kernel role).
+How compiled structure and **Evidence** feed decisions consumed by tooling and **governance**. These are role names. The reference/public path should not be treated as the current integration seam. This diagram is not the authoring surface map: discovery is not an input to interpretation, and authoring validation does not produce an exact source basis or an admission decision.
 
 ```mermaid
 flowchart LR
@@ -122,7 +122,7 @@ flowchart LR
   KR --> O --> T
 ```
 
-**Reading the diagrams:** **Evidence** is **non-decision-bearing** at the handoff until the Kernel role evaluates it. **IR validation** (mechanical checks on **Architecture IR** and the **Compiled IR Document**) is distinct from **Admission** evaluation; both may precede a **KernelAdmissionAssessment**, but they answer different questions. Precise contracts live in **ste-spec**.
+**Reading the diagrams:** these figures describe the reserved decision role, not a shipped control plane. **Evidence** is **non-decision-bearing** until that role evaluates it. **IR validation** is not **Admission**. Named payloads such as **ArchitectureEvidence** and **KernelAdmissionAssessment** are handbook models ahead of the active supported producer. There is no current supported/public admission producer in this path. The authoring kit does not produce admission decisions.
 
 ## The Implications
 
@@ -140,6 +140,6 @@ flowchart LR
 ## Summary
 
 - The **Kernel** is a **system role**: the **decision engine** over **Architecture IR** and **Evidence**, not a documentation store or LLM.
-- **ste-kernel** implements that role; this chapter describes behavior that should survive implementation changes.
-- The reasoning surface is **Query**, **Explain**, **Coverage**, and **Admission**; outcomes should be **deterministic** and **fail-closed** where policy requires.
-- **ArchitectureEvidence** is **non-decision-bearing** until evaluated; **KernelAdmissionAssessment** is decision-bearing where **ste-spec** defines it.
+- The role stays even when an older product snapshot is stale. This chapter does not claim that no kernel implementation exists.
+- The reasoning surface is **Query**, **Explain**, **Coverage**, and **Admission** as role questions. They are not the current supported/public integration seam.
+- Evidence stays non-decision-bearing until the role evaluates it. Admission, when a supported producer provides it, is the verdict.

@@ -3,7 +3,7 @@ title: "Publication versus Projection"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-10-06"
 ---
 
 # Publication versus Projection
@@ -19,9 +19,11 @@ Diagrams and exported narratives multiply until each stakeholder has a favorite 
 
 ## What the artifact is
 
-**Publication** means committing normative or canonical material through STE’s governed paths: **intent** records, compiled **Architecture IR**, published rules, and other inputs **ste-spec** treats as authoritative. **Projection** means rendering derived views from that material: diagrams, narrative **projection** outputs, tables, and stakeholder-specific summaries.
+**Publication** means committing normative or canonical material through governed paths: canonical **intent** records produced by the ADR-Kit authoring API, and **Architecture IR** where **ste-spec** defines that representation. Those records are not hand-authored files. **Projection** means rendering derived views from canonical material: diagrams, narrative outputs, tables, and stakeholder-specific summaries.
 
-A projection may simplify or highlight; it must not silently contradict published truth. If it does, the bug is in the renderer, the data, or the **governance** of what was published.
+An **Architecture Index** and entity or relationship **registries** are governed discovery or publication surfaces for inventory and inspection. They are not disposable pictures, and they are not **Architecture IR**. A valid index does not establish interpreted semantic meaning. **Discovery ≠ interpretation.**
+
+A projection may simplify or highlight; it must not silently contradict published truth. If it does, the bug is in the renderer, the data, or the **governance** of what was published. Hand-editing a discovery file to “fix” meaning creates a second, false authority.
 
 ## How it is used in STE
 
