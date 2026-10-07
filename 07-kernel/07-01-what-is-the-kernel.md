@@ -2,7 +2,7 @@
 title: "What is the Kernel?"
 status: draft
 maturity: L2
-last_reviewed: "2026-03-28"
+last_reviewed: "2026-10-06"
 diagrams: no
 ---
 
@@ -39,9 +39,9 @@ The Kernel role operates over:
 
 | System or artifact plane | Responsibility |
 |--------------------------|----------------|
-| **ste-spec** | Defines contracts and schemas (including **Architecture IR**, **ArchitectureEvidence**, **KernelAdmissionAssessment**, **IR validation**, **Admission**). |
-| **adr-architecture-kit** | Compiles authoring-time artifacts toward **Architecture IR** inputs; internal **ArchModel** is not the cross-repo interchange. |
-| **ste-runtime** | Produces **Evidence** (for example **ArchitectureEvidence**); does **not** emit **KernelAdmissionAssessment**. |
+| **ste-spec** | Owns Architecture IR semantics and any accepted cross-repo contracts. Named evidence and admission payloads in this part are handbook models ahead of the active supported producer. They are not the integration to build against on the current authoring path. |
+| **adr-architecture-kit** | Authors canonical ADRs through its authoring API and validates that source. It emits repository-owned derived discovery (registries, manifest, markdown). Records are not hand-authored. The supported public facade does not expose Architecture IR, graph, runtime, or admission. Internal fragment emission, where it exists, is not “indexes compiled into meaning,” and it is not admission. |
+| **Runtime role** | Observes embodiment and may package evidence. It does not emit admission decisions. This row names the role. It is not a claim that a particular repository is the current supported producer. |
 | **Kernel role** (implemented by **ste-kernel** among possible integrations) | Evaluates merged, validated inputs and decides. |
 | **Conversation Engine** | Elicits **intent** and design rationale at the human boundary ([Human interface overview](../09-human-interface/09-00-conversation-engine-overview.md)). |
 | **IDE** | Authors and refactors implementation and, where permitted, structured **intent** artifacts. |

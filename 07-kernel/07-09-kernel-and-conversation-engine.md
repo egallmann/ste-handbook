@@ -21,21 +21,12 @@ The **Conversation Engine** (handbook Part 9 — Human interface) lives at the b
 ### Intended interaction
 
 - Conversation produces and refines **intent** records and **change proposals**.
-- Compilation pipelines produce **Architecture IR** inputs (see [Compilation](../04-architecture-model/04-04-compilation.md)).
+- Authoring validation evaluates canonical source and regenerates discovery. It does not compile indexes into Architecture IR meaning and does not construct an exact source basis (see [Compilation](../04-architecture-model/04-04-compilation.md)).
 - **Kernel** evaluates compiled inputs and **Evidence**, returning **Query** / **Explain** / **Coverage** / **Admission** results.
 
-### Capability posture (honest snapshot)
+### Implementation posture
 
-| Capability | Current | Planned |
-|------------|---------|---------|
-| **Governance** enforcement | No | Yes |
-| **Lifecycle** evaluation | No | Yes |
-| Runtime compliance | Partial | Yes |
-| IDE integration | No | Yes |
-| **Conversation Engine** interface | No | Yes |
-| Control plane | Emerging | Yes |
-
-**Emphasis (this section):** A first-class **Conversation Engine** interface to the **Kernel role**—stable handoffs from elicitation to evaluation—is **Planned**.
+Posture is stated once in [Kernel responsibilities](07-03-kernel-responsibilities.md). Conversation may elicit intent. It does not admit. A stable handoff from elicitation into the decision role remains part of the role’s design. It is not the current supported authoring seam.
 
 ## The Implications
 

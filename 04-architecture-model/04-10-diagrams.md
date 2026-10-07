@@ -3,7 +3,7 @@ title: "Diagrams"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-03-26"
+last_reviewed: "2026-10-06"
 ---
 
 # Diagrams
@@ -26,6 +26,10 @@ Boxes map to **entity** identities; arrows map to **relationship** types. Legend
 
 Layered notations (context, container, component, code in C4-like styles) are **filters** on the same IR, not separate models. Zoom changes **detail density**, not **truth**.
 
+### What a diagram is not
+
+A diagram is a projection. An **Architecture Index**, an entity or relationship **registry**, and a compiled IR document are not diagrams and are not disposable pictures. They are also not **Architecture IR**. A diagram must not display a Normative Proposition in a way that changes its force, declaring authority, or scope. A discovery index is not the semantic input to the picture. **Discovery ≠ interpretation.**
+
 ### Drift detection
 
 Compare diagram exports to IR **diff** when feasible: unexpected visual changes without IR delta signal pipeline failure or manual tampering. **View consistency** practices extend this idea across multiple projections ([View consistency](04-14-view-consistency.md)).
@@ -46,7 +50,7 @@ In reviews, ask: **which IR version** does this diagram represent, and **what sl
 
 ## Summary
 
-- Diagrams are **projections** of **Architecture IR**, not parallel sources of architecture truth or declaring authority.
+- Diagrams are **projections** of **Architecture IR**, not parallel sources of architecture truth, not declaring authority, and not a substitute for an index or for an exact source basis.
 - **Notation** must preserve **entity** and **relationship** semantics.
 - **Provenance** and **diff** alignment keep diagrams **accountable**.
 

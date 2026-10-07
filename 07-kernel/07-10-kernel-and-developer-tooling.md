@@ -21,20 +21,11 @@ CLI, IDE, and CI channels are **consumers** of **Kernel role** outputs: the same
 ### Intended interaction
 
 - Local and remote automation requests **Query** / **Explain** / **Coverage** / **Admission** results from the integration plane.
-- Editors assist authors but treat **KernelAdmissionAssessment** (where applicable) as authoritative for **Admission** at the gate.
+- Editors assist authors. They must not treat a handbook admission payload as the current gate. When a supported producer emits an admission decision, that decision is the verdict. Authoring validation is not that verdict.
 
-### Capability posture (honest snapshot)
+### Implementation posture
 
-| Capability | Current | Planned |
-|------------|---------|---------|
-| **Governance** enforcement | No | Yes |
-| **Lifecycle** evaluation | No | Yes |
-| Runtime compliance | Partial | Yes |
-| IDE integration | No | Yes |
-| **Conversation Engine** interface | No | Yes |
-| Control plane | Emerging | Yes |
-
-**Emphasis (this section):** **IDE integration** that surfaces **Kernel** decisions uniformly is **Planned**; many workflows today rely on partial or manual bridges.
+Posture is stated once in [Kernel responsibilities](07-03-kernel-responsibilities.md). Tooling should not reimplement admission. The authoring kit does not produce admission decisions.
 
 ## The Implications
 

@@ -3,7 +3,7 @@ title: "Compilation and semantic materialization"
 status: structured
 maturity: L2
 diagrams: false
-last_reviewed: "2026-10-01"
+last_reviewed: "2026-10-06"
 ---
 
 # Compilation and semantic materialization
@@ -41,6 +41,22 @@ Architecture IR / downstream semantic consumers
 ```
 
 Collapse stages only when authoritative contracts define them as one operation.
+
+### Authoring surfaces are not this stage list
+
+The sketch above names semantic-materialization responsibilities. It is not the authoring surface map. Do not read it as authoring validation producing an exact source basis, and do not insert derived discovery as the parent of interpretation.
+
+Canonical authoring source originates both branches:
+
+- **Authoring validation** evaluates that source and feeds **derived discovery** (manifest, index, registries, rendered projections). Discovery is for inventory, navigation, and inspection. **Discovery ≠ interpretation.** A fresh or valid index does not establish interpreted semantic meaning, and indexes are not compiled into meaning.
+- **Exact source basis** binding also originates from that canonical source. It identifies the authoritative artifacts interpretation consumes. It is not an index, registry, manifest, rendered projection, or validation result. If successful validation is required before interpretation, it is a gate or precondition, not the producer of the basis, unless accepted normative authority explicitly defines otherwise.
+
+**Posture, only where a reader might mistake architecture for a shipped call:**
+
+- Authoring validation and derived discovery are **implemented / available now** on the supported authoring host.
+- Semantic construction of a detached candidate is **accepted / designed but not yet released**. It is not a callable operation in this handbook, and it does not persist, promote, or admit.
+- Kernel **admission** is a **reserved / logical architectural role**. The authoring kit does not produce admission decisions.
+- A compiled Architecture IR `kind` for Normative Proposition, and CE-01, stay **deferred**. Do not complete them in prose.
 
 **Normalized semantic representation ≠ Architecture IR** unless accepted STE semantic authority establishes that mapping. Product normalized models demonstrate that Decision, Invariant, NormativeProposition, and related semantics can be represented and addressed; they do not automatically become compiled Architecture IR kinds or identity schemes.
 
@@ -106,6 +122,7 @@ Keep supported, executable, public, released, preferred, current, and default st
 
 - **Compilation and semantic materialization** name the bridge from governed sources toward machine-facing architecture semantics and, where mapped, **Architecture IR**.
 - **Construction**, **normalization**, **materialization**, **persistence**, **admission**, **promotion**, and **conformance** are distinct.
+- **Discovery ≠ interpretation.** Authoring validation feeds discovery. Exact-source-basis binding originates from canonical authoring source, not from validation and not from an index.
 - Compact input does not authorize inventing material intent; mechanical validation does not replace competent semantic review where contracts require it.
 - Normalized product surfaces are not automatically Architecture IR; exact contract qualification is not ambient latest.
 

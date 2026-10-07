@@ -3,7 +3,7 @@ title: "Part 5: Governance and Decision"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-10-06"
 ---
 
 # Governance and decision
@@ -13,6 +13,8 @@ last_reviewed: "2026-03-25"
 ## Purpose of this stage
 
 Ensure that transitions in risk and quality are **owned**, **recorded**, and **reviewable**. Without this stage, **conformance** becomes noise and **drift** becomes nobody’s problem.
+
+**Human act:** accountable people authorize, refuse, or bound an exception. **Machine surface:** the decision is stored as a governance record. **Forbidden conclusion:** that record is not produced by authoring validation, and it is not a kernel admission result unless a supported admission producer actually emitted one. There is no current supported/public admission producer in the authoring path.
 
 ## Artifacts involved
 

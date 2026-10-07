@@ -3,7 +3,7 @@ title: "Runtime Overview"
 status: structured
 maturity: L2
 diagrams: true
-last_reviewed: "2026-03-30"
+last_reviewed: "2026-10-06"
 ---
 
 # Runtime Overview
@@ -12,7 +12,7 @@ last_reviewed: "2026-03-30"
 
 STE is built as a feedback control system. Intent and **Architecture IR** describe the desired architecture; embodiment is what is actually built and running. If you cannot observe embodiment reliably, package those observations as evidence, and show that projections and context are fresh and valid, then neither people nor models can compare desired state to reality with integrity.
 
-**Runtime** exists to make observation and consumption legible: it sits between embodiment and deterministic assessment in the **Kernel**, under governance policy. This part explains that system role—not a particular toolchain or vendor.
+**Runtime** exists to make observation and consumption legible: it sits between embodiment and deterministic assessment in the **Kernel**, under governance policy. This part explains that logical role. It is not a claim that this topology is the currently supported producer, and it is not a claim that no runtime exists. Named evidence and context envelopes in this part are handbook models ahead of the active supported producer. Observation is not a verdict. Runtime workspace state lives outside the authoring repository. The authoring kit does not write that state and does not read it back as authority.
 
 The canonical assessment chain for Part 8 (use this ordering in diagrams and cross-references): Embodiment → **Runtime** → Evidence → **Kernel** → Decision → Governance.
 

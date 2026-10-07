@@ -2,7 +2,7 @@
 title: "Determinism and fail-closed"
 status: draft
 maturity: L2
-last_reviewed: "2026-03-28"
+last_reviewed: "2026-10-06"
 diagrams: no
 ---
 
@@ -17,6 +17,8 @@ If architecture gates drift with mood, reviewer fatigue, or non-repeatable assis
 The **Kernel role** is a **decision engine**, not a brainstorming partner. Its outputs must be **deterministic decisions** under fixed policy: the same inputs yield the same results. Where inputs are incomplete, STE prefers **fail-closed** behavior—**deny** or **block**—over silent acceptance.
 
 ## The Model
+
+These rules describe the decision role when a supported producer provides it. They are not a claim that the older reference snapshot is the current integration seam, and they are not a claim that no kernel exists. The authoring kit does not produce admission decisions.
 
 ### Rules (explicit)
 

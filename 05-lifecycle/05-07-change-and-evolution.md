@@ -3,7 +3,7 @@ title: "Part 5: Change and Evolution"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-10-06"
 ---
 
 # Change and evolution
@@ -13,6 +13,8 @@ last_reviewed: "2026-03-25"
 ## Purpose of this stage
 
 Close the control loop. Authorized **change** updates the artifacts and **embodiment** so that the next pass through **evidence** and **conformance** addresses a new honest baseline.
+
+**Human act:** people revise canonical intent or embodiment under governance. **Machine surface:** after the canonical record changes, derived discovery may be regenerated from validation of that source. **Forbidden conclusion:** change does not persist or promote a detached candidate into authority, and it does not treat an index as the new meaning.
 
 ## Artifacts involved
 

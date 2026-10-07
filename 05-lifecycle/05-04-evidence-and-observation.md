@@ -3,7 +3,7 @@ title: "Part 5: Evidence and Observation"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-10-06"
 ---
 
 # Evidence and observation
@@ -13,6 +13,8 @@ last_reviewed: "2026-03-25"
 ## Purpose of this stage
 
 Make reality legible for **validation**: tie observations to **scopes**, time ranges, and the **intent** and IR claims they are meant to support or refute.
+
+**Human act:** people decide which observations matter for a scope. **Machine surface:** the runtime role may package observations. That packaging is a handbook model ahead of the active supported producer on the authoring path. **Forbidden conclusion:** observation is not a verdict, and an evidence record is not intent.
 
 ## Artifacts involved
 

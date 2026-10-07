@@ -3,7 +3,7 @@ title: "Part 5: Lifecycle Overview"
 status: structured
 maturity: L1
 diagrams: true
-last_reviewed: "2026-03-27"
+last_reviewed: "2026-10-06"
 ---
 
 # Part 5: Lifecycle Overview
@@ -24,7 +24,7 @@ People remain accountable for stating goals and **intent**, making architectural
 
 ## STE system responsibility
 
-STE (automation and governed services) materializes structured records, maintains **Architecture IR** and traceability, collects observations into **evidence**, runs **conformance** checks where defined, manages **lifecycle state** where policy assigns that to the system, and renders **projections** without becoming a second source of truth.
+The stages in this part are one control loop. They are not equally mechanized. The ADR-Kit authoring API produces canonical ADRs. They are not hand-authored. Authoring validation and derived discovery are available now. Exact-source-basis binding originates from that canonical source, not from validation. Observation, conformance judgment, and admission stay later roles. Admission is reserved on the authoring path. Automation regenerates derived discovery and renders projections. It does not become a second source of truth, and it does not admit.
 
 ## Transitions to the next stage
 

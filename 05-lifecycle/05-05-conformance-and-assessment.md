@@ -3,7 +3,7 @@ title: "Part 5: Conformance and Assessment"
 status: structured
 maturity: L1
 diagrams: false
-last_reviewed: "2026-03-25"
+last_reviewed: "2026-10-06"
 ---
 
 # Conformance and assessment
@@ -14,9 +14,11 @@ last_reviewed: "2026-03-25"
 
 Turn “does it match what we said?” into inspectable results: mechanical checks where possible, documented human judgment where necessary, always tied to artifacts rather than private opinion.
 
+**Human act:** people own rules, thresholds, and waivers. **Machine surface:** configured checks may record outcomes against evidence and intent. **Forbidden conclusion:** assessment is not admission. Readiness is not a verdict. Authoring validation is not conformance. The Kernel role does not mean the authoring kit orchestrates this stage on the current supported path.
+
 ## Artifacts involved
 
-**Conformance** results, assessment reports, rule definitions, and links from findings back to **intent**, IR elements, and **evidence**. The **Kernel** role in STE orchestrates much of this machinery in implementations. See [Conformance](../03-artifacts/03-07-conformance.md), [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md), and [Determinism and fail-closed](../07-kernel/07-06-determinism-and-fail-closed.md).
+**Conformance** results, assessment reports, rule definitions, and links from findings back to **intent**, IR elements, and **evidence**. The **Kernel** role is the reserved decision role for admission (Part 7). It is not the authoring kit, and it is not a claim that Query, Explain, Coverage, or Admission are the current supported integration. See [Conformance](../03-artifacts/03-07-conformance.md), [Kernel reasoning surface](../07-kernel/07-05-kernel-reasoning-surface.md), and [Determinism and fail-closed](../07-kernel/07-06-determinism-and-fail-closed.md).
 
 ## Human responsibility
 
